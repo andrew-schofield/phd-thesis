@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: Thesis.aux
+The style file: unsrtPLoS-Biology.bst
+A level-1 auxiliary file: ./01-introduction/introduction.aux
+A level-1 auxiliary file: ./02-materialsmethods/materialsandmethods.aux
+A level-1 auxiliary file: ./03-parameterestimationmethodologies/parameterestimationmethodologies.aux
+A level-1 auxiliary file: ./04-model/modelconstructionandparameters.aux
+A level-1 auxiliary file: ./05-oxygenreduction/oxygenreduction.aux
+A level-1 auxiliary file: ./06-noreduction/noreduction.aux
+A level-1 auxiliary file: ./07-nitritereduction/nitritereduction.aux
+A level-1 auxiliary file: ./08-expression/expression.aux
+A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
+Database file #1: /home/uncle_fungus/Documents/Resources/Work/bibtex-references/phd_refs.bib
+Warning--can't use both author and editor fields in cavaliere_modeling_2006
+You've used 31 entries,
+            2955 wiz_defined-function locations,
+            897 strings with 13184 characters,
+and the built_in function-call counts, 32409 in all, are:
+= -- 3196
+> -- 1151
+< -- 18
++ -- 574
+- -- 315
+* -- 2744
+:= -- 4419
+add.period$ -- 62
+call.type$ -- 31
+change.case$ -- 165
+chr.to.int$ -- 43
+cite$ -- 32
+duplicate$ -- 2525
+empty$ -- 2650
+format.name$ -- 416
+if$ -- 6865
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 293
+newline$ -- 100
+num.names$ -- 125
+pop$ -- 677
+preamble$ -- 1
+purify$ -- 162
+quote$ -- 0
+skip$ -- 630
+stack$ -- 0
+substring$ -- 3665
+swap$ -- 649
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 270
+warning$ -- 1
+while$ -- 280
+width$ -- 0
+write$ -- 346
+(There was 1 warning)
