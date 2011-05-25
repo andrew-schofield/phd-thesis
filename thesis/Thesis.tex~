@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openany,11pt]{book}
+\documentclass[a4paper,oneside,openany,12pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}

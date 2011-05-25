@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  25 MAY 2011 17:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  25 MAY 2011 18:02
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -640,7 +640,12 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [3] (./Thesis.lof)
+ [3] (./Thesis.lof
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 6.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 6.
+)
 \tf@lof=\write7
 \openout7 = `Thesis.lof'.
 
@@ -676,11 +681,11 @@ l.11
 
 
 ] [2] [3]
-<./01-introduction/data/Respiratory_layout.pdf, id=451, 822.27202pt x 405.515pt
+<./01-introduction/data/Respiratory_layout.pdf, id=454, 822.27202pt x 405.515pt
 >
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
  <use ./01-introduction/data/Respiratory_layout.pdf> [4]
-<./01-introduction/data/regulation.pdf, id=470, 813.43903pt x 194.326pt>
+<./01-introduction/data/regulation.pdf, id=473, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf> [5 <./01-introduction/data/Respirat
@@ -690,18 +695,26 @@ ory_layout.pdf>]) [6 <./01-introduction/data/regulation.pdf>] [7]
 
 (./02-materialsmethods/materialsandmethods.tex
 Chapter 2.
-) [8
+<./02-materialsmethods/data/drawing.pdf, id=541, 517.13202pt x 416.75702pt>
+File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
+
+<use ./02-materialsmethods/data/drawing.pdf>
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 17.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)) [8
 
 
 
-]
+] [9 <./02-materialsmethods/data/drawing.pdf>]
 \openout2 = `./03-parameterestimationmethodologies/parameterestimationmethodolo
 gies.aux'.
 
 
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.tex
 Chapter 3.
-) [9
+) [10
 
 
 
@@ -710,7 +723,7 @@ Chapter 3.
 
  (./04-model/modelconstructionandparameters.tex
 Chapter 4.
-) [10
+) [11
 
 
 
@@ -721,7 +734,7 @@ Chapter 4.
 Chapter 5.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1.
-) [11
+) [12
 
 
 
@@ -750,7 +763,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
 
-) [12
+) [13
 
 
 
@@ -807,7 +820,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-) [13
+) [14
 
 
 
@@ -816,7 +829,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
  (./08-expression/expression.tex
 Chapter 8.
-) [14
+) [15
 
 
 
@@ -825,17 +838,17 @@ Chapter 8.
 
  (./09-completedmodel/completedmodel.tex
 Chapter 9.
-) [15
+) [16
 
 
 
-] [16
+] [17
 
 
 
-] (./Thesis.nls) (./Thesis.bbl [17
+] (./Thesis.nls) (./Thesis.bbl [18
 
-] [18]) [19] (./Thesis.aux
+] [19]) [20] (./Thesis.aux
 (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
@@ -844,11 +857,11 @@ Chapter 9.
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
 (./09-completedmodel/completedmodel.aux)) ) 
 Here is how much of TeX's memory you used:
- 7915 strings out of 495039
- 110828 string characters out of 1182024
- 190418 words of memory out of 3000000
- 10704 multiletter control sequences out of 15000+50000
- 46204 words of font info for 126 fonts, out of 3000000 for 9000
+ 7958 strings out of 495039
+ 111531 string characters out of 1182024
+ 191419 words of memory out of 3000000
+ 10737 multiletter control sequences out of 15000+50000
+ 49773 words of font info for 136 fonts, out of 3000000 for 9000
  38 hyphenation exceptions out of 8191
  38i,13n,51p,1249b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/
@@ -859,9 +872,9 @@ f-texlive/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-texlive/font
 s/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palat
 ino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (26 pages, 275817 bytes).
+Output written on Thesis.pdf (27 pages, 294118 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 515 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 664 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 520 words of extra memory for PDF output out of 10000 (max. 10000000)
 
