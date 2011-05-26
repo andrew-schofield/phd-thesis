@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openany,12pt]{book}
+\documentclass[a4paper,oneside,openany,11pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -165,6 +165,7 @@
 \cleardoublepage
 
 \frontmatter
+\mainmatter
 \begin{abstract}
  
 \end{abstract}
@@ -178,7 +179,6 @@
 \chapter*{Acknowledgements}
 
 
-\mainmatter
 \include{./01-introduction/introduction}
 \include{./02-materialsmethods/materialsandmethods}
 \include{./03-parameterestimationmethodologies/parameterestimationmethodologies}

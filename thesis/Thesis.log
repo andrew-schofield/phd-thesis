@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  25 MAY 2011 18:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  25 MAY 2011 19:12
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -576,71 +576,72 @@ LaTeX Info: Redefining \pageref on input line 161.
 \openout5 = `Thesis.out'.
 
 \AtBeginShipoutBox=\box31
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 163
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 165
 .
  (/usr/share/texmf-texlive/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 163
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 165
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 163
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 165
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 163.
+(Font)              scaled to size 12.50409pt on input line 165.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 163.
+(Font)              scaled to size 9.37807pt on input line 165.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 163.
+(Font)              scaled to size 12.50409pt on input line 165.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 163.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 163
+(Font)              scaled to size 9.37807pt on input line 165.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 165
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 163.
+(Font)              scaled to size 11.40997pt on input line 165.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 163.
+(Font)              scaled to size 8.33606pt on input line 165.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 163.
+(Font)              scaled to size 6.25204pt on input line 165.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 163.
+(Font)              scaled to size 11.40997pt on input line 165.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 163.
+(Font)              scaled to size 8.33606pt on input line 165.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 163.
+(Font)              scaled to size 6.25204pt on input line 165.
  [1
+
+
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 168.
- [1
-
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 169.
+ [2
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 173.
  (./Thesis.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 22.
- [2
+ [3
 
 ])
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [3] (./Thesis.lof
+ [4] (./Thesis.lof
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
@@ -650,15 +651,15 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 \openout7 = `Thesis.lof'.
 
 
-[4
+[5
 
 ] (./Thesis.lot)
 \tf@lot=\write8
 \openout8 = `Thesis.lot'.
 
- [5
+ [6
 
-] [6
+] [7
 
 ]
 \openout2 = `./01-introduction/introduction.aux'.
@@ -671,31 +672,25 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 3.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11 
-      [1
+[8
 
 
-
-] [2] [3]
-<./01-introduction/data/Respiratory_layout.pdf, id=454, 822.27202pt x 405.515pt
+] [9] [10]
+<./01-introduction/data/Respiratory_layout.pdf, id=455, 822.27202pt x 405.515pt
 >
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
- <use ./01-introduction/data/Respiratory_layout.pdf> [4]
-<./01-introduction/data/regulation.pdf, id=473, 813.43903pt x 194.326pt>
+ <use ./01-introduction/data/Respiratory_layout.pdf> [11]
+<./01-introduction/data/regulation.pdf, id=474, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
-<use ./01-introduction/data/regulation.pdf> [5 <./01-introduction/data/Respirat
-ory_layout.pdf>]) [6 <./01-introduction/data/regulation.pdf>] [7]
+<use ./01-introduction/data/regulation.pdf> [12 <./01-introduction/data/Respira
+tory_layout.pdf>]) [13 <./01-introduction/data/regulation.pdf>] [14]
 \openout2 = `./02-materialsmethods/materialsandmethods.aux'.
 
 
 (./02-materialsmethods/materialsandmethods.tex
 Chapter 2.
-<./02-materialsmethods/data/drawing.pdf, id=541, 517.13202pt x 416.75702pt>
+<./02-materialsmethods/data/drawing.pdf, id=542, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
 <use ./02-materialsmethods/data/drawing.pdf>
@@ -703,18 +698,18 @@ LaTeX Font Info:    Try loading font information for TS1+ppl on input line 17.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)) [8
+)) [15
 
 
 
-] [9 <./02-materialsmethods/data/drawing.pdf>]
+] [16 <./02-materialsmethods/data/drawing.pdf>]
 \openout2 = `./03-parameterestimationmethodologies/parameterestimationmethodolo
 gies.aux'.
 
 
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.tex
 Chapter 3.
-) [10
+) [17
 
 
 
@@ -723,7 +718,7 @@ Chapter 3.
 
  (./04-model/modelconstructionandparameters.tex
 Chapter 4.
-) [11
+) [18
 
 
 
@@ -734,7 +729,7 @@ Chapter 4.
 Chapter 5.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1.
-) [12
+) [19
 
 
 
@@ -763,7 +758,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
 
-) [13
+) [20
 
 
 
@@ -820,7 +815,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-) [14
+) [21
 
 
 
@@ -829,7 +824,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
  (./08-expression/expression.tex
 Chapter 8.
-) [15
+) [22
 
 
 
@@ -838,17 +833,17 @@ Chapter 8.
 
  (./09-completedmodel/completedmodel.tex
 Chapter 9.
-) [16
+) [23
 
 
 
-] [17
+] [24
 
 
 
-] (./Thesis.nls) (./Thesis.bbl [18
+] (./Thesis.nls) (./Thesis.bbl [25
 
-] [19]) [20] (./Thesis.aux
+] [26]) [27] (./Thesis.aux
 (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
@@ -857,9 +852,9 @@ Chapter 9.
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
 (./09-completedmodel/completedmodel.aux)) ) 
 Here is how much of TeX's memory you used:
- 7958 strings out of 495039
- 111531 string characters out of 1182024
- 191419 words of memory out of 3000000
+ 7959 strings out of 495039
+ 111539 string characters out of 1182024
+ 191423 words of memory out of 3000000
  10737 multiletter control sequences out of 15000+50000
  49773 words of font info for 136 fonts, out of 3000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -872,9 +867,9 @@ f-texlive/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-texlive/font
 s/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palat
 ino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (27 pages, 294118 bytes).
+Output written on Thesis.pdf (27 pages, 294160 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
+ 665 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  520 words of extra memory for PDF output out of 10000 (max. 10000000)
 
