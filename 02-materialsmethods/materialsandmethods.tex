@@ -1,10 +1,84 @@
 \chapter{Materials and Methods}
+\section{\Nsm\space strains used in this work}
+\begin{table}[here]
+\begin{center}
+\begin{tabular}{|c|p{7cm}|c|}
+\hline
+\textbf{Name} & \textbf{Description} & \textbf{Source} \\
+\hline
+MC58 & Wild-Type Strain & Mel, via Karin \\
+&&\\ %cheat for extra whitespace beneath each entry
+\hline
+$\Delta$norB::spc$^\textrm{r}$ & Wild-Type with insertion of spectinomycin resistance cassette into \textit{norB} gene & \citet{Heurlier2008} \\
+&&\\ %cheat for extra whitespace beneath each entry
+\hline
+$\Delta$nsrR::spc$^\textrm{r}$ & Wild-Type with insertion of spectinomycin resistance cassette into \textit{nsrR} gene & \citet{Rock2007} \\
+&&\\ %cheat for extra whitespace beneath each entry
+\hline
+$\Delta$norB::spc$^\textrm{r}$-$\Delta$nsrR::tet$^\textrm{r}$ & Wild-Type with insertion of spectinomycin resistance cassette into \textit{norB} and insertion of tetracyclin resistance cassette into \textit{nsrR} genes & \citet{Heurlier2008}\\
+&&\\ %cheat for extra whitespace beneath each entry
+\hline
+$\Delta$aniA::spc$^\textrm{r}$-$\Delta$nsrR::tet$^\textrm{r}$ & Wild-Type with insertion of spectinomycin resistance cassette into \textit{aniA} and insertion of tetracyclin resistance cassette into \textit{nsrR} genes & \citet{Heurlier2008} \\
+&&\\ %cheat for extra whitespace beneath each entry
+\hline
+\end{tabular} 
+\end{center}
+\small{\caption{Bacterial strains and sources}
+\label{tab:bacterial-strains}}
+\end{table}
+
 \section{Culturing \Nsm}
+\subsection{Growth of \Nsm}
+\Nm\space strains were grown on plates on Columbia Agar Base with defibrinated horse blood, and in liquid culture in Muller-Hinton Broth (MHB)
+
+Plates were prepared by adding horse blood to a final concentration of 5\% to molten agar, and poured into plastic petri dishes. After streaking with \Nm\space the plates were incubated at 37\textdegree C in a 5\% carbon dioxide/air mixture.
+
+Aerobic liquid cultures were grown in 10ml MHB with 1\% NaHCO$_\textrm{3}$ in plastic sterilin tubes, and incubated at 37\textdegree C at 200rpm. Microaerobic cultures were suspended in 20ml MHB, 1\% NaHCO$_\textrm{3}$ in plastic sterilin tubes, incubated at 37\textdegree C at 100rpm.
+
+\subsection{Preparation of Antibiotic Selective Media}
+Liquid stock solutions of required antibiotics were either added directly to liquid culture, or, if growing on plates, to the molten agar when also adding horse blood. The final concentrations of antibiotics are given in Table \ref{tab:antibiotic-concs}.
+
+\begin{table}[here]
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{Antibiotic} & \textbf{Final concentration ($\mu$g/ml)} \\
+\hline
+Spectinomycin & 50 \\
+Tetracyclin & 2.5 \\
+Chloramphenicol & 50 \\
+\hline
+\end{tabular} 
+\end{center}
+\small{\caption{Final antibiotic concentrations}
+\label{tab:antibiotic-concs}}
+\end{table}
+
+\subsection{Preparation of Frozen Bacterial Stocks}
+Bacteria were grown in liquid culture until late log phase prior to harvesting. Liquid cultures were then centrifuged at 4000g for 15 minutes, and the pellet was then resuspended in a 25\% glycerol, 25\% water and 50\% MHB, all of which had been autoclaved beforehand. The bacterial stocks were then frozen at $-80$\textdegree C.
+
+\subsection{Streaking Plates for OD to CFU Ratio Calculation}
+Bacterial cultures were grown overnight and then transferred into aerobic liquid culture and samples taken throughout the day to obtain a range of different optical densities. The optical density was recorded at 600nm, and each sample was serially diluted to the following levels: $10^{-5}$, $10^{-6}$ and $10^{-7}$. 100$\mu$l of each of these dilutions was plated on a fresh blood agar plate and left to grow overnight. The following morning the number of colonies on each plate was counted and used to create a standard curve for Optical Density to Colony Forming Units.
 
 \section{Measuring Oxygen Concentration}
+Oxygen concentration in respiring cultures was measured using a Clark electrode \cite{Clark1953} from Rank Brothers, Cambridge, UK. This electrode has a silver anode and a platinum cathode using a saturated potassium chloride solution as electrolyte. The electrode is set at the bottom of a ~7ml reaction chamber separated from its contents by a thin teflon membrane. This membrane is permeable to dissolved oxygen, and is reduced by the electrode producing a measurable electrical current. The reaction chamber is maintained at 37\textdegree C by an attached waterbath.
+When performing experiments, 5ml of culture is added to the reaction chamber, which is stirred by use of a magnetic flea, and the chamber covered with a plastic stopper. The stopper has a number of holes through which the NO probe, or hamilton syringe can be inserted. Data is collected by attaching the electrode to an external data logger (Pico ADC20, Pico Technology).
+\subsection{Calibration of Oxygen Electrode}
+Calibration of the oxygen electrode assumes that anaerobic water will not produce any measurable current at the electrode. Oxygen saturated water contains 210$\mu$M Oxygen (ref needed). 5ml of ultrapure water was added to the electrode chamber, and then aerated to saturation by use of a pasteur pipette. The maximum value recorded by the data logger then corresponds to a concentration of 210$\mu$M Oxygen, with the relationship between mV as recorded against concentration being linear.
+
 \section{Measuring Nitric Oxide Concentration}
-\section{Measuring Nitrite Concentration}
-\subsection{Greiss Assay}
+Nitric Oxide concentration was measured using a Nitric Oxide probe (ISO-NOP, World Precision Intruments) connected to a Nitric Oxide Meter (ISO-NO mkII, World Precision Instruments). The NO probe is inserted through one of the holes in the plastic lid of the reaction chamber of the oxygen electrode assembly. The tip of the electrode should be immersed in the culture, with care being taken not to trap any air bubbles on the surface of the probe. The sensor is also attached to the same data logger as above. In this way both Oxygen and Nitric Oxide concentrations can be measured in parallel.
+\subsection{Calibration of Nitric Oxide Electrode}
+Calibration of the nitric oxide electrode 
+
+\section{Measuring Nitrite Concentration (Griess Assay)}
+\cite{DonaldNicholas1957}
+\subsection*{Chemicals}
+\begin{itemize}
+ \item 50ml 1\% w/v Sulfanilamide in 1M HCl
+ \item 50ml 0.02\% w/v N.E.D. in 1M HCl
+\end{itemize}
+
+
 \section{Nitric Oxide Production}
 \begin{figure}
  \centering
