@@ -3,12 +3,18 @@
 \BOOKMARK [1][-]{section.1.2}{Organisation of the respiratory chain of N. meningitidis}{chapter.1}
 \BOOKMARK [1][-]{section.1.3}{Modelling}{chapter.1}
 \BOOKMARK [0][-]{chapter.2}{Materials and Methods}{}
-\BOOKMARK [1][-]{section.2.1}{Culturing Neisseria meningitidis}{chapter.2}
-\BOOKMARK [1][-]{section.2.2}{Measuring Oxygen Concentration}{chapter.2}
-\BOOKMARK [1][-]{section.2.3}{Measuring Nitric Oxide Concentration}{chapter.2}
-\BOOKMARK [1][-]{section.2.4}{Measuring Nitrite Concentration}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.4.1}{Greiss Assay}{section.2.4}
-\BOOKMARK [1][-]{section.2.5}{Nitric Oxide Production}{chapter.2}
+\BOOKMARK [1][-]{section.2.1}{Neisseria meningitidis strains used in this work}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Culturing Neisseria meningitidis}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Growth of Neisseria meningitidis}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Preparation of Antibiotic Selective Media}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Preparation of Frozen Bacterial Stocks}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.4}{Streaking Plates for OD to CFU Ratio Calculation}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Measuring Oxygen Concentration}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Calibration of Oxygen Electrode}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{Measuring Nitric Oxide Concentration}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Calibration of Nitric Oxide Electrode}{section.2.4}
+\BOOKMARK [1][-]{section.2.5}{Measuring Nitrite Concentration \(Griess Assay\)}{chapter.2}
+\BOOKMARK [1][-]{section.2.6}{Nitric Oxide Production}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Parameter Estimation Methodologies}{}
 \BOOKMARK [1][-]{section.3.1}{Simulated Annealing}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Approximate Bayesian Computation by Sequential Monte Carlo}{chapter.3}
@@ -28,7 +34,7 @@
 \BOOKMARK [2][-]{subsection.6.1.1}{Introduction}{section.6.1}
 \BOOKMARK [2][-]{subsection.6.1.2}{Results}{section.6.1}
 \BOOKMARK [2][-]{subsection.6.1.3}{Discussion}{section.6.1}
-\BOOKMARK [1][-]{section.6.2}{Anaerobic Nitric Oxide Reduction}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Microaerobic Nitric Oxide Reduction}{chapter.6}
 \BOOKMARK [2][-]{subsection.6.2.1}{Introduction}{section.6.2}
 \BOOKMARK [2][-]{subsection.6.2.2}{Results}{section.6.2}
 \BOOKMARK [2][-]{subsection.6.2.3}{Discussion}{section.6.2}
@@ -37,11 +43,11 @@
 \BOOKMARK [2][-]{subsection.6.3.2}{Results}{section.6.3}
 \BOOKMARK [2][-]{subsection.6.3.3}{Discussion}{section.6.3}
 \BOOKMARK [0][-]{chapter.7}{Nitrite Reduction in N. meningitidis}{}
-\BOOKMARK [1][-]{section.7.1}{Anaerobic Nitrite Reduction}{chapter.7}
+\BOOKMARK [1][-]{section.7.1}{Microerobic Nitrite Reduction}{chapter.7}
 \BOOKMARK [2][-]{subsection.7.1.1}{Introduction}{section.7.1}
 \BOOKMARK [2][-]{subsection.7.1.2}{Results}{section.7.1}
 \BOOKMARK [2][-]{subsection.7.1.3}{Discussion}{section.7.1}
-\BOOKMARK [1][-]{section.7.2}{Anaerobic Nitrite Reduction in norB- mutant}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{Microaerobic Nitrite Reduction in norB- mutant}{chapter.7}
 \BOOKMARK [2][-]{subsection.7.2.1}{Introduction}{section.7.2}
 \BOOKMARK [2][-]{subsection.7.2.2}{Results}{section.7.2}
 \BOOKMARK [2][-]{subsection.7.2.3}{Discussion}{section.7.2}
@@ -54,7 +60,7 @@
 \BOOKMARK [2][-]{subsection.7.4.2}{Results}{section.7.4}
 \BOOKMARK [2][-]{subsection.7.4.3}{Discussion}{section.7.4}
 \BOOKMARK [0][-]{chapter.8}{AniA and NorB expression in N. meningitidis}{}
-\BOOKMARK [1][-]{section.8.1}{Aerobic and Anaerobic Expression}{chapter.8}
+\BOOKMARK [1][-]{section.8.1}{Aerobic and Microaerobic Expression}{chapter.8}
 \BOOKMARK [2][-]{subsection.8.1.1}{Introduction}{section.8.1}
 \BOOKMARK [2][-]{subsection.8.1.2}{Results}{section.8.1}
 \BOOKMARK [2][-]{subsection.8.1.3}{Discussion}{section.8.1}

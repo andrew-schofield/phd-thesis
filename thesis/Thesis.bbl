@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{33}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -154,5 +154,13 @@ Radhakrishnan K, Hindmarsh AC (1993) Description and Use of LSODE, the
 Gibson MA, Bruck J (2000) Efficient Exact Stochastic Simulation of Chemical
   Systems with Many Species and Many Channels. The Journal of Physical
   Chemistry A 104: 1876--1889.
+
+\bibitem[{Clark et~al.(1953)Clark, Wolf, Granger, and Taylor}]{Clark1953}
+Clark LC, Wolf R, Granger D, Taylor Z (1953) Continuous Recording of Blood
+  Oxygen Tensions by Polarography. Journal of Applied Physiology 6: 189--193.
+
+\bibitem[{Donald~Nicholas and Nason(1957)}]{DonaldNicholas1957}
+Donald~Nicholas DJ, Nason A (1957) Determination of nitrate and nitrite. In:
+  Methods in Enzymology, vol.~3, pp. 981--984, Academic Press.
 
 \end{thebibliography}
