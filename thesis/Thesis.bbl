@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{34}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -34,9 +34,9 @@ Carbonnelle E, Hill DJ, Morand P, Griffiths NJ, Bourdoulous S, et~al. (2009)
 
 \bibitem[{Beddek et~al.(2009)Beddek, Li, Kroll, Jordan, and
   Martin}]{AmandaJBeddek05182009}
-Beddek AJ, Li MS, Kroll JS, Jordan TW, Martin DR (2009) {Evidence for Capsule
-  Switching between Carried and Disease-Causing Neisseria meningitidis
-  Strains}. Infect Immun 77: 2989--2994.
+Beddek AJ, Li MS, Kroll JS, Jordan TW, Martin DR (2009) Evidence for Capsule
+  Switching between Carried and Disease-Causing Neisseria meningitidis Strains.
+  Infect Immun 77: 2989--2994.
 
 \bibitem[{Moxon et~al.(1994)Moxon, Rainey, Nowak, and Lenski}]{Moxon199424}
 Moxon ER, Rainey PB, Nowak MA, Lenski RE (1994) Adaptive evolution of highly
@@ -154,6 +154,13 @@ Radhakrishnan K, Hindmarsh AC (1993) Description and Use of LSODE, the
 Gibson MA, Bruck J (2000) Efficient Exact Stochastic Simulation of Chemical
   Systems with Many Species and Many Channels. The Journal of Physical
   Chemistry A 104: 1876--1889.
+
+\bibitem[{McGuinness et~al.(1990)McGuinness, Barlow, Clarke, Farley, Anilionis
+  et~al.}]{McGuinness1990}
+McGuinness B, Barlow AK, Clarke IN, Farley JE, Anilionis A, et~al. (1990)
+  Deduced amino acid sequences of class 1 protein (PorA) from three strains of
+  Neisseria meningitidis. Synthetic peptides define the epitopes responsible
+  for serosubtype specificity. J Exp Med 171: 1871--1882.
 
 \bibitem[{Clark et~al.(1953)Clark, Wolf, Granger, and Taylor}]{Clark1953}
 Clark LC, Wolf R, Granger D, Taylor Z (1953) Continuous Recording of Blood

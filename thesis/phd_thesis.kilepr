@@ -98,20 +98,20 @@ ReadWrite=true
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=13
+column=8
 encoding=UTF-8
 highlight=LaTeX
-line=57
+line=46
 mode=LaTeX
 open=true
 order=2
 
 [item:02-materialsmethods/materialsandmethods.tex]
 archive=true
-column=42
+column=32
 encoding=UTF-8
 highlight=LaTeX
-line=70
+line=9
 mode=LaTeX
 open=true
 order=3
@@ -128,10 +128,10 @@ order=-1
 
 [item:04-model/modelconstructionandparameters.tex]
 archive=true
-column=14
+column=5
 encoding=UTF-8
 highlight=LaTeX
-line=95
+line=35
 mode=LaTeX
 open=true
 order=1
@@ -158,13 +158,13 @@ order=2
 
 [item:07-nitritereduction/nitritereduction.tex]
 archive=true
-column=14
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=9
+line=13
 mode=LaTeX
-open=false
-order=-1
+open=true
+order=4
 
 [item:08-expression/expression.tex]
 archive=true
@@ -191,7 +191,7 @@ archive=true
 column=0
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=0
 mode=LaTeX
 open=true
 order=0
@@ -207,20 +207,20 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=13
-CursorLine=57
+CursorColumn=8
+CursorLine=46
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
-CursorColumn=42
-CursorLine=70
+CursorColumn=32
+CursorLine=9
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 CursorColumn=10
 CursorLine=3
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
-CursorColumn=14
-CursorLine=95
+CursorColumn=5
+CursorLine=35
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
 CursorColumn=0
@@ -231,8 +231,8 @@ CursorColumn=14
 CursorLine=5
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
-CursorColumn=14
-CursorLine=9
+CursorColumn=0
+CursorLine=13
 
 [view-settings,view=0,item:08-expression/expression.tex]
 CursorColumn=33
@@ -244,4 +244,4 @@ CursorLine=0
 
 [view-settings,view=0,item:Thesis.tex]
 CursorColumn=0
-CursorLine=1
+CursorLine=0
