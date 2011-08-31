@@ -7,7 +7,7 @@ The equation that gives the change in oxygen concentration is
 
 \begin{eqnarray}
 &\frac{d[O_2]}{dt} = \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2] \nonumber \\\nonumber \\
-&\xrightarrow{\beta} \bold{O_2} \xrightarrow{k_1~(C_a)} \textnormal{H$_\textnormal{2}$O}
+&\xrightarrow{\beta} \mathbf{O_2} \xrightarrow{k_1~(C_a)} \textnormal{H$_\textnormal{2}$O}
 \label{eq:oxygen}
 \end{eqnarray}
 
@@ -17,9 +17,9 @@ The equation for describing \cNO \space concentration changes is more complex as
 
 \begin{eqnarray}
 &\frac{d[NO]}{dt} = m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO] \nonumber \\\nonumber \\
-&\textnormal{NO$_\textnormal{2}^\textnormal{-}$} \xrightarrow{m_1~(A_a)} \bold{NO} \xrightarrow{l_1~(B_a)} \textnormal{N$_\textnormal{2}$O} \nonumber \\
-&\bold{NO} + \textnormal{C$_\textnormal{a}$} \xrightarrow{k_5} \textnormal{NO}\textendash \textnormal{C$_\textnormal{X}$} \xrightarrow{k_6} \bold{NO} + \textnormal{C$_\textnormal{a}$} \nonumber \\
-&\xrightarrow{\gamma} \bold{NO}
+&\textnormal{NO$_\textnormal{2}^\textnormal{-}$} \xrightarrow{m_1~(A_a)} \mathbf{NO} \xrightarrow{l_1~(B_a)} \textnormal{N$_\textnormal{2}$O} \nonumber \\
+&\mathbf{NO} + \textnormal{C$_\textnormal{a}$} \xrightarrow{k_5} \textnormal{NO}\textendash \textnormal{C$_\textnormal{X}$} \xrightarrow{k_6} \mathbf{NO} + \textnormal{C$_\textnormal{a}$} \nonumber \\
+&\xrightarrow{\gamma} \mathbf{NO}
 \label{eq:no}
 \end{eqnarray}
 
@@ -29,7 +29,7 @@ The reduction of nitrite is modelled by this equation
 
 \begin{eqnarray}
 &\frac{d[NO_2^-]}{dt} = - m_{1}[NO_2^-][A_a] \nonumber \\\nonumber \\
-&\bold{NO_2^-} \xrightarrow{m_1~(A_a)} \textnormal{NO}
+&\mathbf{NO_2^-} \xrightarrow{m_1~(A_a)} \textnormal{NO}
 \label{eq:nitrite}
 \end{eqnarray}
 
@@ -39,9 +39,9 @@ In addition to the rate of change of concentration of the respiratory substrates
 
 \begin{eqnarray}
 &\frac{d[Q_a]}{dt} = g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E]) \nonumber \\\nonumber \\
-&\xrightarrow[e^-]{g} \bold{Q_a} \nonumber \\
-&\textnormal{B$_\textnormal{i}$} \xrightarrow[e^-]{l_3~(\bold{Q_a})} \textnormal{B$_\textnormal{a}$} \nonumber \\
-&\textnormal{X-E} \xrightarrow[e^-]{f~(\bold{Q_a})} \textnormal{E}
+&\xrightarrow[e^-]{g} \mathbf{Q_a} \nonumber \\
+&\textnormal{B$_\textnormal{i}$} \xrightarrow[e^-]{l_3~(\mathbf{Q_a})} \textnormal{B$_\textnormal{a}$} \nonumber \\
+&\textnormal{X-E} \xrightarrow[e^-]{f~(\mathbf{Q_a})} \textnormal{E}
 \label{eq:quinones}
 \end{eqnarray}
 
@@ -51,9 +51,9 @@ Given that the concentration of active cytochromes changes, due to reduction by 
 
 \begin{eqnarray}
 &\frac{d[E]}{dt} = -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E]) \nonumber \\\nonumber \\
-&\textnormal{C$_\textnormal{i}$} \xrightarrow[e^-]{k_3~(\bold{E})} \textnormal{C$_\textnormal{a}$} \nonumber \\
-&\textnormal{A$_\textnormal{i}$} \xrightarrow[e^-]{m_3~(\bold{E})} \textnormal{A$_\textnormal{a}$} \nonumber \\
-&\textnormal{X-E} \xrightarrow[e^-]{f~(Q_a)} \bold{E}
+&\textnormal{C$_\textnormal{i}$} \xrightarrow[e^-]{k_3~(\mathbf{E})} \textnormal{C$_\textnormal{a}$} \nonumber \\
+&\textnormal{A$_\textnormal{i}$} \xrightarrow[e^-]{m_3~(\mathbf{E})} \textnormal{A$_\textnormal{a}$} \nonumber \\
+&\textnormal{X-E} \xrightarrow[e^-]{f~(Q_a)} \mathbf{E}
 \label{eq:cytochromes}
 \end{eqnarray}
 
@@ -63,9 +63,9 @@ To model the changes in concentration of the individual enzymes, \textit{cbb$_{\
 
 \begin{eqnarray}
 &\frac{d[C_a]}{dt} = k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO] \nonumber \\\nonumber \\
-&\textnormal{C$_\textnormal{i}$} \xrightarrow[e^-]{k_3~(E)} \bold{C_a} \nonumber \\
-&\textnormal{O$_\textnormal{2}$} \xrightarrow{k_1~(\bold{C_a})} \textnormal{H$_\textnormal{2}$O} \nonumber \\
-&\textnormal{NO} + \bold{C_a} \xrightarrow{k_5} \textnormal{NO}\textendash \textnormal{C$_\textnormal{X}$}
+&\textnormal{C$_\textnormal{i}$} \xrightarrow[e^-]{k_3~(E)} \mathbf{C_a} \nonumber \\
+&\textnormal{O$_\textnormal{2}$} \xrightarrow{k_1~(\mathbf{C_a})} \textnormal{H$_\textnormal{2}$O} \nonumber \\
+&\textnormal{NO} + \mathbf{C_a} \xrightarrow{k_5} \textnormal{NO}\textendash \textnormal{C$_\textnormal{X}$}
 \label{eq:active_cbb3}
 \end{eqnarray}
 
@@ -73,7 +73,7 @@ This equation models the concentration of reduced (active) \textit{cbb$_{\textrm
 
 \begin{eqnarray}
 &\frac{d[C_X]}{dt} = k_5[C_a][NO] - k_6 [C_X] \nonumber \\\nonumber \\
-&\textnormal{NO} + \textnormal{C$_\textnormal{a}$} \xrightarrow{k_5} \textnormal{NO}\textendash \bold{C_X} \xrightarrow{k_6} \textnormal{NO} + \textnormal{C$_\textnormal{a}$}
+&\textnormal{NO} + \textnormal{C$_\textnormal{a}$} \xrightarrow{k_5} \textnormal{NO}\textendash \mathbf{C_X} \xrightarrow{k_6} \textnormal{NO} + \textnormal{C$_\textnormal{a}$}
 \label{eq:denatured_cbb3}
 \end{eqnarray}
 
@@ -81,8 +81,8 @@ Reduced (active) AniA concentrations are modelled by this equation
 
 \begin{eqnarray}
 &\frac{d[A_a]}{dt} = m_3([A] - [A_a])[E]- m_{1}[NO_2^-][A_a] \nonumber \\\nonumber \\
-&\textnormal{A$_\textnormal{i}$} \xrightarrow[e^-]{m_3~(E)} \bold{A_a} \nonumber \\
-&\textnormal{NO$_\textnormal{2}^\textnormal{-}$} \xrightarrow{m_1~(\bold{A_a})} \textnormal{NO}
+&\textnormal{A$_\textnormal{i}$} \xrightarrow[e^-]{m_3~(E)} \mathbf{A_a} \nonumber \\
+&\textnormal{NO$_\textnormal{2}^\textnormal{-}$} \xrightarrow{m_1~(\mathbf{A_a})} \textnormal{NO}
 \label{eq:active_ania}
 \end{eqnarray}
 
@@ -90,8 +90,8 @@ and reduced (active) NorB concentrations are modelled by this equation
 
 \begin{eqnarray}
 &\frac{d[B_a]}{dt} = l_3[Q_a]([B] - [B_a]) - l_1[NO][B_a] \nonumber \\\nonumber \\
-&\textnormal{B$_\textnormal{i}$} \xrightarrow[e^-]{l_3~(Q_a)} \bold{B_a} \nonumber \\
-&\textnormal{NO} \xrightarrow{l_1~(\bold{B_a})} \textnormal{N$_\textnormal{2}$O}
+&\textnormal{B$_\textnormal{i}$} \xrightarrow[e^-]{l_3~(Q_a)} \mathbf{B_a} \nonumber \\
+&\textnormal{NO} \xrightarrow{l_1~(\mathbf{B_a})} \textnormal{N$_\textnormal{2}$O}
 \label{eq:active_norb}
 \end{eqnarray}
 
