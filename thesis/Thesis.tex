@@ -18,6 +18,9 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{color}
+
+\definecolor{dark-gray}{gray}{0.5}
 
 \usepackage{mathpazo}
 \linespread{1.05}        % Palatino needs more leading
@@ -146,10 +149,10 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-%\fancyhead[R]{Analysis and modelling of respiratory metabolism in \Nsm}
+\fancyhead[R]{\textcolor{dark-gray}{\slshape\leftmark}}
 %\fancyfoot[L]{\textbf{Andrew Schofield}}
 \fancyfoot[R]{\textbf{\thepage}}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
 \fancyfoot[R]{\textbf{\thepage}} % except the right
@@ -171,7 +174,6 @@
 \cleardoublepage
 
 \begin{abstract}
- 
 \end{abstract}
 
 \tableofcontents
