@@ -1,1 +1,19 @@
-\nomenclatureentry{aCSF@[{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{10}
+\nomenclatureentry{aCSF@[{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}|nompageref}{10}
+\nomenclatureentry{aATP@[{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}|nompageref}{12}
+\nomenclatureentry{aAniA@[{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}|nompageref}{12}
+\nomenclatureentry{aNADH@[{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aNorB@[{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aFNR@[{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aNarP@[{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aNarQ@[{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aNsrR@[{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}|nompageref}{14}
+\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.0}|nompageref}{16}
+\nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.0}|nompageref}{16}
+\nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}|nompageref}{18}
+\nomenclatureentry{atet$^\textrm{r}$@[{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}|nompageref}{18}
+\nomenclatureentry{aCAB@[{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}|nompageref}{19}
+\nomenclatureentry{aMHB@[{MHB}]\begingroup Muller-Hinton Broth\nomeqref {2.0}|nompageref}{19}
+\nomenclatureentry{arpm@[{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}|nompageref}{19}
+\nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}|nompageref}{20}
+\nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}|nompageref}{20}
+\nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}|nompageref}{21}

@@ -13,7 +13,8 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage[pdftex,breaklinks=true,citecolor=black,linkcolor=black,urlcolor=black, colorlinks=true,baseurl=http://]{hyperref}
-\usepackage{nomencl}
+\usepackage[intoc]{nomencl}
+\makenomenclature
 \usepackage{makeidx}
 \usepackage{multirow}
 \usepackage{array}
@@ -37,6 +38,9 @@
 {\vfill\null}
 
 \makeatletter
+
+
+\renewcommand{\nomname}{List of Abbreviations}
 
 \def\qualification#1{\def\@qualification{#1}}
 \def\university#1{\def\@university{#1}}
@@ -162,7 +166,6 @@
 \hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups}
 \bibliographystyle{unsrtPLoS-Biology}
 
-\makenomenclature
 \makeindex
 
 \begin{document}
@@ -174,15 +177,6 @@
 \cleardoublepage
 
 \begin{abstract}
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor aliquet lorem tristique tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Quisque quis mi a nisi viverra dapibus. Vestibulum et iaculis leo. Sed quis urna dui, eu vehicula ligula. Vestibulum porttitor nibh at magna varius viverra. Donec id mi et nisl pretium fermentum vitae quis metus. Pellentesque consequat, est ac sollicitudin pellentesque, tellus quam blandit neque, eget dictum ante mi et leo. Maecenas venenatis mattis orci rutrum tincidunt.
-
-Sed ac nunc eget nisl porttitor posuere. Vestibulum augue augue, venenatis at tempus ut, euismod ac ipsum. Suspendisse potenti. Sed tempus tristique posuere. Vivamus nec tincidunt sem. Curabitur pulvinar, mauris ut rhoncus sodales, augue enim congue lorem, ac ullamcorper est metus eget lorem. Quisque quis nunc nec dui vulputate molestie. Nunc hendrerit interdum enim ut ullamcorper. Phasellus vitae ligula id velit euismod faucibus.
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam viverra, tortor vitae aliquam posuere, eros nisi vestibulum urna, eget rhoncus purus ligula nec tellus. Nullam consequat eros quis magna auctor ut ultrices felis lacinia. Aenean a mauris sed massa suscipit dignissim. Maecenas egestas ante nec lacus consequat porta. Aenean dignissim, sem ac viverra auctor, arcu quam egestas justo, nec imperdiet sem nisl quis augue. Duis vel ipsum orci, id congue enim. Donec elementum est vitae lorem elementum dignissim. Sed lectus diam, vehicula eget consequat quis, varius ac tellus. Aliquam tristique tincidunt libero pellentesque imperdiet. Praesent id turpis et purus molestie suscipit.
-
-Aenean at ipsum elit, id ultrices justo. Fusce non felis diam, eget fringilla quam. Aliquam lobortis diam ut urna cursus in rutrum quam pellentesque. In hac habitasse platea dictumst. Donec massa nisi, posuere eu porttitor nec, dictum bibendum ligula. In a tortor ac velit egestas commodo at at eros. Aliquam rhoncus luctus nunc, sed feugiat ante ultrices in.
-
-Duis a consectetur ante. Nam tempus cursus ultrices. Maecenas auctor semper justo, nec vestibulum lectus dictum sed. Nam luctus sodales magna, volutpat dictum ante tincidunt at. Donec ultricies eleifend nibh quis venenatis. Morbi venenatis luctus purus at posuere. Nullam dictum tincidunt arcu, a dictum nisi condimentum non. Pellentesque metus ligula, tincidunt at auctor ac, consequat in urna. Donec nibh neque, adipiscing vitae vehicula id, sodales vel tortor. Phasellus vulputate, sem eget tincidunt tristique, arcu orci suscipit est, sed porta est turpis ac felis. Donec velit lectus, facilisis eu auctor eget, imperdiet vitae justo. Nullam venenatis massa ut diam semper sagittis. Ut sit amet tellus sapien, ac cursus velit. In blandit nibh fringilla leo dictum semper.
 \end{abstract}
 
 \tableofcontents
@@ -208,8 +202,12 @@ Duis a consectetur ante. Nam tempus cursus ultrices. Maecenas auctor semper just
 
 \newpage
 
-%\printnomenclature
+\singlespacing
+
+\printnomenclature[3cm]
 %\printindex
+
+\doublespacing
 
 \renewcommand{\bibname}{References}
 \addcontentsline{toc}{chapter}{\bibname} 

@@ -13,7 +13,8 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage[pdftex,breaklinks=true,citecolor=black,linkcolor=black,urlcolor=black, colorlinks=true,baseurl=http://]{hyperref}
-\usepackage{nomencl}
+\usepackage[intoc]{nomencl}
+\makenomenclature
 \usepackage{makeidx}
 \usepackage{multirow}
 \usepackage{array}
@@ -37,6 +38,10 @@
 {\vfill\null}
 
 \makeatletter
+
+
+\renewcommand{\nomname}{List of Abbreviations}
+\renewcommand{\nomlabel}[1]{\textbf{#1}}
 
 \def\qualification#1{\def\@qualification{#1}}
 \def\university#1{\def\@university{#1}}
@@ -162,7 +167,6 @@
 \hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups}
 \bibliographystyle{unsrtPLoS-Biology}
 
-\makenomenclature
 \makeindex
 
 \begin{document}
@@ -199,8 +203,12 @@
 
 \newpage
 
-%\printnomenclature
+\singlespacing
+
+\printnomenclature[3cm]
 %\printindex
+
+\doublespacing
 
 \renewcommand{\bibname}{References}
 \addcontentsline{toc}{chapter}{\bibname} 

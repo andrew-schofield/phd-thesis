@@ -98,10 +98,10 @@ ReadWrite=true
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=3
+column=71
 encoding=UTF-8
 highlight=LaTeX
-line=46
+line=57
 mode=LaTeX
 open=true
 order=2
@@ -118,10 +118,10 @@ order=3
 
 [item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 archive=true
-column=775
+column=29
 encoding=UTF-8
 highlight=LaTeX
-line=30
+line=3
 mode=LaTeX
 open=true
 order=6
@@ -138,60 +138,60 @@ order=1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=775
+column=25
 encoding=UTF-8
 highlight=LaTeX
-line=31
+line=2
 mode=LaTeX
 open=true
 order=7
 
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=160
+column=25
 encoding=UTF-8
 highlight=LaTeX
-line=65
+line=2
 mode=LaTeX
 open=true
 order=5
 
 [item:07-nitritereduction/nitritereduction.tex]
 archive=true
-column=775
+column=25
 encoding=UTF-8
 highlight=LaTeX
-line=124
+line=2
 mode=LaTeX
 open=true
 order=4
 
 [item:08-expression/expression.tex]
 archive=true
-column=775
+column=25
 encoding=UTF-8
 highlight=LaTeX
-line=31
+line=2
 mode=LaTeX
 open=true
 order=9
 
 [item:09-completedmodel/completedmodel.tex]
 archive=true
-column=775
+column=29
 encoding=UTF-8
 highlight=LaTeX
-line=19
+line=0
 mode=LaTeX
 open=true
 order=8
 
 [item:Thesis.tex]
 archive=true
-column=24
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=155
+line=16
 mode=LaTeX
 open=true
 order=0
@@ -207,41 +207,41 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=3
-CursorLine=46
+CursorColumn=71
+CursorLine=57
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=65
 CursorLine=67
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
-CursorColumn=775
-CursorLine=30
+CursorColumn=29
+CursorLine=3
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
 CursorColumn=230
 CursorLine=98
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=775
-CursorLine=31
+CursorColumn=25
+CursorLine=2
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=160
-CursorLine=65
+CursorColumn=25
+CursorLine=2
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
-CursorColumn=775
-CursorLine=124
+CursorColumn=25
+CursorLine=2
 
 [view-settings,view=0,item:08-expression/expression.tex]
-CursorColumn=775
-CursorLine=31
+CursorColumn=25
+CursorLine=2
 
 [view-settings,view=0,item:09-completedmodel/completedmodel.tex]
-CursorColumn=775
-CursorLine=19
+CursorColumn=29
+CursorLine=0
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=24
-CursorLine=155
+CursorColumn=0
+CursorLine=16
