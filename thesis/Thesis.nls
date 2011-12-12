@@ -3,41 +3,41 @@
  \nomgroup{A}
 
   \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{12}
+		\nompageref{13}
   \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
-		\nompageref{12}
+		\nompageref{13}
   \item [{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}
-		\nompageref{19}
-  \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
-		\nompageref{20}
-  \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
-		\nompageref{10}
-  \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
-		\nompageref{13}
-  \item [{MHB}]\begingroup Muller-Hinton Broth\nomeqref {2.0}
-		\nompageref{19}
-  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
-		\nompageref{13}
-  \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
-		\nompageref{13}
-  \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
-		\nompageref{13}
-  \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}
 		\nompageref{21}
-  \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{13}
-  \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
+  \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
+		\nompageref{22}
+  \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
+		\nompageref{11}
+  \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
 		\nompageref{14}
-  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{20}
+  \item [{MHB}]\begingroup Muller-Hinton Broth\nomeqref {2.0}
+		\nompageref{21}
+  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
+		\nompageref{14}
+  \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
+		\nompageref{14}
+  \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
+		\nompageref{14}
+  \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}
+		\nompageref{23}
+  \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
+		\nompageref{14}
+  \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
+		\nompageref{15}
+  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{22}
   \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.0}
-		\nompageref{16}
+		\nompageref{18}
   \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.0}
-		\nompageref{16}
+		\nompageref{18}
   \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
-		\nompageref{19}
+		\nompageref{21}
   \item [{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}
-		\nompageref{18}
+		\nompageref{20}
   \item [{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}
-		\nompageref{18}
+		\nompageref{20}
 
 \end{thenomenclature}

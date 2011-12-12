@@ -196,7 +196,7 @@ order=6
 
 [item:Thesis.tex]
 archive=true
-column=51
+column=40
 encoding=UTF-8
 highlight=LaTeX
 line=194
@@ -261,7 +261,7 @@ CursorColumn=29
 CursorLine=0
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=51
+CursorColumn=40
 CursorLine=194
 
 [view-settings,view=0,item:appendix/appendix.tex]
