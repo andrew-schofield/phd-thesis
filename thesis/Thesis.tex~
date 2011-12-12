@@ -41,6 +41,7 @@
 
 
 \renewcommand{\nomname}{List of Abbreviations}
+\renewcommand{\nomlabel}[1]{\textbf{#1}}
 
 \def\qualification#1{\def\@qualification{#1}}
 \def\university#1{\def\@university{#1}}
@@ -137,6 +138,7 @@
 \newcommand{\cNtwoO}{\textrm{N}$_{\textrm{2}}$\textrm{O}}
 \newcommand{\Nm}{\textit{N. meningitidis}}
 \newcommand{\Nsm}{\textit{Neisseria meningitidis}}
+\newcommand{\cbbthree}{\textit{cbb$_{\textrm{3}}$}}
 \geometry{a4paper,left=40mm,right=20mm, top=25mm, bottom=25mm}
 
 \renewcommand{\topfraction}{0.85}
@@ -165,6 +167,7 @@
 
 \hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups}
 \bibliographystyle{unsrtPLoS-Biology}
+\mathchardef\mhyphen="2D
 
 \makeindex
 
@@ -197,8 +200,8 @@
 \include{./08-expression/expression}
 \include{./09-completedmodel/completedmodel}
 
+\include{./appendix/appendix}
 \backmatter
-\chapter{Appendix}
 
 \newpage
 

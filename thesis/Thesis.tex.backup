@@ -1,4 +1,4 @@
-\documentclass[a4paper,twoside,openany,11pt]{book}
+\documentclass[a4paper,oneside,openright,12pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -6,7 +6,6 @@
 \usepackage[numbers,sort&compress,super,sectionbib]{natbib}
 \usepackage{url}
 \usepackage{program}
-\usepackage{palatcm}
 \usepackage{engord}
 \usepackage{titlesec}
 \usepackage[english]{babel}
@@ -14,10 +13,22 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage[pdftex,breaklinks=true,citecolor=black,linkcolor=black,urlcolor=black, colorlinks=true,baseurl=http://]{hyperref}
-\usepackage{nomencl}
+\usepackage[intoc]{nomencl}
+\makenomenclature
 \usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
 
-\newcommand{\captionfonts}{\footnotesize}
+\definecolor{dark-gray}{gray}{0.5}
+
+\usepackage{mathpazo}
+\linespread{1.05}        % Palatino needs more leading
+\usepackage[scaled=0.87]{berasans}
+\usepackage[scaled=0.87]{beramono}
+
+\newcommand{\captionfonts}{\small}
 \titleformat{\section}{\small\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\small\bfseries}{\thesubsection}{1em}{}
 
@@ -27,6 +38,10 @@
 {\vfill\null}
 
 \makeatletter
+
+
+\renewcommand{\nomname}{List of Abbreviations}
+\renewcommand{\nomlabel}[1]{\textbf{#1}}
 
 \def\qualification#1{\def\@qualification{#1}}
 \def\university#1{\def\@university{#1}}
@@ -118,11 +133,12 @@
 
 \makeatother
 \newcommand{\cNO}{\textrm{NO}}
-\newcommand{\cNitrite}{\textrm{NO}$_{\textrm{2}}$$^{\textrm{-}}$}
+\newcommand{\cNitrite}{\textrm{NO}$_{\textrm{2}}$ $^{\textrm{-}}$}
 \newcommand{\cOxygen}{\textrm{O}$_{\textrm{2}}$}
 \newcommand{\cNtwoO}{\textrm{N}$_{\textrm{2}}$\textrm{O}}
 \newcommand{\Nm}{\textit{N. meningitidis}}
 \newcommand{\Nsm}{\textit{Neisseria meningitidis}}
+\newcommand{\cbb3}{\textit{cbb$_{\textrm{3}}$}}
 \geometry{a4paper,left=40mm,right=20mm, top=25mm, bottom=25mm}
 
 \renewcommand{\topfraction}{0.85}
@@ -139,8 +155,10 @@
 
 \pagestyle{fancy}
 \fancyhf{}
+\fancyhead[R]{\textcolor{dark-gray}{\slshape\leftmark}}
+%\fancyfoot[L]{\textbf{Andrew Schofield}}
 \fancyfoot[R]{\textbf{\thepage}}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
 \fancyfoot[R]{\textbf{\thepage}} % except the right
@@ -149,30 +167,29 @@
 
 \hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups}
 \bibliographystyle{unsrtPLoS-Biology}
+\mathchardef\mhyphen="2D
 
-\makenomenclature
 \makeindex
 
 \begin{document}
 
+\frontmatter
+\mainmatter
 \maketitle
 
 \cleardoublepage
 
-\frontmatter
 \begin{abstract}
- 
 \end{abstract}
 
 \tableofcontents
 \listoffigures
 \listoftables
 
-\onehalfspacing
+\doublespacing
 
 \chapter*{Acknowledgements}
 
-\mainmatter
 \include{./01-introduction/introduction}
 \include{./02-materialsmethods/materialsandmethods}
 \include{./03-parameterestimationmethodologies/parameterestimationmethodologies}
@@ -183,17 +200,21 @@
 \include{./08-expression/expression}
 \include{./09-completedmodel/completedmodel}
 
+\include{./appendix/appendix}
 \backmatter
-\chapter{Appendix}
 
 \newpage
 
-\printnomenclature
+\singlespacing
+
+\printnomenclature[3cm]
 %\printindex
+
+\doublespacing
 
 \renewcommand{\bibname}{References}
 \addcontentsline{toc}{chapter}{\bibname} 
 
-\bibliography{/home/uncle_fungus/Documents/Resources/Work/bibtex-references/phd_refs}
+\bibliography{../../../../Resources/Work/bibtex-references/phd_refs}
 
 \end{document}

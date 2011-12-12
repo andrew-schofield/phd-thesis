@@ -3,54 +3,58 @@ The top-level auxiliary file: Thesis.aux
 The style file: unsrtPLoS-Biology.bst
 A level-1 auxiliary file: ./01-introduction/introduction.aux
 A level-1 auxiliary file: ./02-materialsmethods/materialsandmethods.aux
-A level-1 auxiliary file: ./03-parameterestimationmethodologies/parameterestimationmethodologies.aux
 A level-1 auxiliary file: ./04-model/modelconstructionandparameters.aux
+A level-1 auxiliary file: ./03-parameterestimationmethodologies/parameterestimationmethodologies.aux
 A level-1 auxiliary file: ./05-oxygenreduction/oxygenreduction.aux
 A level-1 auxiliary file: ./06-noreduction/noreduction.aux
 A level-1 auxiliary file: ./07-nitritereduction/nitritereduction.aux
 A level-1 auxiliary file: ./08-expression/expression.aux
 A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
+A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: ../../../../Resources/Work/bibtex-references/phd_refs.bib
+Warning--entry type for "Hunter2007" isn't style-file defined
+--line 1077 of file ../../../../Resources/Work/bibtex-references/phd_refs.bib
 Warning--can't use both author and editor fields in cavaliere_modeling_2006
-You've used 39 entries,
+Warning--can't use both author and editor fields in WilliamH.Press1992
+You've used 47 entries,
             2955 wiz_defined-function locations,
-            966 strings with 15525 characters,
-and the built_in function-call counts, 41601 in all, are:
-= -- 4071
-> -- 1490
-< -- 27
-+ -- 744
-- -- 408
-* -- 3526
-:= -- 5646
-add.period$ -- 78
-call.type$ -- 39
-change.case$ -- 214
-chr.to.int$ -- 51
-cite$ -- 40
-duplicate$ -- 3253
-empty$ -- 3407
-format.name$ -- 542
-if$ -- 8834
+            1033 strings with 17827 characters,
+and the built_in function-call counts, 50694 in all, are:
+= -- 4957
+> -- 1828
+< -- 30
++ -- 916
+- -- 501
+* -- 4314
+:= -- 6885
+add.period$ -- 93
+call.type$ -- 47
+change.case$ -- 260
+chr.to.int$ -- 62
+cite$ -- 49
+duplicate$ -- 3964
+empty$ -- 4153
+format.name$ -- 659
+if$ -- 10767
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 381
-newline$ -- 124
-num.names$ -- 161
-pop$ -- 858
+missing$ -- 459
+newline$ -- 148
+num.names$ -- 193
+pop$ -- 1020
 preamble$ -- 1
-purify$ -- 205
+purify$ -- 249
 quote$ -- 0
-skip$ -- 852
+skip$ -- 1044
 stack$ -- 0
-substring$ -- 4639
-swap$ -- 863
+substring$ -- 5693
+swap$ -- 1028
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 342
-warning$ -- 1
-while$ -- 356
+type$ -- 411
+warning$ -- 2
+while$ -- 427
 width$ -- 0
-write$ -- 439
-(There was 1 warning)
+write$ -- 525
+(There were 3 warnings)

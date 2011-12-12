@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  5 OCT 2011 11:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  7 DEC 2011 15:36
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -501,36 +501,36 @@ Package: beramono 2004/01/31 (WaS)
 Writing index file Thesis.idx
 (./Thesis.aux (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
-(./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
 (./04-model/modelconstructionandparameters.aux)
+(./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
 (./05-oxygenreduction/oxygenreduction.aux) (./06-noreduction/noreduction.aux)
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
-(./09-completedmodel/completedmodel.aux))
+(./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 174.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 172.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 174.
 
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ppl.fd
@@ -590,7 +590,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 172.
+Package hyperref Info: Link coloring ON on input line 174.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -599,69 +599,69 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 172.
-LaTeX Info: Redefining \pageref on input line 172.
+LaTeX Info: Redefining \ref on input line 174.
+LaTeX Info: Redefining \pageref on input line 174.
  (./Thesis.out)
 (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
 \AtBeginShipoutBox=\box31
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 176
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 178
 .
  (/usr/share/texmf-texlive/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 176
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 178
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 176
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 178
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 176.
+(Font)              scaled to size 15.0049pt on input line 178.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 176.
+(Font)              scaled to size 8.33606pt on input line 178.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 176.
+(Font)              scaled to size 15.0049pt on input line 178.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 176.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 176
+(Font)              scaled to size 8.33606pt on input line 178.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 178
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 176.
+(Font)              scaled to size 9.37807pt on input line 178.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 176.
+(Font)              scaled to size 7.29405pt on input line 178.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 176.
+(Font)              scaled to size 9.37807pt on input line 178.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 176.
+(Font)              scaled to size 7.29405pt on input line 178.
  [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 180.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 182.
  [2
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 183.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 185.
  (./Thesis.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 28.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 29.
  [3
 
 ])
@@ -676,6 +676,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4] (./Thesis.lof
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 3.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 6.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -722,12 +726,12 @@ d ei-ther by the cy-tochrome
 pdfTeX warning: pdflatex (file ./01-introduction/data/Respiratory_layout.pdf): 
 PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 
-<./01-introduction/data/Respiratory_layout.pdf, id=507, 822.64383pt x 496.61919
+<./01-introduction/data/Respiratory_layout.pdf, id=518, 822.64383pt x 496.61919
 pt>
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
  <use ./01-introduction/data/Respiratory_layout.pdf> [13] [14 <./01-introductio
 n/data/Respiratory_layout.pdf>]
-<./01-introduction/data/regulation.pdf, id=554, 813.43903pt x 194.326pt>
+<./01-introduction/data/regulation.pdf, id=565, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf> [15 <./01-introduction/data/regulat
@@ -770,49 +774,92 @@ LaTeX Font Info:    Try loading font information for TS1+ppl on input line 31.
  (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [19] [20]
-<./02-materialsmethods/data/drawing.pdf, id=623, 517.13202pt x 416.75702pt>
+Overfull \hbox (2.50404pt too wide) in paragraph at lines 67--68
+\OT1/ppl/m/n/12 World Pre-ci-sion In-stru-ments). This is also a Clark type ele
+c-trode, con-tained within
+ []
+
+<./02-materialsmethods/data/drawing.pdf, id=633, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
 <use ./02-materialsmethods/data/drawing.pdf> [21] [22 <./02-materialsmethods/da
 ta/drawing.pdf>]) [23]
+\openout2 = `./04-model/modelconstructionandparameters.aux'.
+
+ (./04-model/modelconstructionandparameters.tex
+Chapter 3.
+[24
+
+
+
+] [25] [26] [27] [28] [29]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 156.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 156.
+ [30]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 166.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 166.
+
+Overfull \hbox (24.32532pt too wide) in paragraph at lines 167--171
+\OT1/ppl/m/n/12 Given $\OML/zplm/m/it/12 v \OT1/zplm/m/n/12 = []$ \OT1/ppl/m/n/
+12 Then at high $\OML/zplm/m/it/12 O[]$ \OT1/ppl/m/n/12 rate is: $\OML/zplm/m/i
+t/12 v \OT1/zplm/m/n/12 = [] = \OT1/ppl/m/n/12 37.4\OML/zplm/m/it/12 nmol[]min[
+]mg[] \OT1/zplm/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
+
+ []
+
+
+Overfull \hbox (15.12207pt too wide) in paragraph at lines 172--173
+[]\OT1/ppl/m/n/12 A value for $\OML/zplm/m/it/12 k[]$\OT1/ppl/m/n/12 , was cal-
+cu-lated by us-ing the $K[]$ value from \OT1/ppl/m/it/12 Pseu-domonas stutzeri$
+[]$\OT1/ppl/m/n/12 ,
+ []
+
+[31]
+Overfull \hbox (7.9392pt too wide) in paragraph at lines 189--190
+\OT1/ppl/m/n/12 This value is the ob-served elec-tron trans-fer rate be-tween t
+he equiv-a-lent cy-tochrome
+ []
+
+
+Overfull \hbox (4.87492pt too wide) in paragraph at lines 189--190
+\OT1/ppl/m/n/12 and ni-trite re-duc-tase from \OT1/ppl/m/it/12 Achro-mobac-ter 
+xy-losox-i-dans\OT1/ppl/m/n/12 . A value of $4.8 \OMS/zplm/m/n/12 ^^F \OT1/ppl/
+m/n/12 0.2\OML/zplm/m/it/12 ^^VM[]s[]$
+ []
+
+[32]
+Overfull \hbox (18.14053pt too wide) in paragraph at lines 208--209
+\OT1/ppl/m/n/12 Snyder et al.$[]$$[]$$[]$ showed by re-duc-ing yeast cy-tochrom
+e $[][]$ by us-ing $25\OML/zplm/m/it/12 ^^V\OT1/ppl/m/n/12 M$ menaquinol
+ []
+
+[33]) [34]
 \openout2 = `./03-parameterestimationmethodologies/parameterestimationmethodolo
 gies.aux'.
 
 
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.tex
-Chapter 3.
-) [24
-
-
-
-]
-\openout2 = `./04-model/modelconstructionandparameters.aux'.
-
- (./04-model/modelconstructionandparameters.tex
 Chapter 4.
-[25
+) [35
 
 
 
 ]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 21.
-
-[26] [27]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 68.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 76.
-
-[28]) [29]
 \openout2 = `./05-oxygenreduction/oxygenreduction.aux'.
 
  (./05-oxygenreduction/oxygenreduction.tex
 Chapter 5.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1.
-) [30
+) [36
 
 
 
@@ -841,7 +888,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
 
-) [31
+) [37
 
 
 
@@ -898,7 +945,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-) [32
+) [38
 
 
 
@@ -906,12 +953,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Overfull \vbox (25.93037pt too high) has occurred while \output is active []
 
 
-[33]
+[39]
 \openout2 = `./08-expression/expression.aux'.
 
  (./08-expression/expression.tex
 Chapter 8.
-) [34
+) [40
 
 
 
@@ -920,15 +967,20 @@ Chapter 8.
 
  (./09-completedmodel/completedmodel.tex
 Chapter 9.
-) [35
+) [41
 
 
 
-] [36
+]
+\openout2 = `./appendix/appendix.aux'.
+
+ (./appendix/appendix.tex
+Appendix A.
+) [42
 
 
 
-] (./Thesis.nls
+] [43] (./Thesis.nls
 Underfull \hbox (badness 10000) detected at line 5
 []\OT1/ppl/b/n/12 AniA[]
  []
@@ -950,96 +1002,84 @@ Underfull \hbox (badness 10000) detected at line 11
 
 
 Underfull \hbox (badness 10000) detected at line 13
-[]\OT1/ppl/b/n/12 CFU[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 15
 []\OT1/ppl/b/n/12 CSF[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 17
+Underfull \hbox (badness 10000) detected at line 15
 []\OT1/ppl/b/n/12 FNR[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 19
+Underfull \hbox (badness 10000) detected at line 17
 []\OT1/ppl/b/n/12 MHB[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 19
 []\OT1/ppl/b/n/12 NADH[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 23
+Underfull \hbox (badness 10000) detected at line 21
 []\OT1/ppl/b/n/12 NarP[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 25
+Underfull \hbox (badness 10000) detected at line 23
 []\OT1/ppl/b/n/12 NarQ[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 27
+Underfull \hbox (badness 10000) detected at line 25
 []\OT1/ppl/b/n/12 NED[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 29
+Underfull \hbox (badness 10000) detected at line 27
 []\OT1/ppl/b/n/12 NorB[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 31
+Underfull \hbox (badness 10000) detected at line 29
 []\OT1/ppl/b/n/12 NsrR[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 33
+Underfull \hbox (badness 10000) detected at line 31
 []\OT1/ppl/b/n/12 OD[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 34
-[]\OT1/ppl/b/n/12 OD[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 35
+Underfull \hbox (badness 10000) detected at line 32
 []\OT1/ppl/b/n/12 ODE[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 34
 []\OT1/ppl/b/n/12 PDE[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 39
+Underfull \hbox (badness 10000) detected at line 36
 []\OT1/ppl/b/n/12 rpm[]
  []
 
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 41.
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 38
 []\OT1/ppl/b/n/12 spc$[]$[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 43
+Underfull \hbox (badness 10000) detected at line 40
 []\OT1/ppl/b/n/12 tet$[]$[]
  []
 
-) (./Thesis.bbl [37
+) (./Thesis.bbl [44
 
-] [38
+
+
+] [45
 
 ]
 Underfull \hbox (badness 1881) in paragraph at lines 93--95
@@ -1047,43 +1087,44 @@ Underfull \hbox (badness 1881) in paragraph at lines 93--95
 de
  []
 
-[39] [40]
+[46] [47]
 Underfull \hbox (badness 1107) in paragraph at lines 150--152
 \OT1/ppl/m/n/12 the Liv-er-more Solver for Or-di-nary Dif-fer-en-tial Equa-tion
 s. Tech. rep.,
  []
 
-[41]
+[48]
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no   in font pplr7t!
-) [42] (./Thesis.aux (./01-introduction/introduction.aux)
+ [49]) [50] (./Thesis.aux (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
-(./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
 (./04-model/modelconstructionandparameters.aux)
+(./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
 (./05-oxygenreduction/oxygenreduction.aux) (./06-noreduction/noreduction.aux)
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
-(./09-completedmodel/completedmodel.aux)) ) 
+(./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 8197 strings out of 495039
- 114736 string characters out of 1182024
- 194487 words of memory out of 3000000
- 10902 multiletter control sequences out of 15000+50000
- 64616 words of font info for 176 fonts, out of 3000000 for 9000
+ 8274 strings out of 495039
+ 115883 string characters out of 1182024
+ 198491 words of memory out of 3000000
+ 10945 multiletter control sequences out of 15000+50000
+ 68930 words of font info for 186 fonts, out of 3000000 for 9000
  38 hyphenation exceptions out of 8191
- 38i,16n,51p,1373b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/
-dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-texlive/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-texlive/fonts
-/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-texlive/fonts/type1/urw/pal
-atino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb
-></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texm
-f-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/t
-ype1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (42 pages, 362074 bytes).
+ 38i,16n,48p,1320b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/shar
+e/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texm
+f-texlive/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-texlive/font
+s/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palat
+ino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-
+texlive/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Thesis.pdf (50 pages, 399365 bytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
- 171 named destinations out of 1000 (max. 500000)
- 576 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 891 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
+ 584 words of extra memory for PDF output out of 10000 (max. 10000000)
 
