@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 DEC 2011 11:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 DEC 2011 11:06
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -743,13 +743,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
 [8
 
 
-] [9] [10] [11]
-Overfull \hbox (2.791pt too wide) in paragraph at lines 58--59
-\OT1/ppl/m/n/12 pool that ex-ists within the bac-te-ria. Ubiquinol is ox-i-dise
-d ei-ther by the cy-tochrome
- []
-
-[12]
+] [9] [10] [11] [12]
 <./01-introduction/data/Respiratory_layout.pdf, id=518, 822.64383pt x 496.61919
 pt>
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
@@ -850,30 +844,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
-
-Overfull \hbox (15.12207pt too wide) in paragraph at lines 172--173
-[]\OT1/ppl/m/n/12 A value for $\OML/zplm/m/it/12 k[]$\OT1/ppl/m/n/12 , was cal-
-cu-lated by us-ing the $K[]$ value from \OT1/ppl/m/it/12 Pseu-domonas stutzeri$
-[]$\OT1/ppl/m/n/12 ,
- []
-
-[31]
-Overfull \hbox (7.9392pt too wide) in paragraph at lines 189--190
-\OT1/ppl/m/n/12 This value is the ob-served elec-tron trans-fer rate be-tween t
-he equiv-a-lent cy-tochrome
- []
-
-
-Overfull \hbox (4.87492pt too wide) in paragraph at lines 189--190
-\OT1/ppl/m/n/12 and ni-trite re-duc-tase from \OT1/ppl/m/it/12 Achro-mobac-ter 
-xy-losox-i-dans\OT1/ppl/m/n/12 . A value of $4.8 \OMS/zplm/m/n/12  \OT1/ppl/m/
-n/12 0.2\OML/zplm/m/it/12 M[]s[]$
- []
-
-[32]
-Overfull \hbox (18.14053pt too wide) in paragraph at lines 208--209
-\OT1/ppl/m/n/12 Snyder et al.$[]$$[]$$[]$ showed by re-duc-ing yeast cy-tochrom
-e $[][]$ by us-ing $25\OML/zplm/m/it/12 \OT1/ppl/m/n/12 M$ menaquinol
+[31] [32]
+Overfull \hbox (4.76085pt too wide) in paragraph at lines 208--209
+\OT1/ppl/m/n/12 qui-nol the rate con-stants were $7.9s[]$ for cy-to-chrome b, a
+nd $1.55 \OMS/zplm/m/n/12   \OT1/ppl/m/n/12 6.9 \OMS/zplm/m/n/12  \OT1/ppl/m/n
+/12 10[]M[]s[]$
  []
 
 [33]) [34]
@@ -1138,12 +1113,12 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: DAD6F4129AFDCD143A5B045958A16FDF;5281.
  ) 
 Here is how much of TeX's memory you used:
- 9064 strings out of 494045
- 132932 string characters out of 3145935
- 226785 words of memory out of 3000000
+ 9070 strings out of 494045
+ 132993 string characters out of 3145935
+ 226799 words of memory out of 3000000
  11854 multiletter control sequences out of 15000+200000
  68930 words of font info for 186 fonts, out of 3000000 for 9000
- 717 hyphenation exceptions out of 8191
+ 723 hyphenation exceptions out of 8191
  32i,16n,48p,1360b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
@@ -1157,7 +1132,7 @@ mri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb>
 gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (50 pages, 399469 bytes).
+Output written on Thesis.pdf (50 pages, 399487 bytes).
 PDF statistics:
  891 PDF objects out of 1000 (max. 8388607)
  192 named destinations out of 1000 (max. 500000)
