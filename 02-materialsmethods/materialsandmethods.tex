@@ -64,8 +64,7 @@ When performing experiments, 5ml of culture is added to the reaction chamber, wh
 Calibration of the oxygen electrode assumes that anaerobic water will not produce any measurable current at the electrode. Oxygen saturated water contains 210$\mu$M Oxygen (ref needed). 5ml of ultrapure water was added to the electrode chamber, and then aerated to saturation by use of a pasteur pipette. The maximum value recorded by the data logger then corresponds to a concentration of 210$\mu$M Oxygen, with the relationship between mV as recorded against concentration being linear.
 
 \section{Measuring Nitric Oxide Concentration}
-Nitric Oxide concentration was measured using a Nitric Oxide probe (ISO-NOP, World Precision Intruments) connected to a Nitric Oxide Meter (ISO-NO mkII, World Precision Instruments). The NO probe is inserted through one of the holes in the plastic lid of the reaction chamber of the oxygen electrode assembly. The tip of the electrode should be immersed in the culture, with care being taken not to trap any air bubbles on the surface of the probe. The sensor is also attached to the same data logger as above. In this way both Oxygen and Nitric Oxide concentrations can be measured in parallel.
-See also these papers: \citet{Liu2005} \citet{Bedioui2003} \citet{Serpe2007}.
+Nitric Oxide concentration was measured using a Nitric Oxide probe (ISO-NOP, World Precision Intruments) connected to a Nitric Oxide Meter (ISO-NO mkII, World Precision Instruments). This is also a Clark type electrode, contained within a steel sleeve with a semi-permeable membrane separating the working electrode from the system being measured\cite{Liu2005,Bedioui2003,Serpe2007}. The NO probe is inserted through one of the holes in the plastic lid of the reaction chamber of the oxygen electrode assembly. The tip of the electrode should be immersed in the culture, with care being taken not to trap any air bubbles on the surface of the probe. The sensor is also attached to the same data logger as above. In this way both Oxygen and Nitric Oxide concentrations can be measured in parallel.
 \subsection{Calibration of Nitric Oxide Electrode}
 Calibration of the nitric oxide electrode 
 
@@ -103,3 +102,6 @@ Similar to the setup described by \cite{Aga2008}.
  \item Remove needle and close sealing valve on saturated solution vessel.
  \item Clean up - allow 1-2 hours to allow reaction to finish. Sparge with N$_{\textrm{2}}$ to get rid of residual NO gas. Disassemble, wash in dH$_{\textrm{2}}$O and dry in oven.
 \end{itemize}
+
+\section{Solving Ordinary Differential Equations}
+An ordinary differential equation solver was written in Java utilising a 6th-order Runge-Kutta algorithm with adaptive step-size as described by \citet{WilliamH.Press1992}
