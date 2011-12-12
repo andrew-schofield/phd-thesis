@@ -7,8 +7,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces {\bf Oxygen Reduction in \textit {Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm {cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.}}{42}{figure.5.1}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces {\bf Nitric Oxide Reduction in \textit {Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset. The solved oxygen concentrations match the experimental dataset so closely as to be almost invisible.}}{44}{figure.6.1}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces {\textbf Nitrite Reduction in \textit {Neisseria meningitidis}.} This dataset shows the rate of nitrite reduction when cultures have been grown in microaerobic conditions. The concentrations of nitrite were measured offline leading to discontinuous data, however the solved output closely matches the experimental data for nitrite.}}{46}{figure.7.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{49}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -192,6 +192,15 @@ Aga RG, Hughes MN (2008) The Preparation and Purification of NO Gas and the Use
   Stress in Biological Systems. In: Poole RK, editor, Globins and Other Nitric
   Oxide-Reactive Proteins, Part A, vol. 436 of Methods in Enzymology, pp. 35 --
   48, Academic Press.
+
+\bibitem[{Butcher(2003)}]{Butcher2003}
+Butcher JC (2003) Numerical methods for ordinary differential equations. John
+  Wiley and Sons.
+
+\bibitem[{Cash and Karp(1990)}]{Cash1990}
+Cash JR, Karp AH (1990) A variable order Runge-Kutta method for initial value
+  problems with rapidly varying right-hand sides. ACM Trans Math Softw 16:
+  201--222.
 
 \bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
   Flannery}]{WilliamH.Press1992}
