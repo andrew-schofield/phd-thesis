@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
-The top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux
 The style file: unsrtPLoS-Biology.bst
 A level-1 auxiliary file: ./01-introduction/introduction.aux
 A level-1 auxiliary file: ./02-materialsmethods/materialsandmethods.aux
@@ -11,50 +10,9 @@ A level-1 auxiliary file: ./07-nitritereduction/nitritereduction.aux
 A level-1 auxiliary file: ./08-expression/expression.aux
 A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
-Database file #1: ../../../../Resources/Work/bibtex-references/phd_refs.bib
+Database file #1: phd_refs.bib
 Warning--entry type for "Hunter2007" isn't style-file defined
---line 1077 of file ../../../../Resources/Work/bibtex-references/phd_refs.bib
+--line 1077 of file phd_refs.bib
 Warning--can't use both author and editor fields in cavaliere_modeling_2006
 Warning--can't use both author and editor fields in WilliamH.Press1992
-You've used 47 entries,
-            2955 wiz_defined-function locations,
-            1033 strings with 17827 characters,
-and the built_in function-call counts, 50694 in all, are:
-= -- 4957
-> -- 1828
-< -- 30
-+ -- 916
-- -- 501
-* -- 4314
-:= -- 6885
-add.period$ -- 93
-call.type$ -- 47
-change.case$ -- 260
-chr.to.int$ -- 62
-cite$ -- 49
-duplicate$ -- 3964
-empty$ -- 4153
-format.name$ -- 659
-if$ -- 10767
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 459
-newline$ -- 148
-num.names$ -- 193
-pop$ -- 1020
-preamble$ -- 1
-purify$ -- 249
-quote$ -- 0
-skip$ -- 1044
-stack$ -- 0
-substring$ -- 5693
-swap$ -- 1028
-text.length$ -- 7
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 411
-warning$ -- 2
-while$ -- 427
-width$ -- 0
-write$ -- 525
 (There were 3 warnings)

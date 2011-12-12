@@ -23,7 +23,7 @@ The equation for describing \cNO \space concentration changes is more complex as
 \label{eq:no}
 \end{eqnarray}
 
-The synthesis of \cNO \space is modelled by $m_{1}$ which is the rate of \cNitrite \space reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite \space and reduced AniA ($A_a$). The reduction of \cNO \space requires $l_1$ which is the rate of reduction of \cNO \space by reduced (active) NorB. This depends on the concentration of \cNO \space and reduced NorB ($B_a$). Inhibition of \cbbthree~ by \cNO \space is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree~ by \cNO. $k_6$ is the rate of recovery of inhibited \cbbthree. $\gamma$ is the rate of spontaneous loss of \cNO \space from the electrode chamber.
+The synthesis of \cNO \space is modelled by $m_{1}$ which is the rate of \cNitrite \space reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite \space and reduced AniA ($A_a$). The reduction of \cNO \space requires $l_1$ which is the rate of reduction of \cNO \space by reduced (active) NorB. This depends on the concentration of \cNO \space and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO \space is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO. $k_6$ is the rate of recovery of inhibited \cbbthree. $\gamma$ is the rate of spontaneous loss of \cNO \space from the electrode chamber.
 
 The reduction of nitrite is modelled by this equation
 
@@ -57,7 +57,7 @@ Given that the concentration of active cytochromes changes, due to reduction by 
 \label{eq:cytochromes}
 \end{eqnarray}
 
-where $k_3$ is the rate of reduction of the cytochrome c oxygen reductase (\cbbthree) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree, reduced (active) \cbbthree~ and NO inhibited \cbbthree~ respectively. $m_3$ is the rate of reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes increases by their reduction by the quinone pool.
+where $k_3$ is the rate of reduction of the cytochrome c oxygen reductase (\cbbthree) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate of reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes increases by their reduction by the quinone pool.
 
 To model the changes in concentration of the individual enzymes, \cbbthree, AniA and NorB, the following equations are used:
 
@@ -69,7 +69,7 @@ To model the changes in concentration of the individual enzymes, \cbbthree, AniA
 \label{eq:active_cbb3}
 \end{eqnarray}
 
-This equation models the concentration of reduced (active) \cbbthree, and the following equation models the concentration of \cbbthree~ that has been inhibited by \cNO.
+This equation models the concentration of reduced (active) \cbbthree, and the following equation models the concentration of \cbbthree{} that has been inhibited by \cNO.
 
 \begin{eqnarray}
 &\frac{d[C_X]}{dt} = k_5[C_a][NO] - k_6 [C_X] \nonumber \\\nonumber \\
@@ -97,7 +97,7 @@ and reduced (active) NorB concentrations are modelled by this equation
 
 \subsection{Assumptions and their Justifications}
 I have made a number of assumptions regarding the kinetics and reactions taking place in the model.
-I have assumed that NO inhibits the reduced \cbbthree~ and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme. This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree~, but I believe this assumption still stands as the enzymes are of the same family.
+I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme. This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family.
 
 %Also, values are in the right ball park even though they are using aa3 rather than \cbbthree. $10^8 M ^{-1} s ^{-1}$ against around $50 \mu M ^{-1} s ^{-1}$.
 
@@ -164,14 +164,14 @@ Unknown at start of simulation. Assume close to zero, and certainly less than to
 
 \subsection*{Parameters}
 \subsubsection*{$\mathbf{k_1}$ {\bf- Rate of O$_{\textrm{2}}$ reduction by reduced \cbbthree}}
-\citet{Preisig1996} show that \textit{B. japonicum} \cbbthree~ (\textit{fixNOQP}) has a $K_m$ of $55.7 \pm 24.2$ nM $\mathrm{O}_2$, and $V_{max}$ $37.4 \pm 9.2$ $\mathrm{nmol O}_2 \mathrm{min}^{-1} \mathrm{mg}^{-1}$.\\
+\citet{Preisig1996} show that \textit{B. japonicum} \cbbthree{} (\textit{fixNOQP}) has a $K_m$ of $55.7 \pm 24.2$ nM $\mathrm{O}_2$, and $V_{max}$ $37.4 \pm 9.2$ $\mathrm{nmol O}_2 \mathrm{min}^{-1} \mathrm{mg}^{-1}$.\\
 Given $v = \frac{V_{max}[S]}{K_m+[S]}$
 Then at high $O_2$ rate is:
 $v = \frac{37.4\times 100,000}{55.7+100,000} = 37.4nmol^{-1}min{-1}mg{-1} = 0.000622986\mu mol^{-1}s{-1}mg{-1}$\\
 
 A value for $k_1$, was calculated by using the $\mathrm{K}_{cat}$ value from \textit{Pseudomonas stutzeri}\cite{Forte2001}, and the $\textrm{k}_m$ value from \textit{Neisseria lactamica}\cite{Hunter2007}, which are $166s^{-1}$ and $0.4\mu M$ respectively. $k_1$ can be calculated as $\frac{166s^{-1}}{0.4\mu M} = 415\mu M^{-1} s^{-1}$.
 
-\subsubsection*{$\mathbf{k_3}$ {\bf- Rate of \cbbthree~ reduction by cytochrome pool}}
+\subsubsection*{$\mathbf{k_3}$ {\bf- Rate of \cbbthree{} reduction by cytochrome pool}}
 This was calculated from values obtained from the maximum reduction rate of \textit{cbb$_{\textrm{3}}$} by cytochrome $c_4$ in \textit{Vibrio cholerae}\cite{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. I assume that 1 electron equals 1 reduction of \textit{cbb$_{\textrm{3}}$}, thus the rate of reduction of \textit{cbb$_{\textrm{3}}$} by cytochromes is $\frac{300s^{-1}}{100\mu M} = 3\mu M^{-1} s^{-1}$.
 
 \subsubsection*{$\mathbf{l_1}$ {\bf- Rate of NO reduction by reduced NorB}}
@@ -188,7 +188,7 @@ Benchmark estimate is somewhere around about $1\mu M^{-1}s^{-1}$.
 \subsubsection*{$\mathbf{m_3}$ {\bf- Rate of AniA reduction by cytochrome pool}}
 This value is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2 \mu M^{-1}s^{-1}$ was observed during stopped-flow experiments\cite{Nojiri2009}.
 
-\subsubsection*{$\mathbf{k_5}$ {\bf- Rate of \cbbthree~ inhibition by NO}}
+\subsubsection*{$\mathbf{k_5}$ {\bf- Rate of \cbbthree{} inhibition by NO}}
 \citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate they calculated was $10^8 M ^{-1} s ^{-1}$. I assume that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree as it is of the same family.
 
 \subsubsection*{$\mathbf{k_6}$ {\bf- Rate of recovery of NO inhibited \cbbthree}}
@@ -224,5 +224,5 @@ No idea, probably need to guess based on cell volume (0.6-1.0um diameter, no use
 
 \subsubsection*{$\mathbf{C}$ {\bf- Concentration of \cbbthree}}
 No idea, probably need to guess based on cell volume (0.6-1.0um diameter, no useful ref), 10\% of cell volume being membrane, and number of proteins in membrane.\\
-\cbbthree~ is probably 0.1-1\% of cell protein. 10\% of cell is membrane.
+\cbbthree{} is probably 0.1-1\% of cell protein. 10\% of cell is membrane.
 $15\mu g$ in 5ml based on numbers from Q above. \cbbthree is approximately 100KDa in molecular weight. Converting to molarity gives a concentration of approximately 30nM.
