@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 DEC 2011 10:26
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 DEC 2011 10:57
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -1146,11 +1146,11 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  9064 strings out of 494045
  132932 string characters out of 3145935
- 226779 words of memory out of 3000000
+ 226785 words of memory out of 3000000
  11854 multiletter control sequences out of 15000+200000
  68930 words of font info for 186 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 32i,16n,48p,1358b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,16n,48p,1360b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
@@ -1163,7 +1163,7 @@ mri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb>
 gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (50 pages, 399406 bytes).
+Output written on Thesis.pdf (50 pages, 399402 bytes).
 PDF statistics:
  891 PDF objects out of 1000 (max. 8388607)
  192 named destinations out of 1000 (max. 500000)
