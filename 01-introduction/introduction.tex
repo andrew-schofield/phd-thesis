@@ -1,7 +1,7 @@
 \chapter{Introduction}
 
 \section{Biology and Pathology of \Nsm{}}
-\Nsm{} is a Gram-negative, bean-shaped diplococcal bacteria \cite{MarcelvanDeuren01012000}, surrounded by a lipid membrane containing outer membrane proteins and lipopolysaccharides \cite{MarcelvanDeuren01012000}. When pathogenic, the bacteria also has a polysaccharide capsule attached to the membrane \cite{MarcelvanDeuren01012000}. It is non-spore forming, non-motile but piliated, and lives as a parasite, with humans being its only host \cite{Stephens2009B71}. \Nm{} inhabits the mucosal membranes primarily in the respiratory tract, and it is estimated that up to 20-25\% of the population have this bacteria in their nasopharynx while being asymptomatic \cite{NancyE.Rosenstein05032001,Stephens2009B71,IWDeVoe06011982}.
+\Nsm{} is a Gram-negative, bean-shaped diplococcal bacteria \cite{MarcelvanDeuren01012000}, surrounded by a lipid membrane containing outer membrane proteins and lipopolysaccharides \cite{MarcelvanDeuren01012000}. When pathogenic, the bacteria also has a polysaccharide capsule attached to the membrane \cite{MarcelvanDeuren01012000}. It is non-spore forming, non-motile but piliated, and lives as an obligate human pathogen (humans being its only host) \cite{Stephens2009B71}. \Nm{} inhabits the mucosal membranes primarily in the respiratory tract, and it is estimated that up to 20-25\% of the population have this bacteria in their nasopharynx while being asymptomatic \cite{NancyE.Rosenstein05032001,Stephens2009B71,IWDeVoe06011982}.
 
 The \textit{Neisseria} genus contains a number of non-pathogenic species which are part of the normal human flora including \textit{N. subflava},  \textit{N. flavescens} and \textit{N. lactamica}. Two species of \textit{Neisseria} are the causative agents of human diseases, \Nm{}, which causes bacterial meningitis and \textit{N. gonorrhoea} which causes gonorrhoea. Being $\beta$-proteobacteria \cite{Stephens2009B71}, the \textit{Neisseria} genus is also related to a number of other pathogenic bacteria including \textit{Bordetella} and \textit{Burkholderia}. This taxa also includes nitrogen-fixing bacteria such as \textit{Nitrosomonas} \cite{Madigan2005}.
 
@@ -29,11 +29,11 @@ In most cases the treatment for meningococcal meningitis is with antibiotics, wh
 
 \textit{In vivo}, nitrite is obtained as a product of digesting nitrate in food. There are a number of nitrate reducing enzymes present in the mouth and pharynx responsible for this \cite{Rock2005}. Nitrite is also created by oxidation of nitric oxide, which is produced as a host signalling molecule and as a toxin as part of the host immune response \cite{Lundberg2004,Rock2005}.
 
-The respiratory pathway for reducing nitrite in \Nm{} involves two steps; nitrite is reduced to nitric oxide, which is then further reduced to nitrous oxide. This represents incomplete reduction, as a further reduction step would reduce nitrous oxide to dinitrogen gas \cite{Rock2005,Deeudom2006}.
+The respiratory pathway for reducing nitrite in \Nm{} involves two steps; nitrite is reduced to nitric oxide, which is then further reduced to nitrous oxide. This represents incomplete reduction, as a further reduction step is possible, reducing nitrous oxide to dinitrogen gas \cite{Rock2005,Deeudom2006}.
 
 Reduction of oxygen is favourable over nitrite reduction due to the redox potential differences. The redox potential of \cOxygen{}/H$_{\textrm{2}}$O is $+820mV$, \cNitrite{} /\cNO{} is $+348mV$, thus \cOxygen{} has a higher tendency to acquire electrons resulting in a electrochemically favourable reaction \cite{Deeudom2007}. The electron flow towards the oxidase is also preferred physiologically as it liberates more energy by virtue of the translocation of more protons than the reduction of nitrite. The translocated protons are ultimately used in the synthesis of ATP\nomenclature{ATP}{Adenosine triphosphate} molecules for energy. This results in reduction of oxygen in preference to nitrite when both are present (in most cases).
 
-Reduction of oxygen in \Nm{} is carried out by the oxygen reductase (oxidase) cytochrome \cbbthree{}, a membrane-bound heme-copper oxidase \cite{Preisig1996}. \cbbthree{} is capable of binding oxygen and nitric oxide, which means that during nitrite reduction (denitrification), the oxidase can be competitively inhibited (chemically) by the intermediate product of denitrification. \cbbthree{} can be permanently damaged at high concentrations of \cNO{} and \cOxygen{}, as they can both bind at the \cbbthree{} active site and react together to form peroxynitrite \cite{Brown1994295,Sharpe1998,MunaF.Anjum06012002}.
+Reduction of oxygen in \Nm{} is carried out by the oxygen reductase cytochrome \cbbthree{} oxidase, a membrane-bound heme-copper oxidase \cite{Preisig1996}. \cbbthree{} is capable of binding oxygen and nitric oxide, which means that during nitrite reduction (denitrification), the oxidase can be competitively inhibited (chemically) by the intermediate product of denitrification. \cbbthree{} can be permanently damaged at high concentrations of \cNO{} and \cOxygen{}, as they can both bind at the \cbbthree{} active site and react together to form peroxynitrite \cite{Brown1994295,Sharpe1998,MunaF.Anjum06012002}.
 
 Nitrite is reduced by the nitrite reductase AniA\nomenclature{AniA}{Anaerobically inducible protein A from \textit{Neisseria} sp.}, which is a copper containing reductase. This reduction does not involve translocation of protons, and thus does not produce any useable energy. Nitrite is reduced to nitric oxide which can then be further reduced by a nitric oxide reductase NorB. Since \Nm{} is capable of reducing nitric oxide, a host toxin, directly, this may help it defend itself against part of the host immune response \cite{Heurlier2008,Rock2005} as has been shown in tissue culture by \citet{MunaF.Anjum06012002}.
 
@@ -96,8 +96,10 @@ This complicated set of regulatory relationships between the different component
 \subsection{Quinone Pool}
 
 \section{Organisation of Respiratory Chains in Other Bacteria}
+The model organism \textit{Escherichia coli} has a more complex and unusual respiratory chain than \Nm{} yet it has not been modelled.
 
 \section{Systems Biology}
+A systems biology approach to understanding the mechanism of respiration in \Nsm{} is necessary as there are a number of components in the system which are inherently unmeasurable.
 
 \section{Modelling}
 
@@ -114,3 +116,9 @@ Complications arise when using differential equations if the processes are consi
 \subsection{Modelling Tools}
 
 A number of software packages exist that are capable of this type of modeling such as the Systems Biology Workbench \cite{Sauro2003} and COPASI \cite{StefanHoops12152006}. These allow you to enter biochemical reactions in a format familiar to biologists, and have pre-defined libraries for types of reactions such as mass-action, or one with Michaelas-Menton kinetics etc. The mathematical equations are then derived automatically from the reactions and can be modified by hand if necessary. Parameters for the mathematical equations must be entered, and these will usually be derived from experimental data, or in some cases educated guesses (at least initially). Once a parameter set has been created, the modelling software can run a time-course using a relevant solver-algorithm. COPASI includes 4 solvers,  LSODA (Livermore Solver for Ordinary Differential Equations) \cite{RH93} for deterministic systems (such as ODEs), Gibson-Bruck \cite{Gibson2000} for stochastic systems and Runge-Kutta and LSODA for hybrid systems (where portions are not considered to be stochastic).
+
+\subsection{Aims}
+The layout of \Nm{} respiratory chain, even though longer than that of the model organism \textit{Escherichia coli} is more similar to other bacteria. This, along with its profound medical important make it an excellent target for mathematical modelling.
+
+The oxidation states of the respiratory enzymes are particularly difficult to obtain in an \textit{in vivo} study. Therefore I have integrated microbiological techniques with mathematical modelling principles to allow us to understand the system in a way previously not possible.
+I have constructed a mathematical model which describes \Nsm{} respiration \textit{in silico} and can produce predictions for the system \textit{in vivo}. To parametrise this model I used a novel integrative scheme where a standard Bayesian ditting methodology is interleaved with interative experimental data collection on progressively more complex respiratory scenarios.

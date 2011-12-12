@@ -2,3 +2,15 @@
 \section{Simulated Annealing}
 \section{Approximate Bayesian Computation by Sequential Monte Carlo}
 \section{Metropolis Hastings Monte Carlo}
+
+\section{Implementation}
+The initial parameters used to solve the equations were a set of priors based on preliminary experimental results. These parameters only provide a starting point as the second stage of computation involves modifying the parameters in order to provide a better fit against experimental data. To incrementally improve the parameter sets, a version of Bayesian inference is used in conjunction with a standard Metropolis-Hastings Monte-Carlo method.
+
+We used Bayesian inference to inform the simulation parameters for a particular dataset based on prior probability distributions. These distributions were obtained as output from a previous dataset. We integrated this with a Metropolis-Hastings algorithm for sampling the prior probability distributions. Each parameter was sampled, and the parameter set was used to solve the ODE model. Based on the fitness output of the solved model, the Metropolis-Hastings algorithm allows parameters to be modified in a biased random walk which ultimately leads them to their most fit state, calculated using Least Squared Difference.
+
+\section{Integrative Scheme}
+In order for us to iteratively generate a parameter set we needed to separate the model into simpler units whereby we can obtain data about a specific set of variables. We did this so that the simplest part of the model was parametrised first. In this case it was oxygen respiration, which only requires one enzyme (although it does still require the electron transport chain). This section of the model also has the simplest experimental dataset. After parametrisation, a new section of the model was introduced, with its associated experimental dataset.
+
+Experimental data was gathered for the first dataset, and this is used as a training set, with almost flat priors based on preliminary experimental data. The data was pre-processed and normalised if necessary and then presented to the Bayesian Parameter Estimation system. The MHMC algorithm samples from the prior distribution and then uses those samples as parameters to solve the model. It aims to improve the calculated fitness value and is ordinarily run for at least 100,000 iterations to give the system time to settle on the fittest parameters. The system is run on the same dataset 10 times to generate statistically significant results. The eventual output of the MHMC runs are posterior probability distributions for each of the parameters in the model. In accordance with Bayesian inference these are then used as prior distributions.
+
+At this point the next section of the model to be parametrised is decided, the appropriate experimental data identified and obtained, and the process is repeated until the entire model has been populated. The final result should be a set of reasonably narrow probability distributions for each of the parameters which describe the system accurately enough to correctly predict the behaviour of the system \textit{in vivo}.

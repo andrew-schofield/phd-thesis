@@ -1,5 +1,9 @@
 \chapter{Model - Construction and Parameters}
 \section{Construction}
+
+The model was constructed based on existin knowledge of the respiratory chain in \Nsm{} from the electron transport chain shown in \ref{fig:etc}. I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known.
+The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity. I have made no assumptions about the bacterial population structure and as such any stochastic effects are ignored.
+
 \subsection{Converting Biological Reactions into Differential Equations}
 Where the reaction is describing a chemical process, the rate constant is given above the arrow, and the relevant enzyme shown in parentheses. Where the reaction is showing the addition of electrons (reduction), this is denoted by $e^-$ below the arrow, the rate constant above, and the source of electrons in parentheses.
 
@@ -95,6 +99,10 @@ and reduced (active) NorB concentrations are modelled by this equation
 \label{eq:active_norb}
 \end{eqnarray}
 
+By keeping the quantities involved in their original state and not making any assumption about timescale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
+
+The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
+
 \subsection{Assumptions and their Justifications}
 I have made a number of assumptions regarding the kinetics and reactions taking place in the model.
 I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme. This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family.
@@ -102,6 +110,8 @@ I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised for
 %Also, values are in the right ball park even though they are using aa3 rather than \cbbthree. $10^8 M ^{-1} s ^{-1}$ against around $50 \mu M ^{-1} s ^{-1}$.
 
 \section{Parameters and their Prior Distributions}
+
+None of the rate constants or concentrations which were required for this model have previously been determined for \Nsm, so values from other similar organisms had to be used instead. In some cases there appears to be no data in the literature regarding values of particular components. Table \ref{tab:ps} lists the values that have been obtained from the literature.
 
 \begin{table}[ht!]
 \begin{center}
