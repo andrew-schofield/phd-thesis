@@ -13,6 +13,6 @@ A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
 Warning--entry type for "Hunter2007" isn't style-file defined
 --line 1077 of file phd_refs.bib
-Warning--can't use both author and editor fields in cavaliere_modeling_2006
-Warning--can't use both author and editor fields in WilliamH.Press1992
+Warning--can't use both author and editor fields in Cavaliere2006
+Warning--can't use both author and editor fields in Press1992
 (There were 3 warnings)

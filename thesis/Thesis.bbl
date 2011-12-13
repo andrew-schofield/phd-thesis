@@ -5,21 +5,21 @@
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 
 \bibitem[{van Deuren et~al.(2000)van Deuren, Brandtzaeg, and van~der
-  Meer}]{MarcelvanDeuren01012000}
+  Meer}]{Deuren2000}
 van Deuren M, Brandtzaeg P, van~der Meer JWM (2000) Update on Meningococcal
   Disease with Emphasis on Pathogenesis and Clinical Management. Clin Microbiol
   Rev 13: 144--166.
 
-\bibitem[{Stephens(2009)}]{Stephens2009B71}
+\bibitem[{Stephens(2009)}]{Stephens2009}
 Stephens DS (2009) Biology and pathogenesis of the evolutionarily successful,
   obligate human bacterium {Neisseria meningitidis}. Vaccine 27: B71--B77.
 
 \bibitem[{Rosenstein et~al.(2001)Rosenstein, Perkins, Stephens, Popovic, and
-  Hughes}]{NancyE.Rosenstein05032001}
+  Hughes}]{Rosenstein2001}
 Rosenstein NE, Perkins BA, Stephens DS, Popovic T, Hughes JM (2001)
   Meningococcal Disease. N Engl J Med 344: 1378--1388.
 
-\bibitem[{DeVoe(1982)}]{IWDeVoe06011982}
+\bibitem[{DeVoe(1982)}]{DeVoe1982}
 DeVoe IW (1982) The meningococcus and mechanisms of pathogenicity. Microbiol
   Mol Biol Rev 46: 162--190.
 
@@ -28,21 +28,21 @@ Madigan M, Martinko J, editors (2005) Brock Biology of Microorganisms. 11th
   ed., Prentice Hall.
 
 \bibitem[{Carbonnelle et~al.(2009)Carbonnelle, Hill, Morand, Griffiths,
-  Bourdoulous et~al.}]{Carbonnelle2009B78}
+  Bourdoulous et~al.}]{Carbonnelle2009}
 Carbonnelle E, Hill DJ, Morand P, Griffiths NJ, Bourdoulous S, et~al. (2009)
   Meningococcal interactions with the host. Vaccine 27: B78--B89.
 
 \bibitem[{Beddek et~al.(2009)Beddek, Li, Kroll, Jordan, and
-  Martin}]{AmandaJBeddek05182009}
+  Martin}]{Beddek2009}
 Beddek AJ, Li MS, Kroll JS, Jordan TW, Martin DR (2009) Evidence for Capsule
   Switching between Carried and Disease-Causing {Neisseria meningitidis}
   Strains. Infect Immun 77: 2989--2994.
 
-\bibitem[{Moxon et~al.(1994)Moxon, Rainey, Nowak, and Lenski}]{Moxon199424}
+\bibitem[{Moxon et~al.(1994)Moxon, Rainey, Nowak, and Lenski}]{Moxon1994}
 Moxon ER, Rainey PB, Nowak MA, Lenski RE (1994) Adaptive evolution of highly
   mutable loci in pathogenic bacteria. Current Biology 4: 24--33.
 
-\bibitem[{Pathan et~al.(2003)Pathan, Faust, and Levin}]{NPathan07012003}
+\bibitem[{Pathan et~al.(2003)Pathan, Faust, and Levin}]{Pathan2003}
 Pathan N, Faust SN, Levin M (2003) Pathophysiology of meningococcal meningitis
   and septicaemia. Arch Dis Child 88: 601--607.
 
@@ -57,7 +57,7 @@ Rock JD, Moir JWB (2005) Microaerobic denitrification in {Neisseria
   meningitidis}. Biochem Soc Trans 33: 134--6.
 
 \bibitem[{Tuttle and Scherp(1952)}]{Tuttle1952}
-Tuttle DM, Scherp HW (1952) Studies on the carbon dioxide requirement of
+Tuttle DM, Scherp HW (1952) Studies On The Carbon Dioxide Requirement Of
   {Neisseria meningitidis}. J Bacteriol 64: 171--182.
 
 \bibitem[{Lundberg et~al.(2004)Lundberg, Weitzberg, Cole, and
@@ -79,7 +79,7 @@ Preisig O, Zufferey R, Thony-Meyer L, Appleby C, Hennecke H (1996) A
   high-affinity cbb3-type cytochrome oxidase terminates the symbiosis- specific
   respiratory chain of {Bradyrhizobium japonicum}. J Bacteriol 178: 1532--1538.
 
-\bibitem[{Brown and Cooper(1994)}]{Brown1994295}
+\bibitem[{Brown and Cooper(1994)}]{Brown1994}
 Brown GC, Cooper C (1994) Nanomolar concentrations of nitric oxide reversibly
   inhibit synaptosomal respiration by competing with oxygen at cytochrome
   oxidase. FEBS Letters 356: 295--298.
@@ -88,8 +88,7 @@ Brown GC, Cooper C (1994) Nanomolar concentrations of nitric oxide reversibly
 Sharpe MA, Cooper CE (1998) Interaction of Peroxynitrite with Mitochondrial
   Cytochrome Oxidase. J Biol Chem 273: 30961--30972.
 
-\bibitem[{Anjum et~al.(2002)Anjum, Stevanin, Read, and
-  Moir}]{MunaF.Anjum06012002}
+\bibitem[{Anjum et~al.(2002)Anjum, Stevanin, Read, and Moir}]{Anjum2002}
 Anjum MF, Stevanin TM, Read RC, Moir JWB (2002) Nitric Oxide Metabolism in
   {Neisseria meningitidis}. J Bacteriol 184: 2987--2993.
 
@@ -109,18 +108,17 @@ Rock JD, Thomson MJ, Read RC, Moir JWB (2007) Regulation of denitrification
   Bacteriol 189: 1138--44.
 
 \bibitem[{Isabella et~al.(2008)Isabella, Wright, Barth, Spence, Grogan
-  et~al.}]{VincentIsabella01012008}
+  et~al.}]{Isabella2008}
 Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) cis- and
   trans-acting elements involved in regulation of norB (norZ), the gene
   encoding nitric oxide reductase in {Neisseria gonorrhoeae}. Microbiology 154:
   226--239.
 
-\bibitem[{Almeida et~al.(1997)Almeida, Reis, and
-  Carrondo}]{almeida_unifying_1997}
+\bibitem[{Almeida et~al.(1997)Almeida, Reis, and Carrondo}]{Almeida1997}
 Almeida JS, Reis MAM, Carrondo MJT (1997) A Unifying Kinetic Model of
   Denitrification. Journal of Theoretical Biology 186: 241--249.
 
-\bibitem[{Cavaliere and Ardelean(2006)}]{cavaliere_modeling_2006}
+\bibitem[{Cavaliere and Ardelean(2006)}]{Cavaliere2006}
 Cavaliere M, Ardelean II (2006) Applications of Membrane Computing, chap.
   Modeling Respiration in Bacteria and {Respiration/Photosynthesis} Interaction
   in Cyanobacteria Using a P System Simulator, pp. 129--158. Springer.
@@ -142,11 +140,11 @@ Sauro HM, Hucka M, Finney A, Wellock C, Bolouri H, et~al. (2003) Next
   Integration. OMICS: A Journal of Integrative Biology 7: 355--372.
 
 \bibitem[{Hoops et~al.(2006)Hoops, Sahle, Gauges, Lee, Pahle
-  et~al.}]{StefanHoops12152006}
+  et~al.}]{Hoops2006}
 Hoops S, Sahle S, Gauges R, Lee C, Pahle J, et~al. (2006) COPASI--a COmplex
   PAthway SImulator. Bioinformatics 22: 3067--3074.
 
-\bibitem[{Radhakrishnan and Hindmarsh(1993)}]{RH93}
+\bibitem[{Radhakrishnan and Hindmarsh(1993)}]{Radhakrishnan1993}
 Radhakrishnan K, Hindmarsh AC (1993) Description and Use of LSODE, the
   Livermore Solver for Ordinary Differential Equations. Tech. rep., NASA.
 
@@ -203,7 +201,7 @@ Cash JR, Karp AH (1990) A variable order Runge-Kutta method for initial value
   201--222.
 
 \bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
-  Flannery}]{WilliamH.Press1992}
+  Flannery}]{Press1992}
 Press WH, Teukolsky SA, Vetterling WT, Flannery BP (1992) Numerical Recipes in
   C. 2nd ed., Cambridge University Press.
 
