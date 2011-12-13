@@ -1,7 +1,7 @@
 \chapter{Model - Construction and Parameters}
 \section{Construction}
 
-The model was constructed based on existin knowledge of the respiratory chain in \Nsm{} from the electron transport chain shown in \ref{fig:etc}. I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known.
+The model was constructed based on existing knowledge of the respiratory chain in \Nsm{} from the electron transport chain shown in \ref{fig:etc}. I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known.
 The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity. I have made no assumptions about the bacterial population structure and as such any stochastic effects are ignored.
 
 \subsection{Converting Biological Reactions into Differential Equations}
@@ -99,7 +99,7 @@ and reduced (active) NorB concentrations are modelled by this equation
 \label{eq:active_norb}
 \end{eqnarray}
 
-By keeping the quantities involved in their original state and not making any assumption about timescale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
+By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
 
 The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
 
@@ -126,7 +126,7 @@ $l_1$ & Rate of NO reduction by reduced NorB\\
 $l_3$ & Rate of NorB reduction by quinone pool\\
 $m_1$ & Rate of NO$_{\textrm{2}}^{\textrm{-}}$ reduction by reduced AniA\\
 $m_3$ & Rate of AniA reduction by cytochrome pool & $4.8\pm0.2 \mu M^{-1}s^{-1}$\\
-$k_5$ & Rate of \cbbthree{} inbibition by NO & $10^8 M ^{-1} s ^{-1}$\\
+$k_5$ & Rate of \cbbthree{} inhibition by NO & $10^8 M ^{-1} s ^{-1}$\\
 $k_6$ & Rate of recovery of NO inhibited \cbbthree{}\\
 $\beta$ & Rate of passive diffusion in of O$_{\textrm{2}}$\\
 $K_O$ & Saturation O$_{\textrm{2}}$ level & $126\mu M$\\
@@ -146,7 +146,7 @@ $C$ & Concentration of \cbbthree{} & 30nM \\
 
 \subsection*{Variables}
 \subsubsection*{$\mathbf{O_2}$ {\bf- Oxygen concentration}}
-This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is always set to the first oxygen data point in the dataset and has no prior distribution. It is usually a fixed value, except in cases where the dataset indicates measurement artifacts.
+This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is always set to the first oxygen data point in the dataset and has no prior distribution. It is usually a fixed value, except in cases where the dataset indicates measurement artefacts.
 
 \subsubsection*{$\mathbf{NO}$ {\bf- Nitric oxide concentration}}
 As for Oxygen concentration, this variable is simply obtained from the dataset and the same conditions apply.
@@ -206,7 +206,7 @@ This value is the observed electron transfer rate between the equivalent cytochr
 $K_d$ from \citet{Rock2007} was calculated to be about 500nM, which tallies with values from $k_5$ and $k_6$.
 
 \subsubsection*{$\beta$ {\bf- Rate of passive diffusion in of O$_{\textrm{2}}$}}
-This value is highly dependent on the culture, and is in some way tied to the density of the culture, however the relationship is not known. During early experiments I noticed that oxygen diffusion was slower in high density cultures compared to those of low density, experiments to examine the relationship proved fruitless in determining any relationship. In addition this parameter is a product of the experimental setup rather than the model itself.
+This value is highly dependent on the culture, and is in some way tied to the density of the culture, however the relationship is not known. During early experiments I noticed that oxygen diffusion was slower in high density cultures compared to those of low density, experiments to examine the relationship proved fruitless in determining any relationship. In addition this parameter is a product of the experimental set-up rather than the model itself.
 
 \subsubsection*{$\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
 This value is dependent on the particular culture being modelled, however it's prior value is usually set to $126\mu M$ as this figure was observed during experiments to determine oxygen diffusion rates into the culture.
