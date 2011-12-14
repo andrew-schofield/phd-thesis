@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {1.1}Biology of \textit {Neisseria meningitidis}{}}{9}{section.1.1}
 \contentsline {section}{\numberline {1.2}Pathogenicity of \textit {N. meningitidis}{}}{10}{section.1.2}
 \contentsline {section}{\numberline {1.3}Organisation of the Respiratory Chain of \textit {N. meningitidis}{}}{12}{section.1.3}
-\contentsline {section}{\numberline {1.4}Respiratory Enzymes in \textit {N. meningitidis}{}}{17}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Cytochrome \textit {cbb$_{\textrm {3}}$}{} oxidase}{17}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.4}Respiratory Enzymes in \textit {N. meningitidis}{}}{16}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Cytochrome \textit {cbb$_{\textrm {3}}$}{} oxidase}{16}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}NorB Nitric Oxide Reductase}{17}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}AniA Nitrite Reductase}{17}{subsection.1.4.3}
 \contentsline {section}{\numberline {1.5}Respiratory Electron Transporters in \textit {N. meningitidis}{}}{17}{section.1.5}

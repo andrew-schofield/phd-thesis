@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -113,6 +113,10 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) cis- and
   trans-acting elements involved in regulation of norB (norZ), the gene
   encoding nitric oxide reductase in {Neisseria gonorrhoeae}. Microbiology 154:
   226--239.
+
+\bibitem[{Pitcher and Watmough(2004)}]{Pitcher2004}
+Pitcher RS, Watmough NJ (2004) The bacterial cytochrome cbb3 oxidases.
+  Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
 
 \bibitem[{Almeida et~al.(1997)Almeida, Reis, and Carrondo}]{Almeida1997}
 Almeida JS, Reis MAM, Carrondo MJT (1997) A Unifying Kinetic Model of

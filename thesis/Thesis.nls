@@ -14,14 +14,16 @@
 		\nompageref{11}
   \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
 		\nompageref{14}
-  \item [{MHB}]\begingroup Muller-Hinton Broth\nomeqref {2.0}
+  \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
+		\nompageref{16}
+  \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
 		\nompageref{21}
   \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
 		\nompageref{14}
   \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
-		\nompageref{14}
+		\nompageref{15}
   \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
-		\nompageref{14}
+		\nompageref{15}
   \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}
 		\nompageref{23}
   \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
