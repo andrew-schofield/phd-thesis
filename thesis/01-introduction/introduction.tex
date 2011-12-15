@@ -103,6 +103,46 @@ Cytochrome \cbbthree{} oxidase is a Haem Copper Oxidase (HCO)\nomenclature{HCO}{
 The model organism \textit{Escherichia coli} has a more complex and unusual respiratory chain than \Nm{} yet it has not been modelled.
 
 \section{Systems Biology}
+Systems biology is the process of ``studying biological systems in their whole [...], reinforced by high throughput [...] molecular tests and considerable sophistication in computational modelling''\cite{Kahlem2006}. Systems biology ``combines approaches and methods from systems engineering, computational biology, statistics, genomics, molecular biology, biophysics and other fields''\cite{Doyle2006}.
+
+The aim of Systems biology is to take our detailed understanding of organisms beyond the molecular and cellular level. These are the levels to which the disciplines of molecular and biology and biochemistry (among others) are more suited. It aims to take our understanding to the level of the entire ``complex system''. Which is to say we gain understanding into the way the organism behaves as a whole, rather than just having knowledge of the individual parts.
+
+The level of complexity in biological systems is far greater than the popular notion of what defines a complex system, however. Biological systems consist of multiple different individual elements each performing specific tasks interacting with each other to create 'coherent' behaviour. This is very different from popular complex systems which are collections of simple, identical components interacting to produce 'complex' behaviour \cite{Kitano2002}.
+
+Gaining understanding such a complex system is difficult, and Kitano suggests that it requires insight into the following properties:\cite{Kitano2002a}:
+\begin{enumerate}
+ \item {\bf Structure of the system.} This includes the way the system interactions are ``laid out'' both at a component level and an organismal level.
+ \item {\bf The dynamics of the system.} This involves understanding how the organism behaves under any given conditions over a particular time period. This may include understanding how the metabolic processes change under these conditions etc.
+ \item {\bf How the system is controlled.} The control mechanisms can be tailored to suit the desired function or to minimised the chance of malfunction.
+ \item {\bf How the system is designed.} ``Trial and error'' experimentation can be done away with, as the system can be designed based on defined properties, backed up by models and simulations.  
+\end{enumerate}
+
+The level of integration between systems biology approaches and experimentation can be seen in Figure \ref{fig:systems-biology}. This shows the iterative cycles that are necessary to gain understanding in both areas. The experimentation provides data to refine and develop the system model, and data from that model can go on to improve the design of the experiment.
+
+\begin{figure}[ht!]
+ \begin{center}
+ \includegraphics[width=14cm]{./01-introduction/data/F1.png}
+ % F1.png: 1800x1165 pixel, 300dpi, 15.24x9.86 cm, bb=0 0 432 280
+\end{center}
+%This caption requires notocite otherwise the citation always gets number 1
+\caption[\footnotesize {\bf Systems biology cycle.} Interactions between experimental analysis and theoretical approaches, and the main tasks for theory at the interfaces.]{\footnotesize {\bf Systems biology cycle.} Interactions between experimental analysis and theoretical approaches, and the main tasks for theory at the interfaces. \protect\citet{Doyle2006}
+\label{fig:systems-biology}}
+\end{figure}
+
+Systems biology extends further into a computational discipline when you consider that if you can create a model of a system, you can potentially run a simulation of the system using the model. Simulations can be developed for multiple stages of the process, from molecular to organismal. Simulations of interactions based on gene regulatory network models are being studied\cite{Valencia2002}, as are complete plant development models \cite{Mundermann2005,Prusinkiewicz2004,Prusinkiewicz2006}.
+
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=14cm]{./01-introduction/data/msb4100080-f1.png}
+ % msb4100080-f1.png: 580x308 pixel, 125dpi, 11.79x6.26 cm, bb=0 0 334 177
+\caption[\footnotesize {\bf System complexity.} Diagram showing how system complexity varies across organisms, and how the complexity of the models we can produce is currently the inverse of systems complexity.]{\footnotesize {\bf System complexity.} Diagram showing how system complexity varies across organisms, and how the complexity of the models we can produce is currently the inverse of systems complexity. \citet{Kahlem2006}
+\label{fig:systems-power}}
+\end{figure}
+
+Figure \ref{fig:systems-power} shows one of the limitations of the current technology ``powering'' systems biology. As organisms get more complex, the models we can produce get less complex and less quantitative \cite{Kahlem2006}. This concomitant lack of data in models of complex organisms decreases the likelihood of being able to produce a simulation of the model. We might be able to simulate \textit{aspects} of a complex organism, such as the human heart\cite{Crampin2004} but we are still a long way from being able to simulate the entire human body.
+
+For simpler systems, like yeast, or \textit{E. coli} an enormous amount of data already exists about individual gene regulation, protein interactions etc. and it is possible to build sophisticated models of the entire gene regulatory network and more \cite{Barabasi2004,Peercy2006}.
+
 A systems biology approach to understanding the mechanism of respiration in \Nsm{} is necessary as there are a number of components in the system which are inherently unmeasurable.
 
 \section{Modelling}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  13 DEC 2011 16:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  15 DEC 2011 16:38
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -491,6 +491,9 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/notoccite.sty
+Package: notoccite 2000/07/20
+)
 (/usr/share/texmf-texlive/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup7
@@ -515,29 +518,29 @@ Writing index file Thesis.idx
 (./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 177.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 177.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 178.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 178.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 177.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 178.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -596,7 +599,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 177.
+Package hyperref Info: Link coloring ON on input line 178.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -605,72 +608,72 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 177.
-LaTeX Info: Redefining \pageref on input line 177.
+LaTeX Info: Redefining \ref on input line 178.
+LaTeX Info: Redefining \pageref on input line 178.
  (./Thesis.out)
 (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
 \AtBeginShipoutBox=\box31
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 181.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 182.
 
  (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 181
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 182
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 181
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 182
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 181
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 182
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 181.
+(Font)              scaled to size 15.0049pt on input line 182.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 181.
+(Font)              scaled to size 8.33606pt on input line 182.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 181.
+(Font)              scaled to size 15.0049pt on input line 182.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 181.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 181
+(Font)              scaled to size 8.33606pt on input line 182.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 182
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 181.
+(Font)              scaled to size 9.37807pt on input line 182.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 181.
+(Font)              scaled to size 7.29405pt on input line 182.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 181.
+(Font)              scaled to size 9.37807pt on input line 182.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 181.
+(Font)              scaled to size 7.29405pt on input line 182.
  [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 185.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 186.
  [2
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 188.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
  (./Thesis.toc [3
 
 ]
@@ -686,27 +689,27 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 3.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 6.
+(Font)              scaled to size 7.91925pt on input line 8.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 6.
+(Font)              scaled to size 6.25204pt on input line 8.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 6.
+(Font)              scaled to size 7.91925pt on input line 8.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 6.
-)
-\tf@lof=\write7
-\openout7 = `Thesis.lof'.
-
+(Font)              scaled to size 6.25204pt on input line 8.
 
 [6
 
-] (./Thesis.lot)
+])
+\tf@lof=\write7
+\openout7 = `Thesis.lof'.
+
+ [7] (./Thesis.lot)
 \tf@lot=\write8
 \openout8 = `Thesis.lot'.
 
- [7
+ [8
 
-] [8
+] [9
 
 ]
 \openout2 = `./01-introduction/introduction.aux'.
@@ -717,20 +720,20 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 3.
-[9
+[10
 
 
-] [10] [11] [12] [13]
+] [11] [12] [13] [14]
 
 pdfTeX warning: pdflatex (file ./01-introduction/data/Respiratory_layout.pdf): 
 PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 
-<./01-introduction/data/Respiratory_layout.pdf, id=625, 822.64383pt x 496.61919
+<./01-introduction/data/Respiratory_layout.pdf, id=649, 822.64383pt x 496.61919
 pt>
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
- <use ./01-introduction/data/Respiratory_layout.pdf> [14] [15 <./01-introductio
+ <use ./01-introduction/data/Respiratory_layout.pdf> [15] [16 <./01-introductio
 n/data/Respiratory_layout.pdf>]
-<./01-introduction/data/regulation.pdf, id=671, 813.43903pt x 194.326pt>
+<./01-introduction/data/regulation.pdf, id=695, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf>
@@ -754,13 +757,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 90.
-
-
-Overfull \hbox (11.85101pt too wide) in paragraph at lines 91--92
-\T1/ppl/m/it/12 den-i-tri-f-i-cans\T1/ppl/m/n/12 , \T1/ppl/m/it/12 Rhodobac-ter
- sphaeroides\T1/ppl/m/n/12 , \T1/ppl/m/it/12 Rhodobac-ter cap-su-la-tus \T1/ppl
-/m/n/12 and \T1/ppl/m/it/12 Bradyrhi-zo-bium japon-
- []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -810,11 +806,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 99.
 
-[16 <./01-introduction/data/regulation.pdf>] [17] [18]) [19]
+[17 <./01-introduction/data/regulation.pdf>] [18]
+<./01-introduction/data/F1.png, id=723, 1806.75pt x 1169.36874pt>
+File: ./01-introduction/data/F1.png Graphic file (type png)
+
+<use ./01-introduction/data/F1.png>
+<./01-introduction/data/msb4100080-f1.png, id=729, 335.3328pt x 178.07327pt>
+File: ./01-introduction/data/msb4100080-f1.png Graphic file (type png)
+
+<use ./01-introduction/data/msb4100080-f1.png> [19] [20 <./01-introduction/data
+/F1.png (PNG copy)> <./01-introduction/data/msb4100080-f1.png (PNG copy)>]
+[21] [22]) [23]
 \openout2 = `./02-materialsmethods/materialsandmethods.aux'.
 
-
-(./02-materialsmethods/materialsandmethods.tex
+ (./02-materialsmethods/materialsandmethods.tex
 Chapter 2.
 
 Underfull \hbox (badness 1331) in paragraph at lines 12--12
@@ -841,7 +846,7 @@ Overfull \hbox (4.70175pt too wide) in paragraph at lines 5--22
  [] 
  []
 
-[20
+[24
 
 
 
@@ -849,16 +854,16 @@ Overfull \hbox (4.70175pt too wide) in paragraph at lines 5--22
 LaTeX Font Info:    Try loading font information for TS1+ppl on input line 31.
  (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [21] [22]
+) [25] [26]
 Overfull \hbox (2.50404pt too wide) in paragraph at lines 67--68
 \T1/ppl/m/n/12 World Pre-ci-sion In-stru-ments). This is also a Clark type elec
 -trode, con-tained within
  []
 
-<./02-materialsmethods/data/drawing.pdf, id=745, 517.13202pt x 416.75702pt>
+<./02-materialsmethods/data/drawing.pdf, id=815, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
-<use ./02-materialsmethods/data/drawing.pdf> [23] [24 <./02-materialsmethods/da
+<use ./02-materialsmethods/data/drawing.pdf> [27] [28 <./02-materialsmethods/da
 ta/drawing.pdf>]
 Overfull \hbox (0.84761pt too wide) in paragraph at lines 107--108
 \T1/ppl/m/n/12 Kutta-Fehlberg al-go-rithm for in-te-grat-ing or-di-nary dif-fer
@@ -871,28 +876,28 @@ File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 10.43994pt on input line 111.
-) [25] [26]
+) [29] [30]
 \openout2 = `./04-model/modelconstructionandparameters.aux'.
 
 
 (./04-model/modelconstructionandparameters.tex
 Chapter 3.
-[27
+[31
 
 
 
-] [28] [29] [30] [31] [32] [33]
+] [32] [33] [34] [35]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <9> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 166.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 109.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <7> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 166.
- [34]
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 109.
+ [36] [37] [38]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 181.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 181.
 
-Overfull \hbox (24.32532pt too wide) in paragraph at lines 177--181
+Overfull \hbox (24.32532pt too wide) in paragraph at lines 182--186
 \T1/ppl/m/n/12 Given $\OML/zplm/m/it/12 v \OT1/zplm/m/n/12 = []$ \T1/ppl/m/n/12
  Then at high $\OML/zplm/m/it/12 O[]$ \T1/ppl/m/n/12 rate is: $\OML/zplm/m/it/1
 2 v \OT1/zplm/m/n/12 = [] = \OT1/ppl/m/n/12 37.4\OML/zplm/m/it/12 nmol[]min[]mg
@@ -900,53 +905,76 @@ Overfull \hbox (24.32532pt too wide) in paragraph at lines 177--181
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--181
+Underfull \hbox (badness 10000) in paragraph at lines 182--186
 
  []
 
-[35] [36]
-Overfull \hbox (4.76085pt too wide) in paragraph at lines 218--219
+[39] [40]
+Overfull \hbox (4.76085pt too wide) in paragraph at lines 223--224
 \T1/ppl/m/n/12 qui-nol the rate con-stants were $\OT1/ppl/m/n/12 7.9s[]$ \T1/pp
 l/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12 ^^@ \OT
 1/ppl/m/n/12 6.9 \OMS/zplm/m/n/12 ^^B \OT1/ppl/m/n/12 10[]M[]s[]$
  []
 
-[37]) [38]
+[41]) [42]
 \openout2 = `./03-parameterestimationmethodologies/parameterestimationmethodolo
 gies.aux'.
 
 
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.tex
 Chapter 4.
-[39
+[43
 
 
 
-]) [40]
+]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 6.95996pt on input line 14.
+ [44]
+<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=952, 480.99701pt 
+x 521.95pt>
+File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
+pe pdf)
+ <use ./03-parameterestimationmethodologies/data/sa_spread.pdf>
+[45] [46 <./03-parameterestimationmethodologies/data/sa_spread.pdf>] [47]
+[48]
+<./03-parameterestimationmethodologies/data/Simulation.png, id=985, 803.0pt x 6
+02.25pt>
+File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
+ype png)
+ <use ./03-parameterestimationmethodologies/data/Simulation.png>
+<./03-parameterestimationmethodologies/data/Parameters.png, id=986, 803.0pt x 6
+02.25pt>
+File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
+ype png)
+ <use ./03-parameterestimationmethodologies/data/Parameters.png>
+[49 <./03-parameterestimationmethodologies/data/Simulation.png (PNG copy)>]
+[50 <./03-parameterestimationmethodologies/data/Parameters.png (PNG copy)>])
+[51]
 \openout2 = `./05-oxygenreduction/oxygenreduction.aux'.
 
  (./05-oxygenreduction/oxygenreduction.tex
 Chapter 5.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 1.
-[41
+[52
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=880, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1007, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
-<use ./05-oxygenreduction/data/o2sim.pdf>) [42 <./05-oxygenreduction/data/o2sim
-.pdf, page is rotated 90 degrees>]
+<use ./05-oxygenreduction/data/o2sim.pdf>) [53 <./05-oxygenreduction/data/o2sim
+.pdf, page is rotated 90 degrees>] [54]
 \openout2 = `./06-noreduction/noreduction.aux'.
 
  (./06-noreduction/noreduction.tex
 Chapter 6.
-[43
+[55
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=894, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1025, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -962,16 +990,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
-) [44 <./06-noreduction/data/nosim.pdf, page is rotated 90 degrees>] [45]
+) [56] [57 <./06-noreduction/data/nosim.pdf, page is rotated 90 degrees>]
+[58]
 \openout2 = `./07-nitritereduction/nitritereduction.aux'.
 
-
-(./07-nitritereduction/nitritereduction.tex
+ (./07-nitritereduction/nitritereduction.tex
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=909, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1044, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
-<use ./07-nitritereduction/data/no2sim.pdf> [46
+<use ./07-nitritereduction/data/no2sim.pdf> [59
 
 
 
@@ -1024,13 +1052,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-) [47 <./07-nitritereduction/data/no2sim.pdf>] [48]
+) [60 <./07-nitritereduction/data/no2sim.pdf>] [61]
 \openout2 = `./08-expression/expression.aux'.
 
 
 (./08-expression/expression.tex
 Chapter 8.
-) [49
+) [62
 
 
 
@@ -1039,7 +1067,7 @@ Chapter 8.
 
  (./09-completedmodel/completedmodel.tex
 Chapter 9.
-) [50
+) [63
 
 
 
@@ -1048,11 +1076,11 @@ Chapter 9.
 
  (./appendix/appendix.tex
 Appendix A.
-) [51
+) [64
 
 
 
-] [52] (./Thesis.nls
+] [65] (./Thesis.nls
 Underfull \hbox (badness 10000) detected at line 5
 []\T1/ppl/b/n/12 AniA[]
  []
@@ -1152,11 +1180,11 @@ Underfull \hbox (badness 10000) detected at line 42
 []\T1/ppl/b/n/12 tet$[]$[]
  []
 
-) (./Thesis.bbl [53
+) (./Thesis.bbl [66
 
 
 
-] [54
+] [67
 
 ]
 Underfull \hbox (badness 1881) in paragraph at lines 92--94
@@ -1164,13 +1192,13 @@ Underfull \hbox (badness 1881) in paragraph at lines 92--94
 e
  []
 
-[55] [56]
-Underfull \hbox (badness 1107) in paragraph at lines 152--154
+[68] [69] [70]
+Underfull \hbox (badness 1107) in paragraph at lines 200--202
 \T1/ppl/m/n/12 the Liv-er-more Solver for Or-di-nary Dif-fer-en-tial Equa-tions
 . Tech. rep.,
  []
 
-[57] [58]) [59] (./Thesis.aux (./01-introduction/introduction.aux)
+[71] [72]) [73] (./Thesis.aux (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
 (./04-model/modelconstructionandparameters.aux)
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
@@ -1178,13 +1206,13 @@ Underfull \hbox (badness 1107) in paragraph at lines 152--154
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
 (./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 8617 strings out of 495039
- 119318 string characters out of 1182024
- 200790 words of memory out of 3000000
- 11224 multiletter control sequences out of 15000+50000
- 94378 words of font info for 209 fonts, out of 3000000 for 9000
- 45 hyphenation exceptions out of 8191
- 38i,16n,51p,1323b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 8745 strings out of 495039
+ 121988 string characters out of 1182024
+ 202677 words of memory out of 3000000
+ 11294 multiletter control sequences out of 15000+50000
+ 97356 words of font info for 217 fonts, out of 3000000 for 9000
+ 46 hyphenation exceptions out of 8191
+ 38i,16n,51p,1323b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/shar
 e/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -1197,9 +1225,9 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (59 pages, 488968 bytes).
+Output written on Thesis.pdf (73 pages, 833362 bytes).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 224 named destinations out of 1000 (max. 500000)
- 735 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1217 PDF objects out of 1440 (max. 8388607)
+ 265 named destinations out of 1000 (max. 500000)
+ 760 words of extra memory for PDF output out of 10000 (max. 10000000)
 

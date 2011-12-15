@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{62}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -118,6 +118,54 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) cis- and
 Pitcher RS, Watmough NJ (2004) The bacterial cytochrome cbb3 oxidases.
   Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
 
+\bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
+Kahlem P, Birney E (2006) Dry work in a wet world: computation in systems
+  biology. Mol Syst Biol 2: 40.
+
+\bibitem[{Doyle and Stelling(2006)}]{Doyle2006}
+Doyle FJr, Stelling J (2006) Systems interface biology. J R Soc Interface 3:
+  603--16.
+
+\bibitem[{Kitano(2002{\natexlab{a}})}]{Kitano2002}
+Kitano H (2002{\natexlab{a}}) Computational systems biology. Nature 420:
+  206--10.
+
+\bibitem[{Kitano(2002{\natexlab{b}})}]{Kitano2002a}
+Kitano H (2002{\natexlab{b}}) Systems biology: a brief overview. Science 295:
+  1662--4.
+
+\bibitem[{Valencia and Pazos(2002)}]{Valencia2002}
+Valencia A, Pazos F (2002) Computational methods for the prediction of protein
+  interactions. Curr Opin Struct Biol 12: 368--73.
+
+\bibitem[{M\"undermann et~al.(2005)M\"undermann, Erasmus, Lane, Coen, and
+  Prusinkiewicz}]{Mundermann2005}
+M\"undermann L, Erasmus Y, Lane B, Coen E, Prusinkiewicz P (2005) Quantitative
+  modeling of Arabidopsis development. Plant Physiol 139: 960--8.
+
+\bibitem[{Prusinkiewicz(2004)}]{Prusinkiewicz2004}
+Prusinkiewicz P (2004) Modeling plant growth and development. Curr Opin Plant
+  Biol 7: 79--83.
+
+\bibitem[{Prusinkiewicz and Rolland-Lagan(2006)}]{Prusinkiewicz2006}
+Prusinkiewicz P, Rolland-Lagan AG (2006) Modeling plant morphogenesis. Curr
+  Opin Plant Biol 9: 83--8.
+
+\bibitem[{Crampin et~al.(2004)Crampin, Halstead, Hunter, Nielsen, Noble
+  et~al.}]{Crampin2004}
+Crampin EJ, Halstead M, Hunter P, Nielsen P, Noble D, et~al. (2004)
+  Computational physiology and the Physiome Project. Exp Physiol 89: 1--26.
+
+\bibitem[{Barab\'asi and Oltvai(2004)}]{Barabasi2004}
+Barab\'asi AL, Oltvai ZN (2004) Network biology: understanding the cell's
+  functional organization. Nat Rev Genet 5: 101--13.
+
+\bibitem[{Peercy et~al.(2006)Peercy, Cox, Shalel-Levanon, San, and
+  Bennett}]{Peercy2006}
+Peercy BE, Cox SJ, Shalel-Levanon S, San KY, Bennett G (2006) A kinetic model
+  of oxygen regulation of cytochrome production in {Escherichia coli.} J Theor
+  Biol 242: 547--563.
+
 \bibitem[{Almeida et~al.(1997)Almeida, Reis, and Carrondo}]{Almeida1997}
 Almeida JS, Reis MAM, Carrondo MJT (1997) A Unifying Kinetic Model of
   Denitrification. Journal of Theoretical Biology 186: 241--249.
@@ -213,7 +261,7 @@ Press WH, Teukolsky SA, Vetterling WT, Flannery BP (1992) Numerical Recipes in
   et~al.}]{Giuffre2000}
 Giuffre A, Barone MC, Mastronicola D, D'Itri E, Sarti P, et~al. (2000) Reaction
   of Nitric Oxide with the Turnover Intermediates of Cytochrome c Oxidase:
-  Reaction Pathway and Functional Effects . Biochemistry 39: 15446--15453.
+  Reaction Pathway and Functional Effects. Biochemistry 39: 15446--15453.
 
 \bibitem[{Forte et~al.(2001)Forte, Urbani, Saraste, Sarti, Brunori
   et~al.}]{Forte2001}
@@ -252,5 +300,11 @@ Snyder CH, Gutierrez-Cirlos EB, Trumpower BL (2000) Evidence for a Concerted
 Hedrick DB, White DC (1986) Microbial respiratory quinones in the environment:
   I. A sensitive liquid chromatographic method. Journal of Microbiological
   Methods 5: 243 -- 254.
+
+\bibitem[{Toni et~al.(2009)Toni, Welch, Strelkowa, Ipsen, and
+  Stumpf}]{Toni2009}
+Toni T, Welch D, Strelkowa N, Ipsen A, Stumpf MPH (2009) Approximate Bayesian
+  computation scheme for parameter inference and model selection in dynamical
+  systems. Journal of The Royal Society Interface 6: 187.
 
 \end{thebibliography}
