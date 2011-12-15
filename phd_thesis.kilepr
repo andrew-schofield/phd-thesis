@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=05-oxygenreduction/oxygenreduction.tex
+lastDocument=01-introduction/introduction.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -106,10 +106,10 @@ ReadWrite=true
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=22
+column=437
 encoding=UTF-8
 highlight=LaTeX
-line=64
+line=90
 mode=LaTeX
 open=true
 order=10
@@ -196,7 +196,7 @@ order=6
 
 [item:Thesis.tex]
 archive=true
-column=40
+column=0
 encoding=UTF-8
 highlight=LaTeX
 line=194
@@ -225,8 +225,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=22
-CursorLine=64
+CursorColumn=437
+CursorLine=90
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=7
@@ -261,7 +261,7 @@ CursorColumn=29
 CursorLine=0
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=40
+CursorColumn=0
 CursorLine=194
 
 [view-settings,view=0,item:appendix/appendix.tex]
