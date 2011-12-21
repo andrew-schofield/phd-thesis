@@ -16,45 +16,45 @@ Warning--entry type for "Hunter2007" isn't style-file defined
 --line 1129 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
-You've used 62 entries,
+You've used 63 entries,
             2955 wiz_defined-function locations,
-            1163 strings with 21986 characters,
-and the built_in function-call counts, 64741 in all, are:
-= -- 6345
-> -- 2252
-< -- 41
-+ -- 1124
-- -- 618
-* -- 5499
-:= -- 8827
-add.period$ -- 123
-call.type$ -- 62
-change.case$ -- 328
-chr.to.int$ -- 76
-cite$ -- 64
-duplicate$ -- 5117
-empty$ -- 5351
-format.name$ -- 827
-if$ -- 13762
+            1171 strings with 22179 characters,
+and the built_in function-call counts, 65674 in all, are:
+= -- 6442
+> -- 2262
+< -- 42
++ -- 1128
+- -- 621
+* -- 5579
+:= -- 8956
+add.period$ -- 125
+call.type$ -- 63
+change.case$ -- 331
+chr.to.int$ -- 77
+cite$ -- 65
+duplicate$ -- 5204
+empty$ -- 5443
+format.name$ -- 831
+if$ -- 13964
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 589
-newline$ -- 193
-num.names$ -- 253
-pop$ -- 1292
+missing$ -- 596
+newline$ -- 196
+num.names$ -- 257
+pop$ -- 1301
 preamble$ -- 1
-purify$ -- 317
+purify$ -- 320
 quote$ -- 0
-skip$ -- 1289
+skip$ -- 1300
 stack$ -- 0
-substring$ -- 7290
-swap$ -- 1316
+substring$ -- 7428
+swap$ -- 1331
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 543
+type$ -- 552
 warning$ -- 2
-while$ -- 541
+while$ -- 547
 width$ -- 0
-write$ -- 689
+write$ -- 700
 (There were 3 warnings)
