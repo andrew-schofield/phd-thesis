@@ -10,7 +10,6 @@ The genetic algorithm is then used to improve these parameters by mutating genes
 As part of the simulated annealing algorithm, an ``annealing temperature'' is set. The value defines how large a change the mutation can effect on a particular gene. Since all the parameters are numerical values, this value could be used to define that a mutation can only alter the value by a maximum of 10\%. This value is programmed to decrease after a defined number of iterations such that the magnitude of individual mutations becomes smaller as the simulation progresses. This should have the effect of honing in on a set of parameters with high fitness.
 
 \begin{figure}
-\begin{scriptsize}
 \begin{verbatim}
 c1 <- c0;                         //initial chromosome state
 c2 <- mutate(c1);                 //mutate initial chromosome
@@ -26,8 +25,7 @@ if fitness(c1) > fitness(c2)
 else
   return c2                       //c2 is the fittest chromosome
 \end{verbatim}
-\end{scriptsize}
-\caption{\footnotesize {\bf Pseudo-code showing how the simplest annealing algorithm works.}
+\caption{{\bf Pseudo-code showing how the simplest annealing algorithm works.}
 \label{fig:sa_code}}
 \end{figure}
 
@@ -41,7 +39,7 @@ The algorithm currently used also includes a gene mask in the chromosome which a
 \includegraphics[width=14cm]{./03-parameterestimationmethodologies/data/sa_spread.pdf}
 % sa_spread.pdf: 479x520 pixel, 72dpi, 16.90x18.34 cm, bb=0 0 479 520
 \end{center}
-\caption{\footnotesize {\bf Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.} The parameters are loaded as genes on the chromosome which are then mutated, 2 chosen and the fittest kept and mutated. Each time a chromosome is mutated it is reintroduced into the chromosome pool, and the next 2 chromosomes are chosen at random.
+\caption{{\bf Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.} The parameters are loaded as genes on the chromosome which are then mutated, 2 chosen and the fittest kept and mutated. Each time a chromosome is mutated it is reintroduced into the chromosome pool, and the next 2 chromosomes are chosen at random.
 \label{fig:sa_spread}}
 \end{figure} 
 
@@ -70,11 +68,11 @@ MHMC allows each individual parameter to follow a biased random walk until it re
 
 The MHMC algorithm has been validated initially by using a much simpler ODE system than is required by the respiration model. A Lotka-Volterra system was used as this can be solved much more quickly by virtue of having far fewer parameters (4 as opposed to \gt 20). The Lotka-Volterra system describes a simple predator-prey relationship and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
 
-\begin{footnotesize}\begin{eqnarray}
+\begin{eqnarray}
 \frac{dx}{dt} = x (\alpha - \beta y)\nonumber \\
 \frac{dy}{dt} = -y (\gamma - \delta x)
 \label{eq:lv}
-\end{eqnarray} \end{footnotesize}
+\end{eqnarray}
 
 Validation of using this system required a simulated dataset with known parameter values to be produced. This dataset then forms the input for the MHMC algorithm which will try and obtain those same parameter values. Given the simplicity of this system, a particularly bad set of initial parameter estimates was given to exaggerate the burn in period, and to show that given a long enough time the simulation will eventually settle on ``correct'' values. This validation step also informs the likely values for two tuning variables in the algorithm; the \textit{acceptance} - how stringent the algorithm is on accepting new parameter sets, and the \textit{sigma} value - this describes the magnitude of parameter perturbation at each iteration.
 The graphical results of the Lotka-Volterra validation are shown in figures \ref{fig:simulation} and \ref{fig:parameters}.
@@ -83,7 +81,7 @@ The graphical results of the Lotka-Volterra validation are shown in figures \ref
  \centering
  \includegraphics[width=14cm]{./03-parameterestimationmethodologies/data/Simulation.png}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
- \caption{\footnotesize {\bf Simulation results of the Lotka-Volterra validation run.}
+ \caption{{\bf Simulation results of the Lotka-Volterra validation run.}
  \label{fig:simulation}}
 
 \end{figure}
@@ -92,7 +90,7 @@ The graphical results of the Lotka-Volterra validation are shown in figures \ref
  \centering
  \includegraphics[width=14cm]{./03-parameterestimationmethodologies/data/Parameters.png}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
- \caption{\footnotesize {\bf MHMC results of the Lotka-Volterra validation run.} Note the initial burn-in period followed by the distribution trajectory.
+ \caption{{\bf MHMC results of the Lotka-Volterra validation run.} Note the initial burn-in period followed by the distribution trajectory.
  \label{fig:parameters}}
 \end{figure}
 
