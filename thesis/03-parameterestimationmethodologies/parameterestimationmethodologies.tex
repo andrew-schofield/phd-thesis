@@ -11,19 +11,19 @@ As part of the simulated annealing algorithm, an ``annealing temperature'' is se
 
 \begin{figure}
 \begin{verbatim}
-c1 <- c0;                         //initial chromosome state
-c2 <- mutate(c1);                 //mutate initial chromosome
-i <- 0;                           //start iteration counter
-while i < i_max                   //loop while there are iterations left
-  if fitness(c1) > fitness(c2)    //is c1 fitter than c2
-    c2 <- mutate(c1)              //if so, copy c1 onto c2 and mutate
+c1 <- c0;
+c2 <- mutate(c1);
+i <- 0;
+while i < i_max
+  if fitness(c1) > fitness(c2)
+    c2 <- mutate(c1)
   else
-    c1 <- mutate(c2)               //if not, copy c2 onto c1 and mutate
+    c1 <- mutate(c2)
   i <- i + 1
 if fitness(c1) > fitness(c2)
-  return c1                       //c1 is the fittest chromosome
+  return c1
 else
-  return c2                       //c2 is the fittest chromosome
+  return c2
 \end{verbatim}
 \caption{{\bf Pseudo-code showing how the simplest annealing algorithm works.}
 \label{fig:sa_code}}

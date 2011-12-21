@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  21 DEC 2011 16:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  21 DEC 2011 16:28
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -935,25 +935,7 @@ Chapter 4.
 
 
 
-]
-Overfull \hbox (25.71683pt too wide) in paragraph at lines 27--27
-[]\T1/fvm/m/n/12 while i < i_max                   //loop while there are itera
-tions left[] 
- []
-
-
-Overfull \hbox (6.86232pt too wide) in paragraph at lines 27--27
-[]    \T1/fvm/m/n/12 c2 <- mutate(c1)              //if so, copy c1 onto c2 and
- mutate[] 
- []
-
-
-Overfull \hbox (19.43199pt too wide) in paragraph at lines 27--27
-[]    \T1/fvm/m/n/12 c1 <- mutate(c2)               //if not, copy c2 onto c1 a
-nd mutate[] 
- []
-
-[44]
+] [44]
 <./03-parameterestimationmethodologies/data/sa_spread.pdf, id=964, 480.99701pt 
 x 521.95pt>
 File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
@@ -1248,7 +1230,7 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (73 pages, 836103 bytes).
+Output written on Thesis.pdf (73 pages, 835494 bytes).
 PDF statistics:
  1229 PDF objects out of 1440 (max. 8388607)
  266 named destinations out of 1000 (max. 500000)
