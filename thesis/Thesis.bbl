@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{65}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -117,6 +117,18 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) cis- and
 \bibitem[{Pitcher and Watmough(2004)}]{Pitcher2004}
 Pitcher RS, Watmough NJ (2004) The bacterial cytochrome cbb3 oxidases.
   Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
+
+\bibitem[{{van der Oost} et~al.(1994){van der Oost}, {de Boer}, {de Gier},
+  Zumft, Stouthamer et~al.}]{vanderOost1994}
+{van der Oost} J, {de Boer} AP, {de Gier} JW, Zumft WG, Stouthamer AH, et~al.
+  (1994) The heme-copper oxidase family consists of three distinct types of
+  terminal oxidases and is related to nitric oxide reductase. FEMS Microbiol
+  Lett 121: 1--9.
+
+\bibitem[{Huang et~al.(2010)Huang, Reimann, Singh, and Adelroth}]{Huang2010}
+Huang Y, Reimann J, Singh LMR, Adelroth P (2010) Substrate binding and the
+  catalytic reactions in cbb3-type oxidases: the lipid membrane modulates
+  ligand binding. Biochim Biophys Acta 1797: 724--731.
 
 \bibitem[{Th\"ony-Meyer(1997)}]{Thoeny-Meyer1997}
 Th\"ony-Meyer L (1997) Biogenesis of respiratory cytochromes in bacteria.
