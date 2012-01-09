@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  9 JAN 2012 09:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  9 JAN 2012 10:48
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -741,7 +741,7 @@ pt>
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
  <use ./01-introduction/data/Respiratory_layout.pdf> [15] [16 <./01-introductio
 n/data/Respiratory_layout.pdf>]
-<./01-introduction/data/regulation.pdf, id=708, 813.43903pt x 194.326pt>
+<./01-introduction/data/regulation.pdf, id=690, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf>
@@ -771,7 +771,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 90.
 
 [17 <./01-introduction/data/regulation.pdf>]
-<01-introduction/data/cbb3.png, id=728, 398.9304pt x 226.34964pt>
+<01-introduction/data/cbb3.png, id=710, 398.9304pt x 226.34964pt>
 File: 01-introduction/data/cbb3.png Graphic file (type png)
 
 <use 01-introduction/data/cbb3.png>
@@ -824,11 +824,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 112.
 
-[19] [20] <./01-introduction/data/F1.png, id=760, 1806.75pt x 1169.36874pt>
+[19] [20] <./01-introduction/data/F1.png, id=742, 1806.75pt x 1169.36874pt>
 File: ./01-introduction/data/F1.png Graphic file (type png)
 
 <use ./01-introduction/data/F1.png>
-<./01-introduction/data/msb4100080-f1.png, id=766, 335.3328pt x 178.07327pt>
+<./01-introduction/data/msb4100080-f1.png, id=748, 335.3328pt x 178.07327pt>
 File: ./01-introduction/data/msb4100080-f1.png Graphic file (type png)
 
 <use ./01-introduction/data/msb4100080-f1.png> [21 <./01-introduction/data/F1.p
@@ -877,7 +877,7 @@ Overfull \hbox (2.50404pt too wide) in paragraph at lines 67--68
 -trode, con-tained within
  []
 
-<./02-materialsmethods/data/drawing.pdf, id=841, 517.13202pt x 416.75702pt>
+<./02-materialsmethods/data/drawing.pdf, id=823, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
 <use ./02-materialsmethods/data/drawing.pdf> [28] [29 <./02-materialsmethods/da
@@ -940,20 +940,20 @@ Chapter 4.
 
 
 ] [45]
-<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=978, 480.99701pt 
+<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=960, 480.99701pt 
 x 521.95pt>
 File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
 pe pdf)
  <use ./03-parameterestimationmethodologies/data/sa_spread.pdf>
 [46] [47 <./03-parameterestimationmethodologies/data/sa_spread.pdf>] [48]
 [49]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1012, 803.0pt x 
-602.25pt>
+<./03-parameterestimationmethodologies/data/Simulation.png, id=994, 803.0pt x 6
+02.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
  <use ./03-parameterestimationmethodologies/data/Simulation.png>
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1013, 803.0pt x 
-602.25pt>
+<./03-parameterestimationmethodologies/data/Parameters.png, id=995, 803.0pt x 6
+02.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
  <use ./03-parameterestimationmethodologies/data/Parameters.png>
@@ -970,7 +970,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1033, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1015, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
 <use ./05-oxygenreduction/data/o2sim.pdf>) [54 <./05-oxygenreduction/data/o2sim
@@ -983,7 +983,7 @@ Chapter 6.
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1051, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1033, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1005,7 +1005,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
  (./07-nitritereduction/nitritereduction.tex
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1070, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1052, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
 <use ./07-nitritereduction/data/no2sim.pdf> [60
@@ -1239,9 +1239,9 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (74 pages, 2687519 bytes).
+Output written on Thesis.pdf (74 pages, 2682543 bytes).
 PDF statistics:
- 1243 PDF objects out of 1440 (max. 8388607)
+ 1225 PDF objects out of 1440 (max. 8388607)
  270 named destinations out of 1000 (max. 500000)
  765 words of extra memory for PDF output out of 10000 (max. 10000000)
 
