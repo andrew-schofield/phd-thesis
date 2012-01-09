@@ -1,21 +1,21 @@
-\nomenclatureentry{aCSF@[{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{12}
-\nomenclatureentry{aATP@[{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{14}
-\nomenclatureentry{aAniA@[{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{14}
-\nomenclatureentry{aNADH@[{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{15}
-\nomenclatureentry{aNorB@[{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{15}
-\nomenclatureentry{aFNR@[{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{15}
-\nomenclatureentry{aNarP@[{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{16}
-\nomenclatureentry{aNarQ@[{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{16}
-\nomenclatureentry{aNsrR@[{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{16}
-\nomenclatureentry{aHCO@[{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{17}
-\nomenclatureentry{aNOR@[{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{18}
-\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{23}
-\nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.0}\relax \@dovar \hbox {}nompageref}{23}
-\nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{25}
-\nomenclatureentry{atet$^\textrm{r}$@[{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{25}
-\nomenclatureentry{aCAB@[{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{26}
-\nomenclatureentry{aMHB@[{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{26}
-\nomenclatureentry{arpm@[{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{26}
-\nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{27}
-\nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{27}
-\nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}\relax \@dovar \hbox {}nompageref}{28}
+\nomenclatureentry{aCSF@[{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}|nompageref}{12}
+\nomenclatureentry{aATP@[{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}|nompageref}{14}
+\nomenclatureentry{aAniA@[{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}|nompageref}{14}
+\nomenclatureentry{aNADH@[{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}|nompageref}{15}
+\nomenclatureentry{aNorB@[{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}|nompageref}{15}
+\nomenclatureentry{aFNR@[{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}|nompageref}{15}
+\nomenclatureentry{aNarP@[{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}|nompageref}{16}
+\nomenclatureentry{aNarQ@[{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}|nompageref}{16}
+\nomenclatureentry{aNsrR@[{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}|nompageref}{16}
+\nomenclatureentry{aHCO@[{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}|nompageref}{17}
+\nomenclatureentry{aNOR@[{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}|nompageref}{18}
+\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.0}|nompageref}{23}
+\nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.0}|nompageref}{23}
+\nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}|nompageref}{25}
+\nomenclatureentry{atet$^\textrm{r}$@[{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}|nompageref}{25}
+\nomenclatureentry{aCAB@[{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}|nompageref}{26}
+\nomenclatureentry{aMHB@[{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}|nompageref}{26}
+\nomenclatureentry{arpm@[{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}|nompageref}{26}
+\nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}|nompageref}{27}
+\nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}|nompageref}{27}
+\nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}|nompageref}{28}
