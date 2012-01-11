@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{70}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -23,6 +23,10 @@ Rosenstein NE, Perkins BA, Stephens DS, Popovic T, Hughes JM (2001)
 DeVoe IW (1982) The meningococcus and mechanisms of pathogenicity. Microbiol
   Mol Biol Rev 46: 162--190.
 
+\bibitem[{Aas et~al.(2005)Aas, Paster, Stokes, Olsen, and Dewhirst}]{Aas2005}
+Aas JA, Paster BJ, Stokes LN, Olsen I, Dewhirst FE (2005) Defining the normal
+  bacterial flora of the oral cavity. J Clin Microbiol 43: 5721--5732.
+
 \bibitem[{Madigan and Martinko(2005)}]{Madigan2005}
 Madigan M, Martinko J, editors (2005) Brock Biology of Microorganisms. 11th
   ed., Prentice Hall.
@@ -31,6 +35,26 @@ Madigan M, Martinko J, editors (2005) Brock Biology of Microorganisms. 11th
   Bourdoulous et~al.}]{Carbonnelle2009}
 Carbonnelle E, Hill DJ, Morand P, Griffiths NJ, Bourdoulous S, et~al. (2009)
   Meningococcal interactions with the host. Vaccine 27: B78--B89.
+
+\bibitem[{Larson et~al.(2002)Larson, Higashi, Stojiljkovic, and
+  So}]{Larson2002}
+Larson JA, Higashi DL, Stojiljkovic I, So M (2002) Replication of Neisseria
+  meningitidis within epithelial cells requires TonB-dependent acquisition of
+  host cell iron. Infect Immun 70: 1461--1467.
+
+\bibitem[{Archibald and DeVoe(1978)}]{Archibald1978}
+Archibald FS, DeVoe IW (1978) Iron in {Neisseria meningitidis}: minimum
+  requirements, effects of limitation, and characteristics of uptake. J
+  Bacteriol 136: 35--48.
+
+\bibitem[{Perkins-Balding et~al.(2004)Perkins-Balding, Ratliff-Griffin, and
+  Stojiljkovic}]{Perkins-Balding2004}
+Perkins-Balding D, Ratliff-Griffin M, Stojiljkovic I (2004) Iron Transport
+  Systems in {Neisseria meningitidis}. Microbiol Mol Biol Rev 68: 154--171.
+
+\bibitem[{Yazdankhah and Caugant(2004)}]{Yazdankhah2004}
+Yazdankhah SP, Caugant DA (2004) Neisseria meningitidis: an overview of the
+  carriage state. J Med Microbiol 53: 821--832.
 
 \bibitem[{Beddek et~al.(2009)Beddek, Li, Kroll, Jordan, and
   Martin}]{Beddek2009}
