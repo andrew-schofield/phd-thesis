@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{72}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -11,8 +11,8 @@ van Deuren M, Brandtzaeg P, van~der Meer JWM (2000) Update on Meningococcal
   Rev 13: 144--166.
 
 \bibitem[{Stephens(2009)}]{Stephens2009}
-Stephens DS (2009) Biology and pathogenesis of the evolutionarily successful,
-  obligate human bacterium {Neisseria meningitidis}. Vaccine 27: B71--B77.
+Stephens DS (2009) Biology and Pathogenesis of the Evolutionarily Successful,
+  Obligate Human Bacterium {Neisseria meningitidis}. Vaccine 27: B71--B77.
 
 \bibitem[{Rosenstein et~al.(2001)Rosenstein, Perkins, Stephens, Popovic, and
   Hughes}]{Rosenstein2001}
@@ -20,12 +20,12 @@ Rosenstein NE, Perkins BA, Stephens DS, Popovic T, Hughes JM (2001)
   Meningococcal Disease. N Engl J Med 344: 1378--1388.
 
 \bibitem[{DeVoe(1982)}]{DeVoe1982}
-DeVoe IW (1982) The meningococcus and mechanisms of pathogenicity. Microbiol
+DeVoe IW (1982) The Meningococcus and Mechanisms of Pathogenicity. Microbiol
   Mol Biol Rev 46: 162--190.
 
 \bibitem[{Aas et~al.(2005)Aas, Paster, Stokes, Olsen, and Dewhirst}]{Aas2005}
-Aas JA, Paster BJ, Stokes LN, Olsen I, Dewhirst FE (2005) Defining the normal
-  bacterial flora of the oral cavity. J Clin Microbiol 43: 5721--5732.
+Aas JA, Paster BJ, Stokes LN, Olsen I, Dewhirst FE (2005) Defining the Normal
+  Bacterial Flora of the Oral Cavity. J Clin Microbiol 43: 5721--5732.
 
 \bibitem[{Madigan and Martinko(2005)}]{Madigan2005}
 Madigan M, Martinko J, editors (2005) Brock Biology of Microorganisms. 11th
@@ -34,17 +34,17 @@ Madigan M, Martinko J, editors (2005) Brock Biology of Microorganisms. 11th
 \bibitem[{Carbonnelle et~al.(2009)Carbonnelle, Hill, Morand, Griffiths,
   Bourdoulous et~al.}]{Carbonnelle2009}
 Carbonnelle E, Hill DJ, Morand P, Griffiths NJ, Bourdoulous S, et~al. (2009)
-  Meningococcal interactions with the host. Vaccine 27: B78--B89.
+  Meningococcal Interactions with the Host. Vaccine 27: B78--B89.
 
 \bibitem[{Larson et~al.(2002)Larson, Higashi, Stojiljkovic, and
   So}]{Larson2002}
-Larson JA, Higashi DL, Stojiljkovic I, So M (2002) Replication of Neisseria
-  meningitidis within epithelial cells requires TonB-dependent acquisition of
-  host cell iron. Infect Immun 70: 1461--1467.
+Larson JA, Higashi DL, Stojiljkovic I, So M (2002) Replication of {Neisseria
+  neningitidis} Within Epithelial Cells Requires TonB-Dependent Acquisition of
+  Host Cell Iron. Infect Immun 70: 1461--1467.
 
 \bibitem[{Archibald and DeVoe(1978)}]{Archibald1978}
-Archibald FS, DeVoe IW (1978) Iron in {Neisseria meningitidis}: minimum
-  requirements, effects of limitation, and characteristics of uptake. J
+Archibald FS, DeVoe IW (1978) Iron in {Neisseria meningitidis}: Minimum
+  Requirements, Effects of Limitation, and Characteristics of Uptake. J
   Bacteriol 136: 35--48.
 
 \bibitem[{Perkins-Balding et~al.(2004)Perkins-Balding, Ratliff-Griffin, and
@@ -53,8 +53,8 @@ Perkins-Balding D, Ratliff-Griffin M, Stojiljkovic I (2004) Iron Transport
   Systems in {Neisseria meningitidis}. Microbiol Mol Biol Rev 68: 154--171.
 
 \bibitem[{Yazdankhah and Caugant(2004)}]{Yazdankhah2004}
-Yazdankhah SP, Caugant DA (2004) Neisseria meningitidis: an overview of the
-  carriage state. J Med Microbiol 53: 821--832.
+Yazdankhah SP, Caugant DA (2004) {Neisseria meningitidis}: An Overview of the
+  Carriage State. J Med Microbiol 53: 821--832.
 
 \bibitem[{Beddek et~al.(2009)Beddek, Li, Kroll, Jordan, and
   Martin}]{Beddek2009}
@@ -63,21 +63,31 @@ Beddek AJ, Li MS, Kroll JS, Jordan TW, Martin DR (2009) Evidence for Capsule
   Strains. Infect Immun 77: 2989--2994.
 
 \bibitem[{Moxon et~al.(1994)Moxon, Rainey, Nowak, and Lenski}]{Moxon1994}
-Moxon ER, Rainey PB, Nowak MA, Lenski RE (1994) Adaptive evolution of highly
-  mutable loci in pathogenic bacteria. Current Biology 4: 24--33.
+Moxon ER, Rainey PB, Nowak MA, Lenski RE (1994) Adaptive Evolution of Highly
+  Mutable Loci in Pathogenic Bacteria. Current Biology 4: 24--33.
 
 \bibitem[{Pathan et~al.(2003)Pathan, Faust, and Levin}]{Pathan2003}
-Pathan N, Faust SN, Levin M (2003) Pathophysiology of meningococcal meningitis
-  and septicaemia. Arch Dis Child 88: 601--607.
+Pathan N, Faust SN, Levin M (2003) Pathophysiology of Meningococcal Meningitis
+  and Septicaemia. Arch Dis Child 88: 601--607.
+
+\bibitem[{Exley et~al.(2005)Exley, Shaw, Mowe, Sun, West et~al.}]{Exley2005}
+Exley RM, Shaw J, Mowe E, Sun YH, West NP, et~al. (2005) Available Carbon
+  Source Influences the Resistance of {Neisseria meningitidis} Against
+  Complement. J Exp Med 201: 1637--1645.
+
+\bibitem[{Beno et~al.(1968)Beno, Devine, and Larson}]{Beno1968}
+Beno DW, Devine LF, Larson GL (1968) Identification of {Neisseria meningitidis}
+  Carbohydrate Fermentation Patterns in Mueller-Hinton Broth. J Bacteriol 96:
+  563.
 
 \bibitem[{Rock et~al.(2005)Rock, Mahnane, Anjum, Shaw, Read et~al.}]{Rock2005}
-Rock JD, Mahnane MR, Anjum MF, Shaw JG, Read RC, et~al. (2005) The pathogen
-  {Neisseria meningitidis} requires oxygen, but supplements growth by
-  denitrification. Nitrite, nitric oxide and oxygen control respiratory flux at
-  genetic and metabolic levels. Mol Microbiol 58: 800--9.
+Rock JD, Mahnane MR, Anjum MF, Shaw JG, Read RC, et~al. (2005) The Pathogen
+  {Neisseria meningitidis} Requires Oxygen, but Supplements Growth by
+  Denitrification. Nitrite, Nitric Oxide and Oxygen Control Respiratory Flux at
+  Genetic and Metabolic Levels. Mol Microbiol 58: 800--9.
 
 \bibitem[{Rock and Moir(2005)}]{Rock2005a}
-Rock JD, Moir JWB (2005) Microaerobic denitrification in {Neisseria
+Rock JD, Moir JWB (2005) Microaerobic Denitrification in {Neisseria
   meningitidis}. Biochem Soc Trans 33: 134--6.
 
 \bibitem[{Tuttle and Scherp(1952)}]{Tuttle1952}
@@ -86,27 +96,27 @@ Tuttle DM, Scherp HW (1952) Studies On The Carbon Dioxide Requirement Of
 
 \bibitem[{Lundberg et~al.(2004)Lundberg, Weitzberg, Cole, and
   Benjamin}]{Lundberg2004}
-Lundberg JO, Weitzberg E, Cole JA, Benjamin N (2004) Nitrate, bacteria and
-  human health. Nat Rev Micro 2: 593--602.
+Lundberg JO, Weitzberg E, Cole JA, Benjamin N (2004) Nitrate, Bacteria and
+  Human Health. Nat Rev Micro 2: 593--602.
 
 \bibitem[{Deeudom et~al.(2006)Deeudom, Rock, and Moir}]{Deeudom2006}
-Deeudom M, Rock J, Moir J (2006) Organization of the respiratory chain of
+Deeudom M, Rock J, Moir J (2006) Organization of the Respiratory Chain of
   {Neisseria meningitidis}. Biochem Soc Trans 34: 139--42.
 
 \bibitem[{Deeudom(2007)}]{Deeudom2007}
-Deeudom M (2007) The electron transport chains of {Neisseria meningitidis}.
+Deeudom M (2007) The Electron Transport Chains of {Neisseria meningitidis}.
   Ph.D. thesis, University of York.
 
 \bibitem[{Preisig et~al.(1996)Preisig, Zufferey, Thony-Meyer, Appleby, and
   Hennecke}]{Preisig1996}
 Preisig O, Zufferey R, Thony-Meyer L, Appleby C, Hennecke H (1996) A
-  high-affinity cbb3-type cytochrome oxidase terminates the symbiosis- specific
-  respiratory chain of {Bradyrhizobium japonicum}. J Bacteriol 178: 1532--1538.
+  High-affinity cbb3-Type Cytochrome Oxidase Terminates the Symbiosis- Specific
+  Respiratory Chain of {Bradyrhizobium japonicum}. J Bacteriol 178: 1532--1538.
 
 \bibitem[{Brown and Cooper(1994)}]{Brown1994}
-Brown GC, Cooper C (1994) Nanomolar concentrations of nitric oxide reversibly
-  inhibit synaptosomal respiration by competing with oxygen at cytochrome
-  oxidase. FEBS Letters 356: 295--298.
+Brown GC, Cooper C (1994) Nanomolar Concentrations of Nitric Oxide Reversibly
+  Inhibit Synaptosomal Respiration by Competing with Oxygen at Cytochrome
+  Oxidase. FEBS Letters 356: 295--298.
 
 \bibitem[{Sharpe and Cooper(1998)}]{Sharpe1998}
 Sharpe MA, Cooper CE (1998) Interaction of Peroxynitrite with Mitochondrial
@@ -118,92 +128,92 @@ Anjum MF, Stevanin TM, Read RC, Moir JWB (2002) Nitric Oxide Metabolism in
 
 \bibitem[{Heurlier et~al.(2008)Heurlier, Thomson, Aziz, and
   Moir}]{Heurlier2008}
-Heurlier K, Thomson MJ, Aziz N, Moir JWB (2008) The nitric oxide (NO)-sensing
-  repressor NsrR of {Neisseria meningitidis} has a compact regulon of genes
-  involved in NO synthesis and detoxification. J Bacteriol 190: 2488--95.
+Heurlier K, Thomson MJ, Aziz N, Moir JWB (2008) The Nitric Oxide (NO)-Sensing
+  Repressor NsrR of {Neisseria meningitidis} has a Compact Regulon of Genes
+  Involved in NO Synthesis and Detoxification. J Bacteriol 190: 2488--95.
 
 \bibitem[{Deeudom et~al.(2008)Deeudom, Koomey, and Moir}]{Deeudom2008}
-Deeudom M, Koomey M, Moir JWB (2008) Roles of c-type cytochromes in respiration
+Deeudom M, Koomey M, Moir JWB (2008) Roles of C-type Cytochromes in Respiration
   in {Neisseria meningitidis}. Microbiology 154: 2857--64.
 
 \bibitem[{Rock et~al.(2007)Rock, Thomson, Read, and Moir}]{Rock2007}
-Rock JD, Thomson MJ, Read RC, Moir JWB (2007) Regulation of denitrification
-  genes in {Neisseria meningitidis} by nitric oxide and the repressor NsrR. J
+Rock JD, Thomson MJ, Read RC, Moir JWB (2007) Regulation of Denitrification
+  Genes in {Neisseria meningitidis} by Nitric Oxide and the Repressor NsrR. J
   Bacteriol 189: 1138--44.
 
 \bibitem[{Isabella et~al.(2008)Isabella, Wright, Barth, Spence, Grogan
   et~al.}]{Isabella2008}
-Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) cis- and
-  trans-acting elements involved in regulation of norB (norZ), the gene
-  encoding nitric oxide reductase in {Neisseria gonorrhoeae}. Microbiology 154:
+Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) Cis- and
+  Trans-Acting Elements Involved in Regulation if NorB (NorZ), The Gene
+  Encoding Nitric Oxide Reductase in {Neisseria gonorrhoeae}. Microbiology 154:
   226--239.
 
 \bibitem[{Pitcher and Watmough(2004)}]{Pitcher2004}
-Pitcher RS, Watmough NJ (2004) The bacterial cytochrome cbb3 oxidases.
+Pitcher RS, Watmough NJ (2004) The Bacterial Cytochrome cbb3 Oxidases.
   Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
 
 \bibitem[{{van der Oost} et~al.(1994){van der Oost}, {de Boer}, {de Gier},
   Zumft, Stouthamer et~al.}]{vanderOost1994}
 {van der Oost} J, {de Boer} AP, {de Gier} JW, Zumft WG, Stouthamer AH, et~al.
-  (1994) The heme-copper oxidase family consists of three distinct types of
-  terminal oxidases and is related to nitric oxide reductase. FEMS Microbiol
+  (1994) The Heme-Copper Oxidase Family Consists of Three Distinct Types of
+  Terminal Oxidases and is Related to Nitric Oxide Reductase. FEMS Microbiol
   Lett 121: 1--9.
 
 \bibitem[{Huang et~al.(2010)Huang, Reimann, Singh, and Adelroth}]{Huang2010}
-Huang Y, Reimann J, Singh LMR, Adelroth P (2010) Substrate binding and the
-  catalytic reactions in cbb3-type oxidases: the lipid membrane modulates
-  ligand binding. Biochim Biophys Acta 1797: 724--731.
+Huang Y, Reimann J, Singh LMR, Adelroth P (2010) Substrate Binding and the
+  Catalytic Reactions in Cbb3-type Oxidases: The Lipid Membrane Modulates
+  Ligand Binding. Biochim Biophys Acta 1797: 724--731.
 
 \bibitem[{Th\"ony-Meyer(1997)}]{Thoeny-Meyer1997}
-Th\"ony-Meyer L (1997) Biogenesis of respiratory cytochromes in bacteria.
+Th\"ony-Meyer L (1997) Biogenesis of Respiratory Cytochromes in Bacteria.
   Microbiology and Molecular Biology Reviews 61: 337--76.
 
 \bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
-Kahlem P, Birney E (2006) Dry work in a wet world: computation in systems
-  biology. Mol Syst Biol 2: 40.
+Kahlem P, Birney E (2006) Dry Work in a Wet World: Computation in Systems
+  Biology. Mol Syst Biol 2: 40.
 
 \bibitem[{Doyle and Stelling(2006)}]{Doyle2006}
-Doyle FJr, Stelling J (2006) Systems interface biology. J R Soc Interface 3:
+Doyle FJr, Stelling J (2006) Systems Interface Biology. J R Soc Interface 3:
   603--16.
 
 \bibitem[{Kitano(2002{\natexlab{a}})}]{Kitano2002}
-Kitano H (2002{\natexlab{a}}) Computational systems biology. Nature 420:
+Kitano H (2002{\natexlab{a}}) Computational Systems Biology. Nature 420:
   206--10.
 
 \bibitem[{Kitano(2002{\natexlab{b}})}]{Kitano2002a}
-Kitano H (2002{\natexlab{b}}) Systems biology: a brief overview. Science 295:
+Kitano H (2002{\natexlab{b}}) Systems Biology: A Brief Overview. Science 295:
   1662--4.
 
 \bibitem[{Valencia and Pazos(2002)}]{Valencia2002}
-Valencia A, Pazos F (2002) Computational methods for the prediction of protein
-  interactions. Curr Opin Struct Biol 12: 368--73.
+Valencia A, Pazos F (2002) Computational Methods for the Prediction of Protein
+  Interactions. Curr Opin Struct Biol 12: 368--73.
 
 \bibitem[{M\"undermann et~al.(2005)M\"undermann, Erasmus, Lane, Coen, and
   Prusinkiewicz}]{Mundermann2005}
 M\"undermann L, Erasmus Y, Lane B, Coen E, Prusinkiewicz P (2005) Quantitative
-  modeling of Arabidopsis development. Plant Physiol 139: 960--8.
+  Modeling of Arabidopsis Development. Plant Physiol 139: 960--8.
 
 \bibitem[{Prusinkiewicz(2004)}]{Prusinkiewicz2004}
-Prusinkiewicz P (2004) Modeling plant growth and development. Curr Opin Plant
+Prusinkiewicz P (2004) Modeling Plant Growth And Development. Curr Opin Plant
   Biol 7: 79--83.
 
 \bibitem[{Prusinkiewicz and Rolland-Lagan(2006)}]{Prusinkiewicz2006}
-Prusinkiewicz P, Rolland-Lagan AG (2006) Modeling plant morphogenesis. Curr
+Prusinkiewicz P, Rolland-Lagan AG (2006) Modeling Plant Morphogenesis. Curr
   Opin Plant Biol 9: 83--8.
 
 \bibitem[{Crampin et~al.(2004)Crampin, Halstead, Hunter, Nielsen, Noble
   et~al.}]{Crampin2004}
 Crampin EJ, Halstead M, Hunter P, Nielsen P, Noble D, et~al. (2004)
-  Computational physiology and the Physiome Project. Exp Physiol 89: 1--26.
+  Computational Physiology and the Physiome Project. Exp Physiol 89: 1--26.
 
 \bibitem[{Barab\'asi and Oltvai(2004)}]{Barabasi2004}
-Barab\'asi AL, Oltvai ZN (2004) Network biology: understanding the cell's
-  functional organization. Nat Rev Genet 5: 101--13.
+Barab\'asi AL, Oltvai ZN (2004) Network Biology: Understanding the Cell's
+  Functional Organization. Nat Rev Genet 5: 101--13.
 
 \bibitem[{Peercy et~al.(2006)Peercy, Cox, Shalel-Levanon, San, and
   Bennett}]{Peercy2006}
-Peercy BE, Cox SJ, Shalel-Levanon S, San KY, Bennett G (2006) A kinetic model
-  of oxygen regulation of cytochrome production in {Escherichia coli.} J Theor
+Peercy BE, Cox SJ, Shalel-Levanon S, San KY, Bennett G (2006) A Kinetic Model
+  of Oxygen Regulation of Cytochrome Production in {Escherichia coli.} J Theor
   Biol 242: 547--563.
 
 \bibitem[{Almeida et~al.(1997)Almeida, Reis, and Carrondo}]{Almeida1997}
@@ -222,7 +232,7 @@ Klipp E, Herwig R, Kowald A, Wierling C, Lehrach H (2005) Systems Biology in
   Co. KGaA, Weinheim.
 
 \bibitem[{Gillespie(1977)}]{Gillespie1977}
-Gillespie DT (1977) Exact stochastic simulation of coupled chemical reactions.
+Gillespie DT (1977) Exact Stochastic Simulation of Coupled Chemical Reactions.
   The Journal of Physical Chemistry 81: 2340--2361.
 
 \bibitem[{Sauro et~al.(2003)Sauro, Hucka, Finney, Wellock, Bolouri
@@ -248,9 +258,9 @@ Gibson MA, Bruck J (2000) Efficient Exact Stochastic Simulation of Chemical
 \bibitem[{McGuinness et~al.(1990)McGuinness, Barlow, Clarke, Farley, Anilionis
   et~al.}]{McGuinness1990}
 McGuinness B, Barlow AK, Clarke IN, Farley JE, Anilionis A, et~al. (1990)
-  Deduced amino acid sequences of class 1 protein ({PorA}) from three strains
-  of {Neisseria meningitidis}. Synthetic peptides define the epitopes
-  responsible for serosubtype specificity. J Exp Med 171: 1871--1882.
+  Deduced Amino Acid Sequences of Class 1 Protein ({Pora}) from Three Strains
+  of {Neisseria meningitidis}. Synthetic Peptides Define the Epitopes
+  Responsible for Serosubtype Specificity. J Exp Med 171: 1871--1882.
 
 \bibitem[{Clark et~al.(1953)Clark, Wolf, Granger, and Taylor}]{Clark1953}
 Clark LC, Wolf R, Granger D, Taylor Z (1953) Continuous Recording of Blood
@@ -258,7 +268,7 @@ Clark LC, Wolf R, Granger D, Taylor Z (1953) Continuous Recording of Blood
 
 \bibitem[{Liu et~al.(2005)Liu, Liu, Gupta, Zorko, Brownlee et~al.}]{Liu2005}
 Liu X, Liu Q, Gupta E, Zorko N, Brownlee E, et~al. (2005) Quantitative
-  measurements of NO reaction kinetics with a {Clark-type} electrode. Nitric
+  Measurements of No Reaction Kinetics with a {Clark-Type} Electrode. Nitric
   Oxide 13: 68 -- 77.
 
 \bibitem[{Bedioui and Villeneuve(2003)}]{Bedioui2003}
@@ -273,7 +283,7 @@ Serpe MJ, Zhang X (2007) The Principles, Development and Application of
   CRC Press.
 
 \bibitem[{Donald~Nicholas and Nason(1957)}]{DonaldNicholas1957}
-Donald~Nicholas DJ, Nason A (1957) Determination of nitrate and nitrite. In:
+Donald~Nicholas DJ, Nason A (1957) Determination of Nitrate and Nitrite. In:
   Methods in Enzymology, vol.~3, pp. 981--984, Academic Press.
 
 \bibitem[{Aga and Hughes(2008)}]{Aga2008}
@@ -284,12 +294,12 @@ Aga RG, Hughes MN (2008) The Preparation and Purification of NO Gas and the Use
   48, Academic Press.
 
 \bibitem[{Butcher(2003)}]{Butcher2003}
-Butcher JC (2003) Numerical methods for ordinary differential equations. John
+Butcher JC (2003) Numerical Methods for Ordinary Differential Equations. John
   Wiley and Sons.
 
 \bibitem[{Cash and Karp(1990)}]{Cash1990}
-Cash JR, Karp AH (1990) A variable order Runge-Kutta method for initial value
-  problems with rapidly varying right-hand sides. ACM Trans Math Softw 16:
+Cash JR, Karp AH (1990) A Variable Order Runge-Kutta Method for Initial Value
+  Problems with Rapidly Varying Right-hand Sides. ACM Trans Math Softw 16:
   201--222.
 
 \bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
@@ -305,29 +315,29 @@ Giuffre A, Barone MC, Mastronicola D, D'Itri E, Sarti P, et~al. (2000) Reaction
 
 \bibitem[{Forte et~al.(2001)Forte, Urbani, Saraste, Sarti, Brunori
   et~al.}]{Forte2001}
-Forte E, Urbani A, Saraste M, Sarti P, Brunori M, et~al. (2001) The cytochrome
-  cbb3 from {Pseudomonas stutzeri} displays nitric oxide reductase activity.
+Forte E, Urbani A, Saraste M, Sarti P, Brunori M, et~al. (2001) The Cytochrome
+  cbb3 from {Pseudomonas stutzeri} Displays Nitric Oxide Reductase Activity.
   Eur J Biochem 268: 6486--6491.
 
 \bibitem[{Hunter(2007)}]{Hunter2007}
-Hunter H (2007) Characterisation of the oxidase activity in Neisseria
-  lactamica.
+Hunter H (2007) Characterisation of the Oxidase Activity in {Neisseria
+  lactamica}.
 
 \bibitem[{Chang et~al.(2010)Chang, Ahn, Pace, Lin, Lin et~al.}]{Chang2010}
-Chang HY, Ahn Y, Pace LA, Lin MT, Lin YH, et~al. (2010) The diheme cytochrome
-  c(4) from {Vibrio cholerae} is a natural electron donor to the respiratory
-  cbb(3) oxygen reductase. Biochemistry 49: 7494--7503.
+Chang HY, Ahn Y, Pace LA, Lin MT, Lin YH, et~al. (2010) The Diheme Cytochrome
+  C(4) from {Vibrio cholerae} is a Natural Electron Donor to the Respiratory
+  cbb(3) Oxygen Reductase. Biochemistry 49: 7494--7503.
 
 \bibitem[{Nojiri et~al.(2009)Nojiri, Koteishi, Nakagami, Kobayashi, Inoue
   et~al.}]{Nojiri2009}
 Nojiri M, Koteishi H, Nakagami T, Kobayashi K, Inoue T, et~al. (2009)
-  Structural basis of inter-protein electron transfer for nitrite reduction in
-  denitrification. Nature 462: 117--120.
+  Structural Basis of Inter-Protein Electron Transfer for Nitrite Reduction in
+  Denitrification. Nature 462: 117--120.
 
 \bibitem[{Blackmore et~al.(1991)Blackmore, Greenwood, and
   Gibson}]{Blackmore1991}
-Blackmore RS, Greenwood C, Gibson QH (1991) Studies of the primary oxygen
-  intermediate in the reaction of fully reduced cytochrome oxidase. Journal of
+Blackmore RS, Greenwood C, Gibson QH (1991) Studies of the Primary Oxygen
+  Intermediate in the Reaction of Fully Reduced Cytochrome Oxidase. Journal of
   Biological Chemistry 266: 19245--9.
 
 \bibitem[{Snyder et~al.(2000)Snyder, Gutierrez-Cirlos, and
@@ -337,14 +347,14 @@ Snyder CH, Gutierrez-Cirlos EB, Trumpower BL (2000) Evidence for a Concerted
   Biological Chemistry 275: 13535--13541.
 
 \bibitem[{Hedrick and White(1986)}]{Hedrick1986}
-Hedrick DB, White DC (1986) Microbial respiratory quinones in the environment:
-  I. A sensitive liquid chromatographic method. Journal of Microbiological
+Hedrick DB, White DC (1986) Microbial Respiratory Quinones in the Environment:
+  I. A Sensitive Liquid Chromatographic Method. Journal of Microbiological
   Methods 5: 243 -- 254.
 
 \bibitem[{Toni et~al.(2009)Toni, Welch, Strelkowa, Ipsen, and
   Stumpf}]{Toni2009}
 Toni T, Welch D, Strelkowa N, Ipsen A, Stumpf MPH (2009) Approximate Bayesian
-  computation scheme for parameter inference and model selection in dynamical
-  systems. Journal of The Royal Society Interface 6: 187.
+  Computation Scheme for Parameter Inference and Model Selection in Dynamical
+  Systems. Journal of The Royal Society Interface 6: 187.
 
 \end{thebibliography}
