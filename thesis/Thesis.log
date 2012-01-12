@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 JAN 2012 18:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  12 JAN 2012 18:19
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -982,7 +982,7 @@ File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 <use ./02-materialsmethods/data/drawing.pdf>
 Package pdftex.def Info: ./02-materialsmethods/data/drawing.pdf used on input l
 ine 84.
-(pdftex.def)             Requested size: 398.33858pt x 321.02472pt.
+(pdftex.def)             Requested size: 353.05757pt x 284.52756pt.
  [32] [33 <C:/Users/Andrew Schofield/PhD/thesis/02-materialsmethods/data/drawin
 g.pdf>]
 Overfull \hbox (0.84761pt too wide) in paragraph at lines 107--108
@@ -996,15 +996,15 @@ File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 10.43994pt on input line 111.
-) [34] [35]
+) [34]
 ("C:\Users\Andrew Schofield\PhD\thesis\04-model\modelconstructionandparameters.
 tex"
 Chapter 3.
-[36
+[35
 
 
 
-] [37] [38] [39] [40] [41] [42] [43]
+] [36] [37] [38] [39] [40] [41] [42]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 181.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7> not available
@@ -1022,34 +1022,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--186
 
  []
 
-[44] [45]
+[43] [44]
 Overfull \hbox (4.76085pt too wide) in paragraph at lines 225--226
 \T1/ppl/m/n/12 qui-nol the rate con-stants were $\OT1/ppl/m/n/12 7.9s[]$ \T1/pp
 l/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12   \OT1/
 ppl/m/n/12 6.9 \OMS/zplm/m/n/12  \OT1/ppl/m/n/12 10[]M[]s[]$
  []
 
-[46]) [47]
+[45]) [46]
 ("C:\Users\Andrew Schofield\PhD\thesis\03-parameterestimationmethodologies\para
 meterestimationmethodologies.tex"
 Chapter 4.
-[48
+[47
 
 
 
-] [49]
-<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1048, 480.99701pt
+] [48]
+<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1043, 480.99701pt
  x 521.95pt>
 File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
 pe pdf)
  <use ./03-parameterestimationmethodologies/data/sa_spread.pdf>
 Package pdftex.def Info: ./03-parameterestimationmethodologies/data/sa_spread.p
 df used on input line 39.
-(pdftex.def)             Requested size: 398.33858pt x 432.27063pt.
+(pdftex.def)             Requested size: 262.20789pt x 284.52756pt.
 
-[50] [51 <C:/Users/Andrew Schofield/PhD/thesis/03-parameterestimationmethodolog
-ies/data/sa_spread.pdf>] [52] [53]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1081, 803.0pt x 
+[49] [50 <C:/Users/Andrew Schofield/PhD/thesis/03-parameterestimationmethodolog
+ies/data/sa_spread.pdf>] [51] [52]
+<./03-parameterestimationmethodologies/data/Simulation.png, id=1077, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
@@ -1058,7 +1058,7 @@ Package pdftex.def Info: ./03-parameterestimationmethodologies/data/Simulation.
 png used on input line 82.
 (pdftex.def)             Requested size: 398.33858pt x 298.76253pt.
 
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1082, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Parameters.png, id=1078, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
@@ -1067,33 +1067,33 @@ Package pdftex.def Info: ./03-parameterestimationmethodologies/data/Parameters.
 png used on input line 91.
 (pdftex.def)             Requested size: 398.33858pt x 298.76253pt.
 
-[54] [55 <C:/Users/Andrew Schofield/PhD/thesis/03-parameterestimationmethodolog
-ies/data/Simulation.png> <C:/Users/Andrew Schofield/PhD/thesis/03-parameteresti
-mationmethodologies/data/Parameters.png>]) [56]
+[53 <C:/Users/Andrew Schofield/PhD/thesis/03-parameterestimationmethodologies/d
+ata/Simulation.png>] [54 <C:/Users/Andrew Schofield/PhD/thesis/03-parameteresti
+mationmethodologies/data/Parameters.png>]) [55]
 ("C:\Users\Andrew Schofield\PhD\thesis\05-oxygenreduction\oxygenreduction.tex"
 Chapter 5.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 1.
-[57
+[56
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1103, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1099, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
 <use ./05-oxygenreduction/data/o2sim.pdf>
 Package pdftex.def Info: ./05-oxygenreduction/data/o2sim.pdf used on input line
  16.
 (pdftex.def)             Requested size: 398.33858pt x 281.49155pt.
-) [58 <C:/Users/Andrew Schofield/PhD/thesis/05-oxygenreduction/data/o2sim.pdf, 
-page is rotated 90 degrees>] [59]
+) [57 <C:/Users/Andrew Schofield/PhD/thesis/05-oxygenreduction/data/o2sim.pdf, 
+page is rotated 90 degrees>] [58]
 ("C:\Users\Andrew Schofield\PhD\thesis\06-noreduction\noreduction.tex"
 Chapter 6.
-[60
+[59
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1121, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1117, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1113,19 +1113,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
-) [61] [62 <C:/Users/Andrew Schofield/PhD/thesis/06-noreduction/data/nosim.pdf,
- page is rotated 90 degrees>] [63]
+) [60] [61 <C:/Users/Andrew Schofield/PhD/thesis/06-noreduction/data/nosim.pdf,
+ page is rotated 90 degrees>] [62]
 ("C:\Users\Andrew Schofield\PhD\thesis\07-nitritereduction\nitritereduction.tex
 "
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1142, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1138, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
 <use ./07-nitritereduction/data/no2sim.pdf>
 Package pdftex.def Info: ./07-nitritereduction/data/no2sim.pdf used on input li
 ne 11.
 (pdftex.def)             Requested size: 398.33858pt x 563.69917pt.
- [64
+ [63
 
 
 
@@ -1178,27 +1178,27 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-) [65 <C:/Users/Andrew Schofield/PhD/thesis/07-nitritereduction/data/no2sim.pdf
->] [66] ("C:\Users\Andrew Schofield\PhD\thesis\08-expression\expression.tex"
+) [64 <C:/Users/Andrew Schofield/PhD/thesis/07-nitritereduction/data/no2sim.pdf
+>] [65] ("C:\Users\Andrew Schofield\PhD\thesis\08-expression\expression.tex"
 Chapter 8.
-) [67
+) [66
 
 
 
 ]
 ("C:\Users\Andrew Schofield\PhD\thesis\09-completedmodel\completedmodel.tex"
 Chapter 9.
-) [68
+) [67
 
 
 
 ] ("C:\Users\Andrew Schofield\PhD\thesis\appendix\appendix.tex"
 Appendix A.
-) [69
+) [68
 
 
 
-] [70] ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.nls"
+] [69] ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.nls"
 Underfull \hbox (badness 10000) detected at line 5
 []\T1/ppl/b/n/12 AniA[]
  []
@@ -1303,19 +1303,19 @@ Underfull \hbox (badness 10000) detected at line 44
 []\T1/ppl/b/n/12 tet$[]$[]
  []
 
-) ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.bbl" [71
+) ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.bbl" [70
 
 
 
-] [72
+] [71
 
-] [73]
+] [72]
 Underfull \hbox (badness 1881) in paragraph at lines 126--128
 []\T1/ppl/m/n/12 Anjum MF, Ste-vanin TM, Read RC, Moir JWB (2002) Ni-tric Ox-id
 e
  []
 
-[74] [75]
+[73] [74]
 Underfull \hbox (badness 2452) in paragraph at lines 211--214
 \T1/ppl/m/n/12 Neis-se-ria menin-gi-tidis is Be-com-ing a Ni-tric Oxide-Toleran
 t Aer-obe.
@@ -1327,15 +1327,15 @@ Underfull \hbox (badness 2735) in paragraph at lines 230--232
 Bioen-erg
  []
 
-[76] [77]
+[75] [76]
 Underfull \hbox (badness 1107) in paragraph at lines 320--322
 \T1/ppl/m/n/12 the Liv-er-more Solver for Or-di-nary Dif-fer-en-tial Equa-tions
 . Tech. rep.,
  []
 
-[78] [79] [80])
+[77] [78] [79])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
- [81]
+ [80]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux"
 ("C:\Users\Andrew Schofield\PhD\thesis\01-introduction\introduction.aux")
@@ -1357,8 +1357,8 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 79C1B74A1C670E1BFB824EB829CD4690;6638.
  ) 
 Here is how much of TeX's memory you used:
- 9631 strings out of 494045
- 141181 string characters out of 3145935
+ 9630 strings out of 494045
+ 141174 string characters out of 3145935
  233853 words of memory out of 3000000
  12264 multiletter control sequences out of 15000+200000
  84555 words of font info for 191 fonts, out of 3000000 for 9000
@@ -1377,9 +1377,9 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (81 pages, 1075914 bytes).
+Output written on Thesis.pdf (80 pages, 1075347 bytes).
 PDF statistics:
- 1338 PDF objects out of 1440 (max. 8388607)
- 307 named destinations out of 1000 (max. 500000)
+ 1333 PDF objects out of 1440 (max. 8388607)
+ 306 named destinations out of 1000 (max. 500000)
  773 words of extra memory for PDF output out of 10000 (max. 10000000)
 
