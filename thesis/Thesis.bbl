@@ -1,4 +1,4 @@
-\begin{thebibliography}{81}
+\begin{thebibliography}{86}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -211,6 +211,28 @@ Clark VL, Campbell LA, Palermo DA, Evans TM, Klimpel KW (1987) Induction and
 Moir JW (2011) A Snapshot of a Pathogenic Bacterium Mid-evolution: {Neisseria
   meningitidis} is Becoming a Nitric Oxide-Tolerant Aerobe. Biochem Soc Trans
   39: 1890--1894.
+
+\bibitem[{Weiss et~al.(1991)Weiss, Friedrich, Hofhaus, and Preis}]{Weiss1991}
+Weiss H, Friedrich T, Hofhaus G, Preis D (1991) The respiratory-chain NADH
+  dehydrogenase (complex I) of mitochondria. Eur J Biochem 197: 563--576.
+
+\bibitem[{Carroll et~al.(2003)Carroll, Fearnley, Shannon, Hirst, and
+  Walker}]{Carroll2003}
+Carroll J, Fearnley IM, Shannon RJ, Hirst J, Walker JE (2003) Analysis of the
+  subunit composition of complex I from bovine heart mitochondria. Mol Cell
+  Proteomics 2: 117--126.
+
+\bibitem[{Friedrich and B\"ottcher(2004)}]{Friedrich2004}
+Friedrich T, B\"ottcher B (2004) The gross structure of the respiratory complex
+  I: a Lego System. Biochim Biophys Acta 1608: 1--9.
+
+\bibitem[{Yagi(1991)}]{Yagi1991}
+Yagi T (1991) Bacterial NADH-quinone oxidoreductases. J Bioenerg Biomembr 23:
+  211--225.
+
+\bibitem[{Gemperli et~al.(2002)Gemperli, Dimroth, and Steuber}]{Gemperli2002}
+Gemperli AC, Dimroth P, Steuber J (2002) The respiratory complex I (NDH I) from
+  Klebsiella pneumoniae, a sodium pump. J Biol Chem 277: 33811--33817.
 
 \bibitem[{Th\"ony-Meyer(1997)}]{Thoeny-Meyer1997}
 Th\"ony-Meyer L (1997) Biogenesis of Respiratory Cytochromes in Bacteria.

@@ -12,13 +12,13 @@
 \contentsline {subsection}{\numberline {1.6.1}NADH Dehydrogenase}{22}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Cytochrome $bc_\mathrm {1}$ Complex}{22}{subsection.1.6.2}
 \contentsline {subsection}{\numberline {1.6.3}Cytochromes $c_\mathrm {4}$, $c_\mathrm {x}$ and $c_\mathrm {5}$}{22}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Quinone Pool}{22}{subsection.1.6.4}
-\contentsline {section}{\numberline {1.7}Organisation of Respiratory Chains in Other Bacteria}{22}{section.1.7}
-\contentsline {section}{\numberline {1.8}Systems Biology}{22}{section.1.8}
-\contentsline {section}{\numberline {1.9}Modelling}{25}{section.1.9}
-\contentsline {subsection}{\numberline {1.9.1}Modelling Respiratory Systems}{25}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.6.4}Quinone Pool}{23}{subsection.1.6.4}
+\contentsline {section}{\numberline {1.7}Organisation of Respiratory Chains in Other Bacteria}{23}{section.1.7}
+\contentsline {section}{\numberline {1.8}Systems Biology}{23}{section.1.8}
+\contentsline {section}{\numberline {1.9}Modelling}{26}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Modelling Respiratory Systems}{26}{subsection.1.9.1}
 \contentsline {subsection}{\numberline {1.9.2}Modelling Tools}{27}{subsection.1.9.2}
-\contentsline {section}{\numberline {1.10}Aims}{27}{section.1.10}
+\contentsline {section}{\numberline {1.10}Aims}{28}{section.1.10}
 \contentsline {chapter}{\numberline {2}Materials and Methods}{29}{chapter.2}
 \contentsline {section}{\numberline {2.1}\textit {Neisseria meningitidis}{} Strains Used in This Work}{29}{section.2.1}
 \contentsline {section}{\numberline {2.2}Culturing \textit {Neisseria meningitidis}{}}{30}{section.2.2}
