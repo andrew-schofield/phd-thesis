@@ -1,4 +1,4 @@
-\begin{thebibliography}{74}
+\begin{thebibliography}{81}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -152,6 +152,12 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) Cis- and
 Pitcher RS, Watmough NJ (2004) The Bacterial Cytochrome cbb3 Oxidases.
   Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
 
+\bibitem[{Puustinen et~al.(1996)Puustinen, Verkhovsky, Morgan, Belevich, and
+  Wikstrom}]{Puustinen1996}
+Puustinen A, Verkhovsky MI, Morgan JE, Belevich NP, Wikstrom M (1996) Reaction
+  of the {Escherichia coli} Quinol Oxidase Cytochrome bo3 with Dioxygen: The
+  Role of a Bound Ubiquinone Molecule. Proc Natl Acad Sci U S A 93: 1545--1548.
+
 \bibitem[{{van der Oost} et~al.(1994){van der Oost}, {de Boer}, {de Gier},
   Zumft, Stouthamer et~al.}]{vanderOost1994}
 {van der Oost} J, {de Boer} AP, {de Gier} JW, Zumft WG, Stouthamer AH, et~al.
@@ -159,10 +165,30 @@ Pitcher RS, Watmough NJ (2004) The Bacterial Cytochrome cbb3 Oxidases.
   Terminal Oxidases and is Related to Nitric Oxide Reductase. FEMS Microbiol
   Lett 121: 1--9.
 
+\bibitem[{Garc\'ia-Horsman et~al.(1994)Garc\'ia-Horsman, Barquera, Rumbley, Ma,
+  and Gennis}]{Garcia-Horsman1994}
+Garc\'ia-Horsman JA, Barquera B, Rumbley J, Ma J, Gennis RB (1994) The
+  Superfamily of Heme-Copper Respiratory Oxidases. J Bacteriol 176: 5587--5600.
+
+\bibitem[{Keilin and Hartree(1939)}]{Keilin1939}
+Keilin D, Hartree EF (1939) Cytochrome and Cytochrome Oxidase. Proceedings of
+  the Royal Society of London Series B, Biological Sciences 127: pp. 167--191.
+
 \bibitem[{Huang et~al.(2010)Huang, Reimann, Singh, and Adelroth}]{Huang2010}
 Huang Y, Reimann J, Singh LMR, Adelroth P (2010) Substrate Binding and the
   Catalytic Reactions in Cbb3-type Oxidases: The Lipid Membrane Modulates
   Ligand Binding. Biochim Biophys Acta 1797: 724--731.
+
+\bibitem[{Zufferey et~al.(1996)Zufferey, Preisig, Hennecke, and
+  Thöny-Meyer}]{Zufferey1996}
+Zufferey R, Preisig O, Hennecke H, Thöny-Meyer L (1996) Assembly and function
+  of the cytochrome cbb3 oxidase subunits in Bradyrhizobium japonicum. J Biol
+  Chem 271: 9114--9119.
+
+\bibitem[{Preisig et~al.(1996)Preisig, Zufferey, and Hennecke}]{Preisig1996a}
+Preisig O, Zufferey R, Hennecke H (1996) The Bradyrhizobium japonicum fixGHIS
+  genes are required for the formation of the high-affinity cbb3-type
+  cytochrome oxidase. Arch Microbiol 165: 297--305.
 
 \bibitem[{Householder et~al.(2000)Householder, Fozo, Cardinale, and
   Clark}]{Householder2000}
@@ -174,6 +200,17 @@ Householder TC, Fozo EM, Cardinale JA, Clark VL (2000) Gonococcal Nitric Oxide
 Barth KR, Isabella VM, Clark VL (2009) Biochemical and Genomic Analysis of the
   Denitrification Pathway within the Genus Neisseria. Microbiology 155:
   4093--4103.
+
+\bibitem[{Clark et~al.(1987)Clark, Campbell, Palermo, Evans, and
+  Klimpel}]{Clark1987}
+Clark VL, Campbell LA, Palermo DA, Evans TM, Klimpel KW (1987) Induction and
+  repression of outer membrane proteins by anaerobic growth of Neisseria
+  gonorrhoeae. Infect Immun 55: 1359--1364.
+
+\bibitem[{Moir(2011)}]{Moir2011}
+Moir JW (2011) A Snapshot of a Pathogenic Bacterium Mid-evolution: {Neisseria
+  meningitidis} is Becoming a Nitric Oxide-Tolerant Aerobe. Biochem Soc Trans
+  39: 1890--1894.
 
 \bibitem[{Th\"ony-Meyer(1997)}]{Thoeny-Meyer1997}
 Th\"ony-Meyer L (1997) Biogenesis of Respiratory Cytochromes in Bacteria.
