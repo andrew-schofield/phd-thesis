@@ -152,14 +152,27 @@ The catalytic reaction for AniA is:
 NADH (Reduced Nicotinamide Adenine Dinucleotide) Dehydrogenase is an inner-membrane bound enzyme that catalyses the transfer of electrons from NADH to the quinone pool in many bacteria. There are three types of NADH dehydrogenase enzymes found in bacteria, NDH-1, NDH-2 and $\mathrm{Na}^+$-NDH. NDH-1 is related to Complex I of the mitochondrial respiratory chain and translocated protons across the inner-membrane whilst reducing the quinone pool\cite{Weiss1991,Carroll2003,Friedrich2004}. NDH-2 does not have any proton pump activity, nor does it have any Fe-S clusters\cite{Yagi1991}. $\mathrm{Na}^+$-NDH translocates $\mathrm{Na}^+$ ions across the membrane\cite{Gemperli2002}. The NADH dehydrogenase of \Nm{} is of the NDH-1 type\cite{Deeudom2007}.
 
 Mitochondrial complex I catalyses the oxidation of NADH and the reduction of ubiquinone whilst translocating 4 protons across the membrane. It does so using the following reaction scheme:
-
 \begin{equation}
 \mathrm{NADH} + \mathrm{H}^+ + 4\mathrm{H}^+_{\mathrm{inner}} + \mathrm{UQ} \rightarrow \mathrm{NAD}^+ + 4\mathrm{H}^+_{\mathrm{outer}} + \mathrm{UQH}_2
 \end{equation}
 
 \subsection{Cytochrome $bc_\mathrm{1}$ Complex}
-The cytochrome $bc_\mathrm{1}$ complex oxidises quinols and reduces metalloprotein electron transporters (usually c-type cytochromes). It is an important part of bacterial respiratory chains, and is also analogous to the mitochondrial complex III\cite{Thoeny-Meyer1997}. Whilst catalysing the reduction of ubiquinol and the oxidation of c-type cytochromes, the $bc_\mathrm{1}$ complex also translocates protons across the inner membrane from the cytoplasm to the periplasm producing an electrochemical gradient. The $bc_\mathrm{1}$ complex is found in both Gram negative and Gram positive bacteria, however \textit{E. coli} has no $bc_\mathrm{1}$ complex.
+The cytochrome $bc_\mathrm{1}$ complex oxidises quinols and reduces metalloprotein electron transporters (usually c-type cytochromes). It is an important part of bacterial respiratory chains, and is also analogous to the mitochondrial complex III\cite{Thoeny-Meyer1997}. Whilst catalysing the reduction of ubiquinol and the oxidation of c-type cytochromes, the $bc_\mathrm{1}$ complex also translocates protons across the inner membrane from the cytoplasm to the periplasm producing an electrochemical gradient. The $bc_\mathrm{1}$ complex is found in both Gram negative and Gram positive bacteria, however \textit{E. coli} has no $bc_\mathrm{1}$ complex. The homolg the $b_6f$ complex is also used for electron transfer during photosynthesis in higher plants and phototrophic bacteria\cite{Darrouzet1999}.
 
+In bacteria the $bc_1$ complex is formed of one cyt \textit{b} subunit which contains two \textit{b}-type hemes, one cyt $c_1$ subunit which contains a single \textit{c}-type heme and an Rieske iron-sulfur protein. These subunits form the two catalytic sites of the $bc_1$ complex. The reduction of ubiquinol appears to occur in a concerted manner at 1 of these sites, $\mathrm{Q}_o$\cite{Darrouzet1999}. Electrons from the quinol are shared between two reaction chains, 1 which tranfers electrons to the high-potential iron-sulfur protein and $c_1$, and another which transfers electrons to the low-potential cytochrome \textit{b}. The other catalytic site $\mathrm{Q}_i$ uses the two electrons from the high and low potential chains to reduce quinone, or other metalloprotein electron transporters\cite{Snyder2000,Berry2011}. This modified Q-cycle is shown in Figure \ref{fig:q-cycle}.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=14cm]{01-introduction/data/q-cycle.png}
+	\caption[\bf The modified Q-cycle used by the bacterial $bc_1$ complex.]{{\bf The modified Q-cycle used by the bacterial $bc_1$ complex.} Adapted from \citet{Crofts2003}.
+	\label{fig:q-cycle}}
+	\end{center}
+\end{figure}
+
+The reaction scheme for the $bc_1$ complex is:
+\begin{equation}
+\mathrm{QH}_2 + 2 \mathrm{~ferricyt~} c^{3+} + 2\mathrm{H}^+_{\mathrm{Negative}} \Leftrightarrow \mathrm{Q} + 2 \mathrm{~ferrocyt~} c^{2+} + 4\mathrm{H}^+_{\mathrm{Positive}}
+\end{equation}
 
 \subsection{Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$}
 Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$ are all soluble \textit{c}-type cytochromes.
