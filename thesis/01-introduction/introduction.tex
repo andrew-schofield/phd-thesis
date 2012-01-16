@@ -86,7 +86,7 @@ The presence of nitrite triggers the two component NarP/NarQ\nomenclature{NarP}{
 
 Nitric oxide has a direct inhibitory effect on the expression of AniA, as does the NsrR protein. Nitric oxide also inhibits the NsrR protein, leading to a de-represssion of AniA \cite{Heurlier2008}. In the absence of nitric oxide, AniA is almost fully repressed by active NsrR. As \cNO{} concentrations increase, NsrR is inactivated allowing full activation of AniA. Once \cNO{} reaches a sufficiently high level it will begin to inhibit AniA \cite{Rock2005,Rock2007}.
 
-NorB is less tightly regulated by respiratory components, as it is only acted upon by NsrR, however it is regulated by FNR and ArsR outside the respiratory chain \cite{Isabella2008}. This regulation by NsrR works in a similar way to how NsrR acts upon AniA. When there is no nitric oxide present, the NsrR acts to inhibit NorB since there is no substrate for it to reduce. In the presence of nitric oxide, NsrR is inhibited, leading to the activation of NorB which is now able to reduce \cNO{} to \cNtwoO{}. In this case nitric oxide is acting as a de-repressor of NorB.
+NorB is less tightly regulated by respiratory components, as it is only acted upon by NsrR, however it is regulated by FNR and NrsR outside the respiratory chain \cite{Isabella2008}. This regulation by NsrR works in a similar way to how NsrR acts upon AniA. When there is no nitric oxide present, the NsrR acts to inhibit NorB since there is no substrate for it to reduce. In the presence of nitric oxide, NsrR is inhibited, leading to the activation of NorB which is now able to reduce \cNO{} to \cNtwoO{}. In this case nitric oxide is acting as a de-repressor of NorB.
 
 This complicated set of regulatory relationships between the different components of the respiratory pathways is shown in Figure \ref{fig:respiratory-pathway}.
 
@@ -136,7 +136,7 @@ The catalytic reaction for NorB is:
 \subsection{AniA Nitrite Reductase}
 AniA nitrite reductase is an anaerobically induced, outer membrane associated protein which uses nitrite as an electron acceptor\cite{Clark1987}. It is a copper-containing protein found in many denitrifying proteobacteria.
 
-Nitrite reductases catalyse the reduction of nitrite to nitric oxide with no associated proton translocation. There are two types of nitrite reductase, those that have haem centres, and those which have copper centres. AniA in \Nm{} is a copper-containing and accepts electrons from \textit{c}-type cytochomes ($c_5$).
+Nitrite reductases catalyse the reduction of nitrite to nitric oxide with no associated proton translocation. There are two types of nitrite reductase, those that have haem centres, and those which have copper centres. AniA in \Nm{} is a copper-containing and accepts electrons from \textit{c}-type cytochromes ($c_5$).
 
 In \Nm{} this enzyme is important during oxygen limiting conditions as it allows microaerobic respiration which can supplement growth by denitrification\cite{Rock2005}.
 
@@ -159,7 +159,7 @@ Mitochondrial complex I catalyses the oxidation of NADH and the reduction of ubi
 \subsection{Cytochrome $bc_\mathrm{1}$ Complex}
 The cytochrome $bc_\mathrm{1}$ complex oxidises quinols and reduces metalloprotein electron transporters (usually c-type cytochromes). It is an important part of bacterial respiratory chains, and is also analogous to the mitochondrial complex III\cite{Thoeny-Meyer1997}. Whilst catalysing the reduction of ubiquinol and the oxidation of c-type cytochromes, the $bc_\mathrm{1}$ complex also translocates protons across the inner membrane from the cytoplasm to the periplasm producing an electrochemical gradient. The $bc_\mathrm{1}$ complex is found in both Gram negative and Gram positive bacteria, however \textit{E. coli} has no $bc_\mathrm{1}$ complex. The homolg the $b_6f$ complex is also used for electron transfer during photosynthesis in higher plants and phototrophic bacteria\cite{Darrouzet1999}.
 
-In bacteria the $bc_1$ complex is formed of one cyt \textit{b} subunit which contains two \textit{b}-type hemes, one cyt $c_1$ subunit which contains a single \textit{c}-type heme and an Rieske iron-sulfur protein. These subunits form the two catalytic sites of the $bc_1$ complex. The reduction of ubiquinol appears to occur in a concerted manner at 1 of these sites, $\mathrm{Q}_o$\cite{Darrouzet1999}. Electrons from the quinol are shared between two reaction chains, 1 which tranfers electrons to the high-potential iron-sulfur protein and $c_1$, and another which transfers electrons to the low-potential cytochrome \textit{b}. The other catalytic site $\mathrm{Q}_i$ uses the two electrons from the high and low potential chains to reduce quinone, or other metalloprotein electron transporters\cite{Snyder2000,Berry2011}. This modified Q-cycle is shown in Figure \ref{fig:q-cycle}.
+In bacteria the $bc_1$ complex is formed of one cyt \textit{b} subunit which contains two \textit{b}-type hemes, one cyt $c_1$ subunit which contains a single \textit{c}-type heme and an Rieske iron-sulfur protein. These subunits form the two catalytic sites of the $bc_1$ complex. The reduction of ubiquinol appears to occur in a concerted manner at 1 of these sites, $\mathrm{Q}_o$\cite{Darrouzet1999}. Electrons from the quinol are shared between two reaction chains, 1 which transfers electrons to the high-potential iron-sulfur protein and $c_1$, and another which transfers electrons to the low-potential cytochrome \textit{b}. The other catalytic site $\mathrm{Q}_i$ uses the two electrons from the high and low potential chains to reduce quinone, or other metalloprotein electron transporters\cite{Snyder2000,Berry2011}. This modified Q-cycle is shown in Figure \ref{fig:q-cycle}.
 
 \begin{figure}
 	\begin{center}
@@ -171,11 +171,15 @@ In bacteria the $bc_1$ complex is formed of one cyt \textit{b} subunit which con
 
 The reaction scheme for the $bc_1$ complex is:
 \begin{equation}
-\mathrm{QH}_2 + 2 \mathrm{~ferricyt~} c^{3+} + 2\mathrm{H}^+_{\mathrm{Negative}} \Leftrightarrow \mathrm{Q} + 2 \mathrm{~ferrocyt~} c^{2+} + 4\mathrm{H}^+_{\mathrm{Positive}}
+\mathrm{QH}_2 + 2 \mathrm{~ferricyt~} c^{3+} + 2\mathrm{H}^+_{\mathrm{Negative}} \Longleftrightarrow \mathrm{Q} + 2 \mathrm{~ferrocyt~} c^{2+} + 4\mathrm{H}^+_{\mathrm{Positive}}
 \end{equation}
 
 \subsection{Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$}
-Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$ are all soluble \textit{c}-type cytochromes.
+Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$ are soluble \textit{c}-type cytochromes. These are small heme proteins that are found in the periplasm and are loosely associated with the inner membrane. Along with their presence in proteobacteria, the \textit{c}-type cytochromes also form part of the mitochondrial respiratory apparatus in the form of cytochrome \textit{c}. Bacterial \textit{c}-type cytochromes perform a very similar function to mitochondrial cytochrome \textit{c} in that they transport electrons from the $bc_1$ complex to the terminal reductases. Cytochromes \textit{c}-552, \textit{c}-553 \& \textit{c}-554 from algal chloroplasts and cyanobacteria, $c_2$ from purple photosynthetic bacteria and $c_4$ and $c_5$ from \textit{Azotobacter vinelandii} along with many others all have sequence and structural homology with mitochondrial cytochrome \textit{c}\cite{Wood1983}. The mitochondrial and bacterial soluble cytochromes all fall within Ambler's Class I of \textit{c}-type cytochromes\cite{Ambler1991}.
+Class I \textit{c}-type cytochromes have their heme-attachment site towards the N-terminus, and the sixth ligand is provided by a methionine residue 40 residues further down the chain towards the C-terminus\cite{Ambler1991}[Re-write this sentence, it is almost plagiarism!].\\
+Cytochrome $c_4$ is a diheme cytochrome and is the electron donor to \cbbthree{} transferring electrons from the $bc_1$ complex in \Nm{}\cite{Deeudom2007,Deeudom2008,Chang2010}.\\
+Cytochrome $c_x$ is a monoheme cytochrome which is also able to transfer electrons from the $bc_1$ complex to \cbbthree{}\cite{Deeudom2007,Deeudom2008}.\\
+Cytochrome $c_5$ is a diheme cytochrome which appears to be membrane associated. It transfers electrons from the $bc_1$ complex to AniA during Nitrite reduction\cite{Deeudom2007,Deeudom2008}.
 
 \subsection{Quinone Pool}
 The Quinone Pool

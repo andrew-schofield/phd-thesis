@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{91}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -261,6 +261,18 @@ Crofts AR, Shinkarev VP, Kolling DRJ, Hong S (2003) The Modified Q-Cycle
   Explains the Apparent Mismatch Between the Kinetics of Reduction of
   Cytochromes c1 and bh in the bc1 Complex. J Biol Chem 278: 36191--36201.
 
+\bibitem[{Wood(1983)}]{Wood1983}
+Wood PM (1983) Why do c-type cytochromes exist? FEBS Lett 164: 223--226.
+
+\bibitem[{Ambler(1991)}]{Ambler1991}
+Ambler RP (1991) Sequence variability in bacterial cytochromes c. Biochim
+  Biophys Acta 1058: 42--47.
+
+\bibitem[{Chang et~al.(2010)Chang, Ahn, Pace, Lin, Lin et~al.}]{Chang2010}
+Chang HY, Ahn Y, Pace LA, Lin MT, Lin YH, et~al. (2010) The Diheme Cytochrome
+  C(4) from {Vibrio cholerae} is a Natural Electron Donor to the Respiratory
+  cbb(3) Oxygen Reductase. Biochemistry 49: 7494--7503.
+
 \bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
 Kahlem P, Birney E (2006) Dry Work in a Wet World: Computation in Systems
   Biology. Mol Syst Biol 2: 40.
@@ -415,11 +427,6 @@ Forte E, Urbani A, Saraste M, Sarti P, Brunori M, et~al. (2001) The Cytochrome
 \bibitem[{Hunter(2007)}]{Hunter2007}
 Hunter H (2007) Characterisation of the Oxidase Activity in {Neisseria
   lactamica}.
-
-\bibitem[{Chang et~al.(2010)Chang, Ahn, Pace, Lin, Lin et~al.}]{Chang2010}
-Chang HY, Ahn Y, Pace LA, Lin MT, Lin YH, et~al. (2010) The Diheme Cytochrome
-  C(4) from {Vibrio cholerae} is a Natural Electron Donor to the Respiratory
-  cbb(3) Oxygen Reductase. Biochemistry 49: 7494--7503.
 
 \bibitem[{Nojiri et~al.(2009)Nojiri, Koteishi, Nakagami, Kobayashi, Inoue
   et~al.}]{Nojiri2009}
