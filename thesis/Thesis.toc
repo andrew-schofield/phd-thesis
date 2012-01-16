@@ -11,17 +11,17 @@
 \contentsline {section}{\numberline {1.6}Respiratory Electron Transporters in \textit {N. meningitidis}{}}{22}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}NADH Dehydrogenase}{22}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Cytochrome $bc_\mathrm {1}$ Complex}{22}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Cytochromes $c_\mathrm {4}$, $c_\mathrm {x}$ and $c_\mathrm {5}$}{24}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.3}Cytochromes $c_\mathrm {4}$, $c_\mathrm {x}$ and $c_\mathrm {5}$}{23}{subsection.1.6.3}
 \contentsline {subsection}{\numberline {1.6.4}Quinone Pool}{25}{subsection.1.6.4}
-\contentsline {section}{\numberline {1.7}Respiration Regulatory Proteins in \textit {N. meningitidis}{}}{25}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}NsrR - Nitrite Sensing Repressor Protein}{25}{subsection.1.7.1}
+\contentsline {section}{\numberline {1.7}Respiration Regulatory Proteins in \textit {N. meningitidis}{}}{26}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}NsrR - Nitrite Sensing Repressor Protein}{26}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}FNR - Fumarate Nitrate Reductase}{26}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}NarP - Nitrite Response Regulator}{26}{subsection.1.7.3}
 \contentsline {section}{\numberline {1.8}Organisation of Respiratory Chains in Other Bacteria}{26}{section.1.8}
 \contentsline {section}{\numberline {1.9}Systems Biology}{26}{section.1.9}
 \contentsline {section}{\numberline {1.10}Modelling}{29}{section.1.10}
 \contentsline {subsection}{\numberline {1.10.1}Modelling Respiratory Systems}{29}{subsection.1.10.1}
-\contentsline {subsection}{\numberline {1.10.2}Modelling Tools}{30}{subsection.1.10.2}
+\contentsline {subsection}{\numberline {1.10.2}Modelling Tools}{31}{subsection.1.10.2}
 \contentsline {section}{\numberline {1.11}Aims}{31}{section.1.11}
 \contentsline {chapter}{\numberline {2}Materials and Methods}{33}{chapter.2}
 \contentsline {section}{\numberline {2.1}\textit {Neisseria meningitidis}{} Strains Used in This Work}{33}{section.2.1}
