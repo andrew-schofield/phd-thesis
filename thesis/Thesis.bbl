@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{92}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -272,6 +272,12 @@ Ambler RP (1991) Sequence variability in bacterial cytochromes c. Biochim
 Chang HY, Ahn Y, Pace LA, Lin MT, Lin YH, et~al. (2010) The Diheme Cytochrome
   C(4) from {Vibrio cholerae} is a Natural Electron Donor to the Respiratory
   cbb(3) Oxygen Reductase. Biochemistry 49: 7494--7503.
+
+\bibitem[{Clark et~al.(2010)Clark, Isabella, Barth, and Overton}]{Clark2010}
+Clark VI, Isabella VM, Barth K, Overton TW (2010) Regulation and Function of
+  the Neisserial Denitrification Pathway: Life with Limited Oxygen. In: Genco
+  CA, Wetzler L, editors, Neisseria: Molecular Mechanisms of Pathogenesis,
+  chap.~2, pp. 19--39, Caister Academic Press.
 
 \bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
 Kahlem P, Birney E (2006) Dry Work in a Wet World: Computation in Systems

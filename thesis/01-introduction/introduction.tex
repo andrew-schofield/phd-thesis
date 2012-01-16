@@ -182,7 +182,28 @@ Cytochrome $c_x$ is a monoheme cytochrome which is also able to transfer electro
 Cytochrome $c_5$ is a diheme cytochrome which appears to be membrane associated. It transfers electrons from the $bc_1$ complex to AniA during Nitrite reduction\cite{Deeudom2007,Deeudom2008}.
 
 \subsection{Quinone Pool}
-The Quinone Pool
+The quinone source in \Nm{} is predicted to be ubiquinone\cite{Deeudom2007}. Ubiquinone, also known as Coenzyme $\mathrm{Q}_{10}$ is found in most eukaryotes. It is a vitamin-like lipid soluble molecule with a long tail made of 10 isoprenyl subunits. This is shown in Figure \ref{fig:Ubiquinone}.
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=14cm]{01-introduction/data/Ubiquinone.png}
+	\caption{{\bf Structure of the ubiquinone molecule.}
+	\label{fig:Ubiquinone}}
+	\end{center}
+\end{figure}
+
+In its oxidised form it is known as ubiquinone, whereas when reduced it is called ubiquinol. In the \Nm{} respiratory chain, ubiquinone is reduced to ubiquinol by the acceptance of 2 electrons from NADH (amongst others). Ubiquinol then donates electrons either directly to the terminal reductase NorB, or to the $bc_1$ complex.
+
+\section{Respiration Regulatory Proteins in \Nm{}}
+\subsection{NsrR - Nitrite Sensing Repressor Protein}
+``NsrR is an NO-sensing Rrf2-type transcriptional repressor''\cite{Barth2009}. In \Nm{} (and \textit{N. gonorrhoeae}) it negatively regulates \textit{aniA} and \textit{norB}, and derepression is caused by NO\cite{Rock2007,Heurlier2008,Isabella2008}. Rrf2 proteins have two DNA-binding helix-helix domains\cite{Rock2007}, with a putative iron-sulfur cluster inbetween. The binding of the iron-sulfur cluster, which is expected to be by NO in NsrR, would perturb the structure of the repressor protein and prevent DNA binding\cite{Rock2007}.
+
+\textit{norB} is expressed in a somewhat constitutive manner, in that with no repression \textit{norB} is still expressed to some extent\cite{Clark2010}. NsrR represses this expression until NO is present, at which point \textit{norB} can be expressed and the NorB enzyme can start removing the NO that is present.
+
+\textit{aniA} is positively regulated by FNR, but this seems to be quite insensitive to oxygen in \Nm{}, thus \textit{aniA} would be expressed even at 60 to 80\% air saturation with oxygen\cite{Rock2007}. \textit{aniA} therefore needs to be corepressed in order to prevent it being expressed excessively in aerobic conditions.
+
+\subsection{FNR - Fumarate Nitrate Reductase}
+
+\subsection{NarP - Nitrite Response Regulator}
 
 \section{Organisation of Respiratory Chains in Other Bacteria}
 The model organism \textit{Escherichia coli} has a more complex and unusual respiratory chain than \Nm{} yet it has not been modelled.
