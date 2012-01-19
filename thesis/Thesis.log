@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  19 JAN 2012 14:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  19 JAN 2012 15:17
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -730,29 +730,29 @@ File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf>
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 100.
+(Font)              scaled to size 11.40997pt on input line 99.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 100.
+(Font)              scaled to size 6.25204pt on input line 99.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 100.
+(Font)              scaled to size 11.40997pt on input line 99.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 100.
+(Font)              scaled to size 6.25204pt on input line 99.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <8> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 100.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <6> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 100.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 100.
+(hyperref)                removing `subscript' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 99.
 
 [16] [17 <./01-introduction/data/regulation.pdf>]
 <01-introduction/data/cbb3_only.png, id=746, 81.95418pt x 113.03027pt>
@@ -762,15 +762,15 @@ File: 01-introduction/data/cbb3_only.png Graphic file (type png)
 png (PNG copy)>] [19] [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `math shift' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 157.
+(hyperref)                removing `subscript' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `math shift' on input line 156.
 
 [21] <01-introduction/data/q-cycle.png, id=806, 1405.25pt x 1476.51625pt>
 File: 01-introduction/data/q-cycle.png Graphic file (type png)
@@ -778,39 +778,39 @@ File: 01-introduction/data/q-cycle.png Graphic file (type png)
 <use 01-introduction/data/q-cycle.png>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 175.
+(hyperref)                removing `subscript' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 175.
+(hyperref)                removing `subscript' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 175.
+(hyperref)                removing `subscript' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 174.
 
 [22] [23 <./01-introduction/data/q-cycle.png (PNG copy)>]
 <01-introduction/data/Ubiquinone.png, id=835, 1394.20876pt x 790.45313pt>
@@ -822,9 +822,9 @@ e.png>] [25] [26]
 File: 01-introduction/data/nm_resp.pdf Graphic file (type pdf)
 
 <use 01-introduction/data/nm_resp.pdf>
-Overfull \hbox (5.15628pt too wide) in paragraph at lines 227--228
+Overfull \hbox (5.15628pt too wide) in paragraph at lines 226--227
 \T1/ppl/m/n/12 ox-i-dore-duc-tase), and the chain in-cludes 2 fur-ther down-str
-eam \T1/ppl/m/it/12 c\T1/ppl/m/n/12 -type cy-to-chromes.
+eam \T1/ppl/m/it/12 c\T1/ppl/m/n/12 -type cy-tochromes.
  []
 
 [27 <./01-introduction/data/nm_resp.pdf>]
@@ -847,7 +847,7 @@ File: ./01-introduction/data/msb4100080-f1.png Graphic file (type png)
 <use ./01-introduction/data/msb4100080-f1.png> [31 <./01-introduction/data/F1.p
 ng (PNG copy)>] [32 <./01-introduction/data/msb4100080-f1.png (PNG copy)>]
 [33]
-Overfull \hbox (0.98053pt too wide) in paragraph at lines 319--320
+Overfull \hbox (0.98053pt too wide) in paragraph at lines 320--321
 \T1/ppl/m/n/12 The over-arching aim of this study was to pro-duce a work-ing ma
 th-e-mat-i-cal model
  []
@@ -896,7 +896,7 @@ Overfull \hbox (2.50404pt too wide) in paragraph at lines 67--68
 -trode, con-tained within
  []
 
-<./02-materialsmethods/data/drawing.pdf, id=1027, 517.13202pt x 416.75702pt>
+<./02-materialsmethods/data/drawing.pdf, id=1028, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
 <use ./02-materialsmethods/data/drawing.pdf> [39] [40 <./02-materialsmethods/da
@@ -964,19 +964,19 @@ Chapter 4.
 
 
 ] [56]
-<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1165, 480.99701pt
+<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1166, 480.99701pt
  x 521.95pt>
 File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
 pe pdf)
  <use ./03-parameterestimationmethodologies/data/sa_spread.pdf>
 [57] [58 <./03-parameterestimationmethodologies/data/sa_spread.pdf>] [59]
 [60]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1198, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Simulation.png, id=1199, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
  <use ./03-parameterestimationmethodologies/data/Simulation.png>
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1199, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Parameters.png, id=1200, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
@@ -994,7 +994,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1220, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1221, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
 <use ./05-oxygenreduction/data/o2sim.pdf>) [65 <./05-oxygenreduction/data/o2sim
@@ -1007,7 +1007,7 @@ Chapter 6.
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1238, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1239, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1029,7 +1029,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
  (./07-nitritereduction/nitritereduction.tex
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1257, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1258, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
 <use ./07-nitritereduction/data/no2sim.pdf> [71
@@ -1256,13 +1256,13 @@ Underfull \hbox (badness 1107) in paragraph at lines 383--385
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
 (./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 8942 strings out of 495039
- 125923 string characters out of 1182024
- 201976 words of memory out of 3000000
+ 8941 strings out of 495039
+ 125911 string characters out of 1182024
+ 201974 words of memory out of 3000000
  11416 multiletter control sequences out of 15000+50000
  84555 words of font info for 191 fonts, out of 3000000 for 9000
- 52 hyphenation exceptions out of 8191
- 38i,16n,51p,1398b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51 hyphenation exceptions out of 8191
+ 38i,16n,51p,1465b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/shar
 e/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -1275,9 +1275,9 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (89 pages, 1357241 bytes).
+Output written on Thesis.pdf (89 pages, 1357743 bytes).
 PDF statistics:
- 1462 PDF objects out of 1728 (max. 8388607)
+ 1463 PDF objects out of 1728 (max. 8388607)
  338 named destinations out of 1000 (max. 500000)
  846 words of extra memory for PDF output out of 10000 (max. 10000000)
 
