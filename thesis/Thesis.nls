@@ -3,45 +3,45 @@
  \nomgroup{A}
 
   \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{15}
+		\nompageref{14}
   \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
-		\nompageref{15}
+		\nompageref{14}
   \item [{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}
-		\nompageref{28}
+		\nompageref{37}
   \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
-		\nompageref{29}
+		\nompageref{38}
   \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
-		\nompageref{12}
+		\nompageref{11}
   \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
-		\nompageref{16}
-  \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
-		\nompageref{18}
-  \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
-		\nompageref{28}
-  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
 		\nompageref{15}
+  \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
+		\nompageref{17}
+  \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
+		\nompageref{37}
+  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
+		\nompageref{14}
   \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
-		\nompageref{17}
+		\nompageref{16}
   \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
-		\nompageref{17}
+		\nompageref{16}
   \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.0}
-		\nompageref{30}
+		\nompageref{39}
   \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
 		\nompageref{18}
   \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{15}
+		\nompageref{14}
   \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
-		\nompageref{17}
-  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{29}
-  \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.0}
-		\nompageref{24}
-  \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.0}
-		\nompageref{24}
+		\nompageref{16}
+  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{38}
+  \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}
+		\nompageref{33}
+  \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}
+		\nompageref{33}
   \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
-		\nompageref{28}
+		\nompageref{37}
   \item [{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}
-		\nompageref{27}
+		\nompageref{36}
   \item [{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}
-		\nompageref{27}
+		\nompageref{36}
 
 \end{thenomenclature}
