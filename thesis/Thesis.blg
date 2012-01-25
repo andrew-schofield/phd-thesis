@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
-The top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux
 The style file: unsrtPLoS-Biology.bst
 A level-1 auxiliary file: ./01-introduction/introduction.aux
 A level-1 auxiliary file: ./02-materialsmethods/materialsandmethods.aux
@@ -13,48 +12,7 @@ A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
 Warning--entry type for "Hunter2007" isn't style-file defined
---line 3913 of file phd_refs.bib
+--line 1957 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
-You've used 96 entries,
-            2955 wiz_defined-function locations,
-            1432 strings with 32373 characters,
-and the built_in function-call counts, 103321 in all, are:
-= -- 10175
-> -- 3560
-< -- 55
-+ -- 1781
-- -- 977
-* -- 8851
-:= -- 14032
-add.period$ -- 191
-call.type$ -- 96
-change.case$ -- 514
-chr.to.int$ -- 113
-cite$ -- 98
-duplicate$ -- 8172
-empty$ -- 8574
-format.name$ -- 1291
-if$ -- 21963
-int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 918
-newline$ -- 295
-num.names$ -- 391
-pop$ -- 2030
-preamble$ -- 1
-purify$ -- 499
-quote$ -- 0
-skip$ -- 1975
-stack$ -- 0
-substring$ -- 11943
-swap$ -- 2042
-text.length$ -- 9
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 846
-warning$ -- 2
-while$ -- 860
-width$ -- 0
-write$ -- 1064
 (There were 3 warnings)
