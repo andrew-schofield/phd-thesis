@@ -66,7 +66,7 @@ Calibration of the oxygen electrode assumes that anaerobic water will not produc
 \section{Measuring Nitric Oxide Concentration}
 Nitric Oxide concentration was measured using a Nitric Oxide probe (ISO-NOP, World Precision Instruments) connected to a Nitric Oxide Meter (ISO-NO mkII, World Precision Instruments). This is also a Clark type electrode, contained within a steel sleeve with a semi-permeable membrane separating the working electrode from the system being measured\cite{Liu2005,Bedioui2003,Serpe2007}. The NO probe is inserted through one of the holes in the plastic lid of the reaction chamber of the oxygen electrode assembly. The tip of the electrode should be immersed in the culture, with care being taken not to trap any air bubbles on the surface of the probe. The sensor is also attached to the same data logger as above. In this way both Oxygen and Nitric Oxide concentrations can be measured in parallel.
 \subsection{Calibration of Nitric Oxide Electrode}
-Calibration of the nitric oxide electrode 
+Calibration of the nitric oxide electrode relies on adding known quantities of Nitric Oxide to the electrode chamber. Sodium Nitrite will liberate Nitric Oxide with a 1:1 ratio when added to a solution of 0.1M Potassium Iodide and Sulfuric acid. 5ml of 0.1 Potassium Iodide/Sulfuric Acid was added to the electrode chamber
 
 \section{Measuring Nitrite Concentration (Griess Assay)}
 \cite{DonaldNicholas1957}
@@ -79,29 +79,29 @@ Calibration of the nitric oxide electrode
 
 \section{Nitric Oxide Production}
 Similar to the set-up described by \cite{Aga2008}.
-\begin{figure}
- \centering
- \includegraphics[height=10cm]{./02-materialsmethods/data/drawing.pdf}
+%\begin{figure}
+% \centering
+% \includegraphics[height=10cm]{./02-materialsmethods/data/drawing.pdf}
  % drawing.pdf: 515x415 pixel, 72dpi, 18.17x14.64 cm, bb=0 0 515 415
- \caption{NO making apparatus. 1,2 - N$_{\textrm{2}}$ release valve. 3 - 50ml 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$. 4 - 200ml 2M NaNO$_{\textrm{2}}$ stirring. 5 - 1M NaOH $\frac{2}{3}$ full. 6,7 - dH$_{\textrm{2}}$O $\frac{2}{3}$ full. 8 - To N$_{\textrm{2}}$ gas bottle.}
-\end{figure}
-\subsection*{Chemicals}
-\begin{itemize}
- \item 200ml NaNO$_{\textrm{2}}$ @ 2M - 27.6g in 200ml dH$_{\textrm{2}}$O
- \item 50ml H$_{\textrm{2}}$SO$_{\textrm{4}}$ @ 4M - 11ml in 39ml dH$_{\textrm{2}}$O
- \item 200ml NaOH @ 1M - 8g in 200ml dH$_{\textrm{2}}$O
-\end{itemize}
+% \caption{NO making apparatus. 1,2 - N$_{\textrm{2}}$ release valve. 3 - 50ml 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$. 4 - 200ml 2M NaNO$_{\textrm{2}}$ stirring. 5 - 1M NaOH $\frac{2}{3}$ full. 6,7 - dH$_{\textrm{2}}$O $\frac{2}{3}$ full. 8 - To N$_{\textrm{2}}$ gas bottle.}
+%\end{figure}
+%\subsection*{Chemicals}
+%\begin{itemize}
+% \item 200ml NaNO$_{\textrm{2}}$ @ 2M - 27.6g in 200ml dH$_{\textrm{2}}$O
+% \item 50ml H$_{\textrm{2}}$SO$_{\textrm{4}}$ @ 4M - 11ml in 39ml dH$_{\textrm{2}}$O
+% \item 200ml NaOH @ 1M - 8g in 200ml dH$_{\textrm{2}}$O
+%\end{itemize}
 
-\subsection*{Procedure}
-\begin{itemize}
- \item Set up system and sparge with N$_{\textrm{2}}$ gas for 15 minutes. Sparge 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ separately.
- \item Shut valve to N$_{\textrm{2}}$ hose (blue valve 1).
- \item Keep blue valve 2 open at all times.
- \item When sparged, add 25ml of 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ to 2M NaNO$_{\textrm{2}}$ and allow brown gas to bubble through to saturated solution vessel.
- \item Leave for at least 15 minutes allow 2M solution to cool.
- \item Remove needle and close sealing valve on saturated solution vessel.
- \item Clean up - allow 1-2 hours to allow reaction to finish. Sparge with N$_{\textrm{2}}$ to get rid of residual NO gas. Disassemble, wash in dH$_{\textrm{2}}$O and dry in oven.
-\end{itemize}
+%\subsection*{Procedure}
+%\begin{itemize}
+% \item Set up system and sparge with N$_{\textrm{2}}$ gas for 15 minutes. Sparge 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ separately.
+% \item Shut valve to N$_{\textrm{2}}$ hose (blue valve 1).
+% \item Keep blue valve 2 open at all times.
+% \item When sparged, add 25ml of 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ to 2M NaNO$_{\textrm{2}}$ and allow brown gas to bubble through to saturated solution vessel.
+% \item Leave for at least 15 minutes allow 2M solution to cool.
+% \item Remove needle and close sealing valve on saturated solution vessel.
+% \item Clean up - allow 1-2 hours to allow reaction to finish. Sparge with N$_{\textrm{2}}$ to get rid of residual NO gas. Disassemble, wash in dH$_{\textrm{2}}$O and dry in oven.
+%\end{itemize}
 
 \section{Solving Ordinary Differential Equations}
 The model equations are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations \cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities.
