@@ -1,6 +1,9 @@
 \chapter{Parameter Estimation Methodologies}
 \section{Simulated Annealing}
 
+Discovered independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}.
+\citet{Bertsimas1993}
+
 The algorithm used to modify the parameter sets is broadly based on simulated annealing in addition to a simple genetic algorithm.
  
 In this scheme a synthetic ``chromosome'' is created containing ``genes'' which represent parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. The initial parameter set is loaded onto the chromosome and those parameters are used to solve the sets of differential equations as above. This generates data at time points (every 0.001s) during the simulation which can be plotted and compared against known experimental values. By calculating the least-squares-difference between the result from the simulation, and the experimental data, it is possible to generate an ``unfitness'' value for the simulated data. This is a representation of how close the simulated data is to the experimental data, an unfitness value of 0 being a perfect fit. 
