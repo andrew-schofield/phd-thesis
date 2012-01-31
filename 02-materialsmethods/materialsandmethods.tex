@@ -60,16 +60,40 @@ Bacterial cultures were grown overnight and then transferred into aerobic liquid
 \section{Measuring Oxygen Concentration}
 Oxygen concentration in respiring cultures was measured using a Clark electrode \cite{Clark1953} from Rank Brothers, Cambridge, UK. This electrode has a silver anode and a platinum cathode using a saturated potassium chloride solution as electrolyte. The electrode is set at the bottom of a ~7ml reaction chamber separated from its contents by a thin Teflon membrane. This membrane is permeable to dissolved oxygen, and is reduced by the electrode producing a measurable electrical current. The reaction chamber is maintained at $37$\textdegree C by an attached water bath.
 When performing experiments, 5ml of culture is added to the reaction chamber, which is stirred by use of a magnetic flea, and the chamber covered with a plastic stopper. The stopper has a number of holes through which the NO probe, or Hamilton syringe can be inserted. Data is collected by attaching the electrode to an external data logger (Pico ADC20, Pico Technology).
+
 \subsection{Calibration of Oxygen Electrode}
 Calibration of the oxygen electrode assumes that anaerobic water will not produce any measurable current at the electrode. Oxygen saturated water contains 210$\mu$M Oxygen (ref needed). 5ml of ultra pure water was added to the electrode chamber, and then aerated to saturation by use of a pasteur pipette. The maximum value recorded by the data logger then corresponds to a concentration of 210$\mu$M Oxygen, with the relationship between mV as recorded against concentration being linear.
 
 \section{Measuring Nitric Oxide Concentration}
 Nitric Oxide concentration was measured using a Nitric Oxide probe (ISO-NOP, World Precision Instruments) connected to a Nitric Oxide Meter (ISO-NO mkII, World Precision Instruments). This is also a Clark type electrode, contained within a steel sleeve with a semi-permeable membrane separating the working electrode from the system being measured\cite{Liu2005,Bedioui2003,Serpe2007}. The NO probe is inserted through one of the holes in the plastic lid of the reaction chamber of the oxygen electrode assembly. The tip of the electrode should be immersed in the culture, with care being taken not to trap any air bubbles on the surface of the probe. The sensor is also attached to the same data logger as above. In this way both Oxygen and Nitric Oxide concentrations can be measured in parallel.
+
 \subsection{Calibration of Nitric Oxide Electrode}
-Calibration of the nitric oxide electrode relies on adding known quantities of Nitric Oxide to the electrode chamber. Sodium Nitrite will liberate Nitric Oxide with a 1:1 ratio when added to a solution of 0.1M Potassium Iodide and Sulfuric acid. 5ml of 0.1 Potassium Iodide/Sulfuric Acid was added to the electrode chamber
+Calibration of the nitric oxide electrode relies on adding known quantities of Nitric Oxide to the electrode chamber. Sodium Nitrite will liberate Nitric Oxide with a 1:1 ratio when added to a solution of excess Potassium Iodide and Sulfuric acid based on the following reaction:
+
+\begin{equation}
+2\mathrm{NaNO}_2 + 2\mathrm{KI} + 2 \mathrm{H}_2\mathrm{SO}_4 \longrightarrow 2\mathrm{NO} + \mathrm{I}_2 + 2\mathrm{H}_2\mathrm{O} + 2\mathrm{Na}_2\mathrm{SO}_4
+\end{equation}
+5ml of 0.1M Potassium Iodide/Sulfuric Acid was added to the electrode chamber and allowed to stabilise. Then, increasing concentrations of Sodium Nitrite solution were successively added to produce a standard curve of Nitric Oxide concentration to recorded electrode mV. The volume and concentrations of Soduim Nitrite added to the electrode chamber are detailed in Table \ref{tab:sodiumnitrite}.
+
+\begin{table}[here]
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+\multicolumn{2}{c}{$\mathbf{NaNO}_2$} & \textbf{NO} \\
+\textbf{Concentration ($\mu$M)} & \textbf{Volume ($\mu$L)} & \textbf{Concentration (nM)} \\
+\midrule
+10 & 50 & 99 \\
+100 & 25 & 591 \\
+100 & 50 & 1561 \\
+\bottomrule
+\end{tabular} 
+\end{center}
+\caption{Sodium Nitrite concentrations used to calibrate ISO-NOP Nitric Oxide sensor.
+\label{tab:sodiumnitrite}}
+\end{table}
 
 \section{Measuring Nitrite Concentration (Griess Assay)}
-\cite{DonaldNicholas1957}
+Nitrite concentration in liquid culture was determined using the colorimetric assay described by \citet{DonaldNicholas1957}. This reaction is based on chemical diazotization which uses sulfanilamide and NED\nomenclature{NED}{\textit{N}-1-napthylethylenediamine dihydrochloride} under acidic (hydrochloric acid) conditions.
 \subsection*{Chemicals}
 \begin{itemize}
  \item 50ml 1\% w/v Sulfanilamide in 1M HCl
