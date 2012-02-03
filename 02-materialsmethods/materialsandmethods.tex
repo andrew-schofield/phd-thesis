@@ -80,7 +80,7 @@ Calibration of the nitric oxide electrode relies on adding known quantities of N
 \begin{tabular}{ccc}
 \toprule
 \multicolumn{2}{c}{$\mathbf{NaNO}_2$} & \textbf{NO} \\
-\textbf{Concentration ($\mu$M)} & \textbf{Volume ($\mu$L)} & \textbf{Concentration (nM)} \\
+\textbf{Concentration ($\mu$M)} & \textbf{Volume ($\mu$l)} & \textbf{Concentration (nM)} \\
 \midrule
 10 & 50 & 99 \\
 100 & 25 & 591 \\
@@ -93,43 +93,40 @@ Calibration of the nitric oxide electrode relies on adding known quantities of N
 \end{table}
 
 \section{Measuring Nitrite Concentration (Griess Assay)}
-Nitrite concentration in liquid culture was determined using the colorimetric assay described by \citet{DonaldNicholas1957}. This reaction is based on chemical diazotization which uses sulfanilamide and NED\nomenclature{NED}{\textit{N}-1-napthylethylenediamine dihydrochloride} under acidic (hydrochloric acid) conditions.
-\subsection*{Chemicals}
-\begin{itemize}
- \item 50ml 1\% w/v Sulfanilamide in 1M HCl
- \item 50ml 0.02\% w/v NED\nomenclature{NED}{\textit{N}-1-napthylethylenediamine dihydrochloride} in 1M HCl
-\end{itemize}
-
+Nitrite concentration in liquid culture was determined using the colorimetric assay described by \citet{DonaldNicholas1957}. This reaction is based on chemical diazotization which uses sulfanilamide and \textit{N}-1-napthylethylenediamine dihydrochloride (NED)\nomenclature{NED}{\textit{N}-1-napthylethylenediamine dihydrochloride} under acidic (hydrochloric acid) conditions. Nitrite is converted to nitrous acid under acidic conditions and this then forms a diazonium salt with the sufanilamide. The diazonium salt combines with NED and forms a pink azo dye which can be detected using absorbance spectrophotometry at a wavelength of 540nm. Depending on the expected concentration of nitrite, different sample volumes are used in the assay. The most common sample volume used was $25\mu\textrm{l}$ which allows detection up to around $1\mu\textrm{M}$ nitrite with the following reagent volumes: $875\mu\textrm{l}$ of 1\% sulfanilamide in 1M HCl and $100\mu\textrm{l}$ of 0.02\% NED in 1M HCl. When using different sample volumes, the volume of sulfanilamide was altered such that the volume of sample + sulfanilamide always equalled $900\mu\textrm{l}$. After adding the sample to the reagents, it was left for 20 minutes for the colour to develop, then the absorbance at 540nm was measured and compared to a standard curve.
 
 \section{Nitric Oxide Production}
-Similar to the set-up described by \cite{Aga2008}.
-%\begin{figure}
-% \centering
-% \includegraphics[height=10cm]{./02-materialsmethods/data/drawing.pdf}
+Solutions of Nitric Oxide were prepared using a method derived from one described by \citet{Aga2008}. The apparatus setup is shown in Figure \ref{fig:nomaker}. 
+\begin{figure}
+ \centering
+ \includegraphics[height=10cm]{./02-materialsmethods/data/drawing.pdf}
  % drawing.pdf: 515x415 pixel, 72dpi, 18.17x14.64 cm, bb=0 0 515 415
-% \caption{NO making apparatus. 1,2 - N$_{\textrm{2}}$ release valve. 3 - 50ml 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$. 4 - 200ml 2M NaNO$_{\textrm{2}}$ stirring. 5 - 1M NaOH $\frac{2}{3}$ full. 6,7 - dH$_{\textrm{2}}$O $\frac{2}{3}$ full. 8 - To N$_{\textrm{2}}$ gas bottle.}
-%\end{figure}
-%\subsection*{Chemicals}
-%\begin{itemize}
-% \item 200ml NaNO$_{\textrm{2}}$ @ 2M - 27.6g in 200ml dH$_{\textrm{2}}$O
-% \item 50ml H$_{\textrm{2}}$SO$_{\textrm{4}}$ @ 4M - 11ml in 39ml dH$_{\textrm{2}}$O
-% \item 200ml NaOH @ 1M - 8g in 200ml dH$_{\textrm{2}}$O
-%\end{itemize}
+ \caption[NO making apparatus.]{{\bf NO making apparatus.} 1 \& 2 - N$_{\textrm{2}}$ release valves. 3 - Pressure equalizing dropping funnel, containing 50ml 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$. 4 - Stirred, round-bottomed flask, containing 200ml 2M NaNO$_{\textrm{2}}$. 5 - Dreschel bottle with sintered bulb, containing \~200ml 1M NaOH ($\frac{2}{3}$ full). 6 - Dreschel bottle with sintered bulb, containing \~200ml dH$_{\textrm{2}}$O ($\frac{2}{3}$ full). 7 - Small glass bottle with rubber septum and needle entry valve, containing dH$_{\textrm{2}}$O $\frac{2}{3}$ full. 8 - To N$_{\textrm{2}}$ gas bottle.
+ \label{fig:nomaker}}
+\end{figure}
+A concentrated solution of Sulfuric acid is added from a pressure-equalizing dropping funnel to a concentrated solution of Sodium Nitrite solution in a stirred, round-bottomed flask. This releases NO gas which passes through a solution of Sodium Hydroxide to neutralise any Sulfuric acid present, then through distilled water to remove any Sodium Hydroxide before finally being bubbled into a collection vessel with a sealed rubber septum containing distilled water. The concentrations of the chemicals used in this preparation are shown in Table \ref{tab:nomakerchem}.
+\begin{table}[here]
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+\textbf{Chemical} & \textbf{Volume (ml)} & \textbf{Concentration (M)} \\
+\midrule
+$\textrm{NaNO}_2$ & 200 & 2 \\
+$\textrm{H}_2\textrm{SO}_4$ & 50 & 4 \\
+NaOH & 200 & 1 \\
+\bottomrule
+\end{tabular} 
+\end{center}
+\caption{Chemicals needed for preparation of Nitric Oxide solution.
+\label{tab:nomakerchem}}
+\end{table}\\
+The system should be set up in a fume cupboard as shown in Figure \ref{fig:nomaker} and sparged with $\textrm{N}_2$ gas for 15 minutes (the dropping funnel will allow gas to pass into the round bottomed flask even when the bottom valve is closed). The $\textrm{H}_2\textrm{SO}_4$ should be sparged separately. Valve 2 should be left open at all times. After sparging close valve 1 and then add the Sulfuric acid dropwise from the dropping funnel. Brown gas will start to bubble through to the collection vessel. This apparatus should produce enough NO gas to saturate several small (10ml) collection vessels which should have the needle removed and be sealed once saturated. Once all the Sulfuric acid has been added leave the reaction to finish which could take 1-2 hours. Before disassembly sparge the apparatus with $\textrm{N}_2$ gas to remove residual NO gas.
 
-%\subsection*{Procedure}
-%\begin{itemize}
-% \item Set up system and sparge with N$_{\textrm{2}}$ gas for 15 minutes. Sparge 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ separately.
-% \item Shut valve to N$_{\textrm{2}}$ hose (blue valve 1).
-% \item Keep blue valve 2 open at all times.
-% \item When sparged, add 25ml of 4M H$_{\textrm{2}}$SO$_{\textrm{4}}$ to 2M NaNO$_{\textrm{2}}$ and allow brown gas to bubble through to saturated solution vessel.
-% \item Leave for at least 15 minutes allow 2M solution to cool.
-% \item Remove needle and close sealing valve on saturated solution vessel.
-% \item Clean up - allow 1-2 hours to allow reaction to finish. Sparge with N$_{\textrm{2}}$ to get rid of residual NO gas. Disassemble, wash in dH$_{\textrm{2}}$O and dry in oven.
-%\end{itemize}
+The eventual concentration of NO in the solution will vary depending on the temperature, but at 25\textdegree{}C in pure water the concentration will be between 1.88 and 1.96 mM\cite{Aga2008,Cole2008}.
 
 \section{Solving Ordinary Differential Equations}
 The model equations are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations \cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities.
 
-The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. We decided to write a custom implementation rather than using off the shelf systems for solving ODEs and parameter estimation as we wanted the greatest flexibility in how we integrated the two techniques, and it allowed us to quickly and easily tailor the code to our needs. %Initially we tried using COPASI \cite{StefanHoops12152006}, however at that time it had limitations that we could not overcome, such as bulk addition of components at arbitrary time-points.
+The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. I decided to write a custom implementation rather than using off the shelf systems for solving ODEs and parameter estimation as I wanted the greatest flexibility in how I integrated the two techniques, and it allowed me to quickly and easily tailor the code to my needs. Initially I tried using COPASI \cite{StefanHoops12152006}, however at that time it had limitations that I could not overcome, such as bulk addition of components at arbitrary time-points.
 
 The implementation of the model has no constraints on respiratory substrate concentration, thus allows the altering of these concentrations whilst solving the equations, however changes to substrate concentration have to be made programmatically to inform the model of the change (\texttt{if (t == 50) then NO\_conc += 20;}). This ability means that the switch between aerobic and anaerobic respiration can be examined synthetically, and the model is also capable of simulating how the respiratory system responds to addition of substrates such as Nitric Oxide. This ability was an absolute requirement, as in order to fully parametrise the model it was necessary to isolate sections of the model, which required adding aliquots of respiratory substrate during respiration.
