@@ -38,59 +38,59 @@
 \contentsline {subsection}{\numberline {2.4.1}Calibration of Nitric Oxide Electrode}{39}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Measuring Nitrite Concentration (Griess Assay)}{40}{section.2.5}
 \contentsline {section}{\numberline {2.6}Nitric Oxide Production}{40}{section.2.6}
-\contentsline {section}{\numberline {2.7}Solving Ordinary Differential Equations}{40}{section.2.7}
-\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{42}{chapter.3}
-\contentsline {section}{\numberline {3.1}Construction}{42}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Converting Biological Reactions into Differential Equations}{42}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{47}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{48}{section.3.2}
-\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{55}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulated Annealing}{55}{section.4.1}
-\contentsline {section}{\numberline {4.2}Approximate Bayesian Computation by Sequential Monte Carlo}{57}{section.4.2}
-\contentsline {section}{\numberline {4.3}Metropolis Hastings Monte Carlo}{60}{section.4.3}
-\contentsline {section}{\numberline {4.4}Implementation}{61}{section.4.4}
-\contentsline {section}{\numberline {4.5}Integrative Scheme}{63}{section.4.5}
-\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{64}{chapter.5}
-\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{64}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Introduction}{66}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Results}{66}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Discussion}{66}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{67}{chapter.6}
-\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{70}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Introduction}{70}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Results}{70}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{70}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Microaerobic Nitric Oxide Reduction}{70}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Introduction}{70}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Results}{70}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Discussion}{70}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{70}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Introduction}{70}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Results}{70}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Discussion}{70}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{71}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{73}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{73}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Results}{73}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Discussion}{73}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{73}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Introduction}{73}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Results}{73}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Discussion}{73}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{73}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Introduction}{73}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Results}{73}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Discussion}{73}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{73}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Introduction}{73}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Results}{73}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Discussion}{73}{subsection.7.4.3}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{74}{chapter.8}
-\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{74}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Introduction}{74}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Results}{74}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Discussion}{74}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}The Completed Model}{75}{chapter.9}
-\contentsline {chapter}{\numberline {A}Appendix}{76}{appendix.A}
-\contentsline {chapter}{List of Abbreviations}{78}{appendix*.5}
-\contentsline {chapter}{References}{78}{appendix*.5}
+\contentsline {section}{\numberline {2.7}Solving Ordinary Differential Equations}{42}{section.2.7}
+\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{44}{chapter.3}
+\contentsline {section}{\numberline {3.1}Construction}{44}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Converting Biological Reactions into Differential Equations}{44}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{49}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{50}{section.3.2}
+\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulated Annealing}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Approximate Bayesian Computation by Sequential Monte Carlo}{59}{section.4.2}
+\contentsline {section}{\numberline {4.3}Metropolis Hastings Monte Carlo}{62}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementation}{63}{section.4.4}
+\contentsline {section}{\numberline {4.5}Integrative Scheme}{65}{section.4.5}
+\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{66}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{66}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{68}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Results}{68}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Discussion}{68}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{69}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{72}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{72}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Results}{72}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{72}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Microaerobic Nitric Oxide Reduction}{72}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Introduction}{72}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Results}{72}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Discussion}{72}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{72}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Introduction}{72}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Results}{72}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Discussion}{72}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{73}{chapter.7}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{75}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{75}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Results}{75}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Discussion}{75}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{75}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Introduction}{75}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Results}{75}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Discussion}{75}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{75}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{75}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Results}{75}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Discussion}{75}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{75}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{75}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Results}{75}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Discussion}{75}{subsection.7.4.3}
+\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{76}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{76}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{76}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Results}{76}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Discussion}{76}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {9}The Completed Model}{77}{chapter.9}
+\contentsline {chapter}{\numberline {A}Appendix}{78}{appendix.A}
+\contentsline {chapter}{List of Abbreviations}{80}{appendix*.5}
+\contentsline {chapter}{References}{80}{appendix*.5}
