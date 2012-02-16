@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=Thesis.tex
+lastDocument=02-materialsmethods/materialsandmethods.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -146,10 +146,10 @@ order=10
 
 [item:02-materialsmethods/materialsandmethods.tex]
 archive=true
-column=0
+column=500
 encoding=UTF-8
 highlight=LaTeX
-line=5
+line=129
 mode=LaTeX
 open=true
 order=1
@@ -226,10 +226,10 @@ order=6
 
 [item:Thesis.tex]
 archive=true
-column=7
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=192
+line=0
 mode=LaTeX
 open=true
 order=8
@@ -259,8 +259,8 @@ CursorColumn=0
 CursorLine=148
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
-CursorColumn=0
-CursorLine=5
+CursorColumn=500
+CursorLine=129
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 CursorColumn=12
@@ -291,8 +291,8 @@ CursorColumn=29
 CursorLine=0
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=7
-CursorLine=192
+CursorColumn=0
+CursorLine=0
 
 [view-settings,view=0,item:appendix/appendix.tex]
 CursorColumn=11

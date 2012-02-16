@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  3 FEB 2012 15:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  14 FEB 2012 15:42
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -975,43 +975,43 @@ pe pdf)
  <use ./03-parameterestimationmethodologies/data/sa_spread.pdf>
 [59] [60 <./03-parameterestimationmethodologies/data/sa_spread.pdf>] [61]
 [62]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1226, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Simulation.png, id=1229, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
  <use ./03-parameterestimationmethodologies/data/Simulation.png>
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1227, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Parameters.png, id=1230, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
  <use ./03-parameterestimationmethodologies/data/Parameters.png>
-[63 <./03-parameterestimationmethodologies/data/Simulation.png (PNG copy)>]
-[64 <./03-parameterestimationmethodologies/data/Parameters.png (PNG copy)>])
-[65]
+[63] [64 <./03-parameterestimationmethodologies/data/Simulation.png (PNG copy)>
+ <./03-parameterestimationmethodologies/data/Parameters.png (PNG copy)>])
+[65] [66]
 \openout2 = `./05-oxygenreduction/oxygenreduction.aux'.
 
  (./05-oxygenreduction/oxygenreduction.tex
 Chapter 5.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 1.
-[66
+[67
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1247, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1256, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
-<use ./05-oxygenreduction/data/o2sim.pdf>) [67 <./05-oxygenreduction/data/o2sim
-.pdf, page is rotated 90 degrees>] [68]
+<use ./05-oxygenreduction/data/o2sim.pdf>) [68 <./05-oxygenreduction/data/o2sim
+.pdf, page is rotated 90 degrees>] [69]
 \openout2 = `./06-noreduction/noreduction.aux'.
 
  (./06-noreduction/noreduction.tex
 Chapter 6.
-[69
+[70
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1265, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1273, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1027,16 +1027,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
-) [70] [71 <./06-noreduction/data/nosim.pdf, page is rotated 90 degrees>]
-[72]
+) [71] [72 <./06-noreduction/data/nosim.pdf, page is rotated 90 degrees>]
+[73]
 \openout2 = `./07-nitritereduction/nitritereduction.aux'.
 
  (./07-nitritereduction/nitritereduction.tex
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1284, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1293, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
-<use ./07-nitritereduction/data/no2sim.pdf> [73
+<use ./07-nitritereduction/data/no2sim.pdf> [74
 
 
 
@@ -1089,13 +1089,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-) [74 <./07-nitritereduction/data/no2sim.pdf>] [75]
+) [75 <./07-nitritereduction/data/no2sim.pdf>] [76]
 \openout2 = `./08-expression/expression.aux'.
 
 
 (./08-expression/expression.tex
 Chapter 8.
-) [76
+) [77
 
 
 
@@ -1104,7 +1104,7 @@ Chapter 8.
 
  (./09-completedmodel/completedmodel.tex
 Chapter 9.
-) [77
+) [78
 
 
 
@@ -1113,11 +1113,11 @@ Chapter 9.
 
  (./appendix/appendix.tex
 Appendix A.
-) [78
+) [79
 
 
 
-] [79] (./Thesis.nls
+] [80] (./Thesis.nls
 Underfull \hbox (badness 10000) detected at line 5
 []\T1/ppl/b/n/12 AniA[]
  []
@@ -1222,31 +1222,31 @@ Underfull \hbox (badness 10000) detected at line 44
 []\T1/ppl/b/n/12 tet$[]$[]
  []
 
-) (./Thesis.bbl [80
+) (./Thesis.bbl [81
 
 
 
-] [81
+] [82
 
-] [82]
+] [83]
 Underfull \hbox (badness 1259) in paragraph at lines 129--131
 []\T1/ppl/m/n/12 Anjum MF, Ste-vanin TM, Read RC, Moir JWB (2002) Ni-tric Ox-id
 e
  []
 
-[83] [84]
+[84] [85]
 Underfull \hbox (badness 3503) in paragraph at lines 215--218
 \T1/ppl/m/it/12 Neis-se-ria menin-gi-tidis \T1/ppl/m/n/12 is Be-com-ing a Ni-tr
 ic Oxide-Tolerant Aer-obe.
  []
 
-[85]
+[86]
 Underfull \hbox (badness 1496) in paragraph at lines 272--274
 []\T1/ppl/m/n/12 Ambler RP (1991) Se-quence Vari-abil-ity in Bac-te-rial Cy-toc
 hromes c.
  []
 
-[86] [87] [88] [89] [90]) [91] (./Thesis.aux
+[87] [88] [89] [90] [91] [92]) [93] (./Thesis.aux
 (./01-introduction/introduction.aux)
 (./02-materialsmethods/materialsandmethods.aux)
 (./04-model/modelconstructionandparameters.aux)
@@ -1255,13 +1255,13 @@ hromes c.
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
 (./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 8965 strings out of 495039
- 126296 string characters out of 1182024
- 202439 words of memory out of 3000000
- 11431 multiletter control sequences out of 15000+50000
+ 8975 strings out of 495039
+ 126472 string characters out of 1182024
+ 202560 words of memory out of 3000000
+ 11437 multiletter control sequences out of 15000+50000
  84555 words of font info for 191 fonts, out of 3000000 for 9000
  51 hyphenation exceptions out of 8191
- 38i,16n,51p,1465b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,16n,51p,1465b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/shar
 e/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -1274,9 +1274,9 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (91 pages, 1367150 bytes).
+Output written on Thesis.pdf (93 pages, 1369697 bytes).
 PDF statistics:
- 1491 PDF objects out of 1728 (max. 8388607)
- 347 named destinations out of 1000 (max. 500000)
+ 1504 PDF objects out of 1728 (max. 8388607)
+ 351 named destinations out of 1000 (max. 500000)
  846 words of extra memory for PDF output out of 10000 (max. 10000000)
 
