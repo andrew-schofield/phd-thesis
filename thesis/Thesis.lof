@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces NO making apparatus.}}{41}{figure.2.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how the simplest annealing algorithm works.}}{58}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how the simplest annealing algorithm works.}}{59}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{60}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{64}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces MHMC results of the Lotka-Volterra validation run.}}{64}{figure.4.4}
