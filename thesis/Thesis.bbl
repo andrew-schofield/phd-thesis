@@ -1,4 +1,4 @@
-\begin{thebibliography}{102}
+\begin{thebibliography}{103}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -482,6 +482,11 @@ Blackmore RS, Greenwood C, Gibson QH (1991) Studies of the Primary Oxygen
 Hedrick DB, White DC (1986) Microbial Respiratory Quinones in the Environment:
   I. A Sensitive Liquid Chromatographic Method. Journal of Microbiological
   Methods 5: 243 -- 254.
+
+\bibitem[{Nakamura (Particle Data~Group)(2010)}]{Nakamura2010}
+Nakamura (Particle Data~Group) K (2010) Review of Particle Physics. Journal of
+  Physics G: Nuclear and Particle Physics 37: 075021 and 2011 partial update
+  for the 2012 edition.
 
 \bibitem[{Kirkpatrick et~al.(1983)Kirkpatrick, Gelatt, and
   Vecchi}]{Kirkpatrick1983}
