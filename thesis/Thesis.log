@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  19 FEB 2012 16:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  19 FEB 2012 16:42
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -951,7 +951,7 @@ l/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12 ^^@ \OT
 1/ppl/m/n/12 6.9 \OMS/zplm/m/n/12 ^^B \OT1/ppl/m/n/12 10[]M[]s[]$
  []
 
-[54]) [55] [56]
+[54] [55]) [56]
 \openout2 = `./03-parameterestimationmethodologies/parameterestimationmethodolo
 gies.aux'.
 
@@ -1268,7 +1268,7 @@ no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (93 pages, 1372904 bytes).
+Output written on Thesis.pdf (93 pages, 1373067 bytes).
 PDF statistics:
  1521 PDF objects out of 1728 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
