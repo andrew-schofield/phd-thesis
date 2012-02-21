@@ -1,13 +1,30 @@
 \chapter{Parameter Estimation Methodologies}
 \label{chap:paramest}
 
-\section{Monte Carlo Methods}
+Below are the various different methods for parameter estimation that I investigated during the course of this work. All of these methods involve a sampling system that attempts to select parameter values which minimise the difference between the simulation result and the experimental data by calculating a \textit{fitness value}. The aim of the parameter estimation methodology was to get this \textit{fitness value} as close to zero (perfect fit/no difference) as possible. Two different calculations were used to create the \textit{fitness value}. One was the sum of the Least Squares Differences between the measured components in the experimental data and the simulation result. This was used in early parameter estimation runs.
 
-``Monte Carlo Methods'' is a generalised term to describe a stochastic technique that makes use of random numbers to examine a problem in conjunction with probability statistics. Monte Carlo Methods allow us to model complex systems without having to exhaustively search every possible outcome. Large systems are sampled in random configurations and that data applied in such a way that it can be used to describe the system as a whole. ``Monte Carlo techniques are often the only practical way to evaluate diffcult integrals or to sample random variables governed by complicated probability density functions''\cite{Nakamura2010}.
+\begin{equation}
+f = \sum^{n}_{j=1}\left(\sqrt{\sum^{m}_{i=1} (\Delta x_{ij})^2}\right)
+\end{equation}
+
+The second method for calculating the \textit{fitness value} was a lognormal correlation which allowed greater tuning, as the standard deviation of the distribution could be set to adjust how much fitter the simulation result needed to be to be accepted.
+
+\begin{equation}
+f = \sum^{n}_{j=1}\left(\sum^{m}_{i=1}\left(\ln\left(\dfrac{1}{2\pi\sigma_j^2}e^{-\dfrac{{(0-0)^2}}{2\sigma_j^2}}\right) - \ln\left(\dfrac{1}{2\pi\sigma_j^2}e^{-\dfrac{{(x_{ijFIT}-x_{ijDATA})^2}}{2\sigma_j^2}}\right)\right)\right)
+\end{equation}
+
+In most cases the components used for calculating the \textit{fitness value} are Oxygen and Nitric Oxide, as these were the primary measured chemicals.
+
+The main difference between the parameter estimation methodologies laid out below are the ways in which they generate new parameter values, either from a probability distribution or based on the previous value, and the way this is applied and tested against the experimental data.
+
+\section*{Monte Carlo Methods}
+
+I include a brief section here to describe Monte Carlo Methods, as the techniques I used for parameter estimation all use this method as their estimator in some form.
+``Monte Carlo Methods'' is a generalised term to describe a stochastic technique that makes use of random numbers to examine a problem in conjunction with probability statistics. Monte Carlo Methods allow us to model complex systems without having to exhaustively search every possible outcome. Large systems are sampled in random configurations and that data applied in such a way that it can be used to describe the system as a whole. ``Monte Carlo techniques are often the only practical way to evaluate difficult integrals or to sample random variables governed by complicated probability density functions''\cite{Nakamura2010}.
 
 \section{Simulated Annealing}
 
-Discovered independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}.
+This technique was described independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}. The name comes from the metallurgical annealing process whereby large crystals are formed while a material is slowly cooled. The slow cooling increases the probability of individual crystals obtaining lower energy states than the initial. As the material cools the ``distance'' each crystal can move along the energy landscape decreases.
 \citet{Bertsimas1993}
 
 The algorithm used to modify the parameter sets is broadly based on simulated annealing in addition to a simple genetic algorithm.
@@ -15,6 +32,16 @@ The algorithm used to modify the parameter sets is broadly based on simulated an
 In this scheme a synthetic ``chromosome'' is created containing ``genes'' which represent parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. The initial parameter set is loaded onto the chromosome and those parameters are used to solve the sets of differential equations as above. This generates data at time points (every 0.001s) during the simulation which can be plotted and compared against known experimental values. By calculating the least-squares-difference between the result from the simulation, and the experimental data, it is possible to generate an ``unfitness'' value for the simulated data. This is a representation of how close the simulated data is to the experimental data, an unfitness value of 0 being a perfect fit. 
 
 The genetic algorithm is then used to improve these parameters by mutating genes (individual parameters) from fit chromosomes (complete parameter sets), re-running the simulation and discarding unfit parameter sets. An unfit parameter set is defined as one with an unfitness value lower than the best so far. This technique involves having two chromosomes selected at any one time. The parameters from each chromosome are simulated and the least fit one is discarded. At this point the contents from the fitter chromosome are cloned and mutated, and the cycle is repeated.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[height=10cm]{03-parameterestimationmethodologies/data/temperature.png}
+		%a0=2&a1=1/((2^x)/16)&a2=&a3=&a4=1&a5=4&a6=8&a7=&a8=1&a9=1&b0=500&b1=500&b2=0&b3=10&b4=0&b5=16&b6=10&b7=10&b8=5&b9=5&c0=3&c1=0&c2=1&c3=1&c4=1&c5=1&c6=1&c7=0&c8=0&c9=0&d0=1&d1=20&d2=20&d3=0&d4=&d5=&d6=&d7=&d8=&d9=&e0=&e1=&e2=&e3=&e4=14&e5=14&e6=13&e7=12&e8=0&e9=0&f0=0&f1=1&f2=1&f3=0&f4=0&f5=&f6=&f7=&f8=&f9=&g0=&g1=1&g2=1&g3=0&g4=0&g5=0&g6=Y&g7=ffffff&g8=a0b0c0&g9=6080a0&h0=1&z
+	\caption[Example simulated annealing temperature schedule]{{\bf Example simulated annealing temperature schedule.} This represents how the annealing temperature changes as the annealing process progresses. Temperature is denoted by the y-axis value, and simulation progress by the x-axis value. This is a heavily compressed timeframe, as in reality the system would normally process 10,000 sets of parameters at each annealing temperature.
+	\label{fig:temperature}}
+	\end{center}
+\end{figure}
+
 
 As part of the simulated annealing algorithm, an ``annealing temperature'' is set. The value defines how large a change the mutation can effect on a particular gene. Since all the parameters are numerical values, this value could be used to define that a mutation can only alter the value by a maximum of 10\%. This value is programmed to decrease after a defined number of iterations such that the magnitude of individual mutations becomes smaller as the simulation progresses. This should have the effect of honing in on a set of parameters with high fitness.
 
