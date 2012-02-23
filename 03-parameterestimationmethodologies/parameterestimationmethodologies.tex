@@ -97,6 +97,7 @@ To incrementally improve the parameter sets, a version of Bayesian inference is 
 Bayesian inference can be described thus:
 \begin{equation}
 P(H\mid E) = \dfrac{P(E\mid H)}{P(E)}\cdot P(H)
+\label{eq:bayes}
 \end{equation}
 \begin{itemize}
 	\item $P(H\mid E)$ is the posterior distribution of $H$ given $E$.
@@ -120,7 +121,18 @@ Before the observation of the sweet, the probability of the third party taking f
 
 Bayesian inference is widely used in computational analysis for artificial intelligence and email spam identification. It is also used in the field of population genetics and phylogenetics\cite{Ronquist2011}.
 
-\textbf{\textit{Approximate Bayesian Computation}} - This is an adaptation of Bayesian inference which allows approximately the same inferences to be made, with considerably less computation. It operates on representations of the datasets rather than the datasets themselves. Common examples are population mean and variance. This is useful for large complex datasets where the probability of a simulation of the dataset matching the original is very small (unacceptably so), in this case a representation of the datasets can be used, and the difference calculated. If the difference is less than a pre-defined acceptance threshold, then the simulated dataset is accepted.
+\textbf{\textit{Approximate Bayesian Computation}} - This is an adaptation of Bayesian inference which allows approximately the same inferences to be made, with considerably less computation. It operates on representations of the datasets rather than the datasets themselves. Common examples are population mean and variance. This is useful for large complex datasets where the probability of a simulation of the dataset matching the original is very small (unacceptably so), in this case a representation of the datasets can be used, and the difference calculated. If the difference is less than a pre-defined acceptance threshold, then the simulated dataset is accepted. \nomenclature{ABC}{Approximate Bayesian computation}ABC originally came from the fields of population and evolutionary genetics\cite{Beaumont2002}, but are now being applied to complex and stochastic dynamical systems\cite{Toni2009,Beaumont2010}.
+
+ABC differs from standard Bayesian inference shown in Equation \ref{eq:bayes} in that the likelihood term does not need to be calculated. Instead the difference between the summary statistics of the observed data and the simulated data is used. The simulated data is considered a true sample from the posterior distribution if the difference in summary statistics is less than a predefined acceptance threshold.
+The most basic ABC methods takes the following form:\\
+$\theta$ is a parameter vector to be estimated, $\pi(\theta)$ is the prior probability distribution, and $x$ is the observed data. The posterior distribution is $\pi(\theta \mid x) \propto f(x \mid \theta)\cdot \pi(\theta)$.
+\begin{enumerate}
+	\item Create a candidate parameter vector $\theta^*$ from the prior distribution $\pi(\theta)$.
+	\item Simulate dataset $x^*$ using the model and parameter vector $\theta^*$.
+	\item Compare $x^*$ with $x$ using a distance function $d$ and an acceptance criteria $\epsilon$. If $d(x,x^*)\leq \epsilon$, accept $\theta$.
+\end{enumerate}
+
+Given a low enough value for $\epsilon$, the output distribution should approximate the true posterior distribution if sampled a large enough number of times.
 
 \textbf{\textit{Sequential Monte Carlo}} - This is a method of particle filtering whereby a large set of samples ($N$) are drawn from the prior distribution, and for each sample, the probability is calculated. Weights for each particle are assigned based on the probabilities, and these affect how likely a particle is to be selected in subsequent rounds of selection. At the end of each round, the posterior distribution, that of the $N$ particles becomes the prior distribution for the next round.
 
@@ -130,15 +142,15 @@ A significant advantage of this technique is that it is readily parallelisable, 
 
 \textbf{Advantages}
 \begin{itemize}
-	\item 
+	\item Paralellisable. Leading to improved performance on multiprocessor systems.
 \end{itemize}
 \textbf{Disadvantages}
 \begin{itemize}
-	\item 
+	\item Requires a suitable distance function or summary statistic.
 \end{itemize}
 \textbf{Reason(s) for rejection}
 \begin{itemize}
-	\item 
+	\item Seemed incapable of settling on sensible posterior distributions with some datasets. I suspect the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones.
 \end{itemize}
 
 \section{Metropolis Hastings Monte Carlo}
