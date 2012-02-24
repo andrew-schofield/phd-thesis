@@ -1,4 +1,4 @@
-\begin{thebibliography}{106}
+\begin{thebibliography}{107}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -517,6 +517,10 @@ Ronquist F, Teslenko M, van~der Mark P, Ayres D, Darling A, et~al. (2011)
 \bibitem[{Beaumont et~al.(2002)Beaumont, Zhang, and Balding}]{Beaumont2002}
 Beaumont MA, Zhang W, Balding DJ (2002) Approximate Bayesian computation in
   population genetics. Genetics 162: 2025--2035.
+
+\bibitem[{Sisson et~al.(2007)Sisson, Fan, and Tanaka}]{Sisson2007}
+Sisson SA, Fan Y, Tanaka MM (2007) Sequential Monte Carlo without likelihoods.
+  Proc Natl Acad Sci U S A 104: 1760--1765.
 
 \bibitem[{Beaumont(2010)}]{Beaumont2010}
 Beaumont MA (2010) Approximate Bayesian Computation in Evolution and Ecology.

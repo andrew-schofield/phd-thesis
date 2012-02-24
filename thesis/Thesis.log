@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  22 FEB 2012 16:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  24 FEB 2012 11:52
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -1062,7 +1062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
  []
 
 [63] [64] [65] [66] [67]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1285, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Simulation.png, id=1287, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
@@ -1071,7 +1071,7 @@ Package pdftex.def Info: ./03-parameterestimationmethodologies/data/Simulation.
 png used on input line 175.
 (pdftex.def)             Requested size: 398.33858pt x 298.76253pt.
 
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1286, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Parameters.png, id=1288, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
@@ -1091,7 +1091,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1306, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1308, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
 <use ./05-oxygenreduction/data/o2sim.pdf>
@@ -1106,7 +1106,7 @@ Chapter 6.
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1325, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1327, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1131,7 +1131,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ("C:\Users\Andrew Schofield\PhD\thesis\07-nitritereduction\nitritereduction.tex
 "
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1345, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1347, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
 <use ./07-nitritereduction/data/no2sim.pdf>
@@ -1370,10 +1370,10 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 5FB36E7C63EB026D84E8E3A4628D23EB;7305.
  ) 
 Here is how much of TeX's memory you used:
- 9816 strings out of 494045
- 144729 string characters out of 3145935
- 231677 words of memory out of 3000000
- 12376 multiletter control sequences out of 15000+200000
+ 9820 strings out of 494045
+ 144798 string characters out of 3145935
+ 231734 words of memory out of 3000000
+ 12379 multiletter control sequences out of 15000+200000
  85175 words of font info for 193 fonts, out of 3000000 for 9000
  730 hyphenation exceptions out of 8191
  34i,16n,51p,1529b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1390,9 +1390,9 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (97 pages, 1429429 bytes).
+Output written on Thesis.pdf (97 pages, 1429853 bytes).
 PDF statistics:
- 1561 PDF objects out of 1728 (max. 8388607)
- 368 named destinations out of 1000 (max. 500000)
+ 1563 PDF objects out of 1728 (max. 8388607)
+ 369 named destinations out of 1000 (max. 500000)
  859 words of extra memory for PDF output out of 10000 (max. 10000000)
 
