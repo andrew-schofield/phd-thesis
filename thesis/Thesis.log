@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 14:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 15:03
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -725,7 +725,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <12> not available
 \tf@toc=\write6
  [5]
 ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.lof"
-Overfull \hbox (6.34515pt too wide) in paragraph at lines 20--20
+Overfull \hbox (6.34515pt too wide) in paragraph at lines 21--21
  [][] [][][]\T1/ppl/m/n/12 Schematic di-a-gram show-ing the tech-nique used to 
 gen-er-ate a spread 
  []
@@ -751,7 +751,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 
 
 ] [10] [11] [12] [13] [14]
-<./01-introduction/data/Respiratory_layout.pdf, id=700, 822.64383pt x 496.61919
+<./01-introduction/data/Respiratory_layout.pdf, id=702, 822.64383pt x 496.61919
 pt>
 File: ./01-introduction/data/Respiratory_layout.pdf Graphic file (type pdf)
  <use ./01-introduction/data/Respiratory_layout.pdf>
@@ -760,7 +760,7 @@ input line 74.
 (pdftex.def)             Requested size: 398.33858pt x 240.47354pt.
  [15 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/Respiratory_lay
 out.pdf>]
-<./01-introduction/data/regulation.pdf, id=722, 813.43903pt x 194.326pt>
+<./01-introduction/data/regulation.pdf, id=724, 813.43903pt x 194.326pt>
 File: ./01-introduction/data/regulation.pdf Graphic file (type pdf)
 
 <use ./01-introduction/data/regulation.pdf>
@@ -793,7 +793,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 100.
 
 [16] [17 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/regulation.
-pdf>] <01-introduction/data/cbb3_only.png, id=756, 81.95418pt x 113.03027pt>
+pdf>] <01-introduction/data/cbb3_only.png, id=758, 81.95418pt x 113.03027pt>
 File: 01-introduction/data/cbb3_only.png Graphic file (type png)
 
 <use 01-introduction/data/cbb3_only.png>
@@ -814,7 +814,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 157.
 
-[21] <01-introduction/data/q-cycle.png, id=816, 1405.25pt x 1476.51625pt>
+[21] <01-introduction/data/q-cycle.png, id=818, 1405.25pt x 1476.51625pt>
 File: 01-introduction/data/q-cycle.png Graphic file (type png)
 
 <use 01-introduction/data/q-cycle.png>
@@ -859,7 +859,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 175.
 
 [22] [23 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/q-cycle.png
->] <01-introduction/data/Ubiquinone.png, id=845, 1394.20876pt x 790.45313pt>
+>] <01-introduction/data/Ubiquinone.png, id=847, 1394.20876pt x 790.45313pt>
 File: 01-introduction/data/Ubiquinone.png Graphic file (type png)
 
 <use 01-introduction/data/Ubiquinone.png>
@@ -868,7 +868,7 @@ Package pdftex.def Info: 01-introduction/data/Ubiquinone.png used on input line
 (pdftex.def)             Requested size: 398.33858pt x 225.8363pt.
  [24 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/Ubiquinone.png>
 ] [25] [26]
-<01-introduction/data/nm_resp.pdf, id=880, 769.27402pt x 509.905pt>
+<01-introduction/data/nm_resp.pdf, id=882, 769.27402pt x 509.905pt>
 File: 01-introduction/data/nm_resp.pdf Graphic file (type pdf)
 
 <use 01-introduction/data/nm_resp.pdf>
@@ -882,7 +882,7 @@ eam \T1/ppl/m/it/12 c\T1/ppl/m/n/12 -type cy-tochromes.
  []
 
 [27 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/nm_resp.pdf>]
-<01-introduction/data/paracoccus_resp.pdf, id=896, 811.03pt x 606.265pt>
+<01-introduction/data/paracoccus_resp.pdf, id=898, 811.03pt x 606.265pt>
 File: 01-introduction/data/paracoccus_resp.pdf Graphic file (type pdf)
 
 <use 01-introduction/data/paracoccus_resp.pdf>
@@ -891,7 +891,7 @@ Package pdftex.def Info: 01-introduction/data/paracoccus_resp.pdf used on input
 (pdftex.def)             Requested size: 342.56082pt x 256.0748pt.
  [28 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/paracoccus_resp
 .pdf>]
-<01-introduction/data/e_coli_resp.pdf, id=914, 447.27101pt x 429.605pt>
+<01-introduction/data/e_coli_resp.pdf, id=916, 447.27101pt x 429.605pt>
 File: 01-introduction/data/e_coli_resp.pdf Graphic file (type pdf)
 
 <use 01-introduction/data/e_coli_resp.pdf>
@@ -900,14 +900,14 @@ e 252.
 (pdftex.def)             Requested size: 266.6107pt x 256.0748pt.
  [29 <C:/Users/Andrew Schofield/PhD/thesis/01-introduction/data/e_coli_resp.pdf
 >] [30]
-<./01-introduction/data/F1.png, id=947, 1405.25pt x 909.3975pt>
+<./01-introduction/data/F1.png, id=949, 1405.25pt x 909.3975pt>
 File: ./01-introduction/data/F1.png Graphic file (type png)
 
 <use ./01-introduction/data/F1.png>
 Package pdftex.def Info: ./01-introduction/data/F1.png used on input line 278.
 (pdftex.def)             Requested size: 398.33858pt x 257.77948pt.
 
-<./01-introduction/data/msb4100080-f1.png, id=953, 335.3328pt x 178.07327pt>
+<./01-introduction/data/msb4100080-f1.png, id=955, 335.3328pt x 178.07327pt>
 File: ./01-introduction/data/msb4100080-f1.png Graphic file (type png)
 
 <use ./01-introduction/data/msb4100080-f1.png>
@@ -960,25 +960,30 @@ LaTeX Font Info:    Try loading font information for TS1+ppl on input line 32.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1ppl.fd"
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [37]
-[38]
-Overfull \hbox (2.50404pt too wide) in paragraph at lines 69--70
+<02-materialsmethods/data/oxyexpp.png, id=1032, 602.25pt x 602.25pt>
+File: 02-materialsmethods/data/oxyexpp.png Graphic file (type png)
+
+<use 02-materialsmethods/data/oxyexpp.png>
+Package pdftex.def Info: 02-materialsmethods/data/oxyexpp.png used on input lin
+e 67.
+(pdftex.def)             Requested size: 284.53705pt x 284.52756pt.
+ [38]
+Overfull \hbox (2.50404pt too wide) in paragraph at lines 78--79
 \T1/ppl/m/n/12 World Pre-ci-sion In-stru-ments). This is also a Clark type elec
 -trode, con-tained within
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[39]
-<./02-materialsmethods/data/drawing.pdf, id=1047, 517.13202pt x 416.75702pt>
+[39 <C:/Users/Andrew Schofield/PhD/thesis/02-materialsmethods/data/oxyexpp.png>
+] [40]
+<./02-materialsmethods/data/drawing.pdf, id=1060, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
 <use ./02-materialsmethods/data/drawing.pdf>
 Package pdftex.def Info: ./02-materialsmethods/data/drawing.pdf used on input l
-ine 103.
+ine 112.
 (pdftex.def)             Requested size: 353.05757pt x 284.52756pt.
- [40] [41 <C:/Users/Andrew Schofield/PhD/thesis/02-materialsmethods/data/drawin
-g.pdf>]) [42]
+ [41]) [42 <C:/Users/Andrew Schofield/PhD/thesis/02-materialsmethods/data/drawi
+ng.pdf>]
 ("C:\Users\Andrew Schofield\PhD\thesis\04-model\modelconstructionandparameters.
 tex"
 Chapter 3.
@@ -1032,11 +1037,17 @@ Chapter 4.
 
 
 
-] [58]
+]
+Overfull \hbox (1.15604pt too wide) in paragraph at lines 27--29
+\T1/ppl/m/n/12 This tech-nique was de-scribed in-de-pen-dently by Kirk-patrick 
+et al.$[]$$[]$$[]$ and ƒerný$[]$$[]$$[]$.
+ []
+
+[58]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.52644pt on input line 32.
 
-<03-parameterestimationmethodologies/data/temperature.png, id=1207, 501.875pt x
+<03-parameterestimationmethodologies/data/temperature.png, id=1215, 501.875pt x
  501.875pt>
 File: 03-parameterestimationmethodologies/data/temperature.png Graphic file (ty
 pe png)
@@ -1045,7 +1056,7 @@ Package pdftex.def Info: 03-parameterestimationmethodologies/data/temperature.p
 ng used on input line 54.
 (pdftex.def)             Requested size: 284.54012pt x 284.52756pt.
 
-<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1210, 480.99701pt
+<./03-parameterestimationmethodologies/data/sa_spread.pdf, id=1218, 480.99701pt
  x 521.95pt>
 File: ./03-parameterestimationmethodologies/data/sa_spread.pdf Graphic file (ty
 pe pdf)
@@ -1062,7 +1073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
  []
 
 [63] [64] [65] [66] [67]
-<./03-parameterestimationmethodologies/data/Simulation.png, id=1287, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Simulation.png, id=1295, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Simulation.png Graphic file (t
 ype png)
@@ -1071,7 +1082,7 @@ Package pdftex.def Info: ./03-parameterestimationmethodologies/data/Simulation.
 png used on input line 175.
 (pdftex.def)             Requested size: 398.33858pt x 298.76253pt.
 
-<./03-parameterestimationmethodologies/data/Parameters.png, id=1288, 803.0pt x 
+<./03-parameterestimationmethodologies/data/Parameters.png, id=1296, 803.0pt x 
 602.25pt>
 File: ./03-parameterestimationmethodologies/data/Parameters.png Graphic file (t
 ype png)
@@ -1091,7 +1102,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 
 
 
-] <./05-oxygenreduction/data/o2sim.pdf, id=1308, 845.1575pt x 597.23125pt>
+] <./05-oxygenreduction/data/o2sim.pdf, id=1316, 845.1575pt x 597.23125pt>
 File: ./05-oxygenreduction/data/o2sim.pdf Graphic file (type pdf)
 
 <use ./05-oxygenreduction/data/o2sim.pdf>
@@ -1106,7 +1117,7 @@ Chapter 6.
 
 
 
-] <./06-noreduction/data/nosim.pdf, id=1327, 845.1575pt x 597.23125pt>
+] <./06-noreduction/data/nosim.pdf, id=1335, 845.1575pt x 597.23125pt>
 File: ./06-noreduction/data/nosim.pdf Graphic file (type pdf)
 
 <use ./06-noreduction/data/nosim.pdf>
@@ -1131,7 +1142,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ("C:\Users\Andrew Schofield\PhD\thesis\07-nitritereduction\nitritereduction.tex
 "
 Chapter 7.
-<./07-nitritereduction/data/no2sim.pdf, id=1347, 597.23125pt x 845.1575pt>
+<./07-nitritereduction/data/no2sim.pdf, id=1355, 597.23125pt x 845.1575pt>
 File: ./07-nitritereduction/data/no2sim.pdf Graphic file (type pdf)
 
 <use ./07-nitritereduction/data/no2sim.pdf>
@@ -1345,12 +1356,16 @@ Underfull \hbox (badness 1496) in paragraph at lines 272--274
 hromes c.
  []
 
-[91] [92] [93] [94] [95] [96])
+[91] [92] [93]
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
+[]\T1/ppl/m/n/12 Rank Broth-ers Ltd (2012) Oxy-gen Elec-trode Ex-ploded Views.
+ []
+
+[94] [95] [96])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
  [97]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
-
-("C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux"
+ ("C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux"
 ("C:\Users\Andrew Schofield\PhD\thesis\01-introduction\introduction.aux")
 ("C:\Users\Andrew Schofield\PhD\thesis\02-materialsmethods\materialsandmethods.
 aux")
@@ -1370,10 +1385,10 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 860A11BD40B339179986731596530FC2;7305.
  ) 
 Here is how much of TeX's memory you used:
- 9820 strings out of 494045
- 144798 string characters out of 3145935
- 231734 words of memory out of 3000000
- 12379 multiletter control sequences out of 15000+200000
+ 9833 strings out of 494045
+ 145097 string characters out of 3145935
+ 231837 words of memory out of 3000000
+ 12388 multiletter control sequences out of 15000+200000
  85175 words of font info for 193 fonts, out of 3000000 for 9000
  730 hyphenation exceptions out of 8191
  34i,16n,51p,1529b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1390,9 +1405,9 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (97 pages, 1430051 bytes).
+Output written on Thesis.pdf (97 pages, 1455497 bytes).
 PDF statistics:
- 1563 PDF objects out of 1728 (max. 8388607)
- 369 named destinations out of 1000 (max. 500000)
- 859 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1571 PDF objects out of 1728 (max. 8388607)
+ 371 named destinations out of 1000 (max. 500000)
+ 864 words of extra memory for PDF output out of 10000 (max. 10000000)
 

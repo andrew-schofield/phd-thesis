@@ -1,4 +1,4 @@
-\begin{thebibliography}{107}
+\begin{thebibliography}{108}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -402,6 +402,10 @@ McGuinness B, Barlow AK, Clarke IN, Farley JE, Anilionis A, et~al. (1990)
 \bibitem[{Clark et~al.(1953)Clark, Wolf, Granger, and Taylor}]{Clark1953}
 Clark LC, Wolf R, Granger D, Taylor Z (1953) Continuous Recording of Blood
   Oxygen Tensions by Polarography. Journal of Applied Physiology 6: 189--193.
+
+\bibitem[{{Rank Brothers Ltd}(2012)}]{Rank2012}
+{Rank Brothers Ltd} (2012) Oxygen Electrode Exploded Views.
+  http://www.rankbrothers.co.uk/prod1exp.htm.
 
 \bibitem[{Liu et~al.(2005)Liu, Liu, Gupta, Zorko, Brownlee et~al.}]{Liu2005}
 Liu X, Liu Q, Gupta E, Zorko N, Brownlee E, et~al. (2005) Quantitative
