@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  29 FEB 2012 18:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  29 FEB 2012 19:00
 entering extended mode
  %&-line parsing enabled.
 **Thesis.tex
@@ -913,11 +913,15 @@ ods/data/electrode_chamber.pdf>]
 <./02-materialsmethods/data/drawing.pdf, id=1083, 517.13202pt x 416.75702pt>
 File: ./02-materialsmethods/data/drawing.pdf Graphic file (type pdf)
 
-<use ./02-materialsmethods/data/drawing.pdf> [41] [42 <./02-materialsmethods/da
-ta/drawing.pdf>]) [43]
+<use ./02-materialsmethods/data/drawing.pdf> [41]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42 <./02-materialsmethods/data/drawing.pdf>]) [43]
 \openout2 = `./04-model/modelconstructionandparameters.aux'.
 
- (./04-model/modelconstructionandparameters.tex
+
+(./04-model/modelconstructionandparameters.tex
 Chapter 3.
 [44
 
@@ -1295,32 +1299,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--413
 (./03-parameterestimationmethodologies/parameterestimationmethodologies.aux)
 (./05-oxygenreduction/oxygenreduction.aux) (./06-noreduction/noreduction.aux)
 (./07-nitritereduction/nitritereduction.aux) (./08-expression/expression.aux)
-(./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-) ) 
+(./09-completedmodel/completedmodel.aux) (./appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
  9056 strings out of 495039
- 128156 string characters out of 1182024
- 203682 words of memory out of 3000000
- 11488 multiletter control sequences out of 15000+50000
- 85729 words of font info for 195 fonts, out of 3000000 for 9000
+ 128155 string characters out of 1182024
+ 203695 words of memory out of 3000000
+ 11487 multiletter control sequences out of 15000+50000
+ 85986 words of font info for 196 fonts, out of 3000000 for 9000
  51 hyphenation exceptions out of 8191
  38i,16n,51p,1492b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmr.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf
--texlive/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf-texlive/fonts/typ
-e1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/u
-plbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/
-share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texli
-ve/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (98 pages, 1439436 bytes).
+{/usr/shar
+e/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texm
+f-texlive/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-texlive/font
+s/type1/public/bera/fvmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palati
+no/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></
+usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
+exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
+1/urw/palatino/uplri8a.pfb>
+Output written on Thesis.pdf (98 pages, 1440000 bytes).
 PDF statistics:
  1597 PDF objects out of 1728 (max. 8388607)
  374 named destinations out of 1000 (max. 500000)
