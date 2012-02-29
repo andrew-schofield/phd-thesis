@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 12:57
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 13:46
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -1005,11 +1005,11 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
 
-Overfull \hbox (24.32532pt too wide) in paragraph at lines 184--188
+Overfull \hbox (26.60535pt too wide) in paragraph at lines 184--188
 \T1/ppl/m/n/12 Given $\OML/zplm/m/it/12 v \OT1/zplm/m/n/12 = []$ \T1/ppl/m/n/12
  Then at high $\OML/zplm/m/it/12 O[]$ \T1/ppl/m/n/12 rate is: $\OML/zplm/m/it/1
-2 v \OT1/zplm/m/n/12 = [] = \OT1/ppl/m/n/12 37.4\OML/zplm/m/it/12 nmol[]min[]mg
-[] \OT1/zplm/m/n/12 =
+2 v \OT1/zplm/m/n/12 = [] = \OT1/ppl/m/n/12 37.4 \OML/zplm/m/it/12 nmol[]min[]m
+g[] \OT1/zplm/m/n/12 =
  []
 
 
@@ -1018,13 +1018,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--188
  []
 
 [52] [53]
-Overfull \hbox (4.76085pt too wide) in paragraph at lines 227--228
-\T1/ppl/m/n/12 qui-nol the rate con-stants were $\OT1/ppl/m/n/12 7.9s[]$ \T1/pp
-l/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12   \OT1/
-ppl/m/n/12 6.9 \OMS/zplm/m/n/12  \OT1/ppl/m/n/12 10[]M[]s[]$
+Overfull \hbox (9.3209pt too wide) in paragraph at lines 227--228
+\T1/ppl/m/n/12 qui-nol the rate con-stants were $\OT1/ppl/m/n/12 7.9 s[]$ \T1/p
+pl/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12   \OT1
+/ppl/m/n/12 6.9 \OMS/zplm/m/n/12  \OT1/ppl/m/n/12 10[] M[]s[]$
  []
 
-[54] [55]) [56]
+[54]) [55] [56]
 ("C:\Users\Andrew Schofield\PhD\thesis\03-parameterestimationmethodologies\para
 meterestimationmethodologies.tex"
 Chapter 4.
@@ -1390,7 +1390,7 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (97 pages, 1429860 bytes).
+Output written on Thesis.pdf (97 pages, 1429929 bytes).
 PDF statistics:
  1563 PDF objects out of 1728 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
