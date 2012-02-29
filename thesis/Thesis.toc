@@ -38,13 +38,13 @@
 \contentsline {subsection}{\numberline {2.4.1}Calibration of Nitric Oxide Electrode}{39}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Measuring Nitrite Concentration (Griess Assay)}{40}{section.2.5}
 \contentsline {section}{\numberline {2.6}Nitric Oxide Production}{40}{section.2.6}
-\contentsline {section}{\numberline {2.7}Solving Ordinary Differential Equations}{42}{section.2.7}
-\contentsline {section}{\numberline {2.8}Parameter Estimation}{43}{section.2.8}
-\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{44}{chapter.3}
-\contentsline {section}{\numberline {3.1}Construction}{44}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Converting Biological Reactions into Differential Equations}{44}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{49}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{50}{section.3.2}
+\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Construction}{43}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Converting Biological Reactions into Differential Equations}{43}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{48}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{49}{section.3.2}
+\contentsline {section}{\numberline {3.3}Solving Ordinary Differential Equations}{55}{section.3.3}
+\contentsline {section}{\numberline {3.4}Parameter Estimation}{56}{section.3.4}
 \contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{57}{chapter.4}
 \contentsline {section}{\numberline {4.1}Simulated Annealing}{58}{section.4.1}
 \contentsline {section}{\numberline {4.2}Approximate Bayesian Computation by Sequential Monte Carlo}{62}{section.4.2}

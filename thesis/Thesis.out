@@ -37,13 +37,13 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Calibration of Nitric Oxide Electrode}{section.2.4}% 37
 \BOOKMARK [1][-]{section.2.5}{Measuring Nitrite Concentration \(Griess Assay\)}{chapter.2}% 38
 \BOOKMARK [1][-]{section.2.6}{Nitric Oxide Production}{chapter.2}% 39
-\BOOKMARK [1][-]{section.2.7}{Solving Ordinary Differential Equations}{chapter.2}% 40
-\BOOKMARK [1][-]{section.2.8}{Parameter Estimation}{chapter.2}% 41
-\BOOKMARK [0][-]{chapter.3}{Model - Construction and Parameters}{}% 42
-\BOOKMARK [1][-]{section.3.1}{Construction}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.1.1}{Converting Biological Reactions into Differential Equations}{section.3.1}% 44
-\BOOKMARK [2][-]{subsection.3.1.2}{Assumptions and their Justifications}{section.3.1}% 45
-\BOOKMARK [1][-]{section.3.2}{Parameters and their Prior Distributions}{chapter.3}% 46
+\BOOKMARK [0][-]{chapter.3}{Model - Construction and Parameters}{}% 40
+\BOOKMARK [1][-]{section.3.1}{Construction}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.1.1}{Converting Biological Reactions into Differential Equations}{section.3.1}% 42
+\BOOKMARK [2][-]{subsection.3.1.2}{Assumptions and their Justifications}{section.3.1}% 43
+\BOOKMARK [1][-]{section.3.2}{Parameters and their Prior Distributions}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.3}{Solving Ordinary Differential Equations}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.4}{Parameter Estimation}{chapter.3}% 46
 \BOOKMARK [0][-]{chapter.4}{Parameter Estimation Methodologies}{}% 47
 \BOOKMARK [1][-]{section.4.1}{Simulated Annealing}{chapter.4}% 48
 \BOOKMARK [1][-]{section.4.2}{Approximate Bayesian Computation by Sequential Monte Carlo}{chapter.4}% 49

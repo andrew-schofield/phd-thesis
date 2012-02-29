@@ -436,20 +436,6 @@ Cole LJ, Huston WM, Moir JWB (2008) Delivery of Nitric Oxide for Analysis of
   Oxide-Reactive Proteins, Part A, vol. 436 of Methods in Enzymology, pp. 21 --
   33, Academic Press.
 
-\bibitem[{Butcher(2003)}]{Butcher2003}
-Butcher JC (2003) Numerical Methods for Ordinary Differential Equations. John
-  Wiley and Sons.
-
-\bibitem[{Cash and Karp(1990)}]{Cash1990}
-Cash JR, Karp AH (1990) A Variable Order Runge-Kutta Method for Initial Value
-  Problems with Rapidly Varying Right-hand Sides. ACM Trans Math Softw 16:
-  201--222.
-
-\bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
-  Flannery}]{Press1992}
-Press WH, Teukolsky SA, Vetterling WT, Flannery BP (1992) Numerical Recipes in
-  C. 2nd ed., Cambridge University Press.
-
 \bibitem[{Giuffre et~al.(2000)Giuffre, Barone, Mastronicola, D'Itri, Sarti
   et~al.}]{Giuffre2000}
 Giuffre A, Barone MC, Mastronicola D, D'Itri E, Sarti P, et~al. (2000) Reaction
@@ -482,6 +468,20 @@ Blackmore RS, Greenwood C, Gibson QH (1991) Studies of the Primary Oxygen
 Hedrick DB, White DC (1986) Microbial Respiratory Quinones in the Environment:
   I. A Sensitive Liquid Chromatographic Method. Journal of Microbiological
   Methods 5: 243 -- 254.
+
+\bibitem[{Butcher(2003)}]{Butcher2003}
+Butcher JC (2003) Numerical Methods for Ordinary Differential Equations. John
+  Wiley and Sons.
+
+\bibitem[{Cash and Karp(1990)}]{Cash1990}
+Cash JR, Karp AH (1990) A Variable Order Runge-Kutta Method for Initial Value
+  Problems with Rapidly Varying Right-hand Sides. ACM Trans Math Softw 16:
+  201--222.
+
+\bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
+  Flannery}]{Press1992}
+Press WH, Teukolsky SA, Vetterling WT, Flannery BP (1992) Numerical Recipes in
+  C. 2nd ed., Cambridge University Press.
 
 \bibitem[{Nakamura (Particle Data~Group)(2010)}]{Nakamura2010}
 Nakamura (Particle Data~Group) K (2010) Review of Particle Physics. Journal of

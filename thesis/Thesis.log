@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 14:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.12)  29 FEB 2012 14:14
 entering extended mode
 **C:/Users/Andrew*Schofield/PhD/thesis/Thesis.tex
 ("C:/Users/Andrew Schofield/PhD/thesis/Thesis.tex"
@@ -978,28 +978,20 @@ Package pdftex.def Info: ./02-materialsmethods/data/drawing.pdf used on input l
 ine 103.
 (pdftex.def)             Requested size: 353.05757pt x 284.52756pt.
  [40] [41 <C:/Users/Andrew Schofield/PhD/thesis/02-materialsmethods/data/drawin
-g.pdf>]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 133.
-
-("C:\Users\Andrew Schofield\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\t1fvm.fd"
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.43994pt on input line 133.
- [42]) [43]
+g.pdf>]) [42]
 ("C:\Users\Andrew Schofield\PhD\thesis\04-model\modelconstructionandparameters.
 tex"
 Chapter 3.
-[44
+[43
 
 
 
-] [45] [46] [47] [48]
+] [44] [45] [46] [47]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <9> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 110.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <7> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 110.
- [49] [50] [51]
+ [48] [49] [50]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7> not available
@@ -1017,14 +1009,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--188
 
  []
 
-[52] [53]
+[51] [52]
 Overfull \hbox (9.3209pt too wide) in paragraph at lines 227--228
 \T1/ppl/m/n/12 qui-nol the rate con-stants were $\OT1/ppl/m/n/12 7.9 s[]$ \T1/p
 pl/m/n/12 for cy-to-chrome b, and $\OT1/ppl/m/n/12 1.55 \OMS/zplm/m/n/12   \OT1
 /ppl/m/n/12 6.9 \OMS/zplm/m/n/12  \OT1/ppl/m/n/12 10[] M[]s[]$
  []
 
-[54]) [55] [56]
+[53] [54]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 254.
+
+("C:\Users\Andrew Schofield\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 10.43994pt on input line 254.
+ [55]) [56]
 ("C:\Users\Andrew Schofield\PhD\thesis\03-parameterestimationmethodologies\para
 meterestimationmethodologies.tex"
 Chapter 4.
@@ -1367,7 +1367,7 @@ meterestimationmethodologies.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5FB36E7C63EB026D84E8E3A4628D23EB;7305.
+(rerunfilecheck)             Checksum: 860A11BD40B339179986731596530FC2;7305.
  ) 
 Here is how much of TeX's memory you used:
  9820 strings out of 494045
@@ -1376,7 +1376,7 @@ Here is how much of TeX's memory you used:
  12379 multiletter control sequences out of 15000+200000
  85175 words of font info for 193 fonts, out of 3000000 for 9000
  730 hyphenation exceptions out of 8191
- 34i,16n,51p,1529b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,16n,51p,1529b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
@@ -1390,7 +1390,7 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (97 pages, 1430014 bytes).
+Output written on Thesis.pdf (97 pages, 1430047 bytes).
 PDF statistics:
  1563 PDF objects out of 1728 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
