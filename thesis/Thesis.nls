@@ -2,6 +2,8 @@
 
  \nomgroup{A}
 
+  \item [{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}
+		\nompageref{65}
   \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
 		\nompageref{14}
   \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
@@ -17,7 +19,7 @@
   \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
 		\nompageref{17}
   \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
-		\nompageref{65}
+		\nompageref{66}
   \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
 		\nompageref{37}
   \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
@@ -27,7 +29,7 @@
   \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
 		\nompageref{16}
   \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}
-		\nompageref{40}
+		\nompageref{41}
   \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
 		\nompageref{18}
   \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
@@ -43,7 +45,7 @@
 		\nompageref{37}
   \item [{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}
 		\nompageref{36}
-  \item [{tet$^\textrm{r}$}]\begingroup Tetracyclin resistance\nomeqref {2.0}
+  \item [{tet$^\textrm{r}$}]\begingroup tetracycline resistance\nomeqref {2.0}
 		\nompageref{36}
 
 \end{thenomenclature}
