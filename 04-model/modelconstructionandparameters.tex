@@ -2,12 +2,14 @@
 \label{chap:model}
 \section{Construction}
 
-The model was constructed based on existing knowledge of the respiratory chain in \Nsm{} from the electron transport chain shown in Figure \ref{fig:etc} (Chapter \ref{chap:intro}). I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known.
-The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity. I have made no assumptions about the bacterial population structure and as such any stochastic effects are ignored.
+The model was constructed based on existing knowledge of the respiratory chain in \Nsm{} from the electron transport chain shown in Figure \ref{fig:etc} (Chapter \ref{chap:intro}). I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known. This approach also permits tracking of the oxidation state of all the intermediates which allows understanding and offers the potential for predictions that may be explored in future \textit{in vivo} studies.
+
+The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity within a well-mixed vessel. I have made no assumptions about the bacterial population structure or the variations in concentrations of substrates between the bulk media and within the bacterial cells. Stochastic effects are ignored, but they are unlikely to be of importance. Additionally protein production is largely ignored as the switching mechanism happens on a time-scale that is much shorter than the transcription and translation of new proteins, they are therefore assumed to be expressed constitutively except where stated otherwise.
 
 \subsection{Converting Biological Reactions into Differential Equations}
-Where the reaction is describing a chemical process, the rate constant is given above the arrow, and the relevant enzyme shown in parentheses. Where the reaction is showing the addition of electrons (reduction), this is denoted by $e^-$ below the arrow, the rate constant above, and the source of electrons in parentheses.
+The rationale for obtaining the form for each of the 9 component equations is described below. Throughout the model the reduced components, i.e. those with available electrons, are denoted as active and have a subscript $a$. Components lacking a subscript denote the total, constant, amount of a component.
 
+\subsubsection{Respiratory Substrates}
 The equation that gives the change in oxygen concentration is
 
 \begin{eqnarray}
@@ -16,9 +18,11 @@ The equation that gives the change in oxygen concentration is
 \label{eq:oxygen}
 \end{eqnarray}
 
-where $\beta$ is the rate of passive diffusion of \cOxygen{} into the electrode chamber. This is inversely proportional to oxygen concentration in the chamber, and limited to the oxygen saturation concentration, $K_O$. This component of the equation is required to account for a peculiarity of the experimental set-up, whereby the rate of diffusion of oxygen into the system depends on the density of the bacterial culture, and is not insignificant. $k_{1}$ is the rate of reduction of oxygen by the oxygen reductase \cbbthree{}. This rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of \cOxygen{}.
+where $\beta$ is the rate of passive diffusion of \cOxygen{} into the electrode chamber. In isolation this term gives rise to a simple exponential input of oxygen until the saturation level is reached. One small complication encountered was that $\beta$ is itself affected by the amount of bacteria in the vessel which has implications for fitting. The rate constant $k_1$ describes the reduction of oxygen and the oxygen reductase \cbbthree{}; this rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of $O_2$.
+%This is inversely proportional to oxygen concentration in the chamber, and limited to the oxygen saturation concentration, $K_O$. This component of the equation is required to account for a peculiarity of the experimental set-up, whereby the rate of diffusion of oxygen into the system depends on the density of the bacterial culture, and is not insignificant. $k_{1}$ is the rate of reduction of oxygen by the oxygen reductase \cbbthree{}. This rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of \cOxygen{}.%
 
-The equation for describing \cNO{} concentration changes is more complex as \cNO{} has a number of additional interactions in comparison to \cOxygen{}. \cNO{} also interacts with \cbbthree{}, in addition to being reduced from \cNitrite{}, reduced to \cNtwoO{} and spontaneously lost from the electrode chamber. Currently this is the equation being used to model \cNO{} concentration.
+The equation for describing NO concentration changes has a number of additional interactions in comparison to $\mathrm{O}_2$. NO is created by the reduction of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ by AniA, is reduced by its dedicated reductase, NorB, and converted to $\mathrm{N}_2\mathrm{O}$ which is lost from the cell, interacts with \textit{cbb$_{\textrm{3}}$}, and is also spontaneously lost from the electrode chamber. I make the assumption that the interaction with \textit{cbb$_{\textrm{3}}$} occurs only in a reversible manner, leading to an NO bound and temporarily inactive form $C_X$. There is evidence that this interaction can also lead to permanent degradation of \textit{cbb$_{\textrm{3}}$} via the formation of peroxynitrite at the terminal oxidase. This is not currently considered in this version of the model. These effects are described mathematically in the equation below in the order presented.
+%The equation for describing \cNO{} concentration changes is more complex as \cNO{} has a number of additional interactions in comparison to \cOxygen{}. \cNO{} also interacts with \cbbthree{}, in addition to being reduced from \cNitrite{}, reduced to \cNtwoO{} and spontaneously lost from the electrode chamber. Currently this is the equation being used to model \cNO{} concentration.
 
 \begin{eqnarray}
 &\frac{d[NO]}{dt} = m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO] \nonumber \\\nonumber \\
@@ -27,8 +31,8 @@ The equation for describing \cNO{} concentration changes is more complex as \cNO
 &\xrightarrow{\gamma} \mathbf{NO}
 \label{eq:no}
 \end{eqnarray}
-
-The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
+The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \textit{cbb$_{\textrm{3}}$} by NO is modelled by the $\mathrm{3}^\mathrm{rd}$ component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \textit{cbb$_{\textrm{3}}$} to form the inactive form of \textit{cbb$_{\textrm{3}}$}, $C_X$. $k_6$ is the rate of recovery of this inhibited \textit{cbb$_{\textrm{3}}$}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.
+%The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
 
 The reduction of nitrite is modelled by this equation
 
@@ -40,7 +44,10 @@ The reduction of nitrite is modelled by this equation
 
 where $m_{1}$ is the rate of reduction of \cNitrite{} by reduced (active) AniA ($A_a$).
 
-In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the state of the quinone pool, which is the upstream source of electrons into the respiratory chain. This is important because this affects the rate of reduction of the various enzymes which perform the substrate reductions. The equation for modelling the change in reduction state (activity) of the quinone pool is
+\subsubsection{Electron Transporters}
+
+In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the upstream state of components of the transfer chain, starting from the quinone pool. The ultimate upstream source of electrons into the respiratory chain is from NADH, but I have chosen to subsume all process prior to the quinone pool into a simple single rate. This simplification is made to avoid further complications associated with varying metabolism and to avoid distraction from the stated primary aim of understanding the switching behaviour of the downstream chain. I have chosen the quinone pool as the starting point because it is known that NorB draws electrons directly from this point and therefore this represents the first branch in the chain. I wish understand how competition for electrons at branches effects function and therefore the quinone pool is included in our model.
+%In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the state of the quinone pool, which is the upstream source of electrons into the respiratory chain. This is important because this affects the rate of reduction of the various enzymes which perform the substrate reductions. The equation for modelling the change in reduction state (activity) of the quinone pool is
 
 \begin{eqnarray}
 &\frac{d[Q_a]}{dt} = g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E]) \nonumber \\\nonumber \\
@@ -49,11 +56,14 @@ In addition to the rate of change of concentration of the respiratory substrates
 &\textnormal{X-E} \xrightarrow[e^-]{f~(\mathbf{Q_a})} \textnormal{E}
 \label{eq:quinones}
 \end{eqnarray}
+$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the constant rate of availability of electrons into the quinone pool from NADH. The reduction of NorB by active quinones is parametrised by the rate constant $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ is the rate constant parametrising the reduction of cytochromes by the active quinones. Total cytochromes and total reduced cytochromes are given by $X$ and $E$ respectively.
 
-$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the rate of flow of electrons into the quinone pool from NADH. The rate of reduction of NorB by active quinones is given by $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ denotes the rate of reduction of cytochromes by the active quinones. Cytochromes and reduced cytochromes are given by $X$ and $E$ respectively.
+I am using a simplified version of cytochromes and therefore $X$ actually represents a pool of different cytochromes, \textit{c$_{\textrm{x}}$}, \textit{c$_{\textrm{4}}$}, \textit{c$_{\textrm{5}}$} and the \textit{bc$_{\textrm{1}}$} complex. These are amalgamated into one here to simplify the equations and focus on the simple branching of the chain and competition for electrons. This is a modelling choice and it is further discussed in Chapter \ref{chap:completedmodel}.
 
-Given that the concentration of active cytochromes changes, due to reduction by the quinone pool and oxidation by the downstream enzymes, and this concentration is a parameter in (\ref{eq:quinones}), it also needs to be included in the model, and this is given by the following equation
+%$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the rate of flow of electrons into the quinone pool from NADH. The rate of reduction of NorB by active quinones is given by $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ denotes the rate of reduction of cytochromes by the active quinones. Cytochromes and reduced cytochromes are given by $X$ and $E$ respectively.
 
+%Given that the concentration of active cytochromes changes, due to reduction by the quinone pool and oxidation by the downstream enzymes, and this concentration is a parameter in (\ref{eq:quinones}), it also needs to be included in the model, and this is given by the following equation
+The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes. 
 \begin{eqnarray}
 &\frac{d[E]}{dt} = -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E]) \nonumber \\\nonumber \\
 &\textnormal{C$_\textnormal{i}$} \xrightarrow[e^-]{k_3~(\mathbf{E})} \textnormal{C$_\textnormal{a}$} \nonumber \\
@@ -61,10 +71,12 @@ Given that the concentration of active cytochromes changes, due to reduction by 
 &\textnormal{X-E} \xrightarrow[e^-]{f~(Q_a)} \mathbf{E}
 \label{eq:cytochromes}
 \end{eqnarray}
+where $k_3$ is the rate constant describing the reduction of the available oxidised cytochrome c oxygen reductase (\cbbthree{}) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \textit{cbb$_{\textrm{3}}$}, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate constant describing the reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes thus increases by their reduction by the quinone pool, but this in turn can reduce the flux from the pool because less oxidised cytochrome is available to accept electrons. As stated previously, the relative time scales are unknown so all processes appear explicitly.
+%where $k_3$ is the rate of reduction of the cytochrome c oxygen reductase (\cbbthree{}) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree{}, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate of reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes increases by their reduction by the quinone pool.
 
-where $k_3$ is the rate of reduction of the cytochrome c oxygen reductase (\cbbthree{}) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree{}, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate of reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes increases by their reduction by the quinone pool.
-
-To model the changes in concentration of the individual enzymes, \cbbthree{}, AniA and NorB, the following equations are used:
+\subsubsection{Terminal Reductases}
+Finally the changes in concentration of reduced terminal oxidases, \cbbthree{}, AniA and NorB are described by the following equations. All the terms present in this section have been introduced previously. I could of course equally write these equations for the oxidised form but this can easily be recovered because I am assuming that the total concentration of the oxidases remains constant.
+%To model the changes in concentration of the individual enzymes, \cbbthree{}, AniA and NorB, the following equations are used:
 
 \begin{eqnarray}
 &\frac{d[C_a]}{dt} = k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO] \nonumber \\\nonumber \\
@@ -74,7 +86,7 @@ To model the changes in concentration of the individual enzymes, \cbbthree{}, An
 \label{eq:active_cbb3}
 \end{eqnarray}
 
-This equation models the concentration of reduced (active) \cbbthree{}, and the following equation models the concentration of \cbbthree{} that has been inhibited by \cNO{}.
+describes the changes in the concentration of reduced (active) \cbbthree{} and
 
 \begin{eqnarray}
 &\frac{d[C_X]}{dt} = k_5[C_a][NO] - k_6 [C_X] \nonumber \\\nonumber \\
@@ -82,7 +94,7 @@ This equation models the concentration of reduced (active) \cbbthree{}, and the 
 \label{eq:NO inhibited_cbb3}
 \end{eqnarray}
 
-Reduced (active) AniA concentrations are modelled by this equation
+described the concentration of \cbbthree{} that has been reversibly inhibited by NO binding.
 
 \begin{eqnarray}
 &\frac{d[A_a]}{dt} = m_3([A] - [A_a])[E]- m_{1}[NO_2^-][A_a] \nonumber \\\nonumber \\
@@ -91,7 +103,7 @@ Reduced (active) AniA concentrations are modelled by this equation
 \label{eq:active_ania}
 \end{eqnarray}
 
-and reduced (active) NorB concentrations are modelled by this equation
+describes changes in the reduced (active) AniA concentrations and
 
 \begin{eqnarray}
 &\frac{d[B_a]}{dt} = l_3[Q_a]([B] - [B_a]) - l_1[NO][B_a] \nonumber \\\nonumber \\
@@ -100,14 +112,13 @@ and reduced (active) NorB concentrations are modelled by this equation
 \label{eq:active_norb}
 \end{eqnarray}
 
-By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
-
-The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
+captures the changes in the reduced (active) NorB concentrations.
 
 \subsection{Assumptions and their Justifications}
 I have made a number of assumptions regarding the kinetics and reactions taking place in the model.
 \begin{enumerate}
  \item {\bf I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family.
+ \item {\bf Bacterial population structure and concentration variation.} The primary substrates of interest are gases which are thought to freely diffuse in and out of the cells.
  \item {\bf No backwards reactions.}
  \item {\bf No Michaelis-Menton kinetics.} Cannot assume that time-scales are separated as the rates of intermediate reaction steps are not known.
  \item {\bf All cytochromes can be modelled as one.}
@@ -120,7 +131,7 @@ I have made a number of assumptions regarding the kinetics and reactions taking 
 
 None of the rate constants or concentrations which were required for this model have previously been determined for \Nsm, so values from other similar organisms had to be used instead. In some cases there appears to be no data in the literature regarding values of particular components. Table \ref{tab:ps} lists the values that have been obtained from the literature.
 
-\begin{table}[ht!]
+\begin{table}[tbp]
 \begin{center}
 \begin{tabular}{ccc}
 \toprule
@@ -246,12 +257,22 @@ No idea, probably need to guess based on cell volume (0.6-1.0 $\mu$m diameter, n
 \cbbthree{} is probably 0.1-1\% of cell protein. 10\% of cell is membrane.
 $15~\mu g$ in 5 ml based on numbers from Q above. \cbbthree{} is approximately 100 kDa in molecular weight. Converting to molarity gives a concentration of approximately 30 nM.
 
+\section{Implementation of the model}
+%By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
+
+The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. 
+Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should give linear relationships between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction differing between cultures with the same optical density (data not shown). Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator of living cells.
+
+%The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
+
 \section{Solving Ordinary Differential Equations}
-The model equations (given in Chapter \ref{chap:model} [\nameref{chap:model}]) are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities.
+The model equations (given previously) are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities.
 
 The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. I decided to write a custom implementation rather than using off the shelf systems for solving ODEs and parameter estimation as I wanted the greatest flexibility in how I integrated the two techniques, and it allowed me to quickly and easily tailor the code to my needs. Initially I tried using COPASI \cite{Hoops2006}, however at that time it had limitations that I could not overcome, such as an inability to allow bulk addition of components at arbitrary time-points.
 
-The implementation of the model has no constraints on respiratory substrate concentration, thus allows the altering of these concentrations whilst solving the equations, however changes to substrate concentration have to be made programmatically to inform the model of the change (\texttt{if (t == 50) then NO\_conc += 20;}). This ability means that the switch between aerobic and anaerobic respiration can be examined synthetically, and the model is also capable of simulating how the respiratory system responds to addition of substrates such as Nitric Oxide. This ability was an absolute requirement, as in order to fully parametrise the model it was necessary to isolate sections of the model, which required adding aliquots of respiratory substrate during respiration.
+The implementation of the model has no constraints on respiratory substrate concentration, thus allows the altering of these concentrations whilst solving the equations, however changes to substrate concentration have to be made programmatically to inform the model of the change (\texttt{if (t == 50) then NO\_conc += 20;}). This ability means that the switch between aerobic and anaerobic respiration can be examined synthetically, and the model is also capable of simulating how the respiratory system responds to the sudden addition of substrates such as Nitric Oxide. More complicated methods are possible, but given the high diffusion of the substrates concerned as well as the deliberate injection of the relevant substrate this method was a simpler and reasonable mimic for my empirical method. This ability was an absolute requirement, as in order to fully parametrise the model it was necessary to isolate sections of the model, which required adding aliquots of respiratory substrate during respiration.
+
+%This ability means that the switch between aerobic and anaerobic respiration can be examined synthetically, and the model is also capable of simulating how the respiratory system responds to addition of substrates such as Nitric Oxide. This ability was an absolute requirement, as in order to fully parametrise the model it was necessary to isolate sections of the model, which required adding aliquots of respiratory substrate during respiration.
 
 \section{Parameter Estimation}
 Estimating the parameter values for the components in the mathematical model involved comparing the biological results with those produced by solving the ODEs and adjusting the parameter values to minimise the difference between the two results. The different methods for parameter estimation that I investigated are detailed in Chapter \ref{chap:paramest} [\nameref{chap:paramest}].
