@@ -11,12 +11,10 @@ A level-1 auxiliary file: ./08-expression/expression.aux
 A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
-Warning--entry type for "Hunter2007" isn't style-file defined
---line 2113 of file phd_refs.bib
 Warning--entry type for "Rank2012" isn't style-file defined
---line 3235 of file phd_refs.bib
+--line 3236 of file phd_refs.bib
 Warning--entry type for "YSI2012" isn't style-file defined
---line 4098 of file phd_refs.bib
+--line 4099 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
-(There were 5 warnings)
+(There were 4 warnings)
