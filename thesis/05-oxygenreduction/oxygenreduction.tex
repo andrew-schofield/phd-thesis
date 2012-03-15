@@ -12,12 +12,21 @@ The final solved output of the parameter estimation for this dataset can be seen
 
 Given our knowledge of the underlying transport chain and the affinity of \textit{cbb$_{\textrm{3}}$} for oxygen, we expect a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that we can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
 
-\begin{figure}[ht!]
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm]{./05-oxygenreduction/data/priors.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
+ \label{fig:oxypriors}}
+\end{figure}
+
+
+\begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.}
- \label{fig:o2sim}
+ \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
+ \label{fig:o2sim}}
 \end{figure}
 
 \subsection{Introduction}
