@@ -1,10 +1,29 @@
 \chapter{Oxygen Reduction in \Nm{}}
 \label{chap:oxygenreduction}
 \section{Aerobic Reduction of Oxygen}
+\subsection{Introduction}
+The first dataset I used in my iterative approach to parameter estimation was of a simple oxygen reduction experiment carried out in aerobic conditions. This dataset is the simplest biologically as under aerobic conditions and without the presence of any microaerobic substrates (nitrite or nitric oxide) the only respiratory pathway that is active is the oxygen reducing one. Additionally, the other parts of a respiratory chain influence the oxygen reducing pathway either by competing for electrons, or chemically inhibiting it. The relevant portions of the electron transport chain are shown graphically in Figure \ref{fig:o2_resp_chain}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{05-oxygenreduction/data/o2_resp_chain.pdf}
+	\caption[Oxygen reducing electron transport chain of \Nm{}]{{\bf Oxygen reducing electron transport chain of \Nm{}.} This shows the complete electron transport chain of \Nsm{} with the components irrelevant to oxygen reduction greyed out. In the mathematical model all of the purple elements (cytochromes) are amalgamated into one entity.
+	\label{fig:o2_resp_chain}}
+\end{figure}
+
+The equations that describe this portion of the electron transport chain are:
+\begin{eqnarray*}
+\frac{d[O_2]}{dt} & = & \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]\\
+\frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E])\\
+\frac{d[E]}{dt} & = & -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E])\\
+\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO]
+\end{eqnarray*}
+These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 17 parameters and variables which I tried to estimate.
+
+\subsection{Results}
 
 Modelling oxygen reduction was the simplest both experimentally and mathematically. MC58 cultures were grown in aerobic conditions for around 3 hours, or until the $\mathrm{OD}_{600}$ had reached 0.3-0.9. Cultures were then transferred to the electrode chamber and the oxygen concentration was recorded as the culture respired. Once the culture had become anaerobic it was re-aerated by bubbling air through the culture with a sterile pasteur pipette. This  restored oxygen levels throughout the culture and they began respiring oxygen once more.
 
-In the model, oxygen reduction is described by equation (1) which is the change in oxygen concentration over time. Modelling the reaction also requires equations (4-6) also to describe the flow of electrons into the system and to the terminal reductase. This involved 17 parameters and variables to be estimated.
 
 The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
 
@@ -29,6 +48,6 @@ Given our knowledge of the underlying transport chain and the affinity of \texti
  \label{fig:o2sim}}
 \end{figure}
 
-\subsection{Introduction}
-\subsection{Results}
+
+
 \subsection{Discussion}
