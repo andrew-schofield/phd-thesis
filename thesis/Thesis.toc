@@ -74,29 +74,29 @@
 \contentsline {subsection}{\numberline {6.3.2}Results}{82}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Discussion}{82}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{83}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{85}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{85}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Results}{85}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Discussion}{85}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{85}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Introduction}{85}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Results}{85}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Discussion}{85}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{85}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Introduction}{85}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Results}{85}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Discussion}{85}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{85}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Introduction}{85}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Results}{85}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Discussion}{85}{subsection.7.4.3}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{86}{chapter.8}
-\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{86}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Introduction}{86}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Results}{86}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Discussion}{86}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}The Completed Model}{87}{chapter.9}
-\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{87}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix}{88}{appendix.A}
-\contentsline {chapter}{List of Abbreviations}{90}{appendix*.8}
-\contentsline {chapter}{References}{90}{appendix*.8}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{86}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{86}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Results}{86}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Discussion}{86}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{86}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Introduction}{86}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Results}{86}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Discussion}{86}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{86}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{86}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Results}{86}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Discussion}{86}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{86}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{86}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Results}{86}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Discussion}{86}{subsection.7.4.3}
+\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{87}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{87}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{87}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Results}{87}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Discussion}{87}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {9}The Completed Model}{88}{chapter.9}
+\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{88}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix}{89}{appendix.A}
+\contentsline {chapter}{List of Abbreviations}{91}{appendix*.8}
+\contentsline {chapter}{References}{91}{appendix*.8}

@@ -27,7 +27,7 @@ I include a brief section here to describe Monte Carlo Methods, as the technique
 This technique was described independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}. The name comes from the metallurgical annealing process whereby large crystals are formed while a material is slowly cooled. The slow cooling increases the probability of individual crystals obtaining lower energy states than the initial. As the material cools the ``distance'' each crystal can move along the energy landscape decreases.
 Simulated annealing ``consists of a discrete-time inhomogeneous Markov chain''\cite{Bertsimas1993} whereby the previous state is modified with a perturbation kernel (the neighbouring states) and then accepted or rejected using a transition probability which depends on the current temperature and the energies of the previous and current states. The advantage of this scheme is that areas of local minima have a lesser effect on the outcome of the Markov chain as the high initial temperature allows for the chain to ``jump'' out of this minima.
 
-\begin{figure}
+\begin{figure}[tbp]
 \small
 \begin{verbatim}
 c1 <- c0;
@@ -49,7 +49,7 @@ else
 \end{figure}
 
 Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the basic algorithm works (without the annealing temperature). This will provide a ``best'' parameter set, but there is no information about the possible spread of values in the parameter set. Given that it is unlikely that a single point-value parameter-set solution exists that will accurately describe the system it is necessary to produce a spread of results that will adequately describe the system instead. To this end I used a modified version of simulated annealing integrated with aspects of a simple genetic algorithm. In the genetic algorithm paradigm a synthetic ``chromosome'' is created containing which contains ``genes'' representing the parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. This chromosome is then copied and perturbed several times (depending on the eventual population size required), with the size of the perturbation being dependent on the current annealing temperature. For instance the highest temperature could indicate that the individual parameters can be perturbed by up to $\pm 10\%$, and as the temperature decreases the perturbation percentage has a concommitant decrease. An example annealing temperature schedule is shown in Figure \ref{fig:temperature}.
-\begin{figure}
+\begin{figure}[tbp]
 	\begin{center}
 		\includegraphics[height=10cm]{03-parameterestimationmethodologies/data/temperature.png}
 		%a0=2&a1=1/((2^x)/16)&a2=&a3=&a4=1&a5=4&a6=8&a7=&a8=1&a9=1&b0=500&b1=500&b2=0&b3=10&b4=0&b5=16&b6=10&b7=10&b8=5&b9=5&c0=3&c1=0&c2=1&c3=1&c4=1&c5=1&c6=1&c7=0&c8=0&c9=0&d0=1&d1=20&d2=20&d3=0&d4=&d5=&d6=&d7=&d8=&d9=&e0=&e1=&e2=&e3=&e4=14&e5=14&e6=13&e7=12&e8=0&e9=0&f0=0&f1=1&f2=1&f3=0&f4=0&f5=&f6=&f7=&f8=&f9=&g0=&g1=1&g2=1&g3=0&g4=0&g5=0&g6=Y&g7=ffffff&g8=a0b0c0&g9=6080a0&h0=1&z
@@ -59,7 +59,7 @@ Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the ba
 \end{figure}
 The annealing temperature is programmed to decrease after a defined number of iterations such that the magnitude of individual mutations becomes smaller as the simulation progresses. This should have the effect of honing in on a set of parameters with high fitness.
 Once the chromosome population has been created, 2 are selected at random and their fitnesses evaluated, in this case by the Least Squares Difference method. The chromosome with the higher \textit{fitness value} is discarded and the other is cloned and perturbed. The two chromosomes are then added back to the chromosome population. The genetic algorithm is used to improve the parameters sets by perturbing genes (individual parameters) from fit chromosomes (complete parameter sets), re-running the simulation and discarding unfit parameter sets. An unfit parameter set is defined as one with an \textit{fitness value} lower than the best so far. This technique involves having two chromosomes selected at any one time. The parameters from each chromosome are simulated and the least fit one is discarded. At this point the contents from the fitter chromosome are cloned and perturbed, and the cycle is repeated. Figure~\ref{fig:sa_spread} shows this diagrammatically. After many cycles (upwards of 1000) the chromosome pool should only contain the best fitting parameter sets to the experimental data. The spread of the parameters can be used to infer the sensitivity of the simulation to changes in parameter values in a similar way to that described by \citet{Toni2009}.\\
-\begin{figure}
+\begin{figure}[tbp]
 \begin{center}
 \includegraphics[height=10cm]{./03-parameterestimationmethodologies/data/sa_spread.pdf}
 % sa_spread.pdf: 479x520 pixel, 72dpi, 16.90x18.34 cm, bb=0 0 479 520
@@ -170,16 +170,15 @@ The MHMC algorithm has been validated initially by using a much simpler ODE syst
 Validation of using this system required a simulated dataset with known parameter values to be produced. This dataset then forms the input for the MHMC algorithm which will try and obtain those same parameter values. Given the simplicity of this system, a particularly bad set of initial parameter estimates was given to exaggerate the burn in period, and to show that given a long enough time the simulation will eventually settle on ``correct'' values. This validation step also informs the likely values for two tuning variables in the algorithm; the \textit{acceptance} - how stringent the algorithm is on accepting new parameter sets, and the \textit{sigma} value - this describes the magnitude of parameter perturbation at each iteration.
 The graphical results of the Lotka-Volterra validation are shown in figures \ref{fig:simulation} and \ref{fig:parameters}.
 
-\begin{figure}
+\begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm]{./03-parameterestimationmethodologies/data/Simulation.png}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
  \caption[{Simulation results of the Lotka-Volterra validation run.}]{{\bf Simulation results of the Lotka-Volterra validation run.}
  \label{fig:simulation}}
-
 \end{figure}
 
-\begin{figure}
+\begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm]{./03-parameterestimationmethodologies/data/Parameters.png}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
