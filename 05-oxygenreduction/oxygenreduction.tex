@@ -18,24 +18,29 @@ The equations that describe this portion of the electron transport chain are:
 \frac{d[E]}{dt} & = & -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E])\\
 \frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO]
 \end{eqnarray*}
-These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 17 parameters and variables which I tried to estimate.
+These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 13 parameters and variables which I tried to estimate (the model actually contains 17 such parameters and variables, but under these conditions the remaining 4 are set to 0 as they are related to nitrite reduction effects).
 
 \subsection{Results}
 
 Modelling oxygen reduction was the simplest both experimentally and mathematically. MC58 cultures were grown in aerobic conditions for around 3 hours, or until the $\mathrm{OD}_{600}$ had reached 0.3-0.9. Cultures were then transferred to the electrode chamber and the oxygen concentration was recorded as the culture respired. Once the culture had become anaerobic it was re-aerated by bubbling air through the culture with a sterile pasteur pipette. This  restored oxygen levels throughout the culture and they began respiring oxygen once more.
 
+The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
 
-The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
-
-The final solved output of the parameter estimation for this dataset can be seen in Figure \ref{fig:o2sim}. The initial parameter set used to start the Monte-Carlo run was one based on some preliminary experimental data (dataset not shown) and priors from literature about sensible concentrations and rate constants for this system. Very little information is readily available in the literature to populate the model.
-
-Given our knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, we expect a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that we can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
+The final solved output of the parameter estimation for this dataset can be seen in Figure \ref{fig:o2sim}. 
+\subsubsection{Generation of Prior Probability Distributions}
+In accordance with the integrative scheme I introduced in Chapter \ref{chap:paramest}, I attempted to estimate the distributions of the parameters involved in modelling these data. In order to do this I needed to create probability distributions to act as priors to feed into the estimation system as I am using a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. I assumed that all the prior probabilities would be normally distributed, therefore the distributions I used were created under the following scheme:
+\begin{itemize}
+	\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), I assumed that the bounds covered $3 \sigma$ of the normal distribution. This essentially assumes that 99.7\% of the distribution falls within the given bounds.
+	\item Where the literature value has no bounds associated with it (i.e. published as a single figure), I assumed that a range of $\pm 10\%$ was covered by $3 \sigma$ of the normal distribution. This means that 99.7\% of the distribution falls within $\pm 10\%$ of the given value.
+	\item Where there are no literature values available, the value was estimated based on preliminary experimental data and no bounds were associated. In this case the prior was free to be perturbed giving it an effective range of $0 < x < \infty$.
+\end{itemize}
+With reference to the above, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}. As can be seen, very little information is readily available in the literature to populate the model.
 
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm]{./05-oxygenreduction/data/priors.pdf}
  % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
- \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
+ \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm. Where no values were available in the literature, the probability distribution represents a flat prior from 0 to $\infty$ with the initial value being determined by preliminary experiment.
  \label{fig:oxypriors}}
 \end{figure}
 
@@ -49,6 +54,10 @@ Given our knowledge of the underlying transport chain and the affinity of \cbbth
 \end{figure}
 
 \subsection{Discussion}
+The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
+
+Given our knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, we expect a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that we can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
+
 \subsubsection{Analysis of Convergence}
 \subsubsection{Analysis of Covariance}
 
