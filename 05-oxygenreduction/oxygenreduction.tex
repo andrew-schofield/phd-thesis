@@ -22,9 +22,28 @@ These equations describe the change in concentration of oxygen over time, which 
 
 \subsection{Results}
 
-Modelling oxygen reduction was the simplest both experimentally and mathematically. MC58 cultures were grown in aerobic conditions for around 3 hours, or until the $\mathrm{OD}_{600}$ had reached 0.3-0.9. Cultures were then transferred to the electrode chamber and the oxygen concentration was recorded as the culture respired. Once the culture had become anaerobic it was re-aerated by bubbling air through the culture with a sterile pasteur pipette. This  restored oxygen levels throughout the culture and they began respiring oxygen once more.
+Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, I removed the electrode chamber cap and aerated the culture media using a pastuer pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}. It is therefore advisable to aerate the culture before the oxygen level reaches zero.
+
 
 The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
+\begin{figure}[tbp]
+ \centering
+ %trim = l b r t
+ \includegraphics[width=14cm, trim=125px 100px 150px 100px]{./05-oxygenreduction/data/mc58-chl-o2-util.pdf}
+ % mc58-chl-o2-util.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Highly repeatable oxygen reduction]{{\bf Highly repeatable oxygen reduction.} This shows an oxygen reducing culture being repeatedly aerated after oxygen depletion with very similar rates of subsequent oxygen reduction
+ \label{fig:oxy_repeatable_chl}}
+\end{figure}
+
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/repeatable-oxygen-utilisation-in-mc58.png}
+ % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \caption[Aerating oxygen reducing cultures with significant delay]{{\bf Aerating oxygen reducing cultures with significant delay.} The oxygen reducing ability of \Nm{} can be robust as evidenced by the 1000s delays between aeration with no change in susequent respiration rate. Also of note is that nitric oxide concentration is not changing, suggesting that reduction of nitrite is not occuring either.
+ \label{fig:repeat_oxy_with_delay}}
+\end{figure}
+
 
 The final solved output of the parameter estimation for this dataset can be seen in Figure \ref{fig:o2sim}. 
 \subsubsection{Generation of Prior Probability Distributions}
@@ -44,10 +63,10 @@ With reference to the above, the initial probability distributions used to start
  \label{fig:oxypriors}}
 \end{figure}
 
-
+%lbrt
 \begin{figure}[tbp]
  \centering
- \includegraphics[width=14cm]{./05-oxygenreduction/data/o2sim.pdf}
+ \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
  \label{fig:o2sim}}
