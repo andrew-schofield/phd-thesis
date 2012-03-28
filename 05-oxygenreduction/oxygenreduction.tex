@@ -20,7 +20,7 @@ The equations that describe this portion of the electron transport chain are:
 \end{eqnarray*}
 These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 13 parameters and variables which I tried to estimate (the model actually contains 17 such parameters and variables, but under these conditions the remaining 4 are set to 0 as they are related to nitrite reduction effects).
 
-\subsection{Results}
+\subsection{Experimental Results}
 
 Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, I removed the electrode chamber cap and aerated the culture media using a pastuer pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}. It is therefore advisable to aerate the culture before the oxygen level reaches zero. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation.
 
@@ -45,7 +45,6 @@ The experiments used to generate data for oxygen reduction are highly repeatable
 \end{figure}
 
 
-The final solved output of the parameter estimation for this dataset can be seen in Figure \ref{fig:o2sim}. 
 \subsubsection{Generation of Prior Probability Distributions}
 In accordance with the integrative scheme I introduced in Chapter \ref{chap:paramest}, I attempted to estimate the distributions of the parameters involved in modelling these data. In order to do this I needed to create probability distributions to act as priors to feed into the estimation system as I am using a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. I assumed that all the prior probabilities would be normally distributed, therefore the distributions I used were created under the following scheme:
 \begin{itemize}
@@ -63,13 +62,24 @@ With reference to the above, the initial probability distributions used to start
  \label{fig:oxypriors}}
 \end{figure}
 
+\subsubsection{Parameter Estimation Results}
+The parameter estimation process produces a large amount of output data which can be processed. Included in these data are the best simulation results from each run. Best is defined here as the simulation with the lowest fitness value, i.e. the one with the closest match to the experimental data. For the oxygen reduction training datasets, of which there are 3, each was run 20 times for 20,000 iterations. This lower iteration count was chosen as a compromise between execution time and statistical accuracy. In fact given that the burn-in time for these runs was relatively short, 20,000 iterations still provides plenty of data. A representative example of the simulated data is shown in Figure \ref{fig:o2sim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
+
 %lbrt
 \begin{figure}[tbp]
  \centering
- \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
+ \includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
  \label{fig:o2sim}}
+\end{figure}
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[height=10cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_fitness.pdf}
+ % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \caption{
+ \label{fig:oxy_fitness}}
 \end{figure}
 
 \subsection{Discussion}
