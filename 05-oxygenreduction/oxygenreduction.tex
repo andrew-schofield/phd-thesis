@@ -68,18 +68,28 @@ The parameter estimation process produces a large amount of output data which ca
 %lbrt
 \begin{figure}[tbp]
  \centering
- \includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
+ \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
  \label{fig:o2sim}}
 \end{figure}
 
+Initially the simulation results are not particularly good fits compared to the experimental data and as such have high ``fitness values''. As the parameter estimation progresses the ``fitness value'' reduces as the simulated result gets closer and closer to the experimental data. Quite often this does not take many iterations and a representative plot showing how the simulation's ``fitness value'' decreases is shown in Figure \ref{fig:oxy_fitness}. The initial period where the ``fitness value'' is high up until the point it settles at a lower value is classed as ``burn-in'' and is discarded when generating posterior distributions.
+
 \begin{figure}[tbp]
  \centering
- \includegraphics[height=10cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_fitness.pdf}
+ \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_fitness.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
- \caption{
+ \caption[Simulation fitness value improves as parameter estimation progresses]{{\bf Simulation fitness value improves as parameter estimation progresses.} This is a representative figure constructed from a single run on one dataset. Initially the fitness value is high showing that the simulated result does not match the experimental dataset. As the parameter estimation algorithm progresses, the fitness value decreases as the simulated result approaches the experimental dataset. The inset shows a zoomed in view of the fitness value after the ``burn-in'' process has finished.
  \label{fig:oxy_fitness}}
+\end{figure}
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/k3s.pdf}
+ % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \caption[Individual parameter trajectories for multiple runs on the same experimental dataset]{{\bf Individual parameter trajectories for multiple runs on the same experimental dataset.} This figure shows the trajectories for the same parameter, in this case $k_3$ - the rate of \cbbthree{} reduction, from 20 individual runs of parameter estimation upon the same input data. The inset shows a zoomed in view of the trajectories that hit high values after ``burn-in''.
+ \label{fig:k3s}}
 \end{figure}
 
 \subsection{Discussion}
