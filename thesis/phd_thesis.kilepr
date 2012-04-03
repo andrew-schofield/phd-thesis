@@ -136,10 +136,10 @@ order=-1
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=0
+column=235
 encoding=UTF-8
 highlight=LaTeX
-line=329
+line=23
 mode=LaTeX
 open=true
 order=10
@@ -166,20 +166,20 @@ order=1
 
 [item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 archive=true
-column=359
+column=55
 encoding=UTF-8
 highlight=LaTeX
-line=208
+line=182
 mode=LaTeX
 open=true
 order=4
 
 [item:04-model/modelconstructionandparameters.tex]
 archive=true
-column=383
+column=509
 encoding=UTF-8
 highlight=LaTeX
-line=355
+line=341
 mode=LaTeX
 open=true
 order=0
@@ -216,10 +216,10 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=639
+column=64
 encoding=UTF-8
 highlight=LaTeX
-line=76
+line=100
 mode=LaTeX
 open=true
 order=5
@@ -276,10 +276,10 @@ order=8
 
 [item:appendix/appendix.tex]
 archive=true
-column=11
+column=20
 encoding=UTF-8
 highlight=LaTeX
-line=69
+line=27
 mode=LaTeX
 open=true
 order=9
@@ -295,24 +295,24 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=0
-CursorLine=329
+CursorColumn=235
+CursorLine=23
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=223
 CursorLine=144
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
-CursorColumn=359
-CursorLine=208
+CursorColumn=55
+CursorLine=182
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
-CursorColumn=383
-CursorLine=355
+CursorColumn=509
+CursorLine=341
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=639
-CursorLine=76
+CursorColumn=64
+CursorLine=100
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
 CursorColumn=0
@@ -335,5 +335,5 @@ CursorColumn=26
 CursorLine=0
 
 [view-settings,view=0,item:appendix/appendix.tex]
-CursorColumn=11
-CursorLine=69
+CursorColumn=20
+CursorLine=27
