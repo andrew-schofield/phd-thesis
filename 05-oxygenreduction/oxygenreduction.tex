@@ -117,3 +117,19 @@ Given our knowledge of the underlying transport chain and the affinity of \cbbth
 \subsubsection{Analysis of Covariance}
 
 \subsubsection{Rate of oxygen diffusion}
+The equation used to fit raw data for oxygen recovery is a 3 parameter exponential:
+\begin{equation*}
+f(x) = c - ae^{-bx} 
+\end{equation*}
+In the differential equation this collapses to two parameters, the oxygen saturation level, and the rate of oxygen recovery thus:
+\begin{equation*}
+\dfrac{d[O_2]}{dt} = \beta(1-O_2/K_O)
+\end{equation*}
+Integrating and separating this equation gives:
+\begin{equation*}
+\begin{gathered}
+-\beta\dfrac{t}{K_O} + C = ln([O_2]-K_O)\\
+\Rightarrow [O_2]-K_O = Ae^{\left(-\beta\dfrac{t}{K_O}\right)}\\
+\Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
+\end{gathered}
+\end{equation*}
