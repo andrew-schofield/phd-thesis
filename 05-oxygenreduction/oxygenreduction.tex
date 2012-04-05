@@ -22,7 +22,7 @@ These equations describe the change in concentration of oxygen over time, which 
 
 \subsection{Experimental Results}
 
-Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, I removed the electrode chamber cap and aerated the culture media using a pastuer pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}. It is therefore advisable to aerate the culture before the oxygen level reaches zero. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation.
+Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, I removed the electrode chamber cap and aerated the culture media using a pastuer pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}. It is therefore advisable to aerate the culture before the oxygen level reaches zero. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation.
 
 
 The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
@@ -46,7 +46,7 @@ The experiments used to generate data for oxygen reduction are highly repeatable
 
 
 \subsubsection{Generation of Prior Probability Distributions}
-In accordance with the integrative scheme I introduced in Chapter \ref{chap:paramest}, I attempted to estimate the distributions of the parameters involved in modelling these data. In order to do this I needed to create probability distributions to act as priors to feed into the estimation system as I am using a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. I assumed that all the prior probabilities would be normally distributed, therefore the distributions I used were created under the following scheme:
+In accordance with the integrative scheme I introduced in Chapter \ref{chap:paramest}, I attempted to estimate the distributions of the parameters involved in modelling these data. In order to do this I needed to create probability distributions to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. I assumed that all the prior probabilities would be normally distributed, therefore the distributions I used were created under the following scheme:
 \begin{itemize}
 	\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), I assumed that the bounds covered $3 \sigma$ of the normal distribution. This essentially assumes that 99.7\% of the distribution falls within the given bounds.
 	\item Where the literature value has no bounds associated with it (i.e. published as a single figure), I assumed that a range of $\pm 10\%$ was covered by $3 \sigma$ of the normal distribution. This means that 99.7\% of the distribution falls within $\pm 10\%$ of the given value.
@@ -108,16 +108,13 @@ The posterior probability distributions generated from the three experimental da
  \label{fig:oxyposteriors}}
 \end{figure}
 
-\subsection{Discussion}
-The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
-
-Given our knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, we expect a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that we can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
-
 \subsubsection{Analysis of Convergence}
 \subsubsection{Analysis of Covariance}
 
-\subsubsection{Rate of oxygen diffusion}
-The equation used to fit raw data for oxygen recovery is a 3 parameter exponential:
+\subsection{Rate of oxygen diffusion}
+During the course of this experimental stage I noticed that on occasions where the respiring cultures died, either through being left in essentially anaerobic conditions for too long, or intentionally killed with Chloramphenicol, the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation I concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. The average rates of oxygen diffusion were very small, and on the experimental timescales are probably negligible, but I thought it necessary to include in the model for completeness.
+
+The equation used to fit raw data for oxygen diffusion is a 3 parameter exponential:
 \begin{equation*}
 f(x) = c - ae^{-bx} 
 \end{equation*}
@@ -133,3 +130,8 @@ Integrating and separating this equation gives:
 \Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
 \end{gathered}
 \end{equation*}
+
+\subsection{Discussion}
+The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
+
+Given our knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, we expect a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that we can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
