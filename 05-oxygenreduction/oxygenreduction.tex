@@ -21,9 +21,7 @@ The equations that describe this portion of the ETC are:
 These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 13 parameters and variables which I tried to estimate (the model actually contains 17 such parameters and variables, but under these conditions the remaining 4 are set to 0 as they are related to nitrite reduction effects).
 
 \subsection{Experimental Results}
-
 Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, I removed the electrode chamber cap and aerated the culture media using a Pastuer pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}. It is therefore advisable to aerate the culture before the oxygen level reaches zero. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation.
-
 
 The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
 \begin{figure}[tbp]
@@ -43,7 +41,6 @@ The experiments used to generate data for oxygen reduction are highly repeatable
  \caption[Aerating oxygen reducing cultures with significant delay]{{\bf Aerating oxygen reducing cultures with significant delay.} The oxygen reducing ability of \Nm{} can be robust as evidenced by the 1000s delays between aeration with no change in subsequent respiration rate. Also of note is that nitric oxide concentration is not changing, suggesting that reduction of nitrite is not occurring either.
  \label{fig:repeat_oxy_with_delay}}
 \end{figure}
-
 
 \subsubsection{Generation of Prior Probability Distributions}
 In accordance with the integrative scheme I introduced in Chapter \ref{chap:paramest}, I attempted to estimate the distributions of the parameters involved in modelling these data. In order to do this I needed to create probability distributions to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. I assumed that all the prior probabilities would be normally distributed, therefore the distributions I used were created under the following scheme:
@@ -115,8 +112,9 @@ Some of the posterior probability distributions appear to have expanded outside 
 \end{figure}
 
 \subsubsection{Analysis of Convergence}
-\subsubsection{Analysis of Correlation}
+It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
 
+\subsubsection{Analysis of Correlation}
 Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
 
 The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} and was constructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination. The matrix is upper-triangle only as the lower triangle is a duplicate of the same data. The diagonal is shown in grey as it is not useful data since the correlation of X against X is always 1.
