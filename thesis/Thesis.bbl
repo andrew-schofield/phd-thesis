@@ -1,4 +1,4 @@
-\begin{thebibliography}{110}
+\begin{thebibliography}{113}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -548,5 +548,16 @@ Metropolis N, Rosenbluth AW, Rosenbluth MN, Teller AH, Teller E (1953) Equation
 \bibitem[{Hastings(1970)}]{Hastings1970}
 Hastings WK (1970) Monte Carlo Sampling Methods Using Markov Chains and Their
   Applications. Biometrika 57: 97--109.
+
+\bibitem[{Gelman and Rubin(1992)}]{Gelman1992}
+Gelman A, Rubin DB (1992) Inference from Iterative Simulation Using Multiple
+  Sequences. Statistical Science 7: pp. 457--472.
+
+\bibitem[{Curran(2011)}]{Curran2011}
+Curran J (2011) Bolstad2: Bolstad functions.
+
+\bibitem[{{R Development Core Team}(2010)}]{RDevelopmentCoreTeam2010}
+{R Development Core Team} (2010) R: A Language and Environment for Statistical
+  Computing. R Foundation for Statistical Computing, Vienna, Austria.
 
 \end{thebibliography}

@@ -61,7 +61,7 @@
 \contentsline {subsection}{\numberline {5.1.2}Experimental Results}{75}{subsection.5.1.2}
 \contentsline {subsubsection}{Generation of Prior Probability Distributions}{77}{subsubsection*.8}
 \contentsline {subsubsection}{Parameter Estimation Results}{78}{subsubsection*.9}
-\contentsline {subsubsection}{Analysis of Convergence}{85}{subsubsection*.10}
+\contentsline {subsubsection}{Analysis of Convergence}{83}{subsubsection*.10}
 \contentsline {subsubsection}{Analysis of Correlation}{85}{subsubsection*.11}
 \contentsline {subsection}{\numberline {5.1.3}Rate of oxygen diffusion}{88}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Discussion}{88}{subsection.5.1.4}
