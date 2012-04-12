@@ -112,17 +112,50 @@ Additionally $k_1$, the rate of reduction of Oxygen by \cbbthree{} showed bimoda
 \end{figure}
 
 \subsubsection{Analysis of Convergence}
-\subsubsection{Analysis of Covariance}
+\subsubsection{Analysis of Correlation}
 
-\begin{table}
-	\centering
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-		\hline
-			& $k_1$ & $k_3$ & $\beta$ & g & f & Q & X & C & $Q_a$ & E & $C_a$ \\
-			\hline
-			$k_1$ & 1
-		\end{tabular}
+Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
+
+The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} and was contructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination. The matrix is upper-triangle only as the lower triangle is a duplicate of the same data. The diagonal is shown in grey as it is not useful data since the correlation of X against X is always 1.
+
+\begin{landscape}
+\begin{table}[tbp]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.5}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C & \cellcolor{dark-gray}$Q_a$ & \cellcolor{dark-gray}E & \cellcolor{dark-gray}$C_a$ \\
+    \hline
+    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & $0.28599$ & $0.013212$ & \cellcolor{orange}$0.420123$ & $0.154821$ & $0.009968$ & \cellcolor{orange}$0.369637$ & \cellcolor{orange}$0.367247$ & $0.00344$ & $0.000229$ & $0.046062$ \\
+    \hline
+    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.008486$ & \cellcolor{orange}$0.586606$ & \cellcolor{orange}$0.351956$ & $0.002927$ & \cellcolor{orange}$0.617929$ & \cellcolor{orange}$0.681098$ & $0.000559$ & $0.001062$ & $0.012978$ \\
+    \hline
+    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.009472$ & $0.07071$ & $6.58\times{}10^{-5}$ & $0.001034$ & $0.019449$ & $0.006711$ & $0.055052$ & $0.002166$ \\
+    \hline
+    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}$0.426205$ & $0.008692$ & \cellcolor{green}$0.86507$ & \cellcolor{green}$0.811637$ & $0.009455$ & $0.003244$ & $0.076195$ \\
+    \hline
+    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.00461$ & \cellcolor{orange}$0.329468$ & \cellcolor{orange}$0.432466$ & $0.106478$ & $0.012951$ & $0.001404$ \\
+    \hline
+    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.008756$ & $0.006046$ & $0.00024$ & $7.86\times{}10^{-6}$ & $0.003555$ \\
+    \hline
+    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{green}$0.803124$ & $1.47\times{}10^{-5}$ & $3.43\times{}10^{-5}$ & $0.064213$ \\
+    \hline
+    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.018731$ & $7.27\times{}10^{-5}$ & $0.046421$ \\
+    \hline
+    \cellcolor{dark-gray}$Q_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.108255$ & $0.00897$ \\
+    \hline
+    \cellcolor{dark-gray}E & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.003167$ \\
+    \hline
+    \cellcolor{dark-gray}$C_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
+    \hline
+  \end{tabular}
+  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters.} This table shows the $R^2$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R^2>0.8$) and those with moderation correlation have been coloured orange ($0.8>R^2>0.3$).
+  \label{tab:oxyregress}}
 \end{table}
+\end{landscape}
+
+\setlength{\tabcolsep}{6pt}
 
 \subsection{Rate of oxygen diffusion}
 During the course of this experimental stage I noticed that on occasions where the respiring cultures died, either through being left in essentially anaerobic conditions for too long, or intentionally killed with Chloramphenicol, the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation I concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. The average rates of oxygen diffusion were very small, and on the experimental timescales are probably negligible, but I thought it necessary to include in the model for completeness.
