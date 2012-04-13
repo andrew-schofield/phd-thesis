@@ -102,7 +102,6 @@ The posterior probability distributions generated from the three experimental da
 Additionally $k_1$, the rate of reduction of Oxygen by \cbbthree{} showed bimodality (not shown currently) \textit{and} a very broad range. The bimodal nature of this distribution was not matched in any of the other parameters. This parameter is the last rate in the ETC of oxygen reduction, so it is quite possible that the rate limiting steps are in the previous stages of the ETC and thus in the parameter estimation system $k_1$ essentially becomes ``free''.
 
 Some of the posterior probability distributions appear to have expanded outside their prior bounds. I am fairly certain that this is not an error and that samples \textit{are} being taken from the prior distributions, but rather that the prior distributions were sufficiently incorrect that the penalty for selecting a parameter value from the prior distribution which is very unlikely is outweighed by the large decrease in ``fitness value'' that this affords.
-
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm]{./05-oxygenreduction/data/posteriors.pdf}
@@ -113,20 +112,43 @@ Some of the posterior probability distributions appear to have expanded outside 
 
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
+\begin{table}[h]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+\textbf{Parameter} && $\mathbf{R_{DS1}}$ & $\mathbf{R_{DS2}}$ & $\mathbf{R_{DS3}}$ & $\mathbf{R_{All}}$\\
+\midrule
+$k_1$ && 139.8495 & 313.8943 & 36.4858 & 136.4078\\
+$k_3$ && 720.4517 & 2124.8648 & 390.3460 & 910.8170\\
+$\beta$ && 43.3154 & 96.3164 & 105.9580 & 67.6869\\
+g && 51.6707 & 25.6698 & 18.2056 & 102.3184\\
+f && 70.7660 & 30.0100 & 149.7186 & 51.1141\\
+Q && 1.7800 & 1.9782 & 2.7220 & 2.0854\\
+X && 148.5891 & 60.3033 & 133.9666 & 103.4760\\
+C && 108.3018 & 52.0419 & 41.4450 & 75.3039\\
+$Q_a$ && 40.9015 & 46.2807 & 48.8913 & 44.5043\\
+E && 47.42007 & 47.3227 & 132.1715 & 51.5627\\
+$C_a$ && 108.9085 & 37.7995 & 90.4965 & 61.7050\\
+\bottomrule
+\end{tabular} 
+\end{center}
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic} The \engordnumber{2}-\engordnumber{4} columns are the R statistics for the individual datasets and the \engordnumber{5} column is the R statistic for all three datasets combined.
+\label{tab:oxyRstat}}
+\end{table}
+Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. As can be seen in the table it appears that the majority of the trajectories have not converged with the exception of Q, the quinone concentration. This is not completely unexpected, as there are a larger number of parameters in the model than are required to fit the experimental data and thus the potential range of parameter values is broad at this stage. I was therefore not worried about the lack of convergence at this point as with subsequent, more complex datasets the range of potential parameter values will decrease, allowing the trajctories to converge more easily.
 
 \subsubsection{Analysis of Correlation}
 Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
 
 The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} and was constructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination. The matrix is upper-triangle only as the lower triangle is a duplicate of the same data. The diagonal is shown in grey as it is not useful data since the correlation of X against X is always 1.
-
-The correlation matrix shows that the majority of the parameters are not correlated with each other, giving very low $R^2$ values. A number of the parameters showed moderate correlation, which is to be expected. Parameters such as $k_1$ - the rate of reduction of oxygen - and $k_3$ - the rate of reduction of \cbbthree{} -  broadly speaking would increase as g - the rate of electrons in -  increased. This was expected as more electrons means higher observable rates are possible. Strong positive correlations exist between the concentrations of cytochromes (X), \cbbthree{}(C) and the rate of electrons in (g). This makes sense if the system wants to increase throughput of electrons but cannot do it by increasing the size of the quinone pool. Large numbers of electrons can be reduced by the cytochromes to eventually reduce oxygen.
-
-Interestingly there were no negative correlations observed. This is somewhat odd as it might be expected that as the reduction rates of enzymes goes down, the concentration of the enzyme increases to maintain the same overall electron throughput. It appears however that the system is always trying to maximise oxygen throughput.
-
-\begin{landscape}
+%\begin{landscape}
 \begin{table}[tbp]
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.5}
+  \centering
+  \rotatebox{90}{
+  \begin{minipage}{24.4cm}
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
@@ -157,14 +179,19 @@ Interestingly there were no negative correlations observed. This is somewhat odd
   \end{tabular}
   \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters.} This table shows the $R^2$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R^2>0.8$) and those with moderation correlation have been coloured orange ($0.8>R^2>0.3$).
   \label{tab:oxyregress}}
+  \end{minipage}
+  }
 \end{table}
-\end{landscape}
+%\end{landscape}
+The correlation matrix shows that the majority of the parameters are not correlated with each other, giving very low $R^2$ values. A number of the parameters showed moderate correlation, which is to be expected. Parameters such as $k_1$ - the rate of reduction of oxygen - and $k_3$ - the rate of reduction of \cbbthree{} -  broadly speaking would increase as g - the rate of electrons in -  increased. This was expected as more electrons means higher observable rates are possible. Strong positive correlations exist between the concentrations of cytochromes (X), \cbbthree{}(C) and the rate of electrons in (g). This makes sense if the system wants to increase throughput of electrons but cannot do it by increasing the size of the quinone pool. Large numbers of electrons can be reduced by the cytochromes to eventually reduce oxygen.
 
-\setlength{\tabcolsep}{6pt}
-
+Interestingly there were no negative correlations observed. This is somewhat odd as it might be expected that as the reduction rates of enzymes goes down, the concentration of the enzyme increases to maintain the same overall electron throughput. It appears however that the system is always trying to maximise oxygen throughput.
 \subsection{Rate of oxygen diffusion}
-During the course of this experimental stage I noticed that on occasions where the respiring cultures died, either through being left in essentially anaerobic conditions for too long, or intentionally killed with Chloramphenicol, the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation I concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. The average rates of oxygen diffusion were very small, and on the experimental time-scales are probably negligible, but I thought it necessary to include in the model for completeness.
+Early on in the course of this experimental stage I noticed that on occasions where the respiring cultures died, either through being left in essentially anaerobic conditions for too long, or intentionally killed with Chloramphenicol, the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation I concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. After this point I made absolutely sure that there was never an air bubble in the electrode chamber while data was being recorded.
 
+Even with no air bubble a small amount of oxygen was diffusing in, so I set up an experiment to try and quantify this. I grew wild-type \Nm{} cultures to various different cell densities and let them respire aerobically. Once the cultures had used all the available oxygen they were killed either by adding a small volume of Chloramphenicol ($25 \mu l)$, or by heating the culture to 95 \textdegree{}C for 10 minutes. I then recorded the oxygen concentrations as the gas diffused back into the electrode chamber.
+
+The oxygen concentration takes the form of an inverse exponential decay and therefore can be fit very easily to an exponential function. The exact parameters of the diffusion seem to differ between cultures but it appeared to have a dependence on the cell density whereby lower cell densities generally had higher rates of diffusion than higher cell densities, but there was no obvious direct relationship.
 The equation used to fit raw data for oxygen diffusion is a 3 parameter exponential:
 \begin{equation*}
 f(x) = c - ae^{-bx} 
@@ -181,8 +208,10 @@ Integrating and separating this equation gives:
 \Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
 \end{gathered}
 \end{equation*}
+The parameters obtained from fitting the experimental data showed a small difference in $K_O$ between cell densities leading to me selecting 48 as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. Even so average rates of oxygen diffusion were very small, and on the experimental time-scales are probably negligible, but I thought it necessary to include in the model for completeness. \textit{Maybe include some of the fits here?}
+
 
 \subsection{Discussion}
-The experimental dataset shows that oxygen reduction in \textit{Neisseria meningitidis} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This apparent simple linearity could be modelled with a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. However this does mean that the posterior distributions generated are very wide and therefore allows much greater freedom for the next dataset to explore the parameter space.
+The experimental datasets showed that oxygen reduction in \Nm{} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. Unfortunately the degree of affinity could not be explored further as it was limited by the sampling rate of the oxygen electrode. Nonetheless this apparent simple linearity could be very easily have been modelled to a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. Admittedly this would not include the behaviour when the oxygen concentration reaches zero, which is that it remains so. However this essentially meant that there were a much larger number of parameters available to fit than were necessary, which lead to overfitting of the data. The size of the parameter set meant that there were a very large set of potential combinations that would have lead to a similar result, however this was mitigated somewhat by the prior probability distributions given to the algorithm. Even so, this meant that the posterior distributions generated were very wide and therefore allowed much greater freedom for the next dataset to explore the parameter space.
 
-Given the knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, I expected a linear reduction of oxygen with high affinity over nearly two orders of magnitude. It is however remarkable that I can model this behaviour with so few components in the model, as it requires significant changes in the reduction state of the enzymes to achieve this.
+With the knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, I expected a linear reduction of oxygen with high affinity over nearly two orders of magnitude. This was evidenced in the experimental data. It is however remarkable that this behaviour can be modelled with so few components \textit{in} the model, as it requires significant changes in the reduction states of the enzymes to achieve this. \textit{Include some reduction state plots here?}
