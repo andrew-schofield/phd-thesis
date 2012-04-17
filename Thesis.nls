@@ -3,61 +3,61 @@
  \nomgroup{A}
 
   \item [{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}
-		\nompageref{67}
-  \item [{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}
-		\nompageref{65}
-  \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{14}
-  \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
-		\nompageref{14}
-  \item [{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}
-		\nompageref{37}
-  \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
-		\nompageref{38}
-  \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
-		\nompageref{11}
-  \item [{DNA}]\begingroup Deoxyribonucleic Acid\nomeqref {1.5}
-		\nompageref{26}
-  \item [{ETC}]\begingroup Electron Transport Chain\nomeqref {1.0}
-		\nompageref{15}
-  \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
-		\nompageref{15}
-  \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
-		\nompageref{17}
-  \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
 		\nompageref{68}
-  \item [{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}
-		\nompageref{34}
-  \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
-		\nompageref{37}
-  \item [{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}
-		\nompageref{70}
-  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
-		\nompageref{14}
-  \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
+  \item [{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}
+		\nompageref{66}
+  \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
+		\nompageref{15}
+  \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
+		\nompageref{15}
+  \item [{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}
+		\nompageref{38}
+  \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
+		\nompageref{39}
+  \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
+		\nompageref{12}
+  \item [{DNA}]\begingroup Deoxyribonucleic Acid\nomeqref {1.5}
+		\nompageref{27}
+  \item [{ETC}]\begingroup Electron Transport Chain\nomeqref {1.0}
 		\nompageref{16}
-  \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
+  \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
 		\nompageref{16}
-  \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}
-		\nompageref{41}
-  \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
+  \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
 		\nompageref{18}
-  \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{14}
-  \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
-		\nompageref{16}
-  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{38}
-  \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}
-		\nompageref{33}
-  \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}
-		\nompageref{33}
-  \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
-		\nompageref{37}
-  \item [{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}
+  \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
 		\nompageref{69}
+  \item [{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}
+		\nompageref{35}
+  \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
+		\nompageref{38}
+  \item [{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}
+		\nompageref{71}
+  \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
+		\nompageref{15}
+  \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
+		\nompageref{17}
+  \item [{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}
+		\nompageref{17}
+  \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}
+		\nompageref{42}
+  \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
+		\nompageref{19}
+  \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
+		\nompageref{15}
+  \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
+		\nompageref{17}
+  \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{39}
+  \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}
+		\nompageref{34}
+  \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}
+		\nompageref{34}
+  \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
+		\nompageref{38}
+  \item [{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}
+		\nompageref{70}
   \item [{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}
-		\nompageref{36}
+		\nompageref{37}
   \item [{tet$^\textrm{r}$}]\begingroup tetracycline resistance\nomeqref {2.0}
-		\nompageref{36}
+		\nompageref{37}
 
 \end{thenomenclature}
