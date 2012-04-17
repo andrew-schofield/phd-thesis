@@ -23,6 +23,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{notoccite}
 \usepackage{lscape}
+\usepackage{rotating}
 \usepackage[table]{xcolor}
 
 \definecolor{dark-gray}{gray}{0.5}
@@ -82,19 +83,19 @@
 				\par
 			\end{large}%
 		\fi
-    \vskip 1.5em%
+    \vskip 5em%
     {\large
       \lineskip .5em%
       \begin{tabular}[t]{c}%
 	\@author
       \end{tabular}\par}%
-    \vskip 1em%
+    \vskip 20em%
     {\normalsize
       \lineskip .5em%
       \begin{tabular}[t]{c}%
 	\@qualification
       \end{tabular}\par}%
-    \vskip 1em%
+    \vskip 3.5em%
     {\normalsize
       \lineskip .5em%
       \begin{tabular}[t]{c}%
@@ -106,7 +107,7 @@
       \begin{tabular}[t]{c}%
 	\@department
       \end{tabular}\par}%
-    \vskip 1em%
+    \vskip 3.5em%
     {\normalsize \@date}%
   \end{center}%
   \par
@@ -154,9 +155,9 @@
 \title{Analysis and modelling of respiratory metabolism in \Nsm}
 \subtitle{}
 \author{Andrew Schofield}
-\qualification{PhD}
+\qualification{Submitted for the degree of Doctor of Philosophy}
 \university{The University of York}
-\department{Biology}
+\department{Department of Biology}
 \date{April 2012}
 
 \pagestyle{fancy}
@@ -175,6 +176,8 @@
 \mathchardef\mhyphen="2D
 
 \makeindex
+
+%\includeonly{./05-oxygenreduction/oxygenreduction}
 
 \begin{document}
 \frontmatter
