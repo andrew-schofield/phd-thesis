@@ -3,6 +3,12 @@
 \section{Aerobic Nitric Oxide Reduction}
 \subsection{Introduction}
 The next dataset I used in my iterative approach to parameter estimation was of one of aerobic oxygen reduction interrupted by the addition of Nitric Oxide. This dataset is the next most complicated after aerobic oxygen reduction as it introduces the nitric oxide reduction pathway. The portions of the ETC relating to Nitric Oxide reduction are shown graphically in Figure \ref{fig:no_resp_chain}. However this pathway cannot be isolated \textit{in vivo} as \Nm{} is incapable of completely anaerobic respiration therefore the required parts of the model are actually those from Chapter \ref{chap:oxygenreduction} and those in Figure \ref{fig:no_resp_chain}.
+\begin{figure}[tbp]
+  \centering
+    \includegraphics[width=14cm]{06-noreduction/data/no_resp_chain.pdf}
+    \caption[Nitric oxide reducing electron transport chain of \Nm{}]{{\bf Nitric oxide reducing electron transport chain of \Nm{}.} This shows the complete electron transport chain of \Nsm{} with the components irrelevant to nitric oxide reduction greyed out.
+  \label{fig:no_resp_chain}}
+\end{figure}
 The equations that describe this portion of the ETC are:
 \begin{eqnarray*}
 \frac{d[O_2]}{dt} & = & \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]\\
@@ -13,21 +19,11 @@ The equations that describe this portion of the ETC are:
 \frac{d[C_X]}{dt} & = & k_5[C_a][NO] - k_6 [C_X]\\
 \frac{d[B_a]}{dt} & = & l_3[Q_a]([B] - [B_a]) - l_1[NO][B_a]
 \end{eqnarray*}
-
-\begin{figure}[tbp]
-	\centering
-		\includegraphics[width=14cm]{06-noreduction/data/no_resp_chain.pdf}
-		\caption[Nitric oxide reducing electron transport chain of \Nm{}]{{\bf Nitric oxide reducing electron transport chain of \Nm{}.} This shows the complete electron transport chain of \Nsm{} with the components irrelevant to nitric oxide reduction greyed out.
-	\label{fig:no_resp_chain}}
-\end{figure}
-
 These equations describe the change in concentration of Nitric Oxide over time, which is the experimentally observable value (in addition to the afore modelled oxygen). Also being modelled was the change in concentration of inhibited \cbbthree{} and the reduction state of NorB. This portion of the model involved 24 parameters and variables which I needed to estimate. This number includes the 13 values already estimated in Chapter \ref{chap:oxygenreduction}.
 \subsection{Experimental Results}
-Modelling nitric oxide reduction involves adding nitric oxide whilst cultures are respiring aerobically. The conditions are the same as for oxygen reduction, except that nitric oxide solution is added to a concentration of $\approx 5~\mu$M and the culture then left to respire nitric oxide.
+Generation of nitric oxygen reduction datasets required the growth of MC58 (wild type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $OD_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen and nitric oxide concentrations as the culture respired. To model nitric oxide reduction required that I add nitric oxide solution to the culture while it is respiring aerobically. Part-way through aerobic respiration I added nitric oxide solution to a final concentration of $\approx 5~\mu$M and the culture then left to respire nitric oxide.
 
-The datasets used for this section of the model describe the effect on oxygen reduction as nitric oxide is introduced to a system that is only partially primed for microaerobic respiration. There will be a small amount of NorB (the nitric oxide reductase) present to remove and nitric oxide that is present. The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
-
-The dataset and final solved output from the Monte-Carlo run are show in figure \ref{fig:nosim}. This is a more complex dataset than for oxygen respiration. Initially the oxygen reduction is carried out in exactly the same manner as the previous dataset, which is able to be modelled with the parameters selected from the prior distributions. Upon addition of nitric oxide, oxygen respiration slows and almost stops as a result of competition for electrons between \cbbthree{} and NorB, and the direct chemical inhibition of \cbbthree{} by NO. Nitric oxide starts being removed as a combination of simple diffusion (although this rate will be low) and reduction via NorB. Once the NO has been removed from the system oxygen reduction resumes at almost the same rate as before and still has the same high affinity feature as the previous dataset. The closeness of fit of the solved parameter set to the experimental data shows that the model has been able to accommodate a parameter set from the prior distributions that is able to accommodate all these features, and will still be able to model simple oxygen reduction.
+The datasets used for this section of the model describe the effect on oxygen reduction as nitric oxide is introduced to a system that is only partially primed for microaerobic respiration. There will be a small amount of NorB (nitric oxide reductase) present to remove any nitric oxide that is present. This is a more complex dataset than for oxygen respiration. Initially the oxygen reduction is carried out in exactly the same manner as in Chapter \ref{chap:oxygenreduction}, which is able to be modelled with the parameters selected from the prior distributions. Upon addition of nitric oxide, oxygen respiration slows and almost stops as a result of competition for electrons between \cbbthree{} and NorB, and the direct chemical inhibition of \cbbthree{} by NO. Nitric oxide starts being removed as a combination of simple diffusion (although this rate will be low) and reduction via NorB. Once the NO has been removed from the system oxygen reduction resumes at almost the same rate as before and still has the same high affinity feature as the previous dataset.
 \subsubsection{Prior Probability Distributions}
 \begin{figure}[tbp]
  \centering
@@ -38,6 +34,7 @@ The dataset and final solved output from the Monte-Carlo run are show in figure 
 \end{figure}
 
 \subsubsection{Parameter Estimation Results}
+The dataset and final solved output from the Monte-Carlo run are show in Figure \ref{fig:nosim}.  The closeness of fit of the solved parameter set to the experimental data shows that the model has been able to accommodate a parameter set from the prior distributions that is able to accommodate all these features, and will still be able to model simple oxygen reduction.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-sim.pdf}
@@ -54,5 +51,6 @@ The dataset and final solved output from the Monte-Carlo run are show in figure 
 \subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitric Oxide Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitric Oxide Reduction in nsrR- mutant}}
 \subsection{Introduction}
+ The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
 \subsection{Results}
 \subsection{Discussion}
