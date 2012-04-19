@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Apr 19 12:38:40 2012"
+@timestamp def "Thu Apr 19 13:21:42 2012"
 @with box
 @    box on
 @    box loctype view
@@ -381,7 +381,7 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "Cols 1:3"
-@    s1 legend  "Simulated Oxygen"
+@    s1 legend  "Solved Oxygen"
 @g1 on
 @g1 hidden false
 @g1 type XY
@@ -583,7 +583,7 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "Cols 1:5"
-@    s1 legend  "Simulated Nitrite"
+@    s1 legend  "Solved Nitrite"
 @    s2 hidden false
 @    s2 type xy
 @    s2 symbol 0
@@ -632,7 +632,7 @@
 @    s2 errorbar riser clip off
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "Cols 1:4"
-@    s2 legend  "Simulated Nitric Oxide"
+@    s2 legend  "Solved Nitric Oxide"
 @target G0.S0
 @type xy
 0 3.621631
