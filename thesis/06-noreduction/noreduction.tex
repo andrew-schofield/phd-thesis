@@ -60,7 +60,7 @@ The prior probability distributions used for parameter estimation of these datas
 \end{figure}
 
 \subsubsection{Parameter Estimation Results}
-The dataset and final solved output from the Monte-Carlo run are show in Figure \ref{fig:nosim}.  The closeness of fit of the solved parameter set to the experimental data shows that the model has been able to accommodate a parameter set from the prior distributions that is able to accommodate all these features, and will still be able to model simple oxygen reduction.
+The parameter estimation procress was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-sim.pdf}
@@ -68,6 +68,7 @@ The dataset and final solved output from the Monte-Carlo run are show in Figure 
  \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset. The solved oxygen concentrations match the experimental dataset so closely as to be almost invisible.}
  \label{fig:nosim}
 \end{figure}
+The model was able to generate a parameter set from the prior probability distributions that could accomodate all the new features of the dataset as evidenced by the closeness of fit of the solved output to the experimental data. This parameter set will also still be able to model simple oxygen reduction.
 \subsubsection{Analysis of Convergence}
 \subsubsection{Analysis of Correlation}
 \subsection{Discussion}
