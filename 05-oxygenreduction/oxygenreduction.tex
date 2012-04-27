@@ -115,25 +115,26 @@ It is possible to calculate the degree of convergence of the parameters from the
 \begin{table}[h]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccccc}
+\begin{tabular}{ccccccc}
 \toprule
-\textbf{Parameter} && $\mathbf{R_{DS1}}$ & $\mathbf{R_{DS2}}$ & $\mathbf{R_{DS3}}$ & $\mathbf{R_{All}}$\\
+& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} & \\
+\textbf{Parameter} && ${\bar{x}}$ & ${\sigma}$ & ${\bar{x}}$ & $\sigma$ & $\mathbf{R_{All}}$\\
 \midrule
-$k_1$ && 139.8495 & 313.8943 & 36.4858 & 136.4078\\
-$k_3$ && 720.4517 & 2124.8648 & 390.3460 & 910.8170\\
-$\beta$ && 43.3154 & 96.3164 & 105.9580 & 67.6869\\
-g && 51.6707 & 25.6698 & 18.2056 & 102.3184\\
-f && 70.7660 & 30.0100 & 149.7186 & 51.1141\\
-Q && 1.7800 & 1.9782 & 2.7220 & 2.0854\\
-X && 148.5891 & 60.3033 & 133.9666 & 103.4760\\
-C && 108.3018 & 52.0419 & 41.4450 & 75.3039\\
-$Q_a$ && 40.9015 & 46.2807 & 48.8913 & 44.5043\\
-E && 47.42007 & 47.3227 & 132.1715 & 51.5627\\
-$C_a$ && 108.9085 & 37.7995 & 90.4965 & 61.7050\\
+$k_1$ && 415 & 13.83 & 314.713 & 131.017 & 136.4078\\
+$k_3$ && 3 & 0.1 & 6.6191 & 0.250852 & 910.8170\\
+$\beta$ && 0.00014 & $\infty$ & 0.000111067 & $7.60264\times 10^{-5}$ & 67.6869\\
+g && 0.847 & $\infty$ & 3.85783 & 1.86624 & 102.3184\\
+f && 8.749 & $\infty$ & 12.11 & 6.74076 & 51.1141\\
+Q && 0.0378 & 0.00126 & 0.0835887 & 0.00234281 & 2.0854\\
+X && 0.852 & $\infty$ & 2.37942 & 1.29951 & 103.4760\\
+C && 0.056 & $\infty$ & 0.0597129 & 0.0534596 & 75.3039\\
+$Q_a$ && 0.2 & $\infty$ & 0.187551 & 0.0927039 & 44.5043\\
+E && 0.808 & $\infty$ & 0.747384 & 0.674239 & 51.5627\\
+$C_a$ && $7\times 10^{-4}$ & $\infty$ & 0.000651837 & 0.000519143 & 61.7050\\
 \bottomrule
 \end{tabular} 
 \end{center}
-\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic} The \engordnumber{2}-\engordnumber{4} columns are the R statistics for the individual datasets and the \engordnumber{5} column is the R statistic for all three datasets combined.
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic} This table shows the prior and posterior means and standard deviations in addition to the Gelman-Rubin Convergence statistic for all chains.
 \label{tab:oxyRstat}}
 \end{table}
 Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. As can be seen in the table it appears that the majority of the trajectories have not converged with the exception of Q, the quinone concentration. This is not completely unexpected, as there are a larger number of parameters in the model than are required to fit the experimental data and thus the potential range of parameter values is broad at this stage. I was therefore not worried about the lack of convergence at this point as with subsequent, more complex datasets the range of potential parameter values will decrease, allowing the trajctories to converge more easily.
