@@ -4,11 +4,11 @@
 \frac{d[O_2]}{dt} & = & \beta\left(1-\frac{[O_2]}{K_O}\right) - k_{1}[C_a][O_2] \nonumber \\
 \frac{d[NO]}{dt} & = & m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6[C_X] - \gamma[NO] \nonumber \\
 \frac{d[NO_2^-]}{dt} & = & - m_{1}[NO_2^-][A_a] \nonumber \\
-\frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E])\ \nonumber \\
-\frac{d[E]}{dt} & = & -k_3([C] - [C_a] - [C_X])[E] - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E]) \nonumber \\
-\frac{d[A_a]}{dt} & = & m_3([A] - [A_a])[E] - m_{1}[NO_2^-][A_a] \nonumber \\
+\frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[X_a])\ \nonumber \\
+\frac{d[X_a]}{dt} & = & -k_3([C] - [C_a] - [C_X])[X_a] - m_3([A] - [A_a])[X_a] + f[Q_a]([X]-[X_a]) \nonumber \\
+\frac{d[A_a]}{dt} & = & m_3([A] - [A_a])[X_a] - m_{1}[NO_2^-][A_a] \nonumber \\
 \frac{d[B_a]}{dt} & = & l_3[Q_a]([B] - [B_a]) - l_1[NO][B_a] \nonumber \\
-\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_{5}[C_a][NO] \nonumber \\
+\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_{5}[C_a][NO] \nonumber \\
 \frac{d[C_X]}{dt} & = & k_5[C_a][NO] - k_6 [C_X] \nonumber \\
 \frac{d[A]}{dt} & = & \left(R\left(1 - \frac{[O_2] + k_{10}[NO]}{[O_2] + k_{10}[NO] + k_{11}}\right) - S\left(1 - \frac{[NO]}{[NO] + k_{13}}\right)\right) - k_8[A] \nonumber \\
 \frac{d[B]}{dt} & = & T \left(\frac{[NO]}{[NO] + k_{15}}\right) - k_{16}[B]
@@ -23,7 +23,7 @@
 $O_2$ & & Oxygen concentration\\
 $NO$ & & Nitric oxide concentration\\
 $NO_2^-$ & & Nitrite concentration\\
-$E$ & & Reduced cytochrome concentration\\
+$X_a$ & & Reduced cytochrome concentration\\
 $A_a$& & Reduced AniA\\
 $B_a$& & Reduced NorB\\
 $C_a$& & Reduced \cbbthree{}\\

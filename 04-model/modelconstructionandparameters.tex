@@ -67,15 +67,15 @@ The change in concentration of reduced quinones is affected by the following kin
 \begin{gathered}
 Q_i \xrightarrow{g} Q_a\\
 B_i + Q_a \xrightarrow{l_3} B_a + Q_i\\
-E_i + Q_a \xrightarrow{f} E + Q_i
+X_i + Q_a \xrightarrow{f} X_a + Q_i
 \end{gathered}
 \end{equation*}
 The differential equation that models these reactions is
 \begin{equation}
-\frac{d[Q_a]}{dt} = g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E])
+\frac{d[Q_a]}{dt} = g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[X_a])
 \label{eq:quinones}
 \end{equation}
-$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system ($Q_i$ is calculated from these two values). $g$ represents the constant rate of availability of electrons into the quinone pool from NADH. The reduction of NorB by active quinones is parametrised by the rate constant $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ is the rate constant parametrising the reduction of cytochromes by the active quinones. Total cytochromes and total reduced cytochromes are given by $X$ and $E$ respectively which are used to calculated $E_i$ in the kinetic reaction.\\
+$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system ($Q_i$ is calculated from these two values). $g$ represents the constant rate of availability of electrons into the quinone pool from NADH. The reduction of NorB by active quinones is parametrised by the rate constant $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ is the rate constant parametrising the reduction of cytochromes by the active quinones. Total cytochromes and total reduced cytochromes are given by $X$ and $X_a$ respectively which are used to calculated $X_i$ in the kinetic reaction.\\
 {\bf Cytochromes}\\
 I am using a simplified version of cytochromes and therefore $X$ actually represents a pool of different cytochromes, \textit{c$_{\textrm{x}}$}, \textit{c$_{\textrm{4}}$}, \textit{c$_{\textrm{5}}$} and the \textit{bc$_{\textrm{1}}$} complex. These are amalgamated into one here to simplify the equations and focus on the simple branching of the chain and competition for electrons. This is a modelling choice and it is further discussed in Chapter \ref{chap:completedmodel}.
 %$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the rate of flow of electrons into the quinone pool from NADH. The rate of reduction of NorB by active quinones is given by $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ denotes the rate of reduction of cytochromes by the active quinones. Cytochromes and reduced cytochromes are given by $X$ and $E$ respectively.
@@ -84,14 +84,14 @@ I am using a simplified version of cytochromes and therefore $X$ actually repres
 The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes as can be seen in the following kinetic reactions
 \begin{equation*}
 \begin{gathered}
-C_i + E \xrightarrow{k_3} C_a + E_i\\
-A_i + E \xrightarrow{m_3} A_a + E_i\\
-E_i + Q_a \xrightarrow{f} E + Q_i
+C_i + X_a \xrightarrow{k_3} C_a + X_i\\
+A_i + X_a \xrightarrow{m_3} A_a + X_i\\
+X_i + Q_a \xrightarrow{f} X_a + Q_i
 \end{gathered}
 \end{equation*}
 These are modelled with the following differential equation
 \begin{equation}
-\frac{d[E]}{dt} = -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E])
+\frac{d[X_a]}{dt} = -k_3([C] - [C_a] - [C_X])[X_a]  - m_3([A] - [A_a])[X_a] + f[Q_a]([X]-[X_a])
 \label{eq:cytochromes}
 \end{equation}
 where $k_3$ is the rate constant describing the reduction of the available oxidised cytochrome c oxygen reductase (\cbbthree{}) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree{}, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate constant describing the reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes thus increases by their reduction by the quinone pool, but this in turn can reduce the flux from the pool because less oxidised cytochrome is available to accept electrons. As stated previously, the relative time scales are unknown so all processes appear explicitly.
@@ -104,14 +104,14 @@ Finally the changes in concentration of reduced terminal oxidases, \cbbthree{}, 
 The kinetic reactions which affect the concentration of reduced (active) \cbbthree{} are
 \begin{equation*}
 \begin{gathered}
-C_i + E \xrightarrow{k_3} C_a + E_i\\
+C_i + X_a \xrightarrow{k_3} C_a + X_i\\
 O_2 + C_a\xrightarrow{k_1} H_{2}O + C_i\\
 NO + C_a \xrightarrow{k_5} NO\mhyphen C_X 
 \end{gathered}
 \end{equation*}
 which is described by
 \begin{equation}
-\frac{d[C_a]}{dt} = k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO]
+\frac{d[C_a]}{dt} = k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_5[C_a][NO]
 \label{eq:active_cbb3}
 \end{equation}
 \\
@@ -132,13 +132,13 @@ which is described by
 The concentration of reduced AniA is affected by the following kinetic reactions
 \begin{equation*}
 \begin{gathered}
-A_i + E \xrightarrow{m_3} A_a + E_i \\
+A_i + X_a \xrightarrow{m_3} A_a + X_i \\
 NO_2^- + A_a \xrightarrow{m_1} NO + A_i 
 \end{gathered}
 \end{equation*}
 which can be modelled by
 \begin{equation}
-\frac{d[A_a]}{dt} = m_3([A] - [A_a])[E]- m_{1}[NO_2^-][A_a]
+\frac{d[A_a]}{dt} = m_3([A] - [A_a])[X_a]- m_{1}[NO_2^-][A_a]
 \label{eq:active_ania}
 \end{equation}
 \\{\bf Reduced NorB}\\
@@ -250,7 +250,7 @@ As for Oxygen concentration, this variable is simply obtained from the dataset a
 \subsubsection*{$\mathbf{NO_2^-}$ {\bf- Nitrite concentration}}
 Nitrite concentration is also handled in the same way as the oxygen and nitric oxide concentrations.
 
-\subsubsection*{$\mathbf{E}$ {\bf- Reduced cytochrome concentration}}
+\subsubsection*{$\mathbf{X_a}$ {\bf- Reduced cytochrome concentration}}
 Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
 
 \subsubsection*{$\mathbf{A_a}$ {\bf- Reduced AniA}}
