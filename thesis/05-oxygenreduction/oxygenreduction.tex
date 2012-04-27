@@ -14,9 +14,9 @@ The first dataset I used in my iterative approach to parameter estimation was of
 The equations that describe this portion of the ETC are:
 \begin{eqnarray*}
 \frac{d[O_2]}{dt} & = & \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]\\
-\frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[E])\\
-\frac{d[E]}{dt} & = & -k_3([C] - [C_a] - [C_X])[E]  - m_3([A] - [A_a])[E] + f[Q_a]([X]-[E])\\
-\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[E] - k_{1}[C_a][O_2] - k_5[C_a][NO]
+\frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[X_a])\\
+\frac{d[X_a]}{dt} & = & -k_3([C] - [C_a] - [C_X])[X_a]  - m_3([A] - [A_a])[X_a] + f[Q_a]([X]-[X_a])\\
+\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_5[C_a][NO]
 \end{eqnarray*}
 These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 13 parameters and variables which I tried to estimate (the model actually contains 17 such parameters and variables, but under these conditions the remaining 4 are set to 0 as they are related to nitrite reduction effects).
 
@@ -129,7 +129,7 @@ Q && 0.0378 & 0.00126 & 0.0835887 & 0.00234281 & 2.0854\\
 X && 0.852 & $\infty$ & 2.37942 & 1.29951 & 103.4760\\
 C && 0.056 & $\infty$ & 0.0597129 & 0.0534596 & 75.3039\\
 $Q_a$ && 0.2 & $\infty$ & 0.187551 & 0.0927039 & 44.5043\\
-E && 0.808 & $\infty$ & 0.747384 & 0.674239 & 51.5627\\
+$X_a$ && 0.808 & $\infty$ & 0.747384 & 0.674239 & 51.5627\\
 $C_a$ && $7\times 10^{-4}$ & $\infty$ & 0.000651837 & 0.000519143 & 61.7050\\
 \bottomrule
 \end{tabular} 
@@ -153,7 +153,7 @@ The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} an
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
-    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C & \cellcolor{dark-gray}$Q_a$ & \cellcolor{dark-gray}E & \cellcolor{dark-gray}$C_a$ \\
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C & \cellcolor{dark-gray}$Q_a$ & \cellcolor{dark-gray}$X_a$ & \cellcolor{dark-gray}$C_a$ \\
     \hline
     \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & $0.28599$ & $0.013212$ & \cellcolor{orange}$0.420123$ & $0.154821$ & $0.009968$ & \cellcolor{orange}$0.369637$ & \cellcolor{orange}$0.367247$ & $0.00344$ & $0.000229$ & $0.046062$ \\
     \hline
@@ -173,7 +173,7 @@ The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} an
     \hline
     \cellcolor{dark-gray}$Q_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.108255$ & $0.00897$ \\
     \hline
-    \cellcolor{dark-gray}E & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.003167$ \\
+    \cellcolor{dark-gray}$X_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.003167$ \\
     \hline
     \cellcolor{dark-gray}$C_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
     \hline
