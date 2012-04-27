@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openright,12pt]{book}
+\documentclass[a4paper,twoside,openright,12pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -71,7 +71,7 @@
   \newpage
   \thispagestyle{empty}
   \null
-  \vskip 10em%
+  \vskip 5em%
   \begin{center}%
   \let \footnote \thanks
     {\LARGE \@title \par}%
