@@ -25,5 +25,5 @@
 \nomenclatureentry{aABCSMC@[{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}|nompageref}{66}
 \nomenclatureentry{aABC@[{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}|nompageref}{68}
 \nomenclatureentry{aLSD@[{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}|nompageref}{69}
-\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{70}
-\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{71}
+\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{69}
+\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{70}

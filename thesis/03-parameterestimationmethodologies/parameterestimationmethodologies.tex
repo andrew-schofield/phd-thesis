@@ -67,23 +67,25 @@ Once the chromosome population has been created, 2 are selected at random and th
 \caption[{Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}]{{\bf Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.} The parameters are loaded as genes on the chromosome which are then perturbed, 2 chosen and the fittest kept and perturbed. Each time a chromosome is perturbed it is reintroduced into the chromosome pool, and the next 2 chromosomes are chosen at random.
 \label{fig:sa_spread}}
 \end{figure}
-\textbf{Advantages}
-\begin{itemize}
-	\item Easy to implement.
-	\item Can avoid local energy minima by jumping when the temperature is high.
-	\item Energy need only be calculated for 2 samples at any one time.
-	\item High optimisation performance on some problems.
-\end{itemize}
-\textbf{Disadvantages}
-\begin{itemize}
-	\item Slow performance on certain problems.
-	\item Cannot produce probability distributions.
-\end{itemize}
-\textbf{Reason(s) for rejection}
-\begin{itemize}
-	\item Seemed to be incapable during testing of settling on solutions to Nitric Oxide reduction datasets.
-	\item No probability distributions which were eventually required to incorporate data from previous datasets.
-\end{itemize}
+%\textbf{Advantages}
+%\begin{itemize}
+%	\item Easy to implement.
+%	\item Can avoid local energy minima by jumping when the temperature is high.
+%	\item Energy need only be calculated for 2 samples at any one time.
+%	\item High optimisation performance on some problems.
+%\end{itemize}
+%\textbf{Disadvantages}
+%\begin{itemize}
+%	\item Slow performance on certain problems.
+%	\item Cannot produce probability distributions.
+%\end{itemize}
+%\textbf{Reason(s) for rejection}
+%\begin{itemize}
+%	\item Seemed to be incapable during testing of settling on solutions to Nitric Oxide reduction datasets.
+%	\item No probability distributions which were eventually required to incorporate data from previous datasets.
+%\end{itemize}
+
+This algorithm was rejected as unsuitable as it seemed to be incapable of settling on solutions to the Nitric Oxide reduction datasets during testing. Additionally this technique doesn't produce probability distributions which were eventually required to incorporate data from previous datasets.
 
 %The algorithm is flexible in that it includes a gene mask in the chromosome which allows any number of genes to be switched on or off. In this way it is possible to fix the values of certain parameters, and prevent them from being perturbed at each iteration. This is useful during the parameter search process, as a limited dataset can be used, which only describes a limited subset of the overall model, and any parameters which are unrelated to that dataset can be removed. Practically this means it is possible to focus on one particular aspect of the model, such as oxygen utilisation, set all the parameters which are irrelevant to zero, and prevent them from being included in the genetic algorithm. During this process, the parameters related to oxygen utilisation can be improved, and once a sufficient set of value is obtained, these can then be fixed when a different dataset is used, such as \cNO \space reduction.
 
@@ -140,18 +142,20 @@ Given a low enough value for $\epsilon$, the output distribution should approxim
 
 A significant advantage of this technique is that it is readily parallelisable, as each particle in the SMC\nomenclature{SMC}{Sequential Monte Carlo} process is independent, thus can be simulated in parallel. A parallel version of this algorithm was implemented in the JAVA programming language which resulted in significant speed-ups when multiple processing threads can be used. The threading manager means that the algorithm is theoretically most efficient (in terms of computational time) when the number of particles is an exact multiple of the number of processing threads. In practice however this is negated by the fact that some particles require multiple samples due to them not meeting the acceptance criteria.
 
-\textbf{Advantages}
-\begin{itemize}
-	\item Paralellisable. Leading to improved performance on multiprocessor systems.
-\end{itemize}
-\textbf{Disadvantages}
-\begin{itemize}
-	\item Requires a suitable distance function or summary statistic.
-\end{itemize}
-\textbf{Reason(s) for rejection}
-\begin{itemize}
-	\item Seemed incapable of settling on sensible posterior distributions with some datasets. I suspect the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones.
-\end{itemize}
+%\textbf{Advantages}
+%\begin{itemize}
+%	\item Paralellisable. Leading to improved performance on multiprocessor systems.
+%\end{itemize}
+%\textbf{Disadvantages}
+%\begin{itemize}
+%	\item Requires a suitable distance function or summary statistic.
+%\end{itemize}
+%\textbf{Reason(s) for rejection}
+%\begin{itemize}
+%	\item Seemed incapable of settling on sensible posterior distributions with some datasets. I suspect the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones.
+%\end{itemize}
+
+This algorithm was rejected on the grounds that it seemed incapable of settling on sensible posterior distributions with some datsets. It is suspected that the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones. The requirement of a suitable distance function or summary statistic is a major disadvantage of this algorithm.
 
 \section{Metropolis Hastings Monte Carlo}
 
@@ -191,14 +195,7 @@ The initial parameters used to solve the equations were a set of priors based on
 
 I used Bayesian inference to inform the simulation parameters for a particular dataset based on prior probability distributions. These distributions were obtained as output from a previous dataset. I integrated this with a Metropolis-Hastings algorithm for sampling the prior probability distributions. Each parameter was sampled, and the parameter set was used to solve the ODE model. Based on the fitness output of the solved model, the Metropolis-Hastings algorithm allows parameters to be modified in a biased random walk which ultimately leads them to their most fit state, calculated using Log Normal probability.
 
-\textbf{Advantages}
-\begin{itemize}
-	\item 
-\end{itemize}
-\textbf{Disadvantages}
-\begin{itemize}
-	\item 
-\end{itemize}
+This algorithm was accepted as suitable since it seems to settle on reasonable solutions to the experimental datasets and produces usable posterior probability distributions for each of the parameters being estimated.
 
 \section{Integrative Scheme}
 \emph{Currently copied verbatim from paper}\\
