@@ -45,8 +45,8 @@
 \contentsline {subsubsection}{Electron Transporters}{48}{subsubsection*.6}
 \contentsline {subsubsection}{Terminal Reductases}{50}{subsubsection*.7}
 \contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{52}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{52}{section.3.2}
-\contentsline {section}{\numberline {3.3}Implementation of the model}{59}{section.3.3}
+\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{53}{section.3.2}
+\contentsline {section}{\numberline {3.3}Implementation of the model}{58}{section.3.3}
 \contentsline {section}{\numberline {3.4}Solving Ordinary Differential Equations}{59}{section.3.4}
 \contentsline {section}{\numberline {3.5}Parameter Estimation}{60}{section.3.5}
 \contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{61}{chapter.4}
@@ -107,5 +107,6 @@
 \contentsline {chapter}{\numberline {9}The Completed Model}{105}{chapter.9}
 \contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{105}{section.9.1}
 \contentsline {chapter}{\numberline {A}Appendix}{106}{appendix.A}
+\contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{106}{section.A.1}
 \contentsline {chapter}{List of Abbreviations}{108}{appendix*.16}
 \contentsline {chapter}{References}{109}{appendix*.16}
