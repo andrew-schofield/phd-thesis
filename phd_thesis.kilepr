@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=03-parameterestimationmethodologies/parameterestimationmethodologies.tex
+lastDocument=05-oxygenreduction/oxygenreduction.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -216,10 +216,10 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=13
+column=7
 encoding=UTF-8
 highlight=LaTeX
-line=22
+line=115
 mode=LaTeX
 open=true
 order=5
@@ -311,8 +311,8 @@ CursorColumn=99
 CursorLine=4
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=13
-CursorLine=22
+CursorColumn=7
+CursorLine=115
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
 CursorColumn=13
