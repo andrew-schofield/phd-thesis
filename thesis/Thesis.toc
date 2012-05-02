@@ -47,8 +47,8 @@
 \contentsline {subsection}{\numberline {3.1.2}Assumptions and their Justifications}{52}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{53}{section.3.2}
 \contentsline {section}{\numberline {3.3}Implementation of the model}{58}{section.3.3}
-\contentsline {section}{\numberline {3.4}Solving Ordinary Differential Equations}{59}{section.3.4}
-\contentsline {section}{\numberline {3.5}Parameter Estimation}{60}{section.3.5}
+\contentsline {section}{\numberline {3.4}Solving Ordinary Differential Equations}{58}{section.3.4}
+\contentsline {section}{\numberline {3.5}Parameter Estimation}{59}{section.3.5}
 \contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{61}{chapter.4}
 \contentsline {section}{\numberline {4.1}Simulated Annealing}{62}{section.4.1}
 \contentsline {section}{\numberline {4.2}Approximate Bayesian Computation by Sequential Monte Carlo}{66}{section.4.2}
