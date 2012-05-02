@@ -86,9 +86,9 @@ Each of the parameters that are to be estimated produces a trajectory of values 
 
 \begin{figure}[tbp]
  \centering
- \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/k3s.pdf}
+ \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/k3s1.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
- \caption[Individual parameter trajectories for multiple runs on the same experimental dataset]{{\bf Individual parameter trajectories for multiple runs on the same experimental dataset.} This figure shows the trajectories for the same parameter, in this case $k_3$ - the rate of \cbbthree{} reduction, from 20 individual runs of parameter estimation upon the same input data. The inset shows a zoomed in view of the trajectories that hit high values after ``burn-in''.
+ \caption[Individual parameter trajectories for multiple runs on the same experimental dataset]{{\bf Individual parameter trajectories for multiple runs on the same experimental dataset.} This figure shows the trajectories for the same parameter, in this case $k_3$ - the rate of \cbbthree{} reduction, from 20 individual runs of parameter estimation upon the same input data. The trajectories show clear convergence after the ``burn-in'' period.
  \label{fig:k3s}}
 \end{figure}
 
@@ -111,7 +111,7 @@ Some of the posterior probability distributions appear to have expanded outside 
 \end{figure}
 
 \subsubsection{Analysis of Convergence}
-It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992,Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
+It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
 \begin{table}[h]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
