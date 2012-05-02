@@ -4,27 +4,27 @@
 
 The model was constructed based on existing knowledge of the respiratory chain in \Nsm{} from the ETC shown in Figure \ref{fig:etc} (Chapter \ref{chap:intro}). I made no \textit{a priori} assumptions about separation of time-scales that would permit the use of Michaelis-Menton kinetics, as the rates of intermediate reaction steps are not known. This approach also permits tracking of the oxidation state of all the intermediates which allows understanding and offers the potential for predictions that may be explored in future \textit{in vivo} studies.
 
-The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity within a well-mixed vessel. I have made no assumptions about the bacterial population structure or the variations in concentrations of substrates between the bulk media and within the bacterial cells. Stochastic effects are ignored, but they are unlikely to be of importance. Additionally protein production is largely ignored as the switching mechanism happens on a time-scale that is much shorter than the transcription and translation of new proteins, they are therefore assumed to be expressed constitutively except where stated otherwise.
+The model was generated as a set of ordinary differential equations which describe the bulk-average concentration of substrates, products, enzymes and their activity within a well-mixed vessel. I have made no assumptions about the bacterial population structure or the variations in concentrations of substrates between the bulk media and within the bacterial cells. Stochastic effects are ignored at the protein level, but they are unlikely to be of importance. Additionally protein production is largely ignored as the switching mechanism happens on a time-scale that is much shorter than the transcription and translation of new proteins, they are therefore assumed to be expressed constitutively except where stated otherwise.
 
 \subsection{Converting Biological Reactions into Differential Equations}
-The rationale for obtaining the form for each of the 9 component equations is described below. Throughout the model the reduced components, i.e. those with available electrons, are denoted as active and have a subscript $a$. Components lacking a subscript denote the total, constant, amount of a component.
+The rationale for obtaining the form for each of the 9 component equations is described below. Throughout the model the reduced components, i.e. those with available electrons, are denoted as active and have a subscript $a$. Components lacking a subscript denote the total, constant, amount of a component. $\emptyset$ denotes nothing (this is used as the source when substrates are entering the system).
 
 \subsubsection{Respiratory Substrates}
 {\bf Oxygen}\\
-The change in concentration of oxygen is affected by the following kinetic reactions
+The change in concentration of oxygen is affected by the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 \emptyset\xrightarrow{\beta} O_2\\
 O_2 + C_a\xrightarrow{k_1} H_{2}O + C_i
 \end{gathered}
 \end{equation*}
-where $\beta$ is the rate of passive diffusion of \cOxygen{} into the electrode chamber. The rate constant $k_1$ describes the reduction of oxygen and the oxygen reductase \cbbthree{}; this rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of $O_2$.
+where $\beta$ is the rate of passive diffusion (as a function of \cOxygen{} concentration) of \cOxygen{} into the electrode chamber. The rate constant $k_1$ describes the reduction of oxygen and the oxygen reductase \cbbthree{}; this rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of $O_2$.
 The differential equation that gives the change in oxygen concentration is
 \begin{equation}
 \frac{d[O_2]}{dt} = \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]
 \label{eq:oxygen}
 \end{equation}
-In isolation the first term gives rise to a simple exponential input of oxygen until the saturation level ($K_O$) is reached. One small complication encountered was that $\beta$ is itself affected by the amount of bacteria in the vessel which has implications for fitting.\\
+In isolation the first term gives rise to a simple exponential input of oxygen until the saturation level ($K_O$) is reached. One small complication encountered was that $\beta$ is itself affected by the amount of bacteria in the vessel which has implications for fitting. Further details are given in Chapter \ref{chap:oxygenreduction}.\\
 %This is inversely proportional to oxygen concentration in the chamber, and limited to the oxygen saturation concentration, $K_O$. This component of the equation is required to account for a peculiarity of the experimental set-up, whereby the rate of diffusion of oxygen into the system depends on the density of the bacterial culture, and is not insignificant. $k_{1}$ is the rate of reduction of oxygen by the oxygen reductase \cbbthree{}. This rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of \cOxygen{}.%
 {\bf Nitric Oxide}\\
 The change in nitric oxide concentration is affected by the following kinetic reactions
