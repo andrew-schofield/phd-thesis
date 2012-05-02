@@ -83,7 +83,7 @@ I am using a simplified version of cytochromes and therefore $X$ actually repres
 %$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the rate of flow of electrons into the quinone pool from NADH. The rate of reduction of NorB by active quinones is given by $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ denotes the rate of reduction of cytochromes by the active quinones. Cytochromes and reduced cytochromes are given by $X$ and $E$ respectively.
 
 %Given that the concentration of active cytochromes changes, due to reduction by the quinone pool and oxidation by the downstream enzymes, and this concentration is a parameter in (\ref{eq:quinones}), it also needs to be included in the model, and this is given by the following equation
-The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes as can be seen in the following kinetic processes.
+The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes can be seen in the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 C_i + X_a \xrightarrow{k_3} C_a + X_i\\
@@ -161,12 +161,11 @@ and are modelled by this equation
 \subsection{Assumptions and their Justifications}
 I have made a number of assumptions regarding the kinetics and reactions taking place in the model.
 \begin{enumerate}
- \item {\bf I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family.
- \item {\bf Bacterial population structure and concentration variation.} The primary substrates of interest are gases which are thought to freely diffuse in and out of the cells.
- \item {\bf No backwards reactions.}
- \item {\bf No Michaelis-Menton kinetics.} Cannot assume that time-scales are separated as the rates of intermediate reaction steps are not known.
- \item {\bf All cytochromes can be modelled as one.}
- \item {\bf Laz and $c_5$ effects on AniA and \cbbthree{} respectively can be ignored.} They are not the prime electron donors to their terminal reductases and contribute very little overall to the reduction\cite{Deeudom2007}.
+ \item {\bf I have assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since I wouldn't expect Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family. This also implies that the model deals exlusively with reversible inhibition.
+ \item {\bf Bacterial population structure and concentration variation not considered.} The primary substrates of interest are gases and substrates which are thought to freely diffuse in and out of the cells. Additionally the culture is kept well-mixed at all times, thus it can be assumed that the culture is homogenous.
+ \item {\bf No backwards reactions.} For simplicity, backwards reactions are not included. However they may be important, and could easily be included in a future study with the concommitant increase in parameter count.
+ \item {\bf No Michaelis-Menton kinetics.} Separation of time-scales cannot be assumed as the rates of intermediate reaction steps are not known. Future information regarding timescale separation could easily be incorporated.
+ \item {\bf All cytochromes can be modelled as one.} The main effort of modelling was to concentrate on the position of branches in the respiratory chain. In the same way the effects of Laz and $c_5$ on AniA and \cbbthree{} respectively can also be ignored. They are not the prime electron donors to their terminal reductases and contribute very little overall to the reduction\cite{Deeudom2007}.
 \end{enumerate}
 
 %Also, values are in the right ball park even though they are using aa3 rather than \cbbthree. $10^8 M ^{-1} s ^{-1}$ against around $50 \mu M ^{-1} s ^{-1}$.
@@ -244,31 +243,13 @@ $C$ & Concentration of \cbbthree{} & $0.03~\mu M$ & Unknown
 
 \subsection*{Variables}
 \subsubsection*{$\mathbf{O_2}$ {\bf- Oxygen concentration}}
-This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is always set to the first oxygen data point in the dataset and has no prior distribution. It is usually a fixed value, except in cases where the dataset indicates measurement artefacts.
+This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is calculated from a linear regression analysis of the first section of oxygen reduction to eliminate noise in the data.
 
-\subsubsection*{$\mathbf{NO}$ {\bf- Nitric oxide concentration}}
-As for Oxygen concentration, this variable is simply obtained from the dataset and the same conditions apply.
+\subsubsection*{$\mathbf{NO}$ {\bf- Nitric oxide concentration}, and $\mathbf{NO_2^-}$ {\bf- Nitrite concentration}}
+As for Oxygen concentration, these variable is simply obtained from the dataset and the same conditions apply.
 
-\subsubsection*{$\mathbf{NO_2^-}$ {\bf- Nitrite concentration}}
-Nitrite concentration is also handled in the same way as the oxygen and nitric oxide concentrations.
-
-\subsubsection*{$\mathbf{X_a}$ {\bf- Reduced cytochrome concentration}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
-
-\subsubsection*{$\mathbf{A_a}$ {\bf- Reduced AniA}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
-
-\subsubsection*{$\mathbf{B_a}$ {\bf- Reduced NorB}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
-
-\subsubsection*{$\mathbf{C_a}$ {\bf- Reduced \cbbthree{}}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
-
-\subsubsection*{$\mathbf{C_X}$ {\bf- Reversibly NO inhibited \cbbthree{}}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
-
-\subsubsection*{$\mathbf{Q_a}$ {\bf- Reduced Quinones}}
-Unknown at start of simulation. Assume close to zero, and certainly less than total. The best prior to use would be the value after a couple of simulation seconds, however this would no longer be a prior.
+\subsubsection*{$\mathbf{X_a}$, $\mathbf{A_a}$, $\mathbf{B_a}$, $\mathbf{C_a}$, $\mathbf{Q_a}$ - Reduced enzyme concentrations, and $\mathbf{C_X}$ {\bf- Reversibly NO inhibited \cbbthree{}}}
+These values are unknown at start of simulations. They have to be lower than the total concentrations for each enzyme, and the model enforces this. Given the rates of reduction of these enzymes they are all set to very low values, determined from exploratory runs of the parameter estimation algorithm. The rates of reduction for these enzymes actually make the initial value (so long as it is low) largely irrelevant as they reach their steady-state after only a few integration cycles.
 
 \subsection*{Parameters}
 \subsubsection*{$\mathbf{k_1}$ {\bf- Rate of O$_{\textrm{2}}$ reduction by reduced \cbbthree{}}}
@@ -283,11 +264,9 @@ A value for $k_1$, the rate of O$_{\textrm{2}}$ reduction by reduced \cbbthree{}
 $k_3$, the rate of reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. We assume that 1 electron equals 1 reduction of \cbbthree{}, thus the rate of reduction of \cbbthree{} by cytochromes is $\frac{300s^{-1}}{100\mu M} = 3\mu M^{-1} s^{-1}$.
 
 \subsubsection*{$\mathbf{l_1}$ {\bf- Rate of NO reduction by reduced NorB}}
-240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
+%240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
 
-This needs fixing. 50\% dry weight, rather than 15\% wet weight.\\
-Observed rates of NO reduction by \citet{Rock2007} give $54 \pm 6~\mathrm{nmol min}^{-1} \mathrm{mg}^{-1}$. This is in whole cells however.
-$\approx 10~\mathrm{nmol s}^{-1}$ in an $OD_{600} = 1$ culture. Converting to molar gives $2~\mu\mathrm{M s}^{-1}$. 
+An estimate for the rate of NO reduction by reduced NorB can be obtain from \citet{Rock2007}. They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol min}^{-1} \mathrm{mg}^{-1}$. This was in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore the rate is $4.5~nmols^{-1}$ of quinones in 5ml culture ($5\times 10^9 \textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$), converted to molarity is $0.9~\mu Ms^{-1}$.
 
 \subsubsection*{$\mathbf{l_3}$ {\bf- Rate of NorB reduction by quinone pool}}
 Benchmark estimate is somewhere around about $1~\mu M^{-1}s^{-1}$.
@@ -346,7 +325,7 @@ Initially the optical density of cultures was used to determine the cell density
 %The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
 
 \section{Solving Ordinary Differential Equations}
-The model equations (given previously) are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities.
+The model equations (given previously) are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities (see appendix for further details of why this was necessary).
 
 The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. I decided to write a custom implementation rather than using off the shelf systems for solving ODEs and parameter estimation as I wanted the greatest flexibility in how I integrated the two techniques, and it allowed me to quickly and easily tailor the code to my needs. Initially I tried using COPASI \cite{Hoops2006}, however at that time it had limitations that I could not overcome, such as an inability to allow bulk addition of components at arbitrary time-points.
 
