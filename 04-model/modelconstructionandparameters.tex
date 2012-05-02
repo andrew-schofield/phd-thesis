@@ -28,26 +28,27 @@ The differential equation that gives the change in oxygen concentration is
 In isolation the first term gives rise to a simple exponential input of oxygen until the saturation level ($K_O$) is reached. One small complication encountered was that $\beta$ is itself affected by the amount of bacteria in the vessel which has implications for fitting. Further details are given in Chapter \ref{chap:oxygenreduction}.\\
 %This is inversely proportional to oxygen concentration in the chamber, and limited to the oxygen saturation concentration, $K_O$. This component of the equation is required to account for a peculiarity of the experimental set-up, whereby the rate of diffusion of oxygen into the system depends on the density of the bacterial culture, and is not insignificant. $k_{1}$ is the rate of reduction of oxygen by the oxygen reductase \cbbthree{}. This rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of \cOxygen{}.%
 {\bf Nitric Oxide}\\
-The change in nitric oxide concentration is affected by the following kinetic reactions
+The change in nitric oxide concentration is affected by the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 NO_2^- + A_a \xrightarrow{m_1} NO + A_i\\
 NO + B_a \xrightarrow{l_1} N_2O + B_i\\
 NO + C_a \xrightarrow{k_5} NO\mhyphen C_X\\
 NO\mhyphen C_X \xrightarrow{k_6} NO + C_a\\
-\emptyset\xrightarrow{\gamma} NO
+NO \xrightarrow{\gamma} \emptyset
 \end{gathered}
 \end{equation*}
-The equations above have a number of additional interactions in comparison to $\mathrm{O}_2$. NO is created by the reduction of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ by AniA, is reduced by its dedicated reductase, NorB, and converted to $\mathrm{N}_2\mathrm{O}$ which is lost from the cell, interacts with \cbbthree{}, and is also spontaneously lost from the electrode chamber. I make the assumption that the interaction with \cbbthree{} occurs only in a reversible manner, leading to an NO bound and temporarily inactive form $C_X$. There is evidence that this interaction can also lead to permanent degradation of \cbbthree{} via the formation of peroxynitrite at the terminal oxidase. This is not currently considered in this version of the model. These effects are described mathematically in the equation below in the order presented.
+The equations above have a number of additional interactions in comparison to $\mathrm{O}_2$. NO is created by the reduction of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ by AniA, is reduced by its dedicated reductase, NorB, and converted to $\mathrm{N}_2\mathrm{O}$ which is lost from the cell, interacts with \cbbthree{}, and is also spontaneously lost from the electrode chamber. I make the assumption that the interaction with \cbbthree{} occurs only in a reversible manner, leading to an NO bound and temporarily inactive form $C_X$. There is evidence that this interaction can also lead to permanent degradation of \cbbthree{} via the formation of peroxynitrite at the terminal oxidase. This is not currently considered in this version of the model. These effects are described mathematically in the equation below.
 %The equation for describing \cNO{} concentration changes is more complex as \cNO{} has a number of additional interactions in comparison to \cOxygen{}. \cNO{} also interacts with \cbbthree{}, in addition to being reduced from \cNitrite{}, reduced to \cNtwoO{} and spontaneously lost from the electrode chamber. Currently this is the equation being used to model \cNO{} concentration.
 \begin{equation}
 \frac{d[NO]}{dt} = m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO]
 \label{eq:no}
 \end{equation}
 The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the $\mathrm{3}^\mathrm{rd}$ component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\
+\\\\
 %The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
 {\bf Nitrite}\\
-The change in nitrite concentration is affected by the following kinetic reaction
+The change in nitrite concentration is affected by the following kinetic process.
 \begin{equation*}
 NO_2^- + A_a \xrightarrow{m_1} NO + A_i
 \end{equation*}
@@ -63,7 +64,7 @@ where $m_{1}$ is the rate of reduction of \cNitrite{} by reduced (active) AniA (
 In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the upstream state of components of the transfer chain, starting from the quinone pool. The ultimate upstream source of electrons into the respiratory chain is from NADH, but I have chosen to subsume all process prior to the quinone pool into a simple single rate. This simplification is made to avoid further complications associated with varying metabolism and to avoid distraction from the stated primary aim of understanding the switching behaviour of the downstream chain. I have chosen the quinone pool as the starting point because it is known that NorB draws electrons directly from this point and therefore this represents the first branch in the chain. I wish understand how competition for electrons at branches effects function and therefore the quinone pool is included in the model.\\
 %In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the state of the quinone pool, which is the upstream source of electrons into the respiratory chain. This is important because this affects the rate of reduction of the various enzymes which perform the substrate reductions. The equation for modelling the change in reduction state (activity) of the quinone pool is
 {\bf Quinones}\\
-The change in concentration of reduced quinones is affected by the following kinetic reactions
+The change in concentration of reduced quinones is affected by the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 Q_i \xrightarrow{g} Q_a\\
@@ -76,13 +77,13 @@ The differential equation that models these reactions is
 \frac{d[Q_a]}{dt} = g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[X_a])
 \label{eq:quinones}
 \end{equation}
-$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system ($Q_i$ is calculated from these two values). $g$ represents the constant rate of availability of electrons into the quinone pool from NADH. The reduction of NorB by active quinones is parametrised by the rate constant $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ is the rate constant parametrising the reduction of cytochromes by the active quinones. Total cytochromes and total reduced cytochromes are given by $X$ and $X_a$ respectively which are used to calculated $X_i$ in the kinetic reaction.\\
+$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system ($Q_i$ is calculated from these two values). $g$ represents the constant rate of availability of electrons into the quinone pool from NADH. The reduction of NorB by active quinones is parametrised by the rate constant $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ is the rate constant parametrising the reduction of cytochromes by the active quinones. Total cytochromes and total reduced cytochromes are given by $X$ and $X_a$ respectively which are used to calculated $X_i$ in the kinetic process.\\
 {\bf Cytochromes}\\
 I am using a simplified version of cytochromes and therefore $X$ actually represents a pool of different cytochromes, \textit{c$_{\textrm{x}}$}, \textit{c$_{\textrm{4}}$}, \textit{c$_{\textrm{5}}$} and the \textit{bc$_{\textrm{1}}$} complex. These are amalgamated into one here to simplify the equations and focus on the simple branching of the chain and competition for electrons. This is a modelling choice and it is further discussed in Chapter \ref{chap:completedmodel}.
 %$Q_a$ is the reduced quinone, and $Q$ the total concentration of quinones in the system. $g$ represents the rate of flow of electrons into the quinone pool from NADH. The rate of reduction of NorB by active quinones is given by $l_3$. NorB and reduced NorB are given by $B$ and $B_a$ respectively. As the quinones also reduce the cytochromes, this also needs to be modelled. $f$ denotes the rate of reduction of cytochromes by the active quinones. Cytochromes and reduced cytochromes are given by $X$ and $E$ respectively.
 
 %Given that the concentration of active cytochromes changes, due to reduction by the quinone pool and oxidation by the downstream enzymes, and this concentration is a parameter in (\ref{eq:quinones}), it also needs to be included in the model, and this is given by the following equation
-The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes as can be seen in the following kinetic reactions
+The concentration of active cytochrome pool changes due to both reduction by the upstream quinone pool and oxidation by both of the remaining downstream terminal enzymes as can be seen in the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 C_i + X_a \xrightarrow{k_3} C_a + X_i\\
@@ -102,7 +103,7 @@ where $k_3$ is the rate constant describing the reduction of the available oxidi
 Finally the changes in concentration of reduced terminal oxidases, \cbbthree{}, AniA and NorB are described by the following equations. All the terms present in this section have been introduced previously. I could of course equally write these equations for the oxidised form but this can easily be recovered because I am assuming that the total concentration of the oxidases remains constant.\\
 %To model the changes in concentration of the individual enzymes, \cbbthree{}, AniA and NorB, the following equations are used:
 {\bf Reduced \cbbthree{}}\\
-The kinetic reactions which affect the concentration of reduced (active) \cbbthree{} are
+The kinetic processes which affect the concentration of reduced (active) \cbbthree{} are
 \begin{equation*}
 \begin{gathered}
 C_i + X_a \xrightarrow{k_3} C_a + X_i\\
@@ -117,7 +118,7 @@ which is described by
 \end{equation}
 \\
 {\bf Inhibited \cbbthree{}}\\
-The following kinetic reaction alters the concentrations of reversibly inhibited \cbbthree{}
+The following kinetic process alters the concentrations of reversibly inhibited \cbbthree{}.
 \begin{equation*}
 \begin{gathered}
  NO + C_a \xrightarrow{k_5} NO\mhyphen C_X \xrightarrow{k_6} NO + C_a
@@ -130,7 +131,7 @@ which is described by
 \end{equation}
 \\
 {\bf Reduced AniA}\\
-The concentration of reduced AniA is affected by the following kinetic reactions
+The concentration of reduced AniA is affected by the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 A_i + X_a \xrightarrow{m_3} A_a + X_i \\
@@ -143,7 +144,7 @@ which can be modelled by
 \label{eq:active_ania}
 \end{equation}
 \\{\bf Reduced NorB}\\
-Changes in NorB concentration occur via the following kinetic reactions
+Changes in NorB concentration occur via the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 B_i + Q_a \xrightarrow{l_3} Q_i + B_a \\
