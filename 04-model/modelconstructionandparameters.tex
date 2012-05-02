@@ -211,10 +211,10 @@ $\beta$ & Rate of passive diffusion in of O$_{\textrm{2}}$ & Unknown & N/A
 $K_O$ & Saturation O$_{\textrm{2}}$ level & $48~\mu M$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$g$ & Rate of electrons in from NADH & Unknown & N/A
+$g$ & Rate of electrons in from NADH & $0.8~s^{-1}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$f$ & Rate of reduction of cytochromes by quinones & Unknown & N/A
+$f$ & Rate of reduction of cytochromes by quinones & $8~\mu M^{-1}s^{-1}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
 $\gamma$ & Spontaneous loss of NO & Unknown & N/A
@@ -226,13 +226,13 @@ $Q$ & Concentration of quinones & $0.3~\mu M$ & \citet{Hedrick1986}
 $X$ & Concentration of cytochromes & $\approx3.97~\mu M$ & \citet{Deeudom2007}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$A$ & Concentration of AniA & Unknown & N/A
+$A$ & Concentration of AniA & $0.003 - 0.03~\mu M$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$B$ & Concentration of NorB & Unknown & N/A
+$B$ & Concentration of NorB & $0.003 - 0.03~\mu M$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$C$ & Concentration of \cbbthree{} & $0.03~\mu M$ & Unknown
+$C$ & Concentration of \cbbthree{} & $0.003 - 0.03~\mu M$ & This work
 \tabularnewline
 \bottomrule
 \end{tabular}
@@ -269,7 +269,7 @@ $k_3$, the rate of reduction of \cbbthree{} by the cytochromes was calculated fr
 An estimate for the rate of NO reduction by reduced NorB can be obtain from \citet{Rock2007}. They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol min}^{-1} \mathrm{mg}^{-1}$. This was in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore the rate is $4.5~nmols^{-1}$ of quinones in 5ml culture ($5\times 10^9 \textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$), converted to molarity is $0.9~\mu Ms^{-1}$.
 
 \subsubsection*{$\mathbf{l_3}$ {\bf- Rate of NorB reduction by quinone pool}}
-Benchmark estimate is somewhere around about $1~\mu M^{-1}s^{-1}$.
+No information available in the literature, so the rate is set to $1~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{m_1}$ {\bf- Rate of NO$_{\textrm{2}}^{\textrm{-}}$ reduction by reduced AniA}}
 
@@ -288,33 +288,28 @@ $K_d$ from \citet{Rock2007} was calculated to be about 500 nM, which tallies wit
 This value is highly dependent on the culture, and is in some way tied to the density of the culture, however the relationship is not known. During early experiments I noticed that oxygen diffusion was slower in high density cultures compared to those of low density, experiments to examine the relationship proved fruitless in determining any relationship. In addition this parameter is a product of the experimental set-up rather than the model itself.
 
 \subsubsection*{$\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
-This value is dependent on the particular culture being modelled, however it's prior value is usually set to $48~\mu M$ as this figure was observed during experiments to determine oxygen diffusion rates into the culture.
+This value is dependent on the particular culture being modelled, however its prior value is usually set to $48~\mu M$ as this figure was observed during experiments to determine oxygen diffusion rates into the culture.
 
 \subsubsection*{$\mathbf{g}$ {\bf- Rate of electrons in from NADH (or rate of reduction of quinones)}}
-
+This value is unknown, but initial runs of the algorithm suggest the value to be about $0.8~s^{-1}$.
 
 \subsubsection*{$\mathbf{f}$ {\bf- Rate of reduction of cytochromes by quinones}}
-\citet{Snyder2000} showed by reducing yeast cytochrome $\mathrm{bc}_1$ by using $25~\mu\mathrm{M}$ menaquinol the rate constants were $7.9~\mathrm{s}^{-1}$ for cytochrome b, and $1.55-6.9\times10^5~\mathrm{M}^{-1}\mathrm{s}^{-1}$ for cytochrome $\mathrm{c}_1$ (second order). $0.155 - 0.69~\mu\mathrm{M}^{-1}\mathrm{s}^{-1}$.
+\citet{Snyder2000} showed by reducing yeast cytochrome $\mathrm{bc}_1$ by using $25~\mu\mathrm{M}$ menaquinol the rate constants were $7.9~\mathrm{s}^{-1}$ for cytochrome b, and $1.55-6.9\times10^5~\mathrm{M}^{-1}\mathrm{s}^{-1}$ for cytochrome $\mathrm{c}_1$ (second order). However preliminary tests showed that a value of $8~\mu M^{-1}s^{-1}$ was more appropriate.
 
 \subsubsection*{$\gamma$ {\bf- Spontaneous loss of NO}}
+This value is assumed to be the same as the $\beta$, the rate of oxygen diffusion in across the liquid-gas barrier, as this is simply the reverse.
 
 
 \subsubsection*{$\mathbf{Q}$ {\bf- Concentration of quinones}}
 $Q$, the concentration of quinones was calculated based on data from \citet{Hedrick1986}. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 15\% of wet weight, where each cell weighed 2pg, and that there were $1\mu \textrm{mol}$ of respiratory quinones per g of bacterial protein. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9 \textrm{cells/ml}$, therefore there are 1.5nmol of quinones in 5ml culture ($5\times 10^9 \textrm{cells} \times 2\times 10^{-12} \textrm{g} \times 15\% \times 1\mu\textrm{mol/g}$), converted to molarity is $0.3\mu M$.
 
 \subsubsection*{$\mathbf{X}$ {\bf- Concentration of cytochromes}}
-\citet{Deeudom2007} suggests total cytochrome concentration (inc. \cbbthree{}) to be about 4000 nM.
+\citet{Deeudom2007} suggests that the total cytochrome concentration (inc. \cbbthree{}) is about $4~\mu M$ in \Nsm{}. Thus subtracting the value for C leaves a concentration of $\approx 3.97~\mu M$.
 
-\subsubsection*{$\mathbf{A}$ {\bf- Concentration of AniA}}
-No idea, probably need to guess based on cell volume (0.6-1.0 $\mu$m diameter, no useful ref), 10\% of cell volume being membrane, and number of proteins in membrane.
-
-\subsubsection*{$\mathbf{B}$ {\bf- Concentration of NorB}}
-No idea, probably need to guess based on cell volume (0.6-1.0 $\mu$m diameter, no useful ref), 10\% of cell volume being membrane, and number of proteins in membrane.
-
-\subsubsection*{$\mathbf{C}$ {\bf- Concentration of \cbbthree{}}}
-No idea, probably need to guess based on cell volume (0.6-1.0 $\mu$m diameter, no useful ref), 10\% of cell volume being membrane, and number of proteins in membrane.\\
-\cbbthree{} is probably 0.1-1\% of cell protein. 10\% of cell is membrane.
-$15~\mu g$ in 5 ml based on numbers from Q above. \cbbthree{} is approximately 100 kDa in molecular weight. Converting to molarity gives a concentration of approximately 30 nM.
+\subsubsection*{$\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$ {\bf- Concentration of Respiratory enzymes}}
+Given the lack of concrete values for these parameters, the assumption is that all the respiratory enzymes are present in roughly equal quantities. Based on the values given for Q above, there are $1.5~mg$ of cell protein in 5 ml of $OD_{600}=1$ culture. \cbbthree{} is thought to be about 0.1-1\% of the total cell protein
+%10\% of cell is membrane.
+and is approximately 100 kDa in molecular weight. Therefore converting these values to molarity gives a concentration of approximately 3-30 nM.
 
 \section{Implementation of the model}
 %By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
