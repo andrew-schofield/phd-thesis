@@ -165,7 +165,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\textcolor{dark-gray}{\slshape\leftmark}}
-\fancyfoot[C]{\textbf{svn r\svnrev{}}}
+\fancyfoot[C]{\textbf{Rev: \svnrev\ (\svnfilerev)}}
 \fancyfoot[R]{\textbf{\thepage}}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
