@@ -135,7 +135,7 @@ The concentration of reduced AniA is affected by the following kinetic processes
 \begin{equation*}
 \begin{gathered}
 A_i + X_a \xrightarrow{m_3} A_a + X_i \\
-NO_2^- + A_a \xrightarrow{m_1} NO + A_i 
+NO_2^- + A_a \xrightarrow{m_1} NO + A_i
 \end{gathered}
 \end{equation*}
 which can be modelled by
@@ -161,10 +161,10 @@ and are modelled by this equation
 \subsection{Assumptions and their Justifications}
 A number of assumptions were made regarding the kinetics and reactions taking place in the model.
 \begin{enumerate}
- \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family. This also implies that the model deals exlusively with reversible inhibition.
- \item {\bf Bacterial population structure and concentration variation not considered.} The primary substrates of interest are gases and substrates which are thought to freely diffuse in and out of the cells. Additionally the culture is kept well-mixed at all times, thus it can be assumed that the culture is homogenous.
- \item {\bf No backwards reactions.} For simplicity, backwards reactions are not included. However they may be important, and could easily be included in a future study with the concommitant increase in parameter count.
- \item {\bf No Michaelis-Menten kinetics.} Separation of time-scales cannot be assumed as the rates of intermediate reaction steps are not known. Future information regarding timescale separation could easily be incorporated.
+ \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family. This also implies that the model deals exclusively with reversible inhibition.
+ \item {\bf Bacterial population structure and concentration variation not considered.} The primary substrates of interest are gases and substrates which are thought to freely diffuse in and out of the cells. Additionally the culture is kept well-mixed at all times, thus it can be assumed that the culture is homogeneous.
+ \item {\bf No backwards reactions.} For simplicity, backwards reactions are not included. However they may be important, and could easily be included in a future study with the concomitant increase in parameter count.
+ \item {\bf No Michaelis-Menten kinetics.} Separation of time-scales cannot be assumed as the rates of intermediate reaction steps are not known. Future information regarding time-scale separation could easily be incorporated.
  \item {\bf All cytochromes can be modelled as one.} The main effort of modelling was to concentrate on the position of branches in the respiratory chain. In the same way the effects of Laz and $c_5$ on AniA and \cbbthree{} respectively can also be ignored. They are not the prime electron donors to their terminal reductases and contribute very little overall to the reduction\cite{Deeudom2007}.
 \end{enumerate}
 
@@ -258,15 +258,15 @@ These values are unknown at start of simulations. They have to be lower than the
 %Then at high $O_2$ rate is:
 %$v = \frac{37.4\times 100,000}{55.7+100,000} = 37.4~nmol^{-1}min{-1}mg{-1} = 0.000622986~\mu mol^{-1}s{-1}mg{-1}$\\
 
-A value for $k_1$, the rate of O$_{\textrm{2}}$ reduction by reduced \cbbthree{} was calculated by using the $\mathrm{K}_{cat}$ value from \textit{Pseudomonas stutzeri}, and the $\textrm{k}_m$ value from \textit{Neisseria lactamica}, which \citet{Forte2001} and \citet{Hunter2007} determine are $166s^{-1}$ and $0.4\mu M$ respectively. $k_1$ can be calculated as $\frac{166s^{-1}}{0.4\mu M} = 415\mu M^{-1} s^{-1}$.
+A value for $k_1$, the rate of O$_{\textrm{2}}$ reduction by reduced \cbbthree{} was calculated by using the $\mathrm{K}_{cat}$ value from \textit{Pseudomonas stutzeri}, and the $\textrm{k}_m$ value from \textit{Neisseria lactamica}, which \citet{Forte2001} and \citet{Hunter2007} determine are $166~s^{-1}$ and $0.4~\mu M$ respectively. $k_1$ can be calculated as $\frac{166~s^{-1}}{0.4~\mu M} = 415~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{k_3}$ {\bf- Rate of \cbbthree{} reduction by cytochrome pool}}
-$k_3$, the rate of reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. We assume that 1 electron equals 1 reduction of \cbbthree{}, thus the rate of reduction of \cbbthree{} by cytochromes is $\frac{300s^{-1}}{100\mu M} = 3\mu M^{-1} s^{-1}$.
+$k_3$, the rate of reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100~\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. We assume that 1 electron equals 1 reduction of \cbbthree{}, thus the rate of reduction of \cbbthree{} by cytochromes is $\frac{300~s^{-1}}{100~\mu M} = 3~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{l_1}$ {\bf- Rate of NO reduction by reduced NorB}}
 %240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
 
-An estimate for the rate of NO reduction by reduced NorB can be obtain from \citet{Rock2007}. They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol min}^{-1} \mathrm{mg}^{-1}$. This was in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore the rate is $4.5~nmols^{-1}$ of quinones in 5ml culture ($5\times 10^9 \textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$), converted to molarity is $0.9~\mu Ms^{-1}$.
+An estimate for the rate of NO reduction by reduced NorB can be obtain from \citet{Rock2007}. They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol min}^{-1} \mathrm{mg}^{-1}$. This was in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2 pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore the rate is $4.5~nmols^{-1}$ of quinones in 5 ml culture ($5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol s}^{-1}\mathrm{g}^{-1}$), converted to molarity is $0.9~\mu Ms^{-1}$.
 
 \subsubsection*{$\mathbf{l_3}$ {\bf- Rate of NorB reduction by quinone pool}}
 No information available in the literature, so the rate is set to $1~\mu M^{-1}s^{-1}$.
@@ -275,7 +275,7 @@ No information available in the literature, so the rate is set to $1~\mu M^{-1}s
 
 
 \subsubsection*{$\mathbf{m_3}$ {\bf- Rate of AniA reduction by cytochrome pool}}
-The value for $m_3$, the rate of reduction of AniA by cytochromes, is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2 \mu M^{-1}s^{-1}$ was observed during stopped-flow experiments by \citet{Nojiri2009}.
+The value for $m_3$, the rate of reduction of AniA by cytochromes, is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2~\mu M^{-1}s^{-1}$ was observed during stopped-flow experiments by \citet{Nojiri2009}.
 
 \subsubsection*{$\mathbf{k_5}$ {\bf- Rate of \cbbthree{} inhibition by NO}}
 \citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate they calculated was $10^8~M ^{-1} s ^{-1}$. I assume that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree{} as it is of the same family.
@@ -299,9 +299,8 @@ This value is unknown, but initial runs of the algorithm suggest the value to be
 \subsubsection*{$\gamma$ {\bf- Spontaneous loss of NO}}
 This value is assumed to be the same as the $\beta$, the rate of oxygen diffusion in across the liquid-gas barrier, as this is simply the reverse.
 
-
 \subsubsection*{$\mathbf{Q}$ {\bf- Concentration of quinones}}
-$Q$, the concentration of quinones was calculated based on data from \citet{Hedrick1986}. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 15\% of wet weight, where each cell weighed 2pg, and that there were $1\mu \textrm{mol}$ of respiratory quinones per g of bacterial protein. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9 \textrm{cells/ml}$, therefore there are 1.5nmol of quinones in 5ml culture ($5\times 10^9 \textrm{cells} \times 2\times 10^{-12} \textrm{g} \times 15\% \times 1\mu\textrm{mol/g}$), converted to molarity is $0.3\mu M$.
+$Q$, the concentration of quinones was calculated based on data from \citet{Hedrick1986}. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 15\% of wet weight, where each cell weighed 2 pg, and that there were $1\mu \textrm{mol}$ of respiratory quinones per g of bacterial protein. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore there are 1.5 nmol of quinones in 5 ml culture ($5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 15\% \times 1~\mu\textrm{mol/g}$), converted to molarity is $0.3~\mu M$.
 
 \subsubsection*{$\mathbf{X}$ {\bf- Concentration of cytochromes}}
 \citet{Deeudom2007} suggests that the total cytochrome concentration (inc. \cbbthree{}) is about $4~\mu M$ in \Nsm{}. Thus subtracting the value for C leaves a concentration of $\approx 3.97~\mu M$.
@@ -314,7 +313,7 @@ and is approximately 100 kDa in molecular weight. Therefore converting these val
 \section{Implementation of the model}
 %By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
 
-The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. 
+The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments.
 Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should give linear relationships between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction differing between cultures with the same optical density (data not shown). Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator of living cells.
 
 %The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
