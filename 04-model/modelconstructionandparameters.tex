@@ -31,8 +31,30 @@ The differential equation that gives the change in oxygen concentration is
 \frac{d[O_2]}{dt} = \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]
 \label{eq:oxygen}
 \end{equation}
-In isolation the first term gives rise to a simple exponential input of oxygen until the saturation level ($K_O$) is reached. One small complication encountered was that $\beta$ is itself affected by the amount of bacteria in the vessel which has implications for fitting. Further details are given in Chapter \ref{chap:oxygenreduction}.\\ \\ \\
-%This is inversely proportional to oxygen concentration in the chamber, and limited to the oxygen saturation concentration, $K_O$. This component of the equation is required to account for a peculiarity of the experimental set-up, whereby the rate of diffusion of oxygen into the system depends on the density of the bacterial culture, and is not insignificant. $k_{1}$ is the rate of reduction of oxygen by the oxygen reductase \cbbthree{}. This rate depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of \cOxygen{}.%
+In isolation the first term gives rise to a simple exponential input of oxygen until the saturation level ($K_O$) is reached to account for diffusion into the system. The rationale for the form of the equation is given below.\\
+\noindent
+During the course of the experimental stages of this work, on occasions where the respiring cultures had died, either through being left in essentially anaerobic conditions for too long, or were treated with Chloramphenicol (which stops all protein production in the cell), the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation it was concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. To try and abate the rate of diffusion in all subsequent experiments particular care was taken to avoid an air bubble being trapped in the electrode chamber.
+
+Unfortunately even with no air bubble a small amount of oxygen was diffusing in, so an experiment was set up to try and quantify the rate of diffusion. Wild-type \Nm{} cultures were grown to various different cell densities and left to respire aerobically. Once the cultures had used all the available oxygen they were killed either by adding a small volume of Chloramphenicol ($25 \mu l)$, or by heating the culture to 95 \textdegree{}C for 10 minutes. Oxygen concentrations were then recorded as the gas diffused back into the electrode chamber. It should be noted that Chloramphenicol should not actually kill the cells as it merely prevents further protein production in the cell, however the results of this experiment showed that under anaerobic conditions after addition of Chloramphenicol the cultures are no longer capable of respiring oxygen.
+
+The experimental data showed that the increasing oxygen concentration takes the form of an inverse exponential decay and therefore can be fit very easily to an exponential function. The exact parameters of the diffusion seem to differ between cultures but it appeared to have a dependence on the cell density whereby lower cell densities generally had higher rates of diffusion than higher cell densities, but there was no obvious direct relationship.
+The equation used to fit raw data for oxygen diffusion is a 3 parameter exponential:
+\begin{equation*}
+f(x) = c - ae^{-bx}
+\end{equation*}
+In the differential equation this collapses to two parameters, the oxygen saturation level, and the rate of oxygen recovery thus:
+\begin{equation*}
+\dfrac{d[O_2]}{dt} = \beta(1-O_2/K_O)
+\end{equation*}
+Integrating and separating this equation gives:
+\begin{equation*}
+\begin{gathered}
+-\beta\dfrac{t}{K_O} + C = ln([O_2]-K_O)\\
+\Rightarrow [O_2]-K_O = Ae^{\left(-\beta\dfrac{t}{K_O}\right)}\\
+\Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
+\end{gathered}
+\end{equation*}
+\\
 {\bf Nitric Oxide}\\
 The change in nitric oxide concentration is affected by the following kinetic processes.
 \begin{equation*}
@@ -50,7 +72,7 @@ The equations above have a number of additional interactions in comparison to $\
 \frac{d[NO]}{dt} = m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO]
 \label{eq:no}
 \end{equation}
-The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the $\mathrm{3}^\mathrm{rd}$ component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\ \\
+The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the $\mathrm{3}^\mathrm{rd}$ component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\
 %The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
 {\bf Nitrite}\\
 The change in nitrite concentration is affected by the following kinetic process.
@@ -105,7 +127,7 @@ where $k_3$ is the rate constant describing the reduction of the available oxidi
 %where $k_3$ is the rate of reduction of the cytochrome c oxygen reductase (\cbbthree{}) by the quinone pool (via \textit{c$_{\textrm{x}}$} \& \textit{c$_{\textrm{4}}$}). $C$, $C_a$ and $C_X$ represent the overall concentration of \cbbthree{}, reduced (active) \cbbthree{} and NO inhibited \cbbthree{} respectively. $m_3$ is the rate of reduction of AniA by the cytochrome pool (via \textit{c$_{\textrm{5}}$}). The concentration of active cytochromes increases by their reduction by the quinone pool.
 
 \subsubsection{Terminal Reductases}
-Finally the changes in concentration of reduced terminal oxidases, \cbbthree{}, AniA and NorB are described by the following equations. All the terms present in this section have been introduced previously. These equations of course could equally have been written for the oxidised form but these can easily be recovered because it is assumed that the total concentration of the oxidases remains constant.\\ \\ \\ \\ \\
+Finally the changes in concentration of reduced terminal oxidases, \cbbthree{}, AniA and NorB are described by the following equations. All the terms present in this section have been introduced previously. These equations of course could equally have been written for the oxidised form but these can easily be recovered because it is assumed that the total concentration of the oxidases remains constant.\\
 %To model the changes in concentration of the individual enzymes, \cbbthree{}, AniA and NorB, the following equations are used:
 {\bf Reduced \cbbthree{}}\\
 The kinetic processes which affect the concentration of reduced (active) \cbbthree{} are
@@ -122,7 +144,6 @@ which is described by
 \frac{d[C_a]}{dt} = k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_5[C_a][NO] + k_6[C_X]
 \label{eq:active_cbb3}
 \end{equation}
-\\
 {\bf Inhibited \cbbthree{}}\\
 The following kinetic process alters the concentrations of reversibly inhibited \cbbthree{}.
 \begin{equation*}
@@ -135,7 +156,6 @@ which is described by
 \frac{d[C_X]}{dt} = k_5[C_a][NO] - k_6 [C_X]
 \label{eq:NO inhibited_cbb3}
 \end{equation}
-\\
 {\bf Reduced AniA}\\
 The concentration of reduced AniA is affected by the following kinetic processes.
 \begin{equation*}
@@ -149,7 +169,7 @@ which can be modelled by
 \frac{d[A_a]}{dt} = m_3([A] - [A_a])[X_a]- m_{1}[NO_2^-][A_a]
 \label{eq:active_ania}
 \end{equation}
-\\{\bf Reduced NorB}\\
+{\bf Reduced NorB}\\
 Changes in NorB concentration occur via the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
@@ -290,11 +310,8 @@ The value for $m_3$, the rate constant for reduction of AniA by cytochromes, is 
 \citet{Giuffre2000} calculated a half-life of t\textonehalf $\approx 80~\mathrm{min}$, however without any concrete values for concentration of $C_X\mhyphen NO$ this can't be used to calculated a rate constant.
 \citet{Rock2005} observed the apparent $K_i$ and calculated it to be 380 nM at $50~\mu M$ \cOxygen{}. Since $K_i = \frac{k_6}{k_5}$, a value for $k_6$ can be estimated as $k_6 = K_i \times k_5 = 0.38~\mu M \times 100~\mu M^{-1}s^{-1} = 38~s^{-1}$.
 
-\subsubsection*{$\beta$ {\bf- Rate constant for passive diffusion in of O$_{\textrm{2}}$}}
-This value is highly dependent on the culture, and is in some way tied to the density of the culture, however the relationship is not known. During early experiments I noticed that oxygen diffusion was slower in high density cultures compared to those of low density, experiments to examine the relationship proved fruitless in determining any relationship. In addition this parameter is a product of the experimental set-up rather than the model itself.
-
-\subsubsection*{$\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
-This value is dependent on the particular culture being modelled, however its prior value is usually set to $48~\mu M$ as this figure was observed during experiments to determine oxygen diffusion rates into the culture.
+\subsubsection*{$\beta$ {\bf- Rate constant for passive diffusion in of O$_{\textrm{2}}$}, and $\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
+The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu M$ we selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. \textit{Maybe include some of the fits here?}
 
 \subsubsection*{$\mathbf{g}$ {\bf- Rate of electrons in from NADH (or rate of reduction of quinones)}}
 This value is unknown, but initial runs of the algorithm suggest the value to be about $0.8~s^{-1}$.
