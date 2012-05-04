@@ -39,11 +39,12 @@
 \BOOKMARK [1][-]{section.2.6}{Nitric Oxide Production}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Model - Construction and Parameters}{}
 \BOOKMARK [1][-]{section.3.1}{Construction}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.1.1}{Converting Biological Reactions into Differential Equations}{section.3.1}
-\BOOKMARK [2][-]{subsection.3.1.2}{Assumptions and their Justifications}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.1}{Normalising the Data}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.2}{Converting Biological Reactions into Differential Equations}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.3}{Assumptions and their Justifications}{section.3.1}
 \BOOKMARK [1][-]{section.3.2}{Parameters and their Prior Distributions}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Implementation of the model}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{Solving Ordinary Differential Equations}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Solving Ordinary Differential Equations}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Implementation of the Model in Software}{chapter.3}
 \BOOKMARK [1][-]{section.3.5}{Parameter Estimation}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Parameter Estimation Methodologies}{}
 \BOOKMARK [1][-]{section.4.1}{Simulated Annealing}{chapter.4}
