@@ -188,31 +188,6 @@ The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} an
 The correlation matrix shows that the majority of the parameters are not correlated with each other, giving very low $R^2$ values. A number of the parameters showed moderate correlation, which is to be expected. Parameters such as $k_1$ - the rate constant for reduction of oxygen - and $k_3$ - the rate constant for reduction of \cbbthree{} -  broadly speaking would increase as g - the rate of electrons in -  increased. This was expected as more electrons means higher observable rates are possible. Strong positive correlations exist between the concentrations of cytochromes (X), \cbbthree{}(C) and the rate of electrons in (g). This makes sense if the system wants to increase throughput of electrons but cannot do it by increasing the size of the quinone pool. Large numbers of electrons can be reduced by the cytochromes to eventually reduce oxygen.
 
 Interestingly there were no negative correlations observed. This is somewhat odd as it might be expected that as the reduction rates of enzymes goes down, the concentration of the enzyme increases to maintain the same overall electron throughput. It appears however that the system is always trying to maximise oxygen throughput.
-\subsection{Rate of oxygen diffusion}
-Early on in the course of this experimental stage I noticed that on occasions where the respiring cultures died, either through being left in essentially anaerobic conditions for too long, or intentionally killed with Chloramphenicol, the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation I concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. After this point I made absolutely sure that there was never an air bubble in the electrode chamber while data was being recorded.
-
-Even with no air bubble a small amount of oxygen was diffusing in, so I set up an experiment to try and quantify this. I grew wild-type \Nm{} cultures to various different cell densities and let them respire aerobically. Once the cultures had used all the available oxygen they were killed either by adding a small volume of Chloramphenicol ($25 \mu l)$, or by heating the culture to 95 \textdegree{}C for 10 minutes. I then recorded the oxygen concentrations as the gas diffused back into the electrode chamber.
-
-The oxygen concentration takes the form of an inverse exponential decay and therefore can be fit very easily to an exponential function. The exact parameters of the diffusion seem to differ between cultures but it appeared to have a dependence on the cell density whereby lower cell densities generally had higher rates of diffusion than higher cell densities, but there was no obvious direct relationship.
-The equation used to fit raw data for oxygen diffusion is a 3 parameter exponential:
-\begin{equation*}
-f(x) = c - ae^{-bx}
-\end{equation*}
-In the differential equation this collapses to two parameters, the oxygen saturation level, and the rate of oxygen recovery thus:
-\begin{equation*}
-\dfrac{d[O_2]}{dt} = \beta(1-O_2/K_O)
-\end{equation*}
-Integrating and separating this equation gives:
-\begin{equation*}
-\begin{gathered}
--\beta\dfrac{t}{K_O} + C = ln([O_2]-K_O)\\
-\Rightarrow [O_2]-K_O = Ae^{\left(-\beta\dfrac{t}{K_O}\right)}\\
-\Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
-\end{gathered}
-\end{equation*}
-The parameters obtained from fitting the experimental data showed a small difference in $K_O$ between cell densities leading to me selecting 48 as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. Even so average rates of oxygen diffusion were very small, and on the experimental time-scales are probably negligible, but I thought it necessary to include in the model for completeness. \textit{Maybe include some of the fits here?}
-
-
 \subsection{Discussion}
 The experimental datasets showed that oxygen reduction in \Nm{} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. Unfortunately the degree of affinity could not be explored further as it was limited by the sampling rate of the oxygen electrode. Nonetheless this apparent simple linearity could be very easily have been modelled to a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. Admittedly this would not include the behaviour when the oxygen concentration reaches zero, which is that it remains so. However this essentially meant that there were a much larger number of parameters available to fit than were necessary, which lead to over-fitting of the data. The size of the parameter set meant that there were a very large set of potential combinations that would have lead to a similar result, however this was mitigated somewhat by the prior probability distributions given to the algorithm. Even so, this meant that the posterior distributions generated were very wide and therefore allowed much greater freedom for the next dataset to explore the parameter space.
 
