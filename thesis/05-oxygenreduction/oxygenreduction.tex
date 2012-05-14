@@ -46,11 +46,34 @@ The experiments used to generate data for oxygen reduction are highly repeatable
 \subsubsection{Generation of Prior Probability Distributions}
 In accordance with the integrative scheme that was introduced in Chapter \ref{chap:paramest}, An attempt was made to estimate the distributions of the parameters involved in modelling these data. In order to do this probability distributions were needed to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. It was assumed that all the prior probabilities would be log-normally distributed, therefore the distributions  used were created under the following scheme:
 \begin{itemize}
-	\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), I assumed that the bounds covered $3 \sigma$ of the normal distribution. This essentially assumes that 99.7\% of the distribution falls within the given bounds.
-	\item Where the literature value has no bounds associated with it (i.e. published as a single figure), I assumed that a range of $\pm 10\%$ was covered by $3 \sigma$ of the normal distribution. This means that 99.7\% of the distribution falls within $\pm 10\%$ of the given value.
-	\item Where there are no literature values available, the value was estimated based on preliminary experimental data and no bounds were associated. In this case the prior was free to be perturbed giving it an effective range of $0 < x < \infty$.
+	\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), the bounds were assumed to cover $3 \sigma$ of the normal distribution. Thus the variance used for the lognormal distribution is $\left(\frac{bounds}{3}\right)^2$ with narrow upper and lower limits.
+	\item Where the literature value has no bounds associated with it (i.e. published as a single figure), the bounds were assumed to be $\pm 10\%$ of the literature value, and this was used as $\sigma$. Wider upper and lower limits were used in these cases.
+	\item Where there are no literature values available, the value was estimated based on preliminary experimental data and bounds of $\pm 10\%$ were used again. In this case upper and lower limits for the distribution were made very wide to try and accommodate for incorrect assumed prior values.
 \end{itemize}
-With reference to the above, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}.% As can be seen, very little information is readily available in the literature to populate the model.
+
+\noindent With reference to the above, the values required to create prior probability distributions from Table \ref{tab:ps} in Chapter \ref{chap:model} are shown in Table \ref{tab:oxyProbstat}.
+
+\begin{table}[h]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccc|cccc}
+\toprule
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma^2$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma^2$\\
+\midrule
+$k_1$ && 415 & 191.36 & X && 3.97 & 0.018\\
+$k_3$ && 3 & 0.01 & C && 0.03 & $1\times 10^{-6}$\\
+$\beta$ && 0.00014 & $2.18\times 10^{-11}$ & $Q_a$ && 0.24 & $6.4\times 10^{-5}$ \\
+g && 0.847 & 0.0008 & $X_a$ && 3.176 & 0.011 \\
+f && 8.749 & 0.085 & $C_a$ && 0.024 & $6.4\times 10^{-7}$ \\
+Q && 0.3 & 0.0001\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[First Prior Probability Table]{{\bf Prior Probability Table} This table shows the prior means and variances used to create lognormal distributions to be used as the prior probability distributions.
+\label{tab:oxyProbstat}}
+\end{table}
+
+\noindent A graphical representation of the data in Table \ref{tab:oxyProbstat}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}.% As can be seen, very little information is readily available in the literature to populate the model.
 
 %lbrt
 \begin{figure}[tbp]
@@ -61,7 +84,7 @@ With reference to the above, the initial probability distributions used to start
  \label{fig:oxypriors}}
 \end{figure}
 
-\subsubsection{Parameter Estimation Results}
+\subsubsection{Initial Parameter Estimation Results}
 The parameter estimation process produces a large amount of output data which can be processed. Included in these data are the best simulation results from each run. Best is defined here as the simulation with the highest likelihood, i.e. the one with the closest match to the experimental data. For the oxygen reduction training datasets, of which there are 3, each was run 20 times for 20,000 iterations. This lower iteration count was chosen as a compromise between execution time and statistical accuracy. In fact given that the burn-in time for these runs was relatively short, 20,000 iterations still provides plenty of data. A representative example of the simulated data is shown in Figure \ref{fig:o2sim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 
 %lbrt
@@ -95,14 +118,10 @@ Each of the parameters that are to be estimated produces a trajectory of values 
 
 Not all parameters in this stage of the model will produce trajectories like the one shown, as if there is a great deal of freedom as to what value a particular parameter can take without drastically decreasing the likelihood it will be accepted by the parameter estimation algorithm. In this case the trajectories will not converge, and will ultimately produce a wide probability distribution. This is not necessarily indicative of a problem however, as this output still contains information that can be used in the next stage of parameter estimation with new datasets.
 
-The trajectories above are processed to produce probability distributions given as histograms. The ``burn in'' is discarded and the settled data is then binned and counted. For the datasets used, the burn-in period differed and was filtered based on a pre-determined likelihood threshold. Datasets 1 \& 2 were had a threshold of $< 50.0$ (internal) and dataset 3 had a threshold of $< 90.0$ (internal). The reason for this difference is that dataset 3 never achieves an internal likelihood representation lower than about 80 due to noise in the experimental data. These histogram probabilities are then assigned as the posterior distributions and in turn are used directly as prior probability distributions for new datasets. For simplicities sake when referring to the distribution of individual parameters for purposes of comparison, these histograms are transformed into log-normal distribution such that they can be represented by two numbers, $\bar{x}$ - the mean, and $\sigma^2$ - the variance.
+The trajectories above are processed to produce probability distributions given as histograms. The ``burn in'' is discarded and the settled data is then binned and counted. For the datasets used, the burn-in period was 1500 iterations. These histogram probabilities are then assigned as the posterior distributions and in turn are used directly as prior probability distributions for new datasets. For simplicities sake when referring to the distribution of individual parameters for purposes of comparison, these histograms are transformed into log-normal distribution such that they can be represented by two numbers, $\bar{x}$ - the mean, and $\sigma^2$ - the variance.
 
 The posterior probability distributions generated from the three experimental datasets, each started with 20 runs are shown in Figure \ref{fig:oxyposteriors}. In the case of parameters which represent concentrations, such as $X$ and $C$, the concentrations of cytochromes and \cbbthree{} respectively, the individual dataset probability distributions are shown, as they cannot be sensibly combined, and it emphasises the fact that the datasets were different.
 
-%FIXME -> bimodal probability distribution not shown
-Additionally $k_1$, the rate constant for reduction of Oxygen by \cbbthree{} showed bimodality (not shown currently) \textit{and} a very broad range. The bimodal nature of this distribution was not matched in any of the other parameters. This parameter is the last rate constant in the ETC of oxygen reduction, so it is quite possible that the rate limiting steps are in the previous stages of the ETC and thus in the parameter estimation system $k_1$ essentially becomes ``free'', and could be the reason for poor fitting at lower oxygen concentrations.
-
-Some of the posterior probability distributions appear to have expanded outside their prior bounds. I am fairly certain that this is not an error and that samples \textit{are} being taken from the prior distributions, but rather that the prior distributions were sufficiently incorrect that the penalty for selecting a parameter value from the prior distribution which is very unlikely is outweighed by the large increase in likelihood that this affords.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm]{./05-oxygenreduction/data/posteriors1.pdf}
@@ -110,6 +129,42 @@ Some of the posterior probability distributions appear to have expanded outside 
  \caption[Posterior probability distributions for oxygen reduction]{{\bf Posterior probability distributions for oxygen reduction}. These are the probability distributions generated by parameter estimation on 3 oxygen reduction datasets. These have been overlaid onto the prior probability distributions used by the parameter estimation algorithm, also shown in Figure \ref{fig:oxypriors}.
  \label{fig:oxyposteriors}}
 \end{figure}
+
+%FIXME -> bimodal probability distribution not shown
+Additionally $k_1$, the rate constant for reduction of Oxygen by \cbbthree{} showed bimodality (not shown currently) \textit{and} a very broad range. The bimodal nature of this distribution was not matched in any of the other parameters. This parameter is the last rate constant in the ETC of oxygen reduction, so it is quite possible that the rate limiting steps are in the previous stages of the ETC and thus in the parameter estimation system $k_1$ essentially becomes ``free'', and could be the reason for poor fitting at lower oxygen concentrations.
+
+Some of the posterior probability distributions appear to have expanded outside their prior bounds. I am fairly certain that this is not an error and that samples \textit{are} being taken from the prior distributions, but rather that the prior distributions were sufficiently incorrect that the penalty for selecting a parameter value from the prior distribution which is very unlikely is outweighed by the large increase in likelihood that this affords.
+
+\subsubsection{Secondary Prior Probability Distributions}
+\begin{table}[h]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccc|cccc}
+\toprule
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma^2$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma^2$\\
+\midrule
+$k_1$ && 415 & 956.8 & X && 3.97 & 0.18\\
+$k_3$ && 3 & 0.1 & C && 0.03 & $1\times 10^{-5}$\\
+$\beta$ && 0.00014 & $2.18\times 10^{-11}$ & $Q_a$ && 0.24 & $6.4\times 10^{-5}$\\
+g && 0.847 & 0.008 & $X_a$ && 3.176 & 0.011\\
+f && 8.749 & 3.0 & $C_a$ && 0.024 & $6.4\times 10^{-7}$\\
+Q && 3 & 0.01\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Second Prior Probability Table]{{\bf Prior Probability Table} This table shows the prior means and variances used to create lognormal distributions to be used as the prior probability distributions.
+\label{tab:oxyprobstat1}}
+\end{table}
+
+%lbrt
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/priors2.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm. Where no values were available in the literature, the probability distribution represents a flat prior from 0 to $\infty$ with the initial value being determined by preliminary experiment.
+ \label{fig:oxypriors1}}
+\end{figure}
+
 
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
@@ -140,41 +195,6 @@ $C_a$ && 0.024 & $6.4\times 10^{-7}$ & N/A & N/A & N/A\\
 \end{table}
 Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. As can be seen in the table it appears that the majority of the trajectories have not converged with the exception of Q, the quinone concentration. This is not completely unexpected, as there are a larger number of parameters in the model than are required to fit the experimental data and thus the potential range of parameter values is broad at this stage. I was therefore not worried about the lack of convergence at this point as with subsequent, more complex datasets the range of potential parameter values will decrease, allowing the trajectories to converge more easily.
 
-\subsubsection{Attempt 2}
-\begin{table}[h]%needs to be 'here' as section is short
-\renewcommand{\arraystretch}{1.5}
-\begin{center}
-\begin{tabular}{ccccccc}
-\toprule
-& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} & \\
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma^2$ & ${\bar{x}}$ & $\sigma^2$ & $\mathbf{R_{All}}$\\
-\midrule
-$k_1$ && 415 & 956.8 & N/A & N/A & N/A\\
-$k_3$ && 3 & 0.1 & N/A & N/A & N/A\\
-$\beta$ && 0.00014 & $2.18\times 10^{-11}$ & N/A & N/A & N/A\\
-g && 0.847 & 0.008 & N/A & N/A & N/A\\
-f && 8.749 & 3.0 & N/A & N/A & N/A\\
-Q && 3 & 0.01 & N/A & N/A & N/A\\
-X && 3.97 & 0.18 & N/A & N/A & N/A\\
-C && 0.03 & $1\times 10^{-5}$ & N/A & N/A & N/A\\
-$Q_a$ && 0.24 & $6.4\times 10^{-5}$ & N/A & N/A & N/A\\
-$X_a$ && 3.176 & 0.011 & N/A & N/A & N/A\\
-$C_a$ && 0.024 & $6.4\times 10^{-7}$ & N/A & N/A & N/A\\
-\bottomrule
-\end{tabular}
-\end{center}
-\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic} This table shows the prior and posterior means and standard deviations in addition to the Gelman-Rubin Convergence statistic for all chains.
-\label{tab:oxyRstat1}}
-\end{table}
-
-%lbrt
-\begin{figure}[tbp]
- \centering
- \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/priors2.pdf}
- % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
- \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm. Where no values were available in the literature, the probability distribution represents a flat prior from 0 to $\infty$ with the initial value being determined by preliminary experiment.
- \label{fig:oxypriors}}
-\end{figure}
 
 \subsubsection{Analysis of Correlation}
 Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.

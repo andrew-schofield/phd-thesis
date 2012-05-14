@@ -26,7 +26,7 @@
 \usepackage{rotating}
 \usepackage[table]{xcolor}
 \usepackage{svn-multi}
-\svnid{$Id: Thesis.tex 135 2012-05-02 08:43:48Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 144 2012-05-03 20:14:33Z uncle_fungus $}
 
 \definecolor{dark-gray}{gray}{0.5}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -170,7 +170,7 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\textbf{Rev: \svnrev\ (\svnfilerev)}}
+\fancyfoot[C]{\textbf{DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}}
 \fancyfoot[R]{\textbf{\thepage}} % except the right
 \renewcommand{\headrulewidth}{0pt}}
 
@@ -178,6 +178,7 @@
 \hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups ubi-qui-nol ubi-qui-none cy-to-chrome cy-to-chromes no-my-cin me-na-qui-nol pseu-do-mo-nsd stut-ze-ri with-in ja-po-ni-cum pe-ri-plasm par-am-et-ris-ed ni-co-tin-am-ide din-u-cle-o-tide}
 \bibliographystyle{unsrtPLoS-Biology}
 \mathchardef\mhyphen="2D
+\setcounter{secnumdepth}{3}
 
 \makeindex
 
@@ -226,7 +227,7 @@
 \doublespacing
 
 \renewcommand{\bibname}{References}
-\addcontentsline{toc}{chapter}{\bibname} 
+\addcontentsline{toc}{chapter}{\bibname}
 
 \bibliography{phd_refs}
 

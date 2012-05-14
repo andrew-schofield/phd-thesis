@@ -42,9 +42,9 @@
 \contentsline {section}{\numberline {3.1}Construction}{45}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Normalising the Data}{46}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Converting Biological Reactions into Differential Equations}{46}{subsection.3.1.2}
-\contentsline {subsubsection}{Respiratory Substrates}{46}{subsubsection*.5}
-\contentsline {subsubsection}{Electron Transporters}{50}{subsubsection*.6}
-\contentsline {subsubsection}{Terminal Reductases}{52}{subsubsection*.7}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Respiratory Substrates}{46}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Electron Transporters}{50}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Terminal Reductases}{52}{subsubsection.3.1.2.3}
 \contentsline {subsection}{\numberline {3.1.3}Assumptions and their Justifications}{54}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{55}{section.3.2}
 \contentsline {section}{\numberline {3.3}Solving Ordinary Differential Equations}{60}{section.3.3}
@@ -60,20 +60,20 @@
 \contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{77}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Introduction}{77}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Experimental Results}{78}{subsection.5.1.2}
-\contentsline {subsubsection}{Generation of Prior Probability Distributions}{80}{subsubsection*.8}
-\contentsline {subsubsection}{Parameter Estimation Results}{81}{subsubsection*.9}
-\contentsline {subsubsection}{Analysis of Convergence}{86}{subsubsection*.10}
-\contentsline {subsubsection}{Attempt 2}{89}{subsubsection*.11}
-\contentsline {subsubsection}{Analysis of Correlation}{89}{subsubsection*.12}
-\contentsline {subsection}{\numberline {5.1.3}Discussion}{91}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{80}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{81}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{88}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}Analysis of Convergence}{88}{subsubsection.5.1.2.4}
+\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Correlation}{90}{subsubsection.5.1.2.5}
+\contentsline {subsection}{\numberline {5.1.3}Discussion}{93}{subsection.5.1.3}
 \contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{94}{chapter.6}
 \contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{94}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Introduction}{94}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Experimental Results}{96}{subsection.6.1.2}
-\contentsline {subsubsection}{Prior Probability Distributions}{99}{subsubsection*.13}
-\contentsline {subsubsection}{Parameter Estimation Results}{99}{subsubsection*.14}
-\contentsline {subsubsection}{Analysis of Convergence}{102}{subsubsection*.15}
-\contentsline {subsubsection}{Analysis of Correlation}{102}{subsubsection*.16}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{99}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{99}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Analysis of Convergence}{102}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Analysis of Correlation}{102}{subsubsection.6.1.2.4}
 \contentsline {subsection}{\numberline {6.1.3}Discussion}{102}{subsection.6.1.3}
 \contentsline {section}{\numberline {6.2}Microaerobic Nitric Oxide Reduction}{102}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Introduction}{102}{subsection.6.2.1}
@@ -109,5 +109,5 @@
 \contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{107}{section.9.1}
 \contentsline {chapter}{\numberline {A}Appendix}{108}{appendix.A}
 \contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{108}{section.A.1}
-\contentsline {chapter}{List of Abbreviations}{110}{appendix*.17}
-\contentsline {chapter}{References}{111}{appendix*.17}
+\contentsline {chapter}{List of Abbreviations}{110}{appendix*.5}
+\contentsline {chapter}{References}{111}{appendix*.5}
