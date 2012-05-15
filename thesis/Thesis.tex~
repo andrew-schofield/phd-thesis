@@ -26,7 +26,7 @@
 \usepackage{rotating}
 \usepackage[table]{xcolor}
 \usepackage{svn-multi}
-\svnid{$Id: Thesis.tex 144 2012-05-03 20:14:33Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 171 2012-05-14 15:58:48Z uncle_fungus $}
 
 \definecolor{dark-gray}{gray}{0.5}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -179,6 +179,7 @@
 \bibliographystyle{unsrtPLoS-Biology}
 \mathchardef\mhyphen="2D
 \setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 \makeindex
 
