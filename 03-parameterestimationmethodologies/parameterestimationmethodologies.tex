@@ -175,21 +175,22 @@ The MHMC algorithm has been validated initially by using a much simpler ODE syst
 Validation of using this system required a simulated dataset with known parameter values to be produced. This dataset then forms the input for the MHMC algorithm which will try and obtain those same parameter values. Given the simplicity of this system, a particularly bad set of initial parameter estimates was given to exaggerate the burn in period, and to show that given a long enough time the simulation will eventually settle on ``correct'' values. This validation step also informs the likely values for two tuning variables in the algorithm; the \textit{acceptance} - how stringent the algorithm is on accepting new parameter sets, and the \textit{sigma} value - this describes the magnitude of parameter perturbation at each iteration.
 The graphical results of the Lotka-Volterra validation are shown in Figures \ref{fig:simulation} and \ref{fig:parameters}.
 
-\begin{figure}[tbp]
+\begin{figure}[t]
  \centering
- \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./03-parameterestimationmethodologies/data/LV_data.pdf}
+ \includegraphics[width=13cm, trim=75px 53px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_data.pdf}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
  \caption[{Simulation results of the Lotka-Volterra validation run.}]{{\bf Simulation results of the Lotka-Volterra validation run.}
  \label{fig:simulation}}
 \end{figure}
 
-\begin{figure}[tbp]
+\begin{figure}[b]
  \centering
- \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./03-parameterestimationmethodologies/data/LV_MCMC.pdf}
+ \includegraphics[width=13cm, trim=75px 53px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_MCMC.pdf}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
  \caption[{MHMC results of the Lotka-Volterra validation run.}]{{\bf MHMC results of the Lotka-Volterra validation run.} Note the initial burn-in period followed by the distribution trajectory.
  \label{fig:parameters}}
 \end{figure}
+\afterpage{\clearpage}
 
 \section{Implementation}
 The initial parameters used to solve the equations were a set of priors based on preliminary experimental results. These parameters only provide a starting point as the second stage of computation involves modifying the parameters in order to provide a better fit against experimental data. To incrementally improve the parameter sets, a version of Bayesian inference is used in conjunction with a standard Metropolis-Hastings Monte-Carlo method.

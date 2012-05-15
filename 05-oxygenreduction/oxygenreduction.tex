@@ -25,7 +25,7 @@ These equations describe the change in concentration of oxygen over time, which 
 Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, the  culture was transferred to the oxygen electrode chamber and recorded the oxygen concentration as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, the electrode chamber cap was removed and the culture media aerated using a Pasteur pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}.
 
 The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  %trim = l b r t
  \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/repeatable_o2.pdf}
@@ -33,22 +33,23 @@ The experiments used to generate data for oxygen reduction are highly repeatable
  \caption[Highly repeatable oxygen reduction]{{\bf Highly repeatable oxygen reduction.} This shows an oxygen reducing culture being repeatedly aerated after oxygen depletion with very similar rates of subsequent oxygen reduction
  \label{fig:oxy_repeatable_chl}}
 \end{figure}
+\afterpage{\clearpage}
 
-
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_delay.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Aerating oxygen reducing cultures with significant delay]{{\bf Aerating oxygen reducing cultures with significant delay.} The oxygen reducing ability of \Nm{} can be robust as evidenced by the 1000s delays between aeration with no change in subsequent respiration rate. Also of note is that nitric oxide concentration is not changing, suggesting that reduction of nitrite is not occurring either.
  \label{fig:repeat_oxy_with_delay}}
 \end{figure}
+\afterpage{\clearpage}
 
 \subsubsection{Generation of Prior Probability Distributions}
 In accordance with the integrative scheme that was introduced in Chapter \ref{chap:paramest}, An attempt was made to estimate the distributions of the parameters involved in modelling these data. In order to do this probability distributions were needed to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. It was assumed that all the prior probabilities would be log-normally distributed, therefore the distributions  used were created under the following scheme:
 \begin{itemize}
-	\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), the bounds were assumed to cover $3 \sigma$ of the normal distribution. Thus the variance used for the lognormal distribution is $\left(\frac{bounds}{3}\right)^2$ with narrow upper and lower limits.
-	\item Where the literature value has no bounds associated with it (i.e. published as a single figure), the bounds were assumed to be $\pm 10\%$ of the literature value, and this was used as $\sigma$. Wider upper and lower limits were used in these cases.
-	\item Where there are no literature values available, the value was estimated based on preliminary experimental data and bounds of $\pm 10\%$ were used again. In this case upper and lower limits for the distribution were made very wide to try and accommodate for incorrect assumed prior values.
+\item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), the bounds were assumed to cover $3 \sigma$ of the normal distribution. Thus the variance used for the lognormal distribution is $\left(\frac{bounds}{3}\right)^2$ with narrow upper and lower limits.
+\item Where the literature value has no bounds associated with it (i.e. published as a single figure), the bounds were assumed to be $\pm 10\%$ of the literature value, and this was used as $\sigma$. Wider upper and lower limits were used in these cases.
+\item Where there are no literature values available, the value was estimated based on preliminary experimental data and bounds of $\pm 10\%$ were used again. In this case upper and lower limits for the distribution were made very wide to try and accommodate for incorrect assumed prior values.
 \end{itemize}
 
 \noindent With reference to the above, the values required to create prior probability distributions from Table \ref{tab:ps} in Chapter \ref{chap:model} are shown in Table \ref{tab:oxyProbstat}.
@@ -76,45 +77,55 @@ Q && 0.3 & 0.0001\\
 \noindent A graphical representation of the data in Table \ref{tab:oxyProbstat}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}.% As can be seen, very little information is readily available in the literature to populate the model.
 
 %lbrt
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/priors1.pdf}
  % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
  \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
  \label{fig:oxypriors}}
 \end{figure}
+\afterpage{\clearpage}
 
 \subsubsection{Initial Parameter Estimation Results}
 The parameter estimation process produces a large amount of output data which can be processed. Included in these data are the best simulation results from each run. Best is defined here as the simulation with the highest likelihood, i.e. the one with the closest match to the experimental data. For the oxygen reduction training datasets, of which there are 3, each was run 20 times for 20,000 iterations. This lower iteration count was chosen as a compromise between execution time and statistical accuracy. In fact given that the burn-in time for these runs was relatively short, 20,000 iterations still provides plenty of data. A representative example of the simulated data is shown in Figure \ref{fig:o2sim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 
 %lbrt
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
  \label{fig:o2sim}}
 \end{figure}
+\afterpage{\clearpage}
+%\begin{figure}[tbp]
+ %\centering
+ %\includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/lbplot.pdf}
+ % lbplot.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+%\end{figure}
+
 
 Initially the simulation results are not particularly good fits compared to the experimental data and as such have low likelihoods (the internal representation is actually the inverse of the likelihood, so this value is high). As the parameter estimation progresses the likelihood reduces as the simulated result gets closer and closer to the experimental data. Quite often this does not take many iterations and a representative plot showing how the simulation's likelihood increases (internal representation decreases) is shown in Figure \ref{fig:oxy_fitness}. The initial period where the likelihood is low (internal representation high) up until the point it settles at a higher value (internal representation low) is classed as ``burn-in'' and is discarded when generating posterior distributions.
 
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_fitness.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Simulation likelihood improves as parameter estimation progresses]{{\bf Simulation likelihood improves as parameter estimation progresses.} This is a representative figure constructed from a single run on one dataset. Initially the internal representation of likelihood is high showing that the simulated result does not match the experimental dataset. As the parameter estimation algorithm progresses, the internal representation decreases as the simulated result approaches the experimental dataset. The inset shows a zoomed in view of the likelihood after the ``burn-in'' process has finished.
  \label{fig:oxy_fitness}}
 \end{figure}
+\afterpage{\clearpage}
 
 Each of the parameters that are to be estimated produces a trajectory of values for each run of the estimation algorithm. These trajectories are used to generate the posterior probability distributions required for Bayesian inference in subsequent steps. During the ``burn in'' period the parameter values can be observed to change rapidly from one iteration to the next as they approach their optimum values. Once the ``burn in'' has completed the values settle and produce largely flat trajectories with minor deviations around the optimum value. This settled region is used as the source for generating the posterior probability distributions. Figure \ref{fig:k3s} shows the the trajectories from each simulation run on a single dataset for the $k_3$ parameter.
 
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/k3s1.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Individual parameter trajectories for multiple runs on the same experimental dataset]{{\bf Individual parameter trajectories for multiple runs on the same experimental dataset.} This figure shows the trajectories for the same parameter, in this case $k_3$ - the rate constant for \cbbthree{} reduction, from 20 individual runs of parameter estimation upon the same input data. The trajectories show clear convergence after the ``burn-in'' period.
  \label{fig:k3s}}
 \end{figure}
+\afterpage{\clearpage}
 
 Not all parameters in this stage of the model will produce trajectories like the one shown, as if there is a great deal of freedom as to what value a particular parameter can take without drastically decreasing the likelihood it will be accepted by the parameter estimation algorithm. In this case the trajectories will not converge, and will ultimately produce a wide probability distribution. This is not necessarily indicative of a problem however, as this output still contains information that can be used in the next stage of parameter estimation with new datasets.
 
@@ -122,13 +133,14 @@ The trajectories above are processed to produce probability distributions given 
 
 The posterior probability distributions generated from the three experimental datasets, each started with 20 runs are shown in Figure \ref{fig:oxyposteriors}. In the case of parameters which represent concentrations, such as $X$ and $C$, the concentrations of cytochromes and \cbbthree{} respectively, the individual dataset probability distributions are shown, as they cannot be sensibly combined, and it emphasises the fact that the datasets were different.
 
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/posteriors1.pdf}
  % posteriors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
  \caption[Posterior probability distributions for oxygen reduction]{{\bf Posterior probability distributions for oxygen reduction}. These are the probability distributions generated by parameter estimation on 3 oxygen reduction datasets. These have been overlaid onto the prior probability distributions used by the parameter estimation algorithm, also shown in Figure \ref{fig:oxypriors}.
  \label{fig:oxyposteriors}}
 \end{figure}
+\afterpage{\clearpage}
 
 As can be seen from the posterior distributions, the parameter estimation algorithm has not satisfactorily produced posterior distributions that are contained within the bounds of the prior distributions whilst also still managing to fit to the experimental data. This is especially true of the concentration of $Q$, where the Markov-chain has tended towards the upper limit of the input prior distribution. This suggests that the prior distribution for $Q$ is incorrect, with a mean that is possibly as much as $10\times$ too low, and with a variance that is too small, as the parameter estimation algorithm has attempted to increase the value of $Q$ right up to the upper limit of the input distribution. This incorrect value for $Q$ is probably the cause of several of the other distributions being flatter and outside of the main body of their prior distributions. Another interesting observation is that the distribution for $k_3$ shows a distinct bi-modality, however this is quite likely to be an artefact of the parameter estimation algorithm. The left-most region of the bimodal distribution could be caused by the natural bias of the algorithm for values within more likely regions of the prior probability distribution. If this is the case, the right-most region is the ``true'' probability distribution where the increase in likelihood of fitting outweighs the fact that the values selected have a low probability of being selected from the prior distribution. Assuming this is the case, the prior distribution may also be incorrect for $k_3$, but the shape of the posterior distribution may also be directly caused by the more obviously incorrect prior distribution of $Q$.
 
@@ -161,13 +173,14 @@ Q && 3 & 0.01\\
 \end{table}
 \noindent A graphical representation of the data in Table \ref{tab:oxyProbstat1}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors1}.
 %lbrt
-\begin{figure}[tbp]
+\begin{figure}[p]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/priors2.pdf}
  % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
  \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
  \label{fig:oxypriors1}}
 \end{figure}
+\afterpage{\clearpage}
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
 \begin{table}[h]%needs to be 'here' as section is short
@@ -202,7 +215,7 @@ Given the large number of parameters, and the simple form of the experimental da
 
 The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} and was constructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination. The matrix is upper-triangle only as the lower triangle is a duplicate of the same data. The diagonal is shown in grey as it is not useful data since the correlation of X against X is always 1.
 %\begin{landscape}
-\begin{table}[tbp]
+\begin{table}[p]
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.5}
   \centering
