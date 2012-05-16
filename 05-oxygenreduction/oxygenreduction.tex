@@ -152,6 +152,7 @@ Since the posterior probability distributions generated at this stage cannot be 
 %Some of the posterior probability distributions appear to have expanded outside their prior bounds. I am fairly certain that this is not an error and that samples \textit{are} being taken from the prior distributions, but rather that the prior distributions were sufficiently incorrect that the penalty for selecting a parameter value from the prior distribution which is very unlikely is outweighed by the large increase in likelihood that this affords.
 
 \subsubsection{Secondary Prior Probability Distributions}
+To improve the prior probability distribution to counteract the behaviour seen in the section above, a number of changes were made to the distribution parameters. All of the rate constant and total concentration parameters were flattened out, that is to say the variance was increased. In addition the mean value for $Q$ was increased tenfold since the previously described results showed this value was far too low. The parameters for reduced enzyme concentration were not altered, as the ODE solver is accurate enough to correct these immediately. The values required to create the updated prior probability distributions are shown in Table \ref{tab:oxyProbstat1}.
 \begin{table}[h]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
@@ -180,7 +181,8 @@ Q && 3 & 0.01\\
  \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
  \label{fig:oxypriors1}}
 \end{figure}
-\afterpage{\clearpage}
+%\afterpage{\clearpage}
+\subsubsection{Secondary Parameter Estimation Results}
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
 \begin{table}[h]%needs to be 'here' as section is short
