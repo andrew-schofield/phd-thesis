@@ -11,19 +11,19 @@
 \nomenclatureentry{aHCO@[{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}|nompageref}{18}
 \nomenclatureentry{aNOR@[{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}|nompageref}{19}
 \nomenclatureentry{aDNA@[{DNA}]\begingroup Deoxyribonucleic Acid\nomeqref {1.5}|nompageref}{27}
-\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}|nompageref}{34}
-\nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}|nompageref}{34}
-\nomenclatureentry{aLSODA@[{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}|nompageref}{35}
-\nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}|nompageref}{37}
-\nomenclatureentry{atet$^\textrm{r}$@[{tet$^\textrm{r}$}]\begingroup tetracycline resistance\nomeqref {2.0}|nompageref}{37}
-\nomenclatureentry{aCAB@[{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}|nompageref}{38}
-\nomenclatureentry{aMHB@[{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}|nompageref}{38}
-\nomenclatureentry{arpm@[{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}|nompageref}{38}
-\nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}|nompageref}{39}
-\nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}|nompageref}{39}
-\nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}|nompageref}{42}
-\nomenclatureentry{aABCSMC@[{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}|nompageref}{68}
-\nomenclatureentry{aABC@[{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}|nompageref}{70}
-\nomenclatureentry{aLSD@[{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}|nompageref}{71}
-\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{71}
-\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{72}
+\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}|nompageref}{35}
+\nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}|nompageref}{35}
+\nomenclatureentry{aLSODA@[{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}|nompageref}{36}
+\nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}|nompageref}{38}
+\nomenclatureentry{atet$^\textrm{r}$@[{tet$^\textrm{r}$}]\begingroup tetracycline resistance\nomeqref {2.0}|nompageref}{38}
+\nomenclatureentry{aCAB@[{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}|nompageref}{39}
+\nomenclatureentry{aMHB@[{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}|nompageref}{39}
+\nomenclatureentry{arpm@[{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}|nompageref}{39}
+\nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}|nompageref}{40}
+\nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}|nompageref}{40}
+\nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}|nompageref}{43}
+\nomenclatureentry{aABCSMC@[{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}|nompageref}{69}
+\nomenclatureentry{aABC@[{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}|nompageref}{71}
+\nomenclatureentry{aLSD@[{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}|nompageref}{72}
+\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{72}
+\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{73}

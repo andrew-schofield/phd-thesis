@@ -1,4 +1,4 @@
-\begin{thebibliography}{114}
+\begin{thebibliography}{115}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -187,6 +187,12 @@ Keilin D, Hartree EF (1939) Cytochrome and Cytochrome Oxidase. Proceedings of
 Huang Y, Reimann J, Singh LMR, Adelroth P (2010) Substrate Binding and the
   Catalytic Reactions in Cbb3-type Oxidases: The Lipid Membrane Modulates
   Ligand Binding. Biochim Biophys Acta 1797: 724--731.
+
+\bibitem[{Buschmann et~al.(2010)Buschmann, Warkentin, Xie, Langer, Ermler
+  et~al.}]{Buschmann2010}
+Buschmann S, Warkentin E, Xie H, Langer JD, Ermler U, et~al. (2010) The
+  structure of cbb3 cytochrome oxidase provides insights into proton pumping.
+  Science 329: 327--330.
 
 \bibitem[{Zufferey et~al.(1996)Zufferey, Preisig, Hennecke, and
   Thöny-Meyer}]{Zufferey1996}
