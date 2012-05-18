@@ -110,5 +110,6 @@
 \contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{112}{section.9.1}
 \contentsline {chapter}{\numberline {A}Appendix}{113}{appendix.A}
 \contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{113}{section.A.1}
-\contentsline {chapter}{List of Abbreviations}{115}{appendix*.5}
-\contentsline {chapter}{References}{116}{appendix*.5}
+\contentsline {section}{\numberline {A.2}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{113}{section.A.2}
+\contentsline {chapter}{List of Abbreviations}{116}{appendix*.5}
+\contentsline {chapter}{References}{117}{appendix*.5}
