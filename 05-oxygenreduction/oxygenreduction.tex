@@ -182,7 +182,8 @@ Q && 3 & 0.1\\
 \label{tab:oxyProbstat1}}
 \end{table}
 \afterpage{\clearpage}
-\noindent A graphical representation of the data in Table \ref{tab:oxyProbstat1}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors1}.
+
+A graphical representation of the data in Table \ref{tab:oxyProbstat1}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors1}.
 %lbrt
 \begin{figure}[p]
  \centering
@@ -193,6 +194,22 @@ Q && 3 & 0.1\\
 \end{figure}
 %\afterpage{\clearpage}
 \subsubsection{Secondary Parameter Estimation Results}
+The posterior probability distributions for this second attempt were generated in the same way as described previously for the first attempt.
+
+The second attempt at parameter estimation, revealed an issue with the input datasets that were being used. The first dataset contains no information about what happens to the rate of oxygen reduction once oxygen concentration approaches zero, as the experimental data does not extend this far. The second and third datasets do contain this information as they show complete oxygen reduction to zero, in addition to several seconds of data after that point. This can be seen in Figure \ref{fig:o2data}.
+
+The result of dataset 1 lacking this additional feature is that the parameter estimation algorithm was able to over-sample from the prior distributions as there was no significant difference in goodness-of-fit between ``in prior'' and ``out of prior'' parameter values. If these distributions were to have been included in the overall posterior probability distributions for oxygen reduction they would have skewed the distributions towards the priors rather than their true values. The posterior distributions for dataset 1 are shown in Figure \ref{fig:dataset1posterior}.
+%lbrt
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/oversampling_posteriors.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
+ \label{fig:dataset1posterior}}
+\end{figure}
+
+
+
 The posterior probability distributions generated from the three experimental datasets, each started with 20 runs are shown in Figure \ref{fig:oxyposteriors1}. In the case of parameters which represent concentrations, such as $X$ and $C$, the concentrations of cytochromes and \cbbthree{} respectively, the individual dataset probability distributions are shown, as they cannot be sensibly combined, and it emphasises the fact that the datasets were different.
 \begin{figure}[p]
  \centering
