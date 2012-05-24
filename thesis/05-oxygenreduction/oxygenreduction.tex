@@ -220,7 +220,7 @@ In the posterior distributions there still appears to be a degree of bimodality 
 \end{figure}
 \afterpage{\clearpage}
 
-\begin{table}[h]%needs to be 'here' as section is short
+\begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
 \begin{tabular}{cccccc}
@@ -245,10 +245,11 @@ $C_a$ && 0.024 & 0.0008 & 0.024 & 0.036 \textuparrow\\
 \caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:oxyProbstat1}. The posterior distributions were generated from datasets 2 \& 3, and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by \textuparrow and \textdownarrow.
 \label{tab:oxyPstat}}
 \end{table}
-\afterpage{\clearpage}
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
-\begin{table}[h]%needs to be 'here' as section is short
+
+Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. The R statistic shows that all of the rate constants appeared to have converged to a reasonably high degree which could also be seen from the distribution plots. The concentration parameters had converged to a much lesser degree however this was not completely unexpected, as there were a larger number of parameters in the model than were required to fit the experimental data and thus the potential range of parameter values was broad at this stage. The apparent lack of convergence of some parameters at this point was not a problem as with subsequent, more complex datasets, the range of potential parameter values would decrease, allowing the trajectories to converge more easily.
+\begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
 \begin{tabular}{ccc|ccc}
@@ -267,7 +268,6 @@ Q && 4.16\\
 \caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from datasets 2 \& 3. For parameters which are concentrations, the statistic relates to the values after normalisation. Concentration parameters exhibit greater inter-dataset differences even after normalisation thus giving high R statistic values. The intra-dataset values would be lower.
 \label{tab:oxyRstat}}
 \end{table}
-Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. As can be seen in the table it appears that the majority of the trajectories have not converged with the exception of Q, the quinone concentration. This is not completely unexpected, as there are a larger number of parameters in the model than are required to fit the experimental data and thus the potential range of parameter values is broad at this stage. I was therefore not worried about the lack of convergence at this point as with subsequent, more complex datasets the range of potential parameter values will decrease, allowing the trajectories to converge more easily.
 
 \subsubsection{Analysis of Correlation}
 Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
@@ -313,6 +313,7 @@ The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} an
   \end{minipage}
   }
 \end{table}
+\afterpage{\clearpage}
 %\end{landscape}
 The correlation matrix shows that the majority of the parameters are not correlated with each other, giving very low $R^2$ values. A number of the parameters showed moderate correlation, which is to be expected. Parameters such as $k_1$ - the rate constant for reduction of oxygen - and $k_3$ - the rate constant for reduction of \cbbthree{} -  broadly speaking would increase as g - the rate of electrons in -  increased. This was expected as more electrons means higher observable rates are possible. Strong positive correlations exist between the concentrations of cytochromes (X), \cbbthree{}(C) and the rate of electrons in (g). This makes sense if higher likelihoods require an increased throughput of electrons but that cannot be achieved by increasing the size of the quinone pool. Large numbers of electrons can be reduced by the cytochromes to eventually reduce oxygen.
 
