@@ -103,7 +103,7 @@ The parameter estimation process produces a large amount of output data which ca
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system.
+ \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system. The inset shows that the solved output is achieving much higher affinity than the experimental data.
  \label{fig:o2sim}}
 \end{figure}
 \afterpage{\clearpage}
@@ -245,6 +245,17 @@ $C_a$ && 0.024 & 0.0008 & 0.024 & 0.036 \textuparrow\\
 \caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:oxyProbstat1}. The posterior distributions were generated from datasets 2 \& 3, and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by \textuparrow and \textdownarrow.
 \label{tab:oxyPstat}}
 \end{table}
+
+A graph showing how well the solved output fits the experimental data during the parameter estimation stage is shown in Figure \ref{fig:oxyfinalsolved}. This shows the solved output which achieved the best goodness of fit against the experimental data.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/final_solved.pdf}
+ % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This figure shows how well the best solved data fits against the experimental data from dataset 2. The inset shows again, that the solved output is achieving much higher affinity than the experimental data.
+ \label{fig:oxyfinalsolved}}
+\end{figure}
+\afterpage{\clearpage}
+
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic produces in a single figure what could interpreted from the posterior probability distributions as it is essentially a measure of how close the trajectories have become towards the end of said trajectory. This statistic is calculated on the trajectories from multiple runs \textit{for each parameter individually}. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010}.
 
@@ -270,9 +281,9 @@ Q && 4.16\\
 \end{table}
 
 \subsubsection{Analysis of Correlation}
-Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also be exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this I constructed a correlation matrix by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
+Given the large number of parameters, and the simple form of the experimental data it is quite likely that a number of the parameters will be correlated with one another. This effect should also have been exacerbated at this stage due to the limited constraints (by virtue of wide prior probabilities) on the ranges of values that parameters can take. In order to investigate this a set of correlation matrices were constructed by calculating the Pearson's Product-Moment Correlation Coefficient for each of the parameters. This value provides the direction of correlation as indicated by the sign, and the degree of linearity as indicated by the magnitude. A positive correlation indicates that as the value of one parameter increases, the other increases also. A negative correlation indicates that as the value of one parameter increases, the other decreases.
 
-The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} and was constructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination. The matrix is upper-triangle only as the lower triangle is a duplicate of the same data. The diagonal is shown in grey as it is not useful data since the correlation of X against X is always 1.
+The upper-triangle correlation matrices are shown in Figures \ref{tab:oxyregress1} \& \ref{tab:oxyregress2} and were constructed by concatenating all the trajectories created by the parameter estimation system (discarding the burn-in) together and the Pearson's Product-Moment Correlation Coefficient calculated for each combination for each dataset. The datasets were analysed separately to allow examination of intra dataset correlation. The matrices are upper-triangle only as the lower triangle is a duplicate of the same data. The diagonals are shown in grey as they are not useful data since the correlation of X against X is always 1.
 %\begin{landscape}
 \begin{table}[p]
 \setlength{\tabcolsep}{5pt}
@@ -285,41 +296,82 @@ The upper-triangle correlation matrix is shown in Figure \ref{tab:oxyregress} an
     \hline
     \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C & \cellcolor{dark-gray}$Q_a$ & \cellcolor{dark-gray}$X_a$ & \cellcolor{dark-gray}$C_a$ \\
     \hline
-    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & $0.28599$ & $0.013212$ & \cellcolor{orange}$0.420123$ & $0.154821$ & $0.009968$ & \cellcolor{orange}$0.369637$ & \cellcolor{orange}$0.367247$ & $0.00344$ & $0.000229$ & $0.046062$ \\
+    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & $8.54\times10^{-5}$ & $0.000294$ & $0.002477$ & $0.000142$ & $0.000437$ & $0.000521$ & $0.001131$ & $0.000358$ & $0.000148$ & \cellcolor{orange}$0.49873$ \\
     \hline
-    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.008486$ & \cellcolor{orange}$0.586606$ & \cellcolor{orange}$0.351956$ & $0.002927$ & \cellcolor{orange}$0.617929$ & \cellcolor{orange}$0.681098$ & $0.000559$ & $0.001062$ & $0.012978$ \\
+    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.000731$ & $0.006993$ & $0.002773$ & $0.001626$ & $0.041183$ & $0.168947$ & $0.004253$ & $8\times10^{-5}$ & $0.000874$ \\
     \hline
-    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.009472$ & $0.07071$ & $6.58\times{}10^{-5}$ & $0.001034$ & $0.019449$ & $0.006711$ & $0.055052$ & $0.002166$ \\
+    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $8.52\times10^{-6}$ & $6.44\times10^{-7}$ & $0.00019$ & $4.92\times10^{-5}$ & $0.000513$ & $0.000513$ & $0.000186$ & $0.000257$ \\
     \hline
-    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}$0.426205$ & $0.008692$ & \cellcolor{green}$0.86507$ & \cellcolor{green}$0.811637$ & $0.009455$ & $0.003244$ & $0.076195$ \\
+    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.001464$ & $0.110342$ & $0.039754$ & $0.023291$ & $1.04\times10^{-6}$ & $0.005327$ & $0.001174$ \\
     \hline
-    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.00461$ & \cellcolor{orange}$0.329468$ & \cellcolor{orange}$0.432466$ & $0.106478$ & $0.012951$ & $0.001404$ \\
+    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.001313$ & $0.007693$ & $0.001177$ & $6.77\times10^{-5}$ & $0.000314$ & $0.000368$ \\
     \hline
-    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.008756$ & $0.006046$ & $0.00024$ & $7.86\times{}10^{-6}$ & $0.003555$ \\
+    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.006919$ & $0.001854$ & $0.001127$ & $1.49\times{}10^{-5}$ & $0.000502$ \\
     \hline
-    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{green}$0.803124$ & $1.47\times{}10^{-5}$ & $3.43\times{}10^{-5}$ & $0.064213$ \\
+    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}$0.33314$ & $0.00029$ & $0.004715$ & $7.25\times10^{-5}$ \\
     \hline
-    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.018731$ & $7.27\times{}10^{-5}$ & $0.046421$ \\
+    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $2.21\times10^{-5}$ & $0.001315$ & $3.26\times10{-5}$ \\
     \hline
-    \cellcolor{dark-gray}$Q_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.108255$ & $0.00897$ \\
+    \cellcolor{dark-gray}$Q_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.001213$ & $4.81\times10^{-5}$ \\
     \hline
-    \cellcolor{dark-gray}$X_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.003167$ \\
+    \cellcolor{dark-gray}$X_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.000359$ \\
     \hline
     \cellcolor{dark-gray}$C_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
     \hline
   \end{tabular}
-  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters.} This table shows the $R^2$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R^2>0.8$) and those with moderation correlation have been coloured orange ($0.8>R^2>0.3$).
-  \label{tab:oxyregress}}
+  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 2.} This table shows the $R^2$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R^2>0.8$) and those with moderation correlation have been coloured orange ($0.8>R^2>0.3$).
+  \label{tab:oxyregress1}}
   \end{minipage}
   }
 \end{table}
 \afterpage{\clearpage}
 %\end{landscape}
-The correlation matrix shows that the majority of the parameters are not correlated with each other, giving very low $R^2$ values. A number of the parameters showed moderate correlation, which is to be expected. Parameters such as $k_1$ - the rate constant for reduction of oxygen - and $k_3$ - the rate constant for reduction of \cbbthree{} -  broadly speaking would increase as g - the rate of electrons in -  increased. This was expected as more electrons means higher observable rates are possible. Strong positive correlations exist between the concentrations of cytochromes (X), \cbbthree{}(C) and the rate of electrons in (g). This makes sense if higher likelihoods require an increased throughput of electrons but that cannot be achieved by increasing the size of the quinone pool. Large numbers of electrons can be reduced by the cytochromes to eventually reduce oxygen.
+\begin{table}[p]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.5}
+  \centering
+  \rotatebox{90}{
+  \begin{minipage}{24.4cm}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C & \cellcolor{dark-gray}$Q_a$ & \cellcolor{dark-gray}$X_a$ & \cellcolor{dark-gray}$C_a$ \\
+    \hline
+    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & $0.004541$ & $2.51\times10^{-5}$ & $0.049711$ & $0.006071$ & $0.059385$ & $0.003242$ & $0.0013$ & $0.03656$ & $0.134979$ & $0.034701$ \\
+    \hline
+    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.062001$ & $0.030038$ & $0.092689$ & $0.000349$ & $0.237357$ & $0.098009$ & $0.094798$ & $0.009548$ & $0.005408$ \\
+    \hline
+    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.005241$ & $0.001188$ & $0.002858$ & $0.000688$ & $0.030488$ & $0.013314$ & $0.000241$ & $0.000313$ \\
+    \hline
+    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.076553$ & $0.010999$ & $0.062836$ & $0.044435$ & $0.026216$ & $0.047951$ & $0.01892$ \\
+    \hline
+    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.021609$ & $0.2464$ & $0.059477$ & $0.002653$ & $0.096554$ & $0.03815$ \\
+    \hline
+    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.025015$ & $0.157956$ & $0.014653$ & $0.047399$ & $0.003319$ \\
+    \hline
+    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}$0.390093$ & $0.088569$ & $0.190541$ & $0.001471$ \\
+    \hline
+    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.000815$ & $0.090396$ & $0.000552$ \\
+    \hline
+    \cellcolor{dark-gray}$Q_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.062438$ & $0.02708$ \\
+    \hline
+    \cellcolor{dark-gray}$X_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & $0.000325$ \\
+    \hline
+    \cellcolor{dark-gray}$C_a$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
+    \hline
+  \end{tabular}
+  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 3.} This table shows the $R^2$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R^2>0.8$) and those with moderation correlation have been coloured orange ($0.8>R^2>0.3$).
+  \label{tab:oxyregress2}}
+  \end{minipage}
+  }
+\end{table}
+\afterpage{\clearpage}
+
+The correlation matrices show that the vast majority of the parameters are not correlated with each other, giving very low $R^2$ values. The only parameters to exhibit moderate ($\approx 0.3$) correlation were $C$ and $X$. This would make sense if the concentration of $C$ were to increase, an increase in $X$ would be required to maintain the reduced state of $C$ if there rate constants were not being altered. The spurious correlation of $C$ and $C_a$ can be ignored, as the initial values of the reduced states do not affect the solved output.
 
 Interestingly there were no negative correlations observed. This is somewhat odd as it might be expected that as the reduction rates of enzymes goes down, the concentration of the enzyme increases to maintain the same overall electron throughput. It appears however that the maximum likelihood is achieved when maximising oxygen throughput.
 \subsection{Discussion}
 The experimental datasets showed that oxygen reduction in \Nm{} is a simple linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. Unfortunately the degree of affinity could not be explored further as it was limited by the sampling rate of the oxygen electrode. Nonetheless this apparent simple linearity could be very easily have been modelled to a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. Admittedly this would not include the behaviour when the oxygen concentration reaches zero, which is that it remains so. However this essentially meant that there were a much larger number of parameters available to fit than were necessary, which lead to over-fitting of the data. The size of the parameter set meant that there were a very large set of potential combinations that would have lead to a similar result, however this was mitigated somewhat by the prior probability distributions given to the algorithm. Even so, this meant that the posterior distributions generated were very wide and therefore allowed much greater freedom for the next dataset to explore the parameter space.
 
-With the knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, I expected a linear reduction of oxygen with high affinity over nearly two orders of magnitude. This was evidenced in the experimental data. It is however remarkable that this behaviour can be modelled with so few components \textit{in} the model, as it requires significant changes in the reduction states of the enzymes to achieve this. \textit{Include some reduction state plots here?}
+With the knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, a linear reduction of oxygen with high affinity over nearly two orders of magnitude was expected. This was evidenced in the experimental data. It is however remarkable that this behaviour can be modelled with so few components \textit{in} the model, as it requires significant changes in the reduction states of the enzymes to achieve this.
 %TODO reduction state plots
