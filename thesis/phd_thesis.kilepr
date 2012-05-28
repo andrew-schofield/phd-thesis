@@ -136,10 +136,10 @@ order=-1
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=106
+column=4
 encoding=UTF-8
 highlight=LaTeX
-line=323
+line=117
 mode=LaTeX
 open=true
 order=7
@@ -171,8 +171,8 @@ encoding=UTF-8
 highlight=LaTeX
 line=187
 mode=LaTeX
-open=false
-order=4
+open=true
+order=8
 
 [item:04-model/data/o2rec.pdf]
 archive=true
@@ -186,10 +186,10 @@ order=-1
 
 [item:04-model/modelconstructionandparameters.tex]
 archive=true
-column=425
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=313
+line=267
 mode=LaTeX
 open=true
 order=0
@@ -236,10 +236,10 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=0
+column=437
 encoding=UTF-8
 highlight=LaTeX
-line=177
+line=375
 mode=LaTeX
 open=true
 order=3
@@ -286,17 +286,17 @@ order=4
 
 [item:Thesis.tex]
 archive=true
-column=0
+column=1
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=186
 mode=LaTeX
 open=true
 order=5
 
 [item:appendix/appendix.tex]
 archive=true
-column=0
+column=77
 encoding=UTF-8
 highlight=LaTeX
 line=5
@@ -315,8 +315,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=106
-CursorLine=323
+CursorColumn=4
+CursorLine=117
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=369
@@ -327,12 +327,12 @@ CursorColumn=53
 CursorLine=187
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
-CursorColumn=425
-CursorLine=313
+CursorColumn=0
+CursorLine=267
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=0
-CursorLine=177
+CursorColumn=437
+CursorLine=375
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
 CursorColumn=0
@@ -351,9 +351,9 @@ CursorColumn=81
 CursorLine=3
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=1
+CursorLine=186
 
 [view-settings,view=0,item:appendix/appendix.tex]
-CursorColumn=0
+CursorColumn=77
 CursorLine=5
