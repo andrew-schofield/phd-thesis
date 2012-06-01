@@ -1,4 +1,4 @@
-\begin{thebibliography}{115}
+\begin{thebibliography}{116}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -210,6 +210,12 @@ Preisig O, Zufferey R, Hennecke H (1996) The \textit{Bradyrhizobium japonicum}
 Householder TC, Fozo EM, Cardinale JA, Clark VL (2000) Gonococcal Nitric Oxide
   Reductase is Encoded by a Single Gene, NorB, Which is Required for Anaerobic
   Growth and is Induced by Nitric Oxide. Infect Immun 68: 5241--5246.
+
+\bibitem[{Wasser et~al.(2002)Wasser, {de Vries}, Moënne-Loccoz, Schröder, and
+  Karlin}]{Wasser2002}
+Wasser IM, {de Vries} S, Moënne-Loccoz P, Schröder I, Karlin KD (2002) Nitric
+  oxide in biological denitrification: Fe/Cu metalloenzyme and metal complex
+  NO(x) redox chemistry. Chem Rev 102: 1201--1234.
 
 \bibitem[{Barth et~al.(2009)Barth, Isabella, and Clark}]{Barth2009}
 Barth KR, Isabella VM, Clark VL (2009) Biochemical and Genomic Analysis of the
