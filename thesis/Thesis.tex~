@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openright,12pt]{book}
+\documentclass[a4paper,oneside,openright,11pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -184,28 +184,28 @@
 
 \makeindex
 
-\includeonly{./05-oxygenreduction/oxygenreduction}
+%\includeonly{./05-oxygenreduction/oxygenreduction}
 
 \begin{document}
 \frontmatter
 \mainmatter
-%\maketitle
+\maketitle
 
 \cleardoublepage
 
 \doublespacing
-%\begin{abstract}
-%\Nm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} I have built a mathematical model using a novel combination of experiments and Bayesian fitting.
-%\end{abstract}
+\begin{abstract}
+\Nm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} I have built a mathematical model using a novel combination of experiments and Bayesian fitting.
+\end{abstract}
 
 \singlespacing
-%\tableofcontents
-%\listoffigures
-%\listoftables
+\tableofcontents
+\listoffigures
+\listoftables
 
 \doublespacing
 
-%\chapter*{Acknowledgements}
+\chapter*{Acknowledgements}
 
 \include{./01-introduction/introduction}
 \include{./02-materialsmethods/materialsandmethods}
@@ -231,6 +231,6 @@
 \renewcommand{\bibname}{References}
 \addcontentsline{toc}{chapter}{\bibname}
 
-%\bibliography{phd_refs}
+\bibliography{phd_refs}
 
 \end{document}

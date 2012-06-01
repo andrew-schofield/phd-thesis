@@ -15,41 +15,41 @@ Database file #1: phd_refs.bib
 Warning--entry type for "Rank2012" isn't style-file defined
 --line 3342 of file phd_refs.bib
 Warning--entry type for "YSI2012" isn't style-file defined
---line 4255 of file phd_refs.bib
+--line 4256 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
 You've used 116 entries,
             2955 wiz_defined-function locations,
-            1592 strings with 37271 characters,
-and the built_in function-call counts, 123185 in all, are:
-= -- 12159
+            1584 strings with 37560 characters,
+and the built_in function-call counts, 131033 in all, are:
+= -- 13031
 > -- 4115
 < -- 68
 + -- 2049
 - -- 1131
-* -- 10556
-:= -- 16755
+* -- 11453
+:= -- 17627
 add.period$ -- 230
 call.type$ -- 116
 change.case$ -- 605
 chr.to.int$ -- 133
 cite$ -- 118
-duplicate$ -- 9773
-empty$ -- 10301
+duplicate$ -- 10645
+empty$ -- 11173
 format.name$ -- 1495
-if$ -- 26200
+if$ -- 27944
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 1083
 newline$ -- 355
 num.names$ -- 473
-pop$ -- 2365
+pop$ -- 2340
 preamble$ -- 1
 purify$ -- 588
 quote$ -- 0
 skip$ -- 2319
 stack$ -- 0
-substring$ -- 14444
+substring$ -- 16188
 swap$ -- 2417
 text.length$ -- 11
 text.prefix$ -- 0
