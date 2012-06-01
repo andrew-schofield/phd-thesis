@@ -187,7 +187,7 @@ and are modelled by this equation
 \subsection{Assumptions and their Justifications}
 A number of assumptions were made regarding the kinetics and reactions taking place in the model.
 \begin{enumerate}
- \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but I believe this assumption still stands as the enzymes are of the same family. This also implies that the model deals exclusively with reversible inhibition.
+ \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but this assumption should still stand as the enzymes are of the same family. This also implies that the model deals exclusively with reversible inhibition.
  \item {\bf Bacterial population structure and concentration variation not considered.} The primary substrates of interest are gases and substrates which are thought to freely diffuse in and out of the cells. Additionally the culture is kept well-mixed at all times, thus it can be assumed that the culture is homogeneous.
  \item {\bf No backwards reactions.} For simplicity, backwards reactions are not included. However they may be important, and could easily be included in a future study with the concomitant increase in parameter count.
  \item {\bf No Michaelis-Menten kinetics.} Separation of time-scales cannot be assumed as the rates of intermediate reaction steps are not known. Future information regarding time-scale separation could easily be incorporated.
@@ -269,10 +269,10 @@ $C$ & Concentration of \cbbthree{} & $0.003 - 0.03~\mu M$ & This work
 
 \subsection*{Variables}
 \subsubsection*{$\mathbf{O_2}$ {\bf- Oxygen concentration}}
-This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is calculated from a linear regression analysis of the first section of oxygen reduction to eliminate noise in the data.
+This variable is always obtained directly from the experimental dataset as it indicates the starting point for oxygen in the model. It is calculated from a linear regression analysis of the first linear section of oxygen reduction to eliminate noise in the data.
 
 \subsubsection*{$\mathbf{NO}$ {\bf- Nitric oxide concentration}, and $\mathbf{NO_2^-}$ {\bf- Nitrite concentration}}
-As for Oxygen concentration, these variable is simply obtained from the dataset and the same conditions apply.
+As for Oxygen concentration, these variables are simply obtained from the dataset and the same conditions apply.
 
 \subsubsection*{$\mathbf{X_a}$, $\mathbf{A_a}$, $\mathbf{B_a}$, $\mathbf{C_a}$, $\mathbf{Q_a}$ - Reduced enzyme concentrations, and $\mathbf{C_X}$ {\bf- Reversibly NO inhibited \cbbthree{}}}
 These values are unknown at start of simulations. They have to be lower than the total concentrations for each enzyme, and the model enforces this. Given the rates of reduction of these enzymes they are all set to very low values, determined from exploratory runs of the parameter estimation algorithm. The rates of reduction for these enzymes actually make the initial value (so long as it is low) largely irrelevant as they reach their steady-state after only a few integration cycles.
@@ -287,7 +287,7 @@ These values are unknown at start of simulations. They have to be lower than the
 A value for $k_1$, the constant for O$_{\textrm{2}}$ reduction by reduced \cbbthree{} was calculated by using the $\mathrm{K}_{cat}$ value from \textit{Pseudomonas stutzeri}, and the $\textrm{k}_m$ value from \textit{Neisseria lactamica}, which \citet{Forte2001} and \citet{Hunter2007} determine are $166~s^{-1}$ and $0.4~\mu M$ respectively. $k_1$ can be calculated as $\frac{166~s^{-1}}{0.4~\mu M} = 415~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{k_3}$ {\bf- Rate constant for \cbbthree{} reduction by cytochrome pool}}
-$k_3$, the rate constant for reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100~\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. We assume that 1 electron equals 1 reduction of \cbbthree{}, thus the rate constant for reduction of \cbbthree{} by cytochromes is $\frac{300~s^{-1}}{100~\mu M} = 3~\mu M^{-1}s^{-1}$.
+$k_3$, the rate constant for reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100~\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. It is assumed that 1 electron equals 1 reduction of \cbbthree{}, thus the rate constant for reduction of \cbbthree{} by cytochromes is $\frac{300~s^{-1}}{100~\mu M} = 3~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{l_1}$ {\bf- Rate constant for NO reduction by reduced NorB}}
 %240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
@@ -298,20 +298,20 @@ An estimate for the rate constant for NO reduction by reduced NorB can be obtain
 No information available in the literature, so the rate constant is set to $1~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{m_1}$ {\bf- Rate constant for NO$_{\textrm{2}}^{\textrm{-}}$ reduction by reduced AniA}}
-
+No information available in the literature, so the rate constant is set to $1~\mu M^{-1}s^{-1}$.
 
 \subsubsection*{$\mathbf{m_3}$ {\bf- Rate constant for AniA reduction by cytochrome pool}}
 The value for $m_3$, the rate constant for reduction of AniA by cytochromes, is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2~\mu M^{-1}s^{-1}$ was observed during stopped-flow experiments by \citet{Nojiri2009}.
 
 \subsubsection*{$\mathbf{k_5}$ {\bf- Rate constant for \cbbthree{} inhibition by NO}}
-\citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate constant they calculated was $10^8~M ^{-1} s ^{-1}$. I assume that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree{} as it is of the same family.
+\citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate constant they calculated was $10^8~M ^{-1} s ^{-1}$. An assumption was made that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree{} as it is of the same family.
 
 \subsubsection*{$\mathbf{k_6}$ {\bf- Rate constant for recovery of NO inhibited \cbbthree{}}}
 \citet{Giuffre2000} calculated a half-life of t\textonehalf $\approx 80~\mathrm{min}$, however without any concrete values for concentration of $C_X\mhyphen NO$ this can't be used to calculated a rate constant.
 \citet{Rock2005} observed the apparent $K_i$ and calculated it to be 380 nM at $50~\mu M$ \cOxygen{}. Since $K_i = \frac{k_6}{k_5}$, a value for $k_6$ can be estimated as $k_6 = K_i \times k_5 = 0.38~\mu M \times 100~\mu M^{-1}s^{-1} = 38~s^{-1}$.
 
 \subsubsection*{$\beta$ {\bf- Rate constant for passive diffusion in of O$_{\textrm{2}}$}, and $\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
-The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu M$ we selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}.
+The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu M$ was selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./04-model/data/o2rec.pdf}
@@ -347,7 +347,7 @@ The model equations (given previously) are solved in parallel using the common $
 %By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
 
 \section{Implementation of the Model in Software}
-The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. I decided to write a custom implementation rather than using off the shelf systems for solving ODEs and parameter estimation as I wanted the greatest flexibility in how I integrated the two techniques, and it allowed me to quickly and easily tailor the code to my needs. Initially I tried using COPASI \cite{Hoops2006}, however at that time it had limitations that could not be overcome, such as an inability to allow bulk addition of components at arbitrary time-points.
+The parameter estimation system and ODE solver were a bespoke implementation written in Java. The Runge-Kutta algorithm was modified from that found in Numerical Recipes in C\cite{Press1992}. A custom implementation was written rather than using off the shelf systems for solving ODEs and parameter estimation as maximum flexibility was required for integrating the two techniques (parameter estimation and ODE solving), and it allowed the code to the requirements more quickly and more easily. Alternative systems are available such as COPASI \cite{Hoops2006}, but with more limited scope for customisation and integration of techniques.
 
 The implementation of the model has no constraints on respiratory substrate concentration, thus allows the altering of these concentrations whilst solving the equations. % however changes to substrate concentration have to be made programmatically to inform the model of the change (\texttt{if (t == 50) then NO\_conc += 20;}).
 This ability means that the switch between aerobic and anaerobic respiration can be examined synthetically, and the model is also capable of simulating how the respiratory system responds to the sudden addition of substrates such as Nitric Oxide. More complicated methods are possible, but given the high diffusion of the substrates concerned as well as the deliberate injection of the relevant substrate this method was a simpler and reasonable mimic for my empirical method. This ability was an absolute requirement, as in order to fully parametrise the model it was necessary to isolate sections of the model, which required adding aliquots of respiratory substrate during respiration.
