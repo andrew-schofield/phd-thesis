@@ -18,11 +18,11 @@
   \item [{CSF}]\begingroup Cerebrospinal Fluid\nomeqref {1.0}
 		\nompageref{12}
   \item [{DNA}]\begingroup Deoxyribonucleic Acid\nomeqref {1.5}
-		\nompageref{27}
+		\nompageref{28}
   \item [{ETC}]\begingroup Electron Transport Chain\nomeqref {1.0}
 		\nompageref{16}
   \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
-		\nompageref{16}
+		\nompageref{17}
   \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
 		\nompageref{18}
   \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
@@ -44,7 +44,7 @@
   \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
 		\nompageref{19}
   \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
-		\nompageref{15}
+		\nompageref{16}
   \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
 		\nompageref{17}
   \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{40}

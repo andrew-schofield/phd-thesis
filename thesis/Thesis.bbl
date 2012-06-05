@@ -1,4 +1,4 @@
-\begin{thebibliography}{116}
+\begin{thebibliography}{118}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -42,6 +42,16 @@ Carbonnelle E, Hill DJ, Morand P, Griffiths NJ, Bourdoulous S, et~al. (2009)
   Brandtzaeg}]{Stephens2007}
 Stephens DS, Greenwood B, Brandtzaeg P (2007) Epidemic Meningitis,
   Meningococcaemia, and Neisseria meningitidis. Lancet 369: 2196--2210.
+
+\bibitem[{Holst(2007)}]{Holst2007}
+Holst J (2007) Strategies for Development of Universal Vaccines Against
+  Meningococcal Serogroup B Disease: the Most Promising Options and the
+  Challenges Evaluating Them. Human Vaccines 3: 290--294.
+
+\bibitem[{Moe et~al.(1999)Moe, Tan, and Granoff}]{Moe1999}
+Moe GR, Tan S, Granoff DM (1999) Molecular Mimetics of Polysaccharide Epitopes
+  as Vaccine Candidates for Prevention of \textit{Neisseria meningitidis}
+  Serogroup B Disease. FEMS Immunology and Medical Microbiology 26: 209--226.
 
 \bibitem[{Larson et~al.(2002)Larson, Higashi, Stojiljkovic, and
   So}]{Larson2002}
