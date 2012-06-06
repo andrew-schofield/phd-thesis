@@ -51,7 +51,32 @@ The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxy
 \end{figure}
 The dataset in Figure \ref{fig:nodata} appears to show a system that was partially primed for microaerobic respiration. In this case it was speculated that there was a small amount of NorB (nitric oxide reductase) present. Initially the oxygen reduction was carried out in exactly the same manner as in Chapter \ref{chap:oxygenreduction}. Upon addition of nitric oxide, oxygen respiration slowed and almost stopped as a result of competition for electrons between \cbbthree{} and NorB, and the direct chemical inhibition of \cbbthree{} by NO. Nitric oxide started to be removed as a combination of diffusion (although this rate will be low as shown in the previous two datasets) and reduction via NorB. Once the NO has been removed from the system oxygen reduction resumes at almost the same rate as before and still has the same high affinity feature as the oxygen reduction datasets in Chapter \ref{chap:oxygenreduction}.
 \subsubsection{Prior Probability Distributions}
-As in Chapter \ref{chap:oxygenreduction} the integrative scheme requires that all the parameters involved have associated prior probability distributions. The posterior probability distributions from Chapter \ref{chap:oxygenreduction} were used as prior probability distributions in this chapter. Where new parameters were introduced (which had not been modelled thus far), the distributions were generated based upon published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. The initial probability distributions used to start the Monte-Carlo runs are shown in Figure \ref{fig:aer_no_priors}. As can be seen, much more information is now available than was present for oxygen reduction.
+As in Chapter \ref{chap:oxygenreduction} the integrative scheme requires that all the parameters involved have associated prior probability distributions. The posterior probability distributions from Chapter \ref{chap:oxygenreduction} were used as prior probability distributions in this chapter. Where new parameters were introduced (which had not been modelled thus far), the distributions were generated based upon published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. Where the posterior probability distributions from Chapter \ref{chap:oxygenreduction} describe rate constants the raw values from the distributions were used as priors in this chapter. Where the distributions describe component concentrations, idealised lognormal distributions were used instead of the raw data to account for differing concentrations between cultures. The distribution of the parameter $\gamma$ - the rate of loss of NO - was initially assumed to be similar to $\beta$, thus the same probability distribution was used. For the other new parameters, lognormal distributions were used as priors as described in Chapter \ref{chap:oxygenreduction}. The values required to create idealised lognormal probability distributions for each parameter are shown in Table \ref{tab:noProbstat1}.
+
+\begin{table}[h]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccc|cccc}
+\toprule
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\midrule
+$k_1$ && 450 & 35 & $\gamma$ && 0.00014 & $4.72\times 10^{-6}$\\
+$k_3$ && 4.748 & 0.404 & Q && 3.59 & 0.132\\
+$l_1$ && 6 & 2 & X && 15.177 & 0.247\\
+$l_3$ && 1 & 2 & B && 0.143 & 0.159\\
+$k_5$ && 100 & 10 & C && 0.143 & 0.159\\
+$k_6$ && 38 & 8 & $Q_a$ && 0.24 & 0.034\\
+$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & $X_a$ && 3.176 & 0.039\\
+g && 1.053 & 0.099 & $B_a$ && 0.024 & 0.036\\
+f && 9.10 & 1.18 & $C_a$ && 0.024 & 0.036\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Prior Probability Table]{{\bf Prior Probability Table} This table shows the prior means and standard deviations used to create lognormal distributions to be used as the prior probability distributions.
+\label{tab:noProbstat1}}
+\end{table}
+\afterpage{\clearpage}
+The initial probability distributions used to start the Monte-Carlo runs are shown in Figure \ref{fig:aer_no_priors}. As can be seen, much more information is now available than was present for oxygen reduction.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/aer-no-priors.pdf}
@@ -61,10 +86,10 @@ As in Chapter \ref{chap:oxygenreduction} the integrative scheme requires that al
 \end{figure}
 
 \subsubsection{Parameter Estimation Results}
-The parameter estimation procress was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
+The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 \begin{figure}[tbp]
  \centering
- \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-sim.pdf}
+ \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset. The solved oxygen concentrations match the experimental dataset so closely as to be almost invisible.}
  \label{fig:nosim}
