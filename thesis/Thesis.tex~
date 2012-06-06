@@ -27,7 +27,7 @@
 \usepackage[table]{xcolor}
 \usepackage{svn-multi}
 \usepackage{afterpage}
-\svnid{$Id: Thesis.tex 174 2012-05-15 20:56:21Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 205 2012-06-06 11:32:27Z uncle_fungus $}
 
 \definecolor{dark-gray}{gray}{0.5}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -125,7 +125,7 @@
 {subsubsection}%                   % the name
 {3}%                         % the level
 {0mm}%                       % the indent
-{-\baselineskip}%            % the before skip
+{-0.5\baselineskip}%            % the before skip
 {0.5\baselineskip}%          % the after skip
 {\bfseries\small}} % the style
 
