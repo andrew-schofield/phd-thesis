@@ -3,41 +3,41 @@
 \label{chap:noreduction}
 \section{Aerobic Nitric Oxide Reduction}
 \subsection{Introduction}
-The next dataset I used in my iterative approach to parameter estimation was of one of aerobic oxygen reduction interrupted by the addition of Nitric Oxide. This dataset is the next most complicated after aerobic oxygen reduction as it introduces the nitric oxide reduction pathway. The portions of the ETC relating to Nitric Oxide reduction are shown graphically in Figure \ref{fig:no_resp_chain}. However this pathway cannot be isolated \textit{in vivo} as \Nm{} is incapable of completely anaerobic respiration therefore the required parts of the model are actually those from Chapter \ref{chap:oxygenreduction} and those in Figure \ref{fig:no_resp_chain}.
+The next dataset used in the iterative approach to parameter estimation was of aerobic oxygen reduction interrupted by the addition of Nitric Oxide. These datasets are the next most complicated after aerobic oxygen reduction as it introduces the nitric oxide reduction pathway. In this case the oxygen reduction and Nitric Oxide reduction pathways are active. Additionally, inactivation of \cbbthree{} by Nitric Oxide was occurring. The portions of the ETC relating to Nitric Oxide reduction are shown graphically in Figure \ref{fig:no_resp_chain}. However this pathway cannot be isolated \textit{in vivo} as \Nm{} is incapable of completely anaerobic respiration therefore the required parts of the model are actually those from Chapter \ref{chap:oxygenreduction} and those in Figure \ref{fig:no_resp_chain}.
 \begin{figure}[tbp]
   \centering
     \includegraphics[width=14cm]{06-noreduction/data/no_resp_chain.pdf}
     \caption[Nitric oxide reducing electron transport chain of \Nm{}]{{\bf Nitric oxide reducing electron transport chain of \Nm{}.} This shows the complete electron transport chain of \Nsm{} with the components irrelevant to nitric oxide reduction greyed out.
   \label{fig:no_resp_chain}}
-\end{figure}
+\end{figure}\\
 The equations that describe this portion of the ETC are:
 \begin{eqnarray*}
 \frac{d[O_2]}{dt} & = & \beta(1-[O_2]/K_O) - k_{1}[C_a][O_2]\\
 \frac{d[Q_a]}{dt} & = & g([Q] - [Q_a]) - l_3[Q_a]([B] - [B_a]) - f[Q_a]([X]-[X_a])\\
 \frac{d[X_a]}{dt} & = & -k_3([C] - [C_a] - [C_X])[X_a]  - m_3([A] - [A_a])[X_a] + f[Q_a]([X]-[X_a])\\
-\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_5[C_a][NO]\\
+\frac{d[C_a]}{dt} & = & k_3([C] - [C_a] - [C_X])[X_a] - k_{1}[C_a][O_2] - k_5[C_a][NO] + k_6[C_X]\\
 \frac{d[NO]}{dt} & = & m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO]\\
 \frac{d[C_X]}{dt} & = & k_5[C_a][NO] - k_6 [C_X]\\
 \frac{d[B_a]}{dt} & = & l_3[Q_a]([B] - [B_a]) - l_1[NO][B_a]
 \end{eqnarray*}
-These equations describe the change in concentration of Nitric Oxide over time, which is the experimentally observable value (in addition to the afore modelled oxygen). Also being modelled was the change in concentration of inhibited \cbbthree{} and the reduction state of NorB. This portion of the model involved 24 parameters and variables which I needed to estimate. This number includes the 13 values already estimated in Chapter \ref{chap:oxygenreduction}.
+These equations describe the change in concentration of Nitric Oxide over time, which is the experimentally observable value (in addition to the afore modelled oxygen). Also being modelled was the change in concentration of inhibited \cbbthree{} and the reduction state of NorB. This more complete portion of the model involved 24 parameters and variables which were to be estimated. This number includes the 13 values already estimated in Chapter \ref{chap:oxygenreduction}.
 \subsection{Experimental Results}
-Generation of nitric oxygen reduction datasets required the growth of MC58 (wild type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $OD_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, I transferred the culture to the oxygen electrode chamber and recorded the oxygen and nitric oxide concentrations as the culture respired. To model nitric oxide reduction required that I add nitric oxide solution to the culture while it is respiring aerobically. Part-way through aerobic respiration I added nitric oxide solution to various final concentrations at $\approx 5~\mu$M and the culture then left to respire nitric oxide. An example dataset showing the effect of addition of nitric oxide to an aerobically respiring culture is shown in Figures \ref{fig:nodata}, \ref{fig:nodata1} \& \ref{fig:nodata2}.
+Generation of Nitric Oxide reduction datasets required the growth of MC58 (wild type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $OD_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, the culture was transferred to the oxygen electrode chamber and the oxygen and nitric oxide concentrations recorded as the culture respired. To model nitric oxide reduction required that nitric oxide solution was added to the culture while it is respiring aerobically. Part-way through aerobic respiration nitric oxide solution was added to various final concentrations all at $\approx 5~\mu$M and the culture then left to reduce nitric oxide (in addition to oxygen). The nitric oxide reduction datasets generated and used for parametrisation of this portion of the model are shown in Figures \ref{fig:nodata}, \ref{fig:nodata1} \& \ref{fig:nodata2}. Unfortunately the experimental data upon addition of nitric oxide is very difficult to reliably reproduce, with different cultures having apparently different tolerances to nitric oxide (data not shown).
 
 \begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-data1.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a small amount of nitric oxide is introduced to the system.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a small amount of nitric oxide (to $\approx 0.6~\mu M$) is introduced to the respiring system.}
  \label{fig:nodata1}
 \end{figure}
-The dataset in Figure \ref{fig:nodata1} shows very little change in the rate of oxygen reduction (it is in fact somewhere around a 3\% reduction in rate) when a small amount of nitric oxide is added. The observed removal of nitric oxide is due primarily to diffusion although there may also be some preliminary (as the culture has not been primed with nitric oxide) nitric oxide reductase activity.
+The dataset in Figure \ref{fig:nodata1} shows very little visible change in the rate of oxygen reduction when a small amount of nitric oxide is added. In actual fact the change in rate was an $\approx 3\%$ reduction after addition of nitric oxide based on linear regression of pre- and post-addition rates. The observed removal of nitric oxide is due primarily to diffusion, although there may also be some preliminary (as the culture has not been primed with nitric oxide) nitric oxide reductase activity. However for modelling purposes it was assumed that the nitric oxide reductase activity for this dataset is zero.
 
 \begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-data2.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a larger amount of nitric oxide is introduced to the system.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a larger amount of nitric oxide (to $\approx 7.8~\mu M$) is introduced to the respiring system.}
  \label{fig:nodata2}
 \end{figure}
 The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxygen reduction than that of Figure \ref{fig:nodata1} when a larger amount of nitric oxide is introduced. Again the removal of nitric oxide will primarily be due to diffusion, although now at higher concentrations more nitric oxide will interact with \cbbthree{} temporarily inhibiting it. This inhibition causes the reduction in oxidase activity, and the sequestering of NO by \cbbthree{} also causes some of the visible reduction in nitric oxide concentration. The time-scale over which the nitric oxide disappears strongly suggests that it is not due to nitric oxide reductase activity. It may also be possible that at this concentration of nitric oxide some \cbbthree{} may have been permanently inhibited as mentioned in Chapters \ref{chap:intro} \& \ref{chap:model}.

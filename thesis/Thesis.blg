@@ -13,9 +13,9 @@ A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
 Warning--entry type for "Rank2012" isn't style-file defined
---line 3454 of file phd_refs.bib
+--line 3453 of file phd_refs.bib
 Warning--entry type for "YSI2012" isn't style-file defined
---line 4367 of file phd_refs.bib
+--line 4366 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
 You've used 118 entries,
