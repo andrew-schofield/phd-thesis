@@ -111,5 +111,5 @@
 \contentsline {chapter}{\numberline {A}Appendix}{119}{appendix.A}
 \contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{119}{section.A.1}
 \contentsline {section}{\numberline {A.2}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{119}{section.A.2}
-\contentsline {chapter}{List of Abbreviations}{122}{appendix*.5}
-\contentsline {chapter}{References}{123}{appendix*.5}
+\contentsline {chapter}{List of Abbreviations}{122}{appendix*.23}
+\contentsline {chapter}{References}{123}{appendix*.23}

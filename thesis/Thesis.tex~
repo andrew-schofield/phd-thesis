@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openright,11pt]{book}
+\documentclass[a4paper,oneside,openright,12pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -120,6 +120,14 @@
 \ifodd\c@page
 \else\hbox{}\thispagestyle{empty}\newpage
 \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+\renewcommand{\subsubsection}{\@startsection
+{subsubsection}%                   % the name
+{3}%                         % the level
+{0mm}%                       % the indent
+{-\baselineskip}%            % the before skip
+{0.5\baselineskip}%          % the after skip
+{\bfseries\small}} % the style
 
 \renewenvironment{thebibliography}[1]
      {\chapter*{\bibname}
