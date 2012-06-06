@@ -73,43 +73,43 @@
 \contentsline {subsection}{\numberline {6.1.2}Experimental Results}{107}{subsection.6.1.2}
 \contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{110}{subsubsection.6.1.2.1}
 \contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{110}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Analysis of Convergence}{113}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Analysis of Correlation}{113}{subsubsection.6.1.2.4}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{113}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Microaerobic Nitric Oxide Reduction}{113}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Introduction}{113}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Results}{113}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Discussion}{113}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{113}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Introduction}{113}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Results}{113}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Discussion}{113}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{114}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{114}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{114}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Results}{114}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Discussion}{114}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{114}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Introduction}{114}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Results}{114}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Discussion}{114}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{114}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Introduction}{114}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Results}{116}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Discussion}{116}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{116}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Introduction}{116}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Results}{116}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Discussion}{116}{subsection.7.4.3}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{117}{chapter.8}
-\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{117}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Introduction}{117}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Results}{117}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Discussion}{117}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}The Completed Model}{118}{chapter.9}
-\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{118}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix}{119}{appendix.A}
-\contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{119}{section.A.1}
-\contentsline {section}{\numberline {A.2}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{119}{section.A.2}
-\contentsline {chapter}{List of Abbreviations}{122}{appendix*.23}
-\contentsline {chapter}{References}{123}{appendix*.23}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Analysis of Convergence}{115}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Analysis of Correlation}{115}{subsubsection.6.1.2.4}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{115}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Microaerobic Nitric Oxide Reduction}{115}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Introduction}{115}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Results}{115}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Discussion}{115}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{115}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Introduction}{115}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Results}{115}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Discussion}{115}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{116}{chapter.7}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{116}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{116}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Results}{116}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Discussion}{116}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{116}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Introduction}{116}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Results}{116}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Discussion}{116}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{116}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{116}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Results}{118}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Discussion}{118}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{118}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{118}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Results}{118}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Discussion}{118}{subsection.7.4.3}
+\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{119}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{119}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{119}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Results}{119}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Discussion}{119}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {9}The Completed Model}{120}{chapter.9}
+\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{120}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix}{121}{appendix.A}
+\contentsline {section}{\numberline {A.1}Adaptive step sizes and numerical instability}{121}{section.A.1}
+\contentsline {section}{\numberline {A.2}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{121}{section.A.2}
+\contentsline {chapter}{List of Abbreviations}{124}{appendix*.23}
+\contentsline {chapter}{References}{125}{appendix*.23}

@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=05-oxygenreduction/oxygenreduction.tex
+lastDocument=06-noreduction/noreduction.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -136,10 +136,10 @@ order=-1
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=4
+column=346
 encoding=UTF-8
 highlight=LaTeX
-line=117
+line=250
 mode=LaTeX
 open=true
 order=7
@@ -189,7 +189,7 @@ archive=true
 column=0
 encoding=UTF-8
 highlight=LaTeX
-line=294
+line=18
 mode=LaTeX
 open=true
 order=0
@@ -236,20 +236,20 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=390
+column=123
 encoding=UTF-8
 highlight=LaTeX
-line=360
+line=193
 mode=LaTeX
 open=true
 order=3
 
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=0
+column=245
 encoding=UTF-8
 highlight=LaTeX
-line=53
+line=58
 mode=LaTeX
 open=true
 order=2
@@ -286,10 +286,10 @@ order=4
 
 [item:Thesis.tex]
 archive=true
-column=1
+column=5
 encoding=UTF-8
 highlight=LaTeX
-line=186
+line=127
 mode=LaTeX
 open=true
 order=5
@@ -315,8 +315,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=4
-CursorLine=117
+CursorColumn=346
+CursorLine=250
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=369
@@ -328,15 +328,15 @@ CursorLine=187
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
 CursorColumn=0
-CursorLine=294
+CursorLine=18
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=390
-CursorLine=360
+CursorColumn=123
+CursorLine=193
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=0
-CursorLine=53
+CursorColumn=245
+CursorLine=58
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
 CursorColumn=69
@@ -351,8 +351,8 @@ CursorColumn=81
 CursorLine=3
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=1
-CursorLine=186
+CursorColumn=5
+CursorLine=127
 
 [view-settings,view=0,item:appendix/appendix.tex]
 CursorColumn=130
