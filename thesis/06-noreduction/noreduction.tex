@@ -86,15 +86,19 @@ The initial probability distributions used to start the Monte-Carlo runs are sho
 \end{figure}
 
 \subsubsection{Parameter Estimation Results}
-The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
-\begin{figure}[tbp]
- \centering
- \includegraphics[width=14cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
- % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset.}
- \label{fig:nosim}
-\end{figure}
-The model was able to generate a parameter set from the prior probability distributions that could accommodate all the new features of the dataset as evidenced by the closeness of fit of the solved output to the experimental data. This parameter set will also still be able to model simple oxygen reduction.
+The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. This generated parameter trajectories from each of the 3 datasets. The second dataset was still analysed even though it is unlikely that the model will successfully be able to be parametrised from it. Unfortunately upon examination of the \textit{BOF} values from the MHMC output and the best-fitting solved output it was clear that the prior probability distributions in conjunction with the model are incapable of accurately describing the experimental data. This strongly suggested that the new prior probability distributions (those obtained from the literature for the NO related components) were incorrect.
+
+The result from dataset 3
+
+%A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
+%\begin{figure}[tbp]
+% \centering
+% \includegraphics[width=14cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
+% % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+% \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset.}
+% \label{fig:nosim}
+%\end{figure}
+%The model was able to generate a parameter set from the prior probability distributions that could accommodate all the new features of the dataset as evidenced by the closeness of fit of the solved output to the experimental data. This parameter set will also still be able to model simple oxygen reduction.
 \subsubsection{Analysis of Convergence}
 \subsubsection{Analysis of Correlation}
 \begin{table}[p]
