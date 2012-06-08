@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Jun  7 20:04:53 2012"
+@timestamp def "Fri Jun  8 13:10:06 2012"
 @with box
 @    box on
 @    box loctype view
@@ -423,7 +423,7 @@
 @    xaxis  label font 0
 @    xaxis  label color 1
 @    xaxis  label place normal
-@    xaxis  tick on
+@    xaxis  tick off
 @    xaxis  tick major 100
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
@@ -439,7 +439,7 @@
 @    xaxis  tick minor linestyle 1
 @    xaxis  tick minor grid off
 @    xaxis  tick minor size 0.500000
-@    xaxis  ticklabel on
+@    xaxis  ticklabel off
 @    xaxis  ticklabel format general
 @    xaxis  ticklabel prec 5
 @    xaxis  ticklabel formula ""
