@@ -84,11 +84,21 @@ The initial probability distributions used to start the Monte-Carlo runs are sho
  \caption[Prior probability distributions for aerobic nitric oxide reduction]{{\bf Prior probability distributions for aerobic nitric oxide reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
  \label{fig:aer_no_priors}}
 \end{figure}
+\afterpage{\clearpage}
 
 \subsubsection{Parameter Estimation Results}
 The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. This generated parameter trajectories from each of the 3 datasets. The second dataset was still analysed even though it is unlikely that the model will successfully be able to be parametrised from it. Unfortunately upon examination of the \textit{BOF} values from the MHMC output and the best-fitting solved output it was clear that the prior probability distributions in conjunction with the model are incapable of accurately describing the experimental data. This strongly suggested that the new prior probability distributions (those obtained from the literature for the NO related components) were incorrect.
 
-The result from dataset 3
+The result from dataset 3 is shown in Figure \ref{fig:nosim3.1}.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim3.pdf}
+ % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance appears to be being modelled reasonably well.}
+ \label{fig:nosim3.1}
+\end{figure}
+\afterpage{\clearpage}
 
 %A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 %\begin{figure}[tbp]
