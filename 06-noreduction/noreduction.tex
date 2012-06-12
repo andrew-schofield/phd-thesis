@@ -93,6 +93,8 @@ In dataset 1, the reduction of oxygen appears to be being modelled quite accurat
 
 In dataset 3, reduction of oxygen is being modelled very poorly as the parameters produced by the parameter estimation system do not appear to have captured the behaviour that causes oxygen reduction to cease. In this case the \textit{BOF} value has been minimised by generating a linear reduction of oxygen which doesn't accurately represent either of the observed rates. As has been noted about dataset 1, the rate of nitric oxide diffusion is incorrect, thus in order to obtain a sensible rate for removal/reduction of nitric oxide the rate constants for nitric oxide reduction will have to have been increased artificially. This combination of parameters also means that the reduction in rate of oxygen reduction cannot be modelled correctly. This behaviour should be attributed to temporary chemical inhibition of \cbbthree{} by nitric oxide itself (which is now present in high enough concentrations), and by competition for electrons with NorB.
 
+As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions were incapable of producing parameter sets which accurately model the experimental data, thus making the posterior probability distributions generated invalid. The prior probability distributions were therefore altered in an attempt to improve fitting. In addition to altered prior probability distributions a slightly different parameter estimation protocol was employed which is detailed in the next section.
+
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
@@ -108,6 +110,10 @@ In dataset 3, reduction of oxygen is being modelled very poorly as the parameter
  \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance appears to be being modelled reasonably well.}
  \label{fig:nosim3.1}
 \end{figure}
+
+\subsubsection{Adapted Parameter Estimation Protocol}
+
+As dataset 1 was the simplest of the experimental datasets which describe the effects of addition of nitric oxide to aerobically respiring cultures, this dataset could be run as a standalone step in the Bayesian scheme for parameter estimation. This dataset described some of the experimentally observed behaviour in isolation, such as the removal of nitric oxide by diffusion alone, therefore could generate a posterior probability distribution for datasets where that parameter could \textit{not} be examined in isolation. Dataset 3 ideally required this information as a prior probability distribution as the experimentally observed disappearance of nitric oxide was expected to be due to both diffusion and reduction (by NorB). Therefore dataset 1 could be used to inform the prior probability distribution of dataset 3. Statistically this did not pose a problem even though the two datasets were run in parallel previously. This was because the numerical output from those previous attempts was not being used as input for the subsequent attempts.
 
 %A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 %\begin{figure}[tbp]
