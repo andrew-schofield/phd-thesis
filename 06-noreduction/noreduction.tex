@@ -87,9 +87,19 @@ The initial probability distributions used to start the Monte-Carlo runs are sho
 \afterpage{\clearpage}
 
 \subsubsection{Parameter Estimation Results}
-The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. This generated parameter trajectories from each of the 3 datasets. The second dataset was still analysed even though it is unlikely that the model will successfully be able to be parametrised from it. Unfortunately upon examination of the \textit{BOF} values from the MHMC output and the best-fitting solved output it was clear that the prior probability distributions in conjunction with the model are incapable of accurately describing the experimental data. This strongly suggested that the new prior probability distributions (those obtained from the literature for the NO related components) were incorrect.
+The parameter estimation process was run in the same fashion as that described in Chapter \ref{chap:oxygenreduction}. The 3 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:aer_no_priors}. This generated parameter trajectories from each of the 3 datasets. The second dataset was still analysed even though it is unlikely that the model will successfully be able to be parametrised from it. Unfortunately upon examination of the \textit{BOF} values from the MHMC output and the best-fitting solved output it was clear that the prior probability distributions in conjunction with the model are incapable of accurately describing the experimental data. This strongly suggested that the new prior probability distributions (those obtained from the literature for the NO related components) were incorrect. The solved output from datasets 1 \& 3 are shown in Figures \ref{fig:nosim1.1} \& \ref{fig:nosim3.1} respectively.
 
-The result from dataset 3 is shown in Figure \ref{fig:nosim3.1}.
+In dataset 1, the reduction of oxygen appears to be being modelled quite accurately. This is due to the largely featureless nature of the reduction curve which can easily be accommodated by the wide prior probability distributions given for the parameters involved. The rate change upon addition of a small amount of nitric oxide is only very slight, thus a perfectly straight line will fit it very well. As can be seen however, nitric oxide removal by diffusion is being modelled very poorly indeed. There is no active NorB in this culture, thus there is no modelled nitric oxide reduction. The prior distribution for the diffusion rate of nitric oxide is clearly incorrect, as nitric oxide removal in the solved output is virtually non-existent.
+
+In dataset 3, reduction of oxygen is being modelled very poorly as the parameters produced by the parameter estimation system do not appear to have captured the behaviour that causes oxygen reduction to cease. In this case the \textit{BOF} value has been minimised by generating a linear reduction of oxygen which doesn't accurately represent either of the observed rates. As has been noted about dataset 1, the rate of nitric oxide diffusion is incorrect, thus in order to obtain a sensible rate for removal/reduction of nitric oxide the rate constants for nitric oxide reduction will have to have been increased artificially. This combination of parameters also means that the reduction in rate of oxygen reduction cannot be modelled correctly. This behaviour should be attributed to temporary chemical inhibition of \cbbthree{} by nitric oxide itself (which is now present in high enough concentrations), and by competition for electrons with NorB.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
+ % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance is not being modelled at all.}
+ \label{fig:nosim1.1}
+\end{figure}
 
 \begin{figure}[tbp]
  \centering
@@ -98,7 +108,6 @@ The result from dataset 3 is shown in Figure \ref{fig:nosim3.1}.
  \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance appears to be being modelled reasonably well.}
  \label{fig:nosim3.1}
 \end{figure}
-\afterpage{\clearpage}
 
 %A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 %\begin{figure}[tbp]
@@ -181,10 +190,10 @@ The result from dataset 3 is shown in Figure \ref{fig:nosim3.1}.
 \end{table}
 \afterpage{\clearpage}
 \subsection{Discussion}
-\section{Microaerobic Nitric Oxide Reduction}
-\subsection{Introduction}
-\subsection{Results}
-\subsection{Discussion}
+%\section{Microaerobic Nitric Oxide Reduction}
+%\subsection{Introduction}
+%\subsection{Results}
+%\subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitric Oxide Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitric Oxide Reduction in nsrR- mutant}}
 \subsection{Introduction}
  The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
