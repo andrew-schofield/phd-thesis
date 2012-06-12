@@ -99,7 +99,7 @@ As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions we
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance is not being modelled at all.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. Nitric oxide disappearance is not being modelled at all.}
  \label{fig:nosim1.1}
 \end{figure}
 
@@ -107,13 +107,39 @@ As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions we
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim3.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance appears to be being modelled reasonably well.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. Nitric oxide disappearance is now being modelled much more accurately than in Figure \ref{fig:nosim1.1}. Oxygen reduction appears to be modelled correctly also.}
  \label{fig:nosim3.1}
 \end{figure}
 
 \subsubsection{Adapted Parameter Estimation Protocol}
 
 As dataset 1 was the simplest of the experimental datasets which describe the effects of addition of nitric oxide to aerobically respiring cultures, this dataset could be run as a standalone step in the Bayesian scheme for parameter estimation. This dataset described some of the experimentally observed behaviour in isolation, such as the removal of nitric oxide by diffusion alone, therefore could generate a posterior probability distribution for datasets where that parameter could \textit{not} be examined in isolation. Dataset 3 ideally required this information as a prior probability distribution as the experimentally observed disappearance of nitric oxide was expected to be due to both diffusion and reduction (by NorB). Therefore dataset 1 could be used to inform the prior probability distribution of dataset 3. Statistically this did not pose a problem even though the two datasets were run in parallel previously. This was because the numerical output from those previous attempts was not being used as input for the subsequent attempts.
+
+\subsubsection{Secondary Parameter Estimation Results}
+Trial and error was employed to produce an initial informed prior value for $\gamma$, the rate of diffusion of nitric oxide, which was the problematic parameter for dataset 1 previously. This value was estimated to be $\approx 0.02~\mu Ms^{-1}$ based upon visual comparison of the solved output against the experimental data. This value was then used as a prior with no bounds so that the parameter estimation algorithm could home in on the correct distribution. All the other prior probability distributions were left unchanged from the first attempt.
+
+Figure \ref{fig:nosim1.2} shows greatly improved fitting of solved data to experimental values suggesting that the parameters are now correct (or at least reasonably close) for describing the removal of nitric oxide. The model is still not capturing the small effect on oxygen reduction rate visible in the experimental data however. A linear regression of the solved oxygen data suggests that it is in fact a perfectly straight line ($R^2=0.9999$, source data not shown) whereas there should be a slight elbow upon addition of nitric oxide. This was not considered to be a significant problem here, as the effect is far more visible in the subsequent dataset(s), therefore would be more easily modelled.
+
+The posterior probability distributions that this dataset produced after parameter estimation are shown in Figure \ref{fig:dataset1posterior1}. These distributions can be used as prior probability distributions for parameter estimation of dataset 3, as these now include the missing information about rate of removal of nitric oxide by diffusion.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1-2.pdf}
+ % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the second attempt at fitting the model to experimental data using priors determined from literature values in addition to manually adjusted priors. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance is not being modelled at all.}
+ \label{fig:nosim1.2}
+\end{figure}
+
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/posteriors-1.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Posterior Distributions for Dataset 1]{{\bf Posterior Distributions for Dataset 1}. The posterior probability distributions for dataset 1 of nitric oxide removal. All the parameters are still well within their prior bounds with the exception of $\gamma$ which had a manually altered starting value which was significantly different from the original prior distribution. The initial reduced state posteriors appear as point values as the perturbation kernel was disabled for these values (starting value is largely irrelevant).
+ \label{fig:dataset1posterior1}}
+\end{figure}
+
+\subsubsection{Tertiary Parameter Estimation Results}
+Work ongoing.
 
 %A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
 %\begin{figure}[tbp]
@@ -126,75 +152,75 @@ As dataset 1 was the simplest of the experimental datasets which describe the ef
 %The model was able to generate a parameter set from the prior probability distributions that could accommodate all the new features of the dataset as evidenced by the closeness of fit of the solved output to the experimental data. This parameter set will also still be able to model simple oxygen reduction.
 \subsubsection{Analysis of Convergence}
 \subsubsection{Analysis of Correlation}
-\begin{table}[p]
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.5}
-  \centering
-  \rotatebox{90}{
-  \begin{minipage}{24.4cm}
-  \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-    \hline
-    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C \\
-    \hline
-    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & 0.009239 & 0.017156 & 0.049769 & -0.011922 & 0.020906 & 0.022824 & 0.033631 \\
-    \hline
-    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.027037 & -0.083623 & 0.052659 & -0.040318 & -0.202936 & \cellcolor{orange}-0.411031 \\
-    \hline
-    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.002919 & 0.000809 & -0.013785 & 0.007012 & 0.022641 \\
-    \hline
-    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.038259 & \cellcolor{orange}-0.332178 & 0.199383 & -0.152613 \\
-    \hline
-    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.03624 & -0.087711 & -0.034303 \\
-    \hline
-    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.083179 & -0.043061 \\
-    \hline
-    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}-0.577183 \\
-    \hline
-    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
-    \hline
-  \end{tabular}
-  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 2.} This table shows the $R$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
-  \label{tab:noregress1}}
-  \end{minipage}
-  }
-\end{table}
-\afterpage{\clearpage}
-%\end{landscape}
-\begin{table}[p]
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.5}
-  \centering
-  \rotatebox{90}{
-  \begin{minipage}{24.4cm}
-  \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-    \hline
-    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C \\
-    \hline
-    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ &0.06739 & 0.005008 & 0.222959 & -0.077916 & -0.243691 & 0.056941 & -0.036059 \\
-    \hline
-    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.249 & -0.173314 & \cellcolor{orange}0.304448 & 0.018672 & \cellcolor{orange}-0.487193 & \cellcolor{orange}-0.313064 \\
-    \hline
-    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.065203 & -0.033434 & 0.053464 & -0.026229 & -0.174494 \\
-    \hline
-    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.276682 & -0.104876 & 0.250671 & -0.210795 \\
-    \hline
-    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.146998 & \cellcolor{orange}-0.496387 & 0.243878 \\
-    \hline
-    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.158161 & \cellcolor{orange}-0.397437 \\
-    \hline
-    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}-0.624574 \\
-    \hline
-    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
-    \hline
-  \end{tabular}
-  \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 3.} This table shows the $R$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
-  \label{tab:noregress2}}
-  \end{minipage}
-  }
-\end{table}
-\afterpage{\clearpage}
+% \begin{table}[p]
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.5}
+%   \centering
+%   \rotatebox{90}{
+%   \begin{minipage}{24.4cm}
+%   \centering
+%   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+%     \hline
+%     \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C \\
+%     \hline
+%     \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ & 0.009239 & 0.017156 & 0.049769 & -0.011922 & 0.020906 & 0.022824 & 0.033631 \\
+%     \hline
+%     \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.027037 & -0.083623 & 0.052659 & -0.040318 & -0.202936 & \cellcolor{orange}-0.411031 \\
+%     \hline
+%     \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.002919 & 0.000809 & -0.013785 & 0.007012 & 0.022641 \\
+%     \hline
+%     \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.038259 & \cellcolor{orange}-0.332178 & 0.199383 & -0.152613 \\
+%     \hline
+%     \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.03624 & -0.087711 & -0.034303 \\
+%     \hline
+%     \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.083179 & -0.043061 \\
+%     \hline
+%     \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}-0.577183 \\
+%     \hline
+%     \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
+%     \hline
+%   \end{tabular}
+%   \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 2.} This table shows the $R$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
+%   \label{tab:noregress1}}
+%   \end{minipage}
+%   }
+% \end{table}
+% \afterpage{\clearpage}
+% %\end{landscape}
+% \begin{table}[p]
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.5}
+%   \centering
+%   \rotatebox{90}{
+%   \begin{minipage}{24.4cm}
+%   \centering
+%   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+%     \hline
+%     \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C \\
+%     \hline
+%     \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ &0.06739 & 0.005008 & 0.222959 & -0.077916 & -0.243691 & 0.056941 & -0.036059 \\
+%     \hline
+%     \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.249 & -0.173314 & \cellcolor{orange}0.304448 & 0.018672 & \cellcolor{orange}-0.487193 & \cellcolor{orange}-0.313064 \\
+%     \hline
+%     \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.065203 & -0.033434 & 0.053464 & -0.026229 & -0.174494 \\
+%     \hline
+%     \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.276682 & -0.104876 & 0.250671 & -0.210795 \\
+%     \hline
+%     \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.146998 & \cellcolor{orange}-0.496387 & 0.243878 \\
+%     \hline
+%     \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.158161 & \cellcolor{orange}-0.397437 \\
+%     \hline
+%     \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}-0.624574 \\
+%     \hline
+%     \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
+%     \hline
+%   \end{tabular}
+%   \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 3.} This table shows the $R$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
+%   \label{tab:noregress2}}
+%   \end{minipage}
+%   }
+% \end{table}
+% \afterpage{\clearpage}
 \subsection{Discussion}
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
