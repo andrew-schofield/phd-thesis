@@ -73,13 +73,14 @@
 \contentsline {subsection}{\numberline {6.1.2}Experimental Results}{107}{subsection.6.1.2}
 \contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{110}{subsubsection.6.1.2.1}
 \contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{113}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Analysis of Convergence}{118}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Analysis of Correlation}{118}{subsubsection.6.1.2.4}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{118}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{118}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Introduction}{118}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Results}{118}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Discussion}{118}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{115}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Analysis of Convergence}{116}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}Analysis of Correlation}{116}{subsubsection.6.1.2.5}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{116}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{116}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Introduction}{116}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Results}{116}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Discussion}{116}{subsection.6.2.3}
 \contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{119}{chapter.7}
 \contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{119}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Introduction}{119}{subsection.7.1.1}
