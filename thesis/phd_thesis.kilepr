@@ -236,20 +236,20 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=123
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=193
+line=204
 mode=LaTeX
 open=true
 order=3
 
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=26
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=58
+line=141
 mode=LaTeX
 open=true
 order=2
@@ -331,12 +331,12 @@ CursorColumn=0
 CursorLine=18
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=123
-CursorLine=193
+CursorColumn=0
+CursorLine=204
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=26
-CursorLine=58
+CursorColumn=0
+CursorLine=141
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
 CursorColumn=69

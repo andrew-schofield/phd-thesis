@@ -233,7 +233,6 @@
 \singlespacing
 
 \printnomenclature[3cm]
-
 \doublespacing
 
 \renewcommand{\bibname}{References}
