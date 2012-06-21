@@ -163,16 +163,75 @@ The concentration of nitric oxide present will also affect the rate of \cbbthree
  \label{fig:nosim3.2}
 \end{figure}
 
-%A representative example of the solved output from one of the trajectories from the experimental dataset shown in Figure \ref{fig:nodata} is shown in Figure \ref{fig:nosim}. This figure was generated from the set of parameters that produced the most fit output compared to the input dataset.
-%\begin{figure}[tbp]
-% \centering
-% \includegraphics[width=14cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1.pdf}
-% % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
-% \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide is introduced to the system. The solved output, using prior probabilities from the oxygen reduction dataset show an almost perfect match to the features of the experimental dataset.}
-% \label{fig:nosim}
-%\end{figure}
-%The model was able to generate a parameter set from the prior probability distributions that could accommodate all the new features of the dataset as evidenced by the closeness of fit of the solved output to the experimental data. This parameter set will also still be able to model simple oxygen reduction.
+The posterior probability distributions generated from this third round of parameter estimation are shown in Figure \ref{fig:dataset3posterior1}. The distributions generated for the parameters relating solely to oxygen reduction were broadly similar to the prior probability distributions which was to be expected and confirms that these distributions capable of describing the oxygen reduction behaviour. The rate of NO reduction by NorB appeared to be very similar to the prior probability distribution however the rate of NorB reduction seemed to have been vastly overestimated in the prior distribution. The prior distribution for this parameter was unknown however, and was set to a very wide lognormal with mean of 1. The rate of NO diffusion ($\gamma$) tended to settle at the lower end of the prior distribution. The most interesting posterior probability distributions were those of $k_5$ and $k_6$ which actually had to be freely perturbed, rather than be constrained by their prior probability distributions. Neither of these two parameters settled anywhere near the prior probability distributions. Further processing on these data revealed that the ratio between the two values was always between $\approx 10000$ and $\approx 20000$. $k_5$ never settles on a value less than $\approx 1800~\mu M^{-1}s^{-1}$. This value turned out to be a critical threshold to at which the inactivation of \cbbthree{} occurs. At lower values of $k_5$ the inactivation is slower than observed in the experimental dataset and the in the solved data the ``elbow'' is shifted visibly to the right. At or above this threshold the inactivation point closely matches that seen in the experimental dataset. It appeared that that absolute values of $k_5$ and $k_6$ are unimportant, only that $k_5$ is greater than $\approx 1800~\mu M^{-1}s^{-1}$ and that the ratio of $k_5:k_6 \approx 10000:1$ to $20000:1$. Unfortunately this meant that it was impossible to determine if the obtained posterior probability distributions were actually representative of the true distributions.
+
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/posteriors-2.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Posterior Distributions for Dataset 3]{{\bf Posterior Distributions for Dataset 3}. The posterior probability distributions for dataset 3 of nitric oxide removal. The initial reduced state posteriors appear as point values as the perturbation kernel was disabled for these values (starting value is largely irrelevant).
+ \label{fig:dataset3posterior1}}
+\end{figure}
+
+A comparison between the prior and posterior distributions can be seen in tabular form in Table \ref{tab:noPstat}. This table shows the parameters of the idealised lognormal distributions which describe the obtained probability distributions to more easily represent the data.
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$ (shape not sd)\\
+\midrule
+$k_1$ && 450 & 35 & 395.75 & 0.1417\\
+$k_3$ && 4.748 & 0.404 & 5.44 & 0.1196\\
+$l_1$ && 6 & 2 & 2.35 & 0.5737\\
+$l_3$ && 1 & 2 & 0.035 & 0.27368\\
+$k_5$ && 100 & 10 & 4170.95 & 0.40406\\
+$k_6$ && 38 & 8 & 0.3 & 0.51907\\
+$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & 0.03505\\
+g && 1.053 & 0.099 & 1.072 & 0.09142\\
+f && 9.10 & 1.18 & 8.60 & 0.27\\
+$\gamma$ && 0.00014 & $4.72\times 10^{-6}$ & 0.017 & 0.08983\\
+Q && 3.59 & 0.132 & \\
+X && 15.177 & 0.247 & \\
+B && 0.143 & 0.159 & \\
+C && 0.143 & 0.159 & \\
+$Q_a$ && 0.24 & 0.034 & \\
+$X_a$ && 3.176 & 0.039 & \\
+$B_a$ && 0.024 & 0.036 & \\
+$C_a$ && 0.024 & 0.036 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from dataset 3 (after being run on dataset 1), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
+\label{tab:noPstat}}
+\end{table}
+
 \subsubsection{Analysis of Convergence}
+The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully.
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{ccc|ccc}
+\toprule
+\textbf{Parameter} && \textbf{R value} & \textbf{Parameter} && \textbf{R value}\\
+\midrule
+$k_1$ && 1.25 & g && 4.13\\
+$k_3$ && 4.65 & f && 5.33\\
+$l_1$ && 13.48 & $\gamma$ && 2.64\\
+$l_3$ && 7.25 & Q && 7.43\\
+$k_5$ && 18.22 & X && 4.14\\
+$k_6$ && 29.81 & B && 4.81\\
+$\beta$ && 1.33 & C && 6.50 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from dataset 3. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
+\label{tab:noRstat}}
+\end{table}
+
 \subsubsection{Analysis of Correlation}
 % \begin{table}[p]
 % \setlength{\tabcolsep}{5pt}
@@ -209,40 +268,6 @@ The concentration of nitric oxide present will also affect the rate of \cbbthree
 % \end{table}
 % \afterpage{\clearpage}
 % %\end{landscape}
-% \begin{table}[p]
-% \setlength{\tabcolsep}{5pt}
-% \renewcommand{\arraystretch}{1.5}
-%   \centering
-%   \rotatebox{90}{
-%   \begin{minipage}{24.4cm}
-%   \centering
-%   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-%     \hline
-%     \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}C \\
-%     \hline
-%     \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}$1$ &0.06739 & 0.005008 & 0.222959 & -0.077916 & -0.243691 & 0.056941 & -0.036059 \\
-%     \hline
-%     \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.249 & -0.173314 & \cellcolor{orange}0.304448 & 0.018672 & \cellcolor{orange}-0.487193 & \cellcolor{orange}-0.313064 \\
-%     \hline
-%     \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.065203 & -0.033434 & 0.053464 & -0.026229 & -0.174494 \\
-%     \hline
-%     \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.276682 & -0.104876 & 0.250671 & -0.210795 \\
-%     \hline
-%     \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & -0.146998 & \cellcolor{orange}-0.496387 & 0.243878 \\
-%     \hline
-%     \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & 0.158161 & \cellcolor{orange}-0.397437 \\
-%     \hline
-%     \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ & \cellcolor{orange}-0.624574 \\
-%     \hline
-%     \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}$1$ \\
-%     \hline
-%   \end{tabular}
-%   \caption[Regression Analysis of Oxygen Reduction Parameters]{{\bf Regression Analysis of Oxygen Reduction Parameters for Dataset 3.} This table shows the $R$ values from linear regression analysis on the combined parameter trajectories for Oxygen reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
-%   \label{tab:noregress2}}
-%   \end{minipage}
-%   }
-% \end{table}
-% \afterpage{\clearpage}
 \subsection{Discussion}
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
