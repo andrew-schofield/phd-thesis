@@ -239,17 +239,17 @@ archive=true
 column=0
 encoding=UTF-8
 highlight=LaTeX
-line=204
+line=264
 mode=LaTeX
 open=true
 order=3
 
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=0
+column=16
 encoding=UTF-8
 highlight=LaTeX
-line=142
+line=265
 mode=LaTeX
 open=true
 order=2
@@ -332,11 +332,11 @@ CursorLine=18
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
 CursorColumn=0
-CursorLine=204
+CursorLine=264
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=0
-CursorLine=142
+CursorColumn=16
+CursorLine=265
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
 CursorColumn=69
