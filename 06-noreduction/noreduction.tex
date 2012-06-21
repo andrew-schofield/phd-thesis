@@ -209,7 +209,7 @@ $C_a$ && 0.024 & 0.036 & \\
 \end{table}
 
 \subsubsection{Analysis of Convergence}
-The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully.
+The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. Some of the oxygen reduction parameters actually had slightly larger R statistic values than the results from Chapter \ref{chap:oxygenreduction}.
 
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
@@ -233,6 +233,24 @@ $\beta$ && 1.36 & C && 4.04 \\
 \end{table}
 
 \subsubsection{Analysis of Correlation}
+A correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapter \ref{chap:oxygenreduction}. The upper-triangle correlation matrix is shown in Table \ref{tab:noregress1}. The correlation matrix shows a much greater degree of correlation between parameter values than was seen in for oxygen reduction alone. There were much stronger correlations between C and $k_3$ and C and X for this dataset than for oxygen reduction, but the direction of correlation was the same which made sense. Additionally there was a very strong positive correlation between $k_5$ and $k_6$, which given the brief discussion earlier in the chapter was to be expected. As it appeared that the ratio and not the absolute values of $k_5$ and $k_6$ was important, a strong positive correlation between values would achieve this.
+
+There were a number of other interesting correlation between parameters also. $l_3$ - the rate of reduction of NorB appeared to be strongly negatively correlated to $\gamma$- the rate of NO loss. This could be explained by the model needing to balance the removal of NO by simple diffusion and by reduction. Increasing the rate of diffusion could be offset by decreasing the rate of reduction of NorB which in turn would slow down NO reduction. There also appeared to be a strong negative correlation between the amount of quinones, Q, and $l_3$, which would make sense if the model were trying to maintain a constant level of NorB reduction. More quinones would lead to a slower rate of reduction being required to maintain the same level of reduction. This same negative correlation can also be observed between Q and $k_3$ \& C to achieve the same result for reduction state of \cbbthree{}.The positions in the electron transport chain of these correlations are shown below, marked by superscript $\blacktriangle$, $\square$, $\bigstar$, $\Diamond$ and $\clubsuit$.
+\begin{equation*}
+\xrightarrow{g}Q^\clubsuit\xrightarrow{f}X^{\blacktriangle}\xrightarrow{k_3^{\square}}C^{\square\blacktriangle}\xrightarrow{k_1}O_2
+\end{equation*}
+\begin{equation*}
+NO + C_a \mathop{\leftrightharpoons}_{k_6^{\bigstar}}^{k_5^{\bigstar}}NO\mhyphen C_X
+\end{equation*}
+\begin{equation*}
+\xrightarrow{g}Q^\clubsuit\xrightarrow{l_1}B\xrightarrow{l_3^{\Diamond\clubsuit}} NO
+\end{equation*}
+\begin{equation*}
+NO\xrightarrow{\gamma^\lozenge}\emptyset
+\end{equation*}
+
+
+
 \begin{table}[p]
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.5}
@@ -281,12 +299,16 @@ $\beta$ && 1.36 & C && 4.04 \\
 \afterpage{\clearpage}
 %\end{landscape}
 \subsection{Discussion}
+The parameter distributions obtained from this more convoluted set of datasets are capable of modelling the experimental data impressively well given the lack of prior information available and taking into account the assumptions made about the system. Oxygen reduction can be modelled almost perfectly using posterior distributions from earlier datasets which will still fit new data. Nitric oxide reduction and removal was modelled less well, however it was not clear whether this was due to a limitation of the model itself, or and inherent issue with the experimental set-up. In reality it was probably a combination of both which would be impossible to decouple. The general features of nitric oxide reduction were captured in the model even if a precise fit wasn't achieved. There were a large number of unknowns in these experimental datasets, it was not clear for example how much NorB was present in dataset 3, therefore the concentrations and rates obtained will most likely not reflect \textit{in vivo} values, however they do provide valuable information about how they interact with other parameters.
+
+As more parameters had been populated in the model it was now possible to examine the reduction states of the various enzymes in the system as respiration progresses. A plot showing these states can be seen in Figure.
+
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
 %\subsection{Results}
 %\subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitric Oxide Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitric Oxide Reduction in nsrR- mutant}}
-\subsection{Introduction}
- The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
-\subsection{Results}
-\subsection{Discussion}
+%\subsection{Introduction}
+ The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown). \textit{Either expand or remove this section}
+%\subsection{Results}
+%\subsection{Discussion}
