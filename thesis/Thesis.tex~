@@ -27,7 +27,7 @@
 \usepackage[table]{xcolor}
 \usepackage{svn-multi}
 \usepackage{afterpage}
-\svnid{$Id: Thesis.tex 223 2012-06-14 15:25:23Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 224 2012-06-14 15:36:20Z uncle_fungus $}
 
 \definecolor{dark-gray}{gray}{0.5}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -192,7 +192,7 @@
 
 \makeindex
 
-%\includeonly{./05-oxygenreduction/oxygenreduction}
+%\includeonly{./06-noreduction/noreduction}
 
 \begin{document}
 \frontmatter
@@ -203,7 +203,7 @@
 
 \doublespacing
 \begin{abstract}
-The bacterium \Nsm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} a mathematical model has been constructed which describes the behaviour of the respiratory system using a set of differential equations. A novel combination of experimental data gathering and successive Bayesian fitting was then used to populate and parametrise the model. The resulting model and parameter probability distributions represents a working system for predicting respiratory behaviour in \Nm{}
+The bacterium \Nsm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} a mathematical model has been constructed which describes the behaviour of the respiratory system using a set of differential equations. A novel combination of experimental data gathering and successive Bayesian fitting was then used to populate and parametrise the model. The resulting model and parameter probability distributions represents a working system for predicting respiratory behaviour in \Nm{}.
 \end{abstract}
 
 \singlespacing

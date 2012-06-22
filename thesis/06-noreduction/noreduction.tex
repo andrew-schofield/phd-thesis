@@ -46,7 +46,7 @@ The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxy
  \centering
  \includegraphics[height=10cm, trim=2cm 1cm 4cm 1cm]{./06-noreduction/data/aer-no-data.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 3~\mu M$) is introduced to respiring the system which also appears to have been partially primed for nitric oxide reduction.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 3~\mu M$) is introduced to respiring the system which also appears to have been partially primed for nitric oxide reduction. Note that the increase in nitric oxide concentration seen at the end of the dataset is most likely due to drift in the electrode.}
  \label{fig:nodata}
 \end{figure}
 The dataset in Figure \ref{fig:nodata} appears to show a system that was partially primed for microaerobic respiration. In this case it was speculated that there was a small amount of NorB (nitric oxide reductase) present. Initially the oxygen reduction was carried out in exactly the same manner as in Chapter \ref{chap:oxygenreduction}. Upon addition of nitric oxide, oxygen respiration slowed and almost stopped as a result of competition for electrons between \cbbthree{} and NorB, and the direct chemical inhibition of \cbbthree{} by NO. Nitric oxide started to be removed as a combination of diffusion (although this rate will be low as shown in the previous two datasets) and reduction via NorB. Once the NO has been removed from the system oxygen reduction resumes at almost the same rate as before and still has the same high affinity feature as the oxygen reduction datasets in Chapter \ref{chap:oxygenreduction}.
@@ -107,7 +107,7 @@ As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions we
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim3.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. Nitric oxide disappearance is now being modelled much more accurately than in Figure \ref{fig:nosim1.1}. Oxygen reduction appears to be modelled correctly also.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the first attempt at fitting the model to experimental data using priors determined from literature values. Nitric oxide disappearance is now being modelled much more accurately than in Figure \ref{fig:nosim1.1}. Oxygen reduction is not being modelled correctly and the best fitting parameters generate a straight line rather than capturing the stopping and restarting of oxygen reduction.}
  \label{fig:nosim3.1}
 \end{figure}
 
@@ -126,7 +126,7 @@ The posterior probability distributions that this dataset produced after paramet
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim1-2.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the second attempt at fitting the model to experimental data using priors determined from literature values in addition to manually adjusted priors. The parameters are clearly incapable of describing the effect that nitric oxide has on the rate of oxygen reduction. Nitric oxide disappearance is not being modelled at all.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the second attempt at fitting the model to experimental data using priors determined from literature values in addition to manually adjusted priors. Oxygen reduction is modelled almost perfectly, and the shape of the nitric oxide reduction curve is captured well also.}
  \label{fig:nosim1.2}
 \end{figure}
 
