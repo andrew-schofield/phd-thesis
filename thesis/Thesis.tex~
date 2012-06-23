@@ -29,9 +29,9 @@
 \usepackage{afterpage}
 \svnid{$Id: Thesis.tex 224 2012-06-14 15:36:20Z uncle_fungus $}
 
-\definecolor{dark-gray}{gray}{0.5}
+\definecolor{dark-gray}{gray}{0.8}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
-\definecolor{light-gray}{gray}{0.9}
+\definecolor{light-gray}{gray}{0.95}
 
 \usepackage{mathpazo}
 \linespread{1.05}        % Palatino needs more leading
@@ -192,7 +192,7 @@
 
 \makeindex
 
-%\includeonly{./06-noreduction/noreduction}
+%\includeonly{./05-oxygenreduction/oxygenreduction}
 
 \begin{document}
 \frontmatter
