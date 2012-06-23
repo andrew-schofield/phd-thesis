@@ -1,4 +1,4 @@
-\begin{thebibliography}{118}
+\begin{thebibliography}{121}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -340,6 +340,27 @@ Baker SC, Ferguson SJ, Ludwig B, Page MD, Richter OM, et~al. (1998) Molecular
 
 \bibitem[{Nicholls and Ferguson(1992)}]{Nicholls1992}
 Nicholls DG, Ferguson SJ (1992) Bioenergetics 3. 2nd ed., Academic Press.
+
+\bibitem[{Ferguson et~al.(1987)Ferguson, Jackson, and McEwan}]{Ferguson1987}
+Ferguson SJ, Jackson JB, McEwan AG (1987) Anaerobic Respiration in the
+  Rhodospirillaceae: Characterisation of Pathways and Evaluation of Roles in
+  Redox Balancing During Photosynthesis. FEMS Microbiology Reviews 46:
+  117--143.
+
+\bibitem[{Daldal et~al.(2001)Daldal, Mandaci, Winterstein, Myllykallio, Duyck
+  et~al.}]{Daldal2001}
+Daldal F, Mandaci S, Winterstein C, Myllykallio H, Duyck K, et~al. (2001)
+  Mobile Cytochrome c2 and Membrane-Anchored Cytochrome cy are Both Efficient
+  Electron Donors to the cbb3- and aa3-Type Cytochrome c Oxidases During
+  Respiratory Growth of \textit{Rhodobacter sphaeroides}. J Bacteriol 183:
+  2013--2024.
+
+\bibitem[{Pappas et~al.(2004)Pappas, Sram, Moskvin, Ivanov, Mackenzie
+  et~al.}]{Pappas2004}
+Pappas CT, Sram J, Moskvin OV, Ivanov PS, Mackenzie RC, et~al. (2004)
+  Construction and Validation of the \textit{Rhodobacter sphaeroides} 2.4.1 DNA
+  Microarray: Transcriptome Flexibility at Diverse Growth Modes. J Bacteriol
+  186: 4748--4758.
 
 \bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
 Kahlem P, Birney E (2006) Dry Work in a Wet World: Computation in Systems
