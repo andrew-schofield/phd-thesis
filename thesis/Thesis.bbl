@@ -1,4 +1,4 @@
-\begin{thebibliography}{121}
+\begin{thebibliography}{122}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -168,6 +168,10 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) Cis- and
   Trans-Acting Elements Involved in Regulation if NorB (NorZ), The Gene
   Encoding Nitric Oxide Reductase in \textit{Neisseria gonorrhoeae}.
   Microbiology 154: 226--239.
+
+\bibitem[{Blaise et~al.(2005)Blaise, Gauvin, Gangal, and Authier}]{Blaise2005}
+Blaise GA, Gauvin D, Gangal M, Authier S (2005) Nitric oxide, cell signaling
+  and cell death. Toxicology 208: 177--192.
 
 \bibitem[{Pitcher and Watmough(2004)}]{Pitcher2004}
 Pitcher RS, Watmough NJ (2004) The Bacterial Cytochrome cbb3 Oxidases.

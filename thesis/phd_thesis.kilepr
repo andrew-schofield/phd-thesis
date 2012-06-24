@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=06-noreduction/noreduction.tex
+lastDocument=01-introduction/introduction.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -136,10 +136,10 @@ order=-1
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=280
+column=636
 encoding=UTF-8
 highlight=LaTeX
-line=294
+line=100
 mode=LaTeX
 open=true
 order=7
@@ -315,8 +315,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=280
-CursorLine=294
+CursorColumn=636
+CursorLine=100
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
 CursorColumn=369
