@@ -24,7 +24,7 @@
   \item [{FNR}]\begingroup Fumarate and Nitrite reduction Regulator\nomeqref {1.0}
 		\nompageref{17}
   \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
-		\nompageref{18}
+		\nompageref{19}
   \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
 		\nompageref{74}
   \item [{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}
@@ -42,14 +42,16 @@
   \item [{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}
 		\nompageref{45}
   \item [{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}
-		\nompageref{19}
+		\nompageref{20}
   \item [{NorB}]\begingroup Nitric Oxide Reductase B from \textit{Neisseria} sp.\nomeqref {1.0}
 		\nompageref{16}
+  \item [{NOS}]\begingroup Nitric Oxide Synthase\nomeqref {1.0}
+		\nompageref{19}
   \item [{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}
 		\nompageref{17}
   \item [{OD}]\begingroup Optical Density\nomeqref {2.0}\nompageref{42}
   \item [{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}
-		\nompageref{36}
+		\nompageref{37}
   \item [{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}
 		\nompageref{37}
   \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
