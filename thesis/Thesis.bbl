@@ -1,4 +1,4 @@
-\begin{thebibliography}{122}
+\begin{thebibliography}{128}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -173,6 +173,44 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) Cis- and
 Blaise GA, Gauvin D, Gangal M, Authier S (2005) Nitric oxide, cell signaling
   and cell death. Toxicology 208: 177--192.
 
+\bibitem[{Wink et~al.(1991)Wink, Kasprzak, Maragos, Elespuru, Misra
+  et~al.}]{Wink1991}
+Wink DA, Kasprzak KS, Maragos CM, Elespuru RK, Misra M, et~al. (1991) DNA
+  deaminating ability and genotoxicity of nitric oxide and its progenitors.
+  Science 254: 1001--1003.
+
+\bibitem[{Hibbs et~al.(1988)Hibbs, Taintor, Vavrin, and Rachlin}]{Hibbs1988}
+Hibbs J Jr, Taintor RR, Vavrin Z, Rachlin EM (1988) Nitric oxide: a cytotoxic
+  activated macrophage effector molecule. Biochemical and Biophysical Research
+  Communications 157: 87--94.
+
+\bibitem[{Jones-Carson et~al.(2012)Jones-Carson, Laughlin, Stewart, Voskuil,
+  and Vázquez-Torres}]{Jones-Carson2012}
+Jones-Carson J, Laughlin JR, Stewart AL, Voskuil MI, Vázquez-Torres A (2012)
+  Nitric oxide-dependent killing of aerobic, anaerobic and persistent
+  Burkholderia pseudomallei. Nitric Oxide 27: 25--31.
+
+\bibitem[{Moir(2011)}]{Moir2011}
+Moir JW (2011) A Snapshot of a Pathogenic Bacterium Mid-evolution:
+  \textit{Neisseria meningitidis} is Becoming a Nitric Oxide-Tolerant Aerobe.
+  Biochemical Society Transactions 39: 1890--1894.
+
+\bibitem[{Privett et~al.(2012)Privett, Broadnax, Bauman, Riccio, and
+  Schoenfisch}]{Privett2012}
+Privett BJ, Broadnax AD, Bauman SJ, Riccio DA, Schoenfisch MH (2012)
+  Examination of bacterial resistance to exogenous nitric oxide. Nitric Oxide
+  26: 169--173.
+
+\bibitem[{Thomson et~al.(2008)Thomson, Stevanin, and Moir}]{Thomson2008}
+Thomson MJ, Stevanin TM, Moir JWB (2008) Measuring nitric oxide metabolism in
+  the pathogen Neisseria meningitidis. Methods in Enzymology 437: 539--560.
+
+\bibitem[{Laver et~al.(2010)Laver, Stevanin, Messenger, Lunn, Lee
+  et~al.}]{Laver2010}
+Laver JR, Stevanin TM, Messenger SL, Lunn AD, Lee ME, et~al. (2010) Bacterial
+  nitric oxide detoxification prevents host cell S-nitrosothiol formation: a
+  novel mechanism of bacterial pathogenesis. FASEB Journal 24: 286--295.
+
 \bibitem[{Pitcher and Watmough(2004)}]{Pitcher2004}
 Pitcher RS, Watmough NJ (2004) The Bacterial Cytochrome cbb3 Oxidases.
   Biochimica et Biophysica Acta (BBA) - Bioenergetics 1655: 388 -- 399.
@@ -245,11 +283,6 @@ Barth KR, Isabella VM, Clark VL (2009) Biochemical and Genomic Analysis of the
 Clark VL, Campbell LA, Palermo DA, Evans TM, Klimpel KW (1987) Induction and
   Repression of Outer Membrane Proteins by Anaerobic Growth of
   \textit{Neisseria gonorrhoeae}. Infection and Immunity 55: 1359--1364.
-
-\bibitem[{Moir(2011)}]{Moir2011}
-Moir JW (2011) A Snapshot of a Pathogenic Bacterium Mid-evolution:
-  \textit{Neisseria meningitidis} is Becoming a Nitric Oxide-Tolerant Aerobe.
-  Biochemical Society Transactions 39: 1890--1894.
 
 \bibitem[{Weiss et~al.(1991)Weiss, Friedrich, Hofhaus, and Preis}]{Weiss1991}
 Weiss H, Friedrich T, Hofhaus G, Preis D (1991) The Respiratory-Chain NADH
@@ -356,15 +389,15 @@ Ferguson SJ, Jackson JB, McEwan AG (1987) Anaerobic Respiration in the
 Daldal F, Mandaci S, Winterstein C, Myllykallio H, Duyck K, et~al. (2001)
   Mobile Cytochrome c2 and Membrane-Anchored Cytochrome cy are Both Efficient
   Electron Donors to the cbb3- and aa3-Type Cytochrome c Oxidases During
-  Respiratory Growth of \textit{Rhodobacter sphaeroides}. J Bacteriol 183:
-  2013--2024.
+  Respiratory Growth of \textit{Rhodobacter sphaeroides}. Journal of
+  Bacteriology 183: 2013--2024.
 
 \bibitem[{Pappas et~al.(2004)Pappas, Sram, Moskvin, Ivanov, Mackenzie
   et~al.}]{Pappas2004}
 Pappas CT, Sram J, Moskvin OV, Ivanov PS, Mackenzie RC, et~al. (2004)
   Construction and Validation of the \textit{Rhodobacter sphaeroides} 2.4.1 DNA
-  Microarray: Transcriptome Flexibility at Diverse Growth Modes. J Bacteriol
-  186: 4748--4758.
+  Microarray: Transcriptome Flexibility at Diverse Growth Modes. Journal of
+  Bacteriology 186: 4748--4758.
 
 \bibitem[{Kahlem and Birney(2006)}]{Kahlem2006}
 Kahlem P, Birney E (2006) Dry Work in a Wet World: Computation in Systems

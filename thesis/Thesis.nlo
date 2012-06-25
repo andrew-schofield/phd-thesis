@@ -8,10 +8,11 @@
 \nomenclatureentry{aNarP@[{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}|nompageref}{17}
 \nomenclatureentry{aNarQ@[{NarQ}]\begingroup Nitrate/Nitrite Response Sensor\nomeqref {1.0}|nompageref}{17}
 \nomenclatureentry{aNsrR@[{NsrR}]\begingroup Nitrite sensing repressor protein\nomeqref {1.0}|nompageref}{17}
-\nomenclatureentry{aHCO@[{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}|nompageref}{18}
-\nomenclatureentry{aNOR@[{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}|nompageref}{19}
+\nomenclatureentry{aNOS@[{NOS}]\begingroup Nitric Oxide Synthase\nomeqref {1.0}|nompageref}{19}
+\nomenclatureentry{aHCO@[{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}|nompageref}{19}
+\nomenclatureentry{aNOR@[{NOR}]\begingroup Nitric Oxide Reductase\nomeqref {1.0}|nompageref}{20}
 \nomenclatureentry{aDNA@[{DNA}]\begingroup Deoxyribonucleic Acid\nomeqref {1.5}|nompageref}{28}
-\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}|nompageref}{36}
+\nomenclatureentry{aODE@[{ODE}]\begingroup Ordinary Differential Equation\nomeqref {1.5}|nompageref}{37}
 \nomenclatureentry{aPDE@[{PDE}]\begingroup Partial Differential Equation\nomeqref {1.5}|nompageref}{37}
 \nomenclatureentry{aLSODA@[{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}|nompageref}{38}
 \nomenclatureentry{aspc$^\textrm{r}$@[{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}|nompageref}{40}
