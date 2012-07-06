@@ -1,4 +1,4 @@
-\begin{thebibliography}{128}
+\begin{thebibliography}{131}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -455,10 +455,27 @@ Peercy BE, Cox SJ, Shalel-Levanon S, San KY, Bennett G (2006) A Kinetic Model
 Almeida JS, Reis MAM, Carrondo MJT (1997) A Unifying Kinetic Model of
   Denitrification. Journal of Theoretical Biology 186: 241--249.
 
+\bibitem[{Jin and Bethke(2003)}]{Jin2003}
+Jin Q, Bethke CM (2003) A New Rate Law Describing Microbial Respiration.
+  Applied and Environmental Microbiology 69: 2340--2348.
+
 \bibitem[{Cavaliere and Ardelean(2006)}]{Cavaliere2006}
 Cavaliere M, Ardelean II (2006) Applications of Membrane Computing, chap.
   Modeling Respiration in Bacteria and {Respiration/Photosynthesis} Interaction
   in Cyanobacteria Using a P System Simulator, pp. 129--158. Springer.
+
+\bibitem[{Klamt et~al.(2008)Klamt, Grammel, Straube, Ghosh, and
+  Gilles}]{Klamt2008}
+Klamt S, Grammel H, Straube R, Ghosh R, Gilles ED (2008) Modeling the Electron
+  Transport Chain of Purple Non-Sulfur Bacteria. Molecular Systems Biology 4:
+  156.
+
+\bibitem[{Aguiar-Gonz\'alez et~al.(2012)Aguiar-Gonz\'alez, Packard, Berdalet,
+  Roy, and G\'omez}]{Aguiar-Gonzalez2012}
+Aguiar-Gonz\'alez B, Packard TT, Berdalet E, Roy S, G\'omez M (2012)
+  Respiration Predicted From an Enzyme Kinetic Model and the Metabolic Theory
+  of Ecology in Two Species of Marine Bacteria. Journal of Experimental Marine
+  Biology and Ecology 412: 1 -- 12.
 
 \bibitem[{Klipp et~al.(2005)Klipp, Herwig, Kowald, Wierling, and
   Lehrach}]{Klipp2005}

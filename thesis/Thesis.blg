@@ -13,50 +13,50 @@ A level-1 auxiliary file: ./09-completedmodel/completedmodel.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
 Warning--entry type for "Rank2012" isn't style-file defined
---line 3900 of file phd_refs.bib
+--line 4003 of file phd_refs.bib
 Warning--entry type for "YSI2012" isn't style-file defined
---line 4888 of file phd_refs.bib
+--line 4991 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
-You've used 128 entries,
+You've used 131 entries,
             2955 wiz_defined-function locations,
-            1678 strings with 42238 characters,
-and the built_in function-call counts, 146372 in all, are:
-= -- 14550
-> -- 4682
-< -- 69
-+ -- 2337
-- -- 1287
-* -- 12807
-:= -- 19688
-add.period$ -- 254
-call.type$ -- 128
-change.case$ -- 677
-chr.to.int$ -- 145
-cite$ -- 130
-duplicate$ -- 11855
-empty$ -- 12435
-format.name$ -- 1685
-if$ -- 31204
+            1701 strings with 43159 characters,
+and the built_in function-call counts, 150403 in all, are:
+= -- 14951
+> -- 4814
+< -- 70
++ -- 2404
+- -- 1323
+* -- 13173
+:= -- 20216
+add.period$ -- 260
+call.type$ -- 131
+change.case$ -- 695
+chr.to.int$ -- 148
+cite$ -- 133
+duplicate$ -- 12190
+empty$ -- 12779
+format.name$ -- 1732
+if$ -- 32066
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1207
-newline$ -- 391
-num.names$ -- 521
-pop$ -- 2606
+missing$ -- 1237
+newline$ -- 400
+num.names$ -- 533
+pop$ -- 2684
 preamble$ -- 1
-purify$ -- 660
+purify$ -- 678
 quote$ -- 0
-skip$ -- 2612
+skip$ -- 2670
 stack$ -- 0
-substring$ -- 18058
-swap$ -- 2684
+substring$ -- 18577
+swap$ -- 2751
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1134
+type$ -- 1161
 warning$ -- 2
-while$ -- 1134
+while$ -- 1162
 width$ -- 0
-write$ -- 1415
+write$ -- 1448
 (There were 4 warnings)
