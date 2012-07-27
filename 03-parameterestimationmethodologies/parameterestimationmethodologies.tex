@@ -40,33 +40,37 @@ A brief section is included here to describe Monte Carlo Methods, as the techniq
 
 As a simple example, the value of $\pi$ can be estimated using a Monte Carlo method. With the prior knowledge that $\frac{\pi}{4}$ is equal to the area of a circle with diameter $d$, divided by the area of a square with sides $d$ (see appendix), the value of $\pi$ can be estimated simply by generating uniformly distributed random points on the square and the counting the number that also lie inside the circle. The value of $\pi$ is $4\times\frac{\mathrm{number of points in circle}}{\mathrm{total number of points}}$. The estimate for the value of $\pi$ improves with the number of points (and in this case converges slowly on the true value).
 
+\subsubsection*{Markov Chain Monte Carlo}
+
+Markov Chain Monte Carlo algorithms use Monte Carlo Methods to create a Markov chain whose stationary distribution is the desired (posterior) distribution. Markov Chains are sequences of states where state $x_{t+1}$ depends only on state $x_t$. Given suitably large numbers of states, the chain will forget the initial state $(x_0)$ and the resulting chain will represent the posterior (stationary) distribution. This distribution won't depend on either $t$ or $x_0$\cite{Gilks1996}. The states in the chain prior to arriving at the stationary distribution are known as ``burn in'' and are discarded, and the stationary distribution is the usable output which can then be converted into a more convenient format to use as a posterior probability distribution.
+
 \subsection{Simulated Annealing}
 
-This technique was described independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}. The name comes from the metallurgical annealing process whereby large crystals are formed while a material is slowly cooled. The slow cooling increases the probability of individual crystals obtaining lower energy states than the initial. As the material cools the ``distance'' each crystal can move along the energy landscape decreases.
+This technique was described independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}. The name comes from the metallurgical annealing process whereby large crystals are formed while a material is slowly cooled. The slow cooling increases the probability of individual crystals obtaining lower energy states than the initial. As the material cools the ``distance'' each crystal can move along the energy landscape decreases. In a simulated annealing algorithm, ``distance'' is controlled by a perturbation kernel which takes the ``temperature'' as input to change how much each parameter can be perturbed.
 Simulated annealing ``consists of a discrete-time inhomogeneous Markov chain''\cite{Bertsimas1993} whereby the previous state is modified with a perturbation kernel (the neighbouring states) and then accepted or rejected using a transition probability which depends on the current temperature and the energies of the previous and current states. The advantage of this scheme is that areas of local minima have a lesser effect on the outcome of the Markov chain as the high initial temperature allows for the chain to ``jump'' out of this minima.
 
 \begin{figure}[tbp]
 \small
 \begin{verbatim}
-c1 <- c0;
-c2 <- mutate(c1);
-i <- 0;
+c1 = c0;
+c2 = mutate(c1);
+i = 0;
 while i < i_max
   if fitness(c1) > fitness(c2)
-    c2 <- mutate(c1)
+    c2 = mutate(c1)
   else
-    c1 <- mutate(c2)
-  i <- i + 1
+    c1 = mutate(c2)
+  i = i + 1
 if fitness(c1) > fitness(c2)
   return c1
 else
   return c2
 \end{verbatim}
-\caption[Pseudo-code showing how the simplest annealing algorithm works.]{{\bf Pseudo-code showing how the simplest annealing algorithm works.}
+\caption[Pseudo-code showing how a rejection sampler works.]{{\bf Pseudo-code showing how a rejection sampler works.}
 \label{fig:sa_code}}
 \end{figure}
 
-Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the basic algorithm works (without the annealing temperature). This will provide a ``best'' parameter set, but there is no information about the possible spread of values in the parameter set. Given that it is unlikely that a single point-value parameter-set solution exists that will accurately describe the system it is necessary to produce a spread of results that will adequately describe the system instead. To this end a modified version of simulated annealing was used integrated with aspects of a simple genetic algorithm. In the genetic algorithm paradigm a synthetic ``chromosome'' is created containing which contains ``genes'' representing the parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. This chromosome is then copied and perturbed several times (depending on the eventual population size required), with the size of the perturbation being dependent on the current annealing temperature. For instance the highest temperature could indicate that the individual parameters can be perturbed by up to $\pm 10\%$, and as the temperature decreases the perturbation percentage has a concomitant decrease. An example annealing temperature schedule is shown in Figure \ref{fig:temperature}.
+Simulated annealing is an extension of a simple rejection sampler \cite{Marjoram2003}. Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the basic rejection sampler algorithm works. This will provide a ``best'' parameter set, but there is no information about the possible spread of values in the parameter set. Given that it is unlikely that a single point-value parameter-set solution exists that will accurately describe the system it is necessary to produce a spread of results that will adequately describe the system instead. To this end a modified version of simulated annealing was used integrated with aspects of a simple genetic algorithm. In the genetic algorithm paradigm a synthetic ``chromosome'' is created which contains ``genes'' representing the parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. This chromosome is then copied and perturbed several times (depending on the eventual population size required), with the size of the perturbation being dependent on the current annealing temperature. For instance the highest temperature could indicate that the individual parameters can be perturbed by up to $\pm 10\%$, and as the temperature decreases the perturbation percentage has a concomitant decrease. An example annealing temperature schedule is shown in Figure \ref{fig:temperature}.
 \begin{figure}[tbp]
 	\begin{center}
 		\includegraphics[height=10cm]{03-parameterestimationmethodologies/data/temperature.png}
@@ -76,7 +80,7 @@ Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the ba
 	\end{center}
 \end{figure}
 The annealing temperature is programmed to decrease after a defined number of iterations such that the magnitude of individual mutations becomes smaller as the simulation progresses. This should have the effect of honing in on a set of parameters with a better likelihood.
-Once the chromosome population has been created, 2 are selected at random and their likelihoods evaluated, in this case by the Least Squares Difference method. The chromosome with the lowest likelihood is discarded and the other is cloned and perturbed. The two chromosomes are then added back to the chromosome population. The genetic algorithm is used to improve the parameters sets by perturbing genes (individual parameters) from fit chromosomes (complete parameter sets), re-running the simulation and discarding unfit parameter sets. An unfit parameter set is defined as one with an likelihood lower than the highest so far. This technique involves having two chromosomes selected at any one time. The parameters from each chromosome are simulated and the least fit one is discarded. At this point the contents from the fitter chromosome are cloned and perturbed, and the cycle is repeated. Figure~\ref{fig:sa_spread} shows this diagrammatically. After many cycles (upwards of 1000) the chromosome pool should only contain the best fitting parameter sets to the experimental data. The spread of the parameters can be used to infer the sensitivity of the simulation to changes in parameter values in a similar way to that described by \citet{Toni2009}.\\
+Once the chromosome population has been created, 2 are selected at random and their likelihoods evaluated, in this case by the Least Squares Difference method. The chromosome with the lowest likelihood is discarded and the other is cloned and perturbed. The two chromosomes are then added back to the chromosome population. The genetic algorithm is used to improve the parameters sets by perturbing genes (individual parameters) from fit chromosomes (complete parameter sets), re-running the simulation and discarding unfit parameter sets. An unfit parameter set is defined as one with an likelihood lower than the highest so far. This technique involves having two chromosomes selected at any one time. The parameters from each chromosome are simulated and the least fit one is discarded. At this point the contents from the fitter chromosome are cloned and perturbed, and the cycle is repeated. Figure~\ref{fig:sa_spread} shows this diagrammatically. After many cycles (upwards of 1000) the chromosome pool should only contain the best fitting parameter sets to the experimental data. The spread of the parameters can be used to infer the sensitivity of the simulation to changes in parameter values in a similar way to that described by \citet{Toni2009}.
 \begin{figure}[tbp]
 \begin{center}
 \includegraphics[height=10cm]{./03-parameterestimationmethodologies/data/sa_spread.pdf}
@@ -113,7 +117,7 @@ This algorithm was rejected as unsuitable as it seemed to be incapable of settli
 
 To incrementally improve the parameter sets, a version of Bayesian inference is used in conjunction with a standard Monte Carlo method in a system called Approximate Bayesian Computation by Sequential Monte Carlo (ABCSMC)\nomenclature{ABCSMC}{Approximate Bayesian Computation by Sequential Monte Carlo} as described by \citet{Toni2009}. An implementation of algorithm (S) was used from that paper.
 
-\textbf{\textit{Bayesian Inference}} - This a statistical method for inferring the probability of a hypothesis based on available evidence. As more evidence is accumulated, the inference is updated and the probability of the hypothesis being true is changed. Given enough evidence, the probability of the hypothesis being true should either be very high or very low causing you to either accept or reject the hypothesis. Bayesian inference relies on having a prior probability (or probability distribution) for the hypothesis, and this can inevitably introduce a level of bias into the inference.
+\textbf{\textit{Bayesian Inference}} - This is a statistical method for inferring the probability of a hypothesis based on available evidence. As more evidence is accumulated, the inference is updated and the probability of the hypothesis being true is changed. Given enough evidence, the probability of the hypothesis being true should either be very high or very low causing you to either accept or reject the hypothesis. Bayesian inference relies on having a prior probability (or probability distribution) for the hypothesis, and this can inevitably introduce a level of bias into the inference.
 Bayesian inference can be described thus:
 \begin{equation}
 P(H\mid E) = \dfrac{P(E\mid H)}{P(E)}\cdot P(H)
@@ -126,7 +130,7 @@ P(H\mid E) = \dfrac{P(E\mid H)}{P(E)}\cdot P(H)
 \end{itemize}
 
 A simplistic example of using Bayesian inference to alter a hypothesis could happen in the case of having two jars of sweets. Jar 1 has 15 strawberry sweets and 25 raspberry sweets. Jar 2 has 20 of each. Supposing a third party selects 1 sweet at random from 1 of the jars. They select a strawberry sweet, what is the probability that it came from Jar 1? From the point of view of our third party both jars are identical, therefore $P(H_1) = P(H_2)$ and the total probability must equal 1, so the prior probability of each jar is 0.5. The observation, $E$ is of a strawberry sweet, which we can then use to calculate the likelihood of it being from each jar individually by $P(E\mid H_1) = 15/40 = 0.375$ and $P(E\mid H_2) = 20/40 = 0.5$.
-Bayes formula can then be used to work out the probability of the strawberry sweet being from jar 1, that is $P(H_1\mid E)$.\\
+The Generalised Bayes formula can then be used to work out the probability of the strawberry sweet being from jar 1, that is $P(H_1\mid E)$.\\
 \begin{align}
 \nonumber
 P(H_1\mid E) & = \dfrac{P(E\mid H_1)P(H_1)}{P(E\mid H_1)P(H_1) + P(E\mid H_2)P(H_2)}\\
@@ -177,7 +181,7 @@ This algorithm was rejected on the grounds that it seemed incapable of settling 
 
 \subsection{Metropolis Hastings Monte Carlo}
 
-The Metropolis-Hastings algorithm is Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
+The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 
 MHMC allows each individual parameter to follow a biased random walk until it reaches a point of maximum likelihood. The typical output of this algorithm is a set of parameter trajectories (Markov Chains) which begin with a ``burn in'' period, followed by a parameter distribution. The ``burn in'' period contains data that is discarded, as it does not form part of the target distribution. The length of this burn in period often varies depending on how far the starting samples are from the target distribution. The parameter distribution can be calculated from the data that is left after the burn in period. This is done by a simple statistical analysis of the resulting data points. Since the distributions cannot easily be described as functions, the data are transformed into histograms with a set bin width. These histograms can be read and used a priors for subsequent runs of the MHMC\nomenclature{MHMC}{Metropolis-Hastings Monte Carlo} algorithm.
 
