@@ -2,28 +2,45 @@
 \chapter{Parameter Estimation Methodologies}
 \label{chap:paramest}
 
-Below are the various different methods for parameter estimation that were investigated during the course of this work. All of these methods involve a sampling system that attempts to select parameter values which minimise the difference between the simulation result and the experimental data by calculating a likelihood. The aim of the parameter estimation methodology was to get this likelihood as close to zero (perfect fit/no difference) as possible. Two different calculations were used to create the likelihood. One was the sum of the Least Squares Differences between the measured components in the experimental data and the simulation result. This was used in early parameter estimation runs.
+\section{The Challenge of Parameter Estimation}
+
+Parameter estimation is a technique that attempts to estimate the values of a set of parameters based on measured data. This involves creating an estimator - an algorithm that generates new parameter estimates - and some form of calculation to assess how good the estimate is. The model being discussed in this thesis has a large number of unknown values which need to be estimated and it was not clear what values many of these parameters should take, or even if the initial values used are close to the ``true'' values. Given the nature of biology, point estimates for parameters are not going to be representative of the true state of that parameter, thus the output of the parameter estimation needed to be a probability distribution that reflected the likelihood of the parameter taking on a particular value. Another requirement of the estimator is that it needs to be able to select new estimates based on prior probability distributions, since some information about certain parameters is known beforehand, and this knowledge will improve as more datasets are analysed.
+
+These requirements lends themselves well to Monte-Carlo type methods, which produce output which can be represented as a probability distribution and can be selected from a prior probability distribution.
+
+\section{Methods and Algorithms Used}
+
+Below are the various different methods for parameter estimation that were investigated during the course of this work. All of these methods involve a sampling system that attempts to select parameter values which minimise the difference between the simulation result and the experimental data by using a difference function. The aim of the parameter estimation methodology was to achieve an output from the difference function that was as close to zero (perfect fit/no difference) as possible. The value produced by the difference function is hereby referred to as the \textit{Badness of Fit} or \textit{BOF} value, due to larger values representing worse fits to the experimental data.
+
+\subsection{Difference Functions}
+Two different difference functions were used to calculate the \textit{BOF} value. One was the sum of the Least Squares Differences between the measured components in the experimental data and the simulation result. This was used in early parameter estimation runs.
 
 \begin{equation}
-f = \sum^{n}_{j=1}\left(\sqrt{\sum^{m}_{i=1} (\Delta x_{ij})^2}\right)
+BOF = \sum^{n}_{j=1}\left(\sqrt{\sum^{m}_{i=1} (\Delta x_{ij})^2}\right)
 \end{equation}
+Where $j$ is the current parameter, $n$ the number of parameters, $i$ the current data point, $m$ the total number of data points and $(\Delta x_{ij})^2$ the square of the residuals between the experimental and solved data for parameter $j$ at data point $i$. Therefore the \textit{BOF} value becomes ``the sum of the squares of the residuals for each data point for each parameter.''
 
-The second method for calculating the likelihood was a normal correlation which allowed greater tuning, as the standard deviation of the distribution could be set to adjust how much fitter the simulation result needed to be to be accepted.
+The second method for calculating the \textit{BOF} was a log-likelihood calculation. This method calculates the likelihood of the solved data falling under a normal distribution which has the experimental data as its $\mu$, and a preset error value as its $\sigma$. The method was used as it allowed tuning of the $\sigma$ value, which provided more control over how new parameter sets were accepted. The lower the value of $\sigma$, the closer the solved data needs to be to the experimental data to achieve a low \textit{BOF} value.
 
 \begin{equation}
-f = \sum^{n}_{j=1}\left(\sum^{m}_{i=1}\left(\ln\left(\dfrac{1}{2\pi\sigma_j^2}e^{-\dfrac{{(0-0)^2}}{2\sigma_j^2}}\right) - \ln\left(\dfrac{1}{2\pi\sigma_j^2}e^{-\dfrac{{(x_{ijFIT}-x_{ijDATA})^2}}{2\sigma_j^2}}\right)\right)\right)
+BOF = \sum^{n}_{j=1}\left(\sum^{m}_{i=1}\ln(norm(x_1,\mu_1,\sigma)) - \ln(norm(x_2,\mu_2,\sigma))\right)
 \end{equation}
+Where $j$ is the current parameter, $n$ is the number of parameters, $i$ is the current data point, $m$ is the total number of data points, $norm$ is a function that accepts 3 arguments ($x, \mu, \sigma$) and returns the probability associated with $x$ in a normal distribution with parameters $\mu$ and $\sigma$, $x_1$ and $\mu_1$ are zero, $x_2$ is the solved value at data point $i$ for parameter $j$, $\mu_2$ is the experimental value at data point $i$ for parameter $j$ and $\sigma$ is the preset standard deviation.
+
+$x_1$ and $\mu_1$ are set to zero because this likelihood calculation can also be used on the time axis in addition to the value axis. Since there is no time uncertainty in the data, this can be ignored by setting these values to zero. The value for $\sigma$ is determined such that the first few iterations of parameter estimation generate very high \textit{BOF} values (with the knowledge that this will always decrease) subject to the computational limits imposed by floating point precision (values of $\sigma$ which are too low generate nonsensical \textit{BOF} values).
 
 In most cases the components used for calculating the likelihood are Oxygen and Nitric Oxide, as these were the primary measured chemicals.
 
 The main difference between the parameter estimation methodologies laid out below are the ways in which they generate new parameter values, either from a probability distribution or based on the previous value, and the way this is applied and tested against the experimental data.
 
-\section*{Monte Carlo Methods}
+\subsection*{Monte Carlo Methods}
 
 A brief section is included here to describe Monte Carlo Methods, as the techniques used for parameter estimation all use this method as their estimator in some form.
-``Monte Carlo Methods'' is a generalised term to describe a stochastic technique that makes use of random numbers to examine a problem in conjunction with probability statistics. Monte Carlo Methods allow us to model complex systems without having to exhaustively search every possible outcome. Large systems are sampled in random configurations and that data applied in such a way that it can be used to describe the system as a whole. ``Monte Carlo techniques are often the only practical way to evaluate difficult integrals or to sample random variables governed by complicated probability density functions''\cite{Nakamura2010}.
+``Monte Carlo Methods'' is a generalised term to describe a stochastic technique that makes use of random numbers to examine a problem in conjunction with probability statistics. Monte Carlo Methods allow us to model complex systems without having to exhaustively search every possible outcome. Large systems are sampled in random configurations and that data applied in such a way that it can be used to describe the system as a whole. ``Monte Carlo techniques are often the only practical way to evaluate difficult integrals or to sample random variables governed by complicated probability density functions''\cite{Nakamura2010}. The generalized form of Monte Carlo Methods involves generating a set of random numbers which conform to a particular probability distribution (depending on the problem) and observing the fraction of those number which fulfil a particular set of properties (when transformed by some algorithm). The larger the number of random numbers generated, the more useful the output.
 
-\section{Simulated Annealing}
+As a simple example, the value of $\pi$ can be estimated using a Monte Carlo method. With the prior knowledge that $\frac{\pi}{4}$ is equal to the area of a circle with diameter $d$, divided by the area of a square with sides $d$ (see appendix), the value of $\pi$ can be estimated simply by generating uniformly distributed random points on the square and the counting the number that also lie inside the circle. The value of $\pi$ is $4\times\frac{\mathrm{number of points in circle}}{\mathrm{total number of points}}$. The estimate for the value of $\pi$ improves with the number of points (and in this case converges slowly on the true value).
+
+\subsection{Simulated Annealing}
 
 This technique was described independently by \citet{Kirkpatrick1983} and \citet{Cerny1985}. The name comes from the metallurgical annealing process whereby large crystals are formed while a material is slowly cooled. The slow cooling increases the probability of individual crystals obtaining lower energy states than the initial. As the material cools the ``distance'' each crystal can move along the energy landscape decreases.
 Simulated annealing ``consists of a discrete-time inhomogeneous Markov chain''\cite{Bertsimas1993} whereby the previous state is modified with a perturbation kernel (the neighbouring states) and then accepted or rejected using a transition probability which depends on the current temperature and the energies of the previous and current states. The advantage of this scheme is that areas of local minima have a lesser effect on the outcome of the Markov chain as the high initial temperature allows for the chain to ``jump'' out of this minima.
@@ -90,7 +107,7 @@ This algorithm was rejected as unsuitable as it seemed to be incapable of settli
 
 %The algorithm is flexible in that it includes a gene mask in the chromosome which allows any number of genes to be switched on or off. In this way it is possible to fix the values of certain parameters, and prevent them from being perturbed at each iteration. This is useful during the parameter search process, as a limited dataset can be used, which only describes a limited subset of the overall model, and any parameters which are unrelated to that dataset can be removed. Practically this means it is possible to focus on one particular aspect of the model, such as oxygen utilisation, set all the parameters which are irrelevant to zero, and prevent them from being included in the genetic algorithm. During this process, the parameters related to oxygen utilisation can be improved, and once a sufficient set of value is obtained, these can then be fixed when a different dataset is used, such as \cNO \space reduction.
 
-\section{Approximate Bayesian Computation by Sequential Monte Carlo}
+\subsection{Approximate Bayesian Computation by Sequential Monte Carlo}
 
 ``Approximate Bayesian Computation methods have been conceived with the aim of inferring posterior distributions where likelihood functions are computationally intractable or too costly to evaluate. They exploit the computational efficiency of modern simulation techniques by replacing calculation of the likelihood with a comparison between the observed data and simulated data''\cite{Toni2009}.
 
@@ -158,7 +175,7 @@ A significant advantage of this technique is that it is readily parallelisable, 
 
 This algorithm was rejected on the grounds that it seemed incapable of settling on sensible posterior distributions with some datasets. It is suspected that the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones. The requirement of a suitable distance function or summary statistic is a major disadvantage of this algorithm.
 
-\section{Metropolis Hastings Monte Carlo}
+\subsection{Metropolis Hastings Monte Carlo}
 
 The Metropolis-Hastings algorithm is Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 

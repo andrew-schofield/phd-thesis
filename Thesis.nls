@@ -3,14 +3,14 @@
  \nomgroup{A}
 
   \item [{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}
-		\nompageref{73}
+		\nompageref{75}
   \item [{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}
-		\nompageref{71}
+		\nompageref{73}
   \item [{AniA}]\begingroup Anaerobically inducible protein A from \textit{Neisseria} sp.\nomeqref {1.0}
 		\nompageref{15}
   \item [{ATP}]\begingroup Adenosine triphosphate\nomeqref {1.0}
 		\nompageref{15}
-  \item [{BOF}]\begingroup Badness of Fit\nomeqref {5.0}\nompageref{87}
+  \item [{BOF}]\begingroup Badness of Fit\nomeqref {5.0}\nompageref{89}
   \item [{CAB}]\begingroup Columbia Agar Base\nomeqref {2.0}
 		\nompageref{41}
   \item [{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}
@@ -26,13 +26,13 @@
   \item [{HCO}]\begingroup Haem Copper Oxidase\nomeqref {1.0}
 		\nompageref{19}
   \item [{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}
-		\nompageref{74}
+		\nompageref{76}
   \item [{LSODA}]\begingroup Livermore Solver for Ordinary Differential Equations\nomeqref {1.5}
 		\nompageref{38}
   \item [{MHB}]\begingroup M\"uller-Hinton Broth\nomeqref {2.0}
 		\nompageref{41}
   \item [{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}
-		\nompageref{75}
+		\nompageref{77}
   \item [{NADH}]\begingroup Nicotinamide adenine dinucleotide\nomeqref {1.0}
 		\nompageref{15}
   \item [{NarP}]\begingroup Nitrate/Nitrite Response Regulator\nomeqref {1.0}
@@ -57,7 +57,7 @@
   \item [{rpm}]\begingroup Revolutions Per Minute\nomeqref {2.0}
 		\nompageref{41}
   \item [{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}
-		\nompageref{74}
+		\nompageref{76}
   \item [{spc$^\textrm{r}$}]\begingroup Spectinomycin resistance\nomeqref {2.0}
 		\nompageref{40}
   \item [{tet$^\textrm{r}$}]\begingroup tetracycline resistance\nomeqref {2.0}
