@@ -18,45 +18,45 @@ Warning--entry type for "YSI2012" isn't style-file defined
 --line 4991 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
-You've used 131 entries,
+You've used 133 entries,
             2955 wiz_defined-function locations,
-            1701 strings with 43159 characters,
-and the built_in function-call counts, 150403 in all, are:
-= -- 14951
-> -- 4814
+            1713 strings with 43487 characters,
+and the built_in function-call counts, 153078 in all, are:
+= -- 15216
+> -- 4891
 < -- 70
-+ -- 2404
-- -- 1323
-* -- 13173
-:= -- 20216
-add.period$ -- 260
-call.type$ -- 131
-change.case$ -- 695
-chr.to.int$ -- 148
-cite$ -- 133
-duplicate$ -- 12190
-empty$ -- 12779
-format.name$ -- 1732
-if$ -- 32066
++ -- 2442
+- -- 1344
+* -- 13419
+:= -- 20561
+add.period$ -- 264
+call.type$ -- 133
+change.case$ -- 706
+chr.to.int$ -- 150
+cite$ -- 135
+duplicate$ -- 12420
+empty$ -- 13020
+format.name$ -- 1759
+if$ -- 32640
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1237
-newline$ -- 400
-num.names$ -- 533
-pop$ -- 2684
+missing$ -- 1257
+newline$ -- 406
+num.names$ -- 541
+pop$ -- 2739
 preamble$ -- 1
-purify$ -- 678
+purify$ -- 689
 quote$ -- 0
-skip$ -- 2670
+skip$ -- 2707
 stack$ -- 0
-substring$ -- 18577
-swap$ -- 2751
+substring$ -- 18940
+swap$ -- 2789
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1161
+type$ -- 1176
 warning$ -- 2
-while$ -- 1162
+while$ -- 1178
 width$ -- 0
-write$ -- 1448
+write$ -- 1469
 (There were 4 warnings)

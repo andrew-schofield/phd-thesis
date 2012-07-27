@@ -20,10 +20,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Oxygen Diffusion Rates}}{62}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how the simplest annealing algorithm works.}}{70}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Example simulated annealing temperature schedule}}{71}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{72}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{78}{figure.4.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how a rejection sampler works.}}{70}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example simulated annealing temperature schedule}}{72}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{73}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{79}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces MHMC results of the Lotka-Volterra validation run.}}{79}{figure.4.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Oxygen reducing electron transport chain of \textit {N. meningitidis}{}}}{83}{figure.5.1}

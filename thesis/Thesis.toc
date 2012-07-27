@@ -57,8 +57,8 @@
 \contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{66}{section.4.1}
 \contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{67}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Difference Functions}{67}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Simulated Annealing}{69}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Approximate Bayesian Computation by Sequential Monte Carlo}{73}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.2}Simulated Annealing}{70}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Approximate Bayesian Computation by Sequential Monte Carlo}{72}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Metropolis Hastings Monte Carlo}{77}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}Implementation}{78}{section.4.3}
 \contentsline {section}{\numberline {4.4}Integrative Scheme}{80}{section.4.4}
@@ -114,5 +114,5 @@
 \contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{139}{section.A.1}
 \contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{139}{section.A.2}
 \contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{139}{section.A.3}
-\contentsline {chapter}{List of Abbreviations}{142}{appendix*.23}
-\contentsline {chapter}{References}{143}{appendix*.23}
+\contentsline {chapter}{List of Abbreviations}{142}{appendix*.24}
+\contentsline {chapter}{References}{143}{appendix*.24}

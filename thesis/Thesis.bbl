@@ -1,4 +1,4 @@
-\begin{thebibliography}{131}
+\begin{thebibliography}{133}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -612,6 +612,10 @@ Nakamura (Particle Data~Group) K (2010) Review of Particle Physics. Journal of
   Physics G: Nuclear and Particle Physics 37: 075021 and 2011 partial update
   for the 2012 edition.
 
+\bibitem[{Gilks et~al.(1996)Gilks, Richardson, and Spiegelhalter}]{Gilks1996}
+Gilks W, Richardson S, Spiegelhalter D (1996) Markov Chain Monte Carlo in
+  Practice. Chapman \& Hall/CRC.
+
 \bibitem[{Kirkpatrick et~al.(1983)Kirkpatrick, Gelatt, and
   Vecchi}]{Kirkpatrick1983}
 Kirkpatrick S, Gelatt CD, Vecchi MP (1983) Optimization by Simulated Annealing.
@@ -625,6 +629,12 @@ Kirkpatrick S, Gelatt CD, Vecchi MP (1983) Optimization by Simulated Annealing.
 \bibitem[{Bertsimas and Tsitsiklis(1993)}]{Bertsimas1993}
 Bertsimas D, Tsitsiklis J (1993) Simulated Annealing. Statistical Science 8:
   pp. 10--15.
+
+\bibitem[{Marjoram et~al.(2003)Marjoram, Molitor, Plagnol, and
+  Tavar{\~A}Â©}]{Marjoram2003}
+Marjoram P, Molitor J, Plagnol V, Tavar{\~A}Â© S (2003) Markov Chain Monte
+  Carlo without Likelihoods. Proceedings of the National Academy of Sciences of
+  the United States of America 100: 15324--15328.
 
 \bibitem[{Toni et~al.(2009)Toni, Welch, Strelkowa, Ipsen, and
   Stumpf}]{Toni2009}
