@@ -23,9 +23,9 @@
 \nomenclatureentry{aOD@[{OD}]\begingroup Optical Density\nomeqref {2.0}|nompageref}{42}
 \nomenclatureentry{aCFU@[{CFU}]\begingroup Colony Forming Units\nomeqref {2.0}|nompageref}{42}
 \nomenclatureentry{aNED@[{NED}]\begingroup \textit{N}-1-napthylethylenediamine dihydrochloride\nomeqref {2.1}|nompageref}{45}
-\nomenclatureentry{aABCSMC@[{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}|nompageref}{71}
-\nomenclatureentry{aABC@[{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}|nompageref}{73}
-\nomenclatureentry{aLSD@[{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}|nompageref}{74}
-\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{74}
-\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{75}
-\nomenclatureentry{aBOF@[{BOF}]\begingroup Badness of Fit\nomeqref {5.0}|nompageref}{87}
+\nomenclatureentry{aABCSMC@[{ABCSMC}]\begingroup Approximate Bayesian Computation by Sequential Monte Carlo\nomeqref {4.2}|nompageref}{73}
+\nomenclatureentry{aABC@[{ABC}]\begingroup Approximate Bayesian computation\nomeqref {4.4}|nompageref}{75}
+\nomenclatureentry{aLSD@[{LSD}]\begingroup Least-Squares Difference\nomeqref {4.4}|nompageref}{76}
+\nomenclatureentry{aSMC@[{SMC}]\begingroup Sequential Monte Carlo\nomeqref {4.4}|nompageref}{76}
+\nomenclatureentry{aMHMC@[{MHMC}]\begingroup Metropolis-Hastings Monte Carlo\nomeqref {4.4}|nompageref}{77}
+\nomenclatureentry{aBOF@[{BOF}]\begingroup Badness of Fit\nomeqref {5.0}|nompageref}{89}
