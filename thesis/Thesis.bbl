@@ -1,4 +1,4 @@
-\begin{thebibliography}{133}
+\begin{thebibliography}{135}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -670,6 +670,12 @@ Metropolis N, Rosenbluth AW, Rosenbluth MN, Teller AH, Teller E (1953) Equation
 \bibitem[{Hastings(1970)}]{Hastings1970}
 Hastings WK (1970) Monte Carlo Sampling Methods Using Markov Chains and Their
   Applications. Biometrika 57: 97--109.
+
+\bibitem[{Lotka(1925)}]{Lotka1925}
+Lotka A (1925) Elements of Physical Biology. Williams and Wilkins, Baltimore.
+
+\bibitem[{Volterra(1931)}]{Volterra1931}
+Volterra V (1931) Animal Ecology, pp. 409--448. McGraw-Hill, New York.
 
 \bibitem[{Gelman and Rubin(1992)}]{Gelman1992}
 Gelman A, Rubin DB (1992) Inference from Iterative Simulation Using Multiple

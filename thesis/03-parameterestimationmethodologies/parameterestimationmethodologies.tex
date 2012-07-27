@@ -158,7 +158,7 @@ $\theta$ is a parameter vector to be estimated, $\pi(\theta)$ is the prior proba
 
 Given a low enough value for $\epsilon$, the output distribution should approximate the true posterior distribution if sampled a large enough number of times.
 
-\textbf{\textit{Sequential Monte Carlo}} - This is a method of particle filtering whereby a large set of samples ($N$) are drawn from the prior distribution, and for each sample, the probability is calculated. Weights for each particle are assigned based on the probabilities, and these affect how likely a particle is to be selected in subsequent rounds of selection. At the end of each round, the posterior distribution, that of the $N$ particles becomes the prior distribution for the next round.
+\textbf{\textit{Sequential Monte Carlo}} - This is a method of particle filtering whereby a large set of samples ($N$) are drawn from the prior distribution, and for each sample, the probability is calculated. Weights for each particle are assigned based on the probabilities, and these affect how likely a particle is to be selected in subsequent rounds of selection. At the end of each round, the posterior distribution of the $N$ particles becomes the prior distribution for the next round.
 
 \textbf{\textit{Approximate Bayesian Computation by Sequential Monte Carlo}} - This combines the previous two methods by drawing a large number of particles from the prior distribution using Bayesian inference. The prior distribution is discrete in the scheme used here, so a perturbation kernel based on a Laplacian or Gaussian distribution is used on each sample to provide small deviations to better approximate a continuous prior distribution. Each sample is simulated and only accepted if it exceeds the acceptance threshold. This is calculated based on the \nomenclature{LSD}{Least-Squares Difference}least-squares difference (LSD) between the simulated data and the original dataset. If a sample is rejected, a new one is drawn from the prior distribution and SMC then continues as described above. The weights of the accepted samples are calculated based on the probabilities of being selected from the prior and the samples go on to form the posterior distribution. For each subsequent round, the mean LSD of the posterior distribution from the previous round is used as the acceptance threshold. This ensures that each round results in better fitting parameter sets. The cycle is then repeated until a pre-defined cycle limit is reached \cite{Toni2009}.
 
@@ -185,7 +185,7 @@ The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrie
 
 MHMC allows each individual parameter to follow a biased random walk until it reaches a point of maximum likelihood. The typical output of this algorithm is a set of parameter trajectories (Markov Chains) which begin with a ``burn in'' period, followed by a parameter distribution. The ``burn in'' period contains data that is discarded, as it does not form part of the target distribution. The length of this burn in period often varies depending on how far the starting samples are from the target distribution. The parameter distribution can be calculated from the data that is left after the burn in period. This is done by a simple statistical analysis of the resulting data points. Since the distributions cannot easily be described as functions, the data are transformed into histograms with a set bin width. These histograms can be read and used a priors for subsequent runs of the MHMC\nomenclature{MHMC}{Metropolis-Hastings Monte Carlo} algorithm.
 
-The MHMC algorithm has been validated initially by using a much simpler ODE system than is required by the respiration model. A Lotka-Volterra system was used as this can be solved much more quickly by virtue of having far fewer parameters (4 as opposed to \gt 20). The Lotka-Volterra system describes a simple predator-prey relationship and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
+The Metropolis Hastings Monte Carlo algorithm was validated by using a much simpler ODE system than is required by the respiratory model, to make sure it was capable of parameter estimation and producing the necessary output for creating probability distributions. The simpler ODE system selected was the Lotka-Volterra system as this can be tested much more quickly by virtue of having far fewer parameters (4 as opposed to \gt 20) to estimate and has only 2 differential equations to solve. The Lotka-Volterra system describes a simple predator-prey relationship\cite{Lotka1925,Volterra1931} and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
 
 \begin{eqnarray}
 \frac{dx}{dt} = x (\alpha - \beta y)\nonumber \\
@@ -193,34 +193,37 @@ The MHMC algorithm has been validated initially by using a much simpler ODE syst
 \label{eq:lv}
 \end{eqnarray}
 
-Validation of using this system required a simulated dataset with known parameter values to be produced. This dataset then forms the input for the MHMC algorithm which will try and obtain those same parameter values. Given the simplicity of this system, a particularly bad set of initial parameter estimates was given to exaggerate the burn in period, and to show that given a long enough time the simulation will eventually settle on ``correct'' values. This validation step also informs the likely values for two tuning variables in the algorithm; the \textit{acceptance} - how stringent the algorithm is on accepting new parameter sets, and the \textit{sigma} value - this describes the magnitude of parameter perturbation at each iteration.
-The graphical results of the Lotka-Volterra validation are shown in Figures \ref{fig:simulation} and \ref{fig:parameters}.
+The algorithm was validated by generating a dataset using the Lotka-Volterra equations with a known set of parameters. The dataset was generated using the same ODE solving equations described in Chapter \ref{chap:model} for 1000 generations. The Metropolis Hastings algorithm was given uniform distributions to sample from for each of the priors (this means that there is more-or-less no sampling distribution), and the acceptance criteria for each iteration were based upon the log-likelihood (described previously) values between the input dataset and the solved output from the new parameters. The algorithm was allowed to continue for 10000 iterations, generating 4 Markov-Chains of length 10000. During this time the algorithm will be altering the 4 input parameters trying to improve them based on the log-likelihood values produced. The resulting Markov Chains represented the stationary or posterior distributions of the 4 parameters and were very close to the true values from the input data.
 
-\begin{figure}[t]
+Given the simplicity of this system, a particularly bad set of initial parameter estimates (i.e. $x_0$ as described previously) were given to exaggerate the burn in period, and to show that given a long enough time the algorithm will eventually settle on ``correct'' values. This validation step also informs the likely values for two tuning variables in the algorithm; the \textit{acceptance} - how stringent the algorithm is on accepting new parameter sets, which is the $\sigma$ value of the log-likelihood calculation, and the \textit{sigma} value - this describes the magnitude of parameter perturbation at each iteration.
+The graphical results of the Lotka-Volterra validation are shown in Figures \ref{fig:simulation} and \ref{fig:parameters}. Figure \ref{fig:simulation} shows the generated validation data compared to the solved output from the parameters at the end of the Markov Chains. Figure \ref{fig:parameters} shows a plot of the 4 Markov Chains generated by the MHMC algorithm. The initial 3000 generations are the burn-in and represent the region of the Markov Chain where the algorithm is trying to converge on the stationary distribution. The region beyond 3000 generations \textit{is} the stationary distribution and this can be used to calculate a posterior probability distribution (the sampling distribution was flat).
+
+The results of this validation show that the algorithm is capable of parameter estimation and can produce output that is compatible with generating probability distributions. The comparison of the Lotka-Volterra data shows that the algorithm could have been run for more iterations as the solved output doesn't quite match the generated input data. The Markov Chains show that the algorithm has stabilised on values very close to the ``true'' values of the input data.
+
+\begin{figure}[tbp]
  \centering
- \includegraphics[width=13cm, trim=75px 53px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_data.pdf}
+ \includegraphics[width=13cm, trim=50px 35px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_data.pdf}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
  \caption[{Simulation results of the Lotka-Volterra validation run.}]{{\bf Simulation results of the Lotka-Volterra validation run.}
  \label{fig:simulation}}
 \end{figure}
 
-\begin{figure}[b]
+\begin{figure}[tbp]
  \centering
- \includegraphics[width=13cm, trim=75px 53px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_MCMC.pdf}
+ \includegraphics[width=13cm, trim=50px 35px 125px 30px, clip=true]{./03-parameterestimationmethodologies/data/LV_MCMC.pdf}
  % Simulation.png: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
  \caption[{MHMC results of the Lotka-Volterra validation run.}]{{\bf MHMC results of the Lotka-Volterra validation run.} Note the initial burn-in period followed by the distribution trajectory.
  \label{fig:parameters}}
 \end{figure}
 \afterpage{\clearpage}
 
-\section{Implementation}
+\section{An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}
 The initial parameters used to solve the equations were a set of priors based on preliminary experimental results. These parameters only provide a starting point as the second stage of computation involves modifying the parameters in order to provide a better fit against experimental data. To incrementally improve the parameter sets, a version of Bayesian inference is used in conjunction with a standard Metropolis-Hastings Monte-Carlo method.
 
 Bayesian inference was used to inform the simulation parameters for a particular dataset based on prior probability distributions. These distributions were obtained as output from a previous dataset. This was integrated this with a Metropolis-Hastings algorithm for sampling the prior probability distributions. Each parameter was sampled, and the parameter set was used to solve the ODE model. Based on the likelihood of the solved model, the Metropolis-Hastings algorithm allows parameters to be modified in a biased random walk which ultimately leads them to their most fit state, calculated using Normal likelihood.
 
 This algorithm was accepted as suitable since it seems to settle on reasonable solutions to the experimental datasets and produces usable posterior probability distributions for each of the parameters being estimated.
 
-\section{Integrative Scheme}
 \emph{Currently copied verbatim from paper}\\
 In order for us to iteratively generate a parameter set we needed to separate the model into simpler units whereby we can obtain data about a specific set of variables. We did this so that the simplest part of the model was parametrised first. In this case it was oxygen respiration, which only requires one enzyme (although it does still require the ETC). This section of the model also has the simplest experimental dataset. After parametrisation, a new section of the model was introduced, with its associated experimental dataset.
 

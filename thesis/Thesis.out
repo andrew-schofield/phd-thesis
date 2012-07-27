@@ -59,8 +59,7 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Simulated Annealing}{section.4.2}
 \BOOKMARK [2][-]{subsection.4.2.3}{Approximate Bayesian Computation by Sequential Monte Carlo}{section.4.2}
 \BOOKMARK [2][-]{subsection.4.2.4}{Metropolis Hastings Monte Carlo}{section.4.2}
-\BOOKMARK [1][-]{section.4.3}{Implementation}{chapter.4}
-\BOOKMARK [1][-]{section.4.4}{Integrative Scheme}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Oxygen Reduction in N. meningitidis}{}
 \BOOKMARK [1][-]{section.5.1}{Aerobic Reduction of Oxygen}{chapter.5}
 \BOOKMARK [2][-]{subsection.5.1.1}{Introduction}{section.5.1}
