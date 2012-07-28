@@ -173,10 +173,22 @@ A significant advantage of this technique is that it is readily parallelisable, 
 This algorithm was rejected on the grounds that it seemed incapable of settling on sensible posterior distributions with some datasets. It is suspected that the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones. The requirement of a suitable distance function or summary statistic is a major disadvantage of this algorithm.
 
 \subsection{Metropolis Hastings Monte Carlo}
-The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
+The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. Such a case exists when the proposal distribution is a discrete rather than a continuous distribution. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 
-MHMC allows each individual parameter to follow a biased random walk until it reaches a point of maximum likelihood. The typical output of this algorithm is a set of parameter trajectories (Markov Chains) which begin with a ``burn in'' period, followed by a parameter distribution. The ``burn in'' period contains data that is discarded, as it does not form part of the target distribution. The length of this burn in period often varies depending on how far the starting samples are from the target distribution. The parameter distribution can be calculated from the data that is left after the burn in period. This is done by a simple statistical analysis of the resulting data points. Since the distributions cannot easily be described as functions, the data are transformed into histograms with a set bin width. These histograms can be read and used a priors for subsequent runs of the MHMC\nomenclature{MHMC}{Metropolis-Hastings Monte Carlo} algorithm.
+This algorithm is much simpler than the previously described ABCSMC and takes the following form:
 
+\singlespacing %necessary to produce nice code
+\begin{alltt}
+Initialise \(X_0\); set \(t=0\);
+Repeat \{
+  Sample a point \(Y\) from \(q(.|X\sb{t})\)
+  Sample a Uniform(0,1) random variable \(U\)
+  If \(U \leq \alpha(X\sb{t},Y)\) set \(X\sb{t+1}=Y\)
+    otherwise set \(X\sb{t+1}=X_t\)
+  Increment t
+\}
+\end{alltt}
+\doublespacing %remember to un-single space!
 The Metropolis Hastings Monte Carlo algorithm was validated by using a much simpler ODE system than is required by the respiratory model, to make sure it was capable of parameter estimation and producing the necessary output for creating probability distributions. The simpler ODE system selected was the Lotka-Volterra system as this can be tested much more quickly by virtue of having far fewer parameters (4 as opposed to \gt 20) to estimate and has only 2 differential equations to solve. The Lotka-Volterra system describes a simple predator-prey relationship\cite{Lotka1925,Volterra1931} and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
 \begin{eqnarray}
 \frac{dx}{dt} = x (\alpha - \beta y)\nonumber \\
