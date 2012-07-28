@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
-The top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: C:\Users\Andrew Schofield\PhD\thesis\Thesis.aux
 The style file: unsrtPLoS-Biology.bst
 A level-1 auxiliary file: ./01-introduction/introduction.aux
 A level-1 auxiliary file: ./02-materialsmethods/materialsandmethods.aux
@@ -19,45 +18,4 @@ Warning--entry type for "YSI2012" isn't style-file defined
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
 Warning--can't use both author and editor fields in Volterra1931
-You've used 135 entries,
-            2955 wiz_defined-function locations,
-            1727 strings with 43669 characters,
-and the built_in function-call counts, 154122 in all, are:
-= -- 15308
-> -- 4911
-< -- 73
-+ -- 2450
-- -- 1350
-* -- 13481
-:= -- 20714
-add.period$ -- 268
-call.type$ -- 135
-change.case$ -- 712
-chr.to.int$ -- 152
-cite$ -- 138
-duplicate$ -- 12506
-empty$ -- 13120
-format.name$ -- 1767
-if$ -- 32871
-int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 1273
-newline$ -- 412
-num.names$ -- 549
-pop$ -- 2773
-preamble$ -- 1
-purify$ -- 695
-quote$ -- 0
-skip$ -- 2742
-stack$ -- 0
-substring$ -- 19014
-swap$ -- 2823
-text.length$ -- 12
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 1188
-warning$ -- 3
-while$ -- 1188
-width$ -- 0
-write$ -- 1490
 (There were 5 warnings)
