@@ -175,7 +175,7 @@ This algorithm was rejected on the grounds that it seemed incapable of settling 
 \subsection{Metropolis Hastings Monte Carlo}
 The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when no probability distribution function exists. Such a case exists when the proposal distribution is a discrete rather than a continuous distribution. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 
-This algorithm is much simpler than the previously described ABCSMC and takes the following form:
+This algorithm is much simpler than the previously described ABCSMC and takes the following form\cite{Gilks1996}:
 
 \singlespacing %necessary to produce nice code
 \begin{alltt}
@@ -189,7 +189,26 @@ Repeat \{
 \}
 \end{alltt}
 \doublespacing %remember to un-single space!
-The Metropolis Hastings Monte Carlo algorithm was validated by using a much simpler ODE system than is required by the respiratory model, to make sure it was capable of parameter estimation and producing the necessary output for creating probability distributions. The simpler ODE system selected was the Lotka-Volterra system as this can be tested much more quickly by virtue of having far fewer parameters (4 as opposed to \gt 20) to estimate and has only 2 differential equations to solve. The Lotka-Volterra system describes a simple predator-prey relationship\cite{Lotka1925,Volterra1931} and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
+
+For the parameter estimation problem being solved, in the algorithm above, $X_0$ is the initial set of parameters, $t$ is the iteration number, $q(.\mid X_t)$ is the \textit{proposal distribution} which is the prior probability distribution and $\alpha(X_t,Y)$ is the acceptance probability. The acceptance probability is calculated from the likelihood of $Y$ being from the prior probability distribution and the likelihood of the solved data being from a normal distribution surrounding the experimental data. Mathematically it is described thus:
+\begin{equation*}
+\alpha(X_t,Y) = \frac{q(Y_t\mid X)}{q(Y_{t-1}\mid X)}\cdot\e{}^{BOF(Y_{t-1}) - BOF(Y_t)}
+\end{equation*}
+This process can be described as below:
+\begin{enumerate}
+\item Create a set of starting parameter values, calculate the probability of them from the prior distribution, and their likelihood of fitting the experimental data.
+\item Sample new parameter values from the prior probability distribution, calculate probabilities and likelihoods.
+\item Calculate acceptance based on the above values.
+\item If acceptance is greater than a random number generated in the range 0-1 then save the new parameters. (Acceptance will be greater than 1 if the parameters are more likely \textit{and} the results fit better). This allows slightly less probable, and less likely results to be accepted
+\item Otherwise save the old parameters.
+\item Go Back to step 2
+\item After enough repeats the saved results will resemble the posterior probability distribution.
+\end{enumerate}
+This was the algorithm selected to perform the parameter estimation as it was simple to implement, generated the required probability distributions and didn't require complex functions to determined acceptance. Its only major disadvantage was that it was an unparallel algorithm, thus it was quite slow as each iteration depended on the results of the previous.
+
+\section{Validating the Parameter Estimation Algorithm}
+
+The Metropolis Hastings Monte Carlo algorithm was validated by using a much simpler ODE system than is required by the respiratory model, to make sure it was capable of parameter estimation and producing the necessary output for creating probability distributions. The simpler ODE system selected was the Lotka-Volterra model as this can be tested much more quickly by virtue of having far fewer parameters to estimate (4 as opposed to \gt 20) and has only 2 differential equations to solve. The Lotka-Volterra model describes a simple predator-prey relationship\cite{Lotka1925,Volterra1931} and only requires two first-order, non-linear differential equations, which are shown in equation \ref{eq:lv}.
 \begin{eqnarray}
 \frac{dx}{dt} = x (\alpha - \beta y)\nonumber \\
 \frac{dy}{dt} = -y (\gamma - \delta x)
@@ -221,12 +240,18 @@ The results of this validation show that the algorithm is capable of parameter e
 \afterpage{\clearpage}
 
 \section{An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}
-The initial parameters used to solve the equations were a set of priors based on preliminary experimental results. These parameters only provide a starting point as the second stage of computation involves modifying the parameters in order to provide a better fit against experimental data. To incrementally improve the parameter sets, a version of Bayesian inference is used in conjunction with a standard Metropolis-Hastings Monte-Carlo method.
+In order to correctly parametrise the complex model being investigated it would have been impossible to use a MHMC-based parameter estimation algorithm alone, since it would be difficult to generate dataset which could provide enough information to estimate all the parameters at once. This being the case the parameter estimation algorithm was combined with a Bayesian approach to generating the proposal/prior distributions. Each run of MHMC will generate a Markov-Chain which can be used to calculate a posterior probability distribution for each parameter. These posterior probability distributions could be used to inform a subsequent round of parameter estimation in a Bayesian manner by using these distribution as the proposal/prior distributions for that subsequent round. This approach relies on the overall problem being able to be broken down into smaller problems which add increasing amounts of information. Thus the initial round of parameter estimation may only be estimating a small percentage of the total number of parameters, \textit{but} the posterior probability distributions generated can be used as informed prior probability distributions for a second round of parameter estimation which include more parameters. The entire scheme is represented visually in Figure \ref{fig:intscheme}.
 
-Bayesian inference was used to inform the simulation parameters for a particular dataset based on prior probability distributions. These distributions were obtained as output from a previous dataset. This was integrated this with a Metropolis-Hastings algorithm for sampling the prior probability distributions. Each parameter was sampled, and the parameter set was used to solve the ODE model. Based on the likelihood of the solved model, the Metropolis-Hastings algorithm allows parameters to be modified in a biased random walk which ultimately leads them to their most fit state, calculated using Normal likelihood.
+\begin{landscape}
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=20.4cm]{./03-parameterestimationmethodologies/data/paramest.pdf}
+ \caption[{The Integrated Bayesian Parameter Estimation Scheme}]{{\bf The Integrated Bayesian Parameter Estimation Scheme.} This figure shows a flow-chart representing the major steps in the scheme. The initial probability distributions may be uniform, depending on how much knowledge is available \textit{a prioi}. The experimental data is compared to the solved data in the purple box. After sufficient iterations of parameter estimation, the Markov Chains are used to produce posterior probability distributions.
+ \label{fig:intscheme}}
+\end{figure}
+\end{landscape}
 
-This algorithm was accepted as suitable since it seems to settle on reasonable solutions to the experimental datasets and produces usable posterior probability distributions for each of the parameters being estimated.
-
+\section{Implementing the Integrated Scheme}
 \emph{Currently copied verbatim from paper}\\
 In order for us to iteratively generate a parameter set we needed to separate the model into simpler units whereby we can obtain data about a specific set of variables. We did this so that the simplest part of the model was parametrised first. In this case it was oxygen respiration, which only requires one enzyme (although it does still require the ETC). This section of the model also has the simplest experimental dataset. After parametrisation, a new section of the model was introduced, with its associated experimental dataset.
 
