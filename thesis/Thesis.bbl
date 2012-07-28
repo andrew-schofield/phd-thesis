@@ -1,4 +1,4 @@
-\begin{thebibliography}{135}
+\begin{thebibliography}{136}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -592,6 +592,12 @@ Blackmore RS, Greenwood C, Gibson QH (1991) Studies of the Primary Oxygen
 Hedrick DB, White DC (1986) Microbial Respiratory Quinones in the Environment:
   I. A Sensitive Liquid Chromatographic Method. Journal of Microbiological
   Methods 5: 243 -- 254.
+
+\bibitem[{Holl\"ander et~al.(1977)Holl\"ander, Wolf, and
+  Mannheim}]{Hollaender1977}
+Holl\"ander R, Wolf G, Mannheim W (1977) Lipoquinones of Some Bacteria and
+  Mycoplasmas, with Considerations on their Functional Significance. Antonie
+  Van Leeuwenhoek 43: 177--185.
 
 \bibitem[{Butcher(2003)}]{Butcher2003}
 Butcher JC (2003) Numerical Methods for Ordinary Differential Equations. John
