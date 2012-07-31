@@ -309,6 +309,65 @@ As more parameters had been populated in the model it was now possible to examin
  \label{fig:nosimredox}
 \end{figure}
 
+\section{Redo with correct solver}
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/posteriors-redo2.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Posterior Distributions for Datasets 1 and 4]{{\bf Posterior Distributions for Datasets 1 and 4}. The posterior probability distributions for datasets 1 and 4 of nitric oxide removal.
+ \label{fig:redoneposterior2}}
+\end{figure}
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
+\midrule
+$k_1$ && 413.228 & 30.046 & 417.88 & 31.172\\
+$k_3$ && 4.496 & 0.463 & 4.65 & 0.619\\
+$l_1$ && 6 & 2 & 13.12$\uparrow$ & 8.321$\uparrow$\\
+$l_3$ && 1 & 2 & 0.058$\downarrow$ & 0.021$\downarrow$\\
+$k_5$ && 100 & 10 & 1741.8$\uparrow$ & 1822.0$\uparrow$\\
+$k_6$ && 38 & 8 & 1.076$\downarrow$ & 1.473$\downarrow$\\
+$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
+g && 0.889 & 0.089 & 0.857 & 0.086\\
+f && 8.707 & 1.35 & 8.398 & 1.237\\
+$\gamma$ && 0.00014 & $4.72\times 10^{-6}$ & \\
+Q && 3.143 & 0.240 & 7.06 & 1.317\\
+X && 4.732 & 6.707 & 27.45 & 12.08\\
+B && 0.043 & 0.044 & 0.137 & 0.048\\
+C && 0.043 & 0.044 & 0.071 & 0.029\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from dataset 3 (after being run on dataset 1), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
+\label{tab:redone-prob-stat}}
+\end{table}
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{ccc|ccc}
+\toprule
+\textbf{Parameter} && \textbf{R value} & \textbf{Parameter} && \textbf{R value}\\
+\midrule
+$k_1$ && 1.15 & g && 1.13\\
+$k_3$ && 1.31 & f && 1.20\\
+$l_1$ && 4.92 & $\gamma$ && \\
+$l_3$ && 131.447 & Q && 1.54\\
+$k_5$ && 6.46 & X && 3.82\\
+$k_6$ && 7.37 & B && 6.74\\
+$\beta$ && 1.02 & C && 2.92 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from dataset 3. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
+\label{tab:noRstat-redone}}
+\end{table}
+
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
 %\subsection{Results}
