@@ -81,15 +81,15 @@
 \contentsline {subsection}{\numberline {6.1.1}Introduction}{113}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Experimental Results}{115}{subsection.6.1.2}
 \contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{119}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{119}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{123}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{124}{subsubsection.6.1.2.4}
-\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{125}{subsubsection.6.1.2.5}
-\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{132}{subsubsection.6.1.2.6}
-\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{133}{subsubsection.6.1.2.7}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{134}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Redo with correct solver}{139}{section.6.2}
-\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{139}{section.6.3}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{121}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{122}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{123}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{124}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{130}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{130}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{135}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Redo with correct solver}{136}{section.6.2}
+\contentsline {section}{\numberline {6.3}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{136}{section.6.3}
 \contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{141}{chapter.7}
 \contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{141}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Introduction}{141}{subsection.7.1.1}
