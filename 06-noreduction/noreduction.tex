@@ -171,7 +171,7 @@ The concentration of nitric oxide present will also affect the rate of \cbbthree
  \centering
  \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aer-no-sim3-1.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the third attempt at fitting the model to experimental data using priors determined from literature values in addition to manually adjusted priors. Oxygen reduction is being modelled remarkably well, whereas the rate of nitric oxide reduction appears to be too high in the solved output.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This figure shows the third attempt at fitting the model to experimental data using priors determined from literature values in addition to manually adjusted priors. Oxygen reduction is being modelled remarkably well, whereas the rate of nitric oxide reduction appears to be slightly too high in the solved output.}
  \label{fig:nosim3.2}
 \end{figure}
 
@@ -215,7 +215,7 @@ C && 0.043 & 0.044 & 0.071 & 0.029\\
 \label{tab:redone-prob-stat}}
 \end{table}
 \subsubsection{Analysis of Convergence}
-The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. Some of the oxygen reduction parameters actually had slightly larger R statistic values than the results from Chapter \ref{chap:oxygenreduction}.
+The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat-redone}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. This is especially true of $l_3$ which has an extremely high R value. This actually suggests that $l_3$ is a long way away from being fully converged, or that an anomalous Markov Chain has been included.
 
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
@@ -224,18 +224,18 @@ The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories f
 \toprule
 \textbf{Parameter} && \textbf{R value} & \textbf{Parameter} && \textbf{R value}\\
 \midrule
-$k_1$ && 1.27 & g && 3.50\\
-$k_3$ && 3.87 & f && 4.78\\
-$l_1$ && 11.86 & $\gamma$ && 1.66\\
-$l_3$ && 4.44 & Q && 3.15\\
-$k_5$ && 15.74 & X && 2.76\\
-$k_6$ && 13.13 & B && 3.44\\
-$\beta$ && 1.36 & C && 4.04 \\
+$k_1$ && 1.15 & g && 1.13\\
+$k_3$ && 1.31 & f && 1.20\\
+$l_1$ && 4.92 & $\gamma$ && \\
+$l_3$ && 131.447 & Q && 1.54\\
+$k_5$ && 6.46 & X && 3.82\\
+$k_6$ && 7.37 & B && 6.74\\
+$\beta$ && 1.02 & C && 2.92 \\
 \bottomrule
 \end{tabular}
 \end{center}
 \caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from dataset 3. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
-\label{tab:noRstat}}
+\label{tab:noRstat-redone}}
 \end{table}
 
 \subsubsection{Analysis of Correlation}
@@ -321,26 +321,6 @@ As more parameters had been populated in the model it was now possible to examin
 
 \section{Redo with correct solver}
 
-\begin{table}[tbp]%needs to be 'here' as section is short
-\renewcommand{\arraystretch}{1.5}
-\begin{center}
-\begin{tabular}{ccc|ccc}
-\toprule
-\textbf{Parameter} && \textbf{R value} & \textbf{Parameter} && \textbf{R value}\\
-\midrule
-$k_1$ && 1.15 & g && 1.13\\
-$k_3$ && 1.31 & f && 1.20\\
-$l_1$ && 4.92 & $\gamma$ && \\
-$l_3$ && 131.447 & Q && 1.54\\
-$k_5$ && 6.46 & X && 3.82\\
-$k_6$ && 7.37 & B && 6.74\\
-$\beta$ && 1.02 & C && 2.92 \\
-\bottomrule
-\end{tabular}
-\end{center}
-\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from dataset 3. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
-\label{tab:noRstat-redone}}
-\end{table}
 
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
