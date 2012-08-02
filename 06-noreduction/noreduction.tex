@@ -124,14 +124,14 @@ As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions we
 
 \subsubsection{Adapted Parameter Estimation Protocol}
 
-As dataset 1 was the simplest of the experimental datasets which describe the effects of addition of nitric oxide to aerobically respiring cultures, this dataset could be run as a standalone step in the Bayesian scheme for parameter estimation. This dataset described some of the experimentally observed behaviour in isolation, such as the removal of nitric oxide by diffusion alone, therefore could generate a posterior probability distribution for datasets where that parameter could \textit{not} be examined in isolation. Dataset 3 ideally required this information as a prior probability distribution as the experimentally observed disappearance of nitric oxide was expected to be due to both diffusion and reduction (by NorB). Therefore dataset 1 could be used to inform the prior probability distribution of dataset 3. Statistically this did not pose a problem even though the two datasets were run in parallel previously. This was because the numerical output from those previous attempts was not being used as input for the subsequent attempts.
+As dataset 3 was the simplest of the experimental datasets which describe the effects of addition of nitric oxide to aerobically respiring cultures, this dataset could be run as a standalone step in the Bayesian scheme for parameter estimation. This dataset described some of the experimentally observed behaviour in isolation, such as the removal of nitric oxide by diffusion alone, therefore could generate a posterior probability distribution for datasets where that parameter could \textit{not} be examined in isolation. Datasets 1 and 4 ideally required this information as a prior probability distribution as the experimentally observed disappearance of nitric oxide was expected to be due to both diffusion and reduction (by NorB). Therefore dataset 3 could be used to inform the prior probability distribution of datasets 1 and 4. Statistically this did not pose a problem even though the three datasets were run in parallel previously. This was because the numerical output from those previous attempts was not being used as input for the subsequent attempts.
 
 \subsubsection{Secondary Parameter Estimation Results}
-Trial and error was employed to produce an initial informed prior value for $\gamma$, the rate of diffusion of nitric oxide, which was the problematic parameter for dataset 1 previously. This value was estimated to be $\approx 0.02~\mu Ms^{-1}$ based upon visual comparison of the solved output against the experimental data. This value was then used as a prior with no bounds so that the parameter estimation algorithm could home in on the correct distribution. All the other prior probability distributions were left unchanged from the first attempt.
+Trial and error was employed to produce an initial informed prior value for $\gamma$, the rate of diffusion of nitric oxide, which was the problematic parameter for datasets 3 and 4 previously. This value was estimated to be $\approx 0.02~\mu Ms^{-1}$ based upon visual comparison of the solved output against the experimental data. This value was then used as a prior with no bounds so that the parameter estimation algorithm could home in on the correct distribution. All the other prior probability distributions were left unchanged from the first attempt.
 
 Figure \ref{fig:nosim1.2} shows greatly improved fitting of solved data to experimental values suggesting that the parameters are now correct (or at least reasonably close) for describing the removal of nitric oxide. The model is still not capturing the small effect on oxygen reduction rate visible in the experimental data however. A linear regression of the solved oxygen data suggests that it is in fact a perfectly straight line ($R^2=0.9999$, source data not shown) whereas there should be a slight elbow upon addition of nitric oxide. This was not considered to be a significant problem here, as the effect is far more visible in the subsequent dataset(s), therefore would be more easily modelled.
 
-The posterior probability distributions that this dataset produced after parameter estimation are shown in Figure \ref{fig:dataset1posterior1}. These distributions can be used as prior probability distributions for parameter estimation of dataset 3, as these now include the missing information about rate of removal of nitric oxide by diffusion.
+The posterior probability distribution for $\gamma$ produced by this dataset parameter estimation can be used a prior probability distribution for parameter estimation of datasets 1 and 4, as this now includes the missing information about rate of removal of nitric oxide by diffusion.
 
 \begin{figure}[tbp]
  \centering
@@ -141,13 +141,14 @@ The posterior probability distributions that this dataset produced after paramet
  \label{fig:nosim1.2}
 \end{figure}
 
-\begin{figure}[p]
- \centering
- \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/posteriors-1.pdf}
- % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
- \caption[Posterior Distributions for Dataset 1]{{\bf Posterior Distributions for Dataset 1}. The posterior probability distributions for dataset 1 of nitric oxide removal. All the parameters are still well within their prior bounds with the exception of $\gamma$ which had a manually altered starting value which was significantly different from the original prior distribution. The initial reduced state posteriors appear as point values as the perturbation kernel was disabled for these values (starting value is largely irrelevant).
- \label{fig:dataset1posterior1}}
-\end{figure}
+%no longer include this as it is wrong
+%\begin{figure}[p]
+% \centering
+% \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./06-noreduction/data/posteriors-1.pdf}
+% % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+% \caption[Posterior Distributions for Dataset 1]{{\bf Posterior Distributions for Dataset 1}. The posterior probability distributions for dataset 1 of nitric oxide removal. All the parameters are still well within their prior bounds with the exception of $\gamma$ which had a manually altered starting value which was significantly different from the original prior distribution. The initial reduced state posteriors appear as point values as the perturbation kernel was disabled for these values (starting value is largely irrelevant).
+% \label{fig:dataset1posterior1}}
+%\end{figure}
 
 \subsubsection{Tertiary Parameter Estimation Results}
 The third round of parameter estimation built upon the results from the previous section. After parametrising the value for $\gamma$ from dataset 1, it was then possible to attempt parameter estimation on dataset 3 which also involved $l_1$, $l_3$, $k_5$ \& $k_6$ for reduction of nitric oxide and inactivation of \cbbthree{} by nitric oxide respectively. The prior probability distributions used for this round of parameter estimation were the same as in Figure \ref{fig:aer_no_priors} except that the distribution for $\gamma$ was replaced by that found in Figure \ref{fig:dataset1posterior1}. Additionally the distributions for $k_1$ and $k_3$ were replaced by idealised lognormal distributions to remove the inherent bimodality and hard limits found in those source distributions.
