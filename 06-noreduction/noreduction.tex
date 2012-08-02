@@ -239,8 +239,88 @@ $\beta$ && 1.02 & C && 2.92 \\
 \end{table}
 
 \subsubsection{Analysis of Correlation}
-A correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapter \ref{chap:oxygenreduction}. The upper-triangle correlation matrix is shown in Table \ref{tab:noregress1}. The correlation matrix shows a much greater degree of correlation between parameter values than was seen in for oxygen reduction alone. There were much stronger correlations between C and $k_3$ and C and X for this dataset than for oxygen reduction, but the direction of correlation was the same which made sense. Additionally there was a very strong positive correlation between $k_5$ and $k_6$, which given the brief discussion earlier in the chapter was to be expected. As it appeared that the ratio and not the absolute values of $k_5$ and $k_6$ was important, a strong positive correlation between values would achieve this.
+A correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapter \ref{chap:oxygenreduction}. The upper-triangle correlation matrices are shown in Tables \ref{tab:noregress1} and \ref{tab:noregress4}. The correlation matrix shows a much greater degree of correlation between parameter values than was seen in for oxygen reduction alone. There were much stronger correlations between C and $k_3$ and C and X for this dataset than for oxygen reduction, but the direction of correlation was the same which made sense. Additionally there was a very strong positive correlation between $k_5$ and $k_6$, which given the brief discussion earlier in the chapter was to be expected. As it appeared that the ratio and not the absolute values of $k_5$ and $k_6$ was important, a strong positive correlation between values would achieve this.
+\begin{table}[p]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.5}
+  \centering
+  \rotatebox{90}{
+  \begin{minipage}{24.4cm}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$l_1$ & \cellcolor{dark-gray}$l_3$ & \cellcolor{dark-gray}$k_5$ & \cellcolor{dark-gray}$k_6$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}B & \cellcolor{dark-gray}C \\
+    \hline
+    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}1 & -0.22 & 0.07 & -0.06 & 0.07 & -0.04 & -0.01 & -0.06 & -0.01 & 0.04 & 0.02 & 0 \\
+    \hline
+    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.28 & 0.12 & 0.25 & 0.22 & 0.05 & 0.22 & 0.63 & -0.29 & -0.01 & -0.01 \\
+    \hline
+    \cellcolor{dark-gray}$l_1$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.12 & \cellcolor{orange}-0.45 & \cellcolor{orange}-0.52 & -0.09 & 0.06 & -0.20 & -0.25 & -0.11 & \cellcolor{orange}0.32 \\
+    \hline
+    \cellcolor{dark-gray}$l_3$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.43 & \cellcolor{orange}-0.40 & -0.083 & 0.16 & -0.07 & -0.15 & \cellcolor{green}-0.81 & 0.04 \\
+    \hline
+    \cellcolor{dark-gray}$k_5$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{green}0.76 & 0.04 & -0.15 & -0.10 & -0.11 & \cellcolor{orange}0.46 & 0.08 \\
+    \hline
+    \cellcolor{dark-gray}$k_6$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.25 & -0.06 & -0.02 & \cellcolor{orange}0.45 & \cellcolor{orange}0.34 & \cellcolor{orange}-0.48 \\
+    \hline
+    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.02 & 0 & 0.27 & 0.02 & -0.22 \\
+    \hline
+    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.06 & -0.20 & -0.10 & 0.14 \\
+    \hline
+    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.18 & \cellcolor{orange}-0.39 & -0.19\\
+    \hline
+    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.05 & \cellcolor{green}-0.87 \\
+    \hline
+    \cellcolor{dark-gray}B & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.11 \\
+    \hline
+    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 \\
+    \hline
+  \end{tabular}
+  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 1.} This table shows the $R$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
+  \label{tab:noregress1}}
+  \end{minipage}
+  }
+\end{table}
+\afterpage{\clearpage}
 
+\begin{table}[p]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.5}
+  \centering
+  \rotatebox{90}{
+  \begin{minipage}{24.4cm}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$k_5$ & \cellcolor{dark-gray}$k_6$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}B & \cellcolor{dark-gray}C \\
+    \hline
+    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}1 & -0.14 & -0.02 & -0.25 & 0.02 & 0.03 & 0.07 & 0.13 & 0.02 & 0.04 \\
+    \hline
+    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.05 & 0.21 & -0.08 & -0.02 & -0.08 & -0.29 & \cellcolor{orange}-0.31 & -0.18 \\
+    \hline
+    \cellcolor{dark-gray}$k_5$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{green}0.74 & 0.06 & -0.02 & -0.11 & -0.07 & -0.25 & 0.25 \\
+    \hline
+    \cellcolor{dark-gray}$k_6$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.05 & 0.01 & -0.15 & -0.17 & 0.28 & \cellcolor{orange}-0.37 \\
+    \hline
+    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.05 & -0.01 & -0.05 & -0.10 & 0.19 \\
+    \hline
+    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.03 & 0.04 & 0.04 & -0.02 \\
+    \hline
+    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.03 & 0.07 & -0.04 \\
+    \hline
+    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.04 & 0.16 \\
+    \hline
+    \cellcolor{dark-gray}B & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{green}-0.84 \\
+    \hline
+    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 \\
+    \hline
+  \end{tabular}
+  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 4.} This table shows the $R$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
+  \label{tab:noregress4}}
+  \end{minipage}
+  }
+\end{table}
+\afterpage{\clearpage}
 There were a number of other interesting correlation between parameters also. $l_3$ - the rate of reduction of NorB appeared to be strongly negatively correlated to $\gamma$- the rate of NO loss. This could be explained by the model needing to balance the removal of NO by simple diffusion and by reduction. Increasing the rate of diffusion could be offset by decreasing the rate of reduction of NorB which in turn would slow down NO reduction. There also appeared to be a strong negative correlation between the amount of quinones, Q, and $l_3$, which would make sense if the model were trying to maintain a constant level of NorB reduction. More quinones would lead to a slower rate of reduction being required to maintain the same level of reduction. This same negative correlation can also be observed between Q and $k_3$ \& C to achieve the same result for reduction state of \cbbthree{}.The positions in the electron transport chain of these correlations are shown below, marked by superscript $\blacktriangle$, $\square$, $\bigstar$, $\Diamond$ and $\clubsuit$.
 \begin{equation*}
 \xrightarrow{g}Q^\clubsuit\xrightarrow{f}X^{\blacktriangle}\xrightarrow{k_3^{\square}}C^{\square\blacktriangle}\xrightarrow{k_1}O_2
@@ -255,57 +335,8 @@ NO + C_a \mathop{\leftrightharpoons}_{k_6^{\bigstar}}^{k_5^{\bigstar}}NO\mhyphen
 NO\xrightarrow{\gamma^\lozenge}\emptyset
 \end{equation*}
 
-
-
-\begin{table}[p]
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.5}
-  \centering
-  \rotatebox{90}{
-  \begin{minipage}{24.4cm}
-  \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-    \hline
-    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$l_1$ & \cellcolor{dark-gray}$l_3$ & \cellcolor{dark-gray}$k_5$ & \cellcolor{dark-gray}$k_6$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}$\gamma$ & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}B & \cellcolor{dark-gray}C \\
-    \hline
-    \cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}1 & -0.05 & 0.03 & 0.06 & -0.02 & -0.06 & -0.02 & 0.01 & -0.05 & -0.05 & -0.10 & -0.11 & 0.02 & 0.08 \\
-    \hline
-    \cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.53 & \cellcolor{orange}-0.45 & 0.16 & 0.27 & 0.0022 & -0.08 & 0.15 & \cellcolor{orange}0.48 & \cellcolor{orange}0.57 & \cellcolor{orange}0.55 & 0.18 & \cellcolor{green}-0.91 \\
-    \hline
-    \cellcolor{dark-gray}$l_1$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.18 & -0.07 & -0.15 & -0.008 & 0.15 & -0.05 & -0.14 & \cellcolor{orange}-0.34 & \cellcolor{orange}-0.50 & \cellcolor{orange}-0.49 & \cellcolor{orange}0.58\\
-    \hline
-    \cellcolor{dark-gray}$l_3$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.10 & -0.05 & -0.02 & 0.003 & \cellcolor{orange}-0.20 & \cellcolor{orange}-0.70 & \cellcolor{orange}-0.69 & \cellcolor{orange}-0.44 & \cellcolor{orange}-0.32 & \cellcolor{orange}0.53\\
-    \hline
-    \cellcolor{dark-gray}$k_5$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{green}0.93 & 0.10 & -0.03 & -0.19 & -0.03 & 0.03 & 0.11 & -0.16 & -0.16\\
-    \hline
-    \cellcolor{dark-gray}$k_6$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.11 & 0.02 & -0.12 & -0.14 & 0.09 & 0.26 & -0.12 & \cellcolor{orange}-0.30\\
-    \hline
-    \cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.007 & -0.06 & 0.03 & -0.02 & 0.02 & -0.002 & -0.01 \\
-    \hline
-    \cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.07 & -0.01 & -0.01 & 0.10 & -0.10 & -0.02 \\
-    \hline
-    \cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.27 & 0.21 & 0.11 & 0.05 & -0.17\\
-    \hline
-    \cellcolor{dark-gray}$\gamma$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}0.50 & \cellcolor{orange}0.40 & -0.02 & \cellcolor{orange}-0.48\\
-    \hline
-    \cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}0.63 & -0.03 & \cellcolor{orange}-0.68\\
-    \hline
-    \cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.14 & \cellcolor{green}-0.81 \\
-    \hline
-    \cellcolor{dark-gray}B & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.20\\
-    \hline
-    \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1\\
-    \hline
-  \end{tabular}
-  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 3.} This table shows the $R$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
-  \label{tab:noregress1}}
-  \end{minipage}
-  }
-\end{table}
-\afterpage{\clearpage}
-%\end{landscape}
 \subsection{Discussion}
-The parameter distributions obtained from this more convoluted set of datasets are capable of modelling the experimental data impressively well given the lack of prior information available and taking into account the assumptions made about the system. Oxygen reduction can be modelled almost perfectly using posterior distributions from earlier datasets which will still fit new data. Nitric oxide reduction and removal was modelled less well, however it was not clear whether this was due to a limitation of the model itself, or and inherent issue with the experimental set-up. In reality it was probably a combination of both which would be impossible to decouple. The general features of nitric oxide reduction were captured in the model even if a precise fit wasn't achieved. There were a large number of unknowns in these experimental datasets, it was not clear for example how much NorB was present in dataset 3, therefore the concentrations and rates obtained will most likely not reflect \textit{in vivo} values, however they do provide valuable information about how they interact with other parameters. It is possible that the difference in observed and solved nitric oxide reduction rates is actually due in part to an overestimation of $\gamma$ introduced by the analysis of the first dataset in Figure \ref{fig:nodata1}. It was assumed that there was no NorB present in that culture, thus any and all nitric oxide removal would solely be due to diffusion. If this were \textit{not} the case, and in fact there was some small amount of nitric oxide reductase activity, then $\gamma$ would be overestimated as it would include this NorB activity. The posterior probability distributions for dataset 3 (Figure \ref{fig:redoneposterior2}) potentially support this hypothesis as they should the parameter estimation system trying to reduce the value of $\gamma$ to the lower limit of its range. This inappropriately high value of $\gamma$ could account for much of the discrepancy between the reduction rates of the experimental and solved data.
+The parameter distributions obtained from this more convoluted set of datasets are capable of modelling the experimental data impressively well given the lack of prior information available and taking into account the assumptions made about the system. Oxygen reduction can be modelled almost perfectly using posterior distributions from earlier datasets which will still fit new data. Nitric oxide reduction and removal was modelled less well, however it was not clear whether this was due to a limitation of the model itself, or and inherent issue with the experimental set-up. In reality it was probably a combination of both which would be impossible to decouple. The general features of nitric oxide reduction were captured in the model even if a precise fit wasn't achieved. There were a large number of unknowns in these experimental datasets, it was not clear for example how much NorB was present in dataset 1, therefore the concentrations and rates obtained will most likely not reflect \textit{in vivo} values, however they do provide valuable information about how they interact with other parameters. It is possible that the difference in observed and solved nitric oxide reduction rates is actually due in part to an overestimation of $\gamma$ introduced by the analysis of the first dataset in Figure \ref{fig:nodata1}. It was assumed that there was no NorB present in that culture, thus any and all nitric oxide removal would solely be due to diffusion. If this were \textit{not} the case, and in fact there was some small amount of nitric oxide reductase activity, then $\gamma$ would be overestimated as it would include this NorB activity. The posterior probability distributions for datasets 1 and 4 (Figure \ref{fig:redoneposterior2}) potentially support this hypothesis as they show the parameter estimation system trying to reduce the value of $\gamma$ to the lower limit of its range. This inappropriately high value of $\gamma$ could account for much of the discrepancy between the reduction rates of the experimental and solved data.
 
 The simulated results and parameter set generated from parameter estimation are corroborated by experimental data observed by \citet{Anjum2002}. Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure 5a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure 5b). A NorB mutant treated to a larger concentration of NO shows a much slower recovery of oxygen (Figure 5c) which can be shown \textit{in silico} simply be removing NorB.
 
@@ -319,15 +350,12 @@ As more parameters had been populated in the model it was now possible to examin
  \label{fig:nosimredox}
 \end{figure}
 
-\section{Redo with correct solver}
-
-
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
 %\subsection{Results}
 %\subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitric Oxide Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitric Oxide Reduction in nsrR- mutant}}
 %\subsection{Introduction}
- The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown). \textit{Either expand or remove this section}
+ The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
 %\subsection{Results}
 %\subsection{Discussion}
