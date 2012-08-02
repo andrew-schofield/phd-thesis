@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jun 12 14:56:56 2012"
+@timestamp def "Thu Aug  2 15:57:39 2012"
 @with box
 @    box on
 @    box loctype view
@@ -145,7 +145,7 @@
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
-@    title "Failed Fitting of Dataset 1"
+@    title "Failed Fitting of Dataset 3"
 @    title font 0
 @    title size 1.500000
 @    title color 1
