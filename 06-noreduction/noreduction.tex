@@ -184,7 +184,7 @@ The posterior probability distributions generated from this third round of param
  \caption[Posterior Distributions for Datasets 1 and 4]{{\bf Posterior Distributions for Datasets 1 and 4}. The posterior probability distributions for datasets 1 and 4 of nitric oxide removal.
  \label{fig:redoneposterior2}}
 \end{figure}
-A comparison between the prior and posterior distributions can be seen in tabular form in Table \ref{tab:noPstat}. This table shows the parameters of the idealised lognormal distributions which describe the obtained probability distributions to more easily represent the data.
+A comparison between the prior and posterior distributions can be seen in tabular form in Table \ref{tab:redone-prob-stat}. This table shows the parameters of the idealised lognormal distributions which describe the obtained probability distributions to more easily represent the data.
 
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
@@ -194,27 +194,26 @@ A comparison between the prior and posterior distributions can be seen in tabula
 & & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
 \textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
 \midrule
-$k_1$ && 450 & 35 & 395.75$\downarrow$ & 56.36$\downarrow$\\
-$k_3$ && 4.748 & 0.404 & 5.44 & 0.65\\
-$l_1$ && 6 & 2 & 2.35$\downarrow$ & 1.47$\downarrow$\\
-$l_3$ && 1 & 2 & 0.035$\downarrow$ & 0.1$\downarrow$\\
-$k_5$ && 100 & 10 & 4170.95$\uparrow$ & 1756.5$\uparrow$\\
-$k_6$ && 38 & 8 & 0.3$\downarrow$ & 0.17$\downarrow$\\
-$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & $4.9\times 10^{-6}$\\
-g && 1.053 & 0.099 & 1.072 & 0.1\\
-f && 9.10 & 1.18 & 8.60 & 2.36$\uparrow$\\
-$\gamma$ && 0.00014 & $4.72\times 10^{-6}$ & 0.017$\uparrow$ & 0.0015$\uparrow$\\
-Q && 3.59 & 0.132 & 4.20 & 0.70\\
-X && 15.177 & 0.247 & 14.52 & 1.25\\
-B && 0.143 & 0.159 & 0.23 & 0.03\\
-C && 0.143 & 0.159 & 0.06 & 0.01\\
+$k_1$ && 413.228 & 30.046 & 417.88 & 31.172\\
+$k_3$ && 4.496 & 0.463 & 4.65 & 0.619\\
+$l_1$ && 6 & 2 & 13.12$\uparrow$ & 8.321$\uparrow$\\
+$l_3$ && 1 & 2 & 0.058$\downarrow$ & 0.021$\downarrow$\\
+$k_5$ && 100 & 10 & 1741.8$\uparrow$ & 1822.0$\uparrow$\\
+$k_6$ && 38 & 8 & 1.076$\downarrow$ & 1.473$\downarrow$\\
+$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
+g && 0.889 & 0.089 & 0.857 & 0.086\\
+f && 8.707 & 1.35 & 8.398 & 1.237\\
+$\gamma$ && 0.017 & 0.0015 & \\
+Q && 3.143 & 0.240 & 7.06 & 1.317\\
+X && 4.732 & 6.707 & 27.45 & 12.08\\
+B && 0.043 & 0.044 & 0.137 & 0.048\\
+C && 0.043 & 0.044 & 0.071 & 0.029\\
 \bottomrule
 \end{tabular}
 \end{center}
 \caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from dataset 3 (after being run on dataset 1), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
-\label{tab:noPstat}}
+\label{tab:redone-prob-stat}}
 \end{table}
-
 \subsubsection{Analysis of Convergence}
 The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. Some of the oxygen reduction parameters actually had slightly larger R statistic values than the results from Chapter \ref{chap:oxygenreduction}.
 
@@ -321,34 +320,6 @@ As more parameters had been populated in the model it was now possible to examin
 \end{figure}
 
 \section{Redo with correct solver}
-\begin{table}[tbp]%needs to be 'here' as section is short
-\renewcommand{\arraystretch}{1.5}
-\begin{center}
-\begin{tabular}{cccccc}
-\toprule
-& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
-\midrule
-$k_1$ && 413.228 & 30.046 & 417.88 & 31.172\\
-$k_3$ && 4.496 & 0.463 & 4.65 & 0.619\\
-$l_1$ && 6 & 2 & 13.12$\uparrow$ & 8.321$\uparrow$\\
-$l_3$ && 1 & 2 & 0.058$\downarrow$ & 0.021$\downarrow$\\
-$k_5$ && 100 & 10 & 1741.8$\uparrow$ & 1822.0$\uparrow$\\
-$k_6$ && 38 & 8 & 1.076$\downarrow$ & 1.473$\downarrow$\\
-$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
-g && 0.889 & 0.089 & 0.857 & 0.086\\
-f && 8.707 & 1.35 & 8.398 & 1.237\\
-$\gamma$ && 0.00014 & $4.72\times 10^{-6}$ & \\
-Q && 3.143 & 0.240 & 7.06 & 1.317\\
-X && 4.732 & 6.707 & 27.45 & 12.08\\
-B && 0.043 & 0.044 & 0.137 & 0.048\\
-C && 0.043 & 0.044 & 0.071 & 0.029\\
-\bottomrule
-\end{tabular}
-\end{center}
-\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from dataset 3 (after being run on dataset 1), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
-\label{tab:redone-prob-stat}}
-\end{table}
 
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
