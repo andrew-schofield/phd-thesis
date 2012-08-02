@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jun 12 21:07:40 2012"
+@timestamp def "Thu Aug  2 16:10:07 2012"
 @with box
 @    box on
 @    box loctype view
@@ -149,7 +149,7 @@
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle "From Dataset 1"
+@    subtitle "From Dataset 3"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
