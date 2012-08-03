@@ -239,7 +239,7 @@ $\beta$ && 1.02 & C && 2.92 \\
 \end{table}
 
 \subsubsection{Analysis of Correlation}
-A correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapter \ref{chap:oxygenreduction}. The upper-triangle correlation matrices are shown in Tables \ref{tab:noregress1} and \ref{tab:noregress4}. The correlation matrix shows a much greater degree of correlation between parameter values than was seen in for oxygen reduction alone. There were much stronger correlations between C and $k_3$ and C and X for this dataset than for oxygen reduction, but the direction of correlation was the same which made sense. Additionally there was a very strong positive correlation between $k_5$ and $k_6$, which given the brief discussion earlier in the chapter was to be expected. As it appeared that the ratio and not the absolute values of $k_5$ and $k_6$ was important, a strong positive correlation between values would achieve this.
+A correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapter \ref{chap:oxygenreduction}. The upper-triangle correlation matrices are shown in Tables \ref{tab:noregress1} and \ref{tab:noregress4}. There was a very strong positive correlation between $k_5$ and $k_6$, which given the brief discussion earlier in the chapter was to be expected. As it appeared that the ratio and not the absolute values of $k_5$ and $k_6$ was important, a strong positive correlation between values would achieve this.
 \begin{table}[p]
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.5}
@@ -321,22 +321,26 @@ A correlation analysis was performed on each of the parameters using the Monte-C
   }
 \end{table}
 \afterpage{\clearpage}
-There were a number of other interesting correlation between parameters also. $l_3$ - the rate of reduction of NorB appeared to be strongly negatively correlated to $\gamma$- the rate of NO loss. This could be explained by the model needing to balance the removal of NO by simple diffusion and by reduction. Increasing the rate of diffusion could be offset by decreasing the rate of reduction of NorB which in turn would slow down NO reduction. There also appeared to be a strong negative correlation between the amount of quinones, Q, and $l_3$, which would make sense if the model were trying to maintain a constant level of NorB reduction. More quinones would lead to a slower rate of reduction being required to maintain the same level of reduction. This same negative correlation can also be observed between Q and $k_3$ \& C to achieve the same result for reduction state of \cbbthree{}.The positions in the electron transport chain of these correlations are shown below, marked by superscript $\blacktriangle$, $\square$, $\bigstar$, $\Diamond$ and $\clubsuit$.
-\begin{equation*}
-\xrightarrow{g}Q^\clubsuit\xrightarrow{f}X^{\blacktriangle}\xrightarrow{k_3^{\square}}C^{\square\blacktriangle}\xrightarrow{k_1}O_2
-\end{equation*}
-\begin{equation*}
-NO + C_a \mathop{\leftrightharpoons}_{k_6^{\bigstar}}^{k_5^{\bigstar}}NO\mhyphen C_X
-\end{equation*}
-\begin{equation*}
-\xrightarrow{g}Q^\clubsuit\xrightarrow{l_1}B\xrightarrow{l_3^{\Diamond\clubsuit}} NO
-\end{equation*}
-\begin{equation*}
-NO\xrightarrow{\gamma^\lozenge}\emptyset
-\end{equation*}
+There also appeared to be a strong negative correlation between B, and $l_3$, which would make sense if the model were trying to maintain a constant level of NO reduction. More NorB would require less reduction of NorB to maintain the same level of reduction. There are obvious negative correlations between $k_5,k_6$ and $l_1,l_3$. As more NorB is being sequestered by \cbbthree{}, less needs to be reduced to maintain the same level of inhibition.
+
+%  $\blacktriangle$, $\square$, $\bigstar$, $\Diamond$ and $\clubsuit$.
+% \begin{equation*}
+% \xrightarrow{g}Q^\clubsuit\xrightarrow{f}X^{\blacktriangle}\xrightarrow{k_3^{\square}}C^{\square\blacktriangle}\xrightarrow{k_1}O_2
+% \end{equation*}
+% \begin{equation*}
+% NO + C_a \mathop{\leftrightharpoons}_{k_6^{\bigstar}}^{k_5^{\bigstar}}NO\mhyphen C_X
+% \end{equation*}
+% \begin{equation*}
+% \xrightarrow{g}Q^\clubsuit\xrightarrow{l_1}B\xrightarrow{l_3^{\Diamond\clubsuit}} NO
+% \end{equation*}
+% \begin{equation*}
+% NO\xrightarrow{\gamma^\lozenge}\emptyset
+% \end{equation*}
 
 \subsection{Discussion}
 The parameter distributions obtained from this more convoluted set of datasets are capable of modelling the experimental data impressively well given the lack of prior information available and taking into account the assumptions made about the system. Oxygen reduction can be modelled almost perfectly using posterior distributions from earlier datasets which will still fit new data. Nitric oxide reduction and removal was modelled less well, however it was not clear whether this was due to a limitation of the model itself, or and inherent issue with the experimental set-up. In reality it was probably a combination of both which would be impossible to decouple. The general features of nitric oxide reduction were captured in the model even if a precise fit wasn't achieved. There were a large number of unknowns in these experimental datasets, it was not clear for example how much NorB was present in dataset 1, therefore the concentrations and rates obtained will most likely not reflect \textit{in vivo} values, however they do provide valuable information about how they interact with other parameters. It is possible that the difference in observed and solved nitric oxide reduction rates is actually due in part to an overestimation of $\gamma$ introduced by the analysis of the first dataset in Figure \ref{fig:nodata1}. It was assumed that there was no NorB present in that culture, thus any and all nitric oxide removal would solely be due to diffusion. If this were \textit{not} the case, and in fact there was some small amount of nitric oxide reductase activity, then $\gamma$ would be overestimated as it would include this NorB activity. The posterior probability distributions for datasets 1 and 4 (Figure \ref{fig:redoneposterior2}) potentially support this hypothesis as they show the parameter estimation system trying to reduce the value of $\gamma$ to the lower limit of its range. This inappropriately high value of $\gamma$ could account for much of the discrepancy between the reduction rates of the experimental and solved data.
+
+There is further evidence of incomplete decoupling of the model parameters from the experimental conditions here, as shown by the concentration posteriors all having shifted from the priors. The major difference can be seen for X - the cytochrome pool. This value doesn't actually represent any \textit{in vivo} component as it is a simplification to represent all the cytochromes, hence the change in this value is not unexpected. Unfortunately, this is probably also the cause of shifting of the other component concentrations also.
 
 The simulated results and parameter set generated from parameter estimation are corroborated by experimental data observed by \citet{Anjum2002}. Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure 5a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure 5b). A NorB mutant treated to a larger concentration of NO shows a much slower recovery of oxygen (Figure 5c) which can be shown \textit{in silico} simply be removing NorB.
 
