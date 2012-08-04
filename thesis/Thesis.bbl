@@ -1,4 +1,4 @@
-\begin{thebibliography}{136}
+\begin{thebibliography}{137}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -559,6 +559,11 @@ Cole LJ, Huston WM, Moir JWB (2008) Delivery of Nitric Oxide for Analysis of
   the Function of Cytochrome C'. In: Poole RK, editor, Globins and Other Nitric
   Oxide-Reactive Proteins, Part A, vol. 436 of Methods in Enzymology, pp. 21 --
   33, Academic Press.
+
+\bibitem[{Blomberg et~al.(2005)Blomberg, Blomberg, and Siegbahn}]{Blomberg2005}
+Blomberg LM, Blomberg MR, Siegbahn PE (2005) A Theoretical Study on the Binding
+  of O2, NO and CO to Heme Proteins. Journal of Inorganic Biochemistry 99: 949
+  -- 958.
 
 \bibitem[{Giuffre et~al.(2000)Giuffre, Barone, Mastronicola, D'Itri, Sarti
   et~al.}]{Giuffre2000}
