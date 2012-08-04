@@ -22,13 +22,13 @@
 \usepackage{color}
 \usepackage[T1]{fontenc}
 \usepackage{notoccite}
-\usepackage{lscape}
+%\usepackage{lscape}
 \usepackage{rotating}
 \usepackage[table]{xcolor}
 \usepackage{svn-multi}
 \usepackage{afterpage}
-\usepackage{listings}
-\svnid{$Id: Thesis.tex 233 2012-06-23 14:34:17Z uncle_fungus $}
+\usepackage{alltt}
+\svnid{$Id: Thesis.tex 251 2012-07-28 16:26:12Z uncle_fungus $}
 
 \definecolor{dark-gray}{gray}{0.7}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -193,28 +193,28 @@
 
 \makeindex
 
-%\includeonly{./05-oxygenreduction/oxygenreduction}
+\includeonly{./06-noreduction/noreduction}
 
 \begin{document}
 \frontmatter
 \mainmatter
-\maketitle
+%\maketitle
 
-\cleardoublepage
+%\cleardoublepage
+
+% \doublespacing
+% \begin{abstract}
+% The bacterium \Nsm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} a mathematical model has been constructed which describes the behaviour of the respiratory system using a set of differential equations. A novel combination of experimental data gathering and successive Bayesian fitting was then used to populate and parametrise the model. The resulting model and parameter probability distributions represents a working system for predicting respiratory behaviour in \Nm{}.
+% \end{abstract}
+
+% \singlespacing
+% \tableofcontents
+% \listoffigures
+% \listoftables
 
 \doublespacing
-\begin{abstract}
-The bacterium \Nsm{} is capable of respiration in both aerobic and microaerobic environments by reduction of oxygen and nitrite respectively. The respiratory chain and genetic regulation of this system are already well understood, but there are complex interactions between components which make predicting which respiratory path will be used difficult. To predict the respiratory behaviour of \Nm{} a mathematical model has been constructed which describes the behaviour of the respiratory system using a set of differential equations. A novel combination of experimental data gathering and successive Bayesian fitting was then used to populate and parametrise the model. The resulting model and parameter probability distributions represents a working system for predicting respiratory behaviour in \Nm{}.
-\end{abstract}
-
-\singlespacing
-\tableofcontents
-\listoffigures
-\listoftables
-
-\doublespacing
-
-\chapter*{Acknowledgements}
+%
+% \chapter*{Acknowledgements}
 
 \include{./01-introduction/introduction}
 \include{./02-materialsmethods/materialsandmethods}
@@ -231,10 +231,10 @@ The bacterium \Nsm{} is capable of respiration in both aerobic and microaerobic 
 
 \newpage
 
-\singlespacing
-
-\printnomenclature[3cm]
-\doublespacing
+% \singlespacing
+%
+% \printnomenclature[3cm]
+% \doublespacing
 
 \renewcommand{\bibname}{References}
 \addcontentsline{toc}{chapter}{\bibname}
