@@ -51,71 +51,71 @@
 \contentsline {subsection}{\numberline {3.1.3}Assumptions and their Justifications}{57}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{58}{section.3.2}
 \contentsline {section}{\numberline {3.3}Solving Ordinary Differential Equations}{64}{section.3.3}
-\contentsline {section}{\numberline {3.4}Implementation of the Model in Software}{64}{section.3.4}
+\contentsline {section}{\numberline {3.4}Implementation of the Model in Software}{65}{section.3.4}
 \contentsline {section}{\numberline {3.5}Parameter Estimation}{65}{section.3.5}
-\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{66}{chapter.4}
-\contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{66}{section.4.1}
-\contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{67}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Difference Functions}{67}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{68}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Markov Chain Monte Carlo}{69}{subsubsection.4.2.2.1}
-\contentsline {subsection}{\numberline {4.2.3}Simulated Annealing}{70}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{72}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Metropolis Hastings Monte Carlo}{77}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Validating the Parameter Estimation Algorithm}{79}{section.4.3}
-\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{80}{section.4.4}
-\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{82}{section.4.5}
-\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{85}{chapter.5}
-\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{85}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Introduction}{85}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{86}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{88}{subsubsection.5.1.2.1}
-\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{92}{subsubsection.5.1.2.2}
-\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{98}{subsubsection.5.1.2.3}
-\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{99}{subsubsection.5.1.2.4}
-\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{106}{subsubsection.5.1.2.5}
-\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{106}{subsubsection.5.1.2.6}
-\contentsline {subsection}{\numberline {5.1.3}Discussion}{110}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{112}{chapter.6}
-\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{112}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Introduction}{112}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{114}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{118}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{120}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{121}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{122}{subsubsection.6.1.2.4}
-\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{124}{subsubsection.6.1.2.5}
-\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{128}{subsubsection.6.1.2.6}
-\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{128}{subsubsection.6.1.2.7}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{133}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{136}{section.6.2}
-\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{137}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{137}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{137}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Results}{137}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Discussion}{137}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{137}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Introduction}{137}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Results}{137}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Discussion}{137}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{137}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Introduction}{137}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Results}{139}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Discussion}{139}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{139}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Introduction}{139}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Results}{139}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Discussion}{139}{subsection.7.4.3}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{140}{chapter.8}
-\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{140}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Introduction}{140}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Results}{140}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Discussion}{140}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}The Completed Model}{141}{chapter.9}
-\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{141}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix}{142}{appendix.A}
-\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{142}{section.A.1}
-\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{142}{section.A.2}
-\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{142}{section.A.3}
-\contentsline {chapter}{List of Abbreviations}{145}{appendix*.23}
-\contentsline {chapter}{References}{146}{appendix*.23}
+\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{67}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{67}{section.4.1}
+\contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{68}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Difference Functions}{68}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{69}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Markov Chain Monte Carlo}{70}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Simulated Annealing}{71}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{73}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Metropolis Hastings Monte Carlo}{78}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Validating the Parameter Estimation Algorithm}{80}{section.4.3}
+\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{81}{section.4.4}
+\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{83}{section.4.5}
+\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{86}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{86}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{86}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{87}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{89}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{93}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{99}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{100}{subsubsection.5.1.2.4}
+\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{107}{subsubsection.5.1.2.5}
+\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{107}{subsubsection.5.1.2.6}
+\contentsline {subsection}{\numberline {5.1.3}Discussion}{111}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{113}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{113}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{113}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{115}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{119}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{121}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{122}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{123}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{125}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{129}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{129}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{134}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{137}{section.6.2}
+\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{138}{chapter.7}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{138}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{138}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Results}{138}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Discussion}{138}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Microaerobic Nitrite Reduction in \textit {norB$^\textrm {-}$} mutant}{138}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Introduction}{138}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Results}{138}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Discussion}{138}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$} mutant}{138}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{138}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Results}{140}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Discussion}{140}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Aerobic Nitrite Reduction in \textit {nsrR$^\textrm {-}$-norB$^\textrm {-}$} mutant}{140}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{140}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Results}{140}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Discussion}{140}{subsection.7.4.3}
+\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{141}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{141}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{141}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Results}{141}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Discussion}{141}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {9}The Completed Model}{142}{chapter.9}
+\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{142}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix}{143}{appendix.A}
+\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{143}{section.A.1}
+\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{143}{section.A.2}
+\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{143}{section.A.3}
+\contentsline {chapter}{List of Abbreviations}{146}{appendix*.23}
+\contentsline {chapter}{References}{147}{appendix*.23}

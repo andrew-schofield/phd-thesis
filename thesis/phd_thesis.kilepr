@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=Thesis.tex
+lastDocument=04-model/modelconstructionandparameters.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -156,10 +156,10 @@ order=-1
 
 [item:02-materialsmethods/materialsandmethods.tex]
 archive=true
-column=65
+column=869
 encoding=UTF-8
 highlight=LaTeX
-line=8
+line=143
 mode=LaTeX
 open=true
 order=1
@@ -186,10 +186,10 @@ order=-1
 
 [item:04-model/modelconstructionandparameters.tex]
 archive=true
-column=26
+column=652
 encoding=UTF-8
 highlight=LaTeX
-line=285
+line=355
 mode=LaTeX
 open=true
 order=0
@@ -319,16 +319,16 @@ CursorColumn=0
 CursorLine=242
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
-CursorColumn=65
-CursorLine=8
+CursorColumn=869
+CursorLine=143
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 CursorColumn=11
 CursorLine=186
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
-CursorColumn=26
-CursorLine=285
+CursorColumn=652
+CursorLine=355
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
 CursorColumn=16
