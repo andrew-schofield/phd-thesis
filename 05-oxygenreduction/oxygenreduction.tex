@@ -61,7 +61,9 @@ In accordance with the integrative scheme that was introduced in Chapter \ref{ch
 \item Where there are no literature values available, the value was estimated based on preliminary experimental data and bounds of $\pm 10\%$ were used again. In this case upper and lower limits for the distribution were made very wide to try and accommodate for incorrect assumed prior values.
 \end{itemize}
 
-\noindent With reference to the above, the values required to create prior probability distributions from Table \ref{tab:ps} in Chapter \ref{chap:model} are shown in Table \ref{tab:oxyProbstat}.
+\noindent The distributions were created as histograms with 1000 bins, thus the limits described above actually represent the cut-off values at the lower and upper ends of the histogram. The sampling algorithm that uses these histograms rejects any sample that is outside the range of the histogram (even if in reality it will have an exceptionally small but non-zero probability). This means that the prior probability distributions do in fact have hard limits imposed.
+
+With reference to the above, the values required to create prior probability distributions from Table \ref{tab:ps} in Chapter \ref{chap:model} are shown in Table \ref{tab:oxyProbstat}.
 
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
