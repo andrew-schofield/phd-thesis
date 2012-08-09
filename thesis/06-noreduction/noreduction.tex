@@ -215,14 +215,14 @@ C && 0.043 & 0.044 & 0.071 & 0.029\\
 \label{tab:redone-prob-stat}}
 \end{table}
 \subsubsection{Analysis of Convergence}
-The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat-redone}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. This is especially true of $l_3$ which has an extremely high R value. This actually suggests that $l_3$ is a long way away from being fully converged, or that an anomalous Markov Chain has been included.
+The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:noRstat-redone}. The newly included parameters all had large R statistic values suggesting that there is still opportunity for scale reduction in the trajectories. This is highly likely to be due to the fact that $k_5$ and $k_6$ had to be unconstrained by prior probability distributions, and they are directly affecting the values of $l_1$ and $l_3$ in such a way as to prevent them converging fully. This is especially true of $l_3$ which has an extremely high R statistic. This actually suggests that $l_3$ is a long way away from being fully converged, or that an anomalous Markov Chain has been included.
 
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
 \begin{tabular}{ccc|ccc}
 \toprule
-\textbf{Parameter} && \textbf{R value} & \textbf{Parameter} && \textbf{R value}\\
+\textbf{Parameter} && \textbf{R Statistic} & \textbf{Parameter} && \textbf{R Statistic}\\
 \midrule
 $k_1$ && 1.15 & g && 1.13\\
 $k_3$ && 1.31 & f && 1.20\\
@@ -276,7 +276,7 @@ A correlation analysis was performed on each of the parameters using the Monte-C
     \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 \\
     \hline
   \end{tabular}
-  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 1.} This table shows the $R$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
+  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 1.} This table shows the $r$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
   \label{tab:noregress1}}
   \end{minipage}
   }
@@ -315,7 +315,7 @@ A correlation analysis was performed on each of the parameters using the Monte-C
     \cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 \\
     \hline
   \end{tabular}
-  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 4.} This table shows the $R$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
+  \caption[Regression Analysis of Nitric Oxide Reduction Parameters]{{\bf Regression Analysis of Nitric Oxide Reduction Parameters for Dataset 4.} This table shows the $r$ values from linear regression analysis on the parameter trajectories for nitric oxide reduction. Parameters with high correlation have been coloured green ($R\geq0.8$) and those with moderation correlation have been coloured orange ($0.8>R\geq0.3$).
   \label{tab:noregress4}}
   \end{minipage}
   }
