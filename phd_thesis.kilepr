@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=05-oxygenreduction/oxygenreduction.tex
+lastDocument=06-noreduction/noreduction.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -246,20 +246,30 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=470
+column=12
 encoding=UTF-8
 highlight=LaTeX
-line=63
+line=96
 mode=LaTeX
 open=true
 order=3
 
+[item:06-noreduction/data/F5.large.png]
+archive=true
+column=2202362183
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=181
+column=20
 encoding=UTF-8
 highlight=LaTeX
-line=314
+line=355
 mode=LaTeX
 open=true
 order=2
@@ -341,12 +351,12 @@ CursorColumn=26
 CursorLine=192
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=470
-CursorLine=63
+CursorColumn=12
+CursorLine=96
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=181
-CursorLine=314
+CursorColumn=20
+CursorLine=355
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
 CursorColumn=69
