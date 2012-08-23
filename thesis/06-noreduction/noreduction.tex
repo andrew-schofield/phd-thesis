@@ -42,7 +42,11 @@ The dataset in Figure \ref{fig:nodata} appears to show a system that was partial
  \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a larger amount of nitric oxide (to $\approx 7.8~\mu M$) is introduced to the respiring system.}
  \label{fig:nodata2}
 \end{figure}
-The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxygen reduction than that of Figure \ref{fig:nodata1} when a larger amount of nitric oxide is introduced. Again the removal of nitric oxide will primarily be due to diffusion, although now at higher concentrations more nitric oxide will interact with \cbbthree{} temporarily inhibiting it. This inhibition causes the reduction in oxidase activity, and the sequestering of NO by \cbbthree{} also causes some of the visible reduction in nitric oxide concentration. The time-scale over which the nitric oxide disappears strongly suggests that it is not due to nitric oxide reductase activity. It may also be possible that at this concentration of nitric oxide some \cbbthree{} may have been permanently inhibited as mentioned in Chapters \ref{chap:intro} \& \ref{chap:model}. As the cultures in this dataset were obviously being negatively affected by the addition of such a high concentration of nitric oxide, either by permanent inhibition of \cbbthree{} or actual cell death, it was unlikely that this particular dataset could be used to accurately predict parameters in the model as it includes factors that were never part of the original model.
+The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxygen reduction than that of Figure \ref{fig:nodata1} when a larger amount of nitric oxide is introduced. Again the removal of nitric oxide will primarily be due to diffusion, although now at higher concentrations more nitric oxide will interact with \cbbthree{} temporarily inhibiting it. This inhibition causes the reduction in oxidase activity, and the sequestering of NO by \cbbthree{} also causes some of the visible reduction in nitric oxide concentration. The time-scale over which the nitric oxide disappears strongly suggests that it is not due to nitric oxide reductase activity. This is corroborated by the NO removal time-scale in Figure \ref{fig:nodata3} which contains no NorB. It may also be possible that at this concentration of nitric oxide some \cbbthree{} may have been permanently inhibited as mentioned in Chapters \ref{chap:intro} \& \ref{chap:model}. Additionally at higher nitric oxide concentrations nitric oxide could react chemically to oxygen under the following scheme:
+\begin{equation*}
+ 2NO + O_2 \rightarrow 2H^+ + NO_3^- + NO_2^- + H_2O
+\end{equation*}
+\noindent As the cultures in this dataset were obviously being negatively affected by the addition of such a high concentration of nitric oxide, either by permanent inhibition of \cbbthree{} or actual cell death, it was unlikely that this particular dataset could be used to accurately predict parameters in the model as it includes factors that were never part of the original model.
 
 %ds3
 \begin{figure}[tbp]
@@ -64,7 +68,7 @@ The dataset in Figure \ref{fig:nodata1} shows very little visible change in the 
 The dataset in Figure \ref{fig:nodata3} shows a visible change in reduction rate of \cbbthree{} upon addition of nitric oxide. This is due to inhibition of the \cbbthree{} directly by nitric oxide. This culture is incapable of reducing nitric oxide, having a $norB^-$ mutation, thus the only route for removal of nitric oxide is by simple diffusion.
 
 \subsubsection{Prior Probability Distributions}
-As in Chapter \ref{chap:oxygenreduction} the integrative scheme requires that all the parameters involved have associated prior probability distributions. The posterior probability distributions from Chapter \ref{chap:oxygenreduction} were used as prior probability distributions in this chapter. Where new parameters were introduced (which had not been modelled thus far), the distributions were generated based upon published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. Where the posterior probability distributions from Chapter \ref{chap:oxygenreduction} describe rate constants the raw values from the distributions were used as priors in this chapter. Where the distributions describe component concentrations, idealised lognormal distributions were used instead of the raw data to account for differing concentrations between cultures. The distribution of the parameter $\gamma$ - the rate of loss of NO - was initially assumed to be similar to $\beta$, thus the same probability distribution was used. For the other new parameters, lognormal distributions were used as priors as described in Chapter \ref{chap:oxygenreduction}. The values required to create idealised lognormal probability distributions for each parameter are shown in Table \ref{tab:noProbstat1}.
+As in Chapter \ref{chap:oxygenreduction} the integrative scheme requires that all the parameters involved have associated prior probability distributions. The posterior probability distributions from Chapter \ref{chap:oxygenreduction} were used as prior probability distributions in this chapter. Where new parameters were introduced (which had not been modelled thus far), the distributions were generated based upon published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. Where the posterior probability distributions from Chapter \ref{chap:oxygenreduction} describe rate constants the raw values from the distributions were used as priors in this chapter. Where the distributions describe component concentrations, idealised lognormal distributions were used based on normalised the values to account for the different culture densities. This ensures that the prior distributions completely encompass the experimental posterior distributions. The distribution of the parameter $\gamma$ - the rate of loss of NO - was initially assumed (incorrectly) to be similar to $\beta$, thus the same probability distribution was used. This was actually a mathematical oversight as the two parameters are not functionally similar, however the resulting data is shown here to demonstrate the effect of this incorrect parameter. For the other new parameters, lognormal distributions were used as priors as described in Chapter \ref{chap:oxygenreduction}. The values required to create idealised lognormal probability distributions for each parameter are shown in Table \ref{tab:noProbstat1}.
 
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
@@ -211,7 +215,7 @@ C && 0.043 & 0.044 & 0.071 & 0.029\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from dataset 3 (after being run on dataset 1), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
+\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:noProbstat1}. The posterior distributions were generated from datasets 1 \& 4 (after being run on dataset 3), and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$.
 \label{tab:redone-prob-stat}}
 \end{table}
 \subsubsection{Analysis of Convergence}
@@ -234,7 +238,7 @@ $\beta$ && 1.02 & C && 2.92 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from dataset 3. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the Markov chains from datasets 1 \& 4. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
 \label{tab:noRstat-redone}}
 \end{table}
 
@@ -342,9 +346,27 @@ The parameter distributions obtained from this more convoluted set of datasets a
 
 There is further evidence of incomplete decoupling of the model parameters from the experimental conditions here, as shown by the concentration posteriors all having shifted from the priors. The major difference can be seen for X - the cytochrome pool. This value doesn't actually represent any \textit{in vivo} component as it is a simplification to represent all the cytochromes, hence the change in this value is not unexpected. Unfortunately, this is probably also the cause of shifting of the other component concentrations also.
 
-The simulated results and parameter set generated from parameter estimation are corroborated by experimental data observed by \citet{Anjum2002}. Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure 5a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure 5b). A NorB mutant treated to a larger concentration of NO shows a much slower recovery of oxygen (Figure 5c) which can be shown \textit{in silico} simply by removing NorB.
+The simulated results and parameter set generated from parameter estimation are corroborated by experimental data observed by \citet{Anjum2002}.
 
-As more parameters had been populated in the model it was now possible to examine the reduction states of the various enzymes in the system as respiration progresses. A plot showing these states can be seen in Figure \ref{fig:nosimredox}. This figure shows that the reduction states of the enzymes are quickly adjusted to the correct steady state values (of the order of a few seconds) except for NorB, which seems to have a much slower rate of reduction. This slow rate of reduction means that the initial concentration of reduced NorB in the simulation is much more important, and should in fact be much closer to being in a completely reduced state at $t_0$. The virtually instantaneous oxidation of NorB suggests that NorB is very good at reducing nitric oxide. The cytochrome pool appears to stay almost fully reduced throughout the entire simulation, as the rate of cytochrome reduction significantly outweighs the rate of oxidation by downstream components. The quinone pool starts at roughly 70\% reduced, a value which matches what has been observed experimentally. The high rate of \cbbthree{} inactivation also means that upon addition of nitric oxide, 90\% of \cbbthree{} becomes inactivated instantaneously.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=14cm]{./06-noreduction/data/F5.png}
+ % F5.large.png: 1800x1094 pixel, 72dpi, 63.49x38.59 cm, bb=0 0 1800 1094
+ \caption[{Addition of Nitric Oxide to Aerobic Cultures.}]{{\bf Addition of Nitric Oxide to Aerobic Cultures.} Figure 5 reproduced from \citet{Anjum2002}. Oxygen concentration is represented by solid lines and nitric oxide by dashed lines. a) Addition to wild-type culture, b) Addition to \textit{cycP} mutant, c) Addition to \textit{norB} mutant.
+  \label{fig:anjum}}
+\end{figure}
+
+
+Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure \ref{fig:anjum}a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure \ref{fig:anjum}b). A NorB mutant treated to a larger concentration of NO shows a much slower recovery of oxygen (Figure \ref{fig:anjum}c) which can be shown \textit{in silico} simply by removing NorB as can be seen in Figure \ref{fig:in_silico_norB}.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/in_silico_norB.pdf}
+ \caption[{Addition of Nitric Oxide to \textit{in silico} norB mutant.}]{{\bf Addition of Nitric Oxide to \textit{in silico} $\mathbf{norB}^-$ mutant.} Solved output from an \textit{in silico} $norB^-$ mutant created by removing NorB from the simulation in Figure \ref{fig:nosim3.2}.
+  \label{fig:in_silico_norB}}
+\end{figure}
+
+As more parameters had been populated in the model it was now possible to examine the reduction states of the various enzymes in the system as respiration progresses. A plot showing these states can be seen in Figure \ref{fig:nosimredox}. This figure shows that the reduction states of the enzymes are quickly adjusted to the correct steady state values (of the order of a few seconds) except for NorB, which seems to have a much slower rate of reduction. This slow rate of reduction means that the initial concentration of reduced NorB in the simulation is much more important, and should in fact be much closer to being in a completely reduced state at $t_0$. In the datasets used this doesn't affect the outcome as there is sufficient time for NorB to become reduced before Nitric Oxide starts being reduced. The low rate of NorB reduction and the lack of convergence shown are probably due to a lack of information available in experimental datasets. The virtually instantaneous oxidation of NorB suggests that NorB is very good at reducing nitric oxide. The cytochrome pool appears to stay almost fully reduced throughout the entire simulation, as the rate of cytochrome reduction significantly outweighs the rate of oxidation by downstream components. The quinone pool starts at roughly 70\% reduced, a value which matches what has been observed experimentally. The high rate of \cbbthree{} inactivation also means that upon addition of nitric oxide, 90\% of \cbbthree{} becomes inactivated instantaneously.
 
 \begin{figure}[tbp]
  \centering
@@ -354,12 +376,21 @@ As more parameters had been populated in the model it was now possible to examin
  \label{fig:nosimredox}
 \end{figure}
 
+It should be noted that $\gamma$ actually represents a set of physical effects on nitric oxide rather than just diffusion as with $\beta$. $\gamma$ is actually likely to include binding to metalloproteins, spontaneous degradation and the direct chemical reaction with oxygen in addition to the loss by simple diffusion.
+
 %\section{Microaerobic Nitric Oxide Reduction}
 %\subsection{Introduction}
 %\subsection{Results}
 %\subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitric Oxide Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitric Oxide Reduction in nsrR- mutant}}
 %\subsection{Introduction}
- The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in an almost featureless dataset (data not shown).
+ The $\mathit{nsrR}^-$ mutant, which expresses NorB in an essentially constitutive manner was not effective in generating a usable dataset as it removed any NO almost instantaneously resulting in non-modellable dataset shown in Figure \ref{fig:aniAnsrR}.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=1cm 1cm 3cm 1cm, clip=true]{./06-noreduction/data/aniA-nsrR.pdf}
+ % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Nitric Oxide Reduction in an nsrR Mutant.}]{{\bf Nitric Oxide Reduction in an $\mathbf{nsrR}^-$ Mutant.} This figure shows nitric oxide and oxygen reduction in an $aniA^-nsrR^-$. mutant. In this case the $aniA^-$ mutation has no effect as no nitrite is being reduced. Addition of nitric oxide has only a very small effect on the rate of oxygen reduction as it is being removed very quickly be the constitutively expressed NorB.}
+ \label{fig:aniAnsrR}
+\end{figure}
 %\subsection{Results}
 %\subsection{Discussion}
