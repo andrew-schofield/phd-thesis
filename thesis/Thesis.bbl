@@ -1,4 +1,4 @@
-\begin{thebibliography}{138}
+\begin{thebibliography}{139}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -709,5 +709,12 @@ Curran J (2011) Bolstad2: Bolstad functions.
 \bibitem[{{R Development Core Team}(2010)}]{RDevelopmentCoreTeam2010}
 {R Development Core Team} (2010) R: A Language and Environment for Statistical
   Computing. R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[{Otten et~al.(1999)Otten, Reijnders, Bedaux, Westerhoff, Krab
+  et~al.}]{Otten1999}
+Otten MF, Reijnders WN, Bedaux JJ, Westerhoff HV, Krab K, et~al. (1999) The
+  Reduction State of the Q-pool Regulates the Electron Flux Through the
+  Branched Respiratory Network of \textit{Paracoccus denitrificans}. Eur J
+  Biochem 261: 767--774.
 
 \end{thebibliography}

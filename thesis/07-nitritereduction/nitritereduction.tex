@@ -36,6 +36,17 @@ A representative dataset and solved output is shown in Figure \ref{fig:no2sim}.
 
 This is a simpler dataset than for Nitric oxide reduction as it only describes nitrite reduction, along with a small change in oxygen concentration. In combination with prior probability distributions from the afore mentioned dataset it means that the possible values for the kinetic rates involved are automatically going to be limited to those that work alongside the given priors. Without the prior probability distributions the posterior distributions would have a similar outcome to that of the first dataset used, where simple oxygen reduction was modelled, i.e. very wide distributions.
 \subsection{Results}
+1st results on both datasets don't work very well. o2 reduction rate is too high on my data and norb is non-existent due to limitations in the experimental data, i.e. no fitting done to NO. NO doesn't increase when o2 reduction stops in rock data as it seems that g and f are too high causing X to be effectively permanently reduced. Unknown if NO2- data is correct due to same limitation as above. All 3 cannot reliably be determined at once.
+
+Show all the results figures and the reduction state plots to corroborate.
+
+Re-run simulations: my data broaden k1 and k3 and same for l1 l3 to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. NO reduction rate should roughly equal O2 reduction rate (in denitrifying conditions) according to \citet{Rock2005}. Therefore l1*B should equal k1*C ish.
+Rock data reset to zero and reduce f and g to try and get Q and X to be less reduced to trigger an increase in NO when O2 runs out. Q pool redox states differ (in paracoccus) \cite{Otten1999}.
+
+Plot again with redox states to confirm or reject.
+
+These changes will no doubt break the previous results (o2 and NO), but that is not necessarily a huge problem. The model seems capable of simulating the effect of nitric oxide on oxygen reduction rate, but in order to effect the changes in microaerobic conditions more drastic changes have to be made. This is quite likely as a result of the simplification of the redox chain in that all cytochromes are treated as one entity rather than the 4ish that actually exist. With all cytochromes modelled individually the potential redox state of bc1 could be different to that of cx,c4,c5 which could negate the need to alter f and g to lower the overall reduction state of X. If this is the case it goes a way to explain why the redox chain appears to be so complicated \textit{in vivo} rather than just have 1 serve-all cytochrome. Sadly this is something that was not possible to investigate in this study but could be included in further work onthe subject.
+
 \subsection{Discussion}
 \section{\texorpdfstring{Aerobic Nitrite Reduction in \textit{nsrR$^\textrm{-}$-norB$^\textrm{-}$} mutant}{Aerobic Nitrite Reduction in nsrR- - norB- mutant}}
 \subsection{Introduction}
