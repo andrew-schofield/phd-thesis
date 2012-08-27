@@ -65,9 +65,33 @@ The dataset in Figure \ref{fig:nitriteds2} shows a wild-type culture grown in de
 
 \subsection{Prior Probability Distributions}
 
-As described previously all parameters much have an associated prior probability distribution. The posterior probability distributions from Chapter \ref{chap:noreduction} were used as prior probability distributions in theis chapter. Where new parameters were introduced, the distributions were generated based on published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. The values required to create idealised lognormal probability distributions for each parameters are shown in Table
+As described previously all parameters much have an associated prior probability distribution. The posterior probability distributions from Chapter \ref{chap:noreduction} were used as prior probability distributions in theis chapter. Where new parameters were introduced, the distributions were generated based on published literature values which are noted in Chapter \ref{chap:model}. When using literature values the prior probability distributions were generated according to the same scheme as in Chapter \ref{chap:oxygenreduction}. The values required to create idealised lognormal probability distributions for each parameters are shown in Table \ref{tab:nitrite_prior_table}.
 
-\subsection{Results}
+\begin{table}[ht]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccc|cccc}
+\toprule
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\midrule
+$k_1$ && 417.88 & 31.172 & g && 0.857 & 0.086\\
+$k_3$ && 4.65 & 0.619 & f && 8.398 & 1.237\\
+$l_1$ && 13.12 & 8.321 & $\gamma$ && 0.00014 & $4.67\times 10^{-6}$\\
+$l_3$ && 0.058 & 0.021 & Q && 7.06 & 1.317\\
+$m_1$ && 1 & 1 & X && 27.45 & 12.08\\
+$m_3$ && 4.8 & 0.2 & A && 0.137 & 0.048\\
+$k_5$ && 1741.8 & 1822.0 & B && 0.137 & 0.048\\
+$k_6$ && 1.076 & 1.473 & C && 0.071 & 0.029\\
+$\beta$ && 0.00014 & $4.67\times 10^{-6}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Prior Probability Table]{{\bf Prior Probability Table} This table shows the prior means and standard deviations used to create lognormal distributions to be used as the prior probability distributions.
+\label{tab:nitrite_prior_table}}
+\end{table}
+
+The initial probability distributions used to start the Monte-Carlo runs are shown in Figure \ref{fig:nitrite_priors1}.
+
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./07-nitritereduction/data/priors1.pdf}
@@ -77,34 +101,46 @@ As described previously all parameters much have an associated prior probability
 \end{figure}
 \afterpage{\clearpage}
 
-\begin{figure}[!t]
+\subsection{Parameter Estimation Results}
+The parameter estimation process was run in the same fashion as that described in Chapters \ref{chap:oxygenreduction} \& \ref{chap:noreduction}. The 2 experimental datasets were run 20 times (each) for 20,000 iterations using the prior probability distributions shown in Figure \ref{fig:nitrite_priors1}. The solved output from datasets 1 and 2 are shown in Figures \ref{fig:nitrite_ds1_solved1} and \ref{fig:nitrite_ds2_solved1} respectively. Given the apparent poor fitting of the solved outputs shown in both of these figures, plots of the redox states for both of these datasets are shown in Figures \ref{fig:nitrite_ds1_redox1} and \ref{fig:nitrite_ds2_redox1}.
+
+\begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset1-1.pdf}
  % dataset1-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Solved Nitrite Reduction in \Nsm{}]{{\bf Solved Nitrite Reduction in \Nsm{}}. This figure shows the first attempt at fitting the model to experimental data. Nitrite reduction is being modelled well, whereas oxygen reduction is being modelled quite poorly as the solved data shows to high a rate of oxygen reduction. Nitric oxide is solved purely as a product of nitrite reduction and is not compared to any experimental data.
+  \label{fig:nitrite_ds1_solved1}}
 \end{figure}
-\begin{figure}[!b]
+
+The solved data shown in Figure \ref{fig:nitrite_ds1_solved1} doesn't fit particularly well to the experimental data. Nitrite reduction appears to be modelled well as it is a simple linear reduction. Oxygen reduction however is modelled very poorly. The initial rate of oxygen reduction is too high, and the reduction in rate is too fast. The halting of oxygen reduction is due to the amount of nitric oxide being produced by the reduction of nitrite. This level of nitric oxide quickly inhibits the \cbbthree{} totally as can be seen by the large level of nitric oxide concentration in Figure \ref{fig:nitrite_ds1_solved1} and in the redox plot in Figure \ref{fig:nitrite_ds1_redox1}. The redox plots show that essentially all the electrons in the system are flowing to the nitrite reduction pathway. Nitric oxide is progressing as fast as possible based on the electron flow into NorB. NorB stays in a permanently oxidised states suggesting that the reduction activity of NorB is faster than the rate of reduction of NorB itself. The level of NorB is also not easily modelled correctly using this data as no information is available about the actual levels of nitric oxide being produced during nitrite reduction.
+
+\begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset1redox-1.pdf}
  % dataset1redox-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Reduction States During Nitrite Reduction]{{\bf Reduction States During Nitrite Reduction}. This figure shows how the reduction states of the enzymes involved in nitrite reduction change during respiration.
+  \label{fig:nitrite_ds1_redox1}}
 \end{figure}
 
-\begin{figure}[!t]
+The solved data in Figure \ref{fig:nitrite_ds2_redox1} appears to fit oxygen reduction quite well but fails to fit nitric oxide reduction almost entirely. The most significant feature, that nitric oxide should increase when oxygen reduction ceases is missing. The redox state plot in Figure \ref{fig:nitrite_ds2_redox1} suggests the reason for the lack of this feature. The cytochromes appear to be in a completely reduced state shortly after the start of the simulation. This permanently reduced state means that when oxygen reduction ceases there is essentially no difference to the flow of electrons to either NorB or AniA. This suggests that parameters $g$ and $f$, the reduction of cytochromes and the reduction of the quinone pool are too high, leading to the permanent reduction of both those components. The nitrite levels are equally difficult to model as nitric oxide in the previous dataset as the levels are unknown.
+
+\begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset2-1.pdf}
  % dataset2-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Effect of Nitrite Addition on Aerobically Respiring Cultures]{{\bf Effect of Nitrite Addition on Aerobically Respiring Cultures}. This figure shows the first attempt at fitting the model to experimental data. Oxygen respiration appears appears to be modelled quite well, but nitric oxide is being modelled particularly badly. The most significant feature of the nitric oxide dataset is absent in the solved data.
+  \label{fig:nitrite_ds2_solved1}}
 \end{figure}
-\begin{figure}[!b]
+
+\begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset2redox-1.pdf}
  % dataset2redox-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Reduction States During Nitrite Reduction]{{\bf Reduction States During Nitrite Reduction}. This figure shows how the reduction states of the enzymes involved in nitrite reduction change during respiration.
+  \label{fig:nitrite_ds2_redox1}}
 \end{figure}
 
-
-
-
-1st results on both datasets don't work very well. o2 reduction rate is too high on my data and norb is non-existent due to limitations in the experimental data, i.e. no fitting done to NO. NO doesn't increase when o2 reduction stops in rock data as it seems that g and f are too high causing X to be effectively permanently reduced. Unknown if NO2- data is correct due to same limitation as above. All 3 cannot reliably be determined at once.
-
-Show all the results figures and the reduction state plots to corroborate.
+\subsection{Discussion}
 
 Re-run simulations: my data broaden k1 and k3 and same for l1 l3 to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. NO reduction rate should roughly equal O2 reduction rate (in denitrifying conditions) according to \citet{Rock2005}. Therefore l1*B should equal k1*C ish.
 Rock data reset to zero and reduce f and g to try and get Q and X to be less reduced to trigger an increase in NO when O2 runs out. Q pool redox states differ (in paracoccus) \cite{Otten1999}.
@@ -112,5 +148,3 @@ Rock data reset to zero and reduce f and g to try and get Q and X to be less red
 Plot again with redox states to confirm or reject.
 
 These changes will no doubt break the previous results (o2 and NO), but that is not necessarily a huge problem. The model seems capable of simulating the effect of nitric oxide on oxygen reduction rate, but in order to effect the changes in microaerobic conditions more drastic changes have to be made. This is quite likely as a result of the simplification of the redox chain in that all cytochromes are treated as one entity rather than the 4ish that actually exist. With all cytochromes modelled individually the potential redox state of bc1 could be different to that of cx,c4,c5 which could negate the need to alter f and g to lower the overall reduction state of X. If this is the case it goes a way to explain why the redox chain appears to be so complicated \textit{in vivo} rather than just have 1 serve-all cytochrome. Sadly this is something that was not possible to investigate in this study but could be included in further work onthe subject.
-
-\subsection{Discussion}
