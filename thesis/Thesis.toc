@@ -3,109 +3,109 @@
 \contentsline {section}{\numberline {1.1}Biology of \textit {Neisseria meningitidis}{}}{10}{section.1.1}
 \contentsline {section}{\numberline {1.2}Pathogenicity of \textit {N. meningitidis}{}}{11}{section.1.2}
 \contentsline {section}{\numberline {1.3}Growth of \textit {N. meningitidis}{}}{13}{section.1.3}
-\contentsline {section}{\numberline {1.4}Organisation of the Respiratory Chain of \textit {N. meningitidis}{}}{13}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Nitric Oxide}{16}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}Respiratory Enzymes in \textit {N. meningitidis}{}}{18}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Cytochrome \textit {cbb$_{\textrm {3}}$}{} oxidase}{18}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}NorB Nitric Oxide Reductase}{19}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}AniA Nitrite Reductase}{21}{subsection.1.5.3}
-\contentsline {section}{\numberline {1.6}Respiratory Electron Transporters in \textit {N. meningitidis}{}}{21}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}NADH Dehydrogenase}{21}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Cytochrome $bc_\mathrm {1}$ Complex}{22}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Cytochromes $c_\mathrm {4}$, $c_\mathrm {x}$ and $c_\mathrm {5}$}{24}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Quinone Pool}{24}{subsection.1.6.4}
-\contentsline {section}{\numberline {1.7}Respiration Regulatory Proteins in \textit {N. meningitidis}{}}{25}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}NsrR - Nitrite Sensing Repressor Protein}{25}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}FNR - Fumarate and Nitrate Reductase Regulator}{26}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}NarQ/NarP - Nitrite Response Sensor/Regulator}{26}{subsection.1.7.3}
-\contentsline {section}{\numberline {1.8}Organisation of Respiratory Chains in Other Bacteria}{27}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}The Respiratory Chain of \textit {Paracoccus denitrificans}}{27}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}The Respiratory Chain of \textit {Escherichia coli}}{29}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}The Respiratory Chain of \textit {Rhodobacter sphaeroides}}{29}{subsection.1.8.3}
-\contentsline {section}{\numberline {1.9}Computational Biology and Systems Biology}{29}{section.1.9}
-\contentsline {section}{\numberline {1.10}Modelling}{34}{section.1.10}
-\contentsline {subsection}{\numberline {1.10.1}Modelling Respiratory Systems}{34}{subsection.1.10.1}
-\contentsline {subsubsection}{\numberline {1.10.1.1}Current Attempts to Model Respiratory Systems}{34}{subsubsection.1.10.1.1}
-\contentsline {subsection}{\numberline {1.10.2}Modelling Tools}{35}{subsection.1.10.2}
-\contentsline {section}{\numberline {1.11}Aims}{36}{section.1.11}
-\contentsline {chapter}{\numberline {2}Materials and Methods}{37}{chapter.2}
-\contentsline {section}{\numberline {2.1}\textit {Neisseria meningitidis}{} Strains Used in This Work}{37}{section.2.1}
-\contentsline {section}{\numberline {2.2}Culturing \textit {Neisseria meningitidis}{}}{37}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Growth of \textit {Neisseria meningitidis}{}}{37}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Preparation of Antibiotic Selective Media}{38}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Preparation of Frozen Bacterial Stocks}{38}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Streaking Plates for OD to CFU Ratio Calculation}{38}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Measuring Oxygen Concentration}{39}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Calibration of Oxygen Electrode}{40}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Measuring Nitric Oxide Concentration}{40}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Calibration of Nitric Oxide Electrode}{40}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Measuring Nitrite Concentration (Griess Assay)}{41}{section.2.5}
-\contentsline {section}{\numberline {2.6}Nitric Oxide Production}{42}{section.2.6}
-\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{44}{chapter.3}
-\contentsline {section}{\numberline {3.1}Construction}{44}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Normalising the Data}{45}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Converting Biological Reactions into Differential Equations}{45}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Respiratory Substrates}{45}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Electron Transporters}{49}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}Terminal Reductases}{51}{subsubsection.3.1.2.3}
-\contentsline {subsection}{\numberline {3.1.3}Assumptions and their Justifications}{53}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{54}{section.3.2}
-\contentsline {section}{\numberline {3.3}Solving Ordinary Differential Equations}{59}{section.3.3}
-\contentsline {section}{\numberline {3.4}Implementation of the Model in Software}{60}{section.3.4}
-\contentsline {section}{\numberline {3.5}Parameter Estimation}{60}{section.3.5}
-\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{61}{chapter.4}
-\contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{61}{section.4.1}
-\contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{61}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Difference Functions}{62}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{63}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Markov Chain Monte Carlo}{64}{subsubsection.4.2.2.1}
-\contentsline {subsection}{\numberline {4.2.3}Simulated Annealing}{64}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{67}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Metropolis Hastings Monte Carlo}{71}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Validating the Parameter Estimation Algorithm}{72}{section.4.3}
-\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{75}{section.4.4}
-\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{75}{section.4.5}
-\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{78}{chapter.5}
-\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{78}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Introduction}{78}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{79}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{80}{subsubsection.5.1.2.1}
-\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{83}{subsubsection.5.1.2.2}
-\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{92}{subsubsection.5.1.2.3}
-\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{92}{subsubsection.5.1.2.4}
-\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{98}{subsubsection.5.1.2.5}
-\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{99}{subsubsection.5.1.2.6}
-\contentsline {subsection}{\numberline {5.1.3}Discussion}{102}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{103}{chapter.6}
-\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{103}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Introduction}{103}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{105}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{108}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{109}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{112}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{113}{subsubsection.6.1.2.4}
-\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{114}{subsubsection.6.1.2.5}
-\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{119}{subsubsection.6.1.2.6}
-\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{120}{subsubsection.6.1.2.7}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{120}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{125}{section.6.2}
-\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{128}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{128}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{128}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Experimental Results}{130}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Prior Probability Distributions}{131}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Parameter Estimation Results}{134}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Discussion}{137}{subsection.7.1.5}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{138}{chapter.8}
-\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{138}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Introduction}{138}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Results}{138}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Discussion}{138}{subsection.8.1.3}
-\contentsline {chapter}{\numberline {9}The Completed Model}{139}{chapter.9}
-\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{139}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix}{140}{appendix.A}
-\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{140}{section.A.1}
-\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{140}{section.A.2}
-\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{140}{section.A.3}
-\contentsline {chapter}{List of Abbreviations}{143}{appendix*.23}
-\contentsline {chapter}{References}{144}{appendix*.23}
+\contentsline {section}{\numberline {1.4}Organisation of the Respiratory Chain of \textit {N. meningitidis}{}}{14}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Nitric Oxide}{18}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Respiratory Enzymes in \textit {N. meningitidis}{}}{19}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Cytochrome \textit {cbb$_{\textrm {3}}$}{} oxidase}{19}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}NorB Nitric Oxide Reductase}{22}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}AniA Nitrite Reductase}{22}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}Respiratory Electron Transporters in \textit {N. meningitidis}{}}{23}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}NADH Dehydrogenase}{23}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Cytochrome $bc_\mathrm {1}$ Complex}{24}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Cytochromes $c_\mathrm {4}$, $c_\mathrm {x}$ and $c_\mathrm {5}$}{26}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Quinone Pool}{26}{subsection.1.6.4}
+\contentsline {section}{\numberline {1.7}Respiration Regulatory Proteins in \textit {N. meningitidis}{}}{27}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}NsrR - Nitrite Sensing Repressor Protein}{27}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}FNR - Fumarate and Nitrate Reductase Regulator}{28}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}NarQ/NarP - Nitrite Response Sensor/Regulator}{28}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Organisation of Respiratory Chains in Other Bacteria}{29}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}The Respiratory Chain of \textit {Paracoccus denitrificans}}{29}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}The Respiratory Chain of \textit {Escherichia coli}}{31}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}The Respiratory Chain of \textit {Rhodobacter sphaeroides}}{32}{subsection.1.8.3}
+\contentsline {section}{\numberline {1.9}Computational Biology and Systems Biology}{33}{section.1.9}
+\contentsline {section}{\numberline {1.10}Modelling}{37}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Modelling Respiratory Systems}{37}{subsection.1.10.1}
+\contentsline {subsubsection}{\numberline {1.10.1.1}Current Attempts to Model Respiratory Systems}{37}{subsubsection.1.10.1.1}
+\contentsline {subsection}{\numberline {1.10.2}Modelling Tools}{39}{subsection.1.10.2}
+\contentsline {section}{\numberline {1.11}Aims}{39}{section.1.11}
+\contentsline {chapter}{\numberline {2}Materials and Methods}{41}{chapter.2}
+\contentsline {section}{\numberline {2.1}\textit {Neisseria meningitidis}{} Strains Used in This Work}{41}{section.2.1}
+\contentsline {section}{\numberline {2.2}Culturing \textit {Neisseria meningitidis}{}}{42}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Growth of \textit {Neisseria meningitidis}{}}{42}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Preparation of Antibiotic Selective Media}{42}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Preparation of Frozen Bacterial Stocks}{42}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Streaking Plates for OD to CFU Ratio Calculation}{43}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Measuring Oxygen Concentration}{43}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Calibration of Oxygen Electrode}{43}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Measuring Nitric Oxide Concentration}{44}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Calibration of Nitric Oxide Electrode}{45}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Measuring Nitrite Concentration (Griess Assay)}{46}{section.2.5}
+\contentsline {section}{\numberline {2.6}Nitric Oxide Production}{46}{section.2.6}
+\contentsline {chapter}{\numberline {3}Model - Construction and Parameters}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Construction}{49}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Normalising the Data}{50}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Converting Biological Reactions into Differential Equations}{50}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Respiratory Substrates}{50}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Electron Transporters}{54}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Terminal Reductases}{56}{subsubsection.3.1.2.3}
+\contentsline {subsection}{\numberline {3.1.3}Assumptions and their Justifications}{58}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Parameters and their Prior Distributions}{59}{section.3.2}
+\contentsline {section}{\numberline {3.3}Solving Ordinary Differential Equations}{65}{section.3.3}
+\contentsline {section}{\numberline {3.4}Implementation of the Model in Software}{66}{section.3.4}
+\contentsline {section}{\numberline {3.5}Parameter Estimation}{66}{section.3.5}
+\contentsline {chapter}{\numberline {4}Parameter Estimation Methodologies}{68}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{68}{section.4.1}
+\contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{69}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Difference Functions}{69}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{70}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Markov Chain Monte Carlo}{71}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Simulated Annealing}{72}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{74}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Metropolis Hastings Monte Carlo}{79}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Validating the Parameter Estimation Algorithm}{81}{section.4.3}
+\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{82}{section.4.4}
+\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{84}{section.4.5}
+\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{87}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aerobic Reduction of Oxygen}{87}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{87}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{88}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{90}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{92}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{101}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{104}{subsubsection.5.1.2.4}
+\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{109}{subsubsection.5.1.2.5}
+\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{109}{subsubsection.5.1.2.6}
+\contentsline {subsection}{\numberline {5.1.3}Discussion}{113}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{115}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{115}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{115}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{117}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{120}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{124}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{125}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{126}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{128}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{132}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{132}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{137}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{142}{section.6.2}
+\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{143}{chapter.7}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{143}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{143}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Experimental Results}{145}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Prior Probability Distributions}{147}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Parameter Estimation Results}{150}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Discussion}{152}{subsection.7.1.5}
+\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{154}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aerobic and Microaerobic Expression}{154}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{154}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Results}{154}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Discussion}{154}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {9}The Completed Model}{155}{chapter.9}
+\contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{155}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix}{156}{appendix.A}
+\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{156}{section.A.1}
+\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{156}{section.A.2}
+\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{156}{section.A.3}
+\contentsline {chapter}{List of Abbreviations}{159}{appendix*.23}
+\contentsline {chapter}{References}{160}{appendix*.23}

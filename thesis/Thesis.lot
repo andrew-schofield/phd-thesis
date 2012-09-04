@@ -1,31 +1,31 @@
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces The reductions catalysed by the respiratory enzymes in \textit {N. meningitidis}{} }}{14}{table.1.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces The reductions catalysed by the respiratory enzymes in \textit {N. meningitidis}{} }}{15}{table.1.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Bacterial strains and sources }}{37}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Final antibiotic concentrations }}{38}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Sodium Nitrite concentrations used to calibrate ISO-NOP Nitric Oxide sensor. }}{41}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Chemicals needed for preparation of Nitric Oxide solution. }}{43}{table.2.4}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Bacterial strains and sources }}{41}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Final antibiotic concentrations }}{42}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Sodium Nitrite concentrations used to calibrate ISO-NOP Nitric Oxide sensor. }}{46}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Chemicals needed for preparation of Nitric Oxide solution. }}{48}{table.2.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Model parameters}}{55}{table.3.1}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces First Prior Probability Table}}{85}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Second Prior Probability Table}}{92}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Posterior Probability Statistics}}{97}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Gelman-Rubin Convergence Statistic}}{98}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Regression Analysis of Oxygen Reduction Parameters}}{100}{table.5.5}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Regression Analysis of Oxygen Reduction Parameters}}{101}{table.5.6}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Prior Probability Table}}{109}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Posterior Probability Statistics}}{119}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Gelman-Rubin Convergence Statistic}}{120}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Regression Analysis of Nitric Oxide Reduction Parameters}}{121}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Regression Analysis of Nitric Oxide Reduction Parameters}}{122}{table.6.5}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Prior Probability Table}}{132}{table.7.1}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Model parameters}}{60}{table.3.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces First Prior Probability Table}}{94}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Second Prior Probability Table}}{103}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Posterior Probability Statistics}}{107}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Gelman-Rubin Convergence Statistic}}{110}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Regression Analysis of Oxygen Reduction Parameters}}{111}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Regression Analysis of Oxygen Reduction Parameters}}{112}{table.5.6}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Model Variables }}{142}{table.A.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Model Parameters }}{142}{table.A.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Prior Probability Table}}{122}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Posterior Probability Statistics}}{134}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Gelman-Rubin Convergence Statistic}}{135}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Regression Analysis of Nitric Oxide Reduction Parameters}}{136}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Regression Analysis of Nitric Oxide Reduction Parameters}}{138}{table.6.5}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Prior Probability Table}}{149}{table.7.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Model Variables }}{158}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Model Parameters }}{158}{table.A.2}
