@@ -1,4 +1,4 @@
-\begin{thebibliography}{139}
+\begin{thebibliography}{149}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -513,6 +513,55 @@ Gibson MA, Bruck J (2000) Efficient Exact Stochastic Simulation of Chemical
   Systems with Many Species and Many Channels. The Journal of Physical
   Chemistry A 104: 1876--1889.
 
+\bibitem[{Mathematica(2008)}]{WolframResearchInc2008}
+Mathematica (2008) version 7. Champaign, Illinois: {Wolfram Research, Inc}.
+
+\bibitem[{MATLAB(2010)}]{MATLAB:2010}
+MATLAB (2010) version 7.10.0 (R2010a). Natick, Massachusetts: The MathWorks
+  Inc.
+
+\bibitem[{Mendes(1993)}]{Mendes1993}
+Mendes P (1993) GEPASI: a software package for modelling the dynamics, steady
+  states and control of biochemical and other systems. Computer Applications in
+  the Biosciences 9: 563--571.
+
+\bibitem[{Mendes(1997)}]{Mendes1997}
+Mendes P (1997) Biochemistry by numbers: simulation of biochemical pathways
+  with Gepasi 3. Trends in Biochemical Sciences 22: 361--363.
+
+\bibitem[{Tomita et~al.(1999)Tomita, Hashimoto, Takahashi, Shimizu, Matsuzaki
+  et~al.}]{Tomita1999}
+Tomita M, Hashimoto K, Takahashi K, Shimizu TS, Matsuzaki Y, et~al. (1999)
+  E-CELL: software environment for whole-cell simulation. Bioinformatics 15:
+  72--84.
+
+\bibitem[{Wierling et~al.(2007)Wierling, Herwig, and Lehrach}]{Wierling2007}
+Wierling C, Herwig R, Lehrach H (2007) Resources, standards and tools for
+  systems biology. Briefings in Functional Genomics and Proteomics 6: 240--251.
+
+\bibitem[{Funahashi et~al.(2003)Funahashi, Morohashi, Kitano, and
+  Tanimura}]{Funahashi2003}
+Funahashi A, Morohashi M, Kitano H, Tanimura N (2003) CellDesigner: a process
+  diagram editor for gene-regulatory and biochemical networks. BIOSILICO 1: 159
+  -- 162.
+
+\bibitem[{Funahashi et~al.(2006)Funahashi, Matsuoka, Jouraku, Kitano, and
+  Kikuchi}]{Funahashi2006}
+Funahashi A, Matsuoka Y, Jouraku A, Kitano H, Kikuchi N (2006) Celldesigner: A
+  Modeling Tool for Biochemical Networks. In: Proceedings of the Winter
+  Simulation Conference. WSC 06, pp. 1707--1712.
+
+\bibitem[{Funahashi et~al.(2008)Funahashi, Matsuoka, Jouraku, Morohashi,
+  Kikuchi et~al.}]{Funahashi2008}
+Funahashi A, Matsuoka Y, Jouraku A, Morohashi M, Kikuchi N, et~al. (2008)
+  CellDesigner 3.5: A Versatile Modeling Tool for Biochemical Networks.
+  Proceedings of the IEEE 96: 1254--1265.
+
+\bibitem[{Pucha\l{}ka and Kierzek(2004)}]{Puchalka2004}
+Pucha\l{}ka J, Kierzek AM (2004) Bridging the gap between stochastic and
+  deterministic regimes in the kinetic simulations of the biochemical reaction
+  networks. Biophysical Journal 86: 1357--1372.
+
 \bibitem[{McGuinness et~al.(1990)McGuinness, Barlow, Clarke, Farley, Anilionis
   et~al.}]{McGuinness1990}
 McGuinness B, Barlow AK, Clarke IN, Farley JE, Anilionis A, et~al. (1990)
@@ -608,7 +657,7 @@ Hedrick DB, White DC (1986) Microbial Respiratory Quinones in the Environment:
   Mannheim}]{Hollaender1977}
 Holl\"ander R, Wolf G, Mannheim W (1977) Lipoquinones of Some Bacteria and
   Mycoplasmas, with Considerations on their Functional Significance. Antonie
-  Van Leeuwenhoek 43: 177--185.
+  van Leeuwenhoek 43: 177--185.
 
 \bibitem[{Butcher(2003)}]{Butcher2003}
 Butcher JC (2003) Numerical Methods for Ordinary Differential Equations. John
@@ -714,7 +763,7 @@ Curran J (2011) Bolstad2: Bolstad functions.
   et~al.}]{Otten1999}
 Otten MF, Reijnders WN, Bedaux JJ, Westerhoff HV, Krab K, et~al. (1999) The
   Reduction State of the Q-pool Regulates the Electron Flux Through the
-  Branched Respiratory Network of \textit{Paracoccus denitrificans}. Eur J
-  Biochem 261: 767--774.
+  Branched Respiratory Network of \textit{Paracoccus denitrificans}. European
+  Journal of Biochemistry 261: 767--774.
 
 \end{thebibliography}
