@@ -122,7 +122,7 @@ The solved data shown in Figure \ref{fig:nitrite_ds1_solved1} doesn't fit partic
   \label{fig:nitrite_ds1_redox1}}
 \end{figure}
 
-The solved data in Figure \ref{fig:nitrite_ds2_redox1} appears to fit oxygen reduction quite well but fails to fit nitric oxide reduction almost entirely. The most significant feature, that nitric oxide should increase when oxygen reduction ceases is missing. The redox state plot in Figure \ref{fig:nitrite_ds2_redox1} suggests the reason for the lack of this feature. The cytochromes appear to be in a completely reduced state shortly after the start of the simulation. This permanently reduced state means that when oxygen reduction ceases there is essentially no difference to the flow of electrons to either NorB or AniA. This suggests that parameters $g$ and $f$, the reduction of cytochromes and the reduction of the quinone pool are too high, leading to the permanent reduction of both those components. The nitrite levels are equally difficult to model as nitric oxide in the previous dataset as the levels are unknown.
+The solved data in Figure \ref{fig:nitrite_ds2_solved1} appears to fit oxygen reduction quite well but fails to fit nitric oxide reduction almost entirely. The most significant feature, that nitric oxide should increase when oxygen reduction ceases is missing. The redox state plot in Figure \ref{fig:nitrite_ds2_redox1} suggests the reason for the lack of this feature. The cytochromes appear to be in a completely reduced state shortly after the start of the simulation. This permanently reduced state means that when oxygen reduction ceases there is essentially no difference to the flow of electrons to either NorB or AniA. This suggests that parameters $g$ and $f$, the reduction of cytochromes and the reduction of the quinone pool are too high, leading to the permanent reduction of both those components. The nitrite levels are equally difficult to model as nitric oxide in the previous dataset as the levels are unknown.
 
 \begin{figure}[tbp]
  \centering
@@ -140,10 +140,30 @@ The solved data in Figure \ref{fig:nitrite_ds2_redox1} appears to fit oxygen red
   \label{fig:nitrite_ds2_redox1}}
 \end{figure}
 
+\subsection{Second Parameter Estimation Results}
+A second attempt was made to try and better fit the solved data to the experimental data by adapting the priors as described above. The priors probability distributions for dataset 2 were altered such that the means of $f$ and $g$ were reduced 10 fold, and the distributions were broadened significantly. The other distributions were left unchanged. This proved difficult for the parameter estimation system, as out of 10 runs only 2 produced reasonable fitted data. One of these fits is shown in Figure \ref{fig:nitrite_ds2_solved2}. This shows a vastly improved fit over Figure \ref{fig:nitrite_ds2_solved1}. Oxygen is being modelled almost perfectly, and the major features of the nitric oxide data are also qualitatively present. In addition, the similarity between the oxygen reduction rates and nitrite reduction rates is corroborated by \citet{Rock2005} who showed that under denitrifying conditions nitrite reduction rate should roughly equal oxygen reduction rate.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset2-2.pdf}
+ % dataset2redox-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Effect of Nitrite Addition on Aerobically Respiring Cultures]{{\bf Effect of Nitrite Addition on Aerobically Respiring Cultures}. This figure shows the second attempt at fitting the model to experimental data. Oxygen respiration appears appears to be modelled well. Nitric oxide production is being modelled well qualitatively, as the major features of the experimental data are present. Clearly though further rounds of parameter estimation are in order to improve the quantitative fit.
+  \label{fig:nitrite_ds2_solved2}}
+\end{figure}
+
+The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the change in substrate reduction has come about. The cytochrome and quinones are no longer in a permanently reduced state, and once oxygen is depleted NorB is able to access some of the electrons that were previously directed towards \cbbthree{}, causing the increase in nitric oxide concentration. Additionally the cytochrome pool increases its overall reduction state once oxygen is depleted, as one of the sinks for electrons is no longer active, this also has a small effect on the reduction state of AniA which increases due to the larger supply of upstream electrons available to it. The increase in electrons available to AniA also causes an increase in the rate of nitrite reduction. The more marked reduction state change of the quinone pool once the culture starts respiring nitrite is corroborated by data obtained by \cite{Otten1999} who found that the reduction state of the quinone pool in \textit{Paracoccus} differs between aerobic respiration and denitrification.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[height=10cm, trim=1cm 1cm 3cm 1cm, clip=true]{./07-nitritereduction/data/dataset2redox-2.pdf}
+ % dataset2redox-1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
+ \caption[Reduction States During Nitrite Reduction]{{\bf Reduction States During Nitrite Reduction}. This figure shows how the reduction states of the enzymes involved in nitrite reduction change during respiration.
+  \label{fig:nitrite_ds2_redox2}}
+\end{figure}
+
 \subsection{Discussion}
 
-Re-run simulations: my data broaden k1 and k3 and same for l1 l3 to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. NO reduction rate should roughly equal O2 reduction rate (in denitrifying conditions) according to \citet{Rock2005}. Therefore l1*B should equal k1*C ish.
-Rock data reset to zero and reduce f and g to try and get Q and X to be less reduced to trigger an increase in NO when O2 runs out. Q pool redox states differ (in paracoccus) \cite{Otten1999}.
+Re-run simulations: my data broaden k1 and k3 and same for l1 l3 to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. Therefore l1*B should equal k1*C ish.
 
 Plot again with redox states to confirm or reject.
 
