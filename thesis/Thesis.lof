@@ -14,60 +14,60 @@
 \contentsline {figure}{\numberline {1.12}{\ignorespaces Systems biology cycle.}}{35}{figure.1.12}
 \contentsline {figure}{\numberline {1.13}{\ignorespaces System complexity.}}{36}{figure.1.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Exploded view of the oxygen electrode}}{44}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Oxygen electrode chamber with nitric oxide probe inserted}}{45}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces NO making apparatus.}}{47}{figure.2.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exploded view of the oxygen electrode}}{45}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Oxygen electrode chamber with nitric oxide probe inserted}}{46}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces NO making apparatus.}}{48}{figure.2.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Electron flow through the respiratory chain}}{58}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Oxygen Diffusion Rates}}{64}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Electron flow through the respiratory chain}}{59}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Oxygen Diffusion Rates}}{65}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how a rejection sampler works.}}{72}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Example simulated annealing temperature schedule}}{74}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{75}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{83}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces MHMC results of the Lotka-Volterra validation run.}}{83}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The Integrated Bayesian Parameter Estimation Scheme}}{85}{figure.4.6}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how a rejection sampler works.}}{73}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example simulated annealing temperature schedule}}{75}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{76}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{84}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces MHMC results of the Lotka-Volterra validation run.}}{84}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The Integrated Bayesian Parameter Estimation Scheme}}{86}{figure.4.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Oxygen reducing electron transport chain of \textit {N. meningitidis}{}}}{88}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Highly repeatable oxygen reduction}}{89}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Aerating oxygen reducing cultures with significant delay}}{90}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{91}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Prior probability distributions for oxygen reduction}}{93}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{96}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Simulation \textit {BOF} improves as parameter estimation progresses}}{97}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Individual parameter trajectories for multiple runs on the same experimental dataset}}{98}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Posterior probability distributions for oxygen reduction}}{100}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Prior probability distributions for oxygen reduction}}{102}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Oversampled Posterior Distributions}}{105}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Posterior probability distributions for oxygen reduction}}{106}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{108}{figure.5.13}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Oxygen reducing electron transport chain of \textit {N. meningitidis}{}}}{89}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Highly repeatable oxygen reduction}}{90}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Aerating oxygen reducing cultures with significant delay}}{91}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{92}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Prior probability distributions for oxygen reduction}}{94}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{97}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Simulation \textit {BOF} improves as parameter estimation progresses}}{98}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Individual parameter trajectories for multiple runs on the same experimental dataset}}{99}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Posterior probability distributions for oxygen reduction}}{101}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Prior probability distributions for oxygen reduction}}{103}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Oversampled Posterior Distributions}}{106}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Posterior probability distributions for oxygen reduction}}{107}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Oxygen Reduction in \textit {Neisseria meningitidis}.}}{109}{figure.5.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Nitric oxide reducing electron transport chain of \textit {N. meningitidis}{}}}{116}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{118}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{119}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{120}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{121}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Prior probability distributions for aerobic nitric oxide reduction}}{123}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{126}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{127}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{128}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Local Fitness Minima During Parameter Estimation.}}{130}{figure.6.10}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{131}{figure.6.11}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Posterior Distributions for Datasets 1 and 4}}{133}{figure.6.12}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Addition of Nitric Oxide to Aerobic Cultures.}}{139}{figure.6.13}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Addition of Nitric Oxide to \textit {in silico} norB mutant.}}{140}{figure.6.14}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Reduction States During Nitric Oxide Reduction.}}{141}{figure.6.15}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Nitric Oxide Reduction in an nsrR Mutant.}}{142}{figure.6.16}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Nitric oxide reducing electron transport chain of \textit {N. meningitidis}{}}}{117}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{119}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{120}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{121}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{122}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Prior probability distributions for aerobic nitric oxide reduction}}{124}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{127}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{128}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{129}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Local Fitness Minima During Parameter Estimation.}}{131}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Nitric Oxide Reduction in \textit {Neisseria meningitidis}.}}{132}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Posterior Distributions for Datasets 1 and 4}}{134}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Addition of Nitric Oxide to Aerobic Cultures.}}{140}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Addition of Nitric Oxide to \textit {in silico} norB mutant.}}{141}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Reduction States During Nitric Oxide Reduction.}}{142}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Nitric Oxide Reduction in an nsrR Mutant.}}{143}{figure.6.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Nitrite reducing electron transport chain of \textit {N. meningitidis}{}}}{144}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{146}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{147}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Prior probability distributions for microaerobic oxygen and nitrite reduction}}{148}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Solved Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{150}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Reduction States During Nitrite Reduction}}{151}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Effect of Nitrite Addition on Aerobically Respiring Cultures}}{152}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Reduction States During Nitrite Reduction}}{153}{figure.7.8}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Nitrite reducing electron transport chain of \textit {N. meningitidis}{}}}{145}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{147}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{148}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Prior probability distributions for microaerobic oxygen and nitrite reduction}}{149}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Solved Nitrite Reduction in \textit {Neisseria meningitidis}{}}}{151}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Reduction States During Nitrite Reduction}}{152}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Effect of Nitrite Addition on Aerobically Respiring Cultures}}{153}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Reduction States During Nitrite Reduction}}{154}{figure.7.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Lineweaver-Burk Plot for Oxygen Reduction in \textit {Neisseria meningitidis}.}}{157}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Lineweaver-Burk Plot for Oxygen Reduction in \textit {Neisseria meningitidis}.}}{158}{figure.A.1}

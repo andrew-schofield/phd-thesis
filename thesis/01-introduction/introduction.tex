@@ -190,7 +190,7 @@ The reaction scheme for the $bc_1$ complex is:
 
 \subsection{\texorpdfstring{Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$}{Cytochromes c4, cx and c5}}
 Cytochromes $c_\mathrm{4}$, $c_\mathrm{x}$ and $c_\mathrm{5}$ are soluble \textit{c}-type cytochromes. These are small heme proteins that are found in the periplasm and are loosely associated with the inner membrane. Along with their presence in proteobacteria, the \textit{c}-type cytochromes also form part of the mitochondrial respiratory apparatus in the form of cytochrome \textit{c}. Bacterial \textit{c}-type cytochromes perform a very similar function to mitochondrial cytochrome \textit{c} in that they transport electrons from the $bc_1$ complex to the terminal reductases. Cytochromes \textit{c}-552, \textit{c}-553 \& \textit{c}-554 from algal chloroplasts and cyanobacteria, $c_2$ from purple photosynthetic bacteria and $c_4$ and $c_5$ from \textit{Azotobacter vinelandii} along with many others all have sequence and structural homology with mitochondrial cytochrome \textit{c}\cite{Wood1983}. The mitochondrial and bacterial soluble cytochromes all fall within Ambler's Class I of \textit{c}-type cytochromes\cite{Ambler1991}.
-Class I \textit{c}-type cytochromes have their heme-attachment site towards the N-terminus, and the sixth ligand is provided by a methionine residue 40 residues further down the chain towards the C-terminus\cite{Ambler1991}[Re-write this sentence, it is almost plagiarism!].\\
+The heme-attachment site of Class I \textit{c}-type cytochromes is towards the N-terminus, and a methionine residue 40 residues further down the chain towards the C-terminus provides the sixth ligand\cite{Ambler1991}.\\
 Cytochrome $c_4$ is a diheme cytochrome and is the electron donor to \cbbthree{} transferring electrons from the $bc_1$ complex in \Nm{}\cite{Deeudom2007,Deeudom2008,Chang2010}.\\
 Cytochrome $c_x$ is a monoheme cytochrome which is also able to transfer electrons from the $bc_1$ complex to \cbbthree{}\cite{Deeudom2007,Deeudom2008}.\\
 Cytochrome $c_5$ is a diheme cytochrome which appears to be membrane associated. It transfers electrons from the $bc_1$ complex to AniA during Nitrite reduction\cite{Deeudom2007,Deeudom2008}.
@@ -338,17 +338,24 @@ A systems biology approach to understanding the mechanism of respiration in \Nsm
 \subsection{Modelling Respiratory Systems}
 
 \subsubsection{Current Attempts to Model Respiratory Systems}
-A limited amount of modelling has been carried out on bacterial respiratory chains, these focused on the denitrification pathway and treated the pathway as a simple electrical circuit\cite{Almeida1997}.
+The following list details some of the modelling carried out on bacterial respiratory chains:
 
 \begin{itemize}
- \item Very simple rate law modelling in \textit{Pseudomonas} by \citet{Jin2003}.
- \item An alternative approach involved modelling respiration using ``P systems'' which are probabilistic models of events. This assigned a probability of each reaction happening, dependant on the state of the system and then iterated through a given set of steps evaluating probabilities and altering values based on the outcome by \citet{Cavaliere2006}. This approach to modelling was limited in that it was only predicting the quantities of 1 component in each of 2 ``compartments''; oxygen in the cell membrane and carbon dioxide in the thylakoid membrane (the model was developed using cyanobacteria).
- \item Some modelling of parts of the respiratory chain in \textit{E. coli} has also been carried out. \citet{Peercy2006} created a kinetic model of how cytochrome production is regulated by oxygen using differential equations. They created a set of differential equations to describe the relevant reactions and then populated the model using parameters gathered from the literature.
- \item Modelling ETC in purple bacteria by \citet{Klamt2008}.
- \item Predicted respiration using simple kinetic model for marine bacteria by \citet{Aguiar-Gonzalez2012}.
- \item Modelling metabolic fluxes in \Nsm{} by \citet{Baart2007}
-
+ \item \citet{Almeida1997} created a kinetic model of denitrification in \textit{Pseudomonas fluorescens} and \textit{Paracoccus denitrificans} by assuming that the components of the respiratory chain were arranged like an electrical circuit. They produced a simple and predictive model of denitrification using this approach.
+ \item \citet{Jin2003} proposed a new rate law that can be used to model the rate of respiration in \textit{Pseudomonas}. They showed the predictive power of the rate law by looking at rates of benzoate oxidation.
+ \item \citet{Cavaliere2006} developed an alternative approach involved modelling respiration using ``P systems'' which are probabilistic models of events. This assigned a probability of each reaction happening, dependant on the state of the system and then iterated through a given set of steps evaluating probabilities and altering values based on the outcome. This approach to modelling was limited in that it was only predicting the quantities of 1 component in each of 2 ``compartments''; oxygen in the cell membrane and carbon dioxide in the thylakoid membrane (the model was developed using cyanobacteria).
+ \item \citet{Peercy2006} created a kinetic model of how cytochrome production is regulated by oxygen in the respiratory system of \textit{Escherichia coli}. They created a set of differential equations to describe the relevant reactions and then populated the model using parameters gathered from the literature. They were able to obtain good fits to experimental data from the ArcAB subsystem of the \textit{E. coli} respiratory system.
+ \item \citet{Klamt2008} created a model of the steady-state behaviour of the electron transport chain in purple non-sulfur bacteria (\textit{Rhodospirillaceae}). This model was also created using differential equations to describe rates of change of components.
+ \item \citet{Aguiar-Gonzalez2012} used an enzyme kinetic model to examine oxygen consumption rates in the marine bacteria \textit{Pseudomonas nautica} and \textit{Vibrio natriegens}. This simple model only describes the respiration rate however, nothing more.
 \end{itemize}
+
+\subsubsection{Other Relevant Modelling}
+\begin{itemize}
+ \item \citet{Baart2007} created a flux model of primary metabolism in \Nsm{}. This model didn't contain any useful information about the respiratory system, but showed that the flux model could predict substrate preference \textit{in silico}, and this was confirmed \textit{in vivo}.
+ \item Bernard Korzeniewski has been quite prolific in using mathematical models to create computer simulations which describe biological processes, oxidative phosphorylation in particular\cite{Korzeniewski1996a,Korzeniewski1996,Korzeniewski2001}.
+\end{itemize}
+
+\subsubsection{Important Considerations}
 
 Since when modelling respiration in a cell, the most important factor is the change in concentration of components over time without any particular spatial constraints, ordinary differential equations (ODEs)\nomenclature{ODE}{Ordinary Differential Equation} are an appropriate technique. In these systems the model does not change with regard to the spatial arrangement of any of the components. If the system requires changes in time \textit{and} space, then partial differential equations (PDEs)\nomenclature{PDE}{Partial Differential Equation} would be necessary (and more complicated)\cite{Klipp2005}.
 

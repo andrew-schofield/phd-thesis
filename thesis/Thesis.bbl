@@ -1,4 +1,4 @@
-\begin{thebibliography}{149}
+\begin{thebibliography}{152}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -482,6 +482,19 @@ Aguiar-Gonz\'alez B, Packard TT, Berdalet E, Roy S, G\'omez M (2012)
 Baart GJE, Zomer B, {de Haan} A, {van der Pol} LA, Beuvery EC, et~al. (2007)
   Modeling \textit{Neisseria meningitidis} Metabolism: From Genome to Metabolic
   Fluxes. Genome Biol 8: R136.
+
+\bibitem[{Korzeniewski(1996{\natexlab{a}})}]{Korzeniewski1996a}
+Korzeniewski B (1996{\natexlab{a}}) Simulation of oxidative phosphorylation in
+  hepatocytes. Biophys Chem 58: 215--224.
+
+\bibitem[{Korzeniewski(1996{\natexlab{b}})}]{Korzeniewski1996}
+Korzeniewski B (1996{\natexlab{b}}) Simulation of State 4 --> State 3
+  Transition in Isolated Mitochondria. Biophysical Chemistry 57: 143--153.
+
+\bibitem[{Korzeniewski(2001)}]{Korzeniewski2001}
+Korzeniewski B (2001) Theoretical Studies on the Regulation of Oxidative
+  Phosphorylation in Intact Tissues. Biochimica et Biophysica Acta 1504:
+  31--45.
 
 \bibitem[{Klipp et~al.(2005)Klipp, Herwig, Kowald, Wierling, and
   Lehrach}]{Klipp2005}
