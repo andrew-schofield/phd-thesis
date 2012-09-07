@@ -140,8 +140,21 @@ The solved data in Figure \ref{fig:nitrite_ds2_solved1} appears to fit oxygen re
   \label{fig:nitrite_ds2_redox1}}
 \end{figure}
 
+The posterior probability distributions for the above results are not shown here as they do not provide any useful information at this point.
+
 \subsection{Second Parameter Estimation Results}
-A second attempt was made to try and better fit the solved data to the experimental data by adapting the priors as described above. The priors probability distributions for dataset 2 were altered such that the means of $f$ and $g$ were reduced 10 fold, and the distributions were broadened significantly. The other distributions were left unchanged. This proved difficult for the parameter estimation system, as out of 10 runs only 2 produced reasonable fitted data. One of these fits is shown in Figure \ref{fig:nitrite_ds2_solved2}. This shows a vastly improved fit over Figure \ref{fig:nitrite_ds2_solved1}. Oxygen is being modelled almost perfectly, and the major features of the nitric oxide data are also qualitatively present. In addition, the similarity between the oxygen reduction rates and nitrite reduction rates is corroborated by \citet{Rock2005} who showed that under denitrifying conditions nitrite reduction rate should roughly equal oxygen reduction rate.
+A second attempt was made to try and better fit the solved data to the experimental data by adapting the priors for dataset 2 using knowledge from the previous parameter estimation attempt. The priors probability distributions for dataset 2 were altered such that the means of $f$ and $g$ were reduced 10 fold, and the distributions were broadened significantly. Additionally the $m_3$ rate constant prior distribution was set correctly. The other distributions were left unchanged. The new prior probability distributions are shown in Figure \ref{fig:nitrite_priors2}.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm, clip=true]{./07-nitritereduction/data/priors2.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Prior probability distributions for microaerobic oxygen and nitrite reduction]{{\bf Prior probability distributions for microaerobic oxygen and nitrite reduction}. These are the modified probability distributions used as priors by the parameter estimation algorithm.
+ \label{fig:nitrite_priors2}}
+\end{figure}
+\afterpage{\clearpage}
+
+The new prior probability distributions proved to be difficult for the parameter estimation system to use, as out of 10 runs only 2 produced reasonable fitted data. One of these fits is shown in Figure \ref{fig:nitrite_ds2_solved2}. This shows a vastly improved fit over Figure \ref{fig:nitrite_ds2_solved1}. Oxygen is being modelled almost perfectly, and the major features of the nitric oxide data are also qualitatively present. In addition, the similarity between the oxygen reduction rates and nitrite reduction rates is corroborated by \citet{Rock2005} who showed that under denitrifying conditions nitrite reduction rate should roughly equal oxygen reduction rate.
 
 \begin{figure}[tbp]
  \centering
@@ -151,7 +164,7 @@ A second attempt was made to try and better fit the solved data to the experimen
   \label{fig:nitrite_ds2_solved2}}
 \end{figure}
 
-The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the change in substrate reduction has come about. The cytochrome and quinones are no longer in a permanently reduced state, and once oxygen is depleted NorB is able to access some of the electrons that were previously directed towards \cbbthree{}, causing the increase in nitric oxide concentration. Additionally the cytochrome pool increases its overall reduction state once oxygen is depleted, as one of the sinks for electrons is no longer active, this also has a small effect on the reduction state of AniA which increases due to the larger supply of upstream electrons available to it. The increase in electrons available to AniA also causes an increase in the rate of nitrite reduction. The more marked reduction state change of the quinone pool once the culture starts respiring nitrite is corroborated by data obtained by \cite{Otten1999} who found that the reduction state of the quinone pool in \textit{Paracoccus} differs between aerobic respiration and denitrification.
+The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the change in substrate reduction has come about. The cytochrome and quinones are no longer in a permanently reduced state, and once oxygen is depleted NorB is able to access some of the electrons that were previously directed towards \cbbthree{}, causing the increase in nitric oxide concentration. Additionally the cytochrome pool increases its overall reduction state once oxygen is depleted, as one of the sinks for electrons is no longer active, this also has a small effect on the reduction state of AniA which increases due to the larger supply of upstream electrons available to it. The increase in electrons available to AniA also causes an increase in the rate of nitrite reduction. The more marked reduction state change of the quinone pool once the culture starts respiring nitrite is corroborated by data obtained by \citet{Otten1999} who found that the reduction state of the quinone pool in \textit{Paracoccus} differs between aerobic respiration and denitrification.
 
 \begin{figure}[tbp]
  \centering
@@ -161,9 +174,121 @@ The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the 
   \label{fig:nitrite_ds2_redox2}}
 \end{figure}
 
+The posterior probability distributions generated from this second attempt at parameter estimation are shown in Figure \ref{fig:nitrite_posteriors1}. These were generated only from the two Markov Chains that produced simulation output that qualitatively matched the input data. The other Markov Chains settled on solved output which did not have the correct dataset features.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm, clip=true]{./07-nitritereduction/data/posteriors.pdf}
+ % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
+ \caption[Posterior probability distributions for microaerobic oxygen and nitrite reduction]{{\bf Posterior probability distributions for microaerobic oxygen and nitrite reduction}. These are the final posterior probability distributions generated by the parameter estimation system for microaerobic oxygen and nitrite reduction, all concentrations have been normalised to assume an $OD_{600}$ of 1.
+ \label{fig:nitrite_posteriors1}}
+\end{figure}
+\afterpage{\clearpage}
+
+The idealised lognormal distribution parameters that fit the posterior probability distributions are shown in Table \ref{tab:nitrite-posteriors-table} and compared to the prior probability distributions.
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
+\midrule
+$k_1$ && 417.88 & 31.172 & 403.51 & 27.59\\
+$k_3$ && 4.65 & 0.619 & 4.58 & 0.436\\
+$l_1$ && 13.12 & 8.321 & 6.42$\downarrow$ & 2.33$\downarrow$\\
+$l_3$ && 0.058 & 0.021 & 0.096 & 0.025\\
+$m_1$ && 1 & 1 & 0.175$\downarrow$ & 0.087\\
+$m_3$ && 4.8 & 0.2 & 4.79 & 0.042\\
+$k_5$ && 1741.8 & 1822.0 & 138.66 ($\gamma = 399.86$)$\downarrow$ & 338.18$\downarrow$\\
+$k_6$ && 1.076 & 1.473 & 1.59 & 0.527\\
+$\beta$ && 0.00014 & $4.7\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
+g && 0.857 & 0.086 & 0.085$\downarrow$ & 0.0078$\downarrow$\\
+f && 8.398 & 1.237 & 0.771$\downarrow$ & 0.096$\downarrow$\\
+$\gamma$ && 0.0024 & $9\times 10^{-5}$ & 0.0024 & $8.8\times 10^{-5}$\\
+Q && 7.06 & 1.317 & 34.31$\uparrow$ & 5.49$\uparrow$\\
+X && 27.45 & 12.08 & 2.81$\downarrow$ & 0.595$\downarrow$\\
+A && 0.137 & 0.048 & 0.704$\uparrow$ & 0.3$\uparrow$\\
+B && 0.137 & 0.048 & 7.80$\uparrow$ & 3.63$\uparrow$\\
+C && 0.071 & 0.029 & 1.3$\uparrow$ & 0.259$\uparrow$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Posterior Probability Statistics]{{\bf Posterior Probability Statistics.} This table shows the parameters required to create lognormal distributions that describe the prior and posterior probability distributions. The values for the priors are as in Table \ref{tab:nitrite_prior_table}. The posterior distributions were generated from dataset 2, and where they relate to concentrations, these have been normalised. The lognormal distributions represent best-fits to the actual posterior distributions. Where there are significant differences between the prior and posterior values for either the mean or standard deviation, these are indicated by $\uparrow$ and $\downarrow$. Where a $\gamma$ value is shown in brackets it means that a 3 parameter lognormal had to be used, and $\gamma$ is the location parameter for the distribution.
+\label{tab:nitrite-posteriors-table}}
+\end{table}
+
+As can be seen from Table \ref{tab:nitrite-posteriors-table} and Figure \ref{fig:nitrite_posteriors1} most of the rate constant probability distributions have remained fairly stationary throughout the multiple rounds of parameter estimation (from Chapters \ref{chap:oxygenreduction} \& \ref{chap:noreduction}). The distribution of $l_1$ has narrowed towards the lower and of the prior bounds. The distributions of $f$ and $g$ are almost identical to their modified prior distributions with very little deviation. The concentration distributions however have all been modified significantly from their prior distributions.
+
+\subsection{Analysis of Convergence}
+The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:nitrite-r-stat}. These values show very high levels of convergence for all parameters, however it should be noted that these values may not be truly representative as in fact only 2 trajectories are being analysed here since these were the only ones that produced usable output.
+
+\begin{table}[tbp]%needs to be 'here' as section is short
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{ccc|ccc}
+\toprule
+\textbf{Parameter} && \textbf{R Statistic} & \textbf{Parameter} && \textbf{R Statistic}\\
+\midrule
+$k_1$ && 1.07 & g && 1.03\\
+$k_3$ && 1.06 & f && 2.27\\
+$l_1$ && 1.30 & $\gamma$ && 1.02\\
+$l_3$ && 2.89 & Q && 2.31\\
+$m_1$ && 3.47 & X && 2.39\\
+$m_3$ && 1.14 & A && 2.39\\
+$k_5$ && 2.11 & B && 5.64\\
+$k_6$ && 1.76 & C && 1.59\\
+$\beta$ && 1.01\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption[Gelman-Rubin Convergence Statistic]{{\bf Gelman-Rubin Convergence Statistic.} This table shows the Gelman-Rubin Convergence statistic for all the two Markov chains from datasets 2. For parameters which are concentrations, the statistic relates to the values after normalisation (data is normalised based on initial oxygen reduction rate).
+\label{tab:nitrite-r-stat}}
+\end{table}
+
+\subsection{Analysis of Correlation}
+Correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapters \ref{chap:oxygenreduction} and \ref{chap:noreduction}. The upper-triangle matrix in Figure \ref{tab:nitrite-regression}.
+
+\begin{table}[p]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.5}
+  \centering
+  \rotatebox{90}{
+  \begin{minipage}{24.4cm}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{dark-gray} & \cellcolor{dark-gray}$k_1$ & \cellcolor{dark-gray}$k_3$ & \cellcolor{dark-gray}$l_1$ & \cellcolor{dark-gray}$l_3$ & \cellcolor{dark-gray}$m_1$ & \cellcolor{dark-gray}$m_3$ & \cellcolor{dark-gray}$k_5$ & \cellcolor{dark-gray}$k_6$ & \cellcolor{dark-gray}$\beta$ & \cellcolor{dark-gray}g & \cellcolor{dark-gray}f & \cellcolor{dark-gray}$\gamma$ & \cellcolor{dark-gray}Q & \cellcolor{dark-gray}X & \cellcolor{dark-gray}A & \cellcolor{dark-gray}B & \cellcolor{dark-gray}C\\ \hline
+\cellcolor{dark-gray}$k_1$ & \cellcolor{light-gray}1 & 0.02 & 0.19 & 0.01 & -0.11 & 0.05 & 0.24 & -0.03 & 0.05 & -0.10 & -0.07 & 0.03 & 0.21 & -0.07 & 0.12 & 0.01 & -0.02\\ \hline
+\cellcolor{dark-gray}$k_3$ & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.03 & \cellcolor{orange}0.31 & \cellcolor{orange}-0.30 & -0.05 & 0.17 & -0.04 & 0.05 & 0.03 & -0.19 & -0.01 & 0.21 & \cellcolor{orange}-0.48 & \cellcolor{orange}0.44 & -0.14 & 0.25\\ \hline
+\cellcolor{dark-gray}$l_1$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.21 & 0.15 & 0.22 & \cellcolor{orange}0.36 & -0.13 & -0.01 & -0.20 & -0.02 & 0.01 & 0.05 & \cellcolor{orange}0.43 & -0.07 & \cellcolor{orange}0.60 & \cellcolor{orange}-0.34\\ \hline
+\cellcolor{dark-gray}$l_3$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.52 & -0.25 & \cellcolor{orange}0.33 & -0.14 & 0.04 & 0.17 & \cellcolor{orange}-0.34 & -0.09 & \cellcolor{orange}0.36 & \cellcolor{orange}-0.49 & \cellcolor{orange}0.61 & \cellcolor{orange}-0.67 & \cellcolor{orange}0.46\\ \hline
+\cellcolor{dark-gray}$m_1$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.10 & \cellcolor{orange}-0.53 & -0.12 & -0.02 & -0.04 & \cellcolor{orange}0.46 & 0.06 & \cellcolor{orange}-0.72 & \cellcolor{orange}0.64 & \cellcolor{orange}-0.75 & 0.26 & \cellcolor{orange}-0.52\\ \hline
+\cellcolor{dark-gray}$m_3$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.06 & 0.15 & 0.06 & 0.18 & 0.00 & 0.06 & 0.02 & -0.03 & -0.13 & \cellcolor{orange}0.34 & 0.02\\ \hline
+\cellcolor{dark-gray}$k_5$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.46 & 0.03 & -0.13 & \cellcolor{orange}-0.41 & 0.02 & \cellcolor{orange}0.53 & \cellcolor{orange}-0.35 & \cellcolor{orange}0.60 & 0.01 & \cellcolor{orange}0.43\\ \hline
+\cellcolor{dark-gray}$k_6$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.09 & 0.17 & 0.22 & -0.03 & -0.11 & 0.00 & -0.09 & 0.09 & -0.04\\ \hline
+\cellcolor{dark-gray}$\beta$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.13 & -0.01 & -0.03 & 0.05 & -0.07 & 0.06 & -0.06 & -0.03\\ \hline
+\cellcolor{dark-gray}g & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.06 & 0.0 & -0.19 & -0.25 & 0.17 & -0.25 & 0.12\\ \hline
+\cellcolor{dark-gray}f & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & 0.01 & \cellcolor{orange}-0.51 & 0.23 & \cellcolor{orange}-0.42 & 0.28 & -0.23\\ \hline
+\cellcolor{dark-gray}$\gamma$ & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & -0.05 & 0.01 & -0.02 & 0.14 & 0.02\\ \hline
+\cellcolor{dark-gray}Q & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.52 & \cellcolor{orange}0.78 & -0.16 & 0.24\\ \hline
+\cellcolor{dark-gray}X & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.74 & \cellcolor{orange}0.48 & \cellcolor{orange}-0.77\\ \hline
+\cellcolor{dark-gray}A & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.33 & \cellcolor{orange}0.61\\ \hline
+\cellcolor{dark-gray}B & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1 & \cellcolor{orange}-0.36\\ \hline
+\cellcolor{dark-gray}C & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray} & \cellcolor{light-gray}1\\
+\hline
+  \end{tabular}
+  \caption[Regression Analysis of Nitrite Reduction Parameters]{{\bf Regression Analysis of Nitrite Reduction Parameters for Dataset 2.} This table shows the $r$ values from linear regression analysis on the combined parameter trajectories for nitrite reduction. Parameters with high correlation have been coloured green ($R>0.8$) and those with moderation correlation have been coloured orange ($0.8>R>0.3$).
+  \label{tab:nitrite-regression}}
+  \end{minipage}
+  }
+\end{table}
+\afterpage{\clearpage}
+
 \subsection{Discussion}
 
-Re-run simulations: my data broaden k1 and k3 and same for l1 l3 to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. Therefore l1*B should equal k1*C ish.
+Re-run simulations: my data broaden $k_1$ and $k_3$ and same for $l_1$ $l_3$ to try and fix both o2 reduction rate an no-non-reduction. C maybe needs to decrease. Therefore $l_1$*B should equal $k_1$*C ish.
 
 Plot again with redox states to confirm or reject.
 
