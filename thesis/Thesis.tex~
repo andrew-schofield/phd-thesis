@@ -28,9 +28,9 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 294 2012-09-04 17:51:48Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 306 2012-09-10 20:42:46Z uncle_fungus $}
 
-\pdfminorversion=4
+\pdfminorversion=5
 
 \definecolor{dark-gray}{gray}{0.7}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}

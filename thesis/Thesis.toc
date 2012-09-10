@@ -101,7 +101,7 @@
 \contentsline {subsection}{\numberline {7.1.6}Analysis of Convergence}{160}{subsection.7.1.6}
 \contentsline {subsection}{\numberline {7.1.7}Analysis of Correlation}{161}{subsection.7.1.7}
 \contentsline {subsection}{\numberline {7.1.8}Discussion}{161}{subsection.7.1.8}
-\contentsline {subsubsection}{\numberline {7.1.8.1}Using Nitrite Posterior Parameters on Previous Datasets}{163}{subsubsection.7.1.8.1}
+\contentsline {subsubsection}{\numberline {7.1.8.1}Using Nitrite Posterior Parameters}{163}{subsubsection.7.1.8.1}
 \contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{167}{chapter.8}
 \contentsline {chapter}{\numberline {9}Discussion and Completed Model}{170}{chapter.9}
 \contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{170}{section.9.1}
