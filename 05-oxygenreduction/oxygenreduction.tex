@@ -28,7 +28,7 @@ The experiments used to generate data for oxygen reduction are highly repeatable
 \begin{figure}[t]
  \centering
  %trim = l b r t
- \includegraphics[width=13cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/repeatable_o2.pdf}
+ \includegraphics[width=13cm, clip=true]{./05-oxygenreduction/data/repeatable_o2.pdf}
  % mc58-chl-o2-util.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
  \caption[Highly repeatable oxygen reduction]{{\bf Highly repeatable oxygen reduction.} This shows an oxygen reducing culture being repeatedly aerated after oxygen depletion with very similar rates of subsequent oxygen reduction
  \label{fig:oxy_repeatable_chl}}
@@ -36,7 +36,7 @@ The experiments used to generate data for oxygen reduction are highly repeatable
 
 \begin{figure}[t]
  \centering
- \includegraphics[width=13cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_delay.pdf}
+ \includegraphics[width=13cm]{./05-oxygenreduction/data/o2_delay.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Aerating oxygen reducing cultures with significant delay]{{\bf Aerating oxygen reducing cultures with significant delay.} The oxygen reducing ability of \Nm{} can be robust as evidenced by the 1000s delays between aeration with no change in subsequent respiration rate. Also of note is that nitric oxide concentration is not changing, suggesting that reduction of nitrite is not occurring either.
  \label{fig:repeat_oxy_with_delay}}
@@ -46,7 +46,7 @@ The oxygen reduction datasets generated and used for parametrising this portion 
 
 \begin{figure}[p]
  \centering
- \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2_datasets.pdf}
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/o2_datasets.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} These three experimental datasets were used as input data for the parameter estimation algorithm. They all show the same linear oxygen reduction. The different rates are due to differing starting cell densities.
  \label{fig:o2data}}
@@ -90,7 +90,7 @@ Q && 0.3 & 0.01\\
 %lbrt
 \begin{figure}[p]
  \centering
- \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/priors1.pdf}
+ \includegraphics[width=15cm]{./05-oxygenreduction/data/priors1.pdf}
  % priors.pdf: 1008x1008 pixel, 72dpi, 35.56x35.56 cm, bb=0 0 1008 1008
  \caption[Prior probability distributions for oxygen reduction]{{\bf Prior probability distributions for oxygen reduction}. These are the probability distributions used as priors by the parameter estimation algorithm.
  \label{fig:oxypriors}}
@@ -103,7 +103,7 @@ The parameter estimation process produces a large amount of output data which ca
 %lbrt
 \begin{figure}[p]
  \centering
- \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/o2sim.pdf}
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/o2sim.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This dataset shows the simple linear reduction of Oxygen in aerobic conditions. The high affinity of $\mathrm{cbb}_3$ for oxygen is evidenced by very little non-linearity at low oxygen concentrations. The solved output is a representative result of the parameter estimation system. The inset shows that the solved output is achieving much higher affinity than the experimental data.
  \label{fig:o2sim}}
@@ -120,7 +120,7 @@ Initially the simulation results are not particularly good fits compared to the 
 
 \begin{figure}[p]
  \centering
- \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/o2_fitness.pdf}
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/o2_fitness.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Simulation \textit{BOF} improves as parameter estimation progresses]{{\bf Simulation \textit{BOF} improves as parameter estimation progresses.} This is a representative figure constructed from a single run on one dataset. Initially the \textit{BOF} is high showing that the simulated result does not match the experimental dataset. As the parameter estimation algorithm progresses, the \textit{BOF} decreases as the simulated result approaches the experimental dataset. The inset shows a zoomed in view of the \textit{BOF} after the ``burn-in'' process has finished.
  \label{fig:oxy_fitness}}
@@ -133,7 +133,7 @@ Figure \ref{fig:k3s} shows the trajectories from each simulation run on a single
 
 \begin{figure}[p]
  \centering
- \includegraphics[width=14cm, trim=75px 50px 125px 25px]{./05-oxygenreduction/data/k3s1.pdf}
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/k3s1.pdf}
  % repeatable-oxygen-utilisation-in-mc58.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
  \caption[Individual parameter trajectories for multiple runs on the same experimental dataset]{{\bf Individual parameter trajectories for multiple runs on the same experimental dataset.} This figure shows the trajectories for the same parameter, in this case $k_3$ - the rate constant for \cbbthree{} reduction, from 20 individual runs of parameter estimation upon the same input data. The trajectories show clear convergence after the ``burn-in'' period.
  \label{fig:k3s}}
@@ -250,7 +250,7 @@ C && 0.03 & 0.003 & 0.043 $\uparrow$ & 0.044 $\uparrow$\\
 A graph showing how well the solved output fits the experimental data during the parameter estimation stage is shown in Figure \ref{fig:oxyfinalsolved}. This shows the solved output which achieved the best goodness of fit against the experimental data.
 \begin{figure}[tbp]
  \centering
- \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./05-oxygenreduction/data/final_solved.pdf}
+ \includegraphics[width=14cm]{./05-oxygenreduction/data/final_solved.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
  \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} This figure shows how well the best solved data fits against the experimental data from dataset 2. The inset shows again, that the solved output is achieving much higher affinity than the experimental data.
  \label{fig:oxyfinalsolved}}
