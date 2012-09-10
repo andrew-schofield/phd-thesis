@@ -28,7 +28,9 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 251 2012-07-28 16:26:12Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 294 2012-09-04 17:51:48Z uncle_fungus $}
+
+\pdfminorversion=4
 
 \definecolor{dark-gray}{gray}{0.7}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
@@ -170,7 +172,7 @@
 \qualification{Submitted for the degree of Doctor of Philosophy}
 \university{The University of York}
 \department{Department of Biology}
-\date{July 2012}
+\date{September 2012}
 
 \pagestyle{fancy}
 \fancyhf{}
