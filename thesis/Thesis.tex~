@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,openright,12pt]{book}
+\documentclass[a4paper,oneside,openright,11pt]{book}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -28,7 +28,7 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 306 2012-09-10 20:42:46Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 307 2012-09-10 20:57:52Z uncle_fungus $}
 
 \pdfminorversion=5
 
@@ -187,7 +187,7 @@
 \renewcommand{\headrulewidth}{0pt}}
 
 
-\hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups ubi-qui-nol ubi-qui-none cy-to-chrome cy-to-chromes no-my-cin me-na-qui-nol pseu-do-mo-nsd stut-ze-ri with-in ja-po-ni-cum pe-ri-plasm par-am-et-ris-ed ni-co-tin-am-ide din-u-cle-o-tide}
+\hyphenation{li-po-po-ly-sacc-har-ides se-ro-groups ubi-qui-nol ubi-qui-none cy-to-chrome cy-to-chromes no-my-cin me-na-qui-nol pseu-do-mo-nsd stut-ze-ri with-in ja-po-ni-cum pe-ri-plasm par-am-et-ris-ed ni-co-tin-am-ide din-u-cle-o-tide qui-none}
 \bibliographystyle{unsrtPLoS-Biology}
 \mathchardef\mhyphen="2D
 \setcounter{secnumdepth}{3}
