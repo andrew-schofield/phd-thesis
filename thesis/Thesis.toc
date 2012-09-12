@@ -105,8 +105,8 @@
 \contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{167}{chapter.8}
 \contentsline {chapter}{\numberline {9}Discussion and Completed Model}{170}{chapter.9}
 \contentsline {section}{\numberline {9.1}Amalgamation of cytochromes}{170}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix}{171}{appendix.A}
-\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{171}{section.A.1}
-\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{171}{section.A.2}
-\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{171}{section.A.3}
-\contentsline {chapter}{References}{174}{table.A.2}
+\contentsline {chapter}{\numberline {A}Appendix}{172}{appendix.A}
+\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{172}{section.A.1}
+\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{173}{section.A.2}
+\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{173}{section.A.3}
+\contentsline {chapter}{References}{177}{table.A.2}
