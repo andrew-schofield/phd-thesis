@@ -28,7 +28,7 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 313 2012-09-12 13:13:47Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 314 2012-09-12 14:02:52Z uncle_fungus $}
 
 \pdfminorversion=5
 
@@ -177,7 +177,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\textcolor{dark-gray}{\slshape\leftmark}}
-\fancyfoot[C]{\textbf{DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}}
+\fancyfoot[C]{\textbf{FINAL DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}}
 \fancyfoot[R]{\textbf{\thepage}}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
