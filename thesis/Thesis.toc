@@ -110,4 +110,5 @@
 \contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{176}{section.A.1}
 \contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{177}{section.A.2}
 \contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{177}{section.A.3}
-\contentsline {chapter}{References}{179}{figure.A.2}
+\contentsline {section}{\numberline {A.4}Software Used During this Work}{178}{section.A.4}
+\contentsline {chapter}{References}{180}{section.A.4}
