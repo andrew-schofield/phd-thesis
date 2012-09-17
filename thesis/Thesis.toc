@@ -102,10 +102,10 @@
 \contentsline {subsection}{\numberline {7.1.7}Analysis of Correlation}{163}{subsection.7.1.7}
 \contentsline {subsection}{\numberline {7.1.8}Discussion}{163}{subsection.7.1.8}
 \contentsline {subsubsection}{\numberline {7.1.8.1}Using Nitrite Posterior Parameters}{165}{subsubsection.7.1.8.1}
-\contentsline {chapter}{\numberline {8}AniA and NorB Expression in \textit {N. meningitidis}{}}{169}{chapter.8}
-\contentsline {chapter}{\numberline {9}Discussion and Completed Model}{173}{chapter.9}
-\contentsline {section}{\numberline {9.1}Amalgamation of Cytochromes}{175}{section.9.1}
-\contentsline {section}{\numberline {9.2}Concluding Remarks}{178}{section.9.2}
+\contentsline {chapter}{\numberline {8}Discussion and Completed Model}{169}{chapter.8}
+\contentsline {section}{\numberline {8.1}Amalgamation of Cytochromes}{171}{section.8.1}
+\contentsline {section}{\numberline {8.2}Concluding Remarks}{174}{section.8.2}
+\contentsline {chapter}{\numberline {9}AniA and NorB Expression in \textit {N. meningitidis}{}}{175}{chapter.9}
 \contentsline {chapter}{\numberline {A}Appendix}{179}{appendix.A}
 \contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{179}{section.A.1}
 \contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{180}{section.A.2}
