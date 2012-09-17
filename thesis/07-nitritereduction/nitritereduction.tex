@@ -15,7 +15,7 @@
 % \section{\texorpdfstring{Aerobic Nitrite Reduction in \textit{nsrR$^\textrm{-}$} mutant}{Aerobic Nitrite Reduction in nsrR- mutant}}
 \subsection{Introduction}
 
-The last datasets to be used in the iterative approach to parameter estimation was of cultures able to respire nitrite in addition to oxygen. In these cultures nitrite was added to a culture already respiring oxygen to observe both the rate of nitrite reduction, and the effect on oxygen respiration caused by the production of nitric oxide. These datasets were the most complex in terms of the information contained within them and the number of model components needed to solve them. In addition to the components being used to model nitric oxide reduction, the nitrite reduction pathway is also active. The portions of the ETC relating to nitrite reduction are shown graphically in Figure \ref{fig:no2_resp_chain}. However since \Nsm{} is incapable of growing anaerobically, in actual fact the entire pathway is required, using oxygen nitric oxide and nitrite reduction.
+The last datasets to be used in the iterative approach to parameter estimation was of cultures able to respire nitrite in addition to oxygen. In these cultures nitrite was added to a culture already respiring oxygen to observe both the rate of nitrite reduction, and the effect on oxygen respiration caused by the production of nitric oxide. These datasets were the most complex in terms of the information contained within them and the number of model components needed to solve them. In addition to the components being used to model nitric oxide reduction, the nitrite reduction pathway is also active. The portions of the ETC relating to nitrite reduction are shown graphically in Figure \ref{fig:no2_resp_chain}. However since \Nsm{} is incapable of growing anaerobically, in actual fact the entire pathway is required, using oxygen, nitric oxide and nitrite reduction.
 \begin{figure}[tbp]
   \centering
     \includegraphics[width=14cm]{07-nitritereduction/data/no2_resp_chain.pdf}
@@ -143,7 +143,7 @@ The solved data in Figure \ref{fig:nitrite_ds2_solved1} appears to fit oxygen re
 The posterior probability distributions for the above results are not shown here as they do not provide any useful information at this point.
 
 \subsection{Second Parameter Estimation Results}
-A second attempt was made to try and better fit the solved data to the experimental data by adapting the priors for dataset 2 using knowledge from the previous parameter estimation attempt. The prior probability distributions for dataset 2 were altered such that the means of $f$ and $g$ were reduced 10 fold, and the distributions were broadened significantly. Additionally the $m_3$ rate constant prior distribution was set correctly. The other distributions were left unchanged. The new prior probability distributions are shown in Figure \ref{fig:nitrite_priors2}.
+A second attempt was made to try and better fit the solved data to the experimental data by adapting the priors for dataset 2 using knowledge from the previous parameter estimation attempt. The prior probability distributions for dataset 2 were altered such that the means of $f$ and $g$ were reduced 10 fold, and the distributions were broadened significantly. Additionally the $m_3$ rate constant prior distribution was set correctly as in the previous round it was erroneously set to have a uniform prior. The other distributions were left unchanged. The new prior probability distributions are shown in Figure \ref{fig:nitrite_priors2}.
 
 \begin{figure}[tbp]
  \centering

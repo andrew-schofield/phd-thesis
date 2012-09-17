@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Mon Sep 17 12:38:37 2012"
+@timestamp def "Mon Sep 17 22:55:11 2012"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -139,7 +139,7 @@
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle ""
+@    subtitle "Dataset 1"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1

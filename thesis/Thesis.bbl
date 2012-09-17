@@ -1,4 +1,4 @@
-\begin{thebibliography}{154}
+\begin{thebibliography}{156}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -174,6 +174,10 @@ Isabella V, Wright LF, Barth K, Spence JM, Grogan S, et~al. (2008) Cis- and
 \bibitem[{Blaise et~al.(2005)Blaise, Gauvin, Gangal, and Authier}]{Blaise2005}
 Blaise GA, Gauvin D, Gangal M, Authier S (2005) Nitric Oxide, Cell Signaling
   and Cell Death. Toxicology 208: 177--192.
+
+\bibitem[{Govers and Oess(2004)}]{Govers2004}
+Govers R, Oess S (2004) To NO or not to NO: 'where?' is the question. Histol
+  Histopathol 19: 585--605.
 
 \bibitem[{Wink et~al.(1991)Wink, Kasprzak, Maragos, Elespuru, Misra
   et~al.}]{Wink1991}
@@ -377,6 +381,13 @@ Baker SC, Ferguson SJ, Ludwig B, Page MD, Richter OM, et~al. (1998) Molecular
   Genetics of the Genus Paracoccus: Metabolically Versatile Bacteria with
   Bioenergetic Flexibility. Microbiology and Molecular Biology Reviews 62:
   1046--1078.
+
+\bibitem[{Bekker et~al.(2009)Bekker, {de Vries}, {Ter Beek}, Hellingwerf, and
+  {de Mattos}}]{Bekker2009}
+Bekker M, {de Vries} S, {Ter Beek} A, Hellingwerf KJ, {de Mattos} MJT (2009)
+  Respiration of Escherichia coli can be fully uncoupled via the
+  nonelectrogenic terminal cytochrome bd-II oxidase. J Bacteriol 191:
+  5510--5517.
 
 \bibitem[{Nicholls and Ferguson(1992)}]{Nicholls1992}
 Nicholls DG, Ferguson SJ (1992) Bioenergetics 3. 2nd ed., Academic Press.
