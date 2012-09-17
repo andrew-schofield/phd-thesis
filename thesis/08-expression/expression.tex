@@ -15,8 +15,17 @@ The parameters required for NorB expression can be explained simply: $T$ is equi
 
 AniA expression is more complicated to model as it is not only repressed by oxygen, but activated \textit{and} repressed by NO. The NO activation is modelled by $S$ and $k_{13}$ which correspond to the $V_{max}$ and $K_m$ of the activation respectively. This ensures that AniA isn't expressed when NO is too low. The repression of activation by oxygen and NO is modelled by $R$,$k_{10}$ and $k_{11}$ which represent the $V_{max}$, ``NO inhibition scale factor'', and $K_m$ of the repression respectively. The ``NO inhibition scale factor'' effectively sets the cut-off concentration of NO at which it starts repressing AniA expression. As with NorB expression, $k_8$ here represents the degradation rate of AniA.
 
-These two new differential equations could easily be incorporated into the model to complement the original 9 equations. \citet{Rock2005} have an appropriate dataset that could be used to populate these new parameters, and this is shown in Figure \ref{fig:expression}.
+The first part of the AniA equation models the regulation by FNR, and the second part in addition to the NorB equation models the regulation by NsrR. As detailed in Chapter \ref{chap:intro}, NsrR is a repressor of both AniA and NsrR, and FNR (Fumarate and nitrite reductase regulator) is an activator of AniA. Nitric Oxide inhibits the NsrR protein leading to an increase in expression of both NorB and AniA since the repression by NsrR is no longer present. Higher concentrations of Nitric Oxide cause FNR to be inhibited which effectively represses AniA. High concentrations of Oxygen also cause inhibition of FNR meaning that AniA isn't expressed until low concentrations of Oxygen are present.
 
+These two new differential equations could easily be incorporated into the model to complement the original 9 equations. There are two datasets which could potentially be used to populate these new parameters. The first is from \citet{Heurlier2008} which details levels of expression in response to regulation by Nitric Oxide (produced by Spearmine NONOate). This is shown in Figure \ref{fig:expression1}.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[height=10cm]{./08-expression/data/zjb0070877000001.png}
+ % zjb0070877000001.png: 500x642 pixel, 72dpi, 17.64x22.65 cm, bb=0 0 500 642
+ \caption[Effect of Nitric Oxide on NsrR and FNR Dependent Gene Expression]{{\bf Effect of Nitric Oxide on NsrR and FNR Dependent Gene Expression}. Expression of (A) NorB and (B) AniA in wild-type \Nsm{}. Figure adapted from \citet{Heurlier2008}.
+ \label{fig:expression1}}
+\end{figure}
+The second is from \citet{Rock2005} which details the effect on Oxygen reduction and Nitric Oxide creation and reduction during microaerobic respiration, and this is shown in Figure \ref{fig:expression}.
 \begin{figure}[tbp]
  \centering
  \includegraphics[height=10cm]{./08-expression/data/expression.pdf}
