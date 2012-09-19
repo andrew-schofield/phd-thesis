@@ -252,7 +252,17 @@ The reduction state plot can be seen in Figure \ref{fig:in_silico_cyt_redox}. It
 % \end{eqnarray*}
 
 \section{Single Parameter Scaling Fits}
-As has been discussed previously the proxy being used to try and estimate cell density appears to be inadequate as it does not scale correctly with the normalised data. It is however possible to obtain very good fits to all the experimental datasets with the exception of nitrite dataset 1 -  which is an $nsrR^-$ mutant - by simply introducing a ``scale factor'' which is applied to all concentrations in the system. The magnitude of the scale factor for each dataset is shown in Table \ref{tab:scale-factors} along with the Oxygen Reduction Activity which formed part of the initial scaling.
+As has been discussed previously the proxy being used to try and estimate cell density appears to be inadequate as it does not scale correctly with the normalised data. It is however possible to obtain very good fits to all the experimental datasets with the exception of nitrite dataset 1 -  which is an $nsrR^-$ mutant - by simply introducing a ``scale factor'' which is applied to all concentrations in the system. An example of the better fit after using the scale factor is shown in Figure \ref{fig:improved_fit} in comparison to Figure \ref{fig:nitric_oxide_simulation}.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/improved_fit.pdf}
+ % in_silico_nsrR.pdf: 705x525 pixel, 72dpi, 24.87x18.52 cm, bb=0 0 705 525
+ \caption[Improved Fit with Scaling Factor]{{\bf Improved Fit with Scaling Factor}. This figure shows the best fit achieved using a scaling factor rather than an approximate OD to calculate component concentrations. Compare with \ref{fig:nitric_oxide_simulation}.
+ \label{fig:improved_fit}}
+\end{figure}
+
+The magnitude of the scale factor required for each dataset is shown in Table \ref{tab:scale-factors} along with the Oxygen Reduction Activity which formed part of the initial scaling.
 
 \begin{table}[!ht]
 \begin{center}
