@@ -70,7 +70,7 @@
 \contentsline {figure}{\numberline {7.9}{\ignorespaces Prior probability distributions for microaerobic oxygen and nitrite reduction}}{158}{figure.7.9}
 \contentsline {figure}{\numberline {7.10}{\ignorespaces Effect of Nitrite Addition on Aerobically Respiring Cultures}}{159}{figure.7.10}
 \contentsline {figure}{\numberline {7.11}{\ignorespaces Reduction States During Nitrite Reduction}}{160}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Posterior probability distributions for microaerobic oxygen and nitrite reduction}}{162}{figure.7.12}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Posterior probability distributions for microaerobic oxygen and nitrite reduction}}{161}{figure.7.12}
 \contentsline {figure}{\numberline {7.13}{\ignorespaces Aerobic Oxygen Respiration with Nitrite Posteriors}}{167}{figure.7.13}
 \contentsline {figure}{\numberline {7.14}{\ignorespaces Aerobic Oxygen Respiration with Nitric Oxide Addition with Nitrite Posteriors}}{168}{figure.7.14}
 \contentsline {figure}{\numberline {7.15}{\ignorespaces Nitrite Reduction using Modified Nitrite Posteriors}}{169}{figure.7.15}
@@ -80,10 +80,11 @@
 \contentsline {figure}{\numberline {8.3}{\ignorespaces Nitric Oxide Addition to In silico nsrR Mutant}}{178}{figure.8.3}
 \contentsline {figure}{\numberline {8.4}{\ignorespaces In Silico Cytochrome Mutant}}{179}{figure.8.4}
 \contentsline {figure}{\numberline {8.5}{\ignorespaces In Silico Cytochrome Mutant Redox States}}{180}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Dataset Scaling Factors}}{182}{figure.8.6}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Improved Fit with Scaling Factor}}{181}{figure.8.6}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Dataset Scaling Factors}}{183}{figure.8.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Effect of Nitric Oxide on NsrR and FNR Dependent Gene Expression}}{186}{figure.9.1}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Effect of Expression of AniA and NorB}}{187}{figure.9.2}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Effect of Nitric Oxide on NsrR and FNR Dependent Gene Expression}}{187}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Effect of Expression of AniA and NorB}}{188}{figure.9.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Circle circumscribed by a square}}{188}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Lineweaver-Burk Plot for Oxygen Reduction in \textit {Neisseria meningitidis}.}}{190}{figure.A.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Circle circumscribed by a square}}{189}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Lineweaver-Burk Plot for Oxygen Reduction in \textit {Neisseria meningitidis}.}}{191}{figure.A.2}

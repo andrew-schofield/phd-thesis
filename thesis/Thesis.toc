@@ -110,10 +110,10 @@
 \contentsline {subsection}{\numberline {8.3.2}\textit {In silico} cyt Knockouts}{178}{subsection.8.3.2}
 \contentsline {section}{\numberline {8.4}Single Parameter Scaling Fits}{181}{section.8.4}
 \contentsline {section}{\numberline {8.5}Concluding Remarks}{182}{section.8.5}
-\contentsline {chapter}{\numberline {9}AniA and NorB Expression in \textit {N. meningitidis}{}}{184}{chapter.9}
-\contentsline {chapter}{\numberline {A}Appendix}{188}{appendix.A}
-\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{188}{section.A.1}
-\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{189}{section.A.2}
-\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{189}{section.A.3}
-\contentsline {section}{\numberline {A.4}Software Used During this Work}{190}{section.A.4}
-\contentsline {chapter}{References}{192}{section.A.4}
+\contentsline {chapter}{\numberline {9}AniA and NorB Expression in \textit {N. meningitidis}{}}{185}{chapter.9}
+\contentsline {chapter}{\numberline {A}Appendix}{189}{appendix.A}
+\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{189}{section.A.1}
+\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{190}{section.A.2}
+\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{190}{section.A.3}
+\contentsline {section}{\numberline {A.4}Software Used During this Work}{191}{section.A.4}
+\contentsline {chapter}{References}{193}{section.A.4}
