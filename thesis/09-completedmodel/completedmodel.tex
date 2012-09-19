@@ -110,6 +110,189 @@ The value of $k_5$ has no associated bounds in the table as it was concluded tha
 \section{Amalgamation of Cytochromes}
 The choice to replace the multiple cytochromes $bc_1$, $c_x$, $c_4$ and $c_5$ with one single entity was a modelling one, to both simplify the modelling process by reducing the total component count and number of rate constants, and to allow the model to focus on simple electron transport chain branching and competition for electrons. The rate constants for each of the cytochromes could be subsumed by the respective ``out rates'' from the amalgamated cytochrome to its downstream electron acceptor. The downside of this approach is that it means that any rates obtained for $X$ are probably not going to be biologically relevant as it is essentially masking the behaviour of multiple different hidden components. This simplification does not appear to have affected the model in a detrimental way when using the datasets in this work.
 
+\section{Parameter Changes Throughout this Work}
+\begin{table}[tbp]
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+\textbf{Parameter} & \textbf{Prior} & \textbf{Oxygen Posterior} & \textbf{NO Posterior} & \textbf{Nitrite Posterior}
+\tabularnewline
+\midrule
+$k_1$ & $415$ & $413.228$ & $417.88$ & $403.51$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$k_3$ & $3$ & $4.496$ & $4.65$ & $4.5$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$l_1$ & $6$ & $\rightarrow$ & $13.12$ & $6.42$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$l_3$ & $1$ & $\rightarrow$ & $0.058$ & $0.096$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$m_1$ & $1$ & $\rightarrow$ & $\rightarrow$ & $0.175$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$m_3$ & $4.8$ & $\rightarrow$ & $\rightarrow$ & $4.79$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$k_5$ & $100$ & $\rightarrow$ & $1741.8$ & $66000$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$k_6$ & $38$ & $\rightarrow$ & $1.076$ & $1.59$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$\beta$ & $0.00014$ & $0.00012$ & $0.00014$ & $0.00014$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$g$ & $0.847$ & $0.889$ & $0.857$ & $0.085$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$f$ & $8.749$ & $8.707$ & $8.398$ & $0.771$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$\gamma$ & $0.017$ & $\rightarrow$ & $0.0024$ & $0.0024$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$Q$ & $0.3$ & $3.143$ & $7.06$ & $34.31$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$X$ & $3.97$ & $4.732$ & $27.45$ & $2.81$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$A$ & $0.137$ & $\rightarrow$ & $\rightarrow$ & $0.704$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$B$ & $0.043$ & $\rightarrow$ & $0.137$ & $7.8$
+\tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
+
+$C$ & $0.03$ & $0.043$ & $0.071$ & $1.3$
+\tabularnewline
+\bottomrule
+\end{tabular}
+\caption[Change in Parameter Values]{{\bf Change in Parameter Values.} This table shows the mean of each parameter value at each stage of the model. Where parameters are not used and therefore generate no posterior distribution, a $\rightarrow$ is used instead.
+\label{tab:parameter_changes}}
+\end{center}
+\end{table}
+
+The way the parameters change throughout the various rounds of parameter estimation described in this work is presented in Table \ref{tab:parameter_changes} and discussed below.
+\begin{itemize}
+\setlength{\itemsep}{0cm}
+ \item $k_1$ - Changes very little and the final distribution resembles the prior distribution very closely.
+ \item $k_3$ - Increases slightly to achieve the required oxygen reduction rate and affinity.
+ \item $l_1$ - Increases by a factor of two initially however this is a very broad distribution suggesting that the magnitude is less important at this point. It settles back to a value closer to the prior when a more appropriate dataset is used.
+ \item $l_3$ - Reduces significantly to achieve desired NO reduction rate.
+ \item $m_1$ - Reduces significantly to achieve desired nitrite reduction rate.
+ \item $m_3$ - Changes very little from prior distribution.
+ \item $k_5$ - Increases significantly in order to inhibit \cbbthree{} by the amount seen in experimental data.
+ \item $k_6$ - Decreases significantly for the same reason as above.
+ \item $\beta$ - No change.
+ \item $g$ - No change initially, but final posterior shows a $10\times$ decrease to prevent permanent reduction of cytochromes.
+ \item $f$ - No change initially, but final posterior shows a $10\times$ decrease to prevent permanent reduction of quinone pool.
+ \item $\gamma$ - Initial decrease to prevent NO being lost too quickly from the \textit{in silico} results.
+ \item $Q$ - Initial increase to allow enough electron flux through the system. Final large increase as a result of reducing electron flux \textit{into} the system.
+ \item $X$ - Significant change seen for NO reduction, but this change is negated in the final posteriors after reducing electron flux.
+ \item $A$ - Significant increase required to attain observed Nitrite reduction rate after reducing electron flux.
+ \item $B$ - Increases required to attain Nitric Oxide reduction rate, and after reducing electron flux.
+ \item $C$ - Significant increase required to attain Oxygen reduction rate, exacerbated by the reduction of electron flux.
+\end{itemize}
+
+\section{Testing the Model}
+\subsection{\texorpdfstring{Addition of Nitric Oxide to an \textit{nsrR}$^-$ mutant}{Addition of Nitric Oxide to an nsrR- mutant}}
+The $nsrR^-$ mutant should express NorB at significantly higher levels than in wild-type cultures, by as much as $100\times$ according to \citet{Rock2007}. This is a simple \textit{in silico} test to do as it simple requires the concentration of NorB to be increased by $100\times$. Additionally a representative experimental dataset which has not been used during parameter estimation can be used to compare the \textit{in silico} result with the \textit{in vivo} data. This experimental dataset is shown in Figure \ref{fig:aniAnsrR} and repeated here in Figure \ref{fig:aniAnsrR1}.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/aniA-nsrR.pdf}
+ % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
+ \caption[{Nitric Oxide Reduction in an nsrR Mutant.}]{{\bf Nitric Oxide Reduction in an $\mathbf{nsrR}^-$ Mutant.} This figure shows nitric oxide and oxygen reduction in an $aniA^-nsrR^-$. mutant. In this case the $aniA^-$ mutation has no effect as no nitrite is being reduced. Addition of nitric oxide has only a very small effect on the rate of oxygen reduction as it is being removed very quickly by the constitutively expressed NorB.}
+ \label{fig:aniAnsrR1}
+\end{figure}
+The \textit{in silico} test was performed using the same parameter values used to generate Figure \ref{fig:nitric_oxide_simulation} with the value for NorB increased by $100\times$. The result of this simulation is shown in Figure \ref{fig:in_silico_nsrR}.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/in_silico_nsrR.pdf}
+ % in_silico_nsrR.pdf: 705x525 pixel, 72dpi, 24.87x18.52 cm, bb=0 0 705 525
+ \caption[Nitric Oxide Addition to In silico nsrR Mutant]{{\bf Nitric Oxide Addition to \textit{In silico nsrR}$^-$ Mutant}. This figure shows the effect of adding two aliquots of increasing concentration of nitric oxide to a simulated $nsrR^-$ mutant.
+ \label{fig:in_silico_nsrR}}
+\end{figure}
+This figure shows significant similarity with the experimentally observed result capturing the fast removal of nitric oxide due to the large quantities of NorB, and also models the slight reduction in oxygen reduction rate whilst the NO is being removed.
+
+\subsection{\textit{In silico} cyt Knockouts}
+It is possible to predict the effect on both the electron transport chain and the rates of respiration of knocking out some of the cytochromes that are encompassed within parameter $X$. This can be done by simply reducing the concentration of $X$ and leaving all other parameters unchanged. In this case the concentration was reduced by 25\% (this value is somewhat arbitrary but might be similar in effect knocking out 1 of the c-type cytochromes). This is a simplification of actually knocking out a specific cytochrome as this will actually affect all components downstream of $X$.
+
+The experimental dataset used for comparison is that in Figure \ref{fig:nitrite_ds2_solved2}. The result of the simulated dataset is shown in Figure \ref{fig:in_silico_cyt} compared to the solved result from the wild-type.
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/in_silico_cyt.pdf}
+ % in_silico_nsrR.pdf: 705x525 pixel, 72dpi, 24.87x18.52 cm, bb=0 0 705 525
+ \caption[In Silico Cytochrome Mutant]{{\bf \textit{In silico} Cytochrome Mutant}. This figure shows the effect of reducing the total amount of cytochromes while leaving all other components unchanged. All the reaction rates have slowed as a result of this change.
+ \label{fig:in_silico_cyt}}
+\end{figure}
+
+The simulated cytochrome mutant shows that all reaction rates have slowed, although not by large amounts. The most obvious difference in the figure is the change in nitric oxide production and removal which is reduced to approximately 10\% of its production compared to the wild-type. This predicted result could easily be tested with an experiment using a c-type cytochrome knockout mutant grown in microaerobic conditions.
+
+The reduction state plot can be seen in Figure \ref{fig:in_silico_cyt_redox}. It also compares the simulated cytochrome mutant to the wild-type. As can be seen, the redox states of \cbbthree{} and AniA do not change significantly as they are very efficient electron donors, remaining in an oxidised state. NorB remains in a more reduced state in the cytochrome mutant as there is less NO to ultimately reduce resulting in fewer electrons donated. The reduction state of the quinones is quite similar between the two simulations throughout. The reduction state of the cytochromes is significantly different, being higher than the wild-type at all times. This can be explained by looking at the quinone pool reduction state. As it remains fairly similar to the wild-type, the same flux of electrons must be passing through it, thus the same amount of electrons are being passed to fewer cytochromes. Since the rate of donation of electrons by the cytochromes has not been altered, the electrons build up in the cytochromes until a new steady-state is reached where the overall reduction state of the cytochromes is higher.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/in_silico_cyt_redox.pdf}
+ % in_silico_nsrR.pdf: 705x525 pixel, 72dpi, 24.87x18.52 cm, bb=0 0 705 525
+ \caption[In Silico Cytochrome Mutant Redox States]{{\bf \textit{In silico} Cytochrome Mutant Redox States}. This figure shows the effect on the enzymatic reduction states of reducing the total number of cytochromes to simulate a cytochrome knockout mutant. The wild-type is represented by solid lines, and the synthetic mutant by dashed lines.
+ \label{fig:in_silico_cyt_redox}}
+\end{figure}
+
+% \subsection{Electron Flux}
+%
+% \begin{eqnarray*}
+% \mathrm{NADH~to~Quinone~rate~from~FBA} & = & 0.0173~Moles\cdot g^{-1}h^{-1}\\
+% \times~2.8\times 10^{-13} g\cdot cell^{-1} & = & 4.844\times 10^{-15}~Moles\cdot cell^{-1}h^{-1}\\
+% \div~3600~s\cdot h^{-1} & = & 1.35\times 10^{-18}~Moles\cdot cell^{-1}s^{-1}\\
+% \div~1\times 10^{-15}~l\cdot cell^{-1} & = & 1.35\times 10^{-3} M\cdot s^{-1}\\
+% \div~83\times 10^{-6}M & = & 16.3~s^{-1}
+% \end{eqnarray*}
+
+\section{Single Parameter Scaling Fits}
+As has been discussed previously the proxy being used to try and estimate cell density appears to be inadequate as it does not scale correctly with the normalised data. It is however possible to obtain very good fits to all the experimental datasets with the exception of nitrite dataset 1 -  which is an $nsrR^-$ mutant - by simply introducing a ``scale factor'' which is applied to all concentrations in the system. The magnitude of the scale factor for each dataset is shown in Table \ref{tab:scale-factors} along with the Oxygen Reduction Activity which formed part of the initial scaling.
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Dataset & Scale Factor & $O_2$ Reduction Activity ($\mu Ms^{-1}$) \\
+\midrule
+Oxygen Dataset 1 & $\frac{1}{7}$ & 0.211027\\
+\noalign{\smallskip}
+Oxygen Dataset 2 & $\frac{1}{2.4}$ & 1.016159\\
+\noalign{\smallskip}
+Oxygen Dataset 3 & $\frac{1}{8}$ & 0.181488\\
+\noalign{\smallskip}
+Nitric Oxide Dataset 1 & $\frac{1}{5.5}$ & 0.336669\\
+\noalign{\smallskip}
+Nitric Oxide Dataset 3 & $\frac{1}{3}$ & 0.597478\\
+\noalign{\smallskip}
+Nitric Oxide Dataset 4 & $\frac{1}{5.8}$ & 0.324286\\
+\noalign{\smallskip}
+Nitrite Dataset 2 & $\frac{1}{5.8}$ (NorB $\frac{1}{5}$) & 0.275\\
+\noalign{\smallskip}
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Dataset Scale Factors
+\label{tab:scale-factors}}
+\end{table}
+
+The fact that NorB needed to be scaled by a smaller amount in Nitrite dataset 2 suggests that the value for NorB is actually underestimated in the priors. This does not affect the other datasets as they either have no NorB or only very low levels.
+
+A plot of the scaling factors compared to the dataset oxygen reduction rates is shown in Figure \ref{fig:scaling-factors}. A simple linear regression through the datapoints suggests that the relationship between the two is approximately linear with a gradient of $0.36366$.
+
+\begin{figure}[tbp]
+ \centering
+ \includegraphics[width=15cm, clip=true]{./09-completedmodel/data/scaling.pdf}
+ % in_silico_nsrR.pdf: 705x525 pixel, 72dpi, 24.87x18.52 cm, bb=0 0 705 525
+ \caption[Dataset Scaling Factors]{{\bf Dataset Scaling Factors}. This figure shows the magnitude of the scaling factor relative to the experimental oxygen reduction rates. The red lines indicates a linear regression through the datapoints.
+ \label{fig:scaling-factors}}
+\end{figure}
+
 \section{Concluding Remarks}
 The parametrised model created in this work appears to be capable of at least qualitatively modelling the behaviour of all the datasets presented, using the final set of parameter distributions. The model is not 100\% quantitative, although this was not an implicit requirement for the model. It should still be capable of offering insight into how the system behaves even if it cannot predict changes precisely. The non-quantitative nature of the model was to be expected given the high level of complexity in the model and some of the assumptions made regarding cytochromes, backward reaction rates etc. The most obvious ``fault'' in the model is that there is an incomplete decoupling of cell density from other components. Unfortunately this is most probably because the proxy used was not completely accurate as a replacement for cell density.
 
