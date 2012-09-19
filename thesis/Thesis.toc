@@ -19,8 +19,8 @@
 \contentsline {subsection}{\numberline {1.7.2}FNR - Fumarate and Nitrate Reductase Regulator}{30}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}NarQ/NarP - Nitrite Response Sensor/Regulator}{30}{subsection.1.7.3}
 \contentsline {section}{\numberline {1.8}Organisation of Respiratory Chains in Other Bacteria}{31}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}The Respiratory Chain of \textit {Paracoccus denitrificans}}{31}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}The Respiratory Chain of \textit {Escherichia coli}}{32}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.1}The Respiratory Chain of \textit {Paracoccus denitrificans}}{32}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}The Respiratory Chain of \textit {Escherichia coli}}{33}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}The Respiratory Chain of \textit {Rhodobacter sphaeroides}}{34}{subsection.1.8.3}
 \contentsline {section}{\numberline {1.9}Computational Biology and Systems Biology}{35}{section.1.9}
 \contentsline {section}{\numberline {1.10}Modelling}{39}{section.1.10}
