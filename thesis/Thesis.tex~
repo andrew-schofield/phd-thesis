@@ -28,7 +28,7 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 315 2012-09-12 14:06:24Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 323 2012-09-17 22:42:16Z uncle_fungus $}
 
 \pdfminorversion=5
 
@@ -182,7 +182,7 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\textbf{DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}}
+%\fancyfoot[C]{\textbf{DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}} %While in draft mode
 \fancyfoot[R]{\textbf{\thepage}} % except the right
 \renewcommand{\headrulewidth}{0pt}}
 
@@ -235,8 +235,8 @@ Finally I would like to thank all my friends and family for their support throug
 \include{./05-oxygenreduction/oxygenreduction}
 \include{./06-noreduction/noreduction}
 \include{./07-nitritereduction/nitritereduction}
-\include{./08-expression/expression}
 \include{./09-completedmodel/completedmodel}
+\include{./08-expression/expression}
 
 \include{./appendix/appendix}
 \backmatter
