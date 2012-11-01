@@ -28,7 +28,7 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 323 2012-09-17 22:42:16Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 327 2012-09-19 12:15:15Z uncle_fungus $}
 
 \pdfminorversion=5
 
@@ -177,7 +177,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\textcolor{dark-gray}{\slshape\leftmark}}
-\fancyfoot[C]{\textbf{FINAL DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}}
+%\fancyfoot[C]{\textbf{FINAL DRAFT - Rev: \svnrev\ (\svnfilerev)\ \svndate}} %While in draft mode
 \fancyfoot[R]{\textbf{\thepage}}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
@@ -225,7 +225,7 @@ I thank all the members of the Moir Lab and others - Mrs Diana Quinn, Mrs Judith
 \\\\
 My thanks to all at York Community Church, but especially those in ``The Other Monday Home Group'' for their prayer and support over the past 4 years.
 \\\\
-Finally I would like to thank all my friends and family for their support throughout the project. I would especially like to thank my wife Jenni for putting up with me for the last 3 years without complaint, and without her I would be nothing.
+Finally I would like to thank all my friends and family for their support throughout the project. I would especially like to thank my wife Jenni for putting up with me for the last 3 years without complaint and for keeping me sane. Without her I would be nothing.
 
 
 \include{./01-introduction/introduction}
