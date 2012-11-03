@@ -39,13 +39,14 @@ The last datasets to be used in the iterative approach to parameter estimation w
 These equations describe the change in concentration of nitrite over time, which is the experimentally observed value (in addition to the afore modelled oxygen and nitric oxide). Also modelled is the reduction state of AniA. This represents the complete mathematical model not including any transcriptional parameters.
 
 \subsection{Experimental Results}
-Generating datasets for Nitrite reduction could be performed in with two different cultures; an aerobic NsrR deficient mutant, or microaerobic wild-type. Microaerobic cultures appeared to grow very poorly during the course of this work and in most cases did not survive the transition from being in the incubator to being moved to the electrode chamber. Therefore an $nsrR^-$ mutant was used instead of the wild-type. This mutant expresses AniA and NorB in a constitutive manner, removing the necessity for growing the cultures in microaerobic conditions. The cultures were grown in aerobic conditions until mid-log phase growth had been achieved. This corresponded to an $OD_{600}$ of $0.3-0.9$ and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained the culture was transferred to the electrode chamber, Sodium Nitrite was added to a concentration of 1 mM and the nitrite and oxygen concentrations recorded as the culture respired. Unfortunately nitric oxide concentrations could not be recorded as the NO electrode had failed and could not be replaced.
+Generating datasets for Nitrite reduction could be performed in with two different cultures; an aerobic NsrR deficient mutant, or microaerobic wild-type. Microaerobic cultures appeared to grow very poorly during the course of this work and in most cases did not survive the transition from being in the incubator to being moved to the electrode chamber. Therefore an $nsrR^-$ mutant was used instead of the wild-type. This mutant expresses AniA and NorB in a constitutive manner, removing the necessity for growing the cultures in microaerobic conditions. The cultures were grown in aerobic conditions until mid-log phase growth had been achieved. This corresponded to an $OD_{600}$ of $0.3-0.9$ and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained the culture was transferred to the electrode chamber, Sodium Nitrite was added to a concentration of 1 mM and the nitrite and oxygen concentrations recorded as the culture respired. Unfortunately nitric oxide 
+concentrations could not be recorded as the NO electrode had failed and could not be replaced.
 
 In addition to the datasets obtained from $nsrR^-$ mutant cultures, a further dataset was obtained from \citet{Rock2005} which showed oxygen and nitric oxide concentrations in a microaerobic wild-type culture where nitrite is added partway through aerobic respiration. The datasets generated and used for parametrisation of this portion of the model are shown in Figures \ref{fig:nitriteds1} \& \ref{fig:nitriteds2}.
 
-The dataset in Figure \ref{fig:nitriteds1} shows an $nsrR^-$ mutant which has had 1mM nitrite added at $t=0s$. Nitrite reduction proceeds linearly and at quite a high rate. Oxygen starts linearly but then slows down presumably as nitric oxide is produced and inhibits \cbbthree{}. It is also possible that given the high rate of nitrite reduction large quantities of nitric oxide are being produced which will react directly with oxygen as described in Chapter \ref{chap:noreduction} affecting the rate of observed oxygen reduction.
+The dataset in Figure \ref{fig:nitriteds1} shows an $nsrR^-$ mutant which has had 1 mM nitrite added at $t=0~\mathrm{s}$. Nitrite reduction proceeds linearly and at quite a high rate. Oxygen starts linearly but then slows down presumably as nitric oxide is produced and inhibits \cbbthree{}. It is also possible that given the high rate of nitrite reduction large quantities of nitric oxide are being produced which will react directly with oxygen as described in Chapter \ref{chap:noreduction} affecting the rate of observed oxygen reduction.
 
-The dataset in Figure \ref{fig:nitriteds2} shows a wild-type culture grown in denitrifying conditions, so that it is expressing both AniA and NorB. Nitrite is added at time $t\approx200s$ to a concentration of $\approx 1$ mM (Moir, private communication). Upon nitrite addition a small decrease in oxygen respiration rate is observed, and a large increase in nitric oxide occurs as nitrite is reduced. Nitric oxide is then maintained at a fairly constant level until oxygen is fully reduced at which point a further increase in nitric oxide concentration is observed. It is posited that this final increase in NO concentration is because the electrons that were being pulled through the oxygen respiration pathway are now free to be drawn to AniA allowing more nitrite reduction to take place.
+The dataset in Figure \ref{fig:nitriteds2} shows a wild-type culture grown in denitrifying conditions, so that it is expressing both AniA and NorB. Nitrite is added at time $t\approx200~\mathrm{s}$ to a concentration of $\approx 1$ mM (Moir, private communication). Upon nitrite addition a small decrease in oxygen respiration rate is observed, and a large increase in nitric oxide occurs as nitrite is reduced. Nitric oxide is then maintained at a fairly constant level until oxygen is fully reduced at which point a further increase in nitric oxide concentration is observed. It is posited that this final increase in NO concentration is because the electrons that were being pulled through the oxygen respiration pathway are now free to be drawn to AniA allowing more nitrite reduction to take place.
 
 \begin{figure}[tbp]
  \centering
@@ -59,7 +60,7 @@ The dataset in Figure \ref{fig:nitriteds2} shows a wild-type culture grown in de
  \centering
  \includegraphics[height=10cm]{./07-nitritereduction/data/dataset2.pdf}
  % dataset1.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
- \caption[Nitrite Reduction in \Nsm{}]{{\bf Nitrite Reduction in \Nsm{}.} This dataset shows the effect of nitrite addition to an aerobically respiring culture. Nitrite is added at 200s. Oxygen and Nitric Oxide data-points are recorded with much less frequency than in previous datasets hence the inclusion of dots on the plot.
+ \caption[Nitrite Reduction in \Nsm{}]{{\bf Nitrite Reduction in \Nsm{}.} This dataset shows the effect of nitrite addition to an aerobically respiring culture. Nitrite is added at 200 s. Oxygen and Nitric Oxide data-points are recorded with much less frequency than in previous datasets hence the inclusion of dots on the plot.
  \label{fig:nitriteds2}}
 \end{figure}
 
@@ -70,19 +71,27 @@ As described previously all parameters must have an associated prior probability
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccc|cccc}
+\begin{tabular}{crlc}
 \toprule
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 417.88 & 31.172 & g && 0.857 & 0.086\\
-$k_3$ && 4.65 & 0.619 & f && 8.398 & 1.237\\
-$l_1$ && 13.12 & 8.321 & $\gamma$ && 0.00014 & $4.67\times 10^{-6}$\\
-$l_3$ && 0.058 & 0.021 & Q && 7.06 & 1.317\\
-$m_1$ && 1 & 1 & X && 27.45 & 12.08\\
-$m_3$ && 4.8 & 0.2 & A && 0.137 & 0.048\\
-$k_5$ && 1741.8 & 1822.0 & B && 0.137 & 0.048\\
-$k_6$ && 1.076 & 1.473 & C && 0.071 & 0.029\\
-$\beta$ && 0.00014 & $4.67\times 10^{-6}$\\
+$k_1$ & 417.88 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 31.172\\
+$k_3$ & 4.65 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 0.619\\
+$l_1$ & 13.12 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 8.321\\
+$l_3$ & 0.058 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 0.021\\
+$m_1$ & 1 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 1\\
+$m_3$ & 4.8 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 0.2\\
+$k_5$ & 1741.8 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 1822.0\\
+$k_6$ & 1.076 & $\mathrm{s}^{-1}$ & 1.473\\
+$\beta$ & 0.00014 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & $4.67\times 10^{-6}$\\
+g & 0.857 & $\mathrm{s}^{-1}$ & 0.086\\
+f & 8.398 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 1.237\\
+$\gamma$ & 0.00014 & $\mu \mathrm{M}\mathrm{s}^{-1}$ & $4.67\times 10^{-6}$\\
+Q & 7.06 & $\mu \mathrm{M}$ & 1.317\\
+X & 27.45 & $\mu \mathrm{M}$ & 12.08\\
+A & 0.137 & $\mu \mathrm{M}$ & 0.048\\
+B & 0.137 & $\mu \mathrm{M}$ & 0.048\\
+C & 0.071 & $\mu \mathrm{M}$ & 0.029\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -112,7 +121,8 @@ The parameter estimation process was run in the same fashion as that described i
   \label{fig:nitrite_ds1_solved1}}
 \end{figure}
 
-The solved data shown in Figure \ref{fig:nitrite_ds1_solved1} doesn't fit particularly well to the experimental data. Nitrite reduction appears to be modelled well as it is a simple linear reduction. Oxygen reduction however is modelled very poorly. The initial rate of oxygen reduction is too high, and the reduction in rate is too fast. The halting of oxygen reduction is due to the amount of nitric oxide being produced by the reduction of nitrite. This level of nitric oxide quickly inhibits the \cbbthree{} totally as can be seen by the large level of nitric oxide concentration in Figure \ref{fig:nitrite_ds1_solved1} and in the redox plot in Figure \ref{fig:nitrite_ds1_redox1}. The redox plots show that essentially all the electrons in the system are flowing to the nitrite reduction pathway. Nitric oxide is progressing as fast as possible based on the electron flow into NorB. NorB stays in a permanently oxidised state suggesting that the reduction activity of NorB is faster than the rate of reduction of NorB itself. The level of NorB is also not easily modelled correctly using this data as no information is available about the actual levels of nitric oxide being produced during nitrite reduction.
+The solved data shown in Figure \ref{fig:nitrite_ds1_solved1} doesn't fit particularly well to the experimental data. Nitrite reduction appears to be modelled well as it is a simple linear reduction. Oxygen reduction however is modelled very poorly. The initial rate of oxygen consumption is too high, and the slowing of consumption is too abrupt. The halting of oxygen reduction is due to the amount of nitric oxide being produced by the reduction of nitrite. This level of nitric oxide quickly inhibits the \cbbthree{} totally as can be seen by the high concentration of NO in Figure \ref{fig:nitrite_ds1_solved1} and in the redox plot in Figure \ref{fig:nitrite_ds1_redox1}. The redox plots show that essentially all the electrons in the system are flowing to the nitrite reduction pathway. Nitric oxide is progressing as fast as possible based on the electron flow into NorB. NorB stays in a permanently oxidised state suggesting that the reduction activity of NorB is faster than the rate of reduction of NorB
+itself. The level of NorB is also not easily modelled correctly using this data as no information is available about the actual levels of nitric oxide being produced during nitrite reduction.
 
 \begin{figure}[tbp]
  \centering
@@ -164,7 +174,8 @@ The new prior probability distributions proved to be difficult for the parameter
   \label{fig:nitrite_ds2_solved2}}
 \end{figure}
 
-The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the change in substrate reduction has come about. The cytochrome and quinones are no longer in a permanently reduced state, and once oxygen is depleted NorB is able to access some of the electrons that were previously directed towards \cbbthree{}, causing the increase in nitric oxide concentration. Additionally the cytochrome pool increases its overall reduction state once oxygen is depleted, as one of the sinks for electrons is no longer active, this also has a small effect on the reduction state of AniA which increases due to the larger supply of upstream electrons available to it. The increase in electrons available to AniA also causes an increase in the rate of nitrite reduction. The more marked reduction state change of the quinone pool once the culture starts respiring nitrite is partially corroborated by data obtained by \citet{Otten1999}. They found that the reduction state of the quinone pool in \textit{Paracoccus} should differ between aerobic respiration and denitrification, however in their experiments ``denitrification'' was simulated by knocking out the $bc_1$ complex, the equivalent of stopping oxygen and nitrite reduction in \Nsm{} while leaving the quinol reductase (NorB in \Nm{}) intact. Their results showed that the quinone pool should become \textit{more} reduced under ``denitrifying'' conditions not less. This discrepancy may be related to the difference in organisms and could indicate more complex interactions between the components in \Nsm{}.
+The redox state plot shown in Figure \ref{fig:nitrite_ds2_redox2} shows how the change in substrate reduction has come about. The cytochrome and quinones are no longer in a permanently reduced state, and once oxygen is depleted NorB is able to access some of the electrons that were previously directed towards \cbbthree{}, causing the increase in nitric oxide concentration. Additionally the cytochrome pool increases its overall reduction state once oxygen is depleted, as one of the sinks for electrons is no longer active, this also has a small effect on the reduction state of AniA which increases due to the larger supply of upstream electrons available to it. The increase in electrons available to AniA also causes an increase in the rate of nitrite reduction. The more marked reduction state change of the quinone pool once the culture starts respiring nitrite is partially corroborated by data obtained by \citet{Otten1999}. They found that the reduction state of the quinone pool in \textit{Paracoccus} should 
+differ between aerobic respiration and denitrification, however in their experiments ``denitrification'' was simulated by knocking out the $bc_1$ complex, the equivalent of stopping oxygen and nitrite reduction in \Nsm{} while leaving the quinol reductase (NorB in \Nm{}) intact. Their results showed that the quinone pool should become \textit{more} reduced under ``denitrifying'' conditions not less. This discrepancy may be related to the difference in organisms and could indicate more complex interactions between the components in \Nsm{}.
 
 \begin{figure}[tbp]
  \centering
@@ -190,28 +201,28 @@ The idealised lognormal distribution parameters that fit the posterior probabili
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccccc}
+\begin{tabular}{ccccc}
 \toprule
-& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
+& \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} & ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
 \midrule
-$k_1$ && 417.88 & 31.172 & 403.51 & 27.59\\
-$k_3$ && 4.65 & 0.619 & 4.58 & 0.436\\
-$l_1$ && 13.12 & 8.321 & 6.42$\downarrow$ & 2.33$\downarrow$\\
-$l_3$ && 0.058 & 0.021 & 0.096 & 0.025\\
-$m_1$ && 1 & 1 & 0.175$\downarrow$ & 0.087\\
-$m_3$ && 4.8 & 0.2 & 4.79 & 0.042\\
-$k_5$ && 1741.8 & 1822.0 & 138.66 ($\gamma = 399.86$)$\downarrow$ & 338.18$\downarrow$\\
-$k_6$ && 1.076 & 1.473 & 1.59 & 0.527\\
-$\beta$ && 0.00014 & $4.7\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
-g && 0.857 & 0.086 & 0.085$\downarrow$ & 0.0078$\downarrow$\\
-f && 8.398 & 1.237 & 0.771$\downarrow$ & 0.096$\downarrow$\\
-$\gamma$ && 0.0024 & $9\times 10^{-5}$ & 0.0024 & $8.8\times 10^{-5}$\\
-Q && 7.06 & 1.317 & 34.31$\uparrow$ & 5.49$\uparrow$\\
-X && 27.45 & 12.08 & 2.81$\downarrow$ & 0.595$\downarrow$\\
-A && 0.137 & 0.048 & 0.704$\uparrow$ & 0.3$\uparrow$\\
-B && 0.137 & 0.048 & 7.80$\uparrow$ & 3.63$\uparrow$\\
-C && 0.071 & 0.029 & 1.3$\uparrow$ & 0.259$\uparrow$\\
+$k_1$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 417.88 & 31.172 & 403.51 & 27.59\\
+$k_3$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 4.65 &  0.619 & 4.58 & 0.436\\
+$l_1$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 13.12 & 8.321 & 6.42 & 2.33$\downarrow$\\
+$l_3$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 0.058 & 0.021 & 0.096 & 0.025\\
+$m_1$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 1 & 1 & 0.175 $\downarrow$ & 0.087\\
+$m_3$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 4.8 & 0.2 & 4.79 & 0.042\\
+$k_5$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 1741.8 & 1822.0 & 138.66 ($\gamma = 399.86$) & 338.18$\downarrow$\\
+$k_6$ ($\mathrm{s}^{-1}$) & 1.076 & 1.473 & 1.59 & 0.527\\
+$\beta$ ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 0.00014 & $4.7\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
+g ($\mathrm{s}^{-1}$) & 0.857 & 0.086 & 0.085 & 0.0078$\downarrow$\\
+f ($\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$) & 8.398 & 1.237 & 0.771 $\downarrow$ & 0.096$\downarrow$\\
+$\gamma$ ($\mu \mathrm{M} \mathrm{s}^{-1}$) & 0.0024 & $9\times 10^{-5}$ & 0.0024 & $8.8\times 10^{-5}$\\
+Q ($\mu \mathrm{M}$) & 7.06 & 1.317 & 34.31 $\uparrow$ & 5.49$\uparrow$\\
+X ($\mu \mathrm{M}$) & 27.45 & 12.08 & 2.81 $\downarrow$ & 0.595$\downarrow$\\
+A ($\mu \mathrm{M}$) & 0.137 & 0.048 & 0.704 $\uparrow$ & 0.3$\uparrow$\\
+B ($\mu \mathrm{M}$) & 0.137 & 0.048 & 7.80 $\uparrow$ & 3.63$\uparrow$\\
+C ($\mu \mathrm{M}$) & 0.071 & 0.029 & 1.3 $\uparrow$ & 0.259$\uparrow$\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -219,7 +230,7 @@ C && 0.071 & 0.029 & 1.3$\uparrow$ & 0.259$\uparrow$\\
 \label{tab:nitrite-posteriors-table}}
 \end{table}
 
-As can be seen from Table \ref{tab:nitrite-posteriors-table} and Figure \ref{fig:nitrite_posteriors1} most of the rate constant probability distributions have remained fairly stationary throughout the multiple rounds of parameter estimation (from Chapters \ref{chap:oxygenreduction} \& \ref{chap:noreduction}). The distribution of $l_1$ has narrowed towards the lower and of the prior bounds. The distributions of $f$ and $g$ are almost identical to their modified prior distributions with very little deviation. The concentration distributions however have all been modified significantly from their prior distributions.
+As can be seen from Table \ref{tab:nitrite-posteriors-table} and Figure \ref{fig:nitrite_posteriors1} most of the rate constant probability distributions have remained fairly stationary throughout the multiple rounds of parameter estimation (from Chapters \ref{chap:oxygenreduction} \& \ref{chap:noreduction}). The distribution of $l_1$ has narrowed towards the lower end of the prior bounds. The distributions of $f$ and $g$ are almost identical to their modified prior distributions with very little deviation. The concentration distributions however have all been modified significantly from their prior distributions.
 
 \subsection{Analysis of Convergence}
 The Gelman-Rubin R statistics were calculated for the Monte-Carlo trajectories for each parameter and these are presented in Table \ref{tab:nitrite-r-stat}. These values show very high levels of convergence for all parameters, however it should be noted that these values may not be truly representative as in fact only 2 trajectories are being analysed here since these were the only ones that produced usable output.
@@ -248,7 +259,8 @@ $\beta$ && 1.01\\
 \end{table}
 
 \subsection{Analysis of Correlation}
-Correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapters \ref{chap:oxygenreduction} and \ref{chap:noreduction}. The upper-triangle matrix in Figure \ref{tab:nitrite-regression}. There are quite a few cross correlations between parameters in this dataset, although they are all classed as ``moderate'' rather than ``high''. There are some obvious correlations such as the concentration of AniA and the reduction rate constant of Nitrite being negatively correlated, and that AniA and \cbbthree{} are negatively correlated to the concentration of cytochromes. This is explained by the fact that the more cytochromes, the faster AniA and \cbbthree{} can be reduced which means fewer are required to maintain the same level of substrate reduction. Interestingly \cbbthree{} and rate of reduction of oxygen do not appear to be correlated at all. This is most likely due to the fact that the reduction rate constant of oxygen by \cbbthree{} is so high that any oxygen is reduced almost instantaneously meaning that changes in that rate constant make very little difference if the concentration of \cbbthree{} is changed.
+Correlation analysis was performed on each of the parameters using the Monte-Carlo trajectories as in Chapters \ref{chap:oxygenreduction} and \ref{chap:noreduction}. The upper-triangle matrix is shown in Figure \ref{tab:nitrite-regression}. There are quite a few cross correlations between parameters in this dataset, although they are all classed as ``moderate'' rather than ``high''. There are some obvious correlations such as the concentration of AniA and the reduction rate constant of Nitrite being negatively correlated, and that AniA and \cbbthree{} are negatively correlated to the concentration of cytochromes. This is explained by the fact that the more cytochromes, the faster AniA and \cbbthree{} can be reduced which means fewer are required to maintain the same level of substrate reduction. Interestingly \cbbthree{} and rate of reduction of oxygen do not appear to be correlated at all. This is most likely due to the fact that the reduction rate constant of oxygen by \cbbthree{} is so high that any oxygen is 
+reduced almost instantaneously meaning that changes in that rate constant make very little difference if the concentration of \cbbthree{} is changed.
 
 \begin{table}[p]
 \setlength{\tabcolsep}{5pt}
@@ -287,7 +299,8 @@ Correlation analysis was performed on each of the parameters using the Monte-Car
 \afterpage{\clearpage}
 
 \subsection{Discussion}
-The parameter estimates generated from this new set of data are capable of modelling experimental data particularly well, even if only in a qualitative manner. It also showed that the initial prior estimates for the values of $f$ and $g$ were (at least) an order of magnitude too high. These estimates were generated very early on in the modelling process during a trial-and-error period trying to find values that made sense biologically yet also allowed the model to fit the data. Impressively these initial values worked very well for most of the datasets where the nitrite pathway way note being employed, and it only became obvious in the later sets that these values were too high. The nitrite datasets showed that the rate of flow of electrons into the system was too high causing the cytochromes and quinone pool to stay in a permanently reduced state leading to very little change in enzyme activity when substrates were added or were depleted. The enzymes essentially had an unlimited supply of readily available electrons from both sources. Reducing the rate of both flow of electrons into the system, and the flow from the quinone pool to the cytochromes caused a massive change in the behaviour of the system as neither could be maintained in a fully reduced state. This completely altered the dynamics of the system as there was now true competition for electrons from the quinone pool and the cytochromes. The model became capable of modelling, in a qualitatively correct manner, the behaviour of the system when substrates were added and became depleted. Perhaps more impressively, none of the other rate constants needed to change, although the concentrations of the various enzymes were altered. Additionally the simple change of reducing the flux of electrons through the system actually brought the reduction states of the quinones and cytochromes into line with what was already published in the literature ($\approx$50\% reduced)\cite{Otten1999}.
+The parameter estimates generated from this new set of data are capable of modelling experimental data particularly well, even if only in a qualitative manner. It also shows that the initial prior estimates for the values of $f$ and $g$ were (at least) an order of magnitude too high. These estimates were generated very early on in the modelling process during a trial-and-error period trying to find values that made sense biologically yet also allowed the model to fit the data. Impressively these initial values worked very well for most of the datasets where the nitrite pathway way was not being employed, and it only became obvious in the later sets that these values were too high. The nitrite datasets shows that the rate of flow of electrons into the system was too high causing the cytochromes and quinone pool to stay in a permanently reduced state leading to very little change in enzyme activity when substrates were added or were depleted. The enzymes essentially had an unlimited supply of readily available
+electrons from both sources. Reducing the rate of both flow of electrons into the system, and the flow from the quinone pool to the cytochromes caused a massive change in the behaviour of the system as neither could be maintained in a fully reduced state. This completely altered the dynamics of the system as there was now true competition for electrons from the quinone pool and the cytochromes. The model became capable of modelling, in a qualitatively correct manner, the behaviour of the system when substrates were added and became depleted. Perhaps more impressively, none of the other rate constants needed to change, although the concentrations of the various enzymes were altered. Additionally the simple change of reducing the flux of electrons through the system actually brought the reduction states of the quinones and cytochromes into line with what was already published in the literature ($\approx$ 50\% reduced)\cite{Otten1999}.
 
 \subsubsection[Using Nitrite Posterior Parameters]{Using Nitrite Posterior Parameters on Previous Datasets}
 To further investigate the posteriors generated from parameter estimation, the best parameters that produced the output shown in Figure \ref{fig:nitrite_ds2_solved2} were used to create solved datasets for aerobic oxygen respiration, and for the addition of nitric oxide and compared against their equivalent experimental datasets. The enzyme concentrations were all scaled to match their respective datasets, and the solver was run using those parameters (no parameter estimation was performed). The results from these simulations are shown in Figures \ref{fig:oxygen_simulation}, \ref{fig:nitric_oxide_simulation} and \ref{fig:nitrite_simulation}.
@@ -310,7 +323,8 @@ Figure \ref{fig:oxygen_simulation} shows the results of a simulation using the p
  \label{fig:nitric_oxide_simulation}}
 \end{figure}
 
-Figure \ref{fig:nitric_oxide_simulation} shows the results of a simulation using the parameters obtained from nitrite parameter estimation compared to an aerobic oxygen reducing dataset where nitric oxide is added. The concentration parameters have been scaled appropriately to match the experimental dataset (as above). The concentration of NorB was altered further because this experimental dataset was not grown in microaerobic conditions and will not be expressing a high level of NorB. Thus NorB concentration was reduced to a value of $0.01~\mu M$. This was required to achieve a reasonable fit for the removal of nitric oxide. If the parameter obtained from nitrite fitting was used the nitric oxide was removed almost instantaneously. Additionally in order to produce a similarly shaped oxygen reduction curve, the value of $k_5$, the rate constant of \cbbthree{} inhibition by nitric oxide, had to be increased by $\approx 660\times$. This was required to reduce the rate of oxygen reduction to a suitable rate while there was nitric oxide present. The result is another qualitatively correct fit to the experimental data. The discrepancies again my be related to incorrect density decoupling.
+Figure \ref{fig:nitric_oxide_simulation} shows the results of a simulation using the parameters obtained from nitrite parameter estimation compared to an aerobic oxygen reducing dataset where nitric oxide is added. The concentration parameters have been scaled appropriately to match the experimental dataset (as above). The concentration of NorB was altered further because this experimental dataset was not grown in microaerobic conditions and will not be expressing a high level of NorB. Thus NorB concentration was reduced to a value of $0.01~\mu \mathrm{M}$. This was required to achieve a reasonable fit for the removal of nitric oxide. If the parameter obtained from nitrite fitting was used the nitric oxide was removed almost instantaneously. Additionally in order to produce a similarly shaped oxygen reduction curve, the value of $k_5$, the rate constant of \cbbthree{} inhibition by nitric oxide, had to be increased by $\approx 660\times$. This was required to reduce the rate of oxygen reduction to a suitable rate 
+while there was nitric oxide present. The result is another qualitatively correct fit to the experimental data. The discrepancies again my be related to incorrect density decoupling.
 
 \begin{figure}[tbp]
  \centering

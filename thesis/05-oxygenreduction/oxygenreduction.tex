@@ -1,7 +1,7 @@
 \svnid{$Id$}
 \chapter{Oxygen Reduction in \Nm{}}
 \label{chap:oxygenreduction}
-\section{Aerobic Reduction of Oxygen}
+\section{Reduction of Oxygen}
 \subsection{Introduction}
 The first dataset used in the iterative approach to parameter estimation was of a simple oxygen reduction experiment carried out in aerobic conditions. This dataset is the simplest biologically as under aerobic conditions and without the presence of any microaerobic substrates (nitrite or nitric oxide) the only respiratory pathway that is active is the oxygen reducing one. Additionally, the other parts of a respiratory chain influence the oxygen reducing pathway either by competing for electrons, or chemically inhibiting it. The relevant portions of the ETC are shown graphically in Figure \ref{fig:o2_resp_chain}.
 
@@ -22,7 +22,8 @@ The equations that describe this portion of the ETC are:
 These equations describe the change in concentration of oxygen over time, which is the experimentally observable value, the reduction state of the quinone pool and the reduction state of the cytochrome ``pool''. This portion of the model involved 13 parameters and variables which were to be estimated (the model actually contains 17 such parameters and variables, but under these conditions the remaining 4 are set to 0 as they are related to nitrite reduction effects). This large number of parameters will clearly result in over-fitting, however this was necessary to generate loose bounds for all of the parameters.
 
 \subsection{Experimental Results}
-Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, the  culture was transferred to the oxygen electrode chamber and the oxygen concentration recorded as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, the electrode chamber cap was removed and the culture media aerated using a Pasteur pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which can then be used as input data for parameter estimation. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}.
+Generation of oxygen reduction datasets required the growth of MC58 (wild-type \Nsm{}) in aerobic conditions until mid log-phase growth had been achieved. This corresponds to an $\mathrm{OD}_{600}$ of 0.3-0.9 and usually required an incubation period of roughly 3 hours. Once the required cell density had been obtained, the  culture was transferred to the oxygen electrode chamber and the oxygen concentration recorded as the culture respired. At this point the cells are only using whatever amount of oxygen is presently dissolved in the culture medium in addition to that diffusing in through the cap (negligible). Once the culture had used up all its dissolved oxygen, the electrode chamber cap was removed and the culture medium aerated using a Pasteur pipette. This restores oxygen levels throughout the culture and allows the bacteria to continue respiring in aerobic conditions. A typical oxygen reduction plot is shown in Figure \ref{fig:oxy_repeatable_chl}. This is split into individual reduction sections, which
+can then be used as input data for parameter estimation. In many cases if the culture is allowed to become completely anaerobic for a prolonged period of time, the bacteria will die, evidenced by a subsequent lack of oxygen reduction, however this is not always the case as shown in Figure \ref{fig:repeat_oxy_with_delay}.
 
 The experiments used to generate data for oxygen reduction are highly repeatable and consistently generate the same basic result of a linear reduction of oxygen with time.
 \begin{figure}[t]
@@ -54,7 +55,7 @@ The oxygen reduction datasets generated and used for parametrising this portion 
 \afterpage{\clearpage}
 
 \subsubsection{Generation of Prior Probability Distributions}
-In accordance with the integrative scheme that was introduced in Chapter \ref{chap:paramest}, An attempt was made to estimate the distributions of the parameters involved in modelling these data. In order to do this probability distributions were needed to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. It was assumed that all the prior probabilities would be log-normally distributed, therefore the distributions  used were created under the following scheme:
+In accordance with the integrative scheme that was introduced in Chapter \ref{chap:paramest}, an attempt was made to estimate the distributions of the parameters involved in modelling these data. In order to do this probability distributions were needed to act as priors to feed into the estimation system as this is required for a Bayesian approach. These probability distributions were generated from data obtained in the published literature, which is described in Chapter \ref{chap:model}, and preliminary experimental data. It was assumed that all the prior probabilities would be log-normally distributed, therefore the distributions  used were created under the following scheme:
 \begin{itemize}
 \item Where the literature value had bounds associated with it (i.e. published with $\pm{}$ values), the bounds were assumed to cover $3 \sigma$ of the normal distribution. Thus the variance used for the lognormal distribution is $\left(\frac{bounds}{3}\right)^2$ with narrow upper and lower limits.
 \item Where the literature value has no bounds associated with it (i.e. published as a single figure), the bounds were assumed to be $\pm 10\%$ of the literature value, and this was used as $\sigma$. Wider upper and lower limits were used in these cases.
@@ -68,16 +69,21 @@ With reference to the above, the values required to create prior probability dis
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccc|cccc}
+\begin{tabular}{crlc}
 \toprule
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 415 & 13.83 & X && 3.97 & 0.134\\
-$k_3$ && 3 & 0.1 & C && 0.03 & 0.001\\
-$\beta$ && 0.00014 & $4.67\times 10^{-06}$ & $Q_a$ && 0.24 & 0.008 \\
-g && 0.847 & 0.028 & $X_a$ && 3.176 & 0.105 \\
-f && 8.749 & 0.292 & $C_a$ && 0.024 & 0.0008 \\
-Q && 0.3 & 0.01\\
+$k_1$ & $415$ & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 13.83\\
+$k_3$ & $3$ & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 0.1\\
+$\beta$ & $1.4\times 10^{-4}$ & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & $4.67\times 10^{-6}$\\
+g & $0.847$ & $\mathrm{s}^{-1}$ & 0.028\\
+f & $8.749$ & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 0.292\\
+Q & $0.3$ & $\mu \mathrm{M}$ & 0.01\\
+X & $3.97$ & $\mu \mathrm{M}$ & 0.134\\
+C & $0.03$ & $\mu \mathrm{M}$ & 0.001\\
+$Q_a$ & $0.24$ & $\mu \mathrm{M}$ & 0.008\\
+$X_a$ & $3.176$ & $\mu \mathrm{M}$ & 0.105\\
+$C_a$ & $0.024$ & $\mu \mathrm{M}$ & 0.0008\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -155,7 +161,8 @@ The posterior probability distributions generated from the three experimental da
 \end{figure}
 \afterpage{\clearpage}
 
-As can be seen from the posterior distributions, the parameter estimation algorithm has not satisfactorily produced posterior distributions that are contained within the bounds of the prior distributions whilst also still managing to fit to the experimental data. This is especially true of the concentration of $Q$, where the Markov-chain has tended towards the upper limit of the input prior distribution. This suggests that the prior distribution for $Q$ is incorrect, with a mean that is possibly as much as $10\times$ too low, and with a variance that is too small, as the parameter estimation algorithm has attempted to increase the value of $Q$ right up to the upper limit of the input distribution. This incorrect value for $Q$ is probably the cause of several of the other distributions being flatter and outside of the main body of their prior distributions. Another interesting observation is that the distribution for $k_3$ shows a distinct bi-modality, however this is quite likely to be an artefact of the parameter estimation algorithm. The left-most region of the bimodal distribution could be caused by the natural bias of the algorithm for values within more likely regions of the prior probability distribution. If this is the case, the right-most region is the ``true'' probability distribution where the increase in likelihood of fitting outweighs the fact that the values selected have a low probability of being selected from the prior distribution. Assuming this is the case, the prior distribution may also be incorrect for $k_3$, but the shape of the posterior distribution may also be directly caused by the more obviously incorrect prior distribution of $Q$.
+As can be seen from the posterior distributions, the parameter estimation algorithm has not satisfactorily produced posterior distributions that are contained within the bounds of the prior distributions whilst also still managing to fit to the experimental data. This is especially true of the concentration of $Q$, where the Markov-chain has tended towards the upper limit of the input prior distribution. This suggests that the prior distribution for $Q$ is incorrect, with a mean that is possibly as much as $10\times$ too low, and with a variance that is too small, as the parameter estimation algorithm has attempted to increase the value of $Q$ right up to the upper limit of the input distribution. This incorrect value for $Q$ is probably the cause of several of the other distributions being flatter and outside of the main body of their prior distributions. Another interesting observation is that the distribution for $k_3$ shows a distinct bi-modality, however this is quite likely to be an artefact of the 
+parameter estimation algorithm. The left-most region of the bimodal distribution could be caused by the natural bias of the algorithm for values within more likely regions of the prior probability distribution. If this is the case, the right-most region is the ``true'' probability distribution where the increase in likelihood of fitting outweighs the fact that the values selected have a low probability of being selected from the prior distribution. Assuming this is the case, the prior distribution may also be incorrect for $k_3$, but the shape of the posterior distribution may also be directly caused by the more obviously incorrect prior distribution of $Q$.
 
 Since the posterior probability distributions generated at this stage cannot be used as priors for the reasons described above, the prior distributions were altered to try and correct them. These alterations are described in the next section.
 
@@ -169,16 +176,21 @@ To improve the prior probability distribution to counteract the behaviour seen i
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccc|cccc}
+\begin{tabular}{crlc}
 \toprule
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 415 & 30.93 & X && 3.97 & 0.424\\
-$k_3$ && 3 & 0.316 & C && 0.03 & 0.003\\
-$\beta$ && 0.00014 & $4.67\times 10^{-6}$ & $Q_a$ && 0.24 & 0.008\\
-g && 0.847 & 0.089 & $X_a$ && 3.176 & 0.105\\
-f && 8.749 & 1.732 & $C_a$ && 0.024 & 0.0008\\
-Q && 3 & 0.1\\
+$k_1$ & 415 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 30.93\\
+$k_3$ & 3 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 0.316\\
+$\beta$ & 0.00014 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & $4.67\times 10^{-6}$\\
+g & 0.847 & $\mathrm{s}^{-1}$ & 0.089\\
+f & 8.749 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 1.732\\
+Q & 3 & $\mu \mathrm{M}$ & 0.1\\
+X & 3.97 & $\mu \mathrm{M}$ & 0.424\\
+C & 0.03 & $\mu \mathrm{M}$ & 0.003\\
+$Q_a$ & 0.24 & $\mu \mathrm{M}$ & 0.008\\
+$X_a$ & 3.176 & $\mu \mathrm{M}$ & 0.105\\
+$C_a$ & 0.024 & $\mu \mathrm{M}$ & 0.0008\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -214,7 +226,8 @@ The result of dataset 1 lacking this additional feature is that the parameter es
 
 The usable posterior probability distributions were therefore generated from the experimental datasets 2 \& 3, each started with 20 runs and are shown in Figure \ref{fig:oxyposteriors1}. In the case of parameters which represent concentrations, such as $X$ and $C$, the concentrations of cytochromes and \cbbthree{} respectively, the individual dataset probability distributions are shown, as they cannot be sensibly combined, and it emphasises the fact that the datasets were different.
 
-The distribution of $k_3$ is perhaps the most interesting as it shows that the estimates used as priors are most likely incorrect as the posterior distribution has shifted significantly to the right, increasing the mean value of the parameter by a factor of $\approx 1.5 \times$. The other rates are largely similar to their prior distributions suggesting that the priors were good estimates for the actual values. The prior distribution for $Q$ had already been altered as described previously and the new value chosen seems to be a great deal better based on the closeness of the posterior distribution to the altered prior distribution. The concentrations of $X$ and $C$ appear to be underestimated in the prior distributions, as the posteriors show a significant shift to the right as with $k_3$. A comparison between the prior probability distributions and the posterior probability distributions can be seen in Table \ref{tab:oxyPstat}. In this table the obtained distributions have been fitted to lognormal distribution which can be described by 2 parameters, which makes comparing the distributions much easier.
+The distribution of $k_3$ is perhaps the most interesting as it shows that the estimates used as priors are most likely incorrect as the posterior distribution has shifted significantly to the right, increasing the mean value of the parameter by a factor of $\approx 1.5 \times$. The other rates are largely similar to their prior distributions suggesting that the priors were good estimates for the actual values. The prior distribution for $Q$ had already been altered as described previously and the new value chosen seems to be a great deal better based on the closeness of the posterior distribution to the altered prior distribution. The concentrations of $X$ and $C$ appear to be underestimated in the prior distributions, as the posteriors show a significant shift to the right as with $k_3$. A comparison between the prior probability distributions and the posterior probability distributions can be seen in Table \ref{tab:oxyPstat}. In this table the obtained distributions have been fitted to lognormal 
+distribution which can be described by 2 parameters, which makes comparing the distributions much easier.
 \begin{figure}[p]
  \centering
  \includegraphics[width=15cm, trim=0cm 0cm 0cm 0cm]{./05-oxygenreduction/data/posteriors3.pdf}
@@ -227,19 +240,19 @@ The distribution of $k_3$ is perhaps the most interesting as it shows that the e
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccccc}
+\begin{tabular}{crlc|rlc}
 \toprule
-& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
+& \multicolumn{3}{c}{\textbf{Priors}} & \multicolumn{3}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$ & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 415 & 30.93 & 413.228 & 30.046\\
-$k_3$ && 3 & 0.316 & 4.496 $\uparrow$ & 0.463 $\uparrow$\\
-$\beta$ && 0.00014 & $4.67\times 10^{-6}$ & 0.00012 & 0.00017\\
-g && 0.847 & 0.089 & 0.889 & 0.089\\
-f && 8.749 & 1.732 & 8.707 & 1.35 $\downarrow$\\
-Q && 3 & 0.1 & 3.143 & 0.240\\
-X && 3.97 & 0.424 & 4.732 $\uparrow$ & 6.707 $\uparrow$\\
-C && 0.03 & 0.003 & 0.043 $\uparrow$ & 0.044 $\uparrow$\\
+$k_1$ & 415 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 30.93 & 413.228 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 30.046\\
+$k_3$ & 3 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 0.316 & 4.496 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ $\uparrow$ & 0.463 $\uparrow$\\
+$\beta$ & 0.00014 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & $4.67\times 10^{-6}$ & 0.00012 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 0.00017\\
+g & 0.847 & $\mathrm{s}^{-1}$ & 0.089 & 0.889 & $\mathrm{s}^{-1}$ & 0.089\\
+f & 8.749 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 1.732 & 8.707 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 1.35 $\downarrow$\\
+Q & 3 & $\mu \mathrm{M}$ & 0.1 & 3.143 & $\mu \mathrm{M}$ & 0.240\\
+X & 3.97 & $\mu \mathrm{M}$ & 0.424 & 4.732 & $\mu \mathrm{M}$ $\uparrow$ & 6.707 $\uparrow$\\
+C & 0.03 & $\mu \mathrm{M}$ & 0.003 & 0.043 & $\mu \mathrm{M}$ $\uparrow$ & 0.044 $\uparrow$\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -260,7 +273,8 @@ A graph showing how well the solved output fits the experimental data during the
 \subsubsection{Analysis of Convergence}
 It is possible to calculate the degree of convergence of the parameters from the Monte Carlo trajectories using the R statistic introduced by \citet{Gelman1992} and \citet{Brooks1998}. This statistic is a single value that represents how close the trajectories for each individual parameter have come to convergence. The R statistic was calculated using the \textit{Bolstad2}\cite{Curran2011} library for R\cite{RDevelopmentCoreTeam2010} (statistical software package).
 
-Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. The R statistic shows that all of the rate constants appeared to have converged to a reasonably high degree which could also be seen from the distribution plots. The concentration parameters had converged to a much lesser degree however this was not completely unexpected, as there were a larger number of parameters in the model than were required to fit the experimental data and thus the potential range of parameter values was broad at this stage. The apparent lack of convergence of some parameters at this point was not a problem as with subsequent, more complex datasets, the range of potential parameter values should decrease, allowing the trajectories to converge more easily.
+Table \ref{tab:oxyRstat} shows the R statistics obtained from the trajectories run for oxygen reduction parameter estimation. The R statistic is a measure of scale-reduction, and fully converged trajectories will have a value of $1.0$ whereas trajectories which have not converged will have values greater than 1 with the magnitude depending on how far away from converging they are. The R statistic shows that all of the rate constants appeared to have converged to a reasonably high degree which could also be seen from the distribution plots. The concentration parameters had converged to a much lesser degree however this was not completely unexpected, as there were a larger number of parameters in the model than were required to fit the experimental data and thus the potential range of parameter values was broad at this stage. The apparent lack of convergence of some parameters at this point was not a problem as with subsequent, more complex datasets, the range of potential parameter values should decrease, 
+allowing the trajectories to converge more easily.
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
@@ -355,14 +369,16 @@ The upper-triangle correlation matrices are shown in Figures \ref{tab:oxyregress
 \end{table}
 \afterpage{\clearpage}
 
-The correlation matrices show that most of the model parameters are not correlated with each other, giving low to very low $r$ values. Between the two datasets the only parameters that appear to be correlated are $C$ and $X$ and $k_3$ and $X$, and these are both negative correlations. The negative correlation between $k_3$ and $X$ can be explained by the fact that as the concentration of $X$ decreases, an increase in $k_3$ is required to maintain the same rate of electron flow out of the cytochrome pool. The correlation between $C$ and $X$ can be explained by factoring in the fact that the rate of oxidation of $C$ is very high. This should lead to any reduced \cbbthree{} being oxidised almost straight away. Therefore if the concentration of $X$ increased, it would lead to an increase in the reduction state of $C$ (as there will be more electrons to move from $X$ to $C$), so to maintain the same eventual rate of oxygen reduction (by oxidation of $C$), the concentration of $C$ must decrease. The converse is also true.
+The correlation matrices show that most of the model parameters are not correlated with each other, giving low to very low $r$ values. Between the two datasets the only parameters that appear to be correlated are $C$ and $X$ and $k_3$ and $X$, and these are both negative correlations. The negative correlation between $k_3$ and $X$ can be explained by the fact that as the concentration of $X$ decreases, an increase in $k_3$ is required to maintain the same rate of electron flow out of the cytochrome pool. The correlation between $C$ and $X$ can be explained by factoring in the fact that the rate of oxidation of $C$ is very high. This should lead to any reduced \cbbthree{} being oxidised almost straight away. Therefore if the concentration of $X$ increased, it would lead to an increase in the reduction state of $C$ (as there will be more electrons to move from $X$ to $C$), so to maintain the same eventual rate of oxygen reduction (by oxidation of $C$), the concentration of $C$ must decrease. The converse is 
+also true.
 The fact that there are intra-dataset correlations that don't appear in both datasets suggests that the rates and concentrations in the two datasets haven't been completely decoupled from the optical density (or in this case the reduction rate proxy for OD). The positions in the electron transport chain of these correlations are shown below, marked by superscript $^\blacktriangle$ and $^\square$.
 \begin{equation*}
 \xrightarrow{g}Q\xrightarrow{f}X^{\blacktriangle}\xrightarrow{k_3^{\square}}C^{\square\blacktriangle}\xrightarrow{k_1}O_2
 \end{equation*}
 
 \subsection{Discussion}
-The experimental datasets showed that oxygen reduction in \Nm{} is a simple almost completely linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This simple linearity could be very easily have been modelled to a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. Admittedly this would not include the behaviour when the oxygen concentration reaches zero, where the is some non-linearity. However this essentially meant that there were a much larger number of parameters available to fit than were necessary, which lead to over-fitting of the data. The size of the parameter set meant that there were a very large set of potential combinations that would have lead to a similar result, however this was mitigated somewhat by the prior probability distributions given to the algorithm. Even so, this meant that the posterior distributions generated were very wide and therefore allowed much greater freedom for the next dataset to explore the parameter space.
+The experimental datasets showed that oxygen reduction in \Nm{} is a simple almost completely linear system with the reductase having a high affinity for oxygen demonstrated by the almost complete lack of non-linearity as oxygen concentration approaches zero. This simple linearity could be very easily have been modelled to a high degree of accuracy with just 2 parameters in a simple $y=-mx+c$ system. Admittedly this would not include the behaviour when the oxygen concentration reaches zero, where the is some non-linearity. However this essentially meant that there were a much larger number of parameters available to fit than were necessary, which lead to over-fitting of the data. The size of the parameter set meant that there were a very large set of potential combinations that would have lead to a similar result, however this was mitigated somewhat by the prior probability distributions given to the algorithm. Even so, this meant that the posterior distributions generated were very wide and therefore 
+allowed much greater freedom for the next dataset to explore the parameter space.
 
 With the knowledge of the underlying transport chain and the affinity of \cbbthree{} for oxygen, a linear reduction of oxygen with high affinity over nearly two orders of magnitude was expected. This was evidenced in the experimental data. It is however remarkable that this behaviour can be modelled with so few components in the model, as it requires significant changes in the reduction states of the enzymes to achieve this. A brief discussion on the affinity of \cbbthree{} for oxygen can be found in the appendix.
 

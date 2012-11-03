@@ -1,4 +1,4 @@
-\begin{thebibliography}{156}
+\begin{thebibliography}{157}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -391,6 +391,12 @@ Bekker M, {de Vries} S, {Ter Beek} A, Hellingwerf KJ, {de Mattos} MJT (2009)
   Respiration of Escherichia coli can be fully uncoupled via the
   nonelectrogenic terminal cytochrome bd-II oxidase. J Bacteriol 191:
   5510--5517.
+
+\bibitem[{Borisov et~al.(2011)Borisov, Murali, Verkhovskaya, Bloch, Han
+  et~al.}]{Borisov2011}
+Borisov VB, Murali R, Verkhovskaya ML, Bloch DA, Han H, et~al. (2011) Aerobic
+  respiratory chain of Escherichia coli is not allowed to work in fully
+  uncoupled mode. Proc Natl Acad Sci U S A 108: 17320--17324.
 
 \bibitem[{Ferguson et~al.(1987)Ferguson, Jackson, and McEwan}]{Ferguson1987}
 Ferguson SJ, Jackson JB, McEwan AG (1987) Anaerobic Respiration in the

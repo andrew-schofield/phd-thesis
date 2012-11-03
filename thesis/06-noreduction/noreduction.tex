@@ -30,7 +30,7 @@ upon addition of nitric oxide is very difficult to reliably reproduce, with diff
  \centering
  \includegraphics[height=10cm, clip=true]{./06-noreduction/data/aer-no-data.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 3~\mu M$) is introduced to the respiring system which also appears to have been partially primed for nitric oxide reduction. Note that the increase in nitric oxide concentration seen at the end of the dataset is most likely due to drift in the electrode.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 3~\mu \mathrm{M}$) is introduced to the respiring system which also appears to have been partially primed for nitric oxide reduction. Note that the increase in nitric oxide concentration seen at the end of the dataset is most likely due to drift in the electrode.}
  \label{fig:nodata}
 \end{figure}
 The dataset in Figure \ref{fig:nodata} appears to show a system that was partially primed for microaerobic respiration. In this case it was speculated that there was a small amount of NorB (nitric oxide reductase) present. Initially the oxygen reduction was carried out in exactly the same manner as in Chapter \ref{chap:oxygenreduction}. Upon addition of nitric oxide, oxygen respiration slowed and almost stopped as a result of competition for electrons between \cbbthree{} and NorB, and the direct chemical inhibition of \cbbthree{} by NO. Nitric oxide started to be removed as a combination of diffusion (although this rate will be low as shown in the previous two datasets) and reduction via NorB. Once the NO has been removed from the system oxygen reduction resumes at almost the same rate as before and still has the same high affinity feature as the oxygen reduction datasets in Chapter \ref{chap:oxygenreduction}.
@@ -40,11 +40,11 @@ The dataset in Figure \ref{fig:nodata} appears to show a system that was partial
  \centering
  \includegraphics[height=10cm, clip=true]{./06-noreduction/data/aer-no-data2.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a larger amount of nitric oxide (to $\approx 7.8~\mu M$) is introduced to the respiring system.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a larger amount of nitric oxide (to $\approx 7.8~\mu \mathrm{M}$) is introduced to the respiring system.}
  \label{fig:nodata2}
 \end{figure}
-The dataset in Figure \ref{fig:nodata2} shows a larger change in the rate of oxygen reduction than that of Figure \ref{fig:nodata1} when a larger amount of nitric oxide is introduced. Again the removal of nitric oxide will primarily be due to diffusion, although now at higher concentrations more nitric oxide will interact with \cbbthree{} temporarily inhibiting it. This inhibition causes the reduction in oxidase activity, and the sequestering of NO by \cbbthree{} also causes some of the visible reduction in nitric oxide concentration. The time-scale over which the nitric oxide disappears strongly suggests that it is not due to nitric oxide reductase activity. This is corroborated by the NO removal time-scale in Figure \ref{fig:nodata3} which contains no NorB. It may also be possible that at this concentration of nitric oxide some \cbbthree{} may have been permanently inhibited as mentioned in Chapters \ref{chap:intro} \& \ref{chap:model}. Additionally at higher nitric oxide concentrations nitric oxide could 
-react chemically to oxygen under the following scheme:
+When a larger amount of nitric oxide is introduced to a culture, the rate of oxygen reduction changes more significantly, as can be seen by comparing Figures \ref{fig:nodata2} and \ref{fig:nodata1}. Again the removal of nitric oxide will primarily be due to diffusion, although now at higher concentrations more nitric oxide will interact with \cbbthree{} temporarily inhibiting it. This inhibition causes the reduction in oxidase activity, and the sequestering of NO by \cbbthree{} also causes some of the visible reduction in nitric oxide concentration. The time-scale over which the nitric oxide disappears strongly suggests that it is not due to nitric oxide reductase activity. This is corroborated by the NO removal time-scale in Figure \ref{fig:nodata3} which contains no NorB. It may also be possible that at this concentration of nitric oxide some \cbbthree{} may have been permanently inhibited as mentioned in Chapters \ref{chap:intro} \& \ref{chap:model}. Additionally at higher nitric oxide concentrations nitric oxide could
+react chemically with oxygen under the following scheme:
 \begin{equation*}
  2NO + O_2 \rightarrow 2H^+ + NO_3^- + NO_2^- + H_2O
 \end{equation*}
@@ -55,7 +55,7 @@ react chemically to oxygen under the following scheme:
  \centering
  \includegraphics[height=10cm, clip=true]{./06-noreduction/data/aer-no-data1.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a small amount of nitric oxide (to $\approx 0.6~\mu M$) is introduced to the respiring system.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as a small amount of nitric oxide (to $\approx 0.6~\mu \mathrm{M}$) is introduced to the respiring system.}
  \label{fig:nodata1}
 \end{figure}
 The dataset in Figure \ref{fig:nodata1} shows very little visible change in the rate of oxygen reduction when a small amount of nitric oxide is added. In actual fact the change in rate was an $\approx 3\%$ reduction after addition of nitric oxide based on linear regression of pre- and post-addition rates. The observed removal of nitric oxide is due primarily to diffusion, although there may also be some preliminary (as the culture has not been primed with nitric oxide) nitric oxide reductase activity. However for modelling purposes it was assumed that the nitric oxide reductase activity for this dataset is zero.
@@ -64,7 +64,7 @@ The dataset in Figure \ref{fig:nodata1} shows very little visible change in the 
  \centering
  \includegraphics[height=10cm, clip=true]{./06-noreduction/data/aer-no-data3.pdf}
  % nosim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 2.5~\mu M$) is introduced to a respiring $norB-$ mutant culture. Any removal of nitric oxide here is due to diffusion and sequestering by \cbbthree{} alone.}
+ \caption[{Nitric Oxide Reduction in \textit{Neisseria meningitidis}.}]{{\bf Nitric Oxide Reduction in \textit{Neisseria meningitidis}.} This dataset shows the effect on rate of oxygen reduction as nitric oxide (to $\approx 2.5~\mu \mathrm{M}$) is introduced to a respiring $norB^-$ mutant culture. Any removal of nitric oxide here is due to diffusion and sequestering by \cbbthree{} alone.}
  \label{fig:nodata3}
 \end{figure}
 The dataset in Figure \ref{fig:nodata3} shows a visible change in reduction rate of \cbbthree{} upon addition of nitric oxide. This is due to inhibition of the \cbbthree{} directly by nitric oxide. This culture is incapable of reducing nitric oxide, having a $norB^-$ mutation, thus the only route for removal of nitric oxide is by simple diffusion.
@@ -76,17 +76,24 @@ that the prior distributions completely encompass the experimental posterior dis
 \begin{table}[ht]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccc|cccc}
+\begin{tabular}{crlc}
 \toprule
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & \textbf{Parameter} && ${\bar{x}}$ & $\sigma$\\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 413.228 & 30.046 & g && 0.889 & 0.089\\
-$k_3$ && 4.496 & 0.463 & f && 8.707 & 1.35\\
-$l_1$ && 6 & 2 & $\gamma$ && 0.00014 & $4.67\times 10^{-6}$\\
-$l_3$ && 1 & 2 & Q && 3.143 & 0.240\\
-$k_5$ && 100 & 10 & X && 4.732 & 6.707\\
-$k_6$ && 38 & 8 & B && 0.043 & 0.044\\
-$\beta$ && 0.00014 & $4.67\times 10^{-6}$ & C && 0.043 & 0.044\\
+$k_1$ & 413.228 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & 30.046\\
+$k_3$ & 4.496 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & 0.463\\
+$l_1$ & 6 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & 2\\
+$l_3$ & 1 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & 2\\
+$k_5$ & 100 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & 10\\
+$k_6$ & 38 & $\mathrm{s}^{-1}$  & 8\\
+$\beta$ & 0.00014 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & $4.67\times 10^{-6}$\\
+g & 0.889 & $\mathrm{s}^{-1}$  & 0.089\\
+f & 8.707 & $\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$  & 1.35\\
+$\gamma$ & 0.00014 & $\mu \mathrm{M}\mathrm{s}^{-1}$  & $4.67\times 10^{-6}$\\
+Q & 3.143 & $\mu \mathrm{M}$ & 0.240\\
+X & 4.732 & $\mu \mathrm{M}$ & 6.707\\
+B & 0.043 & $\mu \mathrm{M}$ & 0.044\\
+C & 0.043 & $\mu \mathrm{M}$ & 0.044\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -110,7 +117,7 @@ respectively.
 
 In dataset 3, the reduction of oxygen appears to be being modelled quite accurately. This is due to the largely featureless nature of the reduction curve which can easily be accommodated by the wide prior probability distributions given for the parameters involved. The rate change upon addition of a small amount of nitric oxide is only very slight, thus a perfectly straight line will fit it very well. As can be seen however, nitric oxide removal by diffusion is being modelled very poorly indeed. There is no active NorB in this culture, thus there is no modelled nitric oxide reduction. The prior distribution for the diffusion rate of nitric oxide is clearly incorrect, as nitric oxide removal in the solved output is virtually non-existent.
 
-In dataset 1, reduction of oxygen is being modelled very poorly as the parameters produced by the parameter estimation system do not appear to have captured the behaviour that causes oxygen reduction to cease. In this case the \textit{BOF} value has been minimised by generating a linear reduction of oxygen which doesn't accurately represent either of the observed rates. As has been noted about dataset 3, the rate of nitric oxide diffusion is incorrect, thus in order to obtain a sensible rate for removal/reduction of nitric oxide the rate constants for nitric oxide reduction will have to have been increased artificially. This combination of parameters also means that the reduction in rate of oxygen reduction cannot be modelled correctly. This behaviour should be attributed to temporary chemical inhibition of \cbbthree{} by nitric oxide itself (which is now present in high enough concentrations), and by competition for electrons with NorB.
+In dataset 1, reduction of oxygen is being modelled very poorly as the parameters produced by the parameter estimation system do not appear to have captured the behaviour that causes oxygen reduction to cease. In this case the \textit{BOF} value has been minimised by generating a linear reduction of oxygen which doesn't accurately represent either of the observed rates. As has been noted about dataset 3, the rate of nitric oxide diffusion is incorrect, thus in order to obtain a sensible rate for removal/reduction of nitric oxide the rate constants for nitric oxide reduction will have been increased artificially in the simulation. This combination of parameters also means that the reduction in rate of oxygen reduction cannot be modelled correctly. This behaviour should be attributed to temporary chemical inhibition of \cbbthree{} by nitric oxide itself (which is now present in high enough concentrations), and by competition for electrons with NorB.
 
 As in Chapter \ref{chap:oxygenreduction}, the prior probability distributions were incapable of producing parameter sets which accurately model the experimental data, thus making the posterior probability distributions generated invalid. The prior probability distributions were therefore modified to reflect the increased understanding of the parameters of the model. In addition to altered prior probability distributions a slightly different parameter estimation protocol was employed which is detailed in the next section.
 
@@ -136,11 +143,11 @@ As dataset 3 was the simplest of the experimental datasets which describe the ef
 being used as input for the subsequent attempts.
 
 \subsubsection{Secondary Parameter Estimation Results}
-Trial and error was employed to produce an initial informed prior value for $\gamma$, the rate of diffusion of nitric oxide, which was the problematic parameter for datasets 3 and 4 previously. This value was estimated to be $\approx 0.02~\mu Ms^{-1}$ based upon visual comparison of the solved output against the experimental data. This value was then used as a prior with no bounds so that the parameter estimation algorithm could home in on the correct distribution. All the other prior probability distributions were left unchanged from the first attempt. It should be noted that $\gamma$ actually represents a set of physical effects on nitric oxide rather than just diffusion as with $\beta$. $\gamma$ is actually likely to include binding to metalloproteins, spontaneous degradation and the direct chemical reaction with oxygen in addition to the loss by simple diffusion.
+Trial and error was employed to produce an initial informed prior value for $\gamma$, the rate of diffusion of nitric oxide, which was the problematic parameter for datasets 3 and 4 previously. This value was estimated to be $\approx 0.02~\mu \mathrm{Ms}^{-1}$ based upon visual comparison of the solved output against the experimental data. This value was then used as a prior with no bounds so that the parameter estimation algorithm could home in on the correct distribution. All the other prior probability distributions were left unchanged from the first attempt. It should be noted that $\gamma$ actually represents a set of physical effects on nitric oxide rather than just diffusion as with $\beta$. $\gamma$ is actually likely to include binding to metalloproteins, spontaneous degradation and the direct chemical reaction with oxygen in addition to the loss by simple diffusion.
 
 Figure \ref{fig:nosim1.2} shows greatly improved fitting of solved data to experimental values suggesting that the parameters are now correct (or at least reasonably close) for describing the removal of nitric oxide. The model is still not capturing the small effect on oxygen reduction rate visible in the experimental data however. A linear regression of the solved oxygen data suggests that it is in fact a perfectly straight line ($R^2=0.9999$, source data not shown) whereas there should be a slight elbow upon addition of nitric oxide. This was not considered to be a significant problem here, as the effect is far more visible in the subsequent dataset(s), therefore would be more easily modelled.
 
-The posterior probability distribution for $\gamma$ produced by this dataset parameter estimation can be used a prior probability distribution for parameter estimation of datasets 1 and 4, as this now includes the missing information about rate of removal of nitric oxide by diffusion.
+The posterior probability distribution for $\gamma$ produced by this dataset parameter estimation can be used a prior probability distribution for parameter estimation of datasets 1 and 4, as this now includes the missing information about rate of removal of nitric oxide.
 
 \begin{figure}[tbp]
  \centering
@@ -186,7 +193,7 @@ The concentration of nitric oxide present will also affect the rate of \cbbthree
 \end{figure}
 
 The posterior probability distributions generated from this third round of parameter estimation are shown in Figure \ref{fig:redoneposterior2}. The distributions generated for the parameters relating solely to oxygen reduction were broadly similar to the prior probability distributions which was to be expected and confirms that these distributions capable of describing the oxygen reduction behaviour. The rate of NO reduction by NorB appeared to be very similar to the prior probability distribution however the rate of NorB reduction seemed to have been vastly overestimated in the prior distribution. The prior distribution for this parameter was unknown however, and was set to a very wide lognormal with mean of 1. The rate of NO diffusion ($\gamma$) tended to settle at the lower end of the prior distribution. The most interesting posterior probability distributions were those of $k_5$ and $k_6$ which actually had to be freely perturbed, rather than be constrained by their prior probability distributions. 
-Neither of these two parameters settled anywhere near the prior probability distributions. $k_5$ never settles on a value less than $\approx 400~\mu M^{-1}s^{-1}$. This value turned out to be a critical threshold to at which the inactivation of \cbbthree{} occurs. At lower values of $k_5$ the inactivation is slower than observed in the experimental dataset and in the solved data the ``elbow'' is shifted visibly to the right. At or above this threshold the inactivation point closely matches that seen in the experimental dataset. It appeared that that absolute values of $k_5$ and $k_6$ are unimportant, only that $k_5$ is greater than $\approx 400~\mu M^{-1}s^{-1}$ and that the ratio of $k_5:k_6 \approx 2000:1$. Unfortunately this meant that it was impossible to determine if the obtained posterior probability distributions were actually representative of the true distributions.
+Neither of these two parameters settled anywhere near the prior probability distributions. $k_5$ never settles on a value less than $\approx 400~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$. This value turned out to be a critical threshold at which the inactivation of \cbbthree{} occurs. At lower values of $k_5$ the inactivation is slower than observed in the experimental dataset and in the solved data the ``elbow'' is shifted visibly to the right. At or above this threshold the inactivation point closely matches that seen in the experimental dataset. It appeared that that absolute values of $k_5$ and $k_6$ are unimportant, only that $k_5$ is greater than $\approx 400~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ and that the ratio of $k_5:k_6 \approx 2000:1$. Unfortunately this meant that it was impossible to determine if the obtained posterior probability distributions were actually representative of the true distributions.
 
 \begin{figure}[p]
  \centering
@@ -200,25 +207,25 @@ A comparison between the prior and posterior distributions can be seen in tabula
 \begin{table}[tbp]%needs to be 'here' as section is short
 \renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccccc}
+\begin{tabular}{crlc|rlc}
 \toprule
-& & \multicolumn{2}{c}{\textbf{Priors}} & \multicolumn{2}{c}{\textbf{Posteriors}} \\
-\textbf{Parameter} && ${\bar{x}}$ & $\sigma$ & ${\bar{x}}$ & $\sigma$\\
+& \multicolumn{3}{c}{\textbf{Priors}} & \multicolumn{3}{c}{\textbf{Posteriors}} \\
+\textbf{Parameter} & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$ & \multicolumn{2}{c}{${\bar{x}}$} & $\sigma$\\
 \midrule
-$k_1$ && 413.228 & 30.046 & 417.88 & 31.172\\
-$k_3$ && 4.496 & 0.463 & 4.65 & 0.619\\
-$l_1$ && 6 & 2 & 13.12$\uparrow$ & 8.321$\uparrow$\\
-$l_3$ && 1 & 2 & 0.058$\downarrow$ & 0.021$\downarrow$\\
-$k_5$ && 100 & 10 & 1741.8$\uparrow$ & 1822.0$\uparrow$\\
-$k_6$ && 38 & 8 & 1.076$\downarrow$ & 1.473$\downarrow$\\
-$\beta$ && 0.00014 & $4.72\times 10^{-6}$ & 0.00014 & $4.7\times 10^{-6}$\\
-g && 0.889 & 0.089 & 0.857 & 0.086\\
-f && 8.707 & 1.35 & 8.398 & 1.237\\
-$\gamma$ && 0.017 & 0.0015 & \\
-Q && 3.143 & 0.240 & 7.06 & 1.317\\
-X && 4.732 & 6.707 & 27.45 & 12.08\\
-B && 0.043 & 0.044 & 0.137 & 0.048\\
-C && 0.043 & 0.044 & 0.071 & 0.029\\
+$k_1$ & 413.228 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 30.046 & 417.88 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 31.172\\
+$k_3$ & 4.496 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 0.463 & 4.65 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 0.619\\
+$l_1$ & 6 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 2 & 13.12 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ $\uparrow$ & 8.321$\uparrow$\\
+$l_3$ & 1 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 2 & 0.058 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ $\downarrow$ & 0.021$\downarrow$\\
+$k_5$ & 100 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 10 & 1741.8 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ $\uparrow$ & 1822.0$\uparrow$\\
+$k_6$ & 38 & $\mathrm{s}^{-1}$ & 8 & 1.076 & $\mathrm{s}^{-1}$ $\downarrow$ & 1.473$\downarrow$\\
+$\beta$ & 0.00014 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & $4.72\times 10^{-6}$ & 0.00014 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & $4.7\times 10^{-6}$\\
+g & 0.889 & $\mathrm{s}^{-1}$ & 0.089 & 0.857 & $\mathrm{s}^{-1}$ & 0.086\\
+f & 8.707 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 1.35 & 8.398 & $\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & 1.237\\
+$\gamma$ & 0.017 & $\mu \mathrm{M} \mathrm{s}^{-1}$ & 0.0015 & \\
+Q & 3.143 & $\mu \mathrm{M}$ & 0.240 & 7.06 & $\mu \mathrm{M}$ & 1.317\\
+X & 4.732 & $\mu \mathrm{M}$ & 6.707 & 27.45 & $\mu \mathrm{M}$ & 12.08\\
+B & 0.043 & $\mu \mathrm{M}$ & 0.044 & 0.137 & $\mu \mathrm{M}$ & 0.048\\
+C & 0.043 & $\mu \mathrm{M}$ & 0.044 & 0.071 & $\mu \mathrm{M}$ & 0.029\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -366,7 +373,7 @@ The simulated results and parameter set generated from parameter estimation are 
 \end{figure}
 
 
-Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure \ref{fig:anjum}a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure \ref{fig:anjum}b). A NorB mutant treated to a larger concentration of NO shows a much slower recovery of oxygen (Figure \ref{fig:anjum}c) which can be shown \textit{in silico} simply by removing NorB as can be seen in Figure \ref{fig:in_silico_norB}.
+Small concentrations of NO added result in no visible change in oxygen reduction rate (Figure \ref{fig:anjum}a). Larger concentrations of NO appear to slow the rate of oxygen reduction which is then recovered (Figure \ref{fig:anjum}b). A $norB^-$ mutant treated with a larger concentration of NO shows a much slower recovery of oxygen consumption (Figure \ref{fig:anjum}c) which can be shown \textit{in silico} simply by removing NorB as can be seen in Figure \ref{fig:in_silico_norB}.
 
 \begin{figure}[tbp]
  \centering

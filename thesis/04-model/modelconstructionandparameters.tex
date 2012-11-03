@@ -35,7 +35,7 @@ In isolation the first term gives rise to a simple exponential input of oxygen u
 
 During the course of the experimental stages of this work, on occasions where the respiring cultures had died, either through being left in essentially anaerobic conditions for too long, or were treated with Chloramphenicol (which stops all protein production in the cell), the oxygen levels in the culture media would begin to rise slowly. This did not occur in every case, and after some further experimentation it was concluded that it probably occurs when an air bubble gets trapped underneath the lid of the oxygen electrode chamber. To try and abate the rate of diffusion in all subsequent experiments particular care was taken to avoid an air bubble being trapped in the electrode chamber.
 
-Unfortunately even with no air bubble a small amount of oxygen was diffusing in, so an experiment was set up to try and quantify the rate of diffusion. Wild-type \Nm{} cultures were grown to various different cell densities and left to respire aerobically. Once the cultures had used all the available oxygen they were killed either by adding a small volume of Potassium Cyanide ($50 \mu l$ of a $50 \mu M$ solution), or by heating the culture to 95 \textdegree{}C for 10 minutes. Oxygen concentrations were then recorded as the gas diffused back into the electrode chamber.% It should be noted that Chloramphenicol should not actually kill the cells as it merely prevents further protein production in the cell, however the results of this experiment showed that under anaerobic conditions after addition of Chloramphenicol the cultures are no longer capable of respiring oxygen.
+Unfortunately even with no air bubble a small amount of oxygen was diffusing in, so an experiment was set up to try and quantify the rate of diffusion. Wild-type \Nm{} cultures were grown to various different cell densities and left to respire aerobically. Once the cultures had used all the available oxygen they were killed either by adding a small volume of Potassium Cyanide ($50~\mu \mathrm{l}$ of a $50~\mu \mathrm{M}$ solution), or by heating the culture to 95 \textdegree{}C for 10 minutes. Oxygen concentrations were then recorded as the gas diffused back into the electrode chamber.% It should be noted that Chloramphenicol should not actually kill the cells as it merely prevents further protein production in the cell, however the results of this experiment showed that under anaerobic conditions after addition of Chloramphenicol the cultures are no longer capable of respiring oxygen.
 
 The experimental data showed that the increasing oxygen concentration takes the form of an inverse exponential decay and therefore can be fit very easily to an exponential function. The exact parameters of the diffusion seem to differ between cultures but it appeared to have a dependence on the cell density whereby lower cell densities generally had higher rates of diffusion than higher cell densities, but there was no obvious direct relationship.
 The equation used to fit raw data for oxygen diffusion is a 3 parameter exponential:
@@ -66,13 +66,13 @@ NO\mhyphen C_X \xrightarrow{k_6} NO + C_a\\
 NO \xrightarrow{\gamma} \emptyset
 \end{gathered}
 \end{equation*}
-The equations above have a number of additional interactions in comparison to $\mathrm{O}_2$. NO is created by the reduction of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ by AniA, is reduced by its dedicated reductase, NorB, and converted to $\mathrm{N}_2\mathrm{O}$ which is lost from the cell, interacts with \cbbthree{}, and is also spontaneously lost from the electrode chamber. It is assumed that the interaction with \cbbthree{} occurs only in a reversible manner, leading to an NO bound and temporarily inactive form $C_X$. There is evidence that this interaction can also lead to permanent degradation of \cbbthree{} via the formation of peroxynitrite at the terminal oxidase\cite{Sharpe1998,Blomberg2005}. This is not currently considered in this version of the model. These effects are described mathematically in the equation below.
+The equations above have a number of additional interactions in comparison to \cOxygen{}. NO is created by the reduction of \cNitrite{} by AniA, is reduced by its dedicated reductase, NorB, and converted to \cNtwoO{} which is lost from the cell, interacts with \cbbthree{}, and is also spontaneously lost from the electrode chamber. It is assumed that the interaction with \cbbthree{} occurs only in a reversible manner, leading to an NO bound and temporarily inactive form $C_X$. There is evidence that this interaction can also lead to permanent degradation of \cbbthree{} via the formation of peroxynitrite at the terminal oxidase\cite{Sharpe1998,Blomberg2005}. This is not currently considered in this version of the model. These effects are described mathematically in the equation below.
 %The equation for describing \cNO{} concentration changes is more complex as \cNO{} has a number of additional interactions in comparison to \cOxygen{}. \cNO{} also interacts with \cbbthree{}, in addition to being reduced from \cNitrite{}, reduced to \cNtwoO{} and spontaneously lost from the electrode chamber. Currently this is the equation being used to model \cNO{} concentration.
 \begin{equation}
 \frac{d[NO]}{dt} = m_{1}[NO_2^-][A_a] - l_1[NO][B_a] - k_5[C_a][NO] + k_6 [C_X] - \gamma[NO]
 \label{eq:no}
 \end{equation}
-The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of $\mathrm{NO}_\mathrm{2}^\mathrm{-}$ and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the $\mathrm{3}^\mathrm{rd}$ component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\
+The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\
 %The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
 \clearpage
 \noindent{\bf Nitrite}\\
@@ -201,7 +201,7 @@ The flow of electrons and how this relates to the parameters described above is 
 \subsection{Assumptions and their Justifications}
 A number of assumptions were made regarding the kinetics and reactions taking place in the model.
 \begin{enumerate}
- \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase (aa3) rather than \cbbthree{}, but this assumption should still stand as the enzymes are of the same family. This also implies that the model deals exclusively with reversible inhibition.
+ \item {\bf It is assumed that NO inhibits the reduced \cbbthree{} and not the oxidised form, since it is not expected that Nitric oxide to bind to an inactive enzyme.} This is corroborated by \citet{Giuffre2000}, who show significant levels of inhibition of reduced cytochrome. They do also however observe low levels of inhibition of the oxidised enzyme also. Their experiments used cytochrome c oxidase ($aa_3$) rather than \cbbthree{}, but this assumption should still stand as the enzymes are of the same family. This also implies that the model deals exclusively with reversible inhibition.
  \item {\bf Bacterial population structure and concentration variation not considered.} The primary substrates of interest are gases and substrates which are thought to freely diffuse in and out of the cells. Additionally the culture is kept well-mixed at all times, thus it can be assumed that the culture is homogeneous.
  \item {\bf No backwards reactions.} For simplicity, backwards reactions are not included. However they may be important, and could easily be included in a future study with the concomitant increase in parameter count.
  \item {\bf No Michaelis-Menten kinetics.} Separation of time-scales cannot be assumed as the rates of intermediate reaction steps are not known. Future information regarding time-scale separation could easily be incorporated.
@@ -221,58 +221,58 @@ None of the rate constants or concentrations which were required for this model 
 \textbf{Symbol} & \textbf{Description} & \textbf{Value} & \textbf{Source}
 \tabularnewline
 \midrule
-$k_1$ & Rate constant for O$_{\textrm{2}}$ reduction by reduced \cbbthree{} & $415~\mu M^{-1} s^{-1}$ & \citet{Forte2001} and \citet{Hunter2007}
+$k_1$ & Rate constant for \cOxygen{} reduction by reduced \cbbthree{} & $415~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Forte2001} and \citet{Hunter2007}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$k_3$ & Rate constant for \cbbthree{} reduction by cytochrome pool & $3~\mu M^{-1} s^{-1}$ & \citet{Chang2010}
+$k_3$ & Rate constant for \cbbthree{} reduction by cytochrome pool & $3~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Chang2010}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$l_1$ & Rate constant for NO reduction by reduced NorB & $0.9 - 500~\mu M^{-1} s^{-1}$ & \citet{Rock2007} and \citet{Wasser2002}
+$l_1$ & Rate constant for NO reduction by reduced NorB & $0.9 - 500~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Rock2007} and \citet{Wasser2002}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
 $l_3$ & Rate constant for NorB reduction by quinone pool & Unknown & N/A
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$m_1$ & Rate constant for NO$_{\textrm{2}}^{\textrm{-}}$ reduction by reduced AniA & Unknown & N/A
+$m_1$ & Rate constant for \cNitrite{} reduction by reduced AniA & Unknown & N/A
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$m_3$ & Rate constant for AniA reduction by cytochrome pool & $4.8\pm0.2~\mu M^{-1}s^{-1}$ & \citet{Nojiri2009}
+$m_3$ & Rate constant for AniA reduction by cytochrome pool & $4.8\pm0.2~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & \citet{Nojiri2009}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$k_5$ & Rate constant for \cbbthree{} inhibition by NO & $100~\mu M ^{-1} s ^{-1}$ & \citet{Giuffre2000} and \citet{Blackmore1991}
+$k_5$ & Rate constant for \cbbthree{} inhibition by NO & $100~\mu \mathrm{M} ^{-1} \mathrm{s} ^{-1}$ & \citet{Giuffre2000} and \citet{Blackmore1991}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$k_6$ & Rate constant for recovery of NO inhibited \cbbthree{} & $38~s^{-1}$ & \citet{Rock2005}
+$k_6$ & Rate constant for recovery of NO inhibited \cbbthree{} & $38~\mathrm{s}^{-1}$ & \citet{Rock2005}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$\beta$ & Rate constant for passive diffusion in of O$_{\textrm{2}}$ & Unknown & N/A
+$\beta$ & Rate constant for passive diffusion in of \cOxygen{} & Unknown & N/A
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$K_O$ & Saturation O$_{\textrm{2}}$ level & $48~\mu M$ & This work
+$K_O$ & Saturation \cOxygen{} level & $48~\mu \mathrm{M}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$g$ & Rate of electrons in from NADH & $0.8~s^{-1}$ & This work
+$g$ & Rate of electrons in from NADH & $0.8~\mathrm{s}^{-1}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$f$ & Rate constant for reduction of cytochromes by quinones & $8~\mu M^{-1}s^{-1}$ & This work
+$f$ & Rate constant for reduction of cytochromes by quinones & $8~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
 $\gamma$ & Spontaneous loss of NO & Unknown & N/A
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$Q$ & Concentration of quinones & $0.3~\mu M$ & \citet{Hedrick1986}
+$Q$ & Concentration of quinones & $0.3~\mu \mathrm{M}$ & \citet{Hedrick1986}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$X$ & Concentration of cytochromes & $\approx3.97~\mu M$ & \citet{Deeudom2007}
+$X$ & Concentration of cytochromes & $\approx3.97~\mu \mathrm{M}$ & \citet{Deeudom2007}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$A$ & Concentration of AniA & $0.003 - 0.03~\mu M$ & This work
+$A$ & Concentration of AniA & $0.003 - 0.03~\mu \mathrm{M}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$B$ & Concentration of NorB & $0.003 - 0.03~\mu M$ & This work
+$B$ & Concentration of NorB & $0.003 - 0.03~\mu \mathrm{M}$ & This work
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$C$ & Concentration of \cbbthree{} & $0.003 - 0.03~\mu M$ & This work
+$C$ & Concentration of \cbbthree{} & $0.003 - 0.03~\mu \mathrm{M}$ & This work
 \tabularnewline
 \bottomrule
 \end{tabular}
@@ -298,68 +298,68 @@ These values are unknown at start of simulations. They have to be lower than the
 %Then at high $O_2$ rate is:
 %$v = \frac{37.4\times 100,000}{55.7+100,000} = 37.4~nmol^{-1}min{-1}mg{-1} = 0.000622986~\mu mol^{-1}s{-1}mg{-1}$\\
 
-A value for $k_1$, the constant for O$_{\textrm{2}}$ reduction by reduced \cbbthree{} was calculated by using the $\mathrm{K}_{cat}$ value from \textit{Pseudomonas stutzeri}, and the $\textrm{k}_m$ value from \textit{Neisseria lactamica}, which \citet{Forte2001} and \citet{Hunter2007} determine are $166~s^{-1}$ and $0.4~\mu M$ respectively. $k_1$ can be calculated as $\frac{166~s^{-1}}{0.4~\mu M} = 415~\mu M^{-1}s^{-1}$.
+A value for $k_1$, the constant for \cOxygen{} reduction by reduced \cbbthree{} was calculated by using the $k_{cat}$ value from \textit{Pseudomonas stutzeri}, and the $K_M$ value from \textit{Neisseria lactamica}, which \citet{Forte2001} and \citet{Hunter2007} determine are $166~\mathrm{s}^{-1}$ and $0.4~\mu \mathrm{M}$ respectively. $k_1$ can be calculated as $\frac{166~\mathrm{s}^{-1}}{0.4~\mu \mathrm{M}} = 415~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$.
 
 \subsubsection*{$\mathbf{k_3}$ {\bf- Rate constant for \cbbthree{} reduction by cytochrome pool}}
-$k_3$, the rate constant for reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100~\mu M$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. It is assumed that 1 electron equals 1 reduction of \cbbthree{}, thus the rate constant for reduction of \cbbthree{} by cytochromes is $\frac{300~s^{-1}}{100~\mu M} = 3~\mu M^{-1}s^{-1}$.
+$k_3$, the rate constant for reduction of \cbbthree{} by the cytochromes was calculated from values obtained from the maximum reduction rate of \cbbthree{} by cytochrome $c_4$ in \textit{Vibrio cholerae} by \citet{Chang2010}. A rate of 300 electrons transported per second was observed with a cytochrome $c_4$ concentration of $100~\mu \mathrm{M}$. This concentration was not saturating, but there appears to be a linear relationship between rate and concentration. It is assumed that 1 electron equals 1 reduction of \cbbthree{}, thus the rate constant for reduction of \cbbthree{} by cytochromes is $\frac{300~\mathrm{s}^{-1}}{100~\mu \mathrm{M}} = 3~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$.
 
 \subsubsection*{$\mathbf{l_1}$ {\bf- Rate constant for NO reduction by reduced NorB}}
 %240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
 
 An estimate for the rate constant for NO reduction by reduced NorB can be obtained from \citet{Rock2007}.\\
-\noindent They observed rates of NO reduction of $54 \pm 6~\mathrm{nmolmin}^{-1} \mathrm{mg}^{-1}$  in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol~s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2 pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, and the reaction volume is 5 ml. $5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol~ s}^{-1}\mathrm{g}^{-1}$ results in $4.5~nmol~s^{-1}$ of quinones in 5ml, which when converted to molarity is $0.9~\mu M^{-1} s^{-1}$.
+\noindent They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol~min}^{-1} \mathrm{mg}^{-1}$  in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol~s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2~pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, and the reaction volume is 5~ml. $5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol~ s}^{-1}\mathrm{g}^{-1}$ results in $4.5~\mathrm{nmol~s}^{-1}$ of quinones in 5~ml, which when converted to molarity is $0.9~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$.
 
-\citet{Wasser2002} suggest that the rate constant may be as high as $500~\mu M^{-1} s^{-1}$, although this was estimated for a cNOR type nitric oxide reductase.
+\citet{Wasser2002} suggest that the rate constant may be as high as $500~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$, although this was estimated for a cNOR type nitric oxide reductase.
 
 \subsubsection*{$\mathbf{l_3}$ {\bf- Rate constant for NorB reduction by quinone pool}}
-No information available in the literature, so the rate constant is set to $1~\mu M^{-1}s^{-1}$.
+No information available in the literature, so the rate constant is set to $1~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$.
 
 \subsubsection*{$\mathbf{m_1}$ {\bf- Rate constant for NO$_{\textrm{2}}^{\textrm{-}}$ reduction by reduced AniA}}
-No information available in the literature, so the rate constant is set to $1~\mu M^{-1}s^{-1}$.
+No information available in the literature, so the rate constant is set to $1~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$.
 
 \subsubsection*{$\mathbf{m_3}$ {\bf- Rate constant for AniA reduction by cytochrome pool}}
-The value for $m_3$, the rate constant for reduction of AniA by cytochromes, is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2~\mu M^{-1}s^{-1}$ was observed during stopped-flow experiments by \citet{Nojiri2009}.
+The value for $m_3$, the rate constant for reduction of AniA by cytochromes, is the observed electron transfer rate between the equivalent cytochrome and nitrite reductase from \textit{Achromobacter xylosoxidans}. A value of $4.8\pm0.2~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ was observed during stopped-flow experiments by \citet{Nojiri2009}.
 
 \subsubsection*{$\mathbf{k_5}$ {\bf- Rate constant for \cbbthree{} inhibition by NO}}
-\citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate constant they calculated was $10^8~M ^{-1} s ^{-1}$. An assumption was made that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree{} as it is of the same family.
+\citet{Giuffre2000} and \citet{Blackmore1991} showed with cytochrome \textit{c} oxidase that NO could bind reversibly and inhibit the activity of the enzyme. The rate constant they calculated was $10^8~\mathrm{M}^{-1}\mathrm{s}^{-1}$. An assumption was made that even though the enzyme is different, its NO binding characteristics would be similar to that of \cbbthree{} as it is of the same family.
 
 \subsubsection*{$\mathbf{k_6}$ {\bf- Rate constant for recovery of NO inhibited \cbbthree{}}}
 \citet{Giuffre2000} calculated a half-life of t\textonehalf $\approx 80~\mathrm{min}$, however without any concrete values for concentration of $C_X\mhyphen NO$ this cannot be used to calculated a rate constant.
-\citet{Rock2005} observed the apparent $K_i$ and calculated it to be 380 nM at $50~\mu M$ \cOxygen{}. Since $K_i = \frac{k_6}{k_5}$, a value for $k_6$ can be estimated as $k_6 = K_i \times k_5 = 0.38~\mu M \times 100~\mu M^{-1}s^{-1} = 38~s^{-1}$.
+\citet{Rock2005} observed the apparent $K_i$ and calculated it to be 380 nM at $50~\mu \mathrm{M}$ \cOxygen{}. Since $K_i = \frac{k_6}{k_5}$, a value for $k_6$ can be estimated as $k_6 = K_i \times k_5 = 0.38~\mu \mathrm{M} \times 100~\mu \mathrm{M}^{-1}\mathrm{s}^{-1} = 38~\mathrm{s}^{-1}$.
 
 \subsubsection*{$\beta$ {\bf- Rate constant for passive diffusion in of O$_{\textrm{2}}$}, and $\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
-The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu M$ was selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system is is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}.
+The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu \mathrm{M}$ was selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system it is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./04-model/data/o2rec.pdf}
  % o2rec.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
- \caption[Oxygen Diffusion Rates]{{\bf Oxygen Diffusion Rates.} This figure shows experimentally observed rates of oxygen diffusion back into the electrode chamber. An exponential decay function has been fitted to the green dataset and produces the $K_O$ value of $\approx 48~\mu M$.
+ \caption[Oxygen Diffusion Rates]{{\bf Oxygen Diffusion Rates.} This figure shows experimentally observed rates of oxygen diffusion back into the electrode chamber. An exponential decay function has been fitted to the green dataset and produces the $K_O$ value of $\approx 48~\mu \mathrm{M}$.
  \label{fig:o2rec}}
 \end{figure}
 
 
 \subsubsection*{$\mathbf{g}$ {\bf- Rate of electrons in from NADH (or rate of reduction of quinones)}}
-This value is unknown, but initial runs of the algorithm suggest the value to be about $0.8~s^{-1}$.
+This value is unknown, but initial runs of the algorithm suggest the value to be about $0.8~\mathrm{s}^{-1}$.
 
 \subsubsection*{$\mathbf{f}$ {\bf- Rate constant for reduction of cytochromes by quinones}}
-\citet{Snyder2000} showed by reducing yeast cytochrome $\mathrm{bc}_1$ by using $25~\mu\mathrm{M}$ menaquinol the rate constants were $7.9~\mathrm{s}^{-1}$ for cytochrome b, and $1.55-6.9\times10^5~\mathrm{M}^{-1}\mathrm{s}^{-1}$ for cytochrome $\mathrm{c}_1$ (second order). However preliminary tests showed that a value of $8~\mu M^{-1}s^{-1}$ was more appropriate.
+\citet{Snyder2000} showed by reducing yeast cytochrome $bc_1$ by using $25~\mu\mathrm{M}$ menaquinol the rate constants were $7.9~\mathrm{s}^{-1}$ for cytochrome \textit{b}, and $1.55-6.9\times10^5~\mathrm{M}^{-1}\mathrm{s}^{-1}$ for cytochrome $c_1$ (second order). However preliminary tests showed that a value of $8~\mu \mathrm{M}^{-1}\mathrm{s}^{-1}$ was more appropriate.
 
 \subsubsection*{$\gamma$ {\bf- Spontaneous loss of NO}}
 This value is assumed to be the same as the $\beta$, the rate constant for oxygen diffusion in across the liquid-gas barrier, as this is simply the reverse, given the physical similarity of Nitric Oxide and Oxygen.
 
 \subsubsection*{$\mathbf{Q}$ {\bf- Concentration of quinones}}
-$Q$, the concentration of quinones was calculated based on data from \citet{Hedrick1986}. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 15\% of wet weight, where each cell weighed 2 pg, and that there were $1\mu \textrm{mol}$ of respiratory quinones per g of bacterial protein\cite{Hollaender1977}. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, therefore there are 1.5 nmol of quinones in 5 ml culture ($5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 15\% \times 1~\mu\textrm{mol/g}$), converted to molarity is $0.3~\mu M$.
+$Q$, the concentration of quinones was calculated based on data from \citet{Hedrick1986}. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 15\% of wet weight, where each cell weighed 2 pg, and that there were $1\mu \mathrm{mol}$ of respiratory quinones per g of bacterial protein\cite{Hollaender1977}. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\mathrm{cells/ml}$, therefore there are 1.5 nmol of quinones in 5 ml culture ($5\times 10^9~\mathrm{cells} \times 2\times 10^{-12}~\mathrm{g} \times 15\% \times 1~\mu\mathrm{mol/g}$), converted to molarity is $0.3~\mu \mathrm{M}$.
 
 \subsubsection*{$\mathbf{X}$ {\bf- Concentration of cytochromes}}
-\citet{Deeudom2007} suggests that the total cytochrome concentration (inc. \cbbthree{}) is about $4~\mu M$ in \Nsm{}. Thus subtracting the value for C leaves a concentration of $\approx 3.97~\mu M$.
+\citet{Deeudom2007} suggests that the total cytochrome concentration (inc. \cbbthree{}) is about $4~\mu \mathrm{M}$ in \Nsm{}. Thus subtracting the value for C leaves a concentration of $\approx 3.97~\mu \mathrm{M}$.
 
 \subsubsection*{$\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$ {\bf- Concentration of Respiratory enzymes}}
-Given the lack of concrete values for these parameters, the assumption is that all the respiratory enzymes are present in roughly equal quantities. Based on the values given for Q above, there are $1.5~mg$ of cell protein in 5 ml of $OD_{600}=1$ culture. \cbbthree{} is thought to be about 0.1-1\% of the total cell protein
+Given the lack of concrete values for these parameters, the assumption is that all the respiratory enzymes are present in roughly equal quantities. Based on the values given for Q above, there are $1.5~\mathrm{mg}$ of cell protein in 5 ml of $OD_{600}=1$ culture. \cbbthree{} is thought to be about 0.1\%-1\% of the total cell protein
 %10\% of cell is membrane.
-and is approximately 100 kDa in molecular weight. Therefore converting these values to molarity gives a concentration of approximately 3-30 nM.
+and is approximately 100~kDa in molecular weight. Therefore converting these values to molarity gives a concentration of approximately 3-30~nM.
 
 \section{Solving Ordinary Differential Equations}
-The model equations (given previously) are solved in parallel using the common $\mathrm{6}^\mathrm{th}$ order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities (see appendix for further details of why this was necessary).
+The model equations (given previously) are solved in parallel using the common \engordnumber{6} order Runge-Kutta-Fehlberg algorithm for integrating ordinary differential equations\cite{Butcher2003}. Adaptive step-sizes were implemented using the Cash-Karp method\cite{Cash1990}. The adaptive step size system was required as it prevented the introduction of systemic numerical instabilities (see appendix for further details of why this was necessary).
 
 %By keeping the quantities involved in their original state and not making any assumption about time-scale separation I am able to make predictions regarding the transient oxidation states of the various components. These are potentially experimentally accessible and appear to be crucial for the dynamic response of the chain in different environments.
 
