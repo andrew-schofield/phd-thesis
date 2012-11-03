@@ -28,7 +28,7 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 328 2012-11-01 14:58:55Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 329 2012-11-03 21:11:19Z uncle_fungus $}
 
 \pdfminorversion=5
 
@@ -154,7 +154,7 @@
 
 \makeatother
 \newcommand{\cNO}{\textrm{NO}}
-\newcommand{\cNitrite}{\textrm{NO}$_{\textrm{2}}^{\textrm{ -}}$}
+\newcommand{\cNitrite}{\textrm{NO}$_{\textrm{2}}^{\textrm{~-}}$}
 \newcommand{\cOxygen}{\textrm{O}$_{\textrm{2}}$}
 \newcommand{\cNtwoO}{\textrm{N}$_{\textrm{2}}$\textrm{O}}
 \newcommand{\Nm}{\textit{N. meningitidis}}
