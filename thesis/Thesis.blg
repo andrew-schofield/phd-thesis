@@ -14,32 +14,32 @@ A level-1 auxiliary file: ./08-expression/expression.aux
 A level-1 auxiliary file: ./appendix/appendix.aux
 Database file #1: phd_refs.bib
 Warning--entry type for "Rank2012" isn't style-file defined
---line 4517 of file phd_refs.bib
+--line 4518 of file phd_refs.bib
 Warning--entry type for "YSI2012" isn't style-file defined
---line 5601 of file phd_refs.bib
+--line 5603 of file phd_refs.bib
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
 Warning--can't use both author and editor fields in Volterra1931
 You've used 157 entries,
             2955 wiz_defined-function locations,
-            1885 strings with 49802 characters,
-and the built_in function-call counts, 178355 in all, are:
-= -- 17717
+            1885 strings with 49811 characters,
+and the built_in function-call counts, 178364 in all, are:
+= -- 17718
 > -- 5678
 < -- 84
 + -- 2835
 - -- 1563
-* -- 15562
-:= -- 24012
+* -- 15563
+:= -- 24013
 add.period$ -- 312
 call.type$ -- 157
 change.case$ -- 823
 chr.to.int$ -- 173
 cite$ -- 160
-duplicate$ -- 14467
-empty$ -- 15191
+duplicate$ -- 14468
+empty$ -- 15192
 format.name$ -- 2034
-if$ -- 38036
+if$ -- 38038
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 1478
@@ -51,7 +51,7 @@ purify$ -- 804
 quote$ -- 0
 skip$ -- 3214
 stack$ -- 0
-substring$ -- 21992
+substring$ -- 21994
 swap$ -- 3267
 text.length$ -- 13
 text.prefix$ -- 0

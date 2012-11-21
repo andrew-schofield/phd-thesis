@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {3.1}Construction}{52}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Normalising the Data}{53}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Converting Biological Reactions into Differential Equations}{53}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Respiratory Substrates}{53}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Respiratory Substrates}{54}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}Electron Transporters}{57}{subsubsection.3.1.2.2}
 \contentsline {subsubsection}{\numberline {3.1.2.3}Terminal Reductases}{59}{subsubsection.3.1.2.3}
 \contentsline {subsection}{\numberline {3.1.3}Assumptions and their Justifications}{61}{subsection.3.1.3}
@@ -59,61 +59,61 @@
 \contentsline {section}{\numberline {4.1}The Challenge of Parameter Estimation}{71}{section.4.1}
 \contentsline {section}{\numberline {4.2}Methods and Algorithms Used}{72}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Difference Functions}{72}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{73}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Monte Carlo Methods}{74}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Markov Chain Monte Carlo}{74}{subsubsection.4.2.2.1}
 \contentsline {subsection}{\numberline {4.2.3}Simulated Annealing}{75}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{77}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Approximate Bayesian Computation by Sequential Monte Carlo}{78}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Metropolis Hastings Monte Carlo}{82}{subsection.4.2.5}
 \contentsline {section}{\numberline {4.3}Validating the Parameter Estimation Algorithm}{84}{section.4.3}
-\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{85}{section.4.4}
-\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{87}{section.4.5}
-\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{90}{chapter.5}
-\contentsline {section}{\numberline {5.1}Reduction of Oxygen}{90}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Introduction}{90}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{91}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{93}{subsubsection.5.1.2.1}
-\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{95}{subsubsection.5.1.2.2}
-\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{104}{subsubsection.5.1.2.3}
-\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{107}{subsubsection.5.1.2.4}
-\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{112}{subsubsection.5.1.2.5}
-\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{112}{subsubsection.5.1.2.6}
-\contentsline {subsection}{\numberline {5.1.3}Discussion}{116}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{118}{chapter.6}
-\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{118}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Introduction}{118}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{120}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{123}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{127}{subsubsection.6.1.2.2}
-\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{128}{subsubsection.6.1.2.3}
-\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{129}{subsubsection.6.1.2.4}
-\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{131}{subsubsection.6.1.2.5}
-\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{135}{subsubsection.6.1.2.6}
-\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{140}{subsubsection.6.1.2.7}
-\contentsline {subsection}{\numberline {6.1.3}Discussion}{140}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{144}{section.6.2}
-\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{147}{chapter.7}
-\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{147}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Introduction}{147}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Experimental Results}{149}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Prior Probability Distributions}{151}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Parameter Estimation Results}{154}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Second Parameter Estimation Results}{156}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Analysis of Convergence}{163}{subsection.7.1.6}
-\contentsline {subsection}{\numberline {7.1.7}Analysis of Correlation}{164}{subsection.7.1.7}
-\contentsline {subsection}{\numberline {7.1.8}Discussion}{164}{subsection.7.1.8}
-\contentsline {subsubsection}{\numberline {7.1.8.1}Using Nitrite Posterior Parameters}{166}{subsubsection.7.1.8.1}
-\contentsline {chapter}{\numberline {8}Discussion and Completed Model}{170}{chapter.8}
-\contentsline {section}{\numberline {8.1}Amalgamation of Cytochromes}{172}{section.8.1}
-\contentsline {section}{\numberline {8.2}Parameter Changes Throughout this Work}{175}{section.8.2}
-\contentsline {section}{\numberline {8.3}Testing the Model}{177}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Addition of Nitric Oxide to an \textit {nsrR}$^-$ mutant}{177}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}\textit {In silico} cyt Knockouts}{178}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Single Parameter Scaling Fits}{181}{section.8.4}
-\contentsline {section}{\numberline {8.5}Concluding Remarks}{182}{section.8.5}
-\contentsline {chapter}{\numberline {9}AniA and NorB Expression in \textit {N. meningitidis}{}}{185}{chapter.9}
-\contentsline {chapter}{\numberline {A}Appendix}{189}{appendix.A}
-\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{189}{section.A.1}
-\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{190}{section.A.2}
-\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{190}{section.A.3}
-\contentsline {section}{\numberline {A.4}Software Used During this Work}{191}{section.A.4}
-\contentsline {chapter}{References}{193}{section.A.4}
+\contentsline {section}{\numberline {4.4}An Integrated Parameter Estimation Scheme Combining MHMC With Bayesian Inference}{87}{section.4.4}
+\contentsline {section}{\numberline {4.5}Implementing the Integrated Scheme}{88}{section.4.5}
+\contentsline {chapter}{\numberline {5}Oxygen Reduction in \textit {N. meningitidis}{}}{91}{chapter.5}
+\contentsline {section}{\numberline {5.1}Reduction of Oxygen}{91}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{91}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Experimental Results}{92}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Generation of Prior Probability Distributions}{94}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Initial Parameter Estimation Results}{96}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}Secondary Prior Probability Distributions}{105}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}Secondary Parameter Estimation Results}{108}{subsubsection.5.1.2.4}
+\contentsline {subsubsection}{\numberline {5.1.2.5}Analysis of Convergence}{113}{subsubsection.5.1.2.5}
+\contentsline {subsubsection}{\numberline {5.1.2.6}Analysis of Correlation}{113}{subsubsection.5.1.2.6}
+\contentsline {subsection}{\numberline {5.1.3}Discussion}{117}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}Nitric Oxide Reduction in \textit {N. meningitidis}{}}{119}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aerobic Nitric Oxide Reduction}{119}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{119}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Experimental Results}{121}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Prior Probability Distributions}{124}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Parameter Estimation Results}{128}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Adapted Parameter Estimation Protocol}{129}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}Secondary Parameter Estimation Results}{130}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}Tertiary Parameter Estimation Results}{132}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}Analysis of Convergence}{136}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}Analysis of Correlation}{141}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}Discussion}{141}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Aerobic Nitric Oxide Reduction in \textit {nsrR$^\textrm {-}$} mutant}{145}{section.6.2}
+\contentsline {chapter}{\numberline {7}Nitrite Reduction in \textit {N. meningitidis}{}}{148}{chapter.7}
+\contentsline {section}{\numberline {7.1}Microerobic Nitrite Reduction}{148}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{148}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Experimental Results}{150}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Prior Probability Distributions}{152}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Parameter Estimation Results}{155}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Second Parameter Estimation Results}{157}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Analysis of Convergence}{164}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}Analysis of Correlation}{165}{subsection.7.1.7}
+\contentsline {subsection}{\numberline {7.1.8}Discussion}{165}{subsection.7.1.8}
+\contentsline {subsubsection}{\numberline {7.1.8.1}Using Nitrite Posterior Parameters}{167}{subsubsection.7.1.8.1}
+\contentsline {chapter}{\numberline {8}Discussion and Completed Model}{171}{chapter.8}
+\contentsline {section}{\numberline {8.1}Amalgamation of Cytochromes}{173}{section.8.1}
+\contentsline {section}{\numberline {8.2}Parameter Changes Throughout this Work}{176}{section.8.2}
+\contentsline {section}{\numberline {8.3}Testing the Model}{178}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Addition of Nitric Oxide to an \textit {nsrR}$^-$ mutant}{178}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}\textit {In silico} cyt Knockouts}{179}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Single Parameter Scaling Fits}{182}{section.8.4}
+\contentsline {section}{\numberline {8.5}Concluding Remarks}{183}{section.8.5}
+\contentsline {chapter}{\numberline {9}AniA and NorB Expression in \textit {N. meningitidis}{}}{186}{chapter.9}
+\contentsline {chapter}{\numberline {A}Appendix}{190}{appendix.A}
+\contentsline {section}{\numberline {A.1}Monte Carlo Estimation of $\pi $}{190}{section.A.1}
+\contentsline {section}{\numberline {A.2}Adaptive step sizes and numerical instability}{191}{section.A.2}
+\contentsline {section}{\numberline {A.3}Affinity of \textit {cbb$_{\textrm {3}}$}{} for Oxygen}{191}{section.A.3}
+\contentsline {section}{\numberline {A.4}Software Used During this Work}{192}{section.A.4}
+\contentsline {chapter}{References}{194}{section.A.4}

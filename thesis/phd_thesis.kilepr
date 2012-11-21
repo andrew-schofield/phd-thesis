@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.0
-lastDocument=07-nitritereduction/nitritereduction.tex
+lastDocument=04-model/modelconstructionandparameters.tex
 masterDocument=Thesis.tex
 name=PhD_Thesis
 pkg_extIsRegExp=false
@@ -24,7 +24,7 @@ FoldedLines=
 Highlighting=LaTeX
 Indentation Mode=
 Mode=LaTeX
-ReadWrite=true
+ReadWrite=false
 
 [document-settings,item:02-materialsmethods/materialsandmethods.tex]
 Bookmarks=
@@ -74,7 +74,7 @@ FoldedLines=
 Highlighting=LaTeX
 Indentation Mode=
 Mode=LaTeX
-ReadWrite=true
+ReadWrite=false
 
 [document-settings,item:07-nitritereduction/nitritereduction.tex]
 Bookmarks=
@@ -84,7 +84,7 @@ FoldedLines=
 Highlighting=LaTeX
 Indentation Mode=
 Mode=LaTeX
-ReadWrite=true
+ReadWrite=false
 
 [document-settings,item:08-expression/expression.tex]
 Bookmarks=
@@ -158,10 +158,10 @@ order=-1
 
 [item:01-introduction/introduction.tex]
 archive=true
-column=802
+column=55
 encoding=UTF-8
 highlight=LaTeX
-line=230
+line=241
 mode=LaTeX
 open=true
 order=1
@@ -178,10 +178,10 @@ order=-1
 
 [item:02-materialsmethods/materialsandmethods.tex]
 archive=true
-column=12
+column=144
 encoding=UTF-8
 highlight=LaTeX
-line=96
+line=116
 mode=LaTeX
 open=true
 order=2
@@ -198,10 +198,10 @@ order=-1
 
 [item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
 archive=true
-column=204
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=243
+line=23
 mode=LaTeX
 open=true
 order=4
@@ -218,10 +218,10 @@ order=-1
 
 [item:04-model/modelconstructionandparameters.tex]
 archive=true
-column=112
+column=251
 encoding=UTF-8
 highlight=LaTeX
-line=223
+line=23
 mode=LaTeX
 open=true
 order=3
@@ -268,10 +268,10 @@ order=-1
 
 [item:05-oxygenreduction/oxygenreduction.tex]
 archive=true
-column=51
+column=547
 encoding=UTF-8
 highlight=LaTeX
-line=247
+line=21
 mode=LaTeX
 open=true
 order=5
@@ -288,10 +288,10 @@ order=-1
 
 [item:06-noreduction/noreduction.tex]
 archive=true
-column=54
+column=543
 encoding=UTF-8
 highlight=LaTeX
-line=82
+line=115
 mode=LaTeX
 open=true
 order=6
@@ -388,10 +388,10 @@ order=-1
 
 [item:07-nitritereduction/nitritereduction.tex]
 archive=true
-column=28
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=93
+line=325
 mode=LaTeX
 open=true
 order=7
@@ -418,23 +418,23 @@ order=-1
 
 [item:08-expression/expression.tex]
 archive=true
-column=24
+column=163
 encoding=UTF-8
 highlight=LaTeX
-line=17
+line=13
 mode=LaTeX
-open=false
+open=true
 order=10
 
 [item:09-completedmodel/completedmodel.tex]
 archive=true
-column=39
+column=260
 encoding=UTF-8
 highlight=LaTeX
-line=11
+line=307
 mode=LaTeX
-open=false
-order=4
+open=true
+order=8
 
 [item:09-completedmodel/data/in_silico_nsrR.pdf]
 archive=true
@@ -448,23 +448,23 @@ order=-1
 
 [item:Thesis.tex]
 archive=true
-column=16
+column=23
 encoding=UTF-8
 highlight=LaTeX
-line=8
+line=10
 mode=LaTeX
 open=true
 order=0
 
 [item:appendix/appendix.tex]
 archive=true
-column=12
+column=135
 encoding=UTF-8
 highlight=LaTeX
-line=13
+line=36
 mode=LaTeX
-open=false
-order=6
+open=true
+order=9
 
 [item:appendix/data/monte-carlo-pi.pdf]
 archive=true
@@ -487,67 +487,67 @@ open=false
 order=-1
 
 [view-settings,view=0,item:01-introduction/introduction.tex]
-CursorColumn=802
-CursorLine=230
+CursorColumn=55
+CursorLine=241
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:02-materialsmethods/materialsandmethods.tex]
-CursorColumn=12
-CursorLine=96
+CursorColumn=144
+CursorLine=116
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:03-parameterestimationmethodologies/parameterestimationmethodologies.tex]
-CursorColumn=204
-CursorLine=243
+CursorColumn=0
+CursorLine=23
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:04-model/modelconstructionandparameters.tex]
-CursorColumn=112
-CursorLine=223
+CursorColumn=251
+CursorLine=23
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:05-oxygenreduction/oxygenreduction.tex]
-CursorColumn=51
-CursorLine=247
+CursorColumn=547
+CursorLine=21
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:06-noreduction/noreduction.tex]
-CursorColumn=54
-CursorLine=82
+CursorColumn=543
+CursorLine=115
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:07-nitritereduction/nitritereduction.tex]
-CursorColumn=28
-CursorLine=93
+CursorColumn=0
+CursorLine=325
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:08-expression/expression.tex]
-CursorColumn=24
-CursorLine=17
+CursorColumn=163
+CursorLine=13
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:09-completedmodel/completedmodel.tex]
-CursorColumn=39
-CursorLine=11
+CursorColumn=260
+CursorLine=307
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Thesis.tex]
-CursorColumn=16
-CursorLine=8
+CursorColumn=23
+CursorLine=10
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:appendix/appendix.tex]
-CursorColumn=12
-CursorLine=13
+CursorColumn=135
+CursorLine=36
 JumpList=
 ViMarks=

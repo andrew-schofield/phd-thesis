@@ -11,10 +11,17 @@ The model was generated as a set of ordinary differential equations which descri
 The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments.
 Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy as the optical density is also affected by dead cells. Using optical density as a cell density proxy should give linear relationships between cell densities and overall reduction rates, however this proved not to be the case, with rates of oxygen reduction differing between cultures with the same optical density (data not shown). Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator of living cells. Plating out serial dilutions of high density cultures showed that a culture with $OD_{600} = 1$ contains approximately $1 \times 10^9$ cells/ml.
 
-%The model contains no implied information about cell density. This means the values for various component concentrations will differ between experiments. Initially the optical density of cultures was used to determine the cell density however experiments proved that this was not a completely reliable proxy for cell density as this also includes dead cells. Using optical density as a cell density proxy should haven given linear relations between cell densities and reaction rates, however this proved not to be the case, with rates of oxygen reduction different between cultures with the same optical density. Therefore where possible, any normalisation that was carried out used the initial oxygen reduction rate as a relative indicator.
-
 \subsection{Converting Biological Reactions into Differential Equations}
-The rationale for obtaining the form for each of the 9 component equations is described below. Throughout the model the reduced components, i.e. those with available electrons, are denoted as active and have a subscript $a$. Components lacking a subscript denote the total, constant, amount of a component. $\emptyset$ denotes nothing (this is used as the source or sink when substrates are entering or exiting the system).
+The rationale for obtaining the form for each of the 9 component equations is described below. Throughout the model the reduced components, i.e. those with available electrons, are denoted as active and have a subscript $a$. Components lacking a subscript denote the total, constant, amount of a component. $\emptyset$ denotes nothing (this is used as the source or sink when substrates are entering or exiting the system). It is assumed that all the chemical reactions occur with mass action kinetics. That is to say that the rate of the reaction is proportional to the product of the concentrations of the reactants, this assumption is made in the absence of any knowledge of reaction kinetics. This kinetic scheme allows simple conversion of a chemical reaction to final differential equations. The equation $A+B\rightarrow C$ the rate of reaction is proportional to $[A][B]$. Therefore reaction can be modelled as:
+\begin{equation*}
+\begin{gathered}
+ \frac{d[A]}{dt} = -k[A][B]\\
+\frac{d[B]}{dt} = -k[A][B]\\
+\frac{d[C]}{dt} = k[A][B]
+\end{gathered}
+\end{equation*}
+
+The reactions below are stoichiometrically balanced with respect to the respiratory substrates. In cases where the product is not tracked (such as where the product is water, or nitrous oxide), the equations is left with a non-integer right-hand-side.
 
 \subsubsection{Respiratory Substrates}
 {\bf Oxygen}\\
@@ -22,7 +29,7 @@ The change in concentration of oxygen is affected by the following kinetic proce
 \begin{equation*}
 \begin{gathered}
 \emptyset\xrightarrow{\beta} O_2\\
-O_2 + C_a\xrightarrow{k_1} H_{2}O + C_i
+O_2 + C_a\xrightarrow{k_1} 2H_{2}O + C_i
 \end{gathered}
 \end{equation*}
 where $\beta$ is the rate constant of passive diffusion (as a function of \cOxygen{} concentration) of \cOxygen{} into the electrode chamber. The rate constant $k_1$ describes the reduction of oxygen by the oxygen reductase \cbbthree{}; this value depends on the concentration of reduced (i.e. active) \cbbthree{}, $C_a$ and the concentration of $O_2$.
@@ -54,13 +61,13 @@ Integrating and separating this equation gives:
 \Rightarrow [O_2] = K_O + Ae^{\left(-\beta\dfrac{t}{K_O}\right)}
 \end{gathered}
 \end{equation*}
-\clearpage
+
 \noindent{\bf Nitric Oxide}\\
 The change in nitric oxide concentration is affected by the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 NO_2^- + A_a \xrightarrow{m_1} NO + A_i\\
-NO + B_a \xrightarrow{l_1} N_2O + B_i\\
+NO + B_a \xrightarrow{l_1} \frac{1}{2}N_2O + B_i\\
 NO + C_a \xrightarrow{k_5} NO\mhyphen C_X\\
 NO\mhyphen C_X \xrightarrow{k_6} NO + C_a\\
 NO \xrightarrow{\gamma} \emptyset
@@ -74,7 +81,7 @@ The equations above have a number of additional interactions in comparison to \c
 \end{equation}
 The rate of synthesis of NO is captured by the first term, with rate constant $m_{1}$ and depends on the both the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of NO is described by the next term with the rate constant $l_1$ and also depends on the concentration of NO and reduced NorB ($B_a$). Inhibition of \cbbthree{} by NO is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate constant describing the reversible binding of NO to \cbbthree{} to form the inactive form of \cbbthree{}, $C_X$. $k_6$ is the rate of recovery of this inhibited \cbbthree{}. $\gamma$ is the spontaneous rate of loss of NO from the electrode chamber.\\
 %The synthesis of \cNO{} is modelled by $m_{1}$ which is the rate of \cNitrite{} reduction by reduced (active) AniA. This also depends on the concentration of \cNitrite{} and reduced AniA ($A_a$). The reduction of \cNO{} requires $l_1$ which is the rate of reduction of \cNO{} by reduced (active) NorB. This depends on the concentration of \cNO{} and reduced NorB ($B_a$). Inhibition of \cbbthree{} by \cNO{} is modelled by the \engordnumber{3} component of the equation. $k_5$ is the rate of inhibition of \cbbthree{} by \cNO{}. $k_6$ is the rate of recovery of inhibited \cbbthree{}. $\gamma$ is the rate of spontaneous loss of \cNO{} from the electrode chamber.
-\clearpage
+
 \noindent{\bf Nitrite}\\
 The change in nitrite concentration is affected by the following kinetic process.
 \begin{equation*}
@@ -91,7 +98,7 @@ where $m_{1}$ is the rate constant for reduction of \cNitrite{} by reduced (acti
 
 In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the upstream state of components of the transfer chain, starting from the quinone pool. The ultimate upstream source of electrons into the respiratory chain is from NADH, but for the sake of simplicity all processes prior to the quinone pool are subsumed into a simple single rate constant. This simplification is made to avoid further complications associated with varying metabolism and to avoid distraction from the stated primary aim of understanding the switching behaviour of the downstream chain. The quinone pool was chosen as the starting point because it is known that NorB draws electrons directly from this point and therefore this represents the first branch in the chain. The desire was to understand how competition for electrons at branches affects function and therefore the quinone pool is included in the model.\\
 %In addition to the rate of change of concentration of the respiratory substrates, the model also contains information about the state of the quinone pool, which is the upstream source of electrons into the respiratory chain. This is important because this affects the rate of reduction of the various enzymes which perform the substrate reductions. The equation for modelling the change in reduction state (activity) of the quinone pool is
-\clearpage
+
 \noindent{\bf Quinones}\\
 The change in concentration of reduced quinones is affected by the following kinetic processes.
 \begin{equation*}
@@ -137,7 +144,7 @@ The kinetic processes which affect the concentration of reduced (active) \cbbthr
 \begin{equation*}
 \begin{gathered}
 C_i + X_a \xrightarrow{k_3} C_a + X_i\\
-O_2 + C_a\xrightarrow{k_1} H_{2}O + C_i\\
+O_2 + C_a\xrightarrow{k_1} 2H_{2}O + C_i\\
 NO + C_a \xrightarrow{k_5} NO\mhyphen C_X\\
 NO\mhyphen C_X \xrightarrow{k_5} NO + C_a
 \end{gathered}
@@ -177,7 +184,7 @@ Changes in NorB concentration occur via the following kinetic processes.
 \begin{equation*}
 \begin{gathered}
 B_i + Q_a \xrightarrow{l_3} Q_i + B_a \\
-NO + B_a \xrightarrow{l_1} N_{2}O + B_i
+NO + B_a \xrightarrow{l_1} \frac{1}{2}N_{2}O + B_i
 \end{gathered}
 \end{equation*}
 and are modelled by this equation
