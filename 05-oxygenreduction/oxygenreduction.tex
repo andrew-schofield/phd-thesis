@@ -49,7 +49,7 @@ The oxygen reduction datasets generated and used for parametrising this portion 
  \centering
  \includegraphics[width=14cm]{./05-oxygenreduction/data/o2_datasets.pdf}
  % o2sim.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=0 0 794 595
- \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} These three experimental datasets were used as input data for the parameter estimation algorithm. They all show the same linear oxygen reduction. The different rates are due to differing starting cell densities.
+ \caption[{Oxygen Reduction in \textit{Neisseria meningitidis}.}]{{\bf Oxygen Reduction in \textit{Neisseria meningitidis}.} These three experimental datasets were used as input data for the parameter estimation algorithm. They all show the same linear oxygen reduction. The different rates are due to differing starting cell densities. The specific rates are very similar at $1.5~\mu\mathrm{Ms}^{-1}$ per OD unit.
  \label{fig:o2data}}
 \end{figure}
 \afterpage{\clearpage}
@@ -91,7 +91,7 @@ $C_a$ & $0.024$ & $\mu \mathrm{M}$ & 0.0008\\
 \label{tab:oxyProbstat}}
 \end{table}
 
-\noindent A graphical representation of the data in Table \ref{tab:oxyProbstat}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}.% As can be seen, very little information is readily available in the literature to populate the model.
+\noindent A graphical representation of the data in Table \ref{tab:oxyProbstat}, the initial probability distributions used to start the Monte-Carlo run are shown in Figure \ref{fig:oxypriors}. Due to the method used to read and generate the probability distributions in software, this and all subsequent figures showing probability distributions are actually histograms with 1000 bins of equal width. The distributions therefore have defined upper and lower limits.% As can be seen, very little information is readily available in the literature to populate the model.
 
 %lbrt
 \begin{figure}[p]
