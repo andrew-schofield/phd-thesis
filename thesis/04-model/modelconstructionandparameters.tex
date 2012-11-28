@@ -234,7 +234,7 @@ $k_1$ & Rate constant for \cOxygen{} reduction by reduced \cbbthree{} & $415~\mu
 $k_3$ & Rate constant for \cbbthree{} reduction by cytochrome pool & $3~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Chang2010}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
-$l_1$ & Rate constant for NO reduction by reduced NorB & $0.9 - 500~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Rock2007} and \citet{Wasser2002}
+$l_1$ & Rate constant for NO reduction by reduced NorB & $0.27 - 500~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$ & \citet{Rock2007} and \citet{Wasser2002}
 \tabularnewline\noalign{\smallskip}\hline\noalign{\smallskip}
 
 $l_3$ & Rate constant for NorB reduction by quinone pool & Unknown & N/A
@@ -314,7 +314,7 @@ $k_3$, the rate constant for reduction of \cbbthree{} by the cytochromes was cal
 %240 and 256 nanomoles NO reduced per minute per OD600 unit as determined by \citet{Barth2009}.
 
 An estimate for the rate constant for NO reduction by reduced NorB can be obtained from \citet{Rock2007}.\\
-\noindent They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol~min}^{-1} \mathrm{mg}^{-1}$  in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol~s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 2~pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, and the reaction volume is 5~ml. $5\times 10^9~\textrm{cells} \times 2\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol~ s}^{-1}\mathrm{g}^{-1}$ results in $4.5~\mathrm{nmol~s}^{-1}$ of quinones in 5~ml, which when converted to molarity is $0.9~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$.
+\noindent They observed rates of NO reduction of $54 \pm 6~\mathrm{nmol~min}^{-1} \mathrm{mg}^{-1}$  in total protein content from dry weight. Thus the rate of NO reduction is $0.9 \pm 0.1~\mu\mathrm{mol~s}^{-1}\mathrm{g}^{-1}$ bacterial protein. The protein content of the cells was assumed to be similar to that of \textit{E. coli} at 50\% of dry weight, where each cell weighed 0.6~pg. A culture of \textit{Neisseria meningitidis} with $OD_{600} = 1$ has $1 \times 10^9~\textrm{cells/ml}$, and the reaction volume is 5~ml. $5\times 10^9~\textrm{cells} \times 0.6\times 10^{-12}~\textrm{g} \times 50\% \times 0.9~\mu\mathrm{mol~ s}^{-1}\mathrm{g}^{-1}$ results in $1.35~\mathrm{nmol~s}^{-1}$ of quinones in 5~ml, which when converted to molarity is $0.27~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$.
 
 \citet{Wasser2002} suggest that the rate constant may be as high as $500~\mu \mathrm{M}^{-1} \mathrm{s}^{-1}$, although this was estimated for a cNOR type nitric oxide reductase.
 
@@ -335,12 +335,12 @@ The value for $m_3$, the rate constant for reduction of AniA by cytochromes, is 
 \citet{Rock2005} observed the apparent $K_i$ and calculated it to be 380 nM at $50~\mu \mathrm{M}$ \cOxygen{}. Since $K_i = \frac{k_6}{k_5}$, a value for $k_6$ can be estimated as $k_6 = K_i \times k_5 = 0.38~\mu \mathrm{M} \times 100~\mu \mathrm{M}^{-1}\mathrm{s}^{-1} = 38~\mathrm{s}^{-1}$.
 
 \subsubsection*{$\beta$ {\bf- Rate constant for passive diffusion in of O$_{\textrm{2}}$}, and $\mathbf{K_O}$ {\bf- Saturation O$_{\textrm{2}}$ level}}
-The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu \mathrm{M}$ was selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system it is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}.
+The parameters obtained from fitting oxygen diffusion data showed a small difference in $K_O$ between cell densities, thus $K_O = 48~\mu \mathrm{M}$ was selected as the standard value for this parameter. $\beta$ differed more between the experiments thus in the parameter estimation system it is not fixed and allowed to be modified freely. An example of the experimentally observed diffusion rates are shown in Figure \ref{fig:o2rec}. $K_O$ is the apparent saturation concentration of Oxygen in the respiring culture and forms part of the exponential diffusion equation mentioned earlier in this chapter.
 \begin{figure}[tbp]
  \centering
  \includegraphics[width=14cm, trim=2cm 1cm 4cm 1cm]{./04-model/data/o2rec.pdf}
  % o2rec.pdf: 842x595 pixel, 72dpi, 29.70x20.99 cm, bb=0 0 842 595
- \caption[Oxygen Diffusion Rates]{{\bf Oxygen Diffusion Rates.} This figure shows experimentally observed rates of oxygen diffusion back into the electrode chamber. An exponential decay function has been fitted to the green dataset and produces the $K_O$ value of $\approx 48~\mu \mathrm{M}$.
+ \caption[Oxygen Diffusion Rates]{{\bf Oxygen Diffusion Rates.} This figure shows experimentally observed rates of oxygen diffusion back into the electrode chamber. An exponential decay function has been fitted to the green dataset and produces the $K_O$ value (the effective saturation concentration) of $\approx 48~\mu \mathrm{M}$.
  \label{fig:o2rec}}
 \end{figure}
 
