@@ -10,7 +10,8 @@ knowledge will improve as more datasets are analysed.
 These requirements lend themselves well to Monte-Carlo type methods, which produce output which can be represented as a probability distribution and can be selected from a prior probability distribution.
 
 \section{Methods and Algorithms Used}
-Below are the various different methods for parameter estimation that were investigated during the course of this work. All of these methods involve a sampling system that attempts to select parameter values which minimise the difference between the simulation result and the experimental data by using a difference function. The main difference between the parameter estimation methodologies laid out below are the ways in which they generate new parameter values, either from a probability distribution or based on the previous value, and the way this is applied and tested against the experimental data. The aim of the parameter estimation methodology was to achieve an output from the difference function that was as close to zero (perfect fit/no difference) as possible. The value produced by the difference function is hereby referred to as the \textit{Goodness of Fit} or $F$ value, with larger values representing worse fits to the experimental data.
+Below are the various different methods for parameter estimation that were investigated during the course of this work. All of these methods involve a sampling system that attempts to select parameter values which minimise the difference between the simulation result and the experimental data by using a difference function. The main difference between the parameter estimation methodologies laid out below are the ways in which they generate new parameter values, either from a probability distribution or based on the previous value, and the way this is applied and tested against the experimental data. The aim of the parameter estimation methodology was to achieve an output from the difference function that was as close to zero (perfect fit/no difference) as possible. The value produced by the difference function is hereby referred to as the \textit{Goodness of Fit} or $F$ value, with larger values representing worse fits to the experimental data. The methods and algorithms are presented here in chronological 
+order of use during this work.
 
 \subsection{Difference Functions}
 Two different difference functions were used to calculate the $F$ value. One was the sum of the Least Squares Differences between the measured components in the experimental data and the simulation result. This was used in early parameter estimation runs.
@@ -20,7 +21,7 @@ F = \sum^{n}_{j=1}\left(\sqrt{\sum^{m}_{i=1} (\Delta x_{ij})^2}\right)
 \end{equation}
 Where $j$ is the current component, $n$ the number of components, $i$ the current data point, $m$ the total number of data points and $(\Delta x_{ij})^2$ the square of the residuals between the experimental and simulated data for componenet $j$ at data point $i$. Therefore the $F$ value becomes ``the sum of the squares of the residuals for each data point for each parameter.''
 
-The second method for calculating the $F$ was a log-likelihood calculation. This method calculates the likelihood of the simulated data falling under a normal distribution which has the experimental data as its $\mu$, and a preset error value as its $\sigma$. The method was used as it allowed tuning of the $\sigma$ value, which provided more control over how new parameter sets were accepted. The lower the value of $\sigma$, the closer the simulated data needs to be to the experimental data to achieve a low $F$ value.
+The second method for calculating the $F$ was a log-likelihood. This method assumes that there is Gaussian error in the experimental dataset, and that the variance of this error is known. This method calculates the likelihood of the simulated data falling under a normal distribution which has the experimental data as its $\mu$, and a preset error value as its $\sigma$. The method was used as it allowed tuning of the $\sigma$ value, which provided more control over how new parameter sets were accepted. The lower the value of $\sigma$, the closer the simulated data needs to be to the experimental data to achieve a low $F$ value. This function serves 2 purposes: it can be used as a measure of how close the simulated data is to the experimental data, and can also be used as the likelihood function in a Metropolis-Hastings type Monte-Carlo scheme.
 \begin{equation}
 F = \sum^{n}_{j=1}\left(\sum^{m}_{i=1}\ln(norm(x_1,\mu_1,\sigma)) - \ln(norm(x_2,\mu_2,\sigma))\right)
 \end{equation}
@@ -29,6 +30,7 @@ Where $j$ is the current parameter, $n$ is the number of parameters, $i$ is the 
 $x_1$ and $\mu_1$ are set to zero because this likelihood calculation can also be used on the time axis in addition to the value axis. Since there is no time uncertainty in the data, this can be ignored by setting these values to zero and the equation becomes:
 \begin{equation}
 F = \sum^{n}_{j=1}\left(\sum^{m}_{i=1}\ln(norm(0,0,\sigma)) - \ln(norm(x_2,\mu_2,\sigma))\right)
+\label{log-likelihood}
 \end{equation}
 
 The value for $\sigma$ is determined such that the first few iterations of parameter estimation generate very high $F$ values (with the knowledge that this will always decrease) subject to the computational limits imposed by floating point precision (values of $\sigma$ which are too low generate nonsensical $F$ values).
@@ -143,9 +145,10 @@ Given a low enough value for $\epsilon$, the output distribution should approxim
 
 \textbf{\textit{Sequential Monte Carlo}} - This is a method of particle filtering whereby a large set of samples ($N$) are drawn from the prior distribution, and for each sample, the probability is calculated. Weights for each particle are assigned based on the probabilities, and these affect how likely a particle is to be selected in subsequent rounds of selection. At the end of each round, the posterior distribution of the $N$ particles becomes the prior distribution for the next round.
 
-\textbf{\textit{Approximate Bayesian Computation by Sequential Monte Carlo}} - This combines the previous two methods by drawing a large number of particles from the prior distribution using Bayesian inference. The prior distribution is a discrete approximation to a continuous distribution in the scheme used here (algorithm S1 from \citet{Toni2009}), so a perturbation kernel based on a Laplacian or Gaussian distribution is used on each sample to provide small deviations to better approximate a continuous prior distribution. Each sample is simulated and only accepted if it exceeds the acceptance threshold. This is calculated based on the \nomenclature{LSD}{Least-Squares Difference}least-squares difference (LSD) between the simulated data and the original dataset. If a sample is rejected, a new one is drawn from the prior distribution and SMC then continues as described above. The weights of the accepted samples are calculated based on the probabilities of being selected from the prior and the samples go on to form the posterior distribution. For 
+\textbf{\textit{Approximate Bayesian Computation by Sequential Monte Carlo}} - This combines the previous two methods by drawing a large number of particles from the prior distribution using Bayesian inference. The prior distribution is a discrete approximation to a continuous distribution in the scheme used here (algorithm S1 from \citet{Toni2009}), so a perturbation kernel based on a Laplacian or Gaussian distribution is used on each sample to provide small deviations to better approximate a continuous prior distribution. Each sample is simulated and only accepted if it exceeds the acceptance threshold. This is calculated based on the \nomenclature{LSD}{Least-Squares Difference}least-squares difference (LSD) between the simulated data and the original dataset. If a sample is rejected, a new one is drawn from the prior distribution and SMC then continues as described above. The weights of the accepted samples are calculated based on the probabilities of being selected from the prior and the samples go on to 
+form the posterior distribution. For 
 each subsequent round, the mean LSD of the
-posterior distribution from the previous round is used as the acceptance threshold. This ensures that each round results in better fitting parameter sets. The cycle is then repeated until a pre-defined cycle limit is reached \cite{Toni2009}. The above description shows only one particular method of performing ABCSMC, but it should be made clear that this is not the only method.
+posterior distribution from the previous round is used as the acceptance threshold. This ensures that each round results in better fitting parameter sets. The cycle is then repeated until a pre-defined cycle limit is reached \cite{Toni2009}. The above description shows one particular method of performing ABCSMC, but it should be made clear that this is not the only method.
 
 A significant advantage of this technique is that it is readily parallelisable, as each particle in the SMC\nomenclature{SMC}{Sequential Monte Carlo} process is independent, thus can be simulated in parallel. This advantage is not unique, as many other sampling approaches are parallelisable also. A parallel version of this algorithm was implemented in the JAVA programming language which resulted in significant speed-ups when multiple processing threads can be used. The threading manager means that the algorithm is theoretically most efficient (in terms of computational time) when the number of particles is an exact multiple of the number of processing threads. In practice however this is negated by the fact that some particles require multiple samples due to them not meeting the acceptance criteria.
 
@@ -167,35 +170,31 @@ This algorithm was rejected on the grounds that it seemed incapable of settling 
 \subsection{Metropolis Hastings Monte Carlo}
 The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when the probability distribution function carries no prior information. Such a case exists when the proposal distribution is a discrete rather than a continuous distribution. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 
-This algorithm is much simpler than the previously described ABCSMC and takes the following form\cite{Gilks1996}:
+This algorithm used in this work is much simpler than the previously described ABCSMC and takes the following form as similarly described by \citet{Christensen2004}:
 
-\singlespacing %necessary to produce nice code
-\begin{alltt}
-Initialise \(X_0\); set \(t=0\);
-Repeat \{
-  Sample a point \(Y\) from \(q(.|X\sb{t})\)
-  Sample a Uniform(0,1) random variable \(U\)
-  If \(U \leq \alpha(X\sb{t},Y)\) set \(X\sb{t+1}=Y\)
-    otherwise set \(X\sb{t+1}=X_t\)
-  Increment t
-\}
-\end{alltt}
-\doublespacing %remember to un-single space!
-
-For the parameter estimation problem being solved, in the algorithm above, $X_0$ is the initial set of parameters, $t$ is the iteration number, $q(.\mid X_t)$ is the \textit{proposal distribution} which is the prior probability distribution and $\alpha(X_t,Y)$ is the acceptance probability. The prior probability distribution is used as the proposoal distribution as in this case samples need to be taked from a constrained space due to the high dimensionality of the space available (there are a large number of possibly correlated parameters). Typically a uniform proposal distribution is used, but this could result in biologically incorrect values being selected. The acceptance probability is calculated from the likelihood of $Y$ being from the prior probability distribution and the likelihood of the simulated data being from a normal distribution surrounding the experimental data. Mathematically it is described thus:
+An initial vector of starting parameters $X_t$ is used to generate a new vector of parameters $X^*$ using a transition kernel $q(X_t \rightarrow X^{*})$. $p(X)$ are the prior probability distributions for each $X[~]$, which in this implementation are represented by histograms with 1000 bins of equal width. These will return the probability of a value based on which bin it falls into. The prior probability distributions were chosen as the proposal distributions to attempt to keep the generated parameter values close to biological values. The usual choice would be a uniform distribution, but this could potentially result in biologically impossible values being selected. $D$ is the experimental data. The new candidate vector $X^*$ is accepted with probability
 \begin{equation*}
-\alpha(X_t,Y) = \frac{q(Y_t\mid X)}{q(Y_{t-1}\mid X)}\cdot\e{}^{F(Y_{t-1}) - F(Y_t)}
+\alpha(X^*\mid{}X_t) = \mathrm{min} \left\lbrace 1, \dfrac{p(X^*)p(D\mid{}X^*)q(X_t\mid{}X^*)}{p(X_t)p(D\mid{}X_t)q(X^*\mid{}X_t)}\right\rbrace
 \end{equation*}
-This process can be described as below:
+
+In this case, the transition kernel was chosen to be symmetric by using a laplacian distribution. Thus $q(X_t \rightarrow X^{*}) = q(X^{*} \rightarrow X_t)$ and these cancel out of the acceptance ratio equation. The acceptance ratio allows for a more probable (based on the prior) $X^*$ to be accepted even if the results are worse, and allows a better set of results to be accepted even if $X^*$ is less probable. If both are better/more probable then $X^*$ is always accepted.
+
+The steps used in the Metropolis Hastings algorithm implemented here are as follows:
 \begin{enumerate}
-\item Create a set of starting parameter values, calculate the probability of them from the prior distribution, and their likelihood of fitting the experimental data.
-\item Sample new parameter values from the prior probability distribution, calculate probabilities and likelihoods.
-\item Calculate acceptance based on the above values.
-\item If acceptance is greater than a random number generated in the range 0-1 then save the new parameters. (Acceptance will be greater than 1 if the parameters are more likely \textit{and} the results fit better). This allows slightly less probable, and less likely results to be accepted
-\item Otherwise save the old parameters.
-\item Go Back to step 2
-\item After enough repeats the saved results will resemble the posterior probability distribution.
+\item Start with dataset $D$ and initial parameters $X_t$ where $t=0$
+
+\item Propose a new $X^*$ using the transition kernel $q(X_t \rightarrow X^{*})$
+
+\item Generate $D^*$ from the model using parameters $X^*$
+
+\item Calculate an acceptance ratio $\alpha(X^*\mid{}X_t$)
+
+\item Accept $X^*$ with probability $\alpha(X^*\mid{}X_t$) else stay at $X_t$, then return to 2.
+
 \end{enumerate}
+
+The likelihoods, $p(D\mid{}X)$ are Guassian in nature as described previously as it is assumed that there is Gaussian noise in the experimental data. Thus it is easy to calculate a Guassian likelihood using Equation \ref{log-likelihood} and adjusting for the fact that it produces a log-likelihood value.
+
 This was the algorithm selected to perform the parameter estimation as it was simple to implement, generated the required probability distributions and didn't require complex functions to determine acceptance. Its only major disadvantage was that it was an unparallel algorithm, thus it was quite slow as each iteration depended on the results of the previous.
 
 \section{Validating the Parameter Estimation Algorithm}

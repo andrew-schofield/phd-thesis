@@ -1,4 +1,4 @@
-\begin{thebibliography}{157}
+\begin{thebibliography}{158}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -766,6 +766,13 @@ Metropolis N, Rosenbluth AW, Rosenbluth MN, Teller AH, Teller E (1953) Equation
 \bibitem[{Hastings(1970)}]{Hastings1970}
 Hastings WK (1970) Monte Carlo Sampling Methods Using Markov Chains and Their
   Applications. Biometrika 57: 97--109.
+
+\bibitem[{Christensen et~al.(2004)Christensen, Meyer, and
+  Libson}]{Christensen2004}
+Christensen N, Meyer R, Libson A (2004) A Metropolis-Hastings routine for
+  estimating parameters from compact binary inspiral events with laser
+  interferometric gravitational radiation data. Classical and Quantum Gravity
+  21: 317.
 
 \bibitem[{Lotka(1925)}]{Lotka1925}
 Lotka A (1925) Elements of Physical Biology. Williams and Wilkins, Baltimore.

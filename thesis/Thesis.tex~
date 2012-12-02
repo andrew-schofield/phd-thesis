@@ -28,13 +28,14 @@
 \usepackage{svn-multi}
 \usepackage{afterpage}
 \usepackage{alltt}
-\svnid{$Id: Thesis.tex 335 2012-11-30 10:15:18Z uncle_fungus $}
+\svnid{$Id: Thesis.tex 336 2012-11-30 10:30:43Z uncle_fungus $}
 
 \pdfminorversion=5
 
 \definecolor{dark-gray}{gray}{0.7}
 \definecolor{LightBlue}{rgb}{0.686, 0.867, 0.914}
 \definecolor{light-gray}{gray}{0.95}
+\definecolor{Yellow}{rgb}{1, 1, 0}
 
 \usepackage{mathpazo}
 \linespread{1.05}        % Palatino needs more leading
@@ -160,6 +161,7 @@
 \newcommand{\Nm}{\textit{N. meningitidis}}
 \newcommand{\Nsm}{\textit{Neisseria meningitidis}}
 \newcommand{\cbbthree}{\textit{cbb$_{\textrm{3}}$}}
+\newcommand{\highlight}[1]{\colorbox{Yellow}{#1}}
 
 \geometry{a4paper,left=40mm,right=20mm, top=25mm, bottom=25mm}
 \renewcommand{\topfraction}{0.85}
@@ -222,7 +224,7 @@ I would like to thank Dr James Moir and Dr Jamie Wood for their guidance and sup
 \\\\
 I would also like to thank Dr Leo Caves and Dr Gavin Thomas for being members of my training committee. They helped keep my project on track and encouraged me to continually improve the project as it progressed.
 \\\\
-I thank all the members of the Moir Lab and others - Mrs Diana Quinn, Mrs Judith Hawkhead, Dr James Edwards, Dr Stacey Furgusson, Chiara Catenazzi and Xi Li for their advice and friendship throughout the project.
+I thank all the members of the Moir Lab and others - Mrs Diana Quinn, Mrs Judith Hawkhead, Dr James Edwards, Dr Stacey Fergusson, Chiara Catenazzi and Xi Li for their advice and friendship throughout the project.
 \\\\
 My thanks to all at York Community Church, but especially those in ``The Other Monday Home Group'' for their prayer and support over the past 4 years.
 \\\\
