@@ -66,14 +66,12 @@ if fitness(c1) > fitness(c2)
 else
   return c2
 \end{verbatim}
-\caption[Pseudo-code showing how rejection sampler works.]{{\bf Pseudo-code showing how a rejection sampler works.} Simulated annealing extends this algorithm by having an annealing temperature which defines how much the parameter sets are mutated.
+\caption[Pseudo-code showing how stochastic hill climbing works.]{{\bf Pseudo-code showing how stochastic hill climbing works.} Simulated annealing alters this algorithm by having an annealing temperature which alters the probability of a parameter set being accepted.
 \label{fig:sa_code}}
 \end{figure}
 
-Simulated annealing is an extension of a simple rejection sampler \cite{Marjoram2003}. Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how the rejection sampler algorithm works. This will provide a ``best'' parameter set, but there is no information about the possible spread of values in the parameter set. A spread, or distribution of values that can describe the system is required because, although there may be a be a particular parameter vector value that can accurately describe the system, it is very unlikely that there will be enough data to determine it. To this end a modified version of simulated annealing was used integrated with aspects of a simple genetic algorithm. In the genetic algorithm paradigm a synthetic ``chromosome'' is created which contains ``genes'' representing the parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. This chromosome is then copied and perturbed 
-several times (
-depending on the
-eventual population size required), with the size of the perturbation being dependent on the current annealing temperature. For instance the highest temperature could indicate that the individual parameters can be perturbed by up to $\pm 10\%$, and as the temperature decreases the perturbation percentage has a concomitant decrease. An example annealing temperature schedule is shown in Figure \ref{fig:temperature}.
+Simulated annealing could be considered an adaptation of stochastic hill climbing. Figure~\ref{fig:sa_code} contains some simple pseudo-code which shows how this somewhat similar algorithm works. This will provide a ``best'' parameter set, but there is no information about the possible spread of values in the parameter set. A spread, or distribution of values that can describe the system is required because, although there may be a be a particular parameter vector value that can accurately describe the system, it is very unlikely that there will be enough data to determine it. To this end a modified version of simulated annealing was used integrated with aspects of a simple genetic algorithm. In the genetic algorithm paradigm a synthetic ``chromosome'' is created which contains ``genes'' representing the parameters in the simulation. These include the rate constants, concentrations of various components and initial concentrations of substrates and products. This chromosome is then copied and perturbed 
+several times (depending on the eventual population size required), with the size of the perturbation being dependent on the current annealing temperature. For instance the highest temperature could indicate that the individual parameters can be perturbed by up to $\pm 10\%$, and as the temperature decreases the perturbation percentage has a concomitant decrease. An example annealing temperature schedule is shown in Figure \ref{fig:temperature}.
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics[height=10cm]{03-parameterestimationmethodologies/data/temperature.png}
@@ -129,7 +127,8 @@ Before the observation of the sweet, the probability of the third party taking f
 
 Bayesian inference is widely used in computational analysis for artificial intelligence and email spam identification. It is also used in the field of population genetics and phylogenetics\cite{Ronquist2011}.
 
-\textbf{\textit{Approximate Bayesian Computation}} - This is an extension of Bayesian inference which allows approximately the same inferences to be made, with considerably less computation. It also enables approximation of posterior values within the Bayesian scheme. It operates on summary statistics of the datasets rather than the datasets themselves. Common examples are population mean and variance. The summary statistic needs to be a sufficient statistic, that is, the sample from which the statistic is calculated provides no additional information than does the statistic. This is useful for large complex datasets where the probability of a simulation of the dataset matching the original is very small (unacceptably so), in this case a summary statistic of the datasets can be used, and the difference calculated. If the difference is less than a pre-defined acceptance threshold, then the simulated dataset is accepted. \nomenclature{ABC}{Approximate Bayesian computation}ABC originally came from the fields of 
+\textbf{\textit{Approximate Bayesian Computation}} - This is a method for doing approximate Bayesian inference which allows approximately the same inferences to be made, with considerably less computation. It also enables approximation of posterior values within the Bayesian scheme. It operates on summary statistics of the datasets rather than the datasets themselves. Common examples are population mean and variance. The summary statistic needs to be a sufficient statistic, that is, the sample from which the statistic is calculated provides no additional information than does the statistic. This is useful for large complex datasets where the probability of a simulation of the dataset matching the original is very small (unacceptably so), in this case a summary statistic of the datasets can be used, and the difference calculated. If the difference is less than a pre-defined acceptance threshold, then the simulated dataset is accepted. \nomenclature{ABC}{Approximate Bayesian computation}ABC originally came 
+from the fields of 
 population and evolutionary genetics\cite{Beaumont2002}, but is now being applied to complex and stochastic dynamical systems\cite{Sisson2007,Toni2009,Beaumont2010}.
 
 ABC differs from standard Bayesian inference shown in Equation \ref{eq:bayes} in that the likelihood term does not need to be calculated. Instead the difference between the summary statistics of the observed data and the simulated data is used. The simulated data is considered an acceptable sample from the posterior distribution if the difference in summary statistics is less than a predefined acceptance threshold.
@@ -168,22 +167,22 @@ A significant advantage of this technique is that it is readily parallelisable, 
 This algorithm was rejected on the grounds that it seemed incapable of settling on sensible posterior distributions with some datasets. It is suspected that the distance function used was causing a conflict which meant the algorithm was accepting bad parameter sets and rejecting good ones. The requirement of a suitable distance function or summary statistic is a major disadvantage of this algorithm.
 
 \subsection{Metropolis Hastings Monte Carlo}
-The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult) such as when the probability distribution function carries no prior information. Such a case exists when the proposal distribution is a discrete rather than a continuous distribution. The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
+The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo method to retrieve sequences of random samples from a probability distribution which cannot be sampled directly (or would be very difficult). The algorithm was originally developed by \citet{Metropolis1953} for generating samples from the Boltzmann distribution. It was later extended to a more general form for any distribution by \citet{Hastings1970}.
 
 This algorithm used in this work is much simpler than the previously described ABCSMC and takes the following form as similarly described by \citet{Christensen2004}:
 
-An initial vector of starting parameters $X_t$ is used to generate a new vector of parameters $X^*$ using a transition kernel $q(X_t \rightarrow X^{*})$. $p(X)$ are the prior probability distributions for each $X[~]$, which in this implementation are represented by histograms with 1000 bins of equal width. These will return the probability of a value based on which bin it falls into. The prior probability distributions were chosen as the proposal distributions to attempt to keep the generated parameter values close to biological values. The usual choice would be a uniform distribution, but this could potentially result in biologically impossible values being selected. $D$ is the experimental data. The new candidate vector $X^*$ is accepted with probability
+An initial vector of starting parameters $X_t$ is used to generate a new vector of parameters $X^*$ using a proposal density $q(X^{*} \mid{} X_t)$. $p(X)$ are the prior probability distributions for each $X[~]$, which in this implementation are represented by histograms with 1000 bins of equal width. These will return the probability of a value based on which bin it falls into. $D$ is the experimental data. The new candidate vector $X^*$ is accepted with probability
 \begin{equation*}
 \alpha(X^*\mid{}X_t) = \mathrm{min} \left\lbrace 1, \dfrac{p(X^*)p(D\mid{}X^*)q(X_t\mid{}X^*)}{p(X_t)p(D\mid{}X_t)q(X^*\mid{}X_t)}\right\rbrace
 \end{equation*}
 
-In this case, the transition kernel was chosen to be symmetric by using a laplacian distribution. Thus $q(X_t \rightarrow X^{*}) = q(X^{*} \rightarrow X_t)$ and these cancel out of the acceptance ratio equation. The acceptance ratio allows for a more probable (based on the prior) $X^*$ to be accepted even if the results are worse, and allows a better set of results to be accepted even if $X^*$ is less probable. If both are better/more probable then $X^*$ is always accepted.
+In this case, the proposal density was chosen to be symmetric by using a laplacian distribution which depends on the current value of $X_t$. The laplacian distribution also appeared to be the most efficient proposal density for this model. Thus $q(X_t \mid{} X^{*}) = q(X^{*} \mid{} X_t)$ and these cancel out of the acceptance ratio equation. The acceptance ratio allows for a more probable (based on the prior) $X^*$ to be accepted even if the results are worse, and allows a better set of results to be accepted even if $X^*$ is less probable. If both are better/more probable then $X^*$ is always accepted.
 
 The steps used in the Metropolis Hastings algorithm implemented here are as follows:
 \begin{enumerate}
 \item Start with dataset $D$ and initial parameters $X_t$ where $t=0$
 
-\item Propose a new $X^*$ using the transition kernel $q(X_t \rightarrow X^{*})$
+\item Propose a new $X^*$ using the proposal density $q(X_t \rightarrow X^{*})$
 
 \item Generate $D^*$ from the model using parameters $X^*$
 
@@ -193,9 +192,11 @@ The steps used in the Metropolis Hastings algorithm implemented here are as foll
 
 \end{enumerate}
 
-The likelihoods, $p(D\mid{}X)$ are Guassian in nature as described previously as it is assumed that there is Gaussian noise in the experimental data. Thus it is easy to calculate a Guassian likelihood using Equation \ref{log-likelihood} and adjusting for the fact that it produces a log-likelihood value.
+The likelihoods, $p(D\mid{}X)$ are Gaussian in nature as described previously as it is assumed that there is Gaussian noise in the experimental data. Thus it is easy to calculate a Gaussian likelihood using Equation \ref{log-likelihood} and adjusting for the fact that it produces a log-likelihood value.
 
-This was the algorithm selected to perform the parameter estimation as it was simple to implement, generated the required probability distributions and didn't require complex functions to determine acceptance. Its only major disadvantage was that it was an unparallel algorithm, thus it was quite slow as each iteration depended on the results of the previous.
+This algorithm has several advantages, in that it was simple to implement, generated the required probability distributions and didn't require complex functions to determine acceptance. Its only major disadvantage was that it was an unparallel algorithm, thus it was quite slow as each iteration depended on the results of the previous.
+
+This algorithm represents the central technique of this work, and although not a novel technique it requires original work which has been mentioned above (choice of proposal distribution) and is mentioned later in this work (length of chains, convergence criteria etc.).
 
 \section{Validating the Parameter Estimation Algorithm}
 

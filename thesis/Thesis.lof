@@ -21,7 +21,7 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Electron flow through the respiratory chain}}{63}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Oxygen Diffusion Rates}}{69}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how rejection sampler works.}}{78}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pseudo-code showing how stochastic hill climbing works.}}{78}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Example simulated annealing temperature schedule}}{79}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic diagram showing the technique used to generate a spread of parameters using a synthetic chromosome.}}{80}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation results of the Lotka-Volterra validation run.}}{88}{figure.4.4}

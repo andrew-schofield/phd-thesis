@@ -1,4 +1,4 @@
-\begin{thebibliography}{158}
+\begin{thebibliography}{157}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -725,12 +725,6 @@ Kirkpatrick S, Gelatt CD, Vecchi MP (1983) Optimization by Simulated Annealing.
 \bibitem[{Bertsimas and Tsitsiklis(1993)}]{Bertsimas1993}
 Bertsimas D, Tsitsiklis J (1993) Simulated Annealing. Statistical Science 8:
   pp. 10--15.
-
-\bibitem[{Marjoram et~al.(2003)Marjoram, Molitor, Plagnol, and
-  Tavar\'{e}}]{Marjoram2003}
-Marjoram P, Molitor J, Plagnol V, Tavar\'{e} S (2003) Markov Chain Monte Carlo
-  without Likelihoods. Proceedings of the National Academy of Sciences of the
-  United States of America 100: 15324--15328.
 
 \bibitem[{Toni et~al.(2009)Toni, Welch, Strelkowa, Ipsen, and
   Stumpf}]{Toni2009}

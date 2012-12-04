@@ -20,45 +20,45 @@ Warning--entry type for "YSI2012" isn't style-file defined
 Warning--can't use both author and editor fields in Cavaliere2006
 Warning--can't use both author and editor fields in Press1992
 Warning--can't use both author and editor fields in Volterra1931
-You've used 158 entries,
+You've used 157 entries,
             2955 wiz_defined-function locations,
-            1892 strings with 50115 characters,
-and the built_in function-call counts, 179446 in all, are:
-= -- 17825
-> -- 5711
+            1885 strings with 49912 characters,
+and the built_in function-call counts, 177645 in all, are:
+= -- 17639
+> -- 5667
 < -- 84
-+ -- 2852
-- -- 1572
-* -- 15659
-:= -- 24159
-add.period$ -- 314
-call.type$ -- 158
-change.case$ -- 828
-chr.to.int$ -- 174
-cite$ -- 161
-duplicate$ -- 14561
-empty$ -- 15285
-format.name$ -- 2046
-if$ -- 38268
++ -- 2830
+- -- 1560
+* -- 15486
+:= -- 23932
+add.period$ -- 312
+call.type$ -- 157
+change.case$ -- 822
+chr.to.int$ -- 173
+cite$ -- 160
+duplicate$ -- 14404
+empty$ -- 15120
+format.name$ -- 2031
+if$ -- 37880
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1487
-newline$ -- 481
-num.names$ -- 641
-pop$ -- 3189
+missing$ -- 1477
+newline$ -- 478
+num.names$ -- 637
+pop$ -- 3163
 preamble$ -- 1
-purify$ -- 809
+purify$ -- 803
 quote$ -- 0
-skip$ -- 3230
+skip$ -- 3211
 stack$ -- 0
-substring$ -- 22124
-swap$ -- 3287
+substring$ -- 21843
+swap$ -- 3265
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1389
+type$ -- 1380
 warning$ -- 3
-while$ -- 1390
+while$ -- 1380
 width$ -- 0
-write$ -- 1741
+write$ -- 1730
 (There were 5 warnings)
